@@ -12,21 +12,45 @@ import pic9 from "@/assets/blue-collar/9.webp";
 import pic10 from "@/assets/blue-collar/10.webp";
 
 const teamImages = [
-  { src: pic1, alt: "professional window cleaning team member", rotate: "-4.277deg" },
-  { src: pic2, alt: "exterior cleaning service technician", rotate: "0.856deg" },
+  {
+    src: pic1,
+    alt: "professional window cleaning team member",
+    rotate: "-4.277deg",
+  },
+  {
+    src: pic2,
+    alt: "exterior cleaning service technician",
+    rotate: "0.856deg",
+  },
   { src: pic3, alt: "pressure washing specialist", rotate: "-3.93deg" },
   { src: pic4, alt: "window washing professional", rotate: "3.759deg" },
   { src: pic5, alt: "home exterior cleaning expert", rotate: "-2.008deg" },
-  { src: pic6, alt: "commercial cleaning service team member", rotate: "1.392deg" },
+  {
+    src: pic6,
+    alt: "commercial cleaning service team member",
+    rotate: "1.392deg",
+  },
   { src: pic7, alt: "solar panel cleaning technician", rotate: "-2.008deg" },
-  { src: pic8, alt: "gutter cleaning service professional", rotate: "1.629deg" },
-  { src: pic9, alt: "residential window cleaning specialist", rotate: "-2.008deg" },
-  { src: pic10, alt: "blue collar cleaning service team member", rotate: "-2.008deg" },
+  {
+    src: pic8,
+    alt: "gutter cleaning service professional",
+    rotate: "1.629deg",
+  },
+  {
+    src: pic9,
+    alt: "residential window cleaning specialist",
+    rotate: "-2.008deg",
+  },
+  {
+    src: pic10,
+    alt: "blue collar cleaning service team member",
+    rotate: "-2.008deg",
+  },
 ];
 
 const TeamGallery = () => {
   return (
-    <div className="paper-bg-16 flex flex-col items-center justify-center gap-[63px] bg-[#262424] py-[100px] md:gap-[70px] md:py-[150px]">
+    <div className="paper-bg-16 flex flex-col items-center justify-center gap-[63px] bg-[#262424] py-[100px] pt-6 md:gap-[70px] md:py-[150px] md:pt-[0px]">
       <div className="flex flex-col items-center justify-center px-[40px]">
         <h2
           className="text-grain !bg-[#F3CA9E] text-center text-[48px] md:text-[102px] md:tracking-[9.18px]"
