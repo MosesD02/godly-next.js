@@ -114,7 +114,7 @@ const reviews = [
     author: "Lilly Thomas",
     location: "Lighthouse Point, Fl",
     content:
-      "Extremely pleased with the results of my windows. They were very professional and informative. I highly recommend Moses Godly Windows!",
+      "Amazing Job! Moses is very conscientious and always provides top quality service.",
     image: "/assets/lily.png",
   },
   {
