@@ -1,4 +1,5 @@
 import GodlyHome from "@/components/landing/home";
+import { citiesMap } from "@/data/cities";
 import { 
   generateServiceTitle, 
   generateServiceDescription,
@@ -11,22 +12,24 @@ import Script from "next/script";
 export async function generateMetadata({ params }) {
   const { service, city } = await params;
   
-  const title = generateServiceTitle(service, city);
-  const description = generateServiceDescription(service, city);
-  const heroAlt = generateServiceHeroAlt(service, city);
+  const location = citiesMap[city] || city.replace(/-/g, " ").toUpperCase();
+
+  const title = generateServiceTitle(service, location);
+  const description = generateServiceDescription(service, location);
+  const heroAlt = generateServiceHeroAlt(service, location);
   
   return {
     title,
     description,
     keywords: [
-      `${serviceMetaTitles[service] || service} ${city}`,
-      `${service} services ${city}`,
-      `professional ${service} ${city}`,
+      `${serviceMetaTitles[service] || service} ${location}`,
+      `${service} services ${location}`,
+      `professional ${service} ${location}`,
       'window cleaning',
       'pressure washing',
       'exterior cleaning',
       'South Florida',
-      city
+      location
     ],
     openGraph: {
       title,
