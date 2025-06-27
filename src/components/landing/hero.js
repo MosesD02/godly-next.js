@@ -5,7 +5,7 @@ import QuoteForm from "./quoteForm";
 import { useGodlyContext } from "@/context/godlyContext";
 import { generateHomeH1 } from "@/data/metaTitles";
 
-const Hero = () => {
+const Hero = ({ service }) => {
   const { city } = useGodlyContext();
 
   const formatCity = (city) => {
@@ -70,7 +70,7 @@ const Hero = () => {
             Get Spotless Windows + a FREE RainShield Treatment this June Only.
           </p>
         </div>
-        <QuoteForm />
+        <QuoteForm service={service} />
       </div>
     </div>
   );

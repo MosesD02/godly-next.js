@@ -1,23 +1,24 @@
 import GodlyHome from "@/components/landing/home";
 import { citiesMap } from "@/data/cities";
-import { 
-  generateServiceTitle, 
+import {
+  generateServiceTitle,
   generateServiceDescription,
   generateServiceHeroAlt,
-  serviceMetaTitles 
+  serviceMetaTitles,
 } from "@/data/metaTitles";
+import { servicesData } from "@/godlyComponents/servicesData";
 import Script from "next/script";
 
 // Generate metadata for service/city pages
 export async function generateMetadata({ params }) {
   const { service, city } = await params;
-  
+
   const location = citiesMap[city] || city.replace(/-/g, " ").toUpperCase();
 
   const title = generateServiceTitle(service, location);
   const description = generateServiceDescription(service, location);
   const heroAlt = generateServiceHeroAlt(service, location);
-  
+
   return {
     title,
     description,
@@ -25,11 +26,11 @@ export async function generateMetadata({ params }) {
       `${serviceMetaTitles[service] || service} ${location}`,
       `${service} services ${location}`,
       `professional ${service} ${location}`,
-      'window cleaning',
-      'pressure washing',
-      'exterior cleaning',
-      'South Florida',
-      location
+      "window cleaning",
+      "pressure washing",
+      "exterior cleaning",
+      "South Florida",
+      location,
     ],
     openGraph: {
       title,
@@ -66,31 +67,33 @@ export default async function LandingPage({ params }) {
     return <div>Missing service or city</div>;
   }
 
+  const serviceName = servicesData[service] || service.replace(/-/g, " ");
+
   // Structured data for service pages
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": serviceMetaTitles[service] || service.replace(/-/g, " "),
-    "provider": {
+    serviceType: serviceMetaTitles[service] || service.replace(/-/g, " "),
+    provider: {
       "@type": "LocalBusiness",
-      "name": "Godly Windows",
-      "url": "https://godlywindows.com",
-      "telephone": "+1-555-GODLY-WIN",
-      "address": {
+      name: "Godly Windows",
+      url: "https://godlywindows.com",
+      telephone: "+1-555-GODLY-WIN",
+      address: {
         "@type": "PostalAddress",
-        "addressLocality": city,
-        "addressRegion": "FL",
-        "addressCountry": "US"
-      }
+        addressLocality: city,
+        addressRegion: "FL",
+        addressCountry: "US",
+      },
     },
-    "areaServed": {
+    areaServed: {
       "@type": "City",
-      "name": city,
-      "addressRegion": "FL",
-      "addressCountry": "US"
+      name: city,
+      addressRegion: "FL",
+      addressCountry: "US",
     },
-    "description": generateServiceDescription(service, city),
-    "url": `https://godlywindows.com/landing/${service}/${city}`
+    description: generateServiceDescription(service, city),
+    url: `https://godlywindows.com/landing/${service}/${city}`,
   };
 
   return (
@@ -102,7 +105,7 @@ export default async function LandingPage({ params }) {
           __html: JSON.stringify(structuredData),
         }}
       />
-      <GodlyHome city={city} />
+      <GodlyHome city={city} service={serviceName} />
     </>
   );
 }

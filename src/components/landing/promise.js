@@ -54,6 +54,7 @@ const Promise = () => {
   };
 
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
 
   const handleVideoClick = () => {
@@ -61,12 +62,14 @@ const Promise = () => {
       if (videoRef.current.paused) {
         videoRef.current.currentTime = 0;
         videoRef.current.muted = false;
+        setIsMuted(false);
         videoRef.current.play();
       } else {
         // If video is playing and muted (autoplaying), restart with audio
         if (videoRef.current.muted) {
           videoRef.current.currentTime = 0;
           videoRef.current.muted = false;
+          setIsMuted(false);
           videoRef.current.play();
         } else {
           // If playing with audio, pause it
@@ -84,10 +87,12 @@ const Promise = () => {
     const handlePlay = () => setIsPlaying(true);
     const handlePause = () => setIsPlaying(false);
     const handleEnded = () => setIsPlaying(false);
+    const handleVolumeChange = () => setIsMuted(video.muted);
 
     video.addEventListener("play", handlePlay);
     video.addEventListener("pause", handlePause);
     video.addEventListener("ended", handleEnded);
+    video.addEventListener("volumechange", handleVolumeChange);
 
     // Intersection Observer to play/pause video based on visibility
     const observer = new IntersectionObserver(
@@ -96,6 +101,7 @@ const Promise = () => {
           if (entry.isIntersecting) {
             // Video is in view, play it muted
             video.muted = true;
+            setIsMuted(true);
             video.play().catch(() => {
               // Handle autoplay restrictions
             });
@@ -107,8 +113,8 @@ const Promise = () => {
       },
       {
         threshold: 0.5, // Play when 50% of video is visible
-        rootMargin: "0px"
-      }
+        rootMargin: "0px",
+      },
     );
 
     observer.observe(video);
@@ -117,6 +123,7 @@ const Promise = () => {
       video.removeEventListener("play", handlePlay);
       video.removeEventListener("pause", handlePause);
       video.removeEventListener("ended", handleEnded);
+      video.removeEventListener("volumechange", handleVolumeChange);
       observer.unobserve(video);
     };
   }, []);
@@ -153,7 +160,9 @@ const Promise = () => {
               aria-label={isPlaying ? "Pause video" : "Play video"}
               className={cn(
                 "group absolute inset-0 z-10 flex items-center justify-center transition-all duration-300",
-                !isPlaying ? "bg-black/40" : "bg-transparent hover:bg-black/20",
+                !isPlaying || (isPlaying && videoRef.current?.muted)
+                  ? "bg-black/40"
+                  : "bg-transparent hover:bg-black/20",
               )}
             >
               <Image
@@ -163,7 +172,7 @@ const Promise = () => {
                 height={64}
                 className={cn(
                   "size-16 object-contain transition-all duration-300",
-                  isPlaying
+                  isPlaying && !videoRef.current?.muted
                     ? "scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-80"
                     : "scale-100 opacity-100 hover:scale-110",
                 )}

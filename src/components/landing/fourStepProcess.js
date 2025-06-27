@@ -38,7 +38,7 @@ const FourStepProcess = () => {
           </defs>
         </svg>
       ),
-      title: "Resedential",
+      title: "Residential",
       text: "Wash away dirt, mold, pollen, and buildup from driveways, windows, and roofs — we’ll make your home look like new.",
     },
     {
@@ -98,7 +98,7 @@ const FourStepProcess = () => {
           />
         </svg>
       ),
-      title: "Maintenance Package",
+      title: "Maintenance Packages",
       text: "Quarterly or bi-annual cleanings to protect your property, keep things pristine, and avoid costly buildup.",
     },
   ];

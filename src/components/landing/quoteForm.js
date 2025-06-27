@@ -8,13 +8,13 @@ import QuoteButton from "@/components/quoteButton";
 import Airtable from "airtable";
 import { cn } from "@/lib/utils";
 
-export default function QuoteForm({ isDialog }) {
+export default function QuoteForm({ isDialog, service }) {
   const [date, setDate] = useState();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    services: [],
+    services: [""],
     zipcode: "",
     agree: false,
   });
@@ -101,8 +101,8 @@ export default function QuoteForm({ isDialog }) {
             Name: formData.name,
             Email: formData.email,
             Phone: formData.phone,
-            "Required Service": formData.services.join(", "),
-            Date: date ? format(date, "MM/dd/yyyy") : "",
+            "Required Service": service,
+            Date: date ? format(date, "MM/dd/yyyy") : null,
             ZipCode: formData.zipcode,
           },
         },
