@@ -1,0 +1,105 @@
+import GodlyHome from "@/components/landing/home";
+import { 
+  generateServiceTitle, 
+  generateServiceDescription,
+  generateServiceHeroAlt,
+  serviceMetaTitles 
+} from "@/data/metaTitles";
+import Script from "next/script";
+
+// Generate metadata for service/city pages
+export async function generateMetadata({ params }) {
+  const { service, city } = await params;
+  
+  const title = generateServiceTitle(service, city);
+  const description = generateServiceDescription(service, city);
+  const heroAlt = generateServiceHeroAlt(service, city);
+  
+  return {
+    title,
+    description,
+    keywords: [
+      `${serviceMetaTitles[service] || service} ${city}`,
+      `${service} services ${city}`,
+      `professional ${service} ${city}`,
+      'window cleaning',
+      'pressure washing',
+      'exterior cleaning',
+      'South Florida',
+      city
+    ],
+    openGraph: {
+      title,
+      description,
+      url: `https://godlywindows.com/landing/${service}/${city}`,
+      siteName: "Godly Windows",
+      locale: "en_US",
+      type: "website",
+      images: [
+        {
+          url: "/favicon.svg",
+          width: 1200,
+          height: 630,
+          alt: heroAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/favicon.svg"],
+    },
+    alternates: {
+      canonical: `/landing/${service}/${city}`,
+    },
+  };
+}
+
+export default async function LandingPage({ params }) {
+  const { service, city } = await params;
+
+  if (!service || !city) {
+    return <div>Missing service or city</div>;
+  }
+
+  // Structured data for service pages
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": serviceMetaTitles[service] || service.replace(/-/g, " "),
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Godly Windows",
+      "url": "https://godlywindows.com",
+      "telephone": "+1-555-GODLY-WIN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": city,
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      }
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": city,
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "description": generateServiceDescription(service, city),
+    "url": `https://godlywindows.com/landing/${service}/${city}`
+  };
+
+  return (
+    <>
+      <Script
+        id="service-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+      <GodlyHome city={city} />
+    </>
+  );
+}

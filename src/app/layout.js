@@ -2,7 +2,6 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { AppWrapper } from "@/context/godlyContext";
 import Script from "next/script";
-import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,17 +40,22 @@ export const metadata = {
     ],
     apple: [{ url: "/favicon.svg", type: "image/svg+xml", sizes: "180x180" }],
   },
-  verification: {
-    google: "google-site-verification-code",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="robots" content="noindex,nofollow" />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}`}
         suppressHydrationWarning
