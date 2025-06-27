@@ -160,7 +160,7 @@ const Promise = () => {
               aria-label={isPlaying ? "Pause video" : "Play video"}
               className={cn(
                 "group absolute inset-0 z-10 flex items-center justify-center transition-all duration-300",
-                !isPlaying || (isPlaying && videoRef.current?.muted)
+                !isPlaying || (isPlaying && isMuted)
                   ? "bg-black/40"
                   : "bg-transparent hover:bg-black/20",
               )}
@@ -172,7 +172,7 @@ const Promise = () => {
                 height={64}
                 className={cn(
                   "size-16 object-contain transition-all duration-300",
-                  isPlaying && !videoRef.current?.muted
+                  isPlaying && !isMuted
                     ? "scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-80"
                     : "scale-100 opacity-100 hover:scale-110",
                 )}
