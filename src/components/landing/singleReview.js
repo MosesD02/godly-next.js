@@ -103,7 +103,7 @@ const SingleReview = () => {
                 </p>
                 <div className="relative flex flex-col gap-[40px]">
                   <h3
-                    className="text-grain trim !bg-white text-[40px] tracking-[2px] md:text-[72px]"
+                    className="text-grain trim !bg-white text-[28px] tracking-[2px] md:text-[72px]"
                     data-text="The Best Windows Cleaning Company in Florida!"
                   >
                     &quot;{item.text}&quot;
@@ -123,8 +123,8 @@ const SingleReview = () => {
           ))}
         </CarouselContent>
         <div>
-          <CarouselPrevious className="top-auto -bottom-22 left-0 size-[60px] text-black" />
-          <CarouselNext className="top-auto -bottom-22 left-24 size-[60px] text-black" />
+          <CarouselPrevious className="top-auto -bottom-6 left-0 size-[40px] text-black md:size-[60px]" />
+          <CarouselNext className="top-auto -bottom-6 left-16 size-[40px] text-black md:size-[60px]" />
         </div>
       </Carousel>
     </div>
