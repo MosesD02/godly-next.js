@@ -108,6 +108,22 @@ export default function QuoteForm({ isDialog, service }) {
         },
       ]);
 
+      await fetch(
+        "https://hook.us1.make.com/r3kgolabx4r2luoyc39npw095bbtytl7",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            service: service,
+            date: date ? format(date, "MM/dd/yyyy") : null,
+            zipcode: formData.zipcode,
+            source: "Google Ads",
+          }),
+        },
+      );
+
       setSubmitStatus("success");
       setShowSuccessDialog(true);
 
@@ -116,7 +132,6 @@ export default function QuoteForm({ isDialog, service }) {
         name: "",
         email: "",
         phone: "",
-        services: [],
         zipcode: "",
         agree: false,
       });
@@ -294,7 +309,7 @@ export default function QuoteForm({ isDialog, service }) {
             </p>
             <button
               onClick={() => setShowSuccessDialog(false)}
-              className="rounded-md bg-[#2D2B2B] px-8 py-2 font-semibold text-white shadow transition-all hover:bg-[#1c1a1a]"
+              className="trim rounded-md bg-[#2D2B2B] px-8 py-4 font-semibold text-white shadow transition-all hover:bg-[#1c1a1a]"
             >
               DONE
             </button>

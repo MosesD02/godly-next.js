@@ -9,7 +9,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { format } from "date-fns";
+import { addDays, format } from "date-fns";
 import QuoteButton from "@/components/quoteButton";
 import Airtable from "airtable";
 import { ChevronDown, ChevronUp } from "lucide-react";
@@ -127,6 +127,22 @@ export default function QuoteForm({ isDialog }) {
           },
         },
       ]);
+
+      await fetch(
+        "https://hook.us1.make.com/r3kgolabx4r2luoyc39npw095bbtytl7",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            service: formData.services,
+            date: date ? format(date, "MM/dd/yyyy") : null,
+            zipcode: formData.zipcode,
+            source: "Organic",
+          }),
+        },
+      );
 
       setSubmitStatus("success");
       setShowSuccessDialog(true);
@@ -366,6 +382,7 @@ export default function QuoteForm({ isDialog }) {
                   mode="single"
                   selected={date}
                   onSelect={setDate}
+                  disabled={(date) => date < addDays(new Date(), -1)}
                   initialFocus
                 />
               </PopoverContent>
@@ -455,7 +472,7 @@ export default function QuoteForm({ isDialog }) {
             </p>
             <button
               onClick={() => setShowSuccessDialog(false)}
-              className="rounded-md bg-[#2D2B2B] px-8 py-2 font-semibold text-white shadow transition-all hover:bg-[#1c1a1a]"
+              className="trim rounded-md bg-[#2D2B2B] px-8 py-4 font-semibold text-white shadow transition-all hover:bg-[#1c1a1a]"
             >
               DONE
             </button>
