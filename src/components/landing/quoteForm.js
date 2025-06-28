@@ -14,7 +14,7 @@ export default function QuoteForm({ isDialog, service }) {
     name: "",
     email: "",
     phone: "",
-    services: [""],
+    services: [service],
     zipcode: "",
     agree: false,
   });
@@ -131,6 +131,7 @@ export default function QuoteForm({ isDialog, service }) {
       setFormData({
         name: "",
         email: "",
+        services: [service],
         phone: "",
         zipcode: "",
         agree: false,
