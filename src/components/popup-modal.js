@@ -113,7 +113,10 @@ export function PopupModal() {
         <p className="mx-auto max-w-[272px] text-center font-[Satoshi-medium] text-sm font-medium tracking-[0.96px] md:max-w-[352px] md:text-base">
           We&apos;re opening up limited spots for first-time clients this{" "}
           {targetDate
-            ? targetDate.toLocaleDateString("en-US", { month: "long" })
+            ? targetDate.toLocaleDateString("en-US", {
+                month: "long",
+                timeZone: "America/New_York",
+              })
             : "month"}
           .
         </p>
@@ -162,10 +165,21 @@ export function PopupModal() {
               Just in time for summer entertaining. <br />
               Expires{" "}
               {targetDate
-                ? targetDate.toLocaleDateString("en-US", {
-                    month: "long",
-                    day: "numeric",
-                  })
+                ? (() => {
+                    const day = targetDate.getDate();
+                    const suffix =
+                      day === 1 || day === 21 || day === 31
+                        ? "st"
+                        : day === 2 || day === 22
+                          ? "nd"
+                          : day === 3 || day === 23
+                            ? "rd"
+                            : "th";
+                    return `${targetDate.toLocaleDateString("en-US", {
+                      month: "long",
+                      timeZone: "America/New_York",
+                    })} ${day}${suffix}`;
+                  })()
                 : "soon"}
               . Countdown&apos;s ticking.
             </p>

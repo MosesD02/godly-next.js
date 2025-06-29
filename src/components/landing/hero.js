@@ -33,9 +33,6 @@ const Hero = ({ service }) => {
             </span>
           </div>
           <div className="flex items-center justify-start gap-3">
-            <span className="font-marlton trim text-base tracking-[2.07px] text-[#FDE4C8] md:text-base xl:text-[20.704px]">
-              TOP RATED
-            </span>
             <div className="trim flex items-center gap-[3.774px]">
               <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
               <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
@@ -43,6 +40,9 @@ const Hero = ({ service }) => {
               <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
               <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
             </div>
+            <span className="font-marlton trim text-base tracking-[2.07px] text-[#FDE4C8] md:text-base xl:text-[20.704px]">
+              93 Reviews
+            </span>
           </div>
           <h1 className="sr-only">{generateHomeH1()}</h1>
           <div

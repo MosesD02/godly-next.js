@@ -157,7 +157,7 @@ const Services = {
       },
       {
         number: "02.",
-        title: "Commertial Window Cleaning",
+        title: "Commercial Window Cleaning",
         text: "Regular cleaning for stores, offices, restaurants, hotels, healthcare facilities, and schools to keep an inviting environment.",
       },
       {
@@ -228,7 +228,7 @@ const Services = {
       },
       {
         number: "02.",
-        title: "Commertial Window Cleaning",
+        title: "Commercial Window Cleaning",
         text: "Regular cleaning for stores, offices, restaurants, hotels, healthcare facilities, and schools to keep an inviting environment.",
       },
       {
