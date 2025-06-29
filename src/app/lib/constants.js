@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://godlywindows.com'
+export const BASE_URL = "https://godlywindows.com";

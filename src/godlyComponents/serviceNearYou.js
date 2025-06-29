@@ -98,9 +98,7 @@ const ServiceNearYou = ({ slug }) => {
     <div className="fourstepprocess paper-bg-16 bg-[#262424] pb-24! md:pb-0">
       <div className="fourstepprocess-inner">
         <div className="w-full text-center">
-          <h2 className="sr-only">
-            {headings.h2ServicesNearYou}
-          </h2>
+          <h2 className="sr-only">{headings.h2ServicesNearYou}</h2>
           <div
             className="text-grain mx-auto !bg-[#FDE4C8] text-center text-[32px] md:text-6xl"
             data-text={

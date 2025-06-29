@@ -7,14 +7,14 @@ export const metadata = {
   title: homeTitle,
   description: homeDescription,
   keywords: [
-    'window cleaning South Florida',
-    'pressure washing South Florida',
-    'exterior cleaning services',
-    'residential cleaning',
-    'commercial cleaning',
-    'house washing',
-    'gutter cleaning',
-    'roof cleaning'
+    "window cleaning South Florida",
+    "pressure washing South Florida",
+    "exterior cleaning services",
+    "residential cleaning",
+    "commercial cleaning",
+    "house washing",
+    "gutter cleaning",
+    "roof cleaning",
   ],
   openGraph: {
     title: homeTitle,
@@ -46,69 +46,71 @@ export const metadata = {
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Godly Windows",
-  "image": "https://godlywindows.com/favicon.svg",
-  "description": "Professional window cleaning and pressure washing services in South Florida",
-  "url": "https://godlywindows.com",
-  "telephone": "+1-555-GODLY-WIN",
-  "address": {
+  name: "Godly Windows",
+  image: "https://godlywindows.com/favicon.svg",
+  description:
+    "Professional window cleaning and pressure washing services in South Florida",
+  url: "https://godlywindows.com",
+  telephone: "+1-555-GODLY-WIN",
+  address: {
     "@type": "PostalAddress",
-    "addressRegion": "FL",
-    "addressCountry": "US"
+    addressRegion: "FL",
+    addressCountry: "US",
   },
-  "geo": {
+  geo: {
     "@type": "GeoCoordinates",
-    "latitude": "26.1224",
-    "longitude": "-80.1373"
+    latitude: "26.1224",
+    longitude: "-80.1373",
   },
-  "openingHoursSpecification": [
+  openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "08:00",
-      "closes": "18:00"
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "18:00",
     },
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Saturday"],
-      "opens": "08:00",
-      "closes": "16:00"
-    }
+      dayOfWeek: ["Saturday"],
+      opens: "08:00",
+      closes: "16:00",
+    },
   ],
-  "serviceArea": {
+  serviceArea: {
     "@type": "State",
-    "name": "Florida"
+    name: "Florida",
   },
-  "hasOfferCatalog": {
+  hasOfferCatalog: {
     "@type": "OfferCatalog",
-    "name": "Cleaning Services",
-    "itemListElement": [
+    name: "Cleaning Services",
+    itemListElement: [
       {
         "@type": "Offer",
-        "itemOffered": {
+        itemOffered: {
           "@type": "Service",
-          "name": "Window Cleaning",
-          "description": "Professional exterior and interior window cleaning services"
-        }
+          name: "Window Cleaning",
+          description:
+            "Professional exterior and interior window cleaning services",
+        },
       },
       {
         "@type": "Offer",
-        "itemOffered": {
+        itemOffered: {
           "@type": "Service",
-          "name": "Pressure Washing",
-          "description": "House washing and exterior pressure cleaning services"
-        }
+          name: "Pressure Washing",
+          description: "House washing and exterior pressure cleaning services",
+        },
       },
       {
         "@type": "Offer",
-        "itemOffered": {
+        itemOffered: {
           "@type": "Service",
-          "name": "Gutter Cleaning",
-          "description": "Professional gutter cleaning and maintenance services"
-        }
-      }
-    ]
-  }
+          name: "Gutter Cleaning",
+          description: "Professional gutter cleaning and maintenance services",
+        },
+      },
+    ],
+  },
 };
 
 export default function Home() {

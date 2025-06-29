@@ -69,7 +69,7 @@ const Hero = ({ service }) => {
               {city}
             </span> */}
             <h3 className="font-marlton trim w-full shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
-              {formatCity(city)}’s #1 Trusted Window Cleaning – Backed by Our
+              {formatCity(city)}’s #1 Trusted Window Washers – Backed by Our
               100% Satisfaction Guarantee
             </h3>
           </div>

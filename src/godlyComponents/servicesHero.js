@@ -13,12 +13,10 @@ const ServicesHero = ({ slug }) => {
   const { city } = useGodlyContext();
   const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
   const cityName = citiesMap[cityKey];
-  
+
   return (
     <div className="paper-bg-16 mt-17 flex flex-col items-center justify-center gap-20 bg-[#252525] px-[30px] py-[42px] md:mt-14 md:py-[100px]">
-      <h1 className="sr-only">
-        {generateServiceH1(slug, cityName)}
-      </h1>
+      <h1 className="sr-only">{generateServiceH1(slug, cityName)}</h1>
       <div className="flex flex-col items-center justify-center gap-4">
         <div className="flex items-center justify-start gap-3">
           <span className="font-marlton trim text-base tracking-[2.07px] text-[#FDE4C8] md:text-[20.704px]">

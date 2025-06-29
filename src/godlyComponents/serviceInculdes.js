@@ -12,7 +12,7 @@ const ServiceIncludes = ({ slug }) => {
   const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
   const cityName = citiesMap[cityKey];
   const headings = generateServiceSectionHeadings(slug, cityName);
-  
+
   // Add state to track active card
   const [activeCard, setActiveCard] = useState(null);
 
@@ -28,9 +28,7 @@ const ServiceIncludes = ({ slug }) => {
       style={{ backgroundImage: `url(${background.src})` }}
     >
       <div className="md:w-full md:max-w-[854px] md:py-10">
-        <h2 className="sr-only">
-          {headings.h2WhatIncluded}
-        </h2>
+        <h2 className="sr-only">{headings.h2WhatIncluded}</h2>
         <div className="trim m-0 w-full p-0 text-center text-[36px] leading-tight font-normal tracking-wide text-[#191717] before:inset-0 md:text-[64px] md:leading-tight">
           <span className="text-grain !bg-[#191717]" data-text="WHAT'S">
             WHAT&apos;S

@@ -6,22 +6,22 @@ import { generateCityTitle, generateCityDescription } from "@/data/metaTitles";
 export async function generateMetadata({ params }) {
   const { city } = await params;
   const cityName = citiesMap[city];
-  
+
   const title = generateCityTitle(cityName);
   const description = generateCityDescription(cityName);
-  
+
   return {
     title,
     description,
     keywords: [
-      'window cleaning',
-      'pressure washing',
-      'exterior cleaning',
-      cityName || 'South Florida',
-      'residential services',
-      'commercial cleaning',
-      'house washing',
-      'gutter cleaning'
+      "window cleaning",
+      "pressure washing",
+      "exterior cleaning",
+      cityName || "South Florida",
+      "residential services",
+      "commercial cleaning",
+      "house washing",
+      "gutter cleaning",
     ],
     openGraph: {
       title,

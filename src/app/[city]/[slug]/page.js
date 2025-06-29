@@ -1,25 +1,28 @@
 import ServicesPage from "@/godlyComponents/servicesPage";
 import { citiesMap } from "@/data/cities";
-import { generateServiceTitle, generateServiceDescription } from "@/data/metaTitles";
+import {
+  generateServiceTitle,
+  generateServiceDescription,
+} from "@/data/metaTitles";
 
 // Dynamic metadata generation for service pages
 export async function generateMetadata({ params }) {
   const { slug, city } = await params;
   const cityName = citiesMap[city];
-  
+
   const title = generateServiceTitle(slug, cityName);
   const description = generateServiceDescription(slug, cityName);
-  
+
   return {
     title,
     description,
     keywords: [
-      slug.replace(/-/g, ' '),
-      cityName || 'South Florida',
-      'professional cleaning',
-      'exterior services',
-      'residential',
-      'commercial'
+      slug.replace(/-/g, " "),
+      cityName || "South Florida",
+      "professional cleaning",
+      "exterior services",
+      "residential",
+      "commercial",
     ],
     openGraph: {
       title,

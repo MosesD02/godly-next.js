@@ -28,10 +28,12 @@ const Hero = () => {
               <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
             </div>
           </div>
-          <h1 className="sr-only">
-            {generateHomeH1()}
-          </h1>
-          <div className="flex flex-wrap items-center gap-4 xl:gap-8" role="heading" aria-level="1">
+          <h1 className="sr-only">{generateHomeH1()}</h1>
+          <div
+            className="flex flex-wrap items-center gap-4 xl:gap-8"
+            role="heading"
+            aria-level="1"
+          >
             <span className="flex flex-wrap items-center gap-2">
               <span className="font-marlton trim shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
                 Window cleaning
