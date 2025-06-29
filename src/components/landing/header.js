@@ -142,7 +142,13 @@ const Header = () => {
         {" "}
         <div className="gradient-bg relative items-center justify-center !bg-[#9B4531] p-4 text-center text-sm font-semibold text-white md:text-lg">
           <p className="relative z-10 font-light">
-            Get Spotless Windows + a FREE RainShield Treatment this June Only.
+            Get Spotless Windows + a FREE RainShield Treatment this{" "}
+            {new Date(
+              new Date().toLocaleString("en-US", {
+                timeZone: "America/New_York",
+              }),
+            ).toLocaleString("en-US", { month: "long" })}{" "}
+            Only.
           </p>
         </div>
         <div className="flex w-full flex-col items-center justify-between gap-4 bg-[#252323] p-4 lg:flex-row lg:px-6 lg:py-0">

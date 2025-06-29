@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+"use client";
 
+import React, { useEffect, useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -37,13 +38,27 @@ export function PopupModal() {
     seconds: 0,
   });
   const [isExpired, setIsExpired] = useState(false);
+  const [targetDate, setTargetDate] = useState(null);
 
   useEffect(() => {
-    const targetDate = new Date("2025-07-01T00:00:00");
+    // South Florida is in Eastern Time - create end of month in ET
+    const now = new Date();
+
+    // Get current date in Eastern Time
+    const easternTime = new Date(
+      now.toLocaleString("en-US", { timeZone: "America/New_York" }),
+    );
+    const year = easternTime.getFullYear();
+    const month = easternTime.getMonth();
+
+    // Create end of current month in Eastern Time (11:59:59 PM)
+    const endOfMonth = new Date(year, month + 1, 0, 23, 59, 59, 999);
+
+    setTargetDate(endOfMonth);
 
     const updateTimer = () => {
       const now = new Date();
-      const difference = targetDate - now;
+      const difference = endOfMonth - now;
 
       if (difference <= 0) {
         setIsExpired(true);
@@ -96,7 +111,11 @@ export function PopupModal() {
           </span>
         </h2>
         <p className="mx-auto max-w-[272px] text-center font-[Satoshi-medium] text-sm font-medium tracking-[0.96px] md:max-w-[352px] md:text-base">
-          We’re opening up limited spots for first-time clients this June.
+          We&apos;re opening up limited spots for first-time clients this{" "}
+          {targetDate
+            ? targetDate.toLocaleDateString("en-US", { month: "long" })
+            : "month"}
+          .
         </p>
 
         <div className="mt-3 mb-2 flex flex-col gap-[24px]">
@@ -141,7 +160,14 @@ export function PopupModal() {
             <div className="h-[1px] w-full bg-[#CCCACA]" />
             <p className="px-[6px] py-[15px] text-center font-[Satoshi-medium] text-sm font-medium tracking-[0.96px] md:text-base">
               Just in time for summer entertaining. <br />
-              Expires July 1st. Countdown&apos;s ticking.
+              Expires{" "}
+              {targetDate
+                ? targetDate.toLocaleDateString("en-US", {
+                    month: "long",
+                    day: "numeric",
+                  })
+                : "soon"}
+              . Countdown&apos;s ticking.
             </p>
           </div>
         </div>
