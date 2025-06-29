@@ -103,7 +103,7 @@ const SingleReview = () => {
                 </p>
                 <div className="relative flex flex-col gap-[40px]">
                   <h3
-                    className="trimtext-[28px] tracking-[2px] md:text-[72px]"
+                    className="trim text-[28px] tracking-[2px] md:text-[72px]"
                     data-text="The Best Windows Cleaning Company in Florida!"
                   >
                     &quot;{item.text}&quot;
