@@ -42,24 +42,26 @@ export const getPhoneNumber = (city) => {
   }
 };
 
-const Footer = () => {
+const Footer = ({ form = true }) => {
   return (
     <div className="w-full flex-col bg-[#312E2C] md:flex">
       <div className="item-center mx-auto flex w-full max-w-[1440px] flex-col items-center justify-center gap-10 px-6 py-[48px] md:px-[40px]">
-        <div className="flex max-w-[1000px] flex-col items-center justify-center gap-6">
-          <h1
-            className="text-grain trim my-6 !bg-white text-center text-[18px] leading-[72px] tracking-[4.3px] text-white sm:text-[28px] md:text-[64px]"
-            data-text="No hard sells. No spam. Just a fast, honest quote from a local, family-owned business."
-          >
-            No hard sells. No spam. Just a fast, honest quote from a local,
-            family-owned business.
-          </h1>
-          {/* <p className="text-center font-['satoshi-regular'] text-[20px] font-medium text-white">
+        {form && (
+          <div className="flex max-w-[1000px] flex-col items-center justify-center gap-6">
+            <h4
+              className="text-grain trim my-6 !bg-white text-center text-[18px] leading-[72px] tracking-[4.3px] text-white sm:text-[28px] md:text-[64px]"
+              data-text="No hard sells. No spam. Just a fast, honest quote from a local, family-owned business."
+            >
+              No hard sells. No spam. Just a fast, honest quote from a local,
+              family-owned business.
+            </h4>
+            {/* <p className="text-center font-['satoshi-regular'] text-[20px] font-medium text-white">
             we specialize in window washing, room washing, soft washing, paver
             sealing, and more.
           </p> */}
-          <QuoteForm />
-        </div>
+            <QuoteForm />
+          </div>
+        )}
         <div
           className="justify-content-center align-center flex"
           style={{ justifyContent: "center" }}

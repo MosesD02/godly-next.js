@@ -124,6 +124,22 @@ export default function QuoteForm({ isDialog, service }) {
         },
       );
 
+      await fetch(
+        "https://hook.us1.make.com/ivm6g245bvvfk1k72ygb9lq83dubrl4m",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            service: formData.services,
+            date: date ? format(date, "MM/dd/yyyy") : null,
+            zipcode: formData.zipcode,
+            utm_source: "google ads",
+          }),
+        },
+      );
+
       setSubmitStatus("success");
       setShowSuccessDialog(true);
 

@@ -22,6 +22,12 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${BASE_URL}/booking`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/privacy-policy`,
       lastModified: now,
       changeFrequency: "yearly",
