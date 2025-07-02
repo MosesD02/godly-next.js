@@ -5,7 +5,7 @@ import QuoteForm from "./quoteForm";
 import { useGodlyContext } from "@/context/godlyContext";
 import { generateHomeH1 } from "@/data/metaTitles";
 
-const Hero = ({ service }) => {
+const Hero = ({ service, source }) => {
   const { city } = useGodlyContext();
 
   const formatCity = (city) => {
@@ -83,7 +83,7 @@ const Hero = ({ service }) => {
             Only.
           </p>
         </div>
-        <QuoteForm service={service} />
+        <QuoteForm service={service} source={source} />
       </div>
     </div>
   );

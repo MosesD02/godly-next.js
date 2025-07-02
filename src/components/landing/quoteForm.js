@@ -8,7 +8,7 @@ import QuoteButton from "@/components/quoteButton";
 import Airtable from "airtable";
 import { cn } from "@/lib/utils";
 
-export default function QuoteForm({ isDialog, service }) {
+export default function QuoteForm({ isDialog, service, source }) {
   const [date, setDate] = useState();
   const [formData, setFormData] = useState({
     name: "",
@@ -111,6 +111,9 @@ export default function QuoteForm({ isDialog, service }) {
       await fetch(
         "https://hook.us1.make.com/r3kgolabx4r2luoyc39npw095bbtytl7",
         {
+          headers: {
+            "Content-Type": "application/json",
+          },
           method: "POST",
           body: JSON.stringify({
             name: formData.name,
@@ -128,6 +131,9 @@ export default function QuoteForm({ isDialog, service }) {
         "https://hook.us1.make.com/ivm6g245bvvfk1k72ygb9lq83dubrl4m",
         {
           method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
           body: JSON.stringify({
             name: formData.name,
             email: formData.email,
@@ -135,7 +141,7 @@ export default function QuoteForm({ isDialog, service }) {
             service: formData.services,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
-            utm_source: "google ads",
+            utm_source: source || "google ads",
           }),
         },
       );
