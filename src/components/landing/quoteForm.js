@@ -146,6 +146,23 @@ export default function QuoteForm({ isDialog, service, source }) {
         },
       );
 
+      if (typeof window !== "undefined" && window.gtag) {
+        const gtag = window.gtag;
+
+        gtag("event", "quote_form_submission", {
+          event_category: "engagement",
+          event_label: "Quote Form Submission",
+          value: 1,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: service,
+          date: date ? format(date, "MM/dd/yyyy") : null,
+          zipcode: formData.zipcode,
+          source: source || "google ads",
+        });
+      }
+
       setSubmitStatus("success");
       setShowSuccessDialog(true);
 

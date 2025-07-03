@@ -1,7 +1,7 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import React from "react";
 import "@/styles/fourstepprocess.css";
 import Image from "next/image";
 import spark from "@/assets/spark.webp";
@@ -103,21 +103,6 @@ const FourStepProcess = () => {
     },
   ];
 
-  // Add state to track active badges
-  const [activeBadges, setActiveBadges] = useState([false, false]);
-
-  // Toggle function to handle touch interactions for badges
-  const toggleBadge = (index) => {
-    setActiveBadges((prev) => {
-      // If the clicked badge is already active, deactivate all badges
-      if (prev[index]) {
-        return prev.map(() => false);
-      }
-      // Otherwise, deactivate all badges and activate only the clicked one
-      return prev.map((_, i) => i === index);
-    });
-  };
-
   return (
     <div className="fourstepprocess" id="about">
       <div className="fourstepprocess-inner relative flex flex-col items-center justify-center gap-[100px] md:gap-44">
@@ -198,11 +183,9 @@ const FourStepProcess = () => {
         <div className="relative -mt-4 flex flex-col items-center justify-center gap-2 p-8 md:mb-10">
           <Badge
             text="7 day Sparkle Guarantee"
-            className={`sparks z-20 ${"rotate-[2.226deg]"} hover:rotate`}
+            className={`sparks z-20 ${"rotate-[2.226deg]"}`}
             sparks
             image={spark}
-            isActive={activeBadges[0]}
-            onClick={() => toggleBadge(0)}
           />
           <Badge
             text="Hard Water Stain Removal"
@@ -210,8 +193,6 @@ const FourStepProcess = () => {
             drops
             starClassName={"rotate-0"}
             image={drop}
-            isActive={activeBadges[1]}
-            onClick={() => toggleBadge(1)}
           />
           <div className="absolute right-2 -bottom-2 scale-75 -rotate-5 md:-bottom-0 md:scale-100">
             <Icon />
@@ -234,11 +215,10 @@ const Badge = ({
 }) => (
   <div
     className={cn(
-      "dashed-border-hover group flex w-fit cursor-pointer items-center gap-2 rounded-[6px] px-2 py-4 shadow-[0px_4px_37.6px_0px_#1C1C1C] transition-transform duration-300 ease-in-out md:px-4 md:py-6",
+      "group flex w-fit cursor-pointer items-center gap-2 rounded-[6px] px-2 py-4 shadow-[0px_4px_37.6px_0px_#1C1C1C] transition-transform duration-300 ease-in-out md:px-4 md:py-6",
       isActive
         ? "dashed-border transform-[translate(-4px,-12px)] bg-[#111010] text-white shadow-[0px_4px_37px_0px_#1C1C1C]"
         : "bg-[#2D2B2B] text-white",
-      "hover:transform-[translate(-4px,-12px)] hover:bg-[#111010] hover:shadow-[0px_4px_37px_0px_#1C1C1C]",
       className,
     )}
     onClick={onClick}
@@ -256,7 +236,7 @@ const Badge = ({
             alt="spark"
             src={image}
             className={cn(
-              "absolute -top-1 left-0.5 size-2.5 rotate-[15deg] object-contain opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100",
+              "absolute -top-1 left-0.5 size-2.5 rotate-[15deg] object-contain opacity-0 transition-all duration-300 ease-in-out",
               isActive ? "opacity-100" : "",
             )}
           />
@@ -264,7 +244,7 @@ const Badge = ({
             alt="spark"
             src={image}
             className={cn(
-              "absolute top-0.5 right-0 size-2 rotate-[-15deg] object-contain opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100",
+              "absolute top-0.5 right-0 size-2 rotate-[-15deg] object-contain opacity-0 transition-all duration-300 ease-in-out",
               isActive ? "opacity-100" : "",
             )}
           />
@@ -276,7 +256,7 @@ const Badge = ({
             alt="spark"
             src={image}
             className={cn(
-              "absolute top-0 size-2.5 -translate-x-3.5 object-contain opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100",
+              "absolute top-0 size-2.5 -translate-x-3.5 object-contain opacity-0 transition-all duration-300 ease-in-out",
               isActive ? "opacity-100" : "",
             )}
           />
@@ -284,7 +264,7 @@ const Badge = ({
             alt="spark"
             src={image}
             className={cn(
-              "absolute bottom-0 size-2 translate-x-4 object-contain opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100",
+              "absolute bottom-0 size-2 translate-x-4 object-contain opacity-0 transition-all duration-300 ease-in-out",
               isActive ? "opacity-100" : "",
             )}
           />
@@ -295,7 +275,7 @@ const Badge = ({
         src={image}
         className={cn(
           "relative z-20 size-6 object-contain transition-transform duration-500 md:h-auto md:w-auto",
-          sparks && "group-hover:rotate-[15deg]",
+          sparks && "",
           isActive ? "rotate-[15deg]" : "",
         )}
       />
@@ -314,7 +294,7 @@ const Badge = ({
           isActive
             ? "text-shadow-[0px_0px_1.75px_#FFF] md:text-shadow-[0px_1px_2.9px_#FFF]"
             : ""
-        } group-hover:text-shadow-[0px_0px_1.75px_#FFF] md:text-[28px] md:group-hover:text-shadow-[0px_1px_2.9px_#FFF]`}
+        } md:text-[28px]`}
       >
         {text}
       </span>

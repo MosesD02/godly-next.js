@@ -160,6 +160,23 @@ export default function QuoteForm({ isDialog }) {
         },
       );
 
+      if (typeof window !== "undefined" && window.gtag) {
+        const gtag = window.gtag;
+
+        gtag("event", "quote_form_submission", {
+          event_category: "engagement",
+          event_label: "Quote Form Submission",
+          value: 1,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          services: [formData.services],
+          date: date ? format(date, "MM/dd/yyyy") : null,
+          zipcode: formData.zipcode,
+          source: "organic",
+        });
+      }
+
       setSubmitStatus("success");
       setShowSuccessDialog(true);
 
