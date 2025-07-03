@@ -15,6 +15,7 @@ import TeamGallery from "./teamGallery";
 import { useGodlyContext } from "@/context/godlyContext";
 
 import { citiesMap } from "./header/CitiesPopup";
+import { PopupModal } from "@/components/popup-modal";
 
 export default function GodlyHome({ city }) {
   const { setCity } = useGodlyContext();
@@ -38,6 +39,7 @@ export default function GodlyHome({ city }) {
       <HowItWorks />
       <Savings />
       <Location />
+      <PopupModal />
     </WebsiteLayout>
   );
 }
