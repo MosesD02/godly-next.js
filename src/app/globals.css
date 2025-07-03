@@ -808,8 +808,7 @@ html body[data-scroll-locked]:not(#_):not(#_):not(#_) {
 }
 
 .hero-banner-bg {
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0) 35.59%, #1f1d1d 66.5%),
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.59%, #1f1d1d 66.5%),
     linear-gradient(270deg, #1f1d1d 0%, rgba(0, 0, 0, 0) 53.56%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     #1f1d1d;
