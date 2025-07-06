@@ -90,6 +90,14 @@ export function PopupModal() {
 
     const timeout = setTimeout(() => {
       setIsOpen(true);
+      // Track popup auto-open
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "popup_modal_auto_open", {
+          event_category: "engagement",
+          event_label: "Popup Modal Auto Open",
+          value: 1
+        });
+      }
     }, 7000);
 
     return () => clearTimeout(timeout);
@@ -197,7 +205,18 @@ export function PopupModal() {
             </div>
           </div>
           <DialogClose asChild>
-            <QuoteButton className="quote-button py-4! text-[24px]! md:py-6!">
+            <QuoteButton 
+              className="quote-button py-4! text-[24px]! md:py-6!"
+              onClick={() => {
+                if (typeof window !== "undefined" && window.gtag) {
+                  window.gtag("event", "popup_modal_quote_click", {
+                    event_category: "engagement",
+                    event_label: "Popup Modal Quote Button Click",
+                    value: 1
+                  });
+                }
+              }}
+            >
               Get My Quote
             </QuoteButton>
           </DialogClose>
@@ -211,10 +230,19 @@ export function PopupModal() {
           <button>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/take-15-off.png"
+              src="/assets/save_59_off.png"
               alt="Take 15% Off"
               className="h-[191px] w-[50px] cursor-pointer object-cover"
-              onClick={() => setIsOpen(true)}
+              onClick={() => {
+                setIsOpen(true);
+                if (typeof window !== "undefined" && window.gtag) {
+                  window.gtag("event", "popup_floating_button_click", {
+                    event_category: "engagement",
+                    event_label: "Popup Floating Button Click",
+                    value: 1
+                  });
+                }
+              }}
             />
           </button>
         </div>

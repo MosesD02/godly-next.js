@@ -16,7 +16,19 @@ export default function ServiceButton() {
 
   return (
     <>
-      <div onClick={() => setIsOpen(true)} className="cursor-pointer">
+      <div 
+        onClick={() => {
+          setIsOpen(true);
+          if (typeof window !== "undefined" && window.gtag) {
+            window.gtag("event", "service_button_click", {
+              event_category: "engagement",
+              event_label: "Service Button Click - Get Quote",
+              value: 1
+            });
+          }
+        }} 
+        className="cursor-pointer"
+      >
         <div
           className="shadow-[0px 1px 1px 0px rgba(0, 0, 0, 0.25) inset, 0px -1px 1.2px 0px rgba(255, 255, 255, 0.03), 0px 2px 2.6px 0px rgba(0, 0, 0, 0.30)] relative h-[14.4px] w-32 rounded-[3px] border-[0.4px] border-[#000] bg-[#1b1b1b] bg-repeat"
           style={{ backgroundImage: `url(${grainBg.src})` }}

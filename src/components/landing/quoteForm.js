@@ -64,6 +64,18 @@ export default function QuoteForm({ isDialog, service, source }) {
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
 
+    // Track form interaction on first input
+    if (name === "name" && value.length === 1) {
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "quote_form_started", {
+          event_category: "engagement",
+          event_label: "Quote Form Started",
+          form_location: "landing_page",
+          service: service || "unknown"
+        });
+      }
+    }
+
     if (name === "phone") {
       const formattedPhone = formatPhoneNumber(value);
       setFormData((prev) => ({

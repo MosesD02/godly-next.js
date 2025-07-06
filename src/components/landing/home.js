@@ -24,7 +24,19 @@ export default function GodlyHome({ city, service }) {
       const formattedCity = citiesMap[city];
       setCity(formattedCity);
     }
-  }, [city, setCity]);
+
+    // Track landing page view
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "page_view_landing", {
+        event_category: "page_views",
+        event_label: "Landing Page View",
+        page_title: `Landing Page - ${service || "Unknown Service"} in ${city || "Unknown City"}`,
+        page_location: window.location.href,
+        service: service || "unknown",
+        city: city || "unknown"
+      });
+    }
+  }, [city, service, setCity]);
 
   return (
     <WebsiteLayout>

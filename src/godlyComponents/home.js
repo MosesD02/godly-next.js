@@ -25,6 +25,17 @@ export default function GodlyHome({ city }) {
       const formattedCity = citiesMap[city];
       setCity(formattedCity);
     }
+
+    // Track main page view
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "page_view_main", {
+        event_category: "page_views",
+        event_label: "Main Page View",
+        page_title: "Main Page",
+        page_location: window.location.href,
+        city: city || "unknown"
+      });
+    }
   }, [city, setCity]);
 
   return (
