@@ -33,7 +33,7 @@ export default function GodlyHome({ city }) {
         event_label: "Main Page View",
         page_title: "Main Page",
         page_location: window.location.href,
-        city: city || "unknown"
+        city: city || "unknown",
       });
     }
   }, [city, setCity]);

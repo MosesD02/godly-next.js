@@ -95,7 +95,7 @@ export function PopupModal() {
         window.gtag("event", "popup_modal_auto_open", {
           event_category: "engagement",
           event_label: "Popup Modal Auto Open",
-          value: 1
+          value: 1,
         });
       }
     }, 7000);
@@ -205,14 +205,14 @@ export function PopupModal() {
             </div>
           </div>
           <DialogClose asChild>
-            <QuoteButton 
+            <QuoteButton
               className="quote-button py-4! text-[24px]! md:py-6!"
               onClick={() => {
                 if (typeof window !== "undefined" && window.gtag) {
                   window.gtag("event", "popup_modal_quote_click", {
                     event_category: "engagement",
                     event_label: "Popup Modal Quote Button Click",
-                    value: 1
+                    value: 1,
                   });
                 }
               }}
@@ -239,7 +239,7 @@ export function PopupModal() {
                   window.gtag("event", "popup_floating_button_click", {
                     event_category: "engagement",
                     event_label: "Popup Floating Button Click",
-                    value: 1
+                    value: 1,
                   });
                 }
               }}

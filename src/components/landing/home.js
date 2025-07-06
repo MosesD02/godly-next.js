@@ -33,7 +33,7 @@ export default function GodlyHome({ city, service }) {
         page_title: `Landing Page - ${service || "Unknown Service"} in ${city || "Unknown City"}`,
         page_location: window.location.href,
         service: service || "unknown",
-        city: city || "unknown"
+        city: city || "unknown",
       });
     }
   }, [city, service, setCity]);

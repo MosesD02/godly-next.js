@@ -16,17 +16,17 @@ export default function ServiceButton() {
 
   return (
     <>
-      <div 
+      <div
         onClick={() => {
           setIsOpen(true);
           if (typeof window !== "undefined" && window.gtag) {
             window.gtag("event", "service_button_click", {
               event_category: "engagement",
               event_label: "Service Button Click - Get Quote",
-              value: 1
+              value: 1,
             });
           }
-        }} 
+        }}
         className="cursor-pointer"
       >
         <div

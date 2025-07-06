@@ -90,7 +90,7 @@ export default function QuoteForm({ isDialog }) {
         window.gtag("event", "quote_form_started", {
           event_category: "engagement",
           event_label: "Quote Form Started",
-          form_location: "main_page"
+          form_location: "main_page",
         });
       }
     }

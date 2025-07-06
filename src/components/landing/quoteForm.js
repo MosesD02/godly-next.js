@@ -71,7 +71,7 @@ export default function QuoteForm({ isDialog, service, source }) {
           event_category: "engagement",
           event_label: "Quote Form Started",
           form_location: "landing_page",
-          service: service || "unknown"
+          service: service || "unknown",
         });
       }
     }
