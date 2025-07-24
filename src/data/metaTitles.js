@@ -1,3 +1,6 @@
+import { customMetaData } from './customMetaData.js';
+import { citiesMap } from './cities.js';
+
 // SEO-optimized meta titles for services and locations
 export const serviceMetaTitles = {
   "solar-panel-cleaning": "Solar Panel Cleaning",
@@ -26,8 +29,23 @@ function capitalizeString(str) {
     .join(" ");
 }
 
+// Helper function to find city slug from city name
+const findCitySlug = (cityName) => {
+  if (!cityName) return '';
+  // Find the slug key that maps to this city name
+  return Object.keys(citiesMap).find(slug => citiesMap[slug] === cityName) || '';
+};
+
 // Generate SEO-optimized title for service pages
 export const generateServiceTitle = (serviceSlug, cityName) => {
+  // Check for custom meta data first - need to find the city slug
+  const citySlug = findCitySlug(cityName);
+  
+  if (citySlug && customMetaData[citySlug]?.services?.[serviceSlug]?.title) {
+    return customMetaData[citySlug].services[serviceSlug].title;
+  }
+
+  // Fall back to original template logic
   const serviceName = serviceMetaTitles[serviceSlug];
 
   if (!serviceName) {
@@ -49,6 +67,14 @@ export const generateServiceTitle = (serviceSlug, cityName) => {
 
 // Generate SEO-optimized title for city home pages
 export const generateCityTitle = (cityName) => {
+  // Check for custom meta data first - need to find the city slug
+  const citySlug = findCitySlug(cityName);
+  
+  if (citySlug && customMetaData[citySlug]?.cityPage?.title) {
+    return customMetaData[citySlug].cityPage.title;
+  }
+
+  // Fall back to original template logic
   if (!cityName) {
     return "Window Cleaning & Pressure Washing Services in South Florida";
   }
@@ -92,6 +118,14 @@ const serviceDescriptions = {
 
 // Generate SEO-optimized meta description for service pages
 export const generateServiceDescription = (serviceSlug, cityName) => {
+  // Check for custom meta data first - need to find the city slug
+  const citySlug = findCitySlug(cityName);
+  
+  if (citySlug && customMetaData[citySlug]?.services?.[serviceSlug]?.description) {
+    return customMetaData[citySlug].services[serviceSlug].description;
+  }
+
+  // Fall back to original template logic
   const baseDescription = serviceDescriptions[serviceSlug];
   const location = cityName ? capitalizeString(cityName) : "South Florida";
 
@@ -108,6 +142,14 @@ export const generateServiceDescription = (serviceSlug, cityName) => {
 
 // Generate SEO-optimized meta description for city home pages
 export const generateCityDescription = (cityName) => {
+  // Check for custom meta data first - need to find the city slug
+  const citySlug = findCitySlug(cityName);
+  
+  if (citySlug && customMetaData[citySlug]?.cityPage?.description) {
+    return customMetaData[citySlug].cityPage.description;
+  }
+
+  // Fall back to original template logic
   const location = cityName ? capitalizeString(cityName) : "South Florida";
 
   return `Window cleaning & pressure washing in ${location}. Professional exterior cleaning services for homes & businesses. Free estimates & satisfaction guarantee.`;
