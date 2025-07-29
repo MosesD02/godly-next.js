@@ -12,6 +12,7 @@ import Promise from "./promise";
 import Hero from "./hero";
 import WebsiteLayout from "./websiteLayout";
 import TeamGallery from "./teamGallery";
+import ParklandCta from "./parklandCta";
 import { useGodlyContext } from "@/context/godlyContext";
 
 import { citiesMap } from "./header/CitiesPopup";
@@ -50,6 +51,7 @@ export default function GodlyHome({ city }) {
       <HowItWorks />
       <Savings />
       <Location />
+      <ParklandCta />
       <PopupModal />
     </WebsiteLayout>
   );

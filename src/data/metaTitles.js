@@ -83,7 +83,7 @@ export const generateCityTitle = (cityName) => {
 };
 
 // Home page optimized title
-export const homeTitle =
+export const homeTitle = customMetaData.homepage?.main?.title || 
   "Window Cleaning & Pressure Washing Services in South Florida";
 
 // Service-specific meta description templates (optimized for 140-160 chars)
@@ -156,7 +156,7 @@ export const generateCityDescription = (cityName) => {
 };
 
 // Home page optimized description
-export const homeDescription =
+export const homeDescription = customMetaData.homepage?.main?.description ||
   "Window cleaning & pressure washing in South Florida. Professional exterior cleaning services for homes & businesses. Free estimates & satisfaction guarantee.";
 
 // SEO-optimized heading structure functions

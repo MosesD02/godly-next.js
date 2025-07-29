@@ -7,101 +7,143 @@ import Image from "next/image";
 import spark from "../assets/spark.webp";
 import drop from "../assets/drop.webp";
 import { cn } from "@/lib/utils";
+import { useGodlyContext } from "@/context/godlyContext";
 
 const FourStepProcess = () => {
-  const steps = [
-    {
-      number: "01",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="73"
-          height="73"
-          viewBox="0 0 73 73"
-          fill="none"
-        >
-          <g clipPath="url(#clip0_2203_3848)">
-            <path
-              d="M72.5355 38.5952C72.5355 36.1224 70.5242 34.1111 68.0514 34.1111L18.9127 34.1113V30.4695C18.9127 28.7372 20.3215 27.3284 22.0539 27.3284H60.9416C64.3255 27.3284 67.0802 24.577 67.0802 21.1898C67.0802 17.8027 64.3256 15.0512 60.9386 15.0512L20.8909 15.0508C13.0438 15.0508 6.66243 21.4322 6.66243 29.2792V34.1111H5.67942C3.2066 34.1111 1.19531 36.1224 1.19531 38.5952C1.19531 40.4086 2.28048 41.9642 3.83299 42.6716V55.6801C3.83299 56.2047 4.10579 56.6873 4.55235 56.9601C4.79214 57.1069 5.0619 57.1788 5.33167 57.1788C5.56841 57.1788 5.80235 57.1219 6.018 57.0109L11.6469 54.1066L17.2789 57.0109C17.4976 57.1247 17.7315 57.1788 17.9652 57.1788C18.202 57.1788 18.4359 57.1219 18.6516 57.0109L24.2805 54.1066L29.9094 57.0109C30.1281 57.1247 30.362 57.1788 30.5957 57.1788C30.8325 57.1788 31.0664 57.1219 31.2821 57.0109L36.914 54.1066L42.543 57.0109C42.7617 57.1247 42.9986 57.1788 43.2293 57.1788C43.463 57.1788 43.7 57.1219 43.9156 57.0109L49.5445 54.1066L55.1735 57.0109C55.3922 57.1247 55.6292 57.1788 55.8598 57.1788C56.0965 57.1788 56.3363 57.1219 56.5553 57.0079L62.0824 54.1124L67.7024 57.0109C67.9183 57.1219 68.1551 57.1788 68.3887 57.1788C68.6585 57.1788 68.9313 57.107 69.1681 56.9601C69.6146 56.6873 69.8874 56.2047 69.8874 55.6801V42.6746C71.4442 41.9669 72.5352 40.4083 72.5352 38.5949L72.5355 38.5952ZM9.65697 29.2794C9.65697 23.0869 14.6956 18.0483 20.8881 18.0483H60.9358C62.6681 18.0483 64.0799 19.4571 64.0799 21.1894C64.0799 22.9218 62.6712 24.3305 60.9388 24.3305L22.0511 24.3308C18.6671 24.3308 15.9125 27.0853 15.9125 30.4694V34.1111L9.65703 34.1114L9.65697 29.2794ZM5.6766 37.1085H8.12832C8.13722 37.1085 8.14635 37.1146 8.15829 37.1146H17.4111C17.42 37.1146 17.4292 37.1085 17.4411 37.1085H68.0485C68.8666 37.1085 69.5352 37.7768 69.5352 38.5922C69.5322 39.4134 68.8639 40.082 68.0454 40.082L5.67642 40.0818C4.85826 40.0818 4.18967 39.4135 4.18967 38.595C4.18967 37.7769 4.85796 37.1085 5.67642 37.1085L5.6766 37.1085ZM54.3627 53.2193L51.0445 51.5077V43.0822H54.3627V53.2193ZM41.7288 53.2193L38.4106 51.5077V43.0822H41.7288V53.2193ZM29.0949 53.2193L25.7768 51.5077V43.0792H29.0949V53.2193ZM16.4641 53.2193L13.1431 51.5077V43.0792H16.4641V53.2193ZM6.82759 53.2193V43.0792H10.1458V51.5078L6.82759 53.2193ZM19.4614 53.2193V43.0792H22.7796V51.5078L19.4614 53.2193ZM32.0923 53.2193V43.0792H35.4105V51.5078L32.0923 53.2193ZM44.7262 53.2193V43.0792H48.0444V51.5078L44.7262 53.2193ZM57.36 53.2013V43.0792H60.5791V51.5108L57.36 53.2013ZM63.5765 51.5078V43.0792H66.8917V53.2193L63.5765 51.5078Z"
-              fill="black"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_2203_3848">
-              <rect
-                width="71.9366"
-                height="71.9366"
-                fill="white"
-                transform="translate(0.890625 0.144531)"
-              />
-            </clipPath>
-          </defs>
-        </svg>
-      ),
-      title: "Scrub",
-      text: "We scrub every inch of the glass with precision to break down stubborn grime, smudges, and buildup.",
-    },
-    {
-      number: "02",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="55"
-          height="55"
-          viewBox="0 0 55 55"
-          fill="none"
-        >
-          <path
-            d="M49.8742 5.23633V11.9563H5.07422V5.23633H49.8742ZM5.07422 18.6763H16.2742L20.7542 23.1563H22.9942V45.5563C22.9942 46.7445 23.4662 47.884 24.3064 48.7242C25.1465 49.5643 26.286 50.0363 27.4742 50.0363C28.6624 50.0363 29.8019 49.5643 30.6421 48.7242C31.4822 47.884 31.9542 46.7445 31.9542 45.5563V23.1563H34.1942L38.6742 18.6763H49.8742V14.1963H5.07422V18.6763Z"
-            fill="black"
+  const { city } = useGodlyContext();
+  
+  // City-specific content
+  const getCitySpecificContent = () => {
+    if (city === "PARKLAND") {
+      return {
+        mainHeading: "Our Exclusive RainShield™ Glass Shielding System in Parkland",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We begin with a deep glass scrub, targeting layers of Parkland's dust, pollen, and residue for a spotless surface prep."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Using high-grade squeegees, we remove all moisture and particles, leaving behind crystal-clear windows without streaks or haze."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Every window gets a final hand-detailed finish, with sharp attention to the frames and edges for a flawless, showroom-level shine."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "Our RainShield™ coating forms a protective layer that helps your windows resist rain, dirt, and humidity; perfect for Parkland's year-round weather."
+          }
+        ]
+      };
+    }
+    
+    // Default content
+    return {
+      mainHeading: "RAINSHIELD TECH",
+      steps: [
+        {
+          number: "01",
+          title: "Scrub",
+          text: "We scrub every inch of the glass with precision to break down stubborn grime, smudges, and buildup."
+        },
+        {
+          number: "02",
+          title: "Squeegee", 
+          text: "We use pro-grade squeegees to remove all water, dirt, and grime leaving a streak-free crystal-clear finish."
+        },
+        {
+          number: "03",
+          title: "Detail",
+          text: "We finish with a sharp eye, wiping edges and frames for a flawless, polished look from every angle."
+        },
+        {
+          number: "04", 
+          title: "RainShield Tech",
+          text: "We apply own unique invisible technology that repels water and rain, keeping your windows cleaner for longer."
+        }
+      ]
+    };
+  };
+  
+  const cityContent = getCitySpecificContent();
+  
+  // Static icons for each step (remain the same)
+  const stepIcons = [
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="73"
+      height="73"
+      viewBox="0 0 73 73"
+      fill="none"
+    >
+      <g clipPath="url(#clip0_2203_3848)">
+        <path
+          d="M72.5355 38.5952C72.5355 36.1224 70.5242 34.1111 68.0514 34.1111L18.9127 34.1113V30.4695C18.9127 28.7372 20.3215 27.3284 22.0539 27.3284H60.9416C64.3255 27.3284 67.0802 24.577 67.0802 21.1898C67.0802 17.8027 64.3256 15.0512 60.9386 15.0512L20.8909 15.0508C13.0438 15.0508 6.66243 21.4322 6.66243 29.2792V34.1111H5.67942C3.2066 34.1111 1.19531 36.1224 1.19531 38.5952C1.19531 40.4086 2.28048 41.9642 3.83299 42.6716V55.6801C3.83299 56.2047 4.10579 56.6873 4.55235 56.9601C4.79214 57.1069 5.0619 57.1788 5.33167 57.1788C5.56841 57.1788 5.80235 57.1219 6.018 57.0109L11.6469 54.1066L17.2789 57.0109C17.4976 57.1247 17.7315 57.1788 17.9652 57.1788C18.202 57.1788 18.4359 57.1219 18.6516 57.0109L24.2805 54.1066L29.9094 57.0109C30.1281 57.1247 30.362 57.1788 30.5957 57.1788C30.8325 57.1788 31.0664 57.1219 31.2821 57.0109L36.914 54.1066L42.543 57.0109C42.7617 57.1247 42.9986 57.1788 43.2293 57.1788C43.463 57.1788 43.7 57.1219 43.9156 57.0109L49.5445 54.1066L55.1735 57.0109C55.3922 57.1247 55.6292 57.1788 55.8598 57.1788C56.0965 57.1788 56.3363 57.1219 56.5553 57.0079L62.0824 54.1124L67.7024 57.0109C67.9183 57.1219 68.1551 57.1788 68.3887 57.1788C68.6585 57.1788 68.9313 57.107 69.1681 56.9601C69.6146 56.6873 69.8874 56.2047 69.8874 55.6801V42.6746C71.4442 41.9669 72.5352 40.4083 72.5352 38.5949L72.5355 38.5952ZM9.65697 29.2794C9.65697 23.0869 14.6956 18.0483 20.8881 18.0483H60.9358C62.6681 18.0483 64.0799 19.4571 64.0799 21.1894C64.0799 22.9218 62.6712 24.3305 60.9388 24.3305L22.0511 24.3308C18.6671 24.3308 15.9125 27.0853 15.9125 30.4694V34.1111L9.65703 34.1114L9.65697 29.2794ZM5.6766 37.1085H8.12832C8.13722 37.1085 8.14635 37.1146 8.15829 37.1146H17.4111C17.42 37.1146 17.4292 37.1085 17.4411 37.1085H68.0485C68.8666 37.1085 69.5352 37.7768 69.5352 38.5922C69.5322 39.4134 68.8639 40.082 68.0454 40.082L5.67642 40.0818C4.85826 40.0818 4.18967 39.4135 4.18967 38.595C4.18967 37.7769 4.85796 37.1085 5.67642 37.1085L5.6766 37.1085ZM54.3627 53.2193L51.0445 51.5077V43.0822H54.3627V53.2193ZM41.7288 53.2193L38.4106 51.5077V43.0822H41.7288V53.2193ZM29.0949 53.2193L25.7768 51.5077V43.0792H29.0949V53.2193ZM16.4641 53.2193L13.1431 51.5077V43.0792H16.4641V53.2193ZM6.82759 53.2193V43.0792H10.1458V51.5078L6.82759 53.2193ZM19.4614 53.2193V43.0792H22.7796V51.5078L19.4614 53.2193ZM32.0923 53.2193V43.0792H35.4105V51.5078L32.0923 53.2193ZM44.7262 53.2193V43.0792H48.0444V51.5078L44.7262 53.2193ZM57.36 53.2013V43.0792H60.5791V51.5108L57.36 53.2013ZM63.5765 51.5078V43.0792H66.8917V53.2193L63.5765 51.5078Z"
+          fill="black"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2203_3848">
+          <rect
+            width="71.9366"
+            height="71.9366"
+            fill="white"
+            transform="translate(0.890625 0.144531)"
           />
-        </svg>
-      ),
-      title: "Squeegee",
-      text: "We use pro-grade squeegees to remove all water, dirt, and grime leaving a streak-free crystal-clear finish.",
-    },
-    {
-      number: "03",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="59"
-          height="59"
-          viewBox="0 0 59 59"
-          fill="none"
-        >
-          <path
-            d="M50.9531 51.6113L36.4531 37.1113M7.45313 25.028C7.45312 27.2495 7.89069 29.4493 8.74083 31.5017C9.59097 33.5541 10.837 35.419 12.4079 36.9899C13.9788 38.5607 15.8436 39.8068 17.8961 40.657C19.9485 41.5071 22.1483 41.9447 24.3698 41.9447C26.5913 41.9447 28.7911 41.5071 30.8435 40.657C32.8959 39.8068 34.7608 38.5607 36.3317 36.9899C37.9025 35.419 39.1486 33.5541 39.9988 31.5017C40.8489 29.4493 41.2865 27.2495 41.2865 25.028C41.2865 22.8065 40.8489 20.6067 39.9988 18.5543C39.1486 16.5018 37.9025 14.637 36.3317 13.0661C34.7608 11.4952 32.8959 10.2492 30.8435 9.39903C28.7911 8.54889 26.5913 8.11133 24.3698 8.11133C22.1483 8.11133 19.9485 8.54889 17.8961 9.39903C15.8436 10.2492 13.9788 11.4952 12.4079 13.0661C10.837 14.637 9.59097 16.5018 8.74083 18.5543C7.89069 20.6067 7.45312 22.8065 7.45313 25.028Z"
-            stroke="black"
-            strokeWidth="4.83333"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      ),
-      title: "Detail",
-      text: "We finish with a sharp eye, wiping edges and frames for a flawless, polished look from every angle.",
-    },
-    {
-      number: "04",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="59"
-          height="59"
-          viewBox="0 0 59 59"
-          fill="none"
-        >
-          <path
-            d="M29.4076 54.0286C23.8089 52.6189 19.1867 49.4064 15.5407 44.391C11.8948 39.3756 10.0726 33.8076 10.0742 27.687V12.9453L29.4076 5.69531L48.7409 12.9453V27.687C48.7409 33.8092 46.9187 39.378 43.2744 44.3934C39.6301 49.4088 35.0078 52.6205 29.4076 54.0286ZM29.4076 48.9536C33.5964 47.6245 37.0603 44.9661 39.7992 40.9786C42.5381 36.9911 43.9076 32.5606 43.9076 27.687V16.2682L29.4076 10.8307L14.9076 16.2682V27.687C14.9076 32.5606 16.277 36.9911 19.0159 40.9786C21.7548 44.9661 25.2187 47.6245 29.4076 48.9536Z"
-            fill="black"
-          />
-        </svg>
-      ),
-      title: "RainShield Tech",
-      text: "We apply own unique invisible technology that repels water and rain, keeping your windows cleaner for longer.",
-    },
+        </clipPath>
+      </defs>
+    </svg>,
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="55"
+      height="55"
+      viewBox="0 0 55 55"
+      fill="none"
+    >
+      <path
+        d="M49.8742 5.23633V11.9563H5.07422V5.23633H49.8742ZM5.07422 18.6763H16.2742L20.7542 23.1563H22.9942V45.5563C22.9942 46.7445 23.4662 47.884 24.3064 48.7242C25.1465 49.5643 26.286 50.0363 27.4742 50.0363C28.6624 50.0363 29.8019 49.5643 30.6421 48.7242C31.4822 47.884 31.9542 46.7445 31.9542 45.5563V23.1563H34.1942L38.6742 18.6763H49.8742V14.1963H5.07422V18.6763Z"
+        fill="black"
+      />
+    </svg>,
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="59"
+      height="59"
+      viewBox="0 0 59 59"
+      fill="none"
+    >
+      <path
+        d="M50.9531 51.6113L36.4531 37.1113M7.45313 25.028C7.45312 27.2495 7.89069 29.4493 8.74083 31.5017C9.59097 33.5541 10.837 35.419 12.4079 36.9899C13.9788 38.5607 15.8436 39.8068 17.8961 40.657C19.9485 41.5071 22.1483 41.9447 24.3698 41.9447C26.5913 41.9447 28.7911 41.5071 30.8435 40.657C32.8959 39.8068 34.7608 38.5607 36.3317 36.9899C37.9025 35.419 39.1486 33.5541 39.9988 31.5017C40.8489 29.4493 41.2865 27.2495 41.2865 25.028C41.2865 22.8065 40.8489 20.6067 39.9988 18.5543C39.1486 16.5018 37.9025 14.637 36.3317 13.0661C34.7608 11.4952 32.8959 10.2492 30.8435 9.39903C28.7911 8.54889 26.5913 8.11133 24.3698 8.11133C22.1483 8.11133 19.9485 8.54889 17.8961 9.39903C15.8436 10.2492 13.9788 11.4952 12.4079 13.0661C10.837 14.637 9.59097 16.5018 8.74083 18.5543C7.89069 20.6067 7.45312 22.8065 7.45313 25.028Z"
+        stroke="black"
+        strokeWidth="4.83333"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>,
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="59"
+      height="59"
+      viewBox="0 0 59 59"
+      fill="none"
+    >
+      <path
+        d="M29.4076 54.0286C23.8089 52.6189 19.1867 49.4064 15.5407 44.391C11.8948 39.3756 10.0726 33.8076 10.0742 27.687V12.9453L29.4076 5.69531L48.7409 12.9453V27.687C48.7409 33.8092 46.9187 39.378 43.2744 44.3934C39.6301 49.4088 35.0078 52.6205 29.4076 54.0286ZM29.4076 48.9536C33.5964 47.6245 37.0603 44.9661 39.7992 40.9786C42.5381 36.9911 43.9076 32.5606 43.9076 27.687V16.2682L29.4076 10.8307L14.9076 16.2682V27.687C14.9076 32.5606 16.277 36.9911 19.0159 40.9786C21.7548 44.9661 25.2187 47.6245 29.4076 48.9536Z"
+        fill="black"
+      />
+    </svg>
   ];
+
+  // Combine city content with icons
+  const steps = cityContent.steps.map((step, index) => ({
+    ...step,
+    icon: stepIcons[index]
+  }));
 
   // Add state to track active badges
   const [activeBadges, setActiveBadges] = useState([false, false]);
@@ -123,21 +165,29 @@ const FourStepProcess = () => {
       <div className="fourstepprocess-inner relative flex flex-col items-center justify-center gap-[100px] md:gap-44">
         <div className="heading relative flex flex-col gap-0">
           <div className="relative flex flex-col items-center justify-center gap-0">
-            <h4
-              className="trim text-grain !bg-white text-[32px] tracking-[3.84px] md:text-[64px]"
-              data-text="OUR 4 STEP PROCESS"
-            >
-              OUR 4 STEP PROCESS
-            </h4>
-            <h4 className="with-text-fourstepprocess trim z-10 text-center!">
-              With
-            </h4>
-            <h4
-              className="text-grain trim !bg-white text-[24px] tracking-[3.84px] sm:text-[28px] md:text-[48px] lg:text-[56px] xl:text-[64px]"
-              data-text="RAINSHIELD TECH"
-            >
-              RAINSHIELD TECH
-            </h4>
+            {city === "PARKLAND" ? (
+              <h4 className="text-grain trim !bg-white text-[20px] tracking-[2px] sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px] text-center">
+                {cityContent.mainHeading}
+              </h4>
+            ) : (
+              <>
+                <h4
+                  className="trim text-grain !bg-white text-[32px] tracking-[3.84px] md:text-[64px]"
+                  data-text="OUR 4 STEP PROCESS"
+                >
+                  OUR 4 STEP PROCESS
+                </h4>
+                <h4 className="with-text-fourstepprocess trim z-10 text-center!">
+                  With
+                </h4>
+                <h4
+                  className="text-grain trim !bg-white text-[24px] tracking-[3.84px] sm:text-[28px] md:text-[48px] lg:text-[56px] xl:text-[64px]"
+                  data-text="RAINSHIELD TECH"
+                >
+                  RAINSHIELD TECH
+                </h4>
+              </>
+            )}
           </div>
         </div>
 

@@ -1202,6 +1202,62 @@ export const customMetaData = {
       }
     }
   },
+  "lauderdale-by-the-sea": {
+    cityPage: {
+      title: "Window Cleaning & Pressure Washing in Lauderdale-by-the-Sea",
+      description: "Get expert house washing, pressure washing, window cleaning, and gutter cleaning in Lauderdale-by-the-Sea. Local cleaning services & trusted cleaners near you."
+    },
+    services: {
+      "exterior-window-cleaning": {
+        title: "Exterior Window Cleaning in Lauderdale-by-the-Sea - Godly Windows",
+        description: "Let us bring shine to your view with exterior window cleaning in Lauderdale-by-the-Sea. We handle everything from glass to screens—spotless results always."
+      },
+      "interior-window-cleaning": {
+        title: "Interior Window Cleaning Services in Lauderdale-by-the-Sea",
+        description: "Trust Godly Windows to make your indoor glass surfaces sparkle. Our interior window cleaning in Lauderdale-by-the-Sea leaves every room feeling bright & fresh."
+      },
+      "gutter-cleaning": {
+        title: "Gutter Cleaning in Lauderdale-by-the-Sea - Godly Windows",
+        description: "We'll clear your gutters fast and safely in Lauderdale-by-the-Sea. Prevent clogs and water damage with our trusted roof and gutter cleaning service done right."
+      },
+      "house-washing": {
+        title: "House Washing Services in Lauderdale-by-the-Sea - Godly Windows",
+        description: "Let us gently wash away dirt, mold, and mildew from your home's exterior in Lauderdale-by-the-Sea. Our soft wash house washing restores curb appeal beautifully."
+      },
+      "roof-washing": {
+        title: "Roof Washing in Lauderdale-by-the-Sea - Godly Windows",
+        description: "We clean your roof the safe way with our soft wash system in Lauderdale-by-the-Sea. Count on Godly Windows for streak-free, damage-free roof washing every time."
+      },
+      "pressure-washing": {
+        title: "Pressure Washing in Lauderdale-by-the-Sea - Godly Windows",
+        description: "Whether it's your driveway, patio, or siding—we blast away dirt with expert pressure washing in Lauderdale-by-the-Sea. Clean surfaces, strong results, every time."
+      },
+      "high-dusting": {
+        title: "High Dusting Services in Lauderdale-by-the-Sea - Godly Windows",
+        description: "We handle the hard-to-reach spots with precision. Our high dusting in Lauderdale-by-the-Sea keeps ceilings, vents, and fixtures spotless and allergen-free."
+      },
+      "light-fixture-cleaning": {
+        title: "Light Fixture Cleaning Lauderdale-by-the-Sea - Godly Windows",
+        description: "Let your light shine bright again. We offer chandelier and light fixture cleaning in Lauderdale-by-the-Sea for spotless, shining brilliance in every room."
+      },
+      "screen-cleaning": {
+        title: "Screen Cleaning Services in Lauderdale-by-the-Sea - Call Today",
+        description: "Screen cleaning for patios and windows. We clean your window and door screens in Lauderdale-by-the-Sea so fresh air flows through and your views stay clear."
+      },
+      "skylight-cleaning": {
+        title: "Skylight Cleaning in Lauderdale-by-the-Sea - Godly Windows",
+        description: "Enjoy natural light without streaks. We provide skylight cleaning in Lauderdale-by-the-Sea to keep your glass spotless, bright, & crystal clear all year round."
+      },
+      "solar-panel-cleaning": {
+        title: "Solar Panel Cleaning in Lauderdale-by-the-Sea - Godly Windows",
+        description: "We clean your solar panels the smart way. In Lauderdale-by-the-Sea, We help improve energy efficiency with safe, spotless solar panel cleaning services."
+      },
+      "paver-sealing": {
+        title: "Paver Sealing in Lauderdale-by-the-Sea - Godly Windows",
+        description: "We protect and enhance your driveway or patio with expert paver cleaning and sealing in Lauderdale-by-the-Sea. Restore beauty and shield surfaces from wear."
+      }
+    }
+  },
   "coral-springs": {
     cityPage: {
       title: "Window Cleaning and Pressure Washing in Coral Springs",
@@ -1439,6 +1495,84 @@ export const customMetaData = {
       "high-dusting": {
         title: "High Dusting Services in Deerfield Beach - Godly Windows",
         description: "Reach every dusty corner with professional high dusting services in Deerfield Beach. Safe cleaning for ceilings, fans, and high fixtures. Book today!"
+      }
+    }
+  },
+  
+  // Homepage sections
+  homepage: {
+    main: {
+      title: "Window Cleaning & Pressure Washing Services in South Florida",
+      description: "Welcome to Godly Windows! Enjoy expert window cleaning, pressure washing, and gutter care with free estimates and a satisfaction guarantee from our local team."
+    },
+    about: {
+      title: "Trusted Window Cleaning Services in South Florida - About Us",
+      description: "Discover who we are—your trusted partner for pressure washing, home exterior care, gutter & window cleaning services in South Florida. Quality you can see."
+    },
+    promise: {
+      title: "Our Promise - Window Cleaning & Pressure Washing You Can Rely On",
+      description: "At Godly Windows, we promise spotless window cleaning, reliable pressure washing, and dedicated service that keeps your South Florida home looking bright."
+    },
+    process: {
+      title: "Window Cleaning Process - How We Deliver Spotless Results",
+      description: "Learn how Godly Windows delivers flawless results. Our simple process ensures expert window cleaning and exterior washing with care, and complete satisfaction."
+    }
+  },
+  
+  // South Florida region services
+  "south-florida": {
+    services: {
+      "holiday-light-installation": {
+        title: "Holiday Light Installation in South Florida - Godly Windows",
+        description: "Celebrate the season with dazzling holiday light installation in South Florida. Godly Windows handles design, setup, and takedown with safety and style in mind."
+      },
+      "exterior-window-cleaning": {
+        title: "Exterior Window Cleaning in South Florida - Godly Windows",
+        description: "We bring the sparkle back to your glass. Our exterior window cleaning in South Florida removes dirt and streaks for a crystal-clear, polished finish that lasts."
+      },
+      "interior-window-cleaning": {
+        title: "Interior Window Cleaning in South Florida - Godly Windows",
+        description: "Let the sunshine in with clean indoor glass. Our interior window cleaning service in South Florida keeps every pane spotless, leaving your home fresh."
+      },
+      "gutter-cleaning": {
+        title: "Gutter Cleaning in South Florida - Clear & Flowing Rain Gutters",
+        description: "Keep your gutters clear and your roof safe. Godly Windows offers thorough gutter cleaning in South Florida to prevent clogs, overflows, and long-term damage."
+      },
+      "house-washing": {
+        title: "House Washing Service in South Florida - Godly Windows",
+        description: "Our soft wash house washing in South Florida lifts away dirt, mildew, and stains from your siding for a fresh, bright exterior that looks like new again."
+      },
+      "roof-washing": {
+        title: "Roof Washing in South Florida - Call Roof Cleaning Experts",
+        description: "Protect your shingles with our safe roof washing in South Florida. We clean away algae and stains with soft wash techniques that renew your roof's appearance."
+      },
+      "pressure-washing": {
+        title: "Pressure Washing Service in South Florida - Godly Windows",
+        description: "Blast away years of dirt and grime with our pressure washing service in South Florida. We clean driveways, patios, walls, and more with powerful precision."
+      },
+      "high-dusting": {
+        title: "High Dusting Cleaning Service in South Florida - Call Today",
+        description: "Reach new heights of clean with high dusting cleaning service in South Florida. We tackle vents, beams, lights, and hard-to-reach spots to improve air quality."
+      },
+      "light-fixture-cleaning": {
+        title: "Light Fixture Cleaning in South Florida - Call Experts",
+        description: "We restore glow to your home with light fixture cleaning in South Florida. From ceiling lights to chandeliers, we clean every detail with care and precision."
+      },
+      "screen-cleaning": {
+        title: "Screen Cleaning in South Florida - Clear, Fresh Air Every Time",
+        description: "Let your screens breathe again. We provide expert screen cleaning in South Florida to remove dust, pollen, and grime so your windows stay fresh and clear."
+      },
+      "skylight-cleaning": {
+        title: "Skylight Cleaning Service in South Florida - Godly Windows",
+        description: "We bring clarity back to your skylights. Our skylight cleaning service in South Florida removes streaks, dirt, and buildup to brighten every space in your home."
+      },
+      "solar-panel-cleaning": {
+        title: "Solar Panel Cleaning in South Florida - Godly Windows",
+        description: "Keep your panels performing at their best. We provide safe, effective solar panel cleaning in South Florida to increase energy output and protect your investment."
+      },
+      "paver-sealing": {
+        title: "Paver Sealing in South Florida - Call Godly Windows",
+        description: "We clean and seal your patio, walkway, or driveway with expert care. Our paver sealing in South Florida enhances colour, resists stains, and adds durability."
       }
     }
   }

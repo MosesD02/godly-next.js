@@ -7,6 +7,24 @@ import { generateHomeH1 } from "@/data/metaTitles";
 
 const Hero = () => {
   const { city } = useGodlyContext();
+  
+  // City-specific content
+  const getCitySpecificContent = () => {
+    if (city === "PARKLAND") {
+      return {
+        heading: "Parkland's Trusted Window Cleaning & Pressure Washing Experts",
+        subheading: "Godly Windows delivers spotless windows and fresh exteriors to Parkland homes and businesses with fast service and a personal touch."
+      };
+    }
+    
+    // Default generic content
+    return {
+      heading: `Window cleaning and pressure Washing services In ${city}`,
+      subheading: "we specialize in window washing, home washing, pressure washing, paver sealing and more."
+    };
+  };
+  
+  const cityContent = getCitySpecificContent();
 
   return (
     <div className="relative overflow-x-clip bg-[#1F1D1D]">
@@ -29,33 +47,44 @@ const Hero = () => {
             </div>
           </div>
           <h1 className="sr-only">{generateHomeH1()}</h1>
-          <div
-            className="flex flex-wrap items-center gap-4 xl:gap-8"
-            role="heading"
-            aria-level="1"
-          >
-            <span className="flex flex-wrap items-center gap-2">
-              <span className="font-marlton trim shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
-                Window cleaning
+          {city === "PARKLAND" ? (
+            <div
+              className="flex flex-wrap items-center gap-4 xl:gap-8"
+              role="heading"
+              aria-level="1"
+            >
+              <span className="font-marlton trim text-[32px] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+                {cityContent.heading}
               </span>
-              <span className="shrink-0 text-center font-['luminaire-script'] text-[16px] text-[#FDE4C8] md:text-lg xl:text-2xl">
-                And
+            </div>
+          ) : (
+            <div
+              className="flex flex-wrap items-center gap-4 xl:gap-8"
+              role="heading"
+              aria-level="1"
+            >
+              <span className="flex flex-wrap items-center gap-2">
+                <span className="font-marlton trim shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+                  Window cleaning
+                </span>
+                <span className="shrink-0 text-center font-['luminaire-script'] text-[16px] text-[#FDE4C8] md:text-lg xl:text-2xl">
+                  And
+                </span>
+                <span className="hidden md:block"></span>
+                <span className="font-marlton trim mt-2 shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:mt-0 md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+                  pressure Washing
+                </span>
               </span>
-              <span className="hidden md:block"></span>
-              <span className="font-marlton trim mt-2 shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:mt-0 md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
-                pressure Washing
+              <span className="font-marlton trim shrink-0 items-center gap-2 text-4xl font-normal tracking-[3px] text-white md:block md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
+                services In
               </span>
-            </span>
-            <span className="font-marlton trim shrink-0 items-center gap-2 text-4xl font-normal tracking-[3px] text-white md:block md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
-              services In
-            </span>
-            <span className="font-marlton trim shrink-0 items-center gap-2 text-4xl font-normal tracking-[3px] text-white md:block md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
-              {city}
-            </span>
-          </div>
+              <span className="font-marlton trim shrink-0 items-center gap-2 text-4xl font-normal tracking-[3px] text-white md:block md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
+                {city}
+              </span>
+            </div>
+          )}
           <p className="font-['satoshi-regular'] text-sm font-medium text-white md:text-base xl:text-xl">
-            we specialize in window washing, home washing, pressure washing,
-            paver sealing and more.
+            {cityContent.subheading}
           </p>
         </div>
         <QuoteForm />

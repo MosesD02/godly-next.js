@@ -14,6 +14,7 @@ import QuoteButton from "@/components/quoteButton";
 import Airtable from "airtable";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useGodlyContext } from "@/context/godlyContext";
 
 const servicesList = [
   { id: "exterior-window-cleaning", name: "Exterior Window Cleaning" },
@@ -29,6 +30,25 @@ const servicesList = [
 ];
 
 export default function QuoteForm({ isDialog }) {
+  const { city } = useGodlyContext();
+  
+  // City-specific form content
+  const getFormContent = () => {
+    if (city === "PARKLAND") {
+      return {
+        heading: "Need a quick estimate?",
+        description: "Our Parkland-based crew will call you promptly to schedule service. No surprises, no upselling; just clear pricing and honest work."
+      };
+    }
+    
+    // Default content
+    return {
+      heading: "LET US CALL YOU!",
+      description: "Receive a call within 30 minutes during normal business hours."
+    };
+  };
+  
+  const formContent = getFormContent();
   const [date, setDate] = useState();
   const [formData, setFormData] = useState({
     name: "",
@@ -251,7 +271,7 @@ export default function QuoteForm({ isDialog }) {
                 : "",
             )}
           >
-            LET US CALL <br className="md:hidden" /> YOU!
+            {formContent.heading}
           </h2>
           <p
             className={cn(
@@ -261,9 +281,7 @@ export default function QuoteForm({ isDialog }) {
                 : "",
             )}
           >
-            Receive a call within 30 minutes
-            <br className="hidden md:block xl:block" /> during normal business
-            hours.
+            {formContent.description}
           </p>
         </div>
 

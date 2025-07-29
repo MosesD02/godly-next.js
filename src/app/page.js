@@ -1,5 +1,6 @@
 import GodlyHome from "@/godlyComponents/home";
 import { homeTitle, homeDescription } from "@/data/metaTitles";
+import DynamicMetaTags from "@/components/DynamicMetaTags";
 import Script from "next/script";
 
 // Static metadata for home page
@@ -116,6 +117,7 @@ const structuredData = {
 export default function Home() {
   return (
     <>
+      <DynamicMetaTags />
       <Script
         id="structured-data"
         type="application/ld+json"

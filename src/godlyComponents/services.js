@@ -49,8 +49,11 @@ const Services = () => {
           </div>
 
           <p className="text-trim hidden text-center font-[satoshi-regular] text-[24px] leading-[115%] text-white/60 sm:text-[20px] md:block md:text-[24px] lg:text-[26px] xl:text-[28px]">
-            Godly can clean nearly all components of <br /> your home or
-            building&apos;s exterior.
+            {city === "PARKLAND" ? (
+              <>Your full-service exterior cleaning team in Parkland.</>
+            ) : (
+              <>Godly can clean nearly all components of <br /> your home or building&apos;s exterior.</>
+            )}
           </p>
         </div>
         <ServicesGrid />
@@ -69,7 +72,7 @@ const Services = () => {
           <div className="flex flex-col items-center justify-center gap-[35px]">
             <div className="relative max-w-[359px] md:max-w-full md:min-w-full">
               <h4 className="relative text-center font-['satoshi-black'] text-[32px] leading-[130%] text-[#FDE4C8] md:text-[96px]">
-                Holiday Light Installation
+                {city === "PARKLAND" ? "Holiday Lights Without the Ladder" : "Holiday Light Installation"}
                 <Image
                   src={Cap}
                   height={102}
@@ -93,10 +96,18 @@ const Services = () => {
               </div>
             </div>
             <p className="max-w-[359px] text-center font-['satoshi-light'] text-sm font-light tracking-wide text-[#FDE4C8] md:max-w-[600px] md:text-lg">
-              Christmas light installation, done for you. Forget the ladder and
-              the hassle of storing lights each year. Let us light up your home
-              or business once, and you&apos;ll never want to go back to doing
-              it yourself.
+              {city === "PARKLAND" ? (
+                <>
+                  Searching for xmas light installation near me? We offer expert lighting installation, light fixture cleaning in Parkland. Safe, seamless, and storage-free holiday lighting.
+                </>
+              ) : (
+                <>
+                  Christmas light installation, done for you. Forget the ladder and
+                  the hassle of storing lights each year. Let us light up your home
+                  or business once, and you&apos;ll never want to go back to doing
+                  it yourself.
+                </>
+              )}
             </p>
             <Link href={`/${cityKey}/holiday-light-installation`}>
               <Button className="trim flex h-auto cursor-pointer rounded-[6.32px] bg-white p-3 font-[satoshi-bold] text-sm text-[10px] text-[312E2C] hover:bg-white/80 md:px-4 md:py-[14px] md:text-sm">
@@ -130,6 +141,26 @@ function ServicesGrid() {
   const { city } = useGodlyContext();
 
   const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
+
+  // Parkland-specific service descriptions
+  const getParklandServiceDescription = (serviceName) => {
+    const parklandDescriptions = {
+      "Exterior Window Cleaning": "Parkland's pollen and dust don't stand a chance. Our RainShield™ process leaves your glass spotless and gleaming.",
+      "Interior Window Cleaning": "From fingerprints to haze, we restore your interior windows with streak-free precision; no drips, no damage.",
+      "Gutter Cleaning": "Avoid water damage by clearing out leaves and roof debris. We keep your gutters flowing before the next Parkland rain.",
+      "House Washing": "Soft-wash siding, brick, and stucco to remove algae, mold, and surface stains; perfect for Parkland homes near greenery.",
+      "Roof Washing": "Our gentle roof cleaning removes algae, mold and debris, extending the life and look of your shingles,metal or tile roof..",
+      "Pressure & Soft Washing": "We clean driveways, patios, and pavers with care; power where needed, soft wash where it counts.",
+      "High Dusting": "Cobwebs and dust in high corners? We safely tackle what ladders can't reach, indoors or out.",
+      "Light Fixture Cleaning": "Restore brilliance to your lanterns, pendants, and exterior fixtures with our safe and careful clean.",
+      "Screen Cleaning": "We remove film, pollen, spider webs and mildew from screen rooms and pool cages; keeping your views and airflow clear.",
+      "Skylight Cleaning": "We clean interior and exterior skylights; even those high up; so Parkland sunshine comes through crystal clear.",
+      "Solar Panel Cleaning": "Dust and debris lower efficiency. We clean solar panels to maximize output and energy savings.",
+      "Paver Sealing": "Seal in beauty and strength. We deep clean and seal your driveway, pool deck, or patio for lasting protection and aesthetic sheen."
+    };
+
+    return parklandDescriptions[serviceName] || null;
+  };
 
   return (
     <div className="z-20 grid grid-cols-2 gap-3 sm:px-10 md:grid-cols-3 md:gap-7 md:px-20">
@@ -175,7 +206,10 @@ function ServicesGrid() {
                   <p
                     className={`font-[satoshi-regular] text-xs font-normal ${isActive ? "text-white" : "text-[#1f1d1d]"} group-hover:text-white md:text-base`}
                   >
-                    {service.description}
+                    {city === "PARKLAND" 
+                      ? getParklandServiceDescription(service.name) || service.description
+                      : service.description
+                    }
                   </p>
                 </div>
                 <div className="flex w-full items-center justify-end gap-4">
