@@ -16,6 +16,12 @@ const Hero = () => {
         subheading: "Godly Windows delivers spotless windows and fresh exteriors to Parkland homes and businesses with fast service and a personal touch."
       };
     }
+    if (city === "MIAMI") {
+      return {
+        heading: "Professional Window Cleaning & Pressure Washing in Miami, FL",
+        subheading: "Serving Miami homeowners and businesses with streak-free results, fast response, and friendly service."
+      };
+    }
     
     // Default generic content
     return {
@@ -47,7 +53,7 @@ const Hero = () => {
             </div>
           </div>
           <h1 className="sr-only">{generateHomeH1()}</h1>
-          {city === "PARKLAND" ? (
+          {(city === "PARKLAND" || city === "MIAMI") ? (
             <div
               className="flex flex-wrap items-center gap-4 xl:gap-8"
               role="heading"

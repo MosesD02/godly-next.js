@@ -40,6 +40,12 @@ export default function QuoteForm({ isDialog }) {
         description: "Our Parkland-based crew will call you promptly to schedule service. No surprises, no upselling; just clear pricing and honest work."
       };
     }
+    if (city === "MIAMI") {
+      return {
+        heading: "Need a quick estimate?",
+        description: "Our Miami-based technicians will contact you within minutes to get you scheduled. Transparent pricing. No pushy sales."
+      };
+    }
     
     // Default content
     return {

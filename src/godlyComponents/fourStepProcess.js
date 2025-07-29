@@ -41,6 +41,33 @@ const FourStepProcess = () => {
         ]
       };
     }
+    if (city === "MIAMI") {
+      return {
+        mainHeading: "Our Exclusive RainShield™ Glass Shielding System in Miami",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We thoroughly scrub every inch of the glass using precision tools to break down stubborn dirt, smudges, and built-up grime."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Our commercial-grade squeegees remove all moisture and debris, delivering a streak-free, ultra-clear finish every time."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We meticulously wipe edges, frames, and corners to eliminate drip marks and ensure a polished, professional result from every angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We apply our exclusive RainShield™ formula; an invisible barrier that repels rain and residue, helping your windows stay cleaner for longer."
+          }
+        ]
+      };
+    }
     
     // Default content
     return {
@@ -165,7 +192,7 @@ const FourStepProcess = () => {
       <div className="fourstepprocess-inner relative flex flex-col items-center justify-center gap-[100px] md:gap-44">
         <div className="heading relative flex flex-col gap-0">
           <div className="relative flex flex-col items-center justify-center gap-0">
-            {city === "PARKLAND" ? (
+            {(city === "PARKLAND" || city === "MIAMI") ? (
               <h4 className="text-grain trim !bg-white text-[20px] tracking-[2px] sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px] text-center">
                 {cityContent.mainHeading}
               </h4>

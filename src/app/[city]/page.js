@@ -52,6 +52,46 @@ export async function generateMetadata({ params }) {
         ]
       };
     }
+    if (city === "miami") {
+      return {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": `https://godlywindows.com/${city}`,
+        "name": "Godly Windows & Wash Co.",
+        "url": `https://godlywindows.com/${city}`,
+        "logo": "https://godlywindows.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d1f08d62.webp&w=1200&q=75",
+        "image": "https://godlywindows.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d1f08d62.webp&w=1200&q=75",
+        "description": "Top-rated window cleaning and pressure washing services in Miami, FL. Serving homeowners and businesses with fast, spotless results.",
+        "telephone": "(954) 852-5326",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Based in South Florida, serving Miami, FL",
+          "addressLocality": "Miami",
+          "addressRegion": "FL",
+          "postalCode": "33101",
+          "addressCountry": "US"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Miami, FL"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday", "Tuesday", "Wednesday", 
+              "Thursday", "Friday", "Saturday", "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/godlywindows",
+          "https://www.instagram.com/godlywindows"
+        ]
+      };
+    }
     return null;
   };
 

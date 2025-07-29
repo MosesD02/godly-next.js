@@ -51,6 +51,8 @@ const Services = () => {
           <p className="text-trim hidden text-center font-[satoshi-regular] text-[24px] leading-[115%] text-white/60 sm:text-[20px] md:block md:text-[24px] lg:text-[26px] xl:text-[28px]">
             {city === "PARKLAND" ? (
               <>Your full-service exterior cleaning team in Parkland.</>
+            ) : city === "MIAMI" ? (
+              <>Your full-service exterior cleaning team in Miami.</>
             ) : (
               <>Godly can clean nearly all components of <br /> your home or building&apos;s exterior.</>
             )}
@@ -72,7 +74,7 @@ const Services = () => {
           <div className="flex flex-col items-center justify-center gap-[35px]">
             <div className="relative max-w-[359px] md:max-w-full md:min-w-full">
               <h4 className="relative text-center font-['satoshi-black'] text-[32px] leading-[130%] text-[#FDE4C8] md:text-[96px]">
-                {city === "PARKLAND" ? "Holiday Lights Without the Ladder" : "Holiday Light Installation"}
+                {city === "PARKLAND" ? "Holiday Lights Without the Ladder" : city === "MIAMI" ? "Holiday Lights Without the Ladder" : "Holiday Light Installation"}
                 <Image
                   src={Cap}
                   height={102}
@@ -99,6 +101,10 @@ const Services = () => {
               {city === "PARKLAND" ? (
                 <>
                   Searching for xmas light installation near me? We offer expert lighting installation, light fixture cleaning in Parkland. Safe, seamless, and storage-free holiday lighting.
+                </>
+              ) : city === "MIAMI" ? (
+                <>
+                  Christmas light installation in Miami, done for you. We handle xmas lights, recessed lighting, and full holiday light installation—safe, stunning, and stress-free service.
                 </>
               ) : (
                 <>
@@ -142,7 +148,7 @@ function ServicesGrid() {
 
   const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
 
-  // Parkland-specific service descriptions
+  // City-specific service descriptions
   const getParklandServiceDescription = (serviceName) => {
     const parklandDescriptions = {
       "Exterior Window Cleaning": "Parkland's pollen and dust don't stand a chance. Our RainShield™ process leaves your glass spotless and gleaming.",
@@ -160,6 +166,25 @@ function ServicesGrid() {
     };
 
     return parklandDescriptions[serviceName] || null;
+  };
+
+  const getMiamiServiceDescription = (serviceName) => {
+    const miamiDescriptions = {
+      "Exterior Window Cleaning": "Blast away Miami's mildew, salt spray, and grime with our streak-free, RainShield™-powered exterior window cleaning. Ideal for oceanfront and inland homes alike.",
+      "Interior Window Cleaning": "From pet nose prints to kitchen grease, we make your indoor glass sparkle again; without harsh chemicals or mess.",
+      "Gutter Cleaning": "Keep those South Florida storms from flooding your foundation. We clear leaves, pine needles, and buildup so your gutters drain freely.",
+      "House Washing": "Our soft wash service removes algae, mold, and dirt without damaging your siding or paint; perfect for Miami's tropical climate.",
+      "Roof Washing": "Extend the life of your tile or shingle roof by removing black streaks, lichen, and debris with our gentle but effective low-pressure wash.",
+      "Pressure & Soft Washing": "Restore the look of your driveway, patio, or pool deck. We adjust pressure based on surface type; powerful where needed, soft where it matters.",
+      "High Dusting": "Say goodbye to ceiling cobwebs and dusty corners. We reach what ladders can't with high-reach tools and precision dusting.",
+      "Light Fixture Cleaning": "Chandeliers, sconces, and outdoor lanterns deserve a shine-up too. We handle delicate fixtures with safe, detailed cleaning.",
+      "Screen Cleaning": "Our tools gently clean screened lanais and enclosures; removing dust, mildew, and film so you can enjoy clear views and fresh air again.",
+      "Skylight Cleaning": "Miami sunshine should come crystal clear. We clean skylights inside and out; even those hard-to-reach ones; so natural light beams through.",
+      "Solar Panel Cleaning": "Get the most from your solar investment. We remove pollen, dust, and bird droppings to boost energy output and lifespan.",
+      "Paver Sealing": "Protect your pavers from Miami's sun and storms. We deep-clean, seal, and restore driveways, walkways, and patios for a polished, long-lasting look."
+    };
+
+    return miamiDescriptions[serviceName] || null;
   };
 
   return (
@@ -208,6 +233,8 @@ function ServicesGrid() {
                   >
                     {city === "PARKLAND" 
                       ? getParklandServiceDescription(service.name) || service.description
+                      : city === "MIAMI"
+                      ? getMiamiServiceDescription(service.name) || service.description
                       : service.description
                     }
                   </p>
