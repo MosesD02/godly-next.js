@@ -158,6 +158,24 @@ export default function QuoteForm({ isDialog, service, source }) {
         },
       );
 
+      await fetch(
+        "https://hook.us1.make.com/la9l4g93iz98xumdx4ecptc3ji7t4pux",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            services: formData.services,
+            date: date ? format(date, "MM/dd/yyyy") : null,
+            zipcode: formData.zipcode,
+          }),
+        },
+      );
+
       if (typeof window !== "undefined" && window.gtag) {
         const gtag = window.gtag;
 
