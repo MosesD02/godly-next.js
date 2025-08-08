@@ -73,6 +73,7 @@ export const getPhoneNumber = (city) => {
       "MARGATE",
       "CORAL SPRINGS",
       "PARKLAND",
+      "PEMBROKE PINES",
       "ROYAL PALM BEACH",
       "DEERFIELD BEACH",
       "HILLSBORO BEACH",

@@ -68,6 +68,600 @@ const FourStepProcess = () => {
         ]
       };
     }
+    if (city === "FORT LAUDERDALE") {
+      return {
+        mainHeading: "Our Exclusive RainShield™ Glass Shielding System in Fort Lauderdale",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We start with a deep glass scrub to remove Fort Lauderdale's coastal grit, pollen, and built-up residue for a perfectly prepped surface."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Next, we use precision-grade squeegees to clear away every drop of moisture and dirt—no streaks, no smudges."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Edges, frames, and corners get hand-detailed attention for a flawless, crystal-clear result from every angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We seal it all in with our RainShield™ nano-barrier, designed to resist rain, dust, and humidity—keeping your windows cleaner longer."
+          }
+        ]
+      };
+    }
+    if (city === "LIGHTHOUSE POINT") {
+      return {
+        mainHeading: "Spot-Free Window Protection with Our RainShield™ System in Lighthouse Point",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We break down grime, sea mist, and smudges with a deep scrub to prep the glass for a perfect finish."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Our commercial-grade squeegees remove all residue and moisture, leaving your glass crisp, clear, and streak-free."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We take the time to hand-wipe edges, sills, and corners—ensuring a high-gloss, polished appearance from every angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "To finish, we apply our RainShield™ nano-coating that repels rain, dust, and salt—helping your windows stay cleaner for longer in Lighthouse Point's coastal air."
+          }
+        ]
+      };
+    }
+    if (city === "SOUTHWEST RANCHES") {
+      return {
+        mainHeading: "Advanced RainShield™ Window Treatment for Southwest Ranches Homes",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We gently scrub away barn dust, pollen, and outdoor grime from every inch of your windows for a clean base."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Using commercial-grade squeegees, we remove water and debris with precision, leaving no streaks or smears behind."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We wipe down all edges, frames, and corners by hand to deliver a clean finish from every angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "Our RainShield™ coating helps prevent water spots, dust, and buildup—ideal for Southwest Ranches' wide-open outdoor exposure."
+          }
+        ]
+      };
+    }
+    if (city === "CORAL SPRINGS") {
+      return {
+        mainHeading: "RainShield™ Window Protection Tailored for Coral Springs Weather",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We start by scrubbing the glass to remove Coral Springs' dust, grime, and residue—perfectly prepping your windows for a deep clean."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Next, we remove every drop of moisture with pro-grade squeegees, leaving no streaks or water marks behind."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We carefully wipe down all edges, frames, and corners, ensuring a polished, professional finish from every viewing angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "To finish, we apply our RainShield™ protective layer that helps repel rain, dust, and smog—keeping your windows clearer for longer between visits."
+          }
+        ]
+      };
+    }
+    if (city === "HALLANDALE BEACH") {
+      return {
+        mainHeading: "Coastal-Grade RainShield™ Glass Protection for Hallandale Beach Homes",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We remove stubborn salt spray, grime, and buildup with a thorough glass scrub to prep each surface for a deep clean."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Next, we clear away moisture and debris using commercial-grade squeegees—leaving your windows streak-free and sparkling."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We hand-wipe frames, edges, and corners to ensure a flawless finish and long-lasting visual clarity."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "Our RainShield™ treatment adds a protective barrier that helps resist water spots, salt air, and dust—ideal for Hallandale's oceanfront climate."
+          }
+        ]
+      };
+    }
+    if (city === "MARGATE") {
+      return {
+        mainHeading: "Our Signature RainShield™ Glass Protection for Homes in Margate",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We scrub every window thoroughly to lift dust, dirt, and buildup caused by Margate's changing weather and landscape debris."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Using professional-grade tools, we remove all water and residue—leaving behind a flawless, streak-free surface."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We clean the corners, sills, and edges by hand—ensuring no spots are missed and every window looks professionally polished."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "Our proprietary RainShield™ formula repels rain, dust, and buildup, keeping your windows cleaner between visits—even through Margate's rainy season."
+          }
+        ]
+      };
+    }
+    if (city === "PEMBROKE PINES") {
+      return {
+        mainHeading: "RainShield™-Enhanced Glass Cleaning Designed for Pembroke Pines",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We scrub away environmental buildup like dust, smog, and pollen—common in both suburban and high-traffic areas of Pembroke Pines."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Next, we use pro-grade squeegees to remove all moisture, leaving your glass crystal-clear and streak-free."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We hand-finish the frames, corners, and edges—ensuring no drip marks or film are left behind."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "To seal the clean, we apply RainShield™, our exclusive glass protectant that helps resist water spots, dirt, and buildup—ideal for Pembroke Pines' seasonal weather shifts."
+          }
+        ]
+      };
+    }
+    if (city === "SUNRISE") {
+      return {
+        mainHeading: "RainShield™ Glass Protection Built for Sunrise Homes",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We start by removing built-up grime, dust, and residue—common from Sunrise's traffic and humid conditions—with a detailed surface scrub."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Next, we use pro-level squeegees to clear all water and debris, leaving the glass completely streak-free."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Edges, corners, and frames get our full attention with hand-detailed polishing for a pristine, professional finish."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We finish with our RainShield™ coating—a hydrophobic barrier that repels water, pollen, and pollutants, helping your windows stay cleaner longer."
+          }
+        ]
+      };
+    }
+    if (city === "DAVIE") {
+      return {
+        mainHeading: "RainShield™ Window Protection Built for Davie Homes",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We begin with a deep surface scrub to remove Davie's dust, pollen, and outdoor buildup—prepping your glass for a spotless finish."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Our pro-grade squeegees remove all water and dirt—leaving the glass streak-free and crystal clear."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Edges, corners, and window frames are wiped by hand for a flawless, professional appearance."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We apply our signature RainShield™ coating that helps repel water, grime, and buildup—ideal for Davie's changing weather and landscape."
+          }
+        ]
+      };
+    }
+    if (city === "DELRAY BEACH") {
+      return {
+        mainHeading: "RainShield™ Window Care Tailored for Delray Beach Homes",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We break down salt spray, pollen, and debris with a thorough surface scrub—perfect for Delray's coastal exposure."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Our professional-grade squeegees remove every drop of water and grime—leaving your windows streak-free and crystal clear."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We hand-wipe frames, edges, and corners to ensure a polished finish with no water lines or residue."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "Our RainShield™ barrier helps repel moisture, buildup, and coastal dust—keeping your glass cleaner for longer between services."
+          }
+        ]
+      };
+    }
+    if (city === "HILLSBORO BEACH") {
+      return {
+        mainHeading: "RainShield™ Glass Protection Built for Coastal Homes in Hillsboro Beach",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We scrub away salt spray, sand, and buildup from each glass surface—common along Hillsboro Beach's shoreline."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Next, we squeegee off all moisture and residue, leaving a streak-free, high-clarity finish on every window."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Edges, corners, and frames are detailed by hand to remove water lines and ensure a pristine look from every angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We apply our RainShield™ coating to shield your windows from humidity, ocean mist, and dust—helping them stay clean longer between visits."
+          }
+        ]
+      };
+    }
+    if (city === "PLANTATION") {
+      return {
+        mainHeading: "RainShield™ Glass Care for Long-Lasting Clarity in Plantation",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We begin by scrubbing away dirt, pollen, and residue caused by Plantation's shaded areas and seasonal changes."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "We use high-grade squeegees to eliminate water and grime—leaving behind a smooth, streak-free finish on every window."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Our team hand-wipes frames, edges, and corners for a polished result that enhances curb appeal from every angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We finish with RainShield™—a protective coating that defends your windows against water spots, dirt, and buildup between services."
+          }
+        ]
+      };
+    }
+    if (city === "TAMARAC") {
+      return {
+        mainHeading: "RainShield™ Window Protection Engineered for Tamarac Weather",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We begin with a deep scrub to remove Tamarac's dust, debris, and environmental buildup—especially common after summer storms."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "We clear away all water and grime with professional squeegees—leaving your windows crisp and streak-free."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We hand-detail the corners, frames, and sills—delivering a polished, high-clarity result from every viewing angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We seal your windows with RainShield™—a long-lasting protective layer that helps prevent water spots, smog stains, and dirt buildup."
+          }
+        ]
+      };
+    }
+    if (city === "DEERFIELD BEACH") {
+      return {
+        mainHeading: "RainShield™ Window Protection for Coastal & Inland Homes in Deerfield Beach",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We scrub away salt spray, dirt, and buildup—especially common near the beach and in tree-heavy neighborhoods."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Using professional tools, we remove all residue and moisture—leaving your windows spotless and streak-free."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Edges, corners, and frames are hand-detailed to ensure a clean, polished finish from every angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We apply our RainShield™ protectant to help repel rain, salt, and dust—keeping your windows cleaner between cleanings."
+          }
+        ]
+      };
+    }
+    if (city === "HOLLYWOOD") {
+      return {
+        mainHeading: "RainShield™ Window Protection Tailored for Hollywood's Coastal Climate",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We scrub away ocean salt, traffic film, and buildup—common in Hollywood's coastal and high-traffic zones."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Our commercial-grade squeegees remove water and residue completely—leaving your glass streak-free and gleaming."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We hand-detail every edge, frame, and sill for a crisp, professional finish inside and out."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "Finally, we apply our RainShield™ nano-sealant to repel water spots, salt, and dust—so your windows stay cleaner longer."
+          }
+        ]
+      };
+    }
+    if (city === "MIRAMAR") {
+      return {
+        mainHeading: "RainShield™ Window Protection Designed for Miramar's Climate",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We start with a deep scrub to remove buildup from dust, pollen, and weather—common in both suburban and new construction zones around Miramar."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Our commercial-grade squeegees eliminate water and residue completely—leaving behind a streak-free, polished shine."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We hand-clean every window edge, sill, and corner for a flawless finish that elevates your curb appeal."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "Our RainShield™ protectant helps prevent spots, dust, and grime buildup—keeping your windows cleaner between visits."
+          }
+        ]
+      };
+    }
+    if (city === "POMPANO BEACH") {
+      return {
+        mainHeading: "RainShield™ Glass Protection for Pompano Beach's Coastal Conditions",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We scrub away salt spray, sand, and buildup from coastal winds and moisture—prepping your glass for a deep, lasting clean."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Our professional squeegees wipe away every trace of water and residue, leaving windows streak-free and crystal clear."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We hand-clean each frame, edge, and corner to ensure a polished, professional finish from every viewing angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "To finish, we apply RainShield™—a nano-sealant that protects your windows against salt, rain, and airborne grime common in coastal areas."
+          }
+        ]
+      };
+    }
+    if (city === "WEST PALM BEACH") {
+      return {
+        mainHeading: "RainShield™ Glass Protection Built for West Palm Beach Properties",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We remove coastal buildup, smog film, and grime with a detailed glass scrub that preps each surface for a lasting clean."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "We use pro-level squeegees to eliminate all moisture and streaks, ensuring a perfectly clear finish."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Our team hand-wipes frames, sills, and corners to deliver a high-polish result with no missed spots."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We finish with RainShield™—our invisible barrier that helps resist rain, salt spray, and dust so your windows stay cleaner longer."
+          }
+        ]
+      };
+    }
+    if (city === "LAUDERDALE-BY-THE-SEA") {
+      return {
+        mainHeading: "RainShield™ Glass Protection for Salt-Exposed Homes in Lauderdale-by-the-Sea",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We remove salt spray, sand, and marine grime with a deep scrub that preps your windows for a lasting clean."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Next, we squeegee away all moisture and residue—leaving behind a flawless, streak-free finish."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Every window edge, frame, and corner is hand-detailed for that polished, crystal-clear look from every angle."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We apply RainShield™, a protective barrier that repels salt, rain, and dust—keeping your windows cleaner between service visits."
+          }
+        ]
+      };
+    }
+    if (city === "OAKLAND PARK") {
+      return {
+        mainHeading: "RainShield™ Window Protection Built for Oakland Park Homes & Businesses",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We start with a thorough scrub to remove dirt, smog film, and environmental buildup common in Oakland Park's mix of urban and green spaces."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Using professional squeegees, we remove all moisture and residue—delivering streak-free, crystal-clear glass."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Every edge, sill, and corner is hand-detailed to ensure a polished finish and long-lasting shine."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We apply RainShield™—our protective nano-layer that helps repel rain, dust, and grime so your windows stay cleaner between visits."
+          }
+        ]
+      };
+    }
+    if (city === "WESTON") {
+      return {
+        mainHeading: "RainShield™ Glass Care for Weston's Clean, Green Neighborhoods",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We start with a full scrub to remove dust, pollen, and debris—common in tree-lined neighborhoods and lakefront homes."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Next, we squeegee every window with pro-grade tools to eliminate moisture and residue, leaving nothing but shine."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "We hand-detail edges, corners, and frames for a clean, high-end finish that complements your home's aesthetics."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "Our RainShield™ coating provides an invisible barrier that repels water, dirt, and smudges—keeping windows cleaner between cleanings."
+          }
+        ]
+      };
+    }
+    if (city === "ROYAL PALM BEACH") {
+      return {
+        mainHeading: "RainShield™ Window Protection Tailored for Royal Palm Beach Homes",
+        steps: [
+          {
+            number: "01",
+            title: "Scrub",
+            text: "We remove dust, pollen, and buildup from your windows—common in shaded neighborhoods and garden-lined streets."
+          },
+          {
+            number: "02", 
+            title: "Squeegee",
+            text: "Next, we squeegee each window with commercial-grade precision—leaving a streak-free, clear finish every time."
+          },
+          {
+            number: "03",
+            title: "Detail", 
+            text: "Edges, corners, and sills are hand-detailed for that final touch of polish that separates us from the rest."
+          },
+          {
+            number: "04",
+            title: "RainShield Tech",
+            text: "We seal the clean with RainShield™—a protective coating that repels water, dirt, and outdoor grime, keeping windows cleaner between visits."
+          }
+        ]
+      };
+    }
     
     // Default content
     return {
@@ -192,7 +786,7 @@ const FourStepProcess = () => {
       <div className="fourstepprocess-inner relative flex flex-col items-center justify-center gap-[100px] md:gap-44">
         <div className="heading relative flex flex-col gap-0">
           <div className="relative flex flex-col items-center justify-center gap-0">
-            {(city === "PARKLAND" || city === "MIAMI") ? (
+            {(city === "PARKLAND" || city === "MIAMI" || city === "FORT LAUDERDALE" || city === "LIGHTHOUSE POINT" || city === "SOUTHWEST RANCHES" || city === "CORAL SPRINGS" || city === "HALLANDALE BEACH" || city === "MARGATE" || city === "PEMBROKE PINES" || city === "SUNRISE" || city === "DAVIE" || city === "DELRAY BEACH" || city === "HILLSBORO BEACH" || city === "PLANTATION" || city === "TAMARAC" || city === "DEERFIELD BEACH" || city === "HOLLYWOOD" || city === "MIRAMAR" || city === "POMPANO BEACH" || city === "WEST PALM BEACH" || city === "LAUDERDALE-BY-THE-SEA" || city === "OAKLAND PARK" || city === "WESTON" || city === "ROYAL PALM BEACH") ? (
               <h4 className="text-grain trim !bg-white text-[20px] tracking-[2px] sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px] text-center">
                 {cityContent.mainHeading}
               </h4>

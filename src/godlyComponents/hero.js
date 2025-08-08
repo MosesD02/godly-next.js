@@ -4,6 +4,7 @@ import "@/styles/fourstepprocess.css";
 import QuoteForm from "./quoteForm";
 import { useGodlyContext } from "@/context/godlyContext";
 import { generateHomeH1 } from "@/data/metaTitles";
+import Link from "next/link";
 
 const Hero = () => {
   const { city } = useGodlyContext();
@@ -13,13 +14,146 @@ const Hero = () => {
     if (city === "PARKLAND") {
       return {
         heading: "Parkland's Trusted Window Cleaning & Pressure Washing Experts",
-        subheading: "Godly Windows delivers spotless windows and fresh exteriors to Parkland homes and businesses with fast service and a personal touch."
+        subheading: "Godly Windows delivers spotless windows and fresh exteriors to Parkland homes and businesses with fast service and a personal touch.",
+        hasLink: true
       };
     }
     if (city === "MIAMI") {
       return {
         heading: "Professional Window Cleaning & Pressure Washing in Miami, FL",
         subheading: "Serving Miami homeowners and businesses with streak-free results, fast response, and friendly service."
+      };
+    }
+    if (city === "FORT LAUDERDALE") {
+      return {
+        heading: "Your Go-To for Window Cleaning and Pressure Washing in Fort Lauderdale, FL",
+        subheading: "Delivering spotless windows and pristine exteriors across Fort Lauderdale homes and businesses—fast, reliable, and always friendly."
+      };
+    }
+    if (city === "LIGHTHOUSE POINT") {
+      return {
+        heading: "Top-Quality Window Cleaning and Pressure Washing Services in Lighthouse Point, Florida",
+        subheading: "Bringing spotless windows and polished exteriors to Lighthouse Point homes and businesses—done right, every time, by people you can trust."
+      };
+    }
+    if (city === "SOUTHWEST RANCHES") {
+      return {
+        heading: "Your Local Window Cleaning & Pressure Washing Pros in Southwest Ranches",
+        subheading: "Serving the homes and ranches of Southwest Ranches with spotless windows, pressure-washed exteriors, and old-fashioned service you can count on."
+      };
+    }
+    if (city === "CORAL SPRINGS") {
+      return {
+        heading: "Coral Springs' Reliable Window Cleaning & Pressure Washing Professionals",
+        subheading: "Providing spotless windows and restored exteriors for homes and businesses throughout Coral Springs—with honest, high-quality service you can rely on."
+      };
+    }
+    if (city === "HALLANDALE BEACH") {
+      return {
+        heading: "Top-Rated Window Cleaning and Pressure Washing in Hallandale Beach, Florida",
+        subheading: "From coastal condos to family homes, we deliver spotless windows and beautifully restored exteriors throughout Hallandale Beach—on time and with care."
+      };
+    }
+    if (city === "MARGATE") {
+      return {
+        heading: "Residential & Commercial Window Cleaning and Pressure Washing in Margate, Florida",
+        subheading: "Delivering expert window cleaning and exterior surface restoration across Margate—trusted by homeowners and businesses for reliable, spotless results."
+      };
+    }
+    if (city === "PEMBROKE PINES") {
+      return {
+        heading: "Pembroke Pines' Trusted Window Cleaning & Pressure Washing Specialists",
+        subheading: "Serving Pembroke Pines with streak-free window cleaning and expert surface restoration—trusted by homeowners, HOAs, and businesses across the city."
+      };
+    }
+    if (city === "SUNRISE") {
+      return {
+        heading: "Top-Tier Window Cleaning & Pressure Washing Services in Sunrise, FL",
+        subheading: "From Sawgrass to Sunrise Lakes, we provide spotless windows, fresh exteriors, and trusted service that makes your home or business shine."
+      };
+    }
+    if (city === "DAVIE") {
+      return {
+        heading: "High-Quality Window Cleaning & Pressure Washing Services in Davie, FL",
+        subheading: "From ranch-style homes to gated communities, we serve all of Davie with reliable window cleaning and exterior washing done right—on time and with care."
+      };
+    }
+    if (city === "DELRAY BEACH") {
+      return {
+        heading: "Your Local Window Cleaning & Pressure Washing Pros in Delray Beach",
+        subheading: "From coastal estates to inland neighborhoods, we provide expert window cleaning and surface washing across Delray Beach—done right, with integrity."
+      };
+    }
+    if (city === "HILLSBORO BEACH") {
+      return {
+        heading: "Premium Window Cleaning & Pressure Washing Services in Hillsboro Beach, FL",
+        subheading: "Serving the oceanfront community of Hillsboro Beach with crystal-clear window cleaning and expert exterior washing—tailored for coastal living."
+      };
+    }
+    if (city === "PLANTATION") {
+      return {
+        heading: "Plantation's Choice for Quality Window Cleaning & Pressure Washing",
+        subheading: "From tree-lined neighborhoods to commercial centers, we provide trusted window cleaning and exterior restoration services throughout Plantation—with reliable, spotless results."
+      };
+    }
+    if (city === "TAMARAC") {
+      return {
+        heading: "Brighten Your Home with Expert Window Cleaning & Pressure Washing in Tamarac",
+        subheading: "We bring spotless windows and refreshed exteriors to Tamarac homes and businesses—with fast, friendly, and reliable service every time."
+      };
+    }
+    if (city === "DEERFIELD BEACH") {
+      return {
+        heading: "Serving Deerfield Beach with Reliable Window Cleaning & Pressure Washing",
+        subheading: "From oceanfront condos to inland neighborhoods, we provide Deerfield Beach with expert window cleaning and exterior pressure washing—done fast, right, and with care."
+      };
+    }
+    if (city === "HOLLYWOOD") {
+      return {
+        heading: "Hollywood's Trusted Choice for Window Cleaning & Pressure Washing",
+        subheading: "From lakeside homes to beachfront condos, we serve all of Hollywood with expert window cleaning and exterior pressure washing—fast, spotless, and always professional."
+      };
+    }
+    if (city === "MIRAMAR") {
+      return {
+        heading: "Proudly Serving Miramar with Top-Quality Window Cleaning & Pressure Washing",
+        subheading: "From Silver Shores to Sunset Lakes, we provide Miramar homes and businesses with spotless windows and beautifully restored exteriors—on time and with expert care."
+      };
+    }
+    if (city === "POMPANO BEACH") {
+      return {
+        heading: "Professional Window Cleaning & Pressure Washing Services in Pompano Beach, FL",
+        subheading: "From waterfront properties to downtown storefronts, we deliver streak-free window cleaning and expert pressure washing across Pompano Beach—with results you'll see and feel."
+      };
+    }
+    if (city === "WEST PALM BEACH") {
+      return {
+        heading: "West Palm Beach's Trusted Experts in Window Cleaning & Pressure Washing",
+        subheading: "From downtown condos to historic neighborhoods, we serve West Palm Beach with spotless window cleaning and expert exterior washing—backed by quality, speed, and trust."
+      };
+    }
+    if (city === "LAUDERDALE-BY-THE-SEA") {
+      return {
+        heading: "Professional Window Cleaning & Pressure Washing in Lauderdale-by-the-Sea, FL",
+        subheading: "We help Lauderdale-by-the-Sea homes and vacation properties stay spotless with expert window cleaning and exterior pressure washing—built for coastal living."
+      };
+    }
+    if (city === "OAKLAND PARK") {
+      return {
+        heading: "Oakland Park's Trusted Experts for Window Cleaning & Pressure Washing",
+        subheading: "From quiet residential blocks to busy commercial areas, we serve Oakland Park with expert window cleaning and pressure washing—reliable, streak-free, and always professional."
+      };
+    }
+    if (city === "WESTON") {
+      return {
+        heading: "Residential & Commercial Window Cleaning & Pressure Washing in Weston, FL",
+        subheading: "Serving Weston with spotless windows and refreshed exteriors—trusted by families, HOAs, and businesses across this beautiful, master-planned community."
+      };
+    }
+    if (city === "ROYAL PALM BEACH") {
+      return {
+        heading: "Expert Window Cleaning & Pressure Washing in Royal Palm Beach, FL",
+        subheading: "From gated communities to garden-style homes, we deliver expert window cleaning and exterior surface washing throughout Royal Palm Beach—with spotless results every time."
       };
     }
     
@@ -53,7 +187,7 @@ const Hero = () => {
             </div>
           </div>
           <h1 className="sr-only">{generateHomeH1()}</h1>
-          {(city === "PARKLAND" || city === "MIAMI") ? (
+          {(city === "PARKLAND" || city === "MIAMI" || city === "FORT LAUDERDALE" || city === "LIGHTHOUSE POINT" || city === "SOUTHWEST RANCHES" || city === "CORAL SPRINGS" || city === "HALLANDALE BEACH" || city === "MARGATE" || city === "PEMBROKE PINES" || city === "SUNRISE" || city === "DAVIE" || city === "DELRAY BEACH" || city === "HILLSBORO BEACH" || city === "PLANTATION" || city === "TAMARAC" || city === "DEERFIELD BEACH" || city === "HOLLYWOOD" || city === "MIRAMAR" || city === "POMPANO BEACH" || city === "WEST PALM BEACH" || city === "LAUDERDALE-BY-THE-SEA" || city === "OAKLAND PARK" || city === "WESTON" || city === "ROYAL PALM BEACH") ? (
             <div
               className="flex flex-wrap items-center gap-4 xl:gap-8"
               role="heading"
@@ -90,7 +224,16 @@ const Hero = () => {
             </div>
           )}
           <p className="font-['satoshi-regular'] text-sm font-medium text-white md:text-base xl:text-xl">
-            {cityContent.subheading}
+            {city === "PARKLAND" ? (
+              <>
+                <Link href="https://godlywindows.com/" className="underline decoration-solid decoration-current hover:text-[#FDE4C8] transition-colors">
+                  Godly Windows
+                </Link>{" "}
+                delivers spotless windows and fresh exteriors to Parkland homes and businesses with fast service and a personal touch.
+              </>
+            ) : (
+              cityContent.subheading
+            )}
           </p>
         </div>
         <QuoteForm />

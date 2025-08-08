@@ -14,6 +14,28 @@ import WebsiteLayout from "./websiteLayout";
 import TeamGallery from "./teamGallery";
 import ParklandCta from "./parklandCta";
 import MiamiCta from "./miamiCta";
+import FortLauderdaleCta from "./fortLauderdaleCta";
+import LighthousePointCta from "./lighthousePointCta";
+import SouthwestRanchesCta from "./southwestRanchesCta";
+import CoralSpringsCta from "./coralSpringsCta";
+import HallandaleBeachCta from "./hallandaleBeachCta";
+import MargateCta from "./margateCta";
+import PembrokePinesCta from "./pembrokePinesCta";
+import SunriseCta from "./sunriseCta";
+import DavieCta from "./davieCta";
+import DelrayBeachCta from "./delrayBeachCta";
+import HillsboroBeachCta from "./hillsboroBeachCta";
+import PlantationCta from "./plantationCta";
+import TamaracCta from "./tamaracCta";
+import DeerfieldBeachCta from "./deerfieldBeachCta";
+import HollywoodCta from "./hollywoodCta";
+import MiramarCta from "./miramarCta";
+import PompanoBeachCta from "./pompanoBeachCta";
+import WestPalmBeachCta from "./westPalmBeachCta";
+import LauderdaleByTheSeaCta from "./lauderdaleByTheSeaCta";
+import OaklandParkCta from "./oaklandParkCta";
+import WestonCta from "./westonCta";
+import RoyalPalmBeachCta from "./royalPalmBeachCta";
 import { useGodlyContext } from "@/context/godlyContext";
 
 import { citiesMap } from "./header/CitiesPopup";
@@ -54,6 +76,28 @@ export default function GodlyHome({ city }) {
       <Location />
       <ParklandCta />
       <MiamiCta />
+      <FortLauderdaleCta />
+      <LighthousePointCta />
+      <SouthwestRanchesCta />
+      <CoralSpringsCta />
+      <HallandaleBeachCta />
+      <MargateCta />
+      <PembrokePinesCta />
+      <SunriseCta />
+      <DavieCta />
+      <DelrayBeachCta />
+      <HillsboroBeachCta />
+      <PlantationCta />
+      <TamaracCta />
+      <DeerfieldBeachCta />
+      <HollywoodCta />
+      <MiramarCta />
+      <PompanoBeachCta />
+      <WestPalmBeachCta />
+      <LauderdaleByTheSeaCta />
+      <OaklandParkCta />
+      <WestonCta />
+      <RoyalPalmBeachCta />
       <PopupModal />
     </WebsiteLayout>
   );
