@@ -14,7 +14,7 @@ const WestonCta = () => {
   const phoneNumber = getPhoneNumber(city);
 
   return (
-    <div className="bg-[#1F1D1D] py-16 md:py-20">
+    <div className="paper-bg-16 bg-[#262424] py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 text-center">
         <h2 className="mb-6 font-marlton text-3xl font-normal tracking-wide text-white md:text-5xl">
           Whether you live in The Ridges, Weston Hills, or near Indian Trace

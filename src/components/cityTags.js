@@ -60,7 +60,7 @@ const CityTags = () => {
         width: window.innerWidth,
         height: 300,
         wireframes: false,
-        background: "#312e2c",
+        background: "transparent",
         showSleeping: false,
       },
     });
@@ -232,8 +232,8 @@ const CityTags = () => {
   }, [cities]);
 
   return (
-    <div className="paper-bg-16 flex max-h-fit w-full justify-center">
-      <div ref={sceneRef} className="w-full" />
+    <div className="paper-bg-16 flex max-h-fit w-full justify-center bg-[#262424]">
+      <div ref={sceneRef} className="paper-bg-16 w-full bg-[#262424]" />
     </div>
   );
 };

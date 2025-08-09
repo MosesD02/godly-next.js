@@ -13,7 +13,7 @@ const DavieCta = () => {
   const formattedPhoneNumber = phoneNumber.replace(/-/g, "");
 
   return (
-    <div className="flex flex-col items-center justify-center gap-6 py-20 px-8 bg-[#2D2B2B]">
+    <div className="paper-bg-16 bg-[#262424] flex flex-col items-center justify-center gap-6 py-20 px-8">
       <div className="max-w-4xl text-center">
         <h2 className="text-3xl font-bold text-[#FDE4C8] mb-6 md:text-4xl lg:text-5xl">
           Reliable Window & Exterior Cleaning in Davie
