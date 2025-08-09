@@ -138,11 +138,11 @@ const Footer = () => {
     <div className="paper-bg-16 bg-[#262424]">
       <div className="flex flex-col items-center justify-center text-white">
         <div className="relative sm:flex sm:w-full sm:items-center sm:justify-center">
-          <h1 className="trim text-whites max-w-[200px] text-center text-[64px] leading-[80px] md:max-w-[40px]">
+          <h1 className="trim text-whites max-w-[200px] text-center text-[64px] leading-[80px] sm:max-w-[40px]">
             CITIES SERVE
           </h1>
           <span
-            className="trim absolute top-[35px] left-[80px] h-full w-full -rotate-[8deg] font-['luminaire-script'] text-[40px] text-[#FFE7AF] md:top-[45px] md:left-[50px]"
+            className="trim absolute top-[35px] left-[80px] h-full w-full -rotate-[8deg] font-['luminaire-script'] text-[40px] text-[#FFE7AF] sm:top-[45px] sm:left-[50px]"
             style={{
               textShadow:
                 "-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, " +
