@@ -11,7 +11,7 @@ const Logo = () => {
         <Image
           src={logo}
           alt="Logo"
-          className="header-logo h-[36px] w-[67px] md:h-[52.542px] md:w-[108.344px]"
+          className="header-logo h-[30px] w-[60px] md:h-[42.542px] md:w-[88.344px]"
         />
       </Link>
     </div>

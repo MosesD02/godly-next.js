@@ -178,6 +178,11 @@ const Footer = () => {
             </Link>
           ))}
         </div>
+        <div className="flex w-full items-center justify-center py-8">
+          <h2 className="text-center text-2xl font-bold text-white md:text-4xl">
+            Available 24 hours for you
+          </h2>
+        </div>
       </div>
       <div className="paper-bg-16 w-full flex-col bg-[#262424] md:flex">
         <div className="item-center mx-auto flex w-full max-w-[1440px] flex-col justify-start gap-10 px-6 py-[48px] md:px-[40px]">
@@ -276,7 +281,7 @@ const Footer = () => {
             <Image
               src={logo}
               alt="logo"
-              className="object center h-auto w-[130px] object-contain md:w-[202px]"
+              className="object center h-auto w-[117px] object-contain md:w-[182px]"
             ></Image>
           </div>
         </div>

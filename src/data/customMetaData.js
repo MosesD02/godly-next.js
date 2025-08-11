@@ -64,8 +64,8 @@ export const customMetaData = {
   },
   "fort-lauderdale": {
     cityPage: {
-      title: "Apt Cleaning Services in Fort Lauderdale - Godly Windows",
-      description: "Top-rated apt cleaning services in Fort Lauderdale by Godly Windows. Reliable, local, and detail-oriented. Book your home cleaning today for a sparkling space!"
+      title: "Expert Window Cleaning and Pressure Washing in Fort Lauderdale",
+      description: "Professional window cleaning and pressure washing in Fort Lauderdale. Boost curb appeal with expert services for homes and businesses. Get a free quote today!"
     },
     services: {
       "solar-panel-cleaning": {
