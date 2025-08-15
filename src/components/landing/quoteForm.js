@@ -135,6 +135,7 @@ export default function QuoteForm({ isDialog, service, source }) {
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
             source: "Google Ads",
+            pageUrl: typeof window !== "undefined" ? window.location.href : null,
           }),
         },
       );
@@ -154,6 +155,7 @@ export default function QuoteForm({ isDialog, service, source }) {
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
             utm_source: source || "google ads",
+            pageUrl: typeof window !== "undefined" ? window.location.href : null,
           }),
         },
       );
@@ -172,6 +174,7 @@ export default function QuoteForm({ isDialog, service, source }) {
             services: formData.services,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
+            pageUrl: typeof window !== "undefined" ? window.location.href : null,
           }),
         },
       );
