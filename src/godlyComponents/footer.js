@@ -4,7 +4,7 @@ import React from "react";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import logo from "@/assets/logo-new.png";
 import Image from "next/image";
-import CityTags from "@/components/cityTags";
+// import CityTags from "@/components/cityTags";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
@@ -287,7 +287,7 @@ const Footer = () => {
             ></Image>
           </div>
         </div>
-        <CityTags />
+        {/* <CityTags /> */}
       </div>
     </div>
   );
