@@ -31,161 +31,186 @@ const servicesList = [
 
 export default function QuoteForm({ isDialog }) {
   const { city } = useGodlyContext();
-  
+
   // City-specific form content
   const getFormContent = () => {
     if (city === "PARKLAND") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "MIAMI") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "FORT LAUDERDALE") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "LIGHTHOUSE POINT") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "SOUTHWEST RANCHES") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "CORAL SPRINGS") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "HALLANDALE BEACH") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "MARGATE") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "PEMBROKE PINES") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "SUNRISE") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "DAVIE") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "DELRAY BEACH") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "HILLSBORO BEACH") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "PLANTATION") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "TAMARAC") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "DEERFIELD BEACH") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "HOLLYWOOD") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "MIRAMAR") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "POMPANO BEACH") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "WEST PALM BEACH") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "LAUDERDALE-BY-THE-SEA") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "OAKLAND PARK") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "WESTON") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
     if (city === "ROYAL PALM BEACH") {
       return {
         heading: "Need a quick estimate?",
-        description: "Receive a call within 30 minutes during normal business hours."
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
       };
     }
-    
+
     // Default content
     return {
       heading: "LET US CALL YOU!",
-      description: "Receive a call within 30 minutes during normal business hours."
+      description:
+        "Receive a call within 30 minutes during normal business hours.",
     };
   };
-  
+
   const formContent = getFormContent();
   const [date, setDate] = useState();
   const [formData, setFormData] = useState({
@@ -309,7 +334,8 @@ export default function QuoteForm({ isDialog }) {
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
             source: "Organic",
-            pageUrl: typeof window !== "undefined" ? window.location.href : null,
+            pageUrl:
+              typeof window !== "undefined" ? window.location.href : null,
           }),
         },
       );
@@ -326,7 +352,8 @@ export default function QuoteForm({ isDialog }) {
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
             utm_source: "organic",
-            pageUrl: typeof window !== "undefined" ? window.location.href : null,
+            pageUrl:
+              typeof window !== "undefined" ? window.location.href : null,
           }),
         },
       );
@@ -345,7 +372,8 @@ export default function QuoteForm({ isDialog }) {
             services: formData.services,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
-            pageUrl: typeof window !== "undefined" ? window.location.href : null,
+            pageUrl:
+              typeof window !== "undefined" ? window.location.href : null,
           }),
         },
       );
@@ -472,16 +500,19 @@ export default function QuoteForm({ isDialog }) {
               required
             />
           </div>
-          <div className="md:col-span-2 xl:col-span-4">
+          <div className="relative md:col-span-2 xl:col-span-4">
             <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
               Phone Number
             </label>
+            <div className="absolute top-1/2 left-0 -translate-y-[calc(50%-8px)] text-base md:-translate-y-[calc(50%-2px)] md:text-xl xl:-translate-y-[calc(50%-4px)] xl:text-2xl">
+              +1
+            </div>
             <Input
               name="phone"
               placeholder="YOUR PHONE NUMBER"
               value={formData.phone}
               onChange={handleChange}
-              className="rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+              className="ml-4 rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:ml-6 md:text-xl xl:ml-6 xl:text-2xl"
               required
             />
           </div>
@@ -610,7 +641,7 @@ export default function QuoteForm({ isDialog }) {
             </Popover>
           </div>
 
-          <div className="md:col-span-1 xl:col-span-2">
+          <div className="md:col-span-1 xl:col-span-3">
             <label className="mb-1 block w-full pb-3 font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
               Zip Code
             </label>

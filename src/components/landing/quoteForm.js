@@ -135,7 +135,8 @@ export default function QuoteForm({ isDialog, service, source }) {
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
             source: "Google Ads",
-            pageUrl: typeof window !== "undefined" ? window.location.href : null,
+            pageUrl:
+              typeof window !== "undefined" ? window.location.href : null,
           }),
         },
       );
@@ -155,7 +156,8 @@ export default function QuoteForm({ isDialog, service, source }) {
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
             utm_source: source || "google ads",
-            pageUrl: typeof window !== "undefined" ? window.location.href : null,
+            pageUrl:
+              typeof window !== "undefined" ? window.location.href : null,
           }),
         },
       );
@@ -174,7 +176,8 @@ export default function QuoteForm({ isDialog, service, source }) {
             services: formData.services,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
-            pageUrl: typeof window !== "undefined" ? window.location.href : null,
+            pageUrl:
+              typeof window !== "undefined" ? window.location.href : null,
           }),
         },
       );
@@ -286,16 +289,19 @@ export default function QuoteForm({ isDialog, service, source }) {
               required
             />
           </div>
-          <div className="md:col-span-1 xl:col-span-1">
+          <div className="relative max-w-full overflow-clip md:col-span-1 xl:col-span-1">
             <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
               Phone Number
             </label>
+            <div className="absolute top-1/2 left-0 -translate-y-[calc(50%-8px)] text-base md:-translate-y-[calc(50%-8px)] md:text-xl xl:-translate-y-[calc(50%-10px)] xl:text-2xl">
+              +1
+            </div>
             <Input
               name="phone"
               placeholder="YOUR PHONE NUMBER"
               value={formData.phone}
               onChange={handleChange}
-              className="rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+              className="ml-6 rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
               required
             />
           </div>
