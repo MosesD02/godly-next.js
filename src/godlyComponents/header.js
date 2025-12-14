@@ -165,7 +165,7 @@ const Header = () => {
       )}
       <div
         className="godlyheader w-full bg-[#252323] p-4 text-white lg:px-6 lg:py-0"
-        style={{ position: "fixed", top: "0", zIndex: "100" }}
+        style={{ position: "fixed", top: "0", zIndex: "30" }}
       >
         <div className="flex w-full flex-col items-center justify-between gap-4 bg-[#252323] lg:flex-row">
           {/* Left side: Logo, Mobile Toggle, Desktop Nav */}
