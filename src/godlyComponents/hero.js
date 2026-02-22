@@ -13,15 +13,14 @@ const Hero = () => {
   const getCitySpecificContent = () => {
     if (city === "PARKLAND") {
       return {
-        heading: "Parkland's Trusted Window Cleaning & Pressure Washing Experts",
-        subheading: "Godly Windows delivers spotless windows and fresh exteriors to Parkland homes and businesses with fast service and a personal touch.",
-        hasLink: true
+        heading: "Professional Window Cleaning in Parkland, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Parkland, FL"
       };
     }
     if (city === "MIAMI") {
       return {
-        heading: "Professional Window Cleaning & Pressure Washing in Miami, FL",
-        subheading: "Serving Miami homeowners and businesses with streak-free results, fast response, and friendly service."
+        heading: "Professional Window Cleaning in Miami, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Miami, FL"
       };
     }
     if (city === "FORT LAUDERDALE") {
@@ -32,116 +31,116 @@ const Hero = () => {
     }
     if (city === "LIGHTHOUSE POINT") {
       return {
-        heading: "Top-Quality Window Cleaning and Pressure Washing Services in Lighthouse Point, Florida",
-        subheading: "Bringing spotless windows and polished exteriors to Lighthouse Point homes and businesses—done right, every time, by people you can trust."
+        heading: "Professional Window Cleaning in Lighthouse Point, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Lighthouse Point, FL"
       };
     }
     if (city === "SOUTHWEST RANCHES") {
       return {
-        heading: "Your Local Window Cleaning & Pressure Washing Pros in Southwest Ranches",
-        subheading: "Serving the homes and ranches of Southwest Ranches with spotless windows, pressure-washed exteriors, and old-fashioned service you can count on."
+        heading: "Professional Window Cleaning in Southwest Ranches, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Southwest Ranches, FL"
       };
     }
     if (city === "CORAL SPRINGS") {
       return {
-        heading: "Coral Springs' Reliable Window Cleaning & Pressure Washing Professionals",
-        subheading: "Providing spotless windows and restored exteriors for homes and businesses throughout Coral Springs—with honest, high-quality service you can rely on."
+        heading: "Professional Window Cleaning in Coral Springs, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Coral Springs, FL"
       };
     }
     if (city === "HALLANDALE BEACH") {
       return {
-        heading: "Top-Rated Window Cleaning and Pressure Washing in Hallandale Beach, Florida",
-        subheading: "From coastal condos to family homes, we deliver spotless windows and beautifully restored exteriors throughout Hallandale Beach—on time and with care."
+        heading: "Professional Window Cleaning in Hallandale Beach, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Hallandale Beach, FL"
       };
     }
     if (city === "MARGATE") {
       return {
-        heading: "Residential & Commercial Window Cleaning and Pressure Washing in Margate, Florida",
-        subheading: "Delivering expert window cleaning and exterior surface restoration across Margate—trusted by homeowners and businesses for reliable, spotless results."
+        heading: "Professional Window Cleaning in Margate, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Margate, FL"
       };
     }
     if (city === "PEMBROKE PINES") {
       return {
-        heading: "Pembroke Pines' Trusted Window Cleaning & Pressure Washing Specialists",
-        subheading: "Serving Pembroke Pines with streak-free window cleaning and expert surface restoration—trusted by homeowners, HOAs, and businesses across the city."
+        heading: "Professional Window Cleaning in Pembroke Pines, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Pembroke Pines, FL"
       };
     }
     if (city === "SUNRISE") {
       return {
-        heading: "Top-Tier Window Cleaning & Pressure Washing Services in Sunrise, FL",
-        subheading: "From Sawgrass to Sunrise Lakes, we provide spotless windows, fresh exteriors, and trusted service that makes your home or business shine."
+        heading: "Professional Window Cleaning in Sunrise, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Sunrise, FL"
       };
     }
     if (city === "DAVIE") {
       return {
-        heading: "High-Quality Window Cleaning & Pressure Washing Services in Davie, FL",
-        subheading: "From ranch-style homes to gated communities, we serve all of Davie with reliable window cleaning and exterior washing done right—on time and with care."
+        heading: "Professional Window Cleaning in Davie, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Davie, FL"
       };
     }
     if (city === "DELRAY BEACH") {
       return {
-        heading: "Your Local Window Cleaning & Pressure Washing Pros in Delray Beach",
-        subheading: "From coastal estates to inland neighborhoods, we provide expert window cleaning and surface washing across Delray Beach—done right, with integrity."
+        heading: "Professional Window Cleaning in Delray Beach, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Delray Beach, FL"
       };
     }
     if (city === "HILLSBORO BEACH") {
       return {
-        heading: "Premium Window Cleaning & Pressure Washing Services in Hillsboro Beach, FL",
-        subheading: "Serving the oceanfront community of Hillsboro Beach with crystal-clear window cleaning and expert exterior washing—tailored for coastal living."
+        heading: "Professional Window Cleaning in Hillsboro Beach, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Hillsboro Beach, FL"
       };
     }
     if (city === "PLANTATION") {
       return {
-        heading: "Plantation's Choice for Quality Window Cleaning & Pressure Washing",
-        subheading: "From tree-lined neighborhoods to commercial centers, we provide trusted window cleaning and exterior restoration services throughout Plantation—with reliable, spotless results."
+        heading: "Professional Window Cleaning in Plantation, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Plantation, FL"
       };
     }
     if (city === "TAMARAC") {
       return {
-        heading: "Brighten Your Home with Expert Window Cleaning & Pressure Washing in Tamarac",
-        subheading: "We bring spotless windows and refreshed exteriors to Tamarac homes and businesses—with fast, friendly, and reliable service every time."
+        heading: "Professional Window Cleaning in Tamarac, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Tamarac, FL"
       };
     }
     if (city === "DEERFIELD BEACH") {
       return {
-        heading: "Serving Deerfield Beach with Reliable Window Cleaning & Pressure Washing",
-        subheading: "From oceanfront condos to inland neighborhoods, we provide Deerfield Beach with expert window cleaning and exterior pressure washing—done fast, right, and with care."
+        heading: "Professional Window Cleaning in Deerfield Beach, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Deerfield Beach, FL"
       };
     }
     if (city === "HOLLYWOOD") {
       return {
-        heading: "Hollywood's Trusted Choice for Window Cleaning & Pressure Washing",
-        subheading: "From lakeside homes to beachfront condos, we serve all of Hollywood with expert window cleaning and exterior pressure washing—fast, spotless, and always professional."
+        heading: "Professional Window Cleaning in Hollywood, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Hollywood, FL"
       };
     }
     if (city === "MIRAMAR") {
       return {
-        heading: "Proudly Serving Miramar with Top-Quality Window Cleaning & Pressure Washing",
-        subheading: "From Silver Shores to Sunset Lakes, we provide Miramar homes and businesses with spotless windows and beautifully restored exteriors—on time and with expert care."
+        heading: "Professional Window Cleaning in Miramar, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Miramar, FL"
       };
     }
     if (city === "POMPANO BEACH") {
       return {
-        heading: "Professional Window Cleaning & Pressure Washing Services in Pompano Beach, FL",
-        subheading: "From waterfront properties to downtown storefronts, we deliver streak-free window cleaning and expert pressure washing across Pompano Beach—with results you'll see and feel."
+        heading: "Professional Window Cleaning in Pompano Beach, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Pompano Beach, FL"
       };
     }
     if (city === "WEST PALM BEACH") {
       return {
-        heading: "West Palm Beach's Trusted Experts in Window Cleaning & Pressure Washing",
-        subheading: "From downtown condos to historic neighborhoods, we serve West Palm Beach with spotless window cleaning and expert exterior washing—backed by quality, speed, and trust."
+        heading: "Professional Window Cleaning in West Palm Beach, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in West Palm Beach, FL"
       };
     }
     if (city === "LAUDERDALE-BY-THE-SEA") {
       return {
-        heading: "Professional Window Cleaning & Pressure Washing in Lauderdale-by-the-Sea, FL",
-        subheading: "We help Lauderdale-by-the-Sea homes and vacation properties stay spotless with expert window cleaning and exterior pressure washing—built for coastal living."
+        heading: "Professional Window Cleaning in Lauderdale-by-the-Sea, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Lauderdale-by-the-Sea, FL"
       };
     }
     if (city === "OAKLAND PARK") {
       return {
-        heading: "Oakland Park's Trusted Experts for Window Cleaning & Pressure Washing",
-        subheading: "From quiet residential blocks to busy commercial areas, we serve Oakland Park with expert window cleaning and pressure washing—reliable, streak-free, and always professional."
+        heading: "Professional Window Cleaning in Oakland Park, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Oakland Park, FL"
       };
     }
     if (city === "WESTON") {
@@ -158,8 +157,8 @@ const Hero = () => {
     }
     if (city === "ROYAL PALM BEACH") {
       return {
-        heading: "Expert Window Cleaning & Pressure Washing in Royal Palm Beach, FL",
-        subheading: "From gated communities to garden-style homes, we deliver expert window cleaning and exterior surface washing throughout Royal Palm Beach—with spotless results every time."
+        heading: "Professional Window Cleaning in Royal Palm Beach, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Royal Palm Beach, FL"
       };
     }
     

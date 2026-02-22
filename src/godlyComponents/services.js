@@ -818,6 +818,28 @@ function ServicesGrid() {
                     {city === "FORT LAUDERDALE" ? `${service.name} in Fort Lauderdale`
                       : city === "BOCA RATON" ? `${service.name} in Boca Raton`
                       : city === "WESTON" ? `${service.name} in Weston`
+                      : city === "POMPANO BEACH" ? `${service.name} in Pompano Beach`
+                      : city === "LIGHTHOUSE POINT" ? `${service.name} in Lighthouse Point`
+                      : city === "PARKLAND" ? `${service.name} in Parkland`
+                      : city === "SOUTHWEST RANCHES" ? `${service.name} in Southwest Ranches`
+                      : city === "DAVIE" ? `${service.name} in Davie`
+                      : city === "DELRAY BEACH" ? `${service.name} in Delray Beach`
+                      : city === "DEERFIELD BEACH" ? `${service.name} in Deerfield Beach`
+                      : city === "HILLSBORO BEACH" ? `${service.name} in Hillsboro Beach`
+                      : city === "MIAMI" ? `${service.name} in Miami`
+                      : city === "CORAL SPRINGS" ? `${service.name} in Coral Springs`
+                      : city === "HALLANDALE BEACH" ? `${service.name} in Hallandale Beach`
+                      : city === "MARGATE" ? `${service.name} in Margate`
+                      : city === "PEMBROKE PINES" ? `${service.name} in Pembroke Pines`
+                      : city === "SUNRISE" ? `${service.name} in Sunrise`
+                      : city === "PLANTATION" ? `${service.name} in Plantation`
+                      : city === "TAMARAC" ? `${service.name} in Tamarac`
+                      : city === "HOLLYWOOD" ? `${service.name} in Hollywood`
+                      : city === "MIRAMAR" ? `${service.name} in Miramar`
+                      : city === "WEST PALM BEACH" ? `${service.name} in West Palm Beach`
+                      : city === "LAUDERDALE-BY-THE-SEA" ? `${service.name} in Lauderdale-by-the-Sea`
+                      : city === "OAKLAND PARK" ? `${service.name} in Oakland Park`
+                      : city === "ROYAL PALM BEACH" ? `${service.name} in Royal Palm Beach`
                       : service.name}
                   </h3>
                   <p
