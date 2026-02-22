@@ -180,7 +180,22 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-        <div className="flex w-full items-center justify-center py-8">
+        <div className="flex w-full flex-col items-center justify-center gap-4 py-8">
+          {city === "FORT LAUDERDALE" && (
+            <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
+              Expert Window Cleaning, House Washing & Roof Cleaning in Fort Lauderdale, FL
+            </p>
+          )}
+          {city === "BOCA RATON" && (
+            <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
+              Expert Window Cleaning, House Washing & Roof Cleaning in Boca Raton, FL
+            </p>
+          )}
+          {city === "WESTON" && (
+            <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
+              Expert Window Cleaning, House Washing & Roof Cleaning in Weston, FL
+            </p>
+          )}
           <h2 className="text-center text-2xl font-bold text-white md:text-4xl">
             Available 24 hours for you
           </h2>

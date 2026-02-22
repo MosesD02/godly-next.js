@@ -786,7 +786,7 @@ function ServicesGrid() {
             className={`paper-bg-8 group relative flex h-full justify-between rounded-sm bg-[#E9E5E4] p-0 transition-transform duration-300 ${isActive ? "rotate-[3deg] border-[#382f2d] bg-[#382f2d]" : ""} hover:rotate-[3deg] hover:border-[#382f2d] hover:bg-[#382f2d]`}
             onClick={() => toggleCard(idx)}
           >
-            <CardContent className="service-icon-hover flex h-full p-0 xl:aspect-[1783/1515] xl:max-h-[320px]">
+            <CardContent className="service-icon-hover flex h-full p-0">
               <div className="flex h-full w-full flex-shrink-0 flex-col gap-6 px-3 py-6 md:px-4 md:py-8 md:group-hover:text-white">
                 <div className="flex h-full flex-col gap-4">
                   <div className="relative size-[50px] shrink-0">
@@ -815,7 +815,12 @@ function ServicesGrid() {
                   <h3
                     className={`font-['satoshi-black'] text-sm font-bold ${isActive ? "text-white" : "text-[#1c1c1c]"} group-hover:text-white md:text-[24px]`}
                   >
-                    {service.name}
+                    {["Exterior Window Cleaning", "Interior Window Cleaning", "House Washing", "Roof Washing", "Pressure & Soft Washing", "Gutter Cleaning", "Paver Sealing"].includes(service.name)
+                      ? (city === "FORT LAUDERDALE" ? `${service.name} in Fort Lauderdale`
+                        : city === "BOCA RATON" ? `${service.name} in Boca Raton`
+                        : city === "WESTON" ? `${service.name} in Weston`
+                        : service.name)
+                      : service.name}
                   </h3>
                   <p
                     className={`font-[satoshi-regular] text-xs font-normal ${isActive ? "text-white" : "text-[#1f1d1d]"} group-hover:text-white md:text-base`}

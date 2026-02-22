@@ -129,7 +129,7 @@ export function PopupModal() {
             New Client Special
             <br className="md:hidden" />–{" "}
             <span className="bg-gradient-to-b from-[#EC7F58] via-[#EC7B56] to-[#EB7753] bg-clip-text py-2 text-transparent">
-              $59 Off
+              $50 Off
             </span>
           </h2>
           <p className="mx-auto max-w-[272px] text-center font-[Satoshi-medium] text-sm font-medium tracking-[0.96px] md:max-w-[352px] md:text-base">
@@ -173,7 +173,7 @@ export function PopupModal() {
             <div className="flex flex-col rounded-[8px] border border-black">
               <div className="grid grid-cols-2 items-center justify-center gap-2 md:gap-4">
                 <p className="trim bg-gradient-to-b from-[#EC7F58] via-[#EC7B56] to-[#EB7753] bg-clip-text py-4 text-right [font-size:clamp(48px,15vw,96px)] text-transparent">
-                  $59
+                  $50
                 </p>
                 <p className="trim text-left text-[20px] leading-[1] tracking-wide md:text-[24px]">
                   OFF <br />
@@ -246,7 +246,7 @@ export function PopupModal() {
           <button>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/save_59_off.png"
+              src="/assets/save_50_off.png"
               alt="Take 15% Off"
               className="h-[191px] w-[50px] cursor-pointer object-cover"
               onClick={() => {

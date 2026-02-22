@@ -26,8 +26,8 @@ const Hero = () => {
     }
     if (city === "FORT LAUDERDALE") {
       return {
-        heading: "Your Go-To for Window Cleaning and Pressure Washing in Fort Lauderdale, FL",
-        subheading: "Delivering spotless windows and pristine exteriors across Fort Lauderdale homes and businesses—fast, reliable, and always friendly."
+        heading: "Professional Window Cleaning in Fort Lauderdale, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Fort Lauderdale, FL"
       };
     }
     if (city === "LIGHTHOUSE POINT") {
@@ -146,8 +146,14 @@ const Hero = () => {
     }
     if (city === "WESTON") {
       return {
-        heading: "Residential & Commercial Window Cleaning & Pressure Washing in Weston, FL",
-        subheading: "Serving Weston with spotless windows and refreshed exteriors—trusted by families, HOAs, and businesses across this beautiful, master-planned community."
+        heading: "Professional Window Cleaning in Weston, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Weston, FL"
+      };
+    }
+    if (city === "BOCA RATON") {
+      return {
+        heading: "Professional Window Cleaning in Boca Raton, FL",
+        subheading: "Window Cleaning & Exterior Washing Services in Boca Raton, FL"
       };
     }
     if (city === "ROYAL PALM BEACH") {
@@ -187,7 +193,7 @@ const Hero = () => {
             </div>
           </div>
           <h1 className="sr-only">{generateHomeH1()}</h1>
-          {(city === "PARKLAND" || city === "MIAMI" || city === "FORT LAUDERDALE" || city === "LIGHTHOUSE POINT" || city === "SOUTHWEST RANCHES" || city === "CORAL SPRINGS" || city === "HALLANDALE BEACH" || city === "MARGATE" || city === "PEMBROKE PINES" || city === "SUNRISE" || city === "DAVIE" || city === "DELRAY BEACH" || city === "HILLSBORO BEACH" || city === "PLANTATION" || city === "TAMARAC" || city === "DEERFIELD BEACH" || city === "HOLLYWOOD" || city === "MIRAMAR" || city === "POMPANO BEACH" || city === "WEST PALM BEACH" || city === "LAUDERDALE-BY-THE-SEA" || city === "OAKLAND PARK" || city === "WESTON" || city === "ROYAL PALM BEACH") ? (
+          {(city === "PARKLAND" || city === "MIAMI" || city === "FORT LAUDERDALE" || city === "LIGHTHOUSE POINT" || city === "SOUTHWEST RANCHES" || city === "CORAL SPRINGS" || city === "HALLANDALE BEACH" || city === "MARGATE" || city === "PEMBROKE PINES" || city === "SUNRISE" || city === "DAVIE" || city === "DELRAY BEACH" || city === "HILLSBORO BEACH" || city === "PLANTATION" || city === "TAMARAC" || city === "DEERFIELD BEACH" || city === "HOLLYWOOD" || city === "MIRAMAR" || city === "POMPANO BEACH" || city === "WEST PALM BEACH" || city === "LAUDERDALE-BY-THE-SEA" || city === "OAKLAND PARK" || city === "WESTON" || city === "ROYAL PALM BEACH" || city === "BOCA RATON") ? (
             <div
               className="flex flex-wrap items-center gap-4 xl:gap-8"
               role="heading"

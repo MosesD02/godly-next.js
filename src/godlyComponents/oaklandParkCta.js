@@ -16,18 +16,19 @@ const OaklandParkCta = () => {
   return (
     <div className="paper-bg-16 bg-[#262424] py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 text-center">
-        <h2 className="mb-6 font-marlton text-3xl font-normal tracking-wide text-white md:text-5xl">
+        <h2 className="font-marlton mb-6 text-3xl font-normal tracking-wide text-white md:text-5xl">
           Ready to Transform Your Oakland Park Property?
         </h2>
         <p className="mx-auto mb-8 max-w-3xl font-['satoshi-regular'] text-lg text-white/80 md:text-xl">
           From quiet residential blocks to busy commercial areas, trust{" "}
-          <Link 
-            href="https://godlywindows.com/" 
-            className="underline decoration-solid decoration-current hover:text-[#FDE4C8] transition-colors"
+          <Link
+            href="https://godlywindows.com/"
+            className="underline decoration-current decoration-solid transition-colors hover:text-[#FDE4C8]"
           >
             Godly Windows
           </Link>{" "}
-          for professional window cleaning and pressure washing in Oakland Park. We deliver streak-free results and reliable service every time.
+          for professional window cleaning and pressure washing in Oakland Park.
+          We deliver streak-free results and reliable service every time.
         </p>
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-center">
           <a
@@ -38,7 +39,7 @@ const OaklandParkCta = () => {
           </a>
           <Link
             href="/oakland-park/quote"
-            className="rounded-md border-2 border-[#FDE4C8] px-8 py-4 font-['satoshi-bold'] text-lg font-bold text-[#FDE4C8] transition-colors hover:bg-[#FDE4C8] hover:text-[#1F1D1D]"
+            className="rounded-md border-2 border-[#FDE4C8] px-8 py-4 font-['satoshi-bold'] text-lg font-bold text-[#FDE4C8]! transition-colors hover:bg-[#FDE4C8] hover:text-[#1F1D1D]"
           >
             Get Free Estimate
           </Link>

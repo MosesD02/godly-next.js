@@ -96,39 +96,41 @@ export async function generateMetadata({ params }) {
       return {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": `https://godlywindows.com/${city}`,
-        "name": "Godly Windows & Wash Co.",
-        "url": `https://godlywindows.com/${city}`,
-        "logo": "https://godlywindows.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d1f08d62.webp&w=1200&q=75",
-        "image": "https://godlywindows.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d1f08d62.webp&w=1200&q=75",
-        "description": "Professional window cleaning and pressure washing in Fort Lauderdale, FL. Serving residential and commercial clients with reliable, streak‑free results.",
-        "telephone": "(954) 852‑5326",
+        "name": "Godly Windows & Wash Co. Fort Lauderdale",
+        "image": "https://godlywindows.com/assets/logo-new.png",
+        "url": "https://godlywindows.com/fort-lauderdale",
+        "telephone": "+19548525326",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Based in South Florida, serving Fort Lauderdale, FL",
+          "streetAddress": "3315 E Oakland Park Blvd Suite 204",
           "addressLocality": "Fort Lauderdale",
           "addressRegion": "FL",
-          "postalCode": "33301",
+          "postalCode": "33308",
           "addressCountry": "US"
         },
-        "areaServed": {
-          "@type": "Place",
-          "name": "Fort Lauderdale, FL"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 26.1624,
+          "longitude": -80.1101
         },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday", "Tuesday", "Wednesday", 
-              "Thursday", "Friday", "Saturday", "Sunday"
-            ],
-            "opens": "00:00",
-            "closes": "23:59"
-          }
-        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
         "sameAs": [
-          "https://www.facebook.com/godlywindows",
-          "https://www.instagram.com/godlywindows"
+          "https://www.instagram.com/godlywindows",
+          "https://www.facebook.com/godlywindows"
+        ],
+        "priceRange": "$$",
+        "description": "Godly Windows & Wash Co. is Fort Lauderdale's top-rated window cleaning and exterior washing company specializing in window cleaning, house washing, soft wash roof cleaning, pressure washing, paver sealing, and gutter cleaning.",
+        "areaServed": [
+          "Fort Lauderdale",
+          "Pompano Beach",
+          "Plantation",
+          "Davie",
+          "Parkland"
         ]
       };
     }
@@ -896,39 +898,84 @@ export async function generateMetadata({ params }) {
       return {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": `https://godlywindows.com/${city}`,
-        "name": "Godly Windows & Wash Co.",
-        "url": `https://godlywindows.com/${city}`,
-        "logo": "https://godlywindows.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d1f08d62.webp&w=1200&q=75",
-        "image": "https://godlywindows.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.d1f08d62.webp&w=1200&q=75",
-        "description": "Professional window cleaning and pressure washing in Weston, FL. Serving residential and commercial clients with reliable, streak‑free results.",
-        "telephone": "(954) 852‑5326",
+        "name": "Godly Windows & Wash Co. Weston",
+        "image": "https://godlywindows.com/assets/logo-new.png",
+        "url": "https://godlywindows.com/weston",
+        "telephone": "+19547383421",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Based in South Florida, serving Weston, FL",
+          "streetAddress": "Weston",
           "addressLocality": "Weston",
           "addressRegion": "FL",
           "postalCode": "33326",
           "addressCountry": "US"
         },
-        "areaServed": {
-          "@type": "Place",
-          "name": "Weston, FL"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 26.1003,
+          "longitude": -80.3997
         },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday", "Tuesday", "Wednesday", 
-              "Thursday", "Friday", "Saturday", "Sunday"
-            ],
-            "opens": "00:00",
-            "closes": "23:59"
-          }
-        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
         "sameAs": [
-          "https://www.facebook.com/godlywindows",
-          "https://www.instagram.com/godlywindows"
+          "https://www.instagram.com/godlywindows",
+          "https://www.facebook.com/godlywindows"
+        ],
+        "priceRange": "$$",
+        "description": "Godly Windows & Wash Co. is Weston's top-rated window cleaning and exterior washing company specializing in window cleaning, house washing, soft wash roof cleaning, pressure washing, paver sealing, and gutter cleaning.",
+        "areaServed": [
+          "Weston",
+          "Davie",
+          "Southwest Ranches",
+          "Plantation",
+          "Miramar",
+          "Pembroke Pines"
+        ]
+      };
+    }
+    if (city === "boca-raton") {
+      return {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Godly Windows & Wash Co. Boca Raton",
+        "image": "https://godlywindows.com/assets/logo-new.png",
+        "url": "https://godlywindows.com/boca-raton",
+        "telephone": "+15618264461",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "491 W Camino Real",
+          "addressLocality": "Boca Raton",
+          "addressRegion": "FL",
+          "postalCode": "33432",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 26.3683,
+          "longitude": -80.1289
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "sameAs": [
+          "https://www.instagram.com/godlywindows",
+          "https://www.facebook.com/godlywindows"
+        ],
+        "priceRange": "$$",
+        "description": "Godly Windows & Wash Co. is Boca Raton's top-rated window cleaning and exterior washing company specializing in window cleaning, house washing, soft wash roof cleaning, pressure washing, paver sealing, and gutter cleaning.",
+        "areaServed": [
+          "Boca Raton",
+          "Delray Beach",
+          "Deerfield Beach",
+          "Boynton Beach",
+          "Lighthouse Point"
         ]
       };
     }

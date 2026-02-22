@@ -309,91 +309,91 @@ export default function QuoteForm({ isDialog }) {
     setIsSubmitting(true);
 
     try {
-      await base("Form Table").create([
-        {
-          fields: {
-            Name: formData.name,
-            Email: formData.email,
-            Phone: formData.phone,
-            "Required Service": formData.services.join(", "),
-            Date: date ? format(date, "MM/dd/yyyy") : "",
-            ZipCode: formData.zipcode,
-          },
-        },
-      ]);
+      // await base("Form Table").create([
+      //   {
+      //     fields: {
+      //       Name: formData.name,
+      //       Email: formData.email,
+      //       Phone: formData.phone,
+      //       "Required Service": formData.services.join(", "),
+      //       Date: date ? format(date, "MM/dd/yyyy") : "",
+      //       ZipCode: formData.zipcode,
+      //     },
+      //   },
+      // ]);
 
-      await fetch(
-        "https://hook.us1.make.com/r3kgolabx4r2luoyc39npw095bbtytl7",
-        {
-          method: "POST",
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            service: formData.services,
-            date: date ? format(date, "MM/dd/yyyy") : null,
-            zipcode: formData.zipcode,
-            source: "Organic",
-            pageUrl:
-              typeof window !== "undefined" ? window.location.href : null,
-          }),
-        },
-      );
+      // await fetch(
+      //   "https://hook.us1.make.com/r3kgolabx4r2luoyc39npw095bbtytl7",
+      //   {
+      //     method: "POST",
+      //     body: JSON.stringify({
+      //       name: formData.name,
+      //       email: formData.email,
+      //       phone: formData.phone,
+      //       service: formData.services,
+      //       date: date ? format(date, "MM/dd/yyyy") : null,
+      //       zipcode: formData.zipcode,
+      //       source: "Organic",
+      //       pageUrl:
+      //         typeof window !== "undefined" ? window.location.href : null,
+      //     }),
+      //   },
+      // );
 
-      await fetch(
-        "https://hook.us1.make.com/ivm6g245bvvfk1k72ygb9lq83dubrl4m",
-        {
-          method: "POST",
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            service: formData.services,
-            date: date ? format(date, "MM/dd/yyyy") : null,
-            zipcode: formData.zipcode,
-            utm_source: "organic",
-            pageUrl:
-              typeof window !== "undefined" ? window.location.href : null,
-          }),
-        },
-      );
+      // await fetch(
+      //   "https://hook.us1.make.com/ivm6g245bvvfk1k72ygb9lq83dubrl4m",
+      //   {
+      //     method: "POST",
+      //     body: JSON.stringify({
+      //       name: formData.name,
+      //       email: formData.email,
+      //       phone: formData.phone,
+      //       service: formData.services,
+      //       date: date ? format(date, "MM/dd/yyyy") : null,
+      //       zipcode: formData.zipcode,
+      //       utm_source: "organic",
+      //       pageUrl:
+      //         typeof window !== "undefined" ? window.location.href : null,
+      //     }),
+      //   },
+      // );
 
-      await fetch(
-        "https://hook.us1.make.com/la9l4g93iz98xumdx4ecptc3ji7t4pux",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            services: formData.services,
-            date: date ? format(date, "MM/dd/yyyy") : null,
-            zipcode: formData.zipcode,
-            pageUrl:
-              typeof window !== "undefined" ? window.location.href : null,
-          }),
-        },
-      );
+      // await fetch(
+      //   "https://hook.us1.make.com/la9l4g93iz98xumdx4ecptc3ji7t4pux",
+      //   {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({
+      //       name: formData.name,
+      //       email: formData.email,
+      //       phone: formData.phone,
+      //       services: formData.services,
+      //       date: date ? format(date, "MM/dd/yyyy") : null,
+      //       zipcode: formData.zipcode,
+      //       pageUrl:
+      //         typeof window !== "undefined" ? window.location.href : null,
+      //     }),
+      //   },
+      // );
 
-      if (typeof window !== "undefined" && window.gtag) {
-        const gtag = window.gtag;
+      // if (typeof window !== "undefined" && window.gtag) {
+      //   const gtag = window.gtag;
 
-        gtag("event", "quote_form_submission", {
-          event_category: "engagement",
-          event_label: "Quote Form Submission",
-          value: 1,
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          services: [formData.services],
-          date: date ? format(date, "MM/dd/yyyy") : null,
-          zipcode: formData.zipcode,
-          source: "organic",
-        });
-      }
+      //   gtag("event", "quote_form_submission", {
+      //     event_category: "engagement",
+      //     event_label: "Quote Form Submission",
+      //     value: 1,
+      //     name: formData.name,
+      //     email: formData.email,
+      //     phone: formData.phone,
+      //     services: [formData.services],
+      //     date: date ? format(date, "MM/dd/yyyy") : null,
+      //     zipcode: formData.zipcode,
+      //     source: "organic",
+      //   });
+      // }
 
       setSubmitStatus("success");
       setShowSuccessDialog(true);
