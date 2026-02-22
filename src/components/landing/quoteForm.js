@@ -382,9 +382,7 @@ export default function QuoteForm({ isDialog, service, source }) {
               THANK YOU
             </h2>
             <p className="mb-6 font-sans text-[#2D2B2B]">
-              I agree to receive updates from Godly
-              <br />
-              about my estimate via text message
+              All set. Keep an eye out for our call.
             </p>
             <button
               onClick={() => setShowSuccessDialog(false)}
