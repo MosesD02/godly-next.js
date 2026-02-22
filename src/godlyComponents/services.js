@@ -815,11 +815,9 @@ function ServicesGrid() {
                   <h3
                     className={`font-['satoshi-black'] text-sm font-bold ${isActive ? "text-white" : "text-[#1c1c1c]"} group-hover:text-white md:text-[24px]`}
                   >
-                    {["Exterior Window Cleaning", "Interior Window Cleaning", "House Washing", "Roof Washing", "Pressure & Soft Washing", "Gutter Cleaning", "Paver Sealing"].includes(service.name)
-                      ? (city === "FORT LAUDERDALE" ? `${service.name} in Fort Lauderdale`
-                        : city === "BOCA RATON" ? `${service.name} in Boca Raton`
-                        : city === "WESTON" ? `${service.name} in Weston`
-                        : service.name)
+                    {city === "FORT LAUDERDALE" ? `${service.name} in Fort Lauderdale`
+                      : city === "BOCA RATON" ? `${service.name} in Boca Raton`
+                      : city === "WESTON" ? `${service.name} in Weston`
                       : service.name}
                   </h3>
                   <p
