@@ -6,10 +6,15 @@ import {
   generateServiceTitle,
   serviceMetaTitles,
 } from "@/data/metaTitles";
+import { getBlogPostBySlug } from "@/data/blog-content";
+import { format } from "date-fns";
 
 export const runtime = "nodejs";
 export const size = OG_SIZE;
 export const contentType = "image/png";
+
+/** Non-city segments that could incorrectly match [city] - render as blog post */
+const BLOG_LIKE_SEGMENTS = new Set(["blog", "blogs"]);
 
 function capitalize(str) {
   if (!str) return str;
@@ -27,6 +32,27 @@ export default async function Image({ params }) {
     loadOgPaperBg(),
   ]);
   const { city, slug } = await resolvedParams;
+
+  // If [city] matched "blog" (route conflict), render blog post OG image
+  if (BLOG_LIKE_SEGMENTS.has(city)) {
+    const post = getBlogPostBySlug(slug);
+    const title = post?.metaTitle || post?.title || "Blog | Godly Windows";
+    const subtitle = post?.targetCity ? `${post.targetCity} | Godly Windows` : "Godly Windows";
+    const date = post?.publishedAt ? format(new Date(post.publishedAt), "MMMM d, yyyy") : null;
+    return new ImageResponse(
+      (
+        <OgLayout
+          title={title}
+          subtitle={subtitle}
+          logoSrc={logoSrc}
+          paperBgSrc={paperBgSrc}
+          date={date}
+        />
+      ),
+      { ...OG_SIZE, fonts }
+    );
+  }
+
   const cityName = citiesMap[city];
   const title = generateServiceTitle(slug, cityName);
   const serviceName =
