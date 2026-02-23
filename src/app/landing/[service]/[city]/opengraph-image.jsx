@@ -18,25 +18,7 @@ function capitalize(str) {
     .join(" ");
 }
 
-export async function generateImageMetadata({ params }) {
-  const { service, city } = await params;
-  const location = citiesMap[city] || city?.replace(/-/g, " ").toUpperCase();
-  const title = generateServiceTitle(service, location);
-  const serviceName =
-    serviceMetaTitles[service] ||
-    service?.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
-  const locationFormatted = location ? capitalize(location) : "South Florida";
-  return [
-    {
-      id: `${service}-${city}`,
-      alt: `${title} — ${serviceName} in ${locationFormatted}`,
-      size: OG_SIZE,
-      contentType: "image/png",
-    },
-  ];
-}
-
-export default async function Image({ params, id }) {
+export default async function Image({ params }) {
   const [resolvedParams, fonts, logoSrc, paperBgSrc] = await Promise.all([
     params,
     loadOgFonts(),

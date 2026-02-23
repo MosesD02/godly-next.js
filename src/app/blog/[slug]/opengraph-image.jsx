@@ -7,23 +7,14 @@ import { format } from "date-fns";
 export const size = OG_SIZE;
 export const contentType = "image/png";
 
-export async function generateImageMetadata({ params }) {
-  const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
-  const title = post?.metaTitle || post?.title || "Blog | Godly Windows";
-  return [{ id: slug, alt: title, size: OG_SIZE, contentType: "image/png" }];
-}
-
-export default async function Image({ params, id }) {
-  const [resolvedParams, resolvedId, fonts, logoSrc, paperBgSrc] =
-    await Promise.all([
-      params,
-      id,
-      loadOgFonts(),
-      loadOgLogo(),
-      loadOgPaperBg(),
-    ]);
-  const slug = (await resolvedId) ?? (await resolvedParams)?.slug;
+export default async function Image({ params }) {
+  const [resolvedParams, fonts, logoSrc, paperBgSrc] = await Promise.all([
+    params,
+    loadOgFonts(),
+    loadOgLogo(),
+    loadOgPaperBg(),
+  ]);
+  const { slug } = await resolvedParams;
   const post = getBlogPostBySlug(slug);
 
   if (!post) {
