@@ -1,6 +1,5 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import "@/styles/fourstepprocess.css";
 import Image from "next/image";
@@ -827,9 +826,11 @@ const FourStepProcess = () => {
                     {/* Add the dotted line unless it's the last element */}
                     {index !== steps.length - 1 && (
                       <div className="mx-1 max-w-[140px] flex-grow sm:mx-1 sm:max-w-[160px] md:mx-1.5 md:max-w-[180px] lg:mx-2 lg:max-w-[195px] xl:mx-3 xl:max-w-[205px]">
-                        <img
-                          src={"/assets/dotted-line.webp"}
+                        <Image
+                          src="/assets/dotted-line.webp"
                           alt="dotted-line"
+                          width={205}
+                          height={20}
                           className="h-auto w-full object-cover"
                         />
                       </div>

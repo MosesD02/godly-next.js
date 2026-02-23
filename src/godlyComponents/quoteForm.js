@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import { React, useState, useRef, useEffect } from "react";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Calendar } from "@/components/ui/calendar";
@@ -688,11 +688,15 @@ export default function QuoteForm({ isDialog }) {
             </QuoteButton>
           </div>
         </div>
-        <img
-          src={"/assets/tape-hero.webp"}
+        <Image
+          src="/assets/tape-hero.webp"
           alt="cardBg"
-          style={isDialog ? { display: "none" } : {}}
-          className="absolute top-0 left-full z-10 h-[266.58px] w-[234.158px] -translate-x-[calc(50%_+_38px)] -translate-y-[calc(50%_-_48px)] rotate-[-17.311deg]"
+          width={234}
+          height={267}
+          className={cn(
+            "absolute top-0 left-full z-10 -translate-x-[calc(50%_+_38px)] -translate-y-[calc(50%_-_48px)] rotate-[-17.311deg]",
+            isDialog && "hidden",
+          )}
         />
       </div>
       {submitStatus === "error" && (

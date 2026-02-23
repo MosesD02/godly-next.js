@@ -34,6 +34,17 @@ const nextConfig: NextConfig = {
   // Performance optimizations
   compress: true,
 
+  // Redirect /blogs to /blog (canonical blog index)
+  async redirects() {
+    return [
+      {
+        source: "/blogs",
+        destination: "/blog",
+        permanent: true,
+      },
+    ];
+  },
+
   // Experimental features for better performance
   experimental: {
     optimizePackageImports: ["@/components", "@/godlyComponents"],

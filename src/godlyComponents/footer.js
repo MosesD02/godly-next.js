@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo-new.png";
 import Image from "next/image";
 // import CityTags from "@/components/cityTags";
@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
 import { citiesMap } from "./header/CitiesPopup";
 import { usePathname } from "next/navigation";
+import { getAllBlogPosts } from "@/data/blog-content";
 
 const citiesData = [
   "BOCA RATON",
@@ -319,7 +320,7 @@ const Footer = () => {
             )}
           >
             <div className="flex flex-col items-start justify-between md:flex-row">
-              <div className="flex w-full items-start justify-between md:flex-row md:justify-start md:gap-30">
+              <div className="flex w-full flex-col gap-8 md:flex-row md:justify-start md:gap-30">
                 <div className="flex flex-col gap-2">
                   <h3 className="font-normal tracking-[0.64px] text-[#312E2C] uppercase opacity-60 md:opacity-100">
                     Menu
@@ -367,6 +368,30 @@ const Footer = () => {
                     Terms and Conditions
                   </Link>
                 </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-normal tracking-[0.64px] text-[#312E2C] uppercase opacity-60 md:opacity-100">
+                    Blog
+                  </h3>
+                  {getAllBlogPosts()
+                    .slice(0, 3)
+                    .map((post) => (
+                      <Link
+                        key={post.slug}
+                        href={`/blog/${post.slug}`}
+                        className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"
+                      >
+                        {post.title.length > 50
+                          ? `${post.title.slice(0, 50)}…`
+                          : post.title}
+                      </Link>
+                    ))}
+                  <Link
+                    href="/blog"
+                    className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"
+                  >
+                    View all posts
+                  </Link>
+                </div>
               </div>
 
               <div className="hidden flex-col gap-2 text-right md:flex md:items-end">
@@ -384,12 +409,12 @@ const Footer = () => {
               <div className="flex gap-2 md:gap-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#312E2C] text-white">
                   <Link href="https://facebook.com/godlywindows">
-                    <FaFacebookF />
+                    <Facebook size={20} />
                   </Link>
                 </div>
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#312E2C] text-white">
                   <Link href="https://instagram.com/godlywindows">
-                    <FaInstagram />
+                    <Instagram size={20} />
                   </Link>
                 </div>
               </div>

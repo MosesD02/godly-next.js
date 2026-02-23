@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import {
   Dialog,
   DialogContent,
@@ -243,22 +244,24 @@ export function PopupModal() {
       {/* Floating Button */}
       {showFloatingButton && !open && !isExpired && (
         <div className="fixed top-1/2 left-0 z-40 -translate-y-1/2 transform">
-          <button>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+          <button
+            onClick={() => {
+              setIsOpen(true);
+              if (typeof window !== "undefined" && window.gtag) {
+                window.gtag("event", "popup_floating_button_click", {
+                  event_category: "engagement",
+                  event_label: "Popup Floating Button Click",
+                  value: 1,
+                });
+              }
+            }}
+          >
+            <Image
               src="/assets/save_50_off.png"
               alt="Take 15% Off"
-              className="h-[191px] w-[50px] cursor-pointer object-cover"
-              onClick={() => {
-                setIsOpen(true);
-                if (typeof window !== "undefined" && window.gtag) {
-                  window.gtag("event", "popup_floating_button_click", {
-                    event_category: "engagement",
-                    event_label: "Popup Floating Button Click",
-                    value: 1,
-                  });
-                }
-              }}
+              width={50}
+              height={191}
+              className="cursor-pointer object-cover"
             />
           </button>
         </div>

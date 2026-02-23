@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
+import Image from "next/image";
 
 import {
   Carousel,
@@ -58,10 +58,12 @@ const Testimonials = () => {
                     <div className="flex w-full flex-col items-center justify-between gap-3">
                       <div className="ribbon">{item.location}</div>
                       <div className="flex w-full items-center gap-[10px]">
-                        <img
+                        <Image
                           src={item.image}
                           alt={item.author}
-                          className="size-[47px] rounded-full bg-[#D9D9D9] object-cover"
+                          width={47}
+                          height={47}
+                          className="rounded-full bg-[#D9D9D9] object-cover"
                         />
                         <div className="flex flex-col gap-2.5">
                           <p className="trim text-base font-normal">

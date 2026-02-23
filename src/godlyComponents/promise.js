@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { useState, useEffect } from "react";
 import "@/styles/fourstepprocess.css";
@@ -124,10 +123,12 @@ const Promise = () => {
               }
               onClick={() => toggleCard(index)}
             >
-              <img
-                src={step.icon.src}
+              <Image
+                src={step.icon}
                 alt={step.title}
-                className={`absolute top-0 right-0 h-[80%] ${
+                width={80}
+                height={80}
+                className={`absolute top-0 right-0 ${
                   index === 1
                     ? (isActive ? "filter-[invert(0)]" : "filter-[invert(1)]") +
                       " group-hover:filter-[invert(0)]"

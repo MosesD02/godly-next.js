@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useGodlyContext } from "@/context/godlyContext";
 import React from "react";
@@ -107,13 +106,16 @@ const Services = () => {
 
       <div
         id="holiday"
-        className="paper-bg-16 flex flex-col items-center justify-center gap-20 overflow-clip bg-[#262424] bg-contain bg-bottom bg-no-repeat px-6 pt-[100px] bg-blend-soft-light md:p-6"
+        className="paper-bg-16 relative flex flex-col items-center justify-center gap-20 overflow-clip bg-[#262424] bg-contain bg-bottom bg-no-repeat px-6 pt-[100px] bg-blend-soft-light md:p-6"
       >
-        <img
-          className="pointer-events-none absolute overflow-clip object-contain opacity-25"
-          src={"/assets/santa-bg-sparkle.webp"}
-          alt=""
-        />
+        <div className="pointer-events-none absolute inset-0 overflow-clip opacity-25">
+          <Image
+            src="/assets/santa-bg-sparkle.webp"
+            alt=""
+            fill
+            className="object-contain"
+          />
+        </div>
         <div className="mt-4 mb-[164px] flex flex-col items-center justify-center gap-9 md:mb-[220px] md:max-w-[741px]">
           <div className="flex flex-col items-center justify-center gap-[35px]">
             <div className="relative max-w-[359px] md:max-w-full md:min-w-full">

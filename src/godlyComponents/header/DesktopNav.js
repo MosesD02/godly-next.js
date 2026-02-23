@@ -42,6 +42,14 @@ const DesktopNav = ({ onServicesClick }) => {
             OUR PROCESS
           </Link>
         </li>
+        <li>
+          <Link
+            href="/blog"
+            className="text-sm text-[#FDE4C8] hover:text-[#FFCA8F] xl:text-base"
+          >
+            BLOG
+          </Link>
+        </li>
       </ul>
     </nav>
   );

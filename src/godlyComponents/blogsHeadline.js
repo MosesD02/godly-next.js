@@ -7,7 +7,7 @@ const BlogsHeadline = () => {
   return (
     <>
       <div className="hidden bg-[#fdf6ed] pt-[40px] md:block md:px-12">
-        <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 border-black pb-6 md:flex-row">
+        <div className="mx-auto flex max-w-[1311px] flex-col items-start gap-8 border-black pb-6 md:flex-row">
           <div className="w-full md:w-1/2">
             <div className="border-8 border-[#6A64641F] shadow-md">
               <Image
@@ -24,12 +24,19 @@ const BlogsHeadline = () => {
             <h2 className="mb-4 text-[36px] font-semibold text-gray-800">
               NEWS HEADLINE
             </h2>
-            <p className="mb-4 font-['satoshi-light'] text-[20px] leading-[31px] text-gray-800">
+            <p className="mb-4 [display:-webkit-box] h-[10] overflow-hidden font-['satoshi-light'] text-[20px] leading-[31px] text-gray-800 [-webkit-box-orient:vertical] [-webkit-line-clamp:9]">
               We aspire to transport you back to a time when trust was the
               cornerstone of every relationship, particularly within the realms
               of your home and business. Picture an era where commitments were
               not just words spoken lightly, but were honored with unwavering
-              integrity. In those days, fulfilling promises was the norm,
+              integrity. In those days, fulfilling promises was the norm, and
+              they were seen as binding agreements rather than mere suggestions.
+              We are dedicated to reviving that standard of excellence, where
+              accountability and reliability were not just ideals, but essential
+              values that governed interactions. Our mission is to ensure that
+              you can place your trust in those who serve you, allowing you to
+              engage with confidence and peace of mind, knowing that your
+              expectations will be met with sincerity and dedication.
             </p>
             <Link
               href="/blog/1"

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
@@ -37,7 +38,6 @@ const reviews = [
   },
 ];
 
-/* eslint-disable @next/next/no-img-element */
 const SingleReview = () => {
   const [api, setApi] = React.useState();
   const [current, setCurrent] = React.useState(0);
@@ -58,28 +58,37 @@ const SingleReview = () => {
 
   return (
     <div className="paper-bg-16 relative flex min-h-[400px] w-full flex-col justify-center gap-5 bg-[#252424] px-[16px] py-[50px] text-white md:px-[54px]">
-      <img
-        src={"/assets/fourstep_bg.webp"}
+      <Image
+        src="/assets/fourstep_bg.webp"
         alt="Background"
+        width={400}
+        height={400}
         className="absolute top-48 right-4 h-[calc(100%-156px)] w-auto transform-[scaleX(-1)] md:right-16"
       />
       <div className="flex items-center gap-2">
         {Array.from({ length: count }).map((_, index) => (
-          <img
-            src={
-              index === current - 1
-                ? "/assets/filled-circle.png"
-                : "/assets/empty-circle.png"
-            }
-            alt="Circle"
-            className="size-2.5"
+          <button
+            type="button"
             key={index}
             onClick={() => {
               if (api) {
                 api.scrollTo(index);
               }
             }}
-          />
+            className="p-0"
+          >
+            <Image
+              src={
+                index === current - 1
+                  ? "/assets/filled-circle.png"
+                  : "/assets/empty-circle.png"
+              }
+              alt="Circle"
+              width={10}
+              height={10}
+              className="size-2.5"
+            />
+          </button>
         ))}
       </div>
       <Carousel
@@ -112,7 +121,13 @@ const SingleReview = () => {
                     <Icons.quote />
                   </div>
                   <div className="flex items-center gap-2">
-                    <img src={item.image} alt={item.name} className="size-12" />
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      width={48}
+                      height={48}
+                      className="size-12"
+                    />
                     <p className="trim font-sans text-[18px] text-white">
                       {item.name},<br /> {item.location}
                     </p>

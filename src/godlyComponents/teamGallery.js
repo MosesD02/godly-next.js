@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
+import Image from "next/image";
 import pic1 from "@/assets/blue-collar/1.webp";
 import pic2 from "@/assets/blue-collar/2.webp";
 import pic3 from "@/assets/blue-collar/3.webp";
@@ -87,10 +87,12 @@ const TeamGallery = () => {
               transform: `rotate(${image.rotate})`,
             }}
           >
-            <img
-              src={image.src.src}
+            <Image
+              src={image.src}
               alt={image.alt}
-              className="h-[230px] w-[180px] object-cover"
+              width={180}
+              height={230}
+              className="object-cover"
             />
           </div>
         ))}
@@ -113,10 +115,12 @@ const TeamGallery = () => {
                     transform: `rotate(${image.rotate})`,
                   }}
                 >
-                  <img
-                    src={image.src.src}
+                  <Image
+                    src={image.src}
                     alt={image.alt}
-                    className="h-[160px] w-[120px] object-cover"
+                    width={120}
+                    height={160}
+                    className="object-cover"
                   />
                 </div>
               ))}
@@ -139,10 +143,12 @@ const TeamGallery = () => {
                     transform: `rotate(${image.rotate})`,
                   }}
                 >
-                  <img
-                    src={image.src.src}
+                  <Image
+                    src={image.src}
                     alt={image.alt}
-                    className="h-[160px] w-[120px] object-cover"
+                    width={120}
+                    height={160}
+                    className="object-cover"
                   />
                 </div>
               ))}

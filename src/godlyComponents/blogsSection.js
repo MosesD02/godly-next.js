@@ -12,10 +12,10 @@ const BlogsSection = ({ noOfBlogs }) => {
 
   return (
     <div className="flex flex-col gap-[40px] bg-[#fdf6ed] px-[30px] py-[30px] md:px-12 md:pb-12">
-      <h2 className="text-trim text-[36px] font-bold text-gray-800 md:pt-[36px]">
+      <h2 className="text-trim mx-auto w-full max-w-[1311px] text-[36px] font-bold text-gray-800 md:pt-[36px]">
         LASTEST NEWS
       </h2>
-      <div className="grid grid-cols-1 gap-[23px] sm:grid-cols-2 md:grid-cols-3">
+      <div className="mx-auto grid max-w-[1311px] grid-cols-1 gap-[23px] sm:grid-cols-2 md:grid-cols-3">
         {newsList.map((news, index) => (
           <div key={index} className="flex-col-gap-3 flex">
             <Link href="/blog/1" className="flex flex-col gap-3">

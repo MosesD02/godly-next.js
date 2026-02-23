@@ -1,12 +1,14 @@
 import { BASE_URL } from "./lib/constants";
 import { citiesMap } from "@/data/cities";
 import { serviceMetaTitles } from "@/data/metaTitles";
+import { getAllBlogPosts } from "@/data/blog-content";
 
 export default function sitemap() {
   const now = new Date().toISOString();
 
   const cities = Object.keys(citiesMap);
   const services = Object.keys(serviceMetaTitles);
+  const blogPosts = getAllBlogPosts();
 
   const urls = [
     {
@@ -16,11 +18,17 @@ export default function sitemap() {
       priority: 1.0,
     },
     {
-      url: `${BASE_URL}/blogs`,
+      url: `${BASE_URL}/blog`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    ...blogPosts.map((post) => ({
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: post.publishedAt,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    })),
     {
       url: `${BASE_URL}/booking`,
       lastModified: now,

@@ -50,6 +50,15 @@ const MobileNav = ({
             OUR PROCESS
           </Link>
         </li>
+        <li>
+          <Link
+            href="/blog"
+            className="text-base text-[#FDE4C8] hover:text-[#FFCA8F]"
+            onClick={onLinkClick}
+          >
+            BLOG
+          </Link>
+        </li>
         <li className="mt-8">
           {/* Use CitySelector component here */}
           <CitySelector onClick={onCitiesClick} isMobile={true} />

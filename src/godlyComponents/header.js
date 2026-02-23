@@ -13,6 +13,7 @@ import CitiesPopup from "./header/CitiesPopup";
 import FormPopup from "./header/FormPopup";
 import HeaderButton from "@/components/HeaderButton"; // Keep this import
 import { cn } from "@/lib/utils";
+import { useGodlyContext } from "@/context/godlyContext";
 
 // Keep data definitions or move to a separate file
 import exteriorWindow from "@/assets/homepageServices/exterior_window.webp";
@@ -116,11 +117,10 @@ const services = [
 ];
 
 const Header = () => {
-  // Keep state definitions
+  const { formPopupOpen, setFormPopupOpen } = useGodlyContext();
   const [servicesOpen, setServicesOpen] = useState(false);
   const [citiesOpen, setCitiesOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [formPopupOpen, setFormPopupOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {

@@ -9,15 +9,14 @@ const BlogPage = () => {
   return (
     <WebsiteLayout>
       <div className="mt-17 flex w-full flex-col items-center justify-center bg-[#fef7ea] px-[30px] py-[45px] text-[#312E2C] md:mt-14 md:p-16">
-        <div className="flex flex-col items-center justify-center gap-3 border-b-4 border-double border-black pb-8 md:w-3/4">
-          <div className="flex w-full flex-col gap-3 md:mb-2 md:border-b-2 md:border-solid md:border-black md:pb-4">
+        <div className="flex w-full max-w-[1311px] flex-col items-center justify-center gap-3 border-b-4 border-double border-black pb-8">
+          <div className="flex w-full flex-col gap-3 md:mb-2 md:border-b-1 md:border-solid md:border-black md:pb-4">
             <h2 className="text-center text-[32px] text-[#312E2C] text-shadow-[#AF8F6E] md:pb-2 md:text-6xl">
               News HEADLINE
             </h2>
             <p className="text-center font-['satoshi-light'] text-sm text-[#373A44] md:mt-2">
               April 20th, 2026
             </p>
-            <div className="h-[1px] w-full bg-black" />
           </div>
           <div className="my-10 w-full border-8 border-[#6A64641F] shadow-md">
             <Image
@@ -35,7 +34,7 @@ const BlogPage = () => {
             were sgoverned interactions. Our mission is to ensure that you can
             place your trust in those who serve you, allowing you to engage with
             confidence and peace of mind, knowing that your expectations will be
-            met with sincerity and dedication. <br />
+            met with sincerity and dedication. <br /> <br />
             We aspire to transport you back to a time when trust was the
             cornerstone of every relationship, particularly within the realms of
             your home and business. Picture an era where commitments were not
@@ -45,7 +44,7 @@ const BlogPage = () => {
             place your trust in those who serve you, allowing you to engage with
             confidence and peace of mind, knowing that your expectations will be
             met with sincerity and dedication.
-            <br />
+            <br /> <br />
             We aspire to transport you back to a time when trust was the
             cornerstone of every relationship, particularly within the realms of
             your home and business. Picture an era where commitments were not
@@ -65,7 +64,7 @@ const BlogPage = () => {
             were sgoverned interactions. Our mission is to ensure that you can
             place your trust in those who serve you, allowing you to engage with
             confidence and peace of mind, knowing that your expectations will be
-            met with sincerity and dedication. <br />
+            met with sincerity and dedication. <br /> <br />
             We aspire to transport you back to a time when trust was the
             cornerstone of every relationship, particularly within the realms of
             your home and business. Picture an era where commitments were not
@@ -75,7 +74,7 @@ const BlogPage = () => {
             place your trust in those who serve you, allowing you to engage with
             confidence and peace of mind, knowing that your expectations will be
             met with sincerity and dedication.
-            <br />
+            <br /> <br />
             We aspire to transport you back to a time when trust was the
             cornerstone of every relationship, particularly within the realms of
             your home and business. Picture an era where commitments were not

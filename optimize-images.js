@@ -208,21 +208,20 @@ class ImageOptimizer {
           const tempPath = imagePath + ".temp";
           await this.optimizeWebP(imagePath, tempPath);
 
-          // Replace original with optimized version if smaller
+          // Replace original with optimized version if smaller (only if temp was created)
           try {
+            await fs.access(tempPath);
             const originalSize = await this.getFileSize(imagePath);
             const optimizedSize = await this.getFileSize(tempPath);
-
             if (optimizedSize < originalSize) {
               await fs.rename(tempPath, imagePath);
             } else {
               await fs.unlink(tempPath);
             }
-          } catch (error) {
-            // Clean up temp file if it exists
+          } catch {
             try {
               await fs.unlink(tempPath);
-            } catch (e) {}
+            } catch {}
           }
         } else if (
           extension === ".png" ||
@@ -253,7 +252,32 @@ class ImageOptimizer {
   }
 }
 
-// Run the optimizer
-const targetDir = process.argv[2] || "src/assets";
-const optimizer = new ImageOptimizer(targetDir);
-optimizer.run().catch(console.error);
+// Run the optimizer on one or more directories
+async function runAll() {
+  const dirs = process.argv.slice(2).length
+    ? process.argv.slice(2)
+    : ["src/assets", "public"];
+  let totalProcessed = 0;
+  let totalSaved = 0;
+
+  for (const dir of dirs) {
+    try {
+      await fs.access(dir);
+    } catch {
+      console.log(`⚠ Skipping ${dir} (directory not found)\n`);
+      continue;
+    }
+    const optimizer = new ImageOptimizer(dir);
+    await optimizer.run();
+    totalProcessed += optimizer.processedCount;
+    totalSaved += optimizer.savedBytes;
+  }
+
+  if (dirs.length > 1) {
+    console.log("\n📊 Total across all directories:");
+    console.log(`   Processed: ${totalProcessed} images`);
+    console.log(`   Saved: ${(totalSaved / 1024).toFixed(2)} KB`);
+  }
+}
+
+runAll().catch(console.error);

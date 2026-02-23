@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "optimize-images": "node optimize-images.js",
-    "optimize-images:assets": "node optimize-images.js src/assets",
-    "optimize-images:public": "node optimize-images.js public"
+    "optimize-images:all": "node optimize-images.js src/assets public"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
