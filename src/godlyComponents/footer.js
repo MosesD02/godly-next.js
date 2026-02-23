@@ -119,16 +119,16 @@ const Footer = () => {
   const pathname = usePathname();
 
   const getCityFromUrl = () => {
-    if (pathname) {
-      const pathSegments = pathname.split("/");
-      if (pathSegments.length > 1 && pathSegments[1]) {
-        return pathSegments[1];
-      }
-    }
-    return (
+    const fallback =
       Object.keys(citiesMap).find((key) => citiesMap[key] === city) ||
-      "south-florida"
-    );
+      "south-florida";
+    if (!pathname) return fallback;
+    const pathSegments = pathname.split("/").filter(Boolean);
+    const firstSegment = pathSegments[0];
+    if (firstSegment && citiesMap[firstSegment]) {
+      return firstSegment;
+    }
+    return fallback;
   };
 
   const urlCityKey = getCityFromUrl();

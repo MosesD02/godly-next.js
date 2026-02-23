@@ -93,7 +93,6 @@ export function OgLayout({
       <div
         style={{
           position: "relative",
-          zIndex: 1,
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
@@ -165,7 +164,6 @@ export function OgLayout({
         <div
           style={{
             position: "absolute",
-            zIndex: 1,
             bottom: 48,
             right: 56,
             display: "flex",

@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { OgLayout, OG_SIZE } from "@/app/lib/og-image";
 import { loadOgFonts, loadOgLogo, loadOgPaperBg } from "@/app/lib/og-fonts";
 
+export const runtime = "nodejs";
 export const alt =
   "Expert tips on pressure washing and window cleaning for South Florida homeowners.";
 export const size = OG_SIZE;

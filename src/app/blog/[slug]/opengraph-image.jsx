@@ -4,6 +4,7 @@ import { loadOgFonts, loadOgLogo, loadOgPaperBg } from "@/app/lib/og-fonts";
 import { getBlogPostBySlug } from "@/data/blog-content";
 import { format } from "date-fns";
 
+export const runtime = "nodejs";
 export const size = OG_SIZE;
 export const contentType = "image/png";
 

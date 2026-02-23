@@ -19,18 +19,19 @@ const ServicePopup = ({ open, onOpenChange, services }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const pathname = usePathname();
 
-  // Get city directly from URL
+  // Get city from URL only when on a city or city/service page; otherwise use context
   const getCityFromUrl = () => {
-    if (pathname) {
-      const pathSegments = pathname.split("/");
-      if (pathSegments.length > 1 && pathSegments[1]) {
-        return pathSegments[1];
-      }
-    }
-    return (
+    const fallback =
       Object.keys(citiesMap).find((key) => citiesMap[key] === city) ||
-      "south-florida"
-    );
+      "south-florida";
+    if (!pathname) return fallback;
+    const pathSegments = pathname.split("/").filter(Boolean);
+    const firstSegment = pathSegments[0];
+    // First segment must be a valid city slug (not blog, landing, etc.)
+    if (firstSegment && citiesMap[firstSegment]) {
+      return firstSegment;
+    }
+    return fallback;
   };
 
   const cityKey = getCityFromUrl();

@@ -7,6 +7,7 @@ import {
   serviceMetaTitles,
 } from "@/data/metaTitles";
 
+export const runtime = "nodejs";
 export const size = OG_SIZE;
 export const contentType = "image/png";
 
