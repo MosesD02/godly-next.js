@@ -4,11 +4,11 @@ import BlogIndex from "@/godlyComponents/blog/BlogIndex";
 export const metadata = {
   title: "Blog | Godly Windows & Wash Co. — Pressure Washing & Window Cleaning Tips",
   description:
-    "Expert tips on pressure washing and window cleaning for Boca Raton, Fort Lauderdale, and Weston. Learn what to know before you hire. Free quotes from Godly Windows.",
+    "Expert tips on pressure washing and window cleaning for Boca Raton, South Florida. Learn what to know before you hire. Free quotes from Godly Windows.",
   openGraph: {
     title: "Blog | Godly Windows & Wash Co.",
     description:
-      "Expert tips on pressure washing and window cleaning for South Florida homeowners.",
+      "Expert tips on pressure washing and window cleaning for Boca Raton and South Florida homeowners.",
     url: "https://godlywindows.com/blog",
     siteName: "Godly Windows",
     type: "website",

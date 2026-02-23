@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { format } from "date-fns";
 import WebsiteLayout from "../websiteLayout";
 import BlogPostContent from "./BlogPostContent";
@@ -30,6 +31,19 @@ export default function BlogPostPage({ post }) {
               {post.title}
             </h1>
           </header>
+
+          {post.image && (
+            <div className="relative mb-8 aspect-[4/3] w-full overflow-hidden rounded-lg">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 800px"
+                priority
+              />
+            </div>
+          )}
 
           <div className="prose prose-lg max-w-none">
             <BlogPostContent sections={post.sections} />

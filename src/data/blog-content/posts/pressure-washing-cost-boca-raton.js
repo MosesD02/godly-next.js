@@ -9,10 +9,11 @@ export default {
   targetCity: "Boca Raton",
   citySlug: "boca-raton",
   businessName: "Godly Windows & Wash Co. Boca Raton",
-  publishedAt: "2025-02-01",
+  publishedAt: "2026-02-23",
   title: "How Much Does Pressure Washing Cost in Boca Raton? What to Know Before You Hire",
   excerpt:
     "Pressure washing costs in Boca Raton depend on the size of your property, the surfaces being cleaned, and how much buildup has accumulated. Here's what drives the real cost and what to look for before you hire.",
+  image: "/blogs/1.jpg",
   sections: [
     {
       type: "p",
