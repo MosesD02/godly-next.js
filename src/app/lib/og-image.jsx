@@ -42,7 +42,7 @@ export function OgLayout({
         display: "flex",
         flexDirection: "column",
         position: "relative",
-        backgroundColor: "#1F1D1D",
+        backgroundColor: "#000000",
         padding: "48px 56px",
         fontFamily: "Satoshi, sans-serif",
         borderLeft: "4px solid #FDE4C8",
@@ -57,7 +57,7 @@ export function OgLayout({
           right: 0,
           bottom: 0,
           background:
-            "linear-gradient(180deg, rgba(31,29,29,0.3) 0%, transparent 40%, transparent 60%, rgba(31,29,29,0.2) 100%)",
+            "linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.35) 40%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.75) 100%)",
           pointerEvents: "none",
         }}
       />
@@ -74,7 +74,7 @@ export function OgLayout({
             backgroundSize: "cover",
             backgroundPosition: "50%",
             backgroundRepeat: "no-repeat",
-            opacity: 0.35,
+            opacity: 0.1,
           }}
         />
       ) : (
@@ -122,11 +122,15 @@ export function OgLayout({
           style={{
             fontSize: 96,
             fontWeight: 400,
-            color: "#FDE4C8",
+            color: "#fafaeb",
             lineHeight: 1.2,
             marginBottom: subtitle ? 20 : 0,
             fontFamily: "Marlton, sans-serif",
             letterSpacing: "0.02em",
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
           }}
         >
           {displayTitle}
@@ -174,8 +178,8 @@ export function OgLayout({
           <img
             src={logoSrc}
             alt="Godly Windows"
-            width={140}
-            height={68}
+            width={180}
+            height={88}
             style={{ objectFit: "contain" }}
           />
         </div>
