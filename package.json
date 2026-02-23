@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/preconvert-og-paper.js && next build",
     "start": "next start",
     "lint": "next lint",
     "optimize-images": "node optimize-images.js",
-    "optimize-images:all": "node optimize-images.js src/assets public"
+    "optimize-images:all": "node optimize-images.js src/assets public",
+    "preconvert-og-paper": "node scripts/preconvert-og-paper.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",

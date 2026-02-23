@@ -1,5 +1,6 @@
 import GodlyHome from "@/components/landing/home";
 import { citiesMap } from "@/data/cities";
+import { BASE_URL } from "@/app/lib/constants";
 import {
   generateServiceTitle,
   generateServiceDescription,
@@ -36,24 +37,17 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title,
       description,
-      url: `https://godlywindows.com/landing/${service}/${city}`,
+      url: `${BASE_URL}/landing/${service}/${city}`,
       siteName: "Godly Windows",
       locale: "en_US",
       type: "website",
-      images: [
-        {
-          url: "/favicon.svg",
-          width: 1200,
-          height: 630,
-          alt: heroAlt,
-        },
-      ],
+      // Uses opengraph-image.jsx generated image
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/favicon.svg"],
+      // Uses opengraph-image.jsx generated image
     },
     alternates: {
       canonical: `/landing/${service}/${city}`,
@@ -78,7 +72,7 @@ export default async function LandingPage({ params }) {
     provider: {
       "@type": "LocalBusiness",
       name: "Godly Windows",
-      url: "https://godlywindows.com",
+      url: BASE_URL,
       telephone: "+1-555-GODLY-WIN",
       address: {
         "@type": "PostalAddress",
@@ -94,7 +88,7 @@ export default async function LandingPage({ params }) {
       addressCountry: "US",
     },
     description: generateServiceDescription(service, city),
-    url: `https://godlywindows.com/landing/${service}/${city}`,
+    url: `${BASE_URL}/landing/${service}/${city}`,
   };
 
   return (

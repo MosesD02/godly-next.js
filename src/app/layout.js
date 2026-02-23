@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { AppWrapper } from "@/context/godlyContext";
 import Script from "next/script";
+import { BASE_URL } from "@/app/lib/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +33,7 @@ export const metadata = {
     address: false,
     telephone: true,
   },
-  metadataBase: new URL("https://godlywindows.com"),
+  metadataBase: new URL(BASE_URL),
   icons: {
     icon: [
       { url: "/favicon.ico" },

@@ -24,20 +24,13 @@ export const metadata = {
     siteName: "Godly Windows",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/favicon.svg",
-        width: 1200,
-        height: 630,
-        alt: "Godly Windows - Professional Cleaning Services",
-      },
-    ],
+    // Uses opengraph-image.jsx generated image
   },
   twitter: {
     card: "summary_large_image",
     title: homeTitle,
     description: homeDescription,
-    images: ["/favicon.svg"],
+    // Uses opengraph-image.jsx generated image
   },
   alternates: {
     canonical: "/",

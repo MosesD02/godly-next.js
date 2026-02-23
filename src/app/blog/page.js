@@ -12,6 +12,14 @@ export const metadata = {
     url: "https://godlywindows.com/blog",
     siteName: "Godly Windows",
     type: "website",
+    images: [
+      {
+        url: "/blog/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Expert tips on pressure washing and window cleaning for South Florida homeowners.",
+      },
+    ],
   },
 };
 
