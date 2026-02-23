@@ -30,28 +30,48 @@ export default function BlogIndex({ posts }) {
         <h2 className="trim mx-auto w-full max-w-[1311px] text-[36px] font-bold text-gray-800 md:pt-[36px]">
           Latest Posts
         </h2>
-        <div className="mx-auto grid max-w-[1311px] grid-cols-1 gap-[32px] sm:grid-cols-2 md:grid-cols-3">
-          {posts.map((post) => (
-            <article
-              key={post.slug}
-              className="flex flex-col gap-3 border-b border-[#6A64641F] pb-6 transition-opacity hover:opacity-90"
-            >
-              <Link href={`/blog/${post.slug}`} className="flex flex-col gap-3">
-                <p className="font-['satoshi-light'] text-sm text-[#373A44]">
-                  {format(new Date(post.publishedAt), "MMMM d, yyyy")}
+        <div className="mx-auto flex max-w-[1311px] flex-col gap-[40px]">
+          {posts[0] && (
+            <article className="flex flex-col gap-3 border-b border-[#6A64641F] pb-6 transition-opacity hover:opacity-90">
+              <Link href={`/blog/${posts[0].slug}`} className="flex flex-col gap-3">
+                <p className="font-['satoshi-light'] text-base text-[#373A44] md:text-lg">
+                  {format(new Date(posts[0].publishedAt), "MMMM d, yyyy")}
                 </p>
-                <h3 className="text-xl font-bold leading-snug text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-lg">
-                  {post.title}
+                <h3 className="text-2xl font-bold leading-snug text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-4xl md:leading-tight">
+                  {posts[0].title}
                 </h3>
-                <p className="line-clamp-3 font-['satoshi-light'] text-base leading-relaxed text-[#373A44]">
-                  {post.excerpt}
+                <p className="line-clamp-4 font-['satoshi-light'] text-base leading-relaxed text-[#373A44] md:text-lg">
+                  {posts[0].excerpt}
                 </p>
                 <span className="font-['satoshi-medium'] text-sm text-[#AF8F6E] underline">
                   Read more →
                 </span>
               </Link>
             </article>
-          ))}
+          )}
+          <div className="grid grid-cols-1 gap-[32px] sm:grid-cols-2 md:grid-cols-3">
+            {posts.slice(1).map((post) => (
+              <article
+                key={post.slug}
+                className="flex flex-col gap-3 border-b border-[#6A64641F] pb-6 transition-opacity hover:opacity-90"
+              >
+                <Link href={`/blog/${post.slug}`} className="flex flex-col gap-3">
+                  <p className="font-['satoshi-light'] text-sm text-[#373A44]">
+                    {format(new Date(post.publishedAt), "MMMM d, yyyy")}
+                  </p>
+                  <h3 className="text-xl font-bold leading-snug text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-lg">
+                    {post.title}
+                  </h3>
+                  <p className="line-clamp-3 font-['satoshi-light'] text-base leading-relaxed text-[#373A44]">
+                    {post.excerpt}
+                  </p>
+                  <span className="font-['satoshi-medium'] text-sm text-[#AF8F6E] underline">
+                    Read more →
+                  </span>
+                </Link>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </WebsiteLayout>
