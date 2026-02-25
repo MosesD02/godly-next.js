@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { getBlogPostBySlug, getAllBlogSlugs } from "@/data/blog-content";
 import BlogPostPage from "@/godlyComponents/blog/BlogPostPage";
 import { BASE_URL } from "@/app/lib/constants";
@@ -60,13 +61,13 @@ export default async function BlogPostRoute({ params }) {
 
   return (
     <>
-      {/* Add JSON-LD to your page */}
-      <script
-        key="faq-schema"
+      <Script
+        id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
         }}
+        strategy="beforeInteractive"
       />
       <BlogPostPage post={post} />
     </>
