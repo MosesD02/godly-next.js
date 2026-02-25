@@ -60,11 +60,14 @@ export default async function BlogPostRoute({ params }) {
 
   return (
     <>
-      {/* <script
+      {/* Add JSON-LD to your page */}
+      <script
         key="faq-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      /> */}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <BlogPostPage post={post} />
     </>
   );
