@@ -357,25 +357,25 @@ const Footer = () => {
                     href="/#about"
                     className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"
                   >
-                    About us
+                    About Us
                   </Link>
                   <Link
                     href="/#promise"
                     className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"
                   >
-                    Our promises
+                    Our Promises
                   </Link>
                   <Link
                     href="/#process"
                     className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"
                   >
-                    Our process
+                    Our Process
                   </Link>
                   <Link
                     href={`/${urlCityKey}/holiday-light-installation`}
                     className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"
                   >
-                    Holiday lighting
+                    Holiday Lighting
                   </Link>
                   <Link
                     href="/privacy-policy"
