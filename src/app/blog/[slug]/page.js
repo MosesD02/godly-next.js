@@ -1,8 +1,5 @@
 import { notFound } from "next/navigation";
-import {
-  getBlogPostBySlug,
-  getAllBlogSlugs,
-} from "@/data/blog-content";
+import { getBlogPostBySlug, getAllBlogSlugs } from "@/data/blog-content";
 import BlogPostPage from "@/godlyComponents/blog/BlogPostPage";
 import { BASE_URL } from "@/app/lib/constants";
 
@@ -63,11 +60,11 @@ export default async function BlogPostRoute({ params }) {
 
   return (
     <>
-      <script
+      {/* <script
         key="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      /> */}
       <BlogPostPage post={post} />
     </>
   );
