@@ -10,7 +10,7 @@ import verifiedBadge from "@/assets/verifiedBadge.webp";
 const ChooseUs = () => {
   return (
     <div>
-      <div className="paper-bg-16 flex flex-col items-center gap-[55px] bg-[#262424] px-6 md:py-24">
+      <div className="paper-bg-16 flex flex-col items-center gap-[55px] bg-[#262424] px-6 pt-12 md:py-24">
         <div>
           <h4 className="-mt-4 text-center font-['luminaire-script'] text-xl text-[#F3CA9E] underline">
             Why
