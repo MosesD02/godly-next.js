@@ -33,11 +33,12 @@ const ParklandCta = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-6">
-          <a href="tel:(561) 826-4461">
-            <Button className="estimate-button">
-              <span className="">Call Now: (561) 826-4461</span>
-            </Button>
+        <div className="flex flex-col items-center justify-center gap-4">
+          <a
+            href="tel:(561) 826-4461"
+            className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
+          >
+            Call Now: (561) 826-4461
           </a>
           <SectionButton>Get a Free Estimate</SectionButton>
         </div>

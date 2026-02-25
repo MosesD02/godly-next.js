@@ -22,7 +22,7 @@ export default function BlogIndex({ posts }) {
             <div className="h-[3px] w-[340px] bg-white md:w-[662px]" />
           </div>
           <p className="text-center font-['satoshi-light'] text-xs text-[#FFFFFF94] md:font-['satoshi-regular'] md:text-[24px]">
-            actionable ideas to help you make informed and smart choices.
+            Expert tips on keeping your South Florida property spotless.
           </p>
         </div>
       </div>
@@ -34,7 +34,10 @@ export default function BlogIndex({ posts }) {
               <div className="mx-auto flex max-w-[1311px] flex-col items-start gap-8 border-black pb-6 md:flex-row">
                 <div className="w-full md:w-1/2">
                   <div className="mx-auto aspect-[4/3] max-w-[650px] overflow-hidden border-8 border-[#6A64641F] shadow-md">
-                    <Link href={`/blog/${posts[0].slug}`} className="block h-full w-full">
+                    <Link
+                      href={`/blog/${posts[0].slug}`}
+                      className="block h-full w-full"
+                    >
                       <Image
                         src={posts[0].image}
                         alt={posts[0].title}
@@ -76,7 +79,10 @@ export default function BlogIndex({ posts }) {
                 <p className="font-['satoshi-light'] text-sm leading-[16px] text-[#373A44]">
                   {format(new Date(posts[0].publishedAt), "MMMM d, yyyy")}
                 </p>
-                <Link href={`/blog/${posts[0].slug}`} className="mx-auto flex w-fit justify-center">
+                <Link
+                  href={`/blog/${posts[0].slug}`}
+                  className="mx-auto flex w-fit justify-center"
+                >
                   <div className="aspect-[4/3] w-[334px] overflow-hidden border-[6px] border-[#6A64641F] shadow-md">
                     <Image
                       src={posts[0].image}
@@ -111,11 +117,14 @@ export default function BlogIndex({ posts }) {
         {posts[0] && !posts[0].image && (
           <div className="mx-auto max-w-[1311px] px-[30px] py-[40px] md:px-12">
             <article className="flex flex-col gap-3 border-b border-[#6A64641F] pb-6">
-              <Link href={`/blog/${posts[0].slug}`} className="flex flex-col gap-3">
+              <Link
+                href={`/blog/${posts[0].slug}`}
+                className="flex flex-col gap-3"
+              >
                 <p className="font-['satoshi-light'] text-base text-[#373A44]">
                   {format(new Date(posts[0].publishedAt), "MMMM d, yyyy")}
                 </p>
-                <h3 className="text-2xl font-bold leading-snug text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-4xl">
+                <h3 className="text-2xl leading-snug font-bold text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-4xl">
                   {posts[0].title}
                 </h3>
                 <span className="font-['satoshi-medium'] text-sm text-[#AF8F6E] underline">
@@ -131,27 +140,33 @@ export default function BlogIndex({ posts }) {
               LATEST NEWS
             </h2>
             <div className="mx-auto grid max-w-[1311px] grid-cols-1 gap-[23px] sm:grid-cols-2 md:grid-cols-3">
-              {posts.slice(1).filter((p) => p.image).map((post) => (
-                <div key={post.slug} className="flex flex-col gap-3">
-                  <Link href={`/blog/${post.slug}`} className="flex flex-col gap-3">
-                    <div className="aspect-[4/3] w-full overflow-hidden">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        width={500}
-                        height={375}
-                        className="h-full w-full object-cover object-center"
-                      />
-                    </div>
-                    <p className="font-['satoshi-light'] text-base text-[#373A44] md:mt-2 md:text-sm">
-                      {format(new Date(post.publishedAt), "MMMM d, yyyy")}
-                    </p>
-                    <p className="text-xl leading-snug font-bold text-[#373A44] md:mt-1 md:text-sm">
-                      {post.title}
-                    </p>
-                  </Link>
-                </div>
-              ))}
+              {posts
+                .slice(1)
+                .filter((p) => p.image)
+                .map((post) => (
+                  <div key={post.slug} className="flex flex-col gap-3">
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="flex flex-col gap-3"
+                    >
+                      <div className="aspect-[4/3] w-full overflow-hidden">
+                        <Image
+                          src={post.image}
+                          alt={post.title}
+                          width={500}
+                          height={375}
+                          className="h-full w-full object-cover object-center"
+                        />
+                      </div>
+                      <p className="font-['satoshi-light'] text-base text-[#373A44] md:mt-2 md:text-sm">
+                        {format(new Date(post.publishedAt), "MMMM d, yyyy")}
+                      </p>
+                      <p className="text-xl leading-snug font-bold text-[#373A44] md:mt-1 md:text-sm">
+                        {post.title}
+                      </p>
+                    </Link>
+                  </div>
+                ))}
             </div>
           </div>
         )}

@@ -40,11 +40,12 @@ const LighthousePointCta = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-6">
-          <a href="tel:(954) 852-5326">
-            <Button className="estimate-button">
-              <span className="">Call Now: (954) 852-5326</span>
-            </Button>
+        <div className="flex flex-col items-center justify-center gap-4">
+          <a
+            href="tel:(954) 852-5326"
+            className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
+          >
+            Call Now: (954) 852-5326
           </a>
           <SectionButton>Get a Free Estimate</SectionButton>
         </div>

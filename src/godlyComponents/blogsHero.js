@@ -17,7 +17,7 @@ const BlogsHero = () => {
         </div>
       </div>
       <p className="text-center font-['satoshi-light'] text-xs text-[#FFFFFF94] md:font-['satoshi-regular'] md:text-[24px]">
-        actionable ideas to help you make informed and smart choices.
+        Expert tips on keeping your South Florida property spotless.
       </p>
     </div>
   );

@@ -30,10 +30,10 @@ export default function ServicesPage({ slug, city, relatedPosts }) {
       <ServiceIncludes slug={slug} />
       <EssentialService slug={slug} />
       <ServiceNearYou slug={slug} />
-      <RelatedBlogPosts posts={relatedPosts} />
       <ChooseUs />
       {/* <Faq /> */}
       <OtherServices />
+      <RelatedBlogPosts posts={relatedPosts} />
     </WebsiteLayout>
   );
 }
