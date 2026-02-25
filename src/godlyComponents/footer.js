@@ -183,37 +183,44 @@ const Footer = () => {
         <div className="flex w-full flex-col items-center justify-center gap-4 py-8">
           {city === "FORT LAUDERDALE" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Fort Lauderdale, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Fort
+              Lauderdale, FL
             </p>
           )}
           {city === "BOCA RATON" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Boca Raton, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Boca
+              Raton, FL
             </p>
           )}
           {city === "WESTON" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Weston, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Weston,
+              FL
             </p>
           )}
           {city === "POMPANO BEACH" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Pompano Beach, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Pompano
+              Beach, FL
             </p>
           )}
           {city === "LIGHTHOUSE POINT" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Lighthouse Point, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in
+              Lighthouse Point, FL
             </p>
           )}
           {city === "PARKLAND" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Parkland, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Parkland,
+              FL
             </p>
           )}
           {city === "SOUTHWEST RANCHES" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Southwest Ranches, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Southwest
+              Ranches, FL
             </p>
           )}
           {city === "DAVIE" && (
@@ -223,17 +230,20 @@ const Footer = () => {
           )}
           {city === "DELRAY BEACH" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Delray Beach, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Delray
+              Beach, FL
             </p>
           )}
           {city === "DEERFIELD BEACH" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Deerfield Beach, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Deerfield
+              Beach, FL
             </p>
           )}
           {city === "HILLSBORO BEACH" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Hillsboro Beach, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Hillsboro
+              Beach, FL
             </p>
           )}
           {city === "MIAMI" && (
@@ -243,67 +253,80 @@ const Footer = () => {
           )}
           {city === "CORAL SPRINGS" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Coral Springs, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Coral
+              Springs, FL
             </p>
           )}
           {city === "HALLANDALE BEACH" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Hallandale Beach, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in
+              Hallandale Beach, FL
             </p>
           )}
           {city === "MARGATE" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Margate, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Margate,
+              FL
             </p>
           )}
           {city === "PEMBROKE PINES" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Pembroke Pines, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Pembroke
+              Pines, FL
             </p>
           )}
           {city === "SUNRISE" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Sunrise, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Sunrise,
+              FL
             </p>
           )}
           {city === "PLANTATION" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Plantation, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in
+              Plantation, FL
             </p>
           )}
           {city === "TAMARAC" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Tamarac, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Tamarac,
+              FL
             </p>
           )}
           {city === "HOLLYWOOD" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Hollywood, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in
+              Hollywood, FL
             </p>
           )}
           {city === "MIRAMAR" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Miramar, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Miramar,
+              FL
             </p>
           )}
           {city === "WEST PALM BEACH" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in West Palm Beach, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in West Palm
+              Beach, FL
             </p>
           )}
           {city === "LAUDERDALE-BY-THE-SEA" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Lauderdale-by-the-Sea, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in
+              Lauderdale-by-the-Sea, FL
             </p>
           )}
           {city === "OAKLAND PARK" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Oakland Park, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Oakland
+              Park, FL
             </p>
           )}
           {city === "ROYAL PALM BEACH" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Royal Palm Beach, FL
+              Expert Window Cleaning, House Washing & Roof Cleaning in Royal
+              Palm Beach, FL
             </p>
           )}
           <h2 className="text-center text-2xl font-bold text-white md:text-4xl">
@@ -375,7 +398,7 @@ const Footer = () => {
                     href="/blog"
                     className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"
                   >
-                    View all posts
+                    Latest Tips & Insights
                   </Link>
                 </div>
               </div>
