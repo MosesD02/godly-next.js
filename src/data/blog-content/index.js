@@ -27,3 +27,22 @@ export function getBlogPostBySlug(slug) {
 export function getAllBlogSlugs() {
   return blogPosts.map((post) => post.slug);
 }
+
+/**
+ * Get blog posts related to a specific city + service page.
+ * Matches on citySlug and whether internalLink or secondaryLink points to that service.
+ */
+export function getRelatedBlogPosts(citySlug, serviceSlug) {
+  return blogPosts.filter((post) => {
+    if (post.citySlug !== citySlug) return false;
+    const urls = [post.internalLink, post.secondaryLink].filter(Boolean);
+    return urls.some((url) => {
+      try {
+        const { pathname } = new URL(url);
+        return pathname.endsWith(`/${serviceSlug}`);
+      } catch {
+        return false;
+      }
+    });
+  });
+}

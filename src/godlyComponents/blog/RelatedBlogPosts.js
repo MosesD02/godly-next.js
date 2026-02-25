@@ -1,0 +1,76 @@
+"use client";
+
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { format } from "date-fns";
+
+export default function RelatedBlogPosts({ posts }) {
+  if (!posts || posts.length === 0) return null;
+
+  return (
+    <section className="bg-[#fdf6ed] px-[30px] py-[60px] md:px-12 md:py-[80px]">
+      <div className="mx-auto max-w-[1100px]">
+        <div className="mb-10 flex items-end justify-between gap-4">
+          <div className="flex flex-col gap-1">
+            <span className="font-['marlton'] text-sm tracking-[2.5px] text-[#AF8F6E]">
+              HELPFUL READING
+            </span>
+            <h2 className="trim text-[40px] leading-none text-[#312E2C] md:text-[56px]">
+              From Our Blog
+            </h2>
+          </div>
+          <Link
+            href="/blog"
+            className="hidden shrink-0 font-['satoshi-regular'] text-sm text-[#003953] underline underline-offset-2 hover:text-[#AF8F6E] md:block"
+          >
+            View all articles →
+          </Link>
+        </div>
+
+        <div
+          className={`grid grid-cols-1 gap-8 ${posts.length > 1 ? "md:grid-cols-2" : "md:max-w-[600px]"}`}
+        >
+          {posts.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="group flex flex-col gap-3"
+            >
+              {post.image && (
+                <div className="overflow-hidden border-[6px] border-[#6A64641F] shadow-sm">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    width={600}
+                    height={450}
+                    className="aspect-[4/3] w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
+                </div>
+              )}
+              <p className="font-['satoshi-light'] text-sm text-[#6A6464]">
+                {format(new Date(post.publishedAt), "MMMM d, yyyy")}
+              </p>
+              <h3 className="text-xl font-bold leading-snug text-[#312E2C] transition-colors group-hover:text-[#AF8F6E]">
+                {post.title}
+              </h3>
+              <p className="line-clamp-3 font-['satoshi-light'] text-sm leading-relaxed text-[#6A6464]">
+                {post.excerpt}
+              </p>
+              <span className="font-['satoshi-regular'] text-sm text-[#003953] group-hover:underline">
+                Read article →
+              </span>
+            </Link>
+          ))}
+        </div>
+
+        <Link
+          href="/blog"
+          className="mt-10 flex items-center justify-center font-['satoshi-regular'] text-sm text-[#003953] underline underline-offset-2 hover:text-[#AF8F6E] md:hidden"
+        >
+          View all articles →
+        </Link>
+      </div>
+    </section>
+  );
+}

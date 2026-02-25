@@ -8,13 +8,14 @@ import OtherServices from "./otherServices";
 import ChooseUs from "./chooseUs";
 import EssentialService from "./serviceEssential";
 import ServiceNearYou from "./serviceNearYou";
+import RelatedBlogPosts from "./blog/RelatedBlogPosts";
 // import Faq from "./faq";
 import { useEffect } from "react";
 import { useGodlyContext } from "@/context/godlyContext";
 
 import { citiesMap } from "./header/CitiesPopup";
 
-export default function ServicesPage({ slug, city }) {
+export default function ServicesPage({ slug, city, relatedPosts }) {
   const { setCity } = useGodlyContext();
 
   useEffect(() => {
@@ -29,6 +30,7 @@ export default function ServicesPage({ slug, city }) {
       <ServiceIncludes slug={slug} />
       <EssentialService slug={slug} />
       <ServiceNearYou slug={slug} />
+      <RelatedBlogPosts posts={relatedPosts} />
       <ChooseUs />
       {/* <Faq /> */}
       <OtherServices />
