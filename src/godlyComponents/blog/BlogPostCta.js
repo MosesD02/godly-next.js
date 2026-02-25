@@ -8,20 +8,20 @@ export default function BlogPostCta({ ctaText, ctaLink }) {
   const { setFormPopupOpen } = useGodlyContext();
 
   return (
-    <div className="mt-12 rounded-lg border-2 border-[#AF8F6E] bg-[#fef7ea] p-8 md:p-10">
-      <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:justify-center">
+    <div className="mt-12 border-t-2 border-[#312E2C]/10 pt-10">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <button
           type="button"
           onClick={() => setFormPopupOpen(true)}
-          className="inline-flex items-center justify-center rounded-md bg-[#AF8F6E] px-8 py-4 font-['satoshi-bold'] text-lg font-bold text-white transition-colors hover:bg-[#8B6F4E]"
+          className="w-full rounded-md bg-[#312E2C] px-6 py-3 font-['satoshi-bold'] text-sm text-white transition-colors hover:bg-[#4a4442] sm:w-auto"
         >
           {ctaText}
         </button>
         <Link
           href={ctaLink}
-          className="inline-flex items-center justify-center rounded-md border-2 border-[#AF8F6E] px-8 py-4 font-['satoshi-bold'] text-lg font-bold text-[#312E2C] transition-colors hover:bg-[#AF8F6E] hover:text-white"
+          className="w-full rounded-md border border-[#312E2C]/20 px-6 py-3 text-center font-['satoshi-regular'] text-sm text-[#312E2C] transition-colors hover:border-[#312E2C]/50 sm:w-auto"
         >
-          Learn More About Our Services
+          Learn more about our services
         </Link>
       </div>
     </div>

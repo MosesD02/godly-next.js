@@ -71,13 +71,13 @@ const Services = {
       },
       {
         number: "02",
-        title: "Exterior WalL Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Commercial Solar Panel Cleaning",
+        text: "Keep rooftop solar arrays on offices and warehouses clean and producing at full capacity.",
       },
       {
         number: "03",
         title: "Post-Construction Solar Cleaning",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        text: "Remove construction dust, debris, and stickers from newly installed solar panels.",
       },
       {
         number: "04",
@@ -98,7 +98,7 @@ const Services = {
       "Exterior Window",
       "Cleaning",
       service2,
-      "This is our jam. We specialize in residential and commercial window cleaning services in south florida. We offer a 100% money back guarantee on all of our cleaning services.",
+      (city) => `This is our jam. We specialize in residential and commercial window cleaning services in ${city}. We offer a 100% money back guarantee on all of our cleaning services.`,
     ],
     included: [
       {
@@ -177,14 +177,14 @@ const Services = {
       },
     ],
     quote:
-      "Maximize energy Efficiency with our professional solar panel cleaning services.",
+      "Crystal clear windows, guaranteed. Our RainShield™ technology keeps them cleaner, longer.",
   },
   "interior-window-cleaning": {
     hero: [
       "Interior Window",
       "Cleaning",
       service3,
-      "This is where we shine. We specialize in residential and commercial window cleaning services in south florida. We offer a 100% money back guarantee on all of our cleaning services.",
+      (city) => `This is where we shine. We specialize in residential and commercial window cleaning services in ${city}. We offer a 100% money back guarantee on all of our cleaning services.`,
     ],
     included: [
       {
@@ -244,18 +244,18 @@ const Services = {
       {
         number: "05.",
         title: "Removing Fingerprints & Smudges",
-        text: "Cleaning windows on boats and yachts, ensuring clear visibility while enhancing the overall appearance.",
+        text: "Carefully clean interior glass to remove smudges, grease, and residue without damaging frames or sills.",
       },
     ],
     quote:
-      "Maximize energy Efficiency with our professional solar panel cleaning services.",
+      "Streak-free interior windows, done right. We protect your surfaces and leave every pane spotless.",
   },
   "gutter-cleaning": {
     hero: [
       "Gutter",
       "Cleaning",
       service4,
-      "Clogged gutters can cause water damage, roof leaks, and sometimes foundation issues. Our south florida gutter cleaning service ensures that leaves, and other types of debris buildup are removed so water can flow freely.",
+      (city) => `Clogged gutters can cause water damage, roof leaks, and sometimes foundation issues. Our ${city} gutter cleaning service ensures that leaves, and other types of debris buildup are removed so water can flow freely.`,
     ],
     included: [
       {
@@ -319,7 +319,7 @@ const Services = {
       },
     ],
     quote:
-      "Maximize energy Efficiency with our professional solar panel cleaning services.",
+      "Don't let clogged gutters damage your home. We keep water flowing where it should.",
   },
   "house-washing": {
     hero: [
@@ -400,7 +400,7 @@ const Services = {
       },
     ],
     quote:
-      "Maximize energy Efficiency with our professional solar panel cleaning services.",
+      "Restore your home's exterior to like-new condition with our professional soft-wash service.",
   },
   "roof-washing": {
     hero: [
@@ -686,8 +686,8 @@ const Services = {
       },
       {
         number: "04.",
-        title: "Increases Energy Efficiency",
-        text: "Clean panels absorb more sunlight, boosting power output.",
+        title: "Improves Safety",
+        text: "Clean fixtures reduce fire risk from dust-covered bulbs and overheated housings.",
       },
     ],
     nearyou: [
@@ -723,7 +723,7 @@ const Services = {
       "Screen",
       "Cleaning",
       service10,
-      "Dirty solar panels reduce energy efficiency by blocking sunlight absorption. Our solar panel cleaning service ensures maximum performance by carefully removing all of nature's buildup that can affect energy output. Regular cleaning helps maintain optimal energy production.",
+      "Dirty screens trap pollen, block airflow, and leave your views hazy. Our professional screen cleaning service restores window screens, door screens, and pool enclosures to like-new condition — improving ventilation and letting fresh air flow freely through your home.",
     ],
     included: [
       {
@@ -772,28 +772,28 @@ const Services = {
     nearyou: [
       {
         number: "01",
-        title: "Patio & Deck Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Window Screen Cleaning",
+        text: "Restore dirty, pollen-covered window screens to like-new clarity.",
       },
       {
         number: "02",
-        title: "Exterior WalL Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Pool Cage & Screen Enclosure Cleaning",
+        text: "Remove mildew, algae, and buildup from pool cage frames and mesh.",
       },
       {
         number: "03",
-        title: "Driveway Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Lanai & Porch Screen Cleaning",
+        text: "Clean screened-in patios and porches to improve airflow and restore visibility.",
       },
       {
         number: "04",
-        title: "Fence Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Door Screen Cleaning",
+        text: "Refresh entry door screens that are grimy, bent, or clogged with debris.",
       },
       {
         number: "05",
-        title: "Parking Lot Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Post-Storm Screen Cleaning",
+        text: "Clear dirt, debris, and water stains left behind after heavy rain or wind.",
       },
     ],
   },
@@ -802,7 +802,7 @@ const Services = {
       "SkyLight",
       "Cleaning",
       service9,
-      "Dirty solar panels reduce energy efficiency by blocking sunlight absorption. Our solar panel cleaning service ensures maximum performance by carefully removing all of nature's buildup that can affect energy output. Regular cleaning helps maintain optimal energy production.",
+      "Skylights bring natural light into your home, but dirt, algae, and hard water stains quickly dim that effect. Our skylight cleaning service safely restores clarity to both sides — from ground level to the highest installations — for maximum brightness and a spotless finish.",
     ],
     included: [
       {
@@ -851,28 +851,28 @@ const Services = {
     nearyou: [
       {
         number: "01",
-        title: "Patio & Deck Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Residential Skylight Cleaning",
+        text: "Restore natural light to living rooms, kitchens, and bedrooms with streak-free cleaning.",
       },
       {
         number: "02",
-        title: "Exterior WalL Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Commercial Skylight Cleaning",
+        text: "Keep office buildings, retail spaces, and atriums bright and professional.",
       },
       {
         number: "03",
-        title: "Driveway Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Hard Water Stain Removal",
+        text: "Eliminate mineral deposits and streaks that cloud skylight glass over time.",
       },
       {
         number: "04",
-        title: "Fence Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Post-Storm Skylight Cleaning",
+        text: "Remove debris and buildup left after rain, wind, or storm impact.",
       },
       {
         number: "05",
-        title: "Parking Lot Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "New Construction Skylight Cleaning",
+        text: "Remove stickers, dust, and construction residue from newly installed skylights.",
       },
     ],
   },
@@ -881,7 +881,7 @@ const Services = {
       "Holiday Light",
       "Installation",
       service11,
-      "Dirty solar panels reduce energy efficiency by blocking sunlight absorption. Our solar panel cleaning service ensures maximum performance by carefully removing all of nature's buildup that can affect energy output. Regular cleaning helps maintain optimal energy production.",
+      "Skip the ladders, tangled wires, and hours of frustration. Our professional holiday light installation service handles everything from design to takedown — delivering stunning displays that make your home or business stand out all season long.",
     ],
     included: [
       {
@@ -960,77 +960,77 @@ const Services = {
       "High",
       "Dusting",
       service12,
-      "Dirty solar panels reduce energy efficiency by blocking sunlight absorption. Our solar panel cleaning service ensures maximum performance by carefully removing all of nature's buildup that can affect energy output. Regular cleaning helps maintain optimal energy production.",
+      "Cobwebs, dust, and buildup in high corners and ceilings don't just look bad — they affect air quality and make your home feel neglected. Our high dusting service safely removes debris from hard-to-reach beams, fans, vaulted ceilings, and ledges using professional-grade equipment.",
     ],
     included: [
       {
         number: "01",
-        title: "WINDOW & Door Screen Cleaning",
-        text: "Removes dirt, pollen, and debris to restore freshness.",
+        title: "Assessment & Equipment Setup",
+        text: "We assess ceiling height and surface type to select the right high-reach tools.",
       },
       {
         number: "02",
-        title: "FRAME & Track Cleaning",
-        text: "Ensures a smooth operation and a polished look.",
+        title: "Ceiling Fan & Fixture Cleaning",
+        text: "Blades, casings, and light covers are carefully wiped down to remove dust buildup.",
       },
       {
         number: "03",
-        title: "Screen Removal & REINSTALLATION",
-        text: "Carefully handled for a thorough clean.",
+        title: "Cobweb & Debris Removal",
+        text: "Using extended tools, we clear dust and webs from corners, beams, and ledges.",
       },
       {
         number: "04",
-        title: "MINOR SCREEN REPAIR",
-        text: "Small tears and damages addressed to extend screen life.",
+        title: "Final Wipe-Down & Cleanup",
+        text: "Fallen debris is collected and surfaces below are left clean.",
       },
     ],
     essential: [
       {
         number: "01.",
-        title: "Maximize Natural Light",
-        text: "Enhances brightness in your home or business.",
+        title: "Improves Air Quality",
+        text: "Removes dust, allergens, and cobwebs that circulate through your home.",
       },
       {
         number: "02.",
-        title: "Extend SkyLight LifeSpan",
-        text: "Prevents damage from debris buildup and water stains.",
+        title: "Safer Than DIY",
+        text: "No ladders needed. Our tools safely reach where others can't.",
       },
       {
         number: "03.",
-        title: "Increases Energy Efficiency",
-        text: "A clean skylight allows for better insulation and temperature regulation.",
+        title: "Protects Your Surfaces",
+        text: "Prevents dust buildup from damaging fixtures, fans, and finishes over time.",
       },
       {
         number: "04.",
-        title: "Enhance Asthetic Appeal",
-        text: "Keeps your property looking pristine and well-maintained.",
+        title: "Fresher, Cleaner Home",
+        text: "Hard-to-reach areas stay cleaner longer with professional-grade equipment.",
       },
     ],
     nearyou: [
       {
         number: "01",
-        title: "Patio & Deck Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Ceiling & Beam Dusting",
+        text: "Remove years of accumulated dust and cobwebs from vaulted ceilings and exposed beams.",
       },
       {
         number: "02",
-        title: "Exterior WalL Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Ceiling Fan Cleaning",
+        text: "Safely clean dusty fan blades that spread allergens every time they spin.",
       },
       {
         number: "03",
-        title: "Driveway Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "High Corner Cobweb Removal",
+        text: "Clear persistent spider webs from entryways, stairwells, and tall rooms.",
       },
       {
         number: "04",
-        title: "Fence Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Commercial High Dusting",
+        text: "Professional dusting for warehouses, retail spaces, offices, and event venues.",
       },
       {
         number: "05",
-        title: "Parking Lot Power Washing",
-        text: "Clear away dirt and grime from your driveway to maintain a clean and polished entrance.",
+        title: "Post-Construction Dusting",
+        text: "Remove fine construction dust from rafters, beams, and hard-to-reach surfaces.",
       },
     ],
   },

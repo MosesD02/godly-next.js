@@ -13,6 +13,12 @@ const ServicesHero = ({ slug }) => {
   const { city } = useGodlyContext();
   const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
   const cityName = citiesMap[cityKey];
+  const displayCity = cityName
+    ? cityName.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase())
+    : "South Florida";
+  const heroDescription = typeof Services[slug]["hero"][3] === "function"
+    ? Services[slug]["hero"][3](displayCity)
+    : Services[slug]["hero"][3];
 
   return (
     <div className="paper-bg-16 mt-17 flex flex-col items-center justify-center gap-20 bg-[#252525] px-[30px] py-[42px] md:mt-14 md:py-[100px]">
@@ -103,7 +109,7 @@ const ServicesHero = ({ slug }) => {
         <div className="absolute -right-6 bottom-2 z-10 h-3 w-18 -rotate-45 bg-[#F3CA9ECC] sm:-right-6 sm:bottom-2 sm:h-3 sm:w-20 md:-right-6 md:bottom-2 md:h-3 md:w-22 lg:-right-7 lg:bottom-3 lg:h-4 lg:w-24 xl:-right-8 xl:bottom-4 xl:h-5 xl:w-26"></div>
       </div>
       <div className="text-left font-['satoshi-regular'] text-sm leading-6 text-white sm:max-w-none sm:text-left sm:text-base sm:leading-6 sm:text-white md:max-w-[700px] md:text-center md:text-base md:leading-7 md:text-[#FFFFFF94] lg:max-w-[800px] lg:text-center lg:text-lg lg:leading-7 lg:text-[#FFFFFF94] xl:max-w-[900px] xl:text-center xl:text-xl xl:leading-8 xl:text-[#FFFFFF94]">
-        <p>{Services[slug]["hero"][3]}</p>
+        <p>{heroDescription}</p>
       </div>
       <FreeQuoteButton>Get a Free Quote</FreeQuoteButton>
     </div>

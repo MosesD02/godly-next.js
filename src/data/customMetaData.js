@@ -18,11 +18,11 @@ export const customMetaData = {
       },
       "interior-window-cleaning": {
         title: "Interior Window Cleaning in Boca Raton - Godly Windows",
-        description: "Brighten your rooms with spotless interior windows. Our Boca Raton handle delicate glass with care. Schedule your interior wndow cleaning with Godly Windows."
+        description: "Brighten your rooms with spotless interior windows. Our Boca Raton team handles delicate glass with care. Schedule your interior window cleaning with Godly Windows."
       },
       "gutter-cleaning": {
         title: "Gutter Cleaning in Boca Raton - Fast & Reliable Service",
-        description: "Blocked gutters? Our Boca Raton experts offer fast, thorough gutter cleaning near you. Prevent water damage and clogs—book godly windows trusted team today!"
+        description: "Blocked gutters? Our Boca Raton experts offer fast, thorough gutter cleaning near you. Prevent water damage and clogs—book Godly Windows' trusted team today!"
       },
       "house-washing": {
         title: "House Washing in Boca Raton - Clean Exterior, Curb Appeal",
@@ -190,7 +190,7 @@ export const customMetaData = {
     services: {
       "solar-panel-cleaning": {
         title: "Solar Panel Cleaning Services in Parkland - Godly Windows",
-        description: "Need exterior window cleaning in Parkland? Godly windows remove streaks, dirt, and grime with safe tools & local care. Call or schedule in under 60 seconds!"
+        description: "Dirty solar panels reduce energy output. Our Parkland team safely removes buildup and grime to restore performance. Book your solar panel cleaning with Godly Windows today!"
       },
       "exterior-window-cleaning": {
         title: "Exterior Window Cleaning in Parkland - Godly Windows",
@@ -310,7 +310,7 @@ export const customMetaData = {
     services: {
       "solar-panel-cleaning": {
         title: "Solar Panel Cleaning Services in Margate - Godly Windows",
-        description: "We offer dependable Solar Panel Cleaning in Margate in Margate. No fuss, just a job done well - by a team that knows the area and takes pride in their work."
+        description: "We offer dependable Solar Panel Cleaning in Margate. No fuss, just a job done well - by a team that knows the area and takes pride in their work."
       },
       "exterior-window-cleaning": {
         title: "Exterior Window Cleaning in Margate - Streak-Free Shine",
@@ -334,7 +334,7 @@ export const customMetaData = {
       },
       "pressure-washing": {
         title: "Pressure Washing in Margate - Driveways, Walls & More",
-        description: "Professional pressure washing services in Margate. We pressure wash homes, patios & surfaces in Margate. Restore your property's look—Book at GodlyWwindows."
+        description: "Professional pressure washing services in Margate. We pressure wash homes, patios & surfaces in Margate. Restore your property's look—Book at Godly Windows."
       },
       "paver-sealing": {
         title: "Paver Sealing Services in Margate - Call Godly Windows",
@@ -398,7 +398,7 @@ export const customMetaData = {
       },
       "paver-sealing": {
         title: "Paver Sealing Services in Pembroke Pines - Godly Windows",
-        description: "Seal your pavers for long-lasting color and durability. Our Godly windows team offers expert paver sealing services for patios, driveways & more. Call today."
+        description: "Seal your pavers for long-lasting color and durability. Our Godly Windows team offers expert paver sealing services for patios, driveways & more. Call today."
       },
       "light-fixture-cleaning": {
         title: "Light Fixture Cleaning in Pembroke Pines - Spotless Shine",
@@ -418,7 +418,7 @@ export const customMetaData = {
       },
       "high-dusting": {
         title: "High Dusting in Pembroke Pines - Beams, Fans & Vents Cleaned",
-        description: "Let the professionals at Pembroke pines FL clean those difficult-to-reach areas with our commercial high dusting services. Book or call Godly Windows today!"
+        description: "Let the professionals at Pembroke Pines clean those difficult-to-reach areas with our high dusting services. Book or call Godly Windows today!"
       }
     }
   },
@@ -458,7 +458,7 @@ export const customMetaData = {
       },
       "paver-sealing": {
         title: "Paver Sealing in Miami - Protect & Restore Surface Shine",
-        description: "Faded pavers? Our Miami paver sealing experts enhance color and prevent stains on driveways, patios & walkways. Long-lasting protection—Book at Godly windows."
+        description: "Faded pavers? Our Miami paver sealing experts enhance color and prevent stains on driveways, patios & walkways. Long-lasting protection—Book at Godly Windows."
       },
       "light-fixture-cleaning": {
         title: "Light Fixture Cleaning Services in Miami - Godly Windows",
@@ -470,7 +470,7 @@ export const customMetaData = {
       },
       "skylight-cleaning": {
         title: "Skylight Cleaning in Miami - Brighter Rooms, Clear Views",
-        description: "Grimy skylights blocking your light? Godly windows clean overhead glass safely and thoroughly. Enjoy the sun again—book your skylight cleaning service now!"
+        description: "Grimy skylights blocking your light? Godly Windows cleans overhead glass safely and thoroughly. Enjoy the sun again—book your skylight cleaning service now!"
       },
       "holiday-light-installation": {
         title: "Holiday Light Installation in Miami - Godly Windows",
@@ -490,7 +490,7 @@ export const customMetaData = {
     services: {
       "solar-panel-cleaning": {
         title: "Solar Panel Cleaning in Plantation - Boost Energy Output",
-        description: "Grimy panels reduce power. Our Plantation team provides expert solar panel cleaning to increase performance and efficiency. Book a Godly windows today!"
+        description: "Grimy panels reduce power. Our Plantation team provides expert solar panel cleaning to increase performance and efficiency. Book with Godly Windows today!"
       },
       "exterior-window-cleaning": {
         title: "Exterior Window Cleaning in Plantation - Godly Windows",
@@ -634,7 +634,7 @@ export const customMetaData = {
       },
       "pressure-washing": {
         title: "Pressure Washing in Davie - Clean Driveways, Patios & More",
-        description: "Dirt-covered walkways? We pressure wash driveways, pavers & walls in Davie with power and precision. Call today for a pressure washing services today."
+        description: "Dirt-covered walkways? We pressure wash driveways, pavers & walls in Davie with power and precision. Call today for expert pressure washing services."
       },
       "paver-sealing": {
         title: "Paver Sealing Services in Davie - Call Godly Windows",
@@ -650,7 +650,7 @@ export const customMetaData = {
       },
       "skylight-cleaning": {
         title: "Skylight Cleaning Services in Davie - Book Godly Windows",
-        description: "Let in more light! Our Davie skylight cleaning services removes dust and buildup with care. Book now or call and enjoy a brighter, cleaner space today!"
+        description: "Let in more light! Our Davie skylight cleaning service removes dust and buildup with care. Book now or call and enjoy a brighter, cleaner space today!"
       },
       "holiday-light-installation": {
         title: "Holiday Light Installation in Davie - Godly Windows",
@@ -658,7 +658,7 @@ export const customMetaData = {
       },
       "high-dusting": {
         title: "High Dusting in Davie - Clean Ceilings, Fans, & Fixtures",
-        description: "Dust in high places? Our Davie high dusting service tackles vents, beams & lights safely. Clear air and spotless ceilings—schedule your clean today! call now."
+        description: "Dust in high places? Our Davie high dusting service tackles vents, beams & lights safely. Clear air and spotless ceilings—schedule your clean today! Call now."
       }
     }
   },
@@ -742,7 +742,7 @@ export const customMetaData = {
       },
       "gutter-cleaning": {
         title: "Gutter Cleaning Services in Tamarac - Godly Windows",
-        description: "Prevent roof and foundation damage with thorough gutter cleaning in Tamarac. We remove clogs, leaves, and debris to keep your guttering system. Call Today."
+        description: "Prevent roof and foundation damage with thorough gutter cleaning in Tamarac. We remove clogs, leaves, and debris to keep your guttering system flowing freely. Call Today."
       },
       "house-washing": {
         title: "House Washing & Soft Wash Experts in Tamarac - Godly Windows",
@@ -870,7 +870,7 @@ export const customMetaData = {
       },
       "roof-washing": {
         title: "Roof Washing Services in Pompano Beach - Godly Windows",
-        description: "Pompano Beach roof washing services by Godly Windows removes mold, dirt, and black streaks. Improve curb appeal and roof health—Call or book your service today!"
+        description: "Pompano Beach roof washing service by Godly Windows removes mold, dirt, and black streaks. Improve curb appeal and roof health—Call or book your service today!"
       },
       "pressure-washing": {
         title: "Pressure Washing Services in Pompano Beach - Godly Windows",
@@ -910,7 +910,7 @@ export const customMetaData = {
     services: {
       "solar-panel-cleaning": {
         title: "Solar Panel Cleaning in West Palm Beach - Godly Windows",
-        description: "Boost your energy output today! Book solar panel cleaning in West Palm Beach now. Safe, fast & reliable service by pros. Call Godly Windows today now!"
+        description: "Boost your energy output today! Book solar panel cleaning in West Palm Beach now. Safe, fast & reliable service by pros. Call Godly Windows today!"
       },
       "exterior-window-cleaning": {
         title: "Exterior Window Cleaning in West Palm Beach - Godly Windows",
@@ -1038,7 +1038,7 @@ export const customMetaData = {
       },
       "interior-window-cleaning": {
         title: "Interior Window Cleaning in Oakland Park - Smudge-Free Glass",
-        description: "Crystal clear views from the inside out! Our Oakland Park team specialises in interior window cleaning for homes and offices. Call today for spotless shine."
+        description: "Crystal clear views from the inside out! Our Oakland Park team specializes in interior window cleaning for homes and offices. Call today for spotless shine."
       },
       "gutter-cleaning": {
         title: "Gutter Cleaning Services in Oakland Park - Fast & Thorough",
@@ -1085,7 +1085,7 @@ export const customMetaData = {
   "weston": {
     cityPage: {
       title: "Window Cleaning & Pressure Washing in Weston - Godly Windows",
-      description: "Professional window, roof, and window cleaning services in Weston. We handle glass, gutters, pressure washing, and more. Book trusted cleaning experts today."
+      description: "Professional window cleaning, roof washing, and exterior cleaning services in Weston. We handle glass, gutters, pressure washing, and more. Book trusted cleaning experts today."
     },
     services: {
       "solar-panel-cleaning": {
@@ -1166,7 +1166,7 @@ export const customMetaData = {
       },
       "house-washing": {
         title: "House Washing in Royal Palm Beach - Call Godly Windows",
-        description: "Make your home shine again with our expert house washing in Royal Palm Beach. We safely removes dirt, mold, and mildew to refresh your exterior beautifully."
+        description: "Make your home shine again with our expert house washing in Royal Palm Beach. We safely remove dirt, mold, and mildew to refresh your exterior beautifully."
       },
       "roof-washing": {
         title: "Roof Washing Services in Royal Palm Beach - Godly Windows",
@@ -1298,7 +1298,7 @@ export const customMetaData = {
       },
       "light-fixture-cleaning": {
         title: "Light Fixture Cleaning in Coral Springs - Call Godly Windows",
-        description: "Dirty fixtures? We clean light fixture chandeliers, and pendant lights in Coral Springs with care. High ceilings? No problem. Call Godly Windows today."
+        description: "Dirty fixtures? We clean light fixtures, chandeliers, and pendant lights in Coral Springs with care. High ceilings? No problem. Call Godly Windows today."
       },
       "screen-cleaning": {
         title: "Screen Cleaning in Coral Springs - Fresh Air, No Dust",
@@ -1381,7 +1381,7 @@ export const customMetaData = {
   "hollywood": {
     cityPage: {
       title: "Window Cleaning & Pressure Washing Hollywood - Godly Windows",
-      description: "Get top-rated window cleaning, pressure washing, solar panel cleaning, and light fixture installation in Hollywood. We offer trusted local services near you."
+      description: "Get top-rated window cleaning, pressure washing, solar panel cleaning, and light fixture cleaning in Hollywood. We offer trusted local services near you."
     },
     services: {
       "solar-panel-cleaning": {
@@ -1421,7 +1421,7 @@ export const customMetaData = {
         description: "Brighten your home with expert light fixture cleaning in Hollywood, FL. We safely clean chandeliers, ceiling lights, and more. Book now for sparkling results!"
       },
       "screen-cleaning": {
-        title: "Skylight Cleaning in Hollywood - Clear & Streak-Free",
+        title: "Screen Cleaning in Hollywood - Clear & Streak-Free",
         description: "Let the light in with professional screen cleaning in Hollywood. We clean high glass surfaces with care and top safety standards. Book at Godly Windows."
       },
       "skylight-cleaning": {

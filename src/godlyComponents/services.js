@@ -793,7 +793,7 @@ function ServicesGrid() {
                 <div className="flex h-full flex-col gap-4">
                   <div className="relative size-[50px] shrink-0">
                     {service.icon ? (
-                      <span className={`${isActive ? "text-white" : ""}`}>
+                      <span className={`${isActive ? "text-white" : "text-[#1c1c1c]"} group-hover:text-white`}>
                         {service.icon}
                       </span>
                     ) : (
@@ -802,13 +802,13 @@ function ServicesGrid() {
                           src={service.image}
                           alt={service.name}
                           fill
-                          className={`object-contain ${isActive ? "hidden" : ""} shrink-0 md:group-hover:hidden`}
+                          className={`object-contain shrink-0 transition-opacity duration-200 ${isActive ? "opacity-0" : "opacity-100"} md:group-hover:opacity-0`}
                         />
                         <Image
                           src={service.hoverImage}
                           alt={`${service.name} color`}
                           fill
-                          className={`${isActive ? "block" : "hidden"} shrink-0 object-contain md:group-hover:block`}
+                          className={`shrink-0 object-contain transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-0"} md:group-hover:opacity-100`}
                         />
                       </>
                     )}

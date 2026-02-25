@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
 import { citiesMap } from "./header/CitiesPopup";
 import { usePathname } from "next/navigation";
-import { getAllBlogPosts } from "@/data/blog-content";
 
 const citiesData = [
   "BOCA RATON",
@@ -372,19 +371,6 @@ const Footer = () => {
                   <h3 className="font-normal tracking-[0.64px] text-[#312E2C] uppercase opacity-60 md:opacity-100">
                     Blog
                   </h3>
-                  {getAllBlogPosts()
-                    .slice(0, 3)
-                    .map((post) => (
-                      <Link
-                        key={post.slug}
-                        href={`/blog/${post.slug}`}
-                        className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"
-                      >
-                        {post.title.length > 50
-                          ? `${post.title.slice(0, 50)}…`
-                          : post.title}
-                      </Link>
-                    ))}
                   <Link
                     href="/blog"
                     className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"

@@ -2,6 +2,7 @@
 import React from "react";
 import { useGodlyContext } from "@/context/godlyContext";
 import SectionButton from "@/components/sectionButton";
+import { Button } from "@/components/ui/button";
 
 const ParklandCta = () => {
   const { city } = useGodlyContext();
@@ -33,11 +34,10 @@ const ParklandCta = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-6">
-          <a
-            href="tel:(954) 852-5326"
-            className="flex items-center justify-center rounded-[6px] bg-[#FDE4C8] px-6 py-3 font-['satoshi-bold'] text-sm font-bold text-[#262424] transition-all duration-300 hover:bg-[#f5d7a8] md:px-8 md:py-4 md:text-base"
-          >
-            Call Now: (954) 852-5326
+          <a href="tel:(561) 826-4461">
+            <Button className="estimate-button">
+              <span className="">Call Now: (561) 826-4461</span>
+            </Button>
           </a>
           <SectionButton>Get a Free Estimate</SectionButton>
         </div>
