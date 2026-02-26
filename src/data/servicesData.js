@@ -98,7 +98,8 @@ const Services = {
       "Exterior Window",
       "Cleaning",
       service2,
-      (city) => `This is our jam. We specialize in residential and commercial window cleaning services in ${city}. We offer a 100% money back guarantee on all of our cleaning services.`,
+      (city) =>
+        `This is our jam. We specialize in residential and commercial window cleaning services in ${city}. We offer a 100% money back guarantee on all of our cleaning services.`,
     ],
     included: [
       {
@@ -184,7 +185,8 @@ const Services = {
       "Interior Window",
       "Cleaning",
       service3,
-      (city) => `This is where we shine. We specialize in residential and commercial window cleaning services in ${city}. We offer a 100% money back guarantee on all of our cleaning services.`,
+      (city) =>
+        `This is where we shine. We specialize in residential and commercial window cleaning services in ${city}. We offer a 100% money back guarantee on all of our cleaning services.`,
     ],
     included: [
       {
@@ -255,7 +257,8 @@ const Services = {
       "Gutter",
       "Cleaning",
       service4,
-      (city) => `Clogged gutters can cause water damage, roof leaks, and sometimes foundation issues. Our ${city} gutter cleaning service ensures that leaves, and other types of debris buildup are removed so water can flow freely.`,
+      (city) =>
+        `Clogged gutters can cause water damage, roof leaks, and sometimes foundation issues. Our ${city} gutter cleaning service ensures that leaves, and other types of debris buildup are removed so water can flow freely.`,
     ],
     included: [
       {
@@ -513,23 +516,23 @@ const Services = {
     essential: [
       {
         number: "01.",
-        title: "Improve Indoor Air Quality",
-        text: "Reduces allergens and airborne particles",
+        title: "Protects Your Surfaces",
+        text: "Dirt, algae, and mold break down concrete, pavers, and stone over time. Regular pressure washing prevents long-term damage and costly repairs.",
       },
       {
         number: "02.",
-        title: "Enhances Appearance",
-        text: "Maintains a clean and professional environment.",
+        title: "Eliminates Slip Hazards",
+        text: "Algae and mildew buildup on driveways, walkways, and pool decks creates dangerous slippery surfaces — especially in South Florida's humidity.",
       },
       {
         number: "03.",
-        title: "Prevents Dust Build-Up",
-        text: "Reduces long-term maintenance needs.",
+        title: "Restores Curb Appeal",
+        text: "Years of grime can make your property look neglected. Pressure washing brings surfaces back to like-new condition in a single visit.",
       },
       {
         number: "04.",
-        title: "Health & Safety Compliance",
-        text: "Ideal for offices and commercial spaces.",
+        title: "Prevents Mold & Algae Spread",
+        text: "South Florida's heat and moisture create the perfect conditions for mold and algae growth. Routine cleaning stops it before it spreads to walls, roofs, and other surfaces.",
       },
     ],
     nearyou: [

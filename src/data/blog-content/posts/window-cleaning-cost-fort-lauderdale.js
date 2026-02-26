@@ -4,13 +4,16 @@ export default {
   metaDescription:
     "Professional window cleaning in Fort Lauderdale — why coastal homes need more than a water-fed pole. Methods, frequency & free quotes from Godly Windows & Wash Co.",
   targetKeyword: "window cleaning fort lauderdale cost",
-  internalLink: "https://godlywindows.com/fort-lauderdale/exterior-window-cleaning",
-  secondaryLink: "https://godlywindows.com/fort-lauderdale/interior-window-cleaning",
+  internalLink:
+    "https://godlywindows.com/fort-lauderdale/exterior-window-cleaning",
+  secondaryLink:
+    "https://godlywindows.com/fort-lauderdale/interior-window-cleaning",
   targetCity: "Fort Lauderdale",
   citySlug: "fort-lauderdale",
   businessName: "Godly Windows & Wash Co. Fort Lauderdale",
-  publishedAt: "2025-02-01",
-  title: "What Does Professional Window Cleaning in Fort Lauderdale Really Involve?",
+  publishedAt: "2025-02-26",
+  title:
+    "What Does Professional Window Cleaning in Fort Lauderdale Really Involve?",
   excerpt:
     "Professional window cleaning costs in Fort Lauderdale depend on several factors. But the gap between an average cleaning and a truly thorough one is enormous — especially in a coastal environment.",
   sections: [
@@ -19,8 +22,14 @@ export default {
       content:
         "Professional window cleaning costs in Fort Lauderdale depend on the number of windows, your home's size, how accessible the windows are, and the level of buildup on the glass. But here's what most pricing guides leave out: the gap between an average window cleaning and a truly thorough one is enormous — and in Fort Lauderdale's coastal environment, that gap determines whether your windows stay clean for months or start hazing over within days.",
       links: [
-        { phrase: "window cleaning", url: "https://godlywindows.com/fort-lauderdale/exterior-window-cleaning" },
-        { phrase: "Fort Lauderdale", url: "https://godlywindows.com/fort-lauderdale" },
+        {
+          phrase: "window cleaning",
+          url: "https://godlywindows.com/fort-lauderdale/exterior-window-cleaning",
+        },
+        {
+          phrase: "Fort Lauderdale",
+          url: "https://godlywindows.com/fort-lauderdale",
+        },
       ],
     },
     {
@@ -28,7 +37,10 @@ export default {
       content:
         "If you're looking for the cheapest option, this probably isn't the guide for you. But if you want to understand what actually goes into quality window cleaning in Fort Lauderdale, keep reading.",
     },
-    { type: "h2", text: "Why Fort Lauderdale Windows Take More Punishment Than Anywhere Else" },
+    {
+      type: "h2",
+      text: "Why Fort Lauderdale Windows Take More Punishment Than Anywhere Else",
+    },
     {
       type: "p",
       content:
@@ -44,7 +56,10 @@ export default {
       content:
         "This is why cleaning frequency and cleaning method both matter here. It's not enough to clean occasionally — you need to clean regularly, and you need someone who does more than spray water on the glass.",
     },
-    { type: "h2", text: "The Difference Between a Quick Clean and a Thorough One" },
+    {
+      type: "h2",
+      text: "The Difference Between a Quick Clean and a Thorough One",
+    },
     {
       type: "p",
       content:
@@ -87,7 +102,10 @@ export default {
       content:
         "Our service plans are built around exterior cleaning on a regular schedule, with interior cleaning available as an add-on whenever you need it. This keeps things practical and cost-effective while ensuring your exteriors never fall behind.",
     },
-    { type: "h2", text: "Rain Shield Keeps Fort Lauderdale Windows Cleaner Longer" },
+    {
+      type: "h2",
+      text: "Rain Shield Keeps Fort Lauderdale Windows Cleaner Longer",
+    },
     {
       type: "p",
       content:
@@ -98,7 +116,10 @@ export default {
       content:
         "Rain Shield is included at no extra charge with our quarterly service plan and is available during promotions throughout the year.",
     },
-    { type: "h2", text: "Get a Free Quote From Godly Windows & Wash Co. Fort Lauderdale" },
+    {
+      type: "h2",
+      text: "Get a Free Quote From Godly Windows & Wash Co. Fort Lauderdale",
+    },
     {
       type: "p",
       content:

@@ -4,7 +4,6 @@
  */
 
 import pressureWashingBocaRaton from "./pressure-washing-cost-boca-raton.js";
+import windowCleaningCostFortLauderdale from "./window-cleaning-cost-fort-lauderdale.js";
 
-export default [
-  pressureWashingBocaRaton,
-];
+export default [windowCleaningCostFortLauderdale, pressureWashingBocaRaton];
