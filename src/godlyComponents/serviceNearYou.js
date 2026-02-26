@@ -14,6 +14,35 @@ import { useGodlyContext } from "@/context/godlyContext";
 import { generateServiceSectionHeadings } from "@/data/metaTitles";
 import { citiesMap } from "@/data/cities";
 
+const taglines = {
+  "solar-panel-cleaning": {
+    before: "Maximize energy",
+    highlight: "Efficiency",
+    after: "with our professional solar panel cleaning services.",
+  },
+  "pressure-washing": {
+    lines: [
+      "WE ARE THE ONLY PRESSURE AND SOFT WASHING COMPANY IN",
+      "SOUTH FLORIDA THAT PROUDLY OFFER A MONEY BACK",
+      "GUARANTEE ON ALL POWER WASHING SERVICES.",
+    ],
+  },
+  "paver-sealing": {
+    lines: [
+      "WE ARE THE ONLY PAVER SEALING COMPANY IN",
+      "SOUTH FLORIDA THAT PROUDLY OFFERS A 2 YEAR UNCONDITIONAL WARRANTY",
+      "ON ALL SURFACE RESTORATION SERVICES.",
+    ],
+  },
+  "light-fixture-cleaning": {
+    lines: [
+      "WE ARE THE ONLY LIGHT FIXTURE COMPANY IN",
+      "SOUTH FLORIDA THAT PROUDLY OFFERS A MONEY BACK",
+      "GUARANTEE ON ALL LIGHT FIXTURE CLEANING SERVICES.",
+    ],
+  },
+};
+
 const ServiceNearYou = ({ slug }) => {
   const { city } = useGodlyContext();
   const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
@@ -203,13 +232,30 @@ const ServiceNearYou = ({ slug }) => {
             ))}
           </div>
         </div>
-        <h3 className="trim mx-auto max-w-[343.5px] text-center text-xl font-normal tracking-wide text-white md:w-120 md:max-w-fit md:text-3xl">
-          Maximize energy{" "}
-          <span className="font-['luminaire-script'] text-[#F3CA9E]">
-            Efficiency
-          </span>{" "}
-          with our professional solar panel cleaning services.
-        </h3>
+        {(() => {
+          const t = taglines[slug];
+          if (!t) return null;
+          if (t.lines) {
+            return (
+              <h3 className="trim mx-auto max-w-[343.5px] text-center text-xl font-normal tracking-wide text-white md:w-[900px] md:max-w-fit md:text-3xl">
+                {t.lines.map((line, i) => (
+                  <span key={i} className="block">
+                    {line}
+                  </span>
+                ))}
+              </h3>
+            );
+          }
+          return (
+            <h3 className="trim mx-auto max-w-[343.5px] text-center text-xl font-normal tracking-wide text-white md:w-120 md:max-w-fit md:text-3xl">
+              {t.before}{" "}
+              <span className="font-['luminaire-script'] text-[#F3CA9E]">
+                {t.highlight}
+              </span>{" "}
+              {t.after}
+            </h3>
+          );
+        })()}
       </div>
     </div>
   );

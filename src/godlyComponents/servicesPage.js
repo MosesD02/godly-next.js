@@ -30,7 +30,7 @@ export default function ServicesPage({ slug, city, relatedPosts }) {
       <ServiceIncludes slug={slug} />
       <EssentialService slug={slug} />
       <ServiceNearYou slug={slug} />
-      <ChooseUs />
+      <ChooseUs slug={slug} />
       {/* <Faq /> */}
       <OtherServices />
       <RelatedBlogPosts posts={relatedPosts} citySlug={city} />
