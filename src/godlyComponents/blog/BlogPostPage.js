@@ -16,7 +16,7 @@ export default function BlogPostPage({ post }) {
         <div className="mx-auto flex w-full max-w-[800px] flex-col">
           <nav className="mb-6">
             <Link
-              href="/blog"
+              href={`/blog/${post.citySlug || "fort-lauderdale"}`}
               className="font-['satoshi-light'] text-sm text-[#AF8F6E] underline"
             >
               ← Back to Blog

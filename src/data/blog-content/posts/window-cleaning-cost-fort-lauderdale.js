@@ -10,12 +10,14 @@ export default {
     "https://godlywindows.com/fort-lauderdale/interior-window-cleaning",
   targetCity: "Fort Lauderdale",
   citySlug: "fort-lauderdale",
+  serviceCategory: "window-cleaning",
   businessName: "Godly Windows & Wash Co. Fort Lauderdale",
-  publishedAt: "2025-02-26",
+  publishedAt: "2026-02-26",
   title:
     "What Does Professional Window Cleaning in Fort Lauderdale Really Involve?",
   excerpt:
     "Professional window cleaning costs in Fort Lauderdale depend on several factors. But the gap between an average cleaning and a truly thorough one is enormous — especially in a coastal environment.",
+  image: "/blogs/2.jpg",
   sections: [
     {
       type: "p",

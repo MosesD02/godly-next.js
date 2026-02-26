@@ -33,7 +33,7 @@ export default function ServicesPage({ slug, city, relatedPosts }) {
       <ChooseUs />
       {/* <Faq /> */}
       <OtherServices />
-      <RelatedBlogPosts posts={relatedPosts} />
+      <RelatedBlogPosts posts={relatedPosts} citySlug={city} />
     </WebsiteLayout>
   );
 }

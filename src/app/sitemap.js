@@ -1,7 +1,7 @@
 import { BASE_URL } from "./lib/constants";
 import { citiesMap } from "@/data/cities";
 import { serviceMetaTitles } from "@/data/metaTitles";
-import { getAllBlogPosts } from "@/data/blog-content";
+import { getAllBlogPosts, getBlogPostsByCity } from "@/data/blog-content";
 
 export default function sitemap() {
   const now = new Date().toISOString();
@@ -17,18 +17,32 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 1.0,
     },
-    {
-      url: `${BASE_URL}/blog`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
+    // Individual blog posts
     ...blogPosts.map((post) => ({
       url: `${BASE_URL}/blog/${post.slug}`,
       lastModified: post.publishedAt,
       changeFrequency: "monthly",
       priority: 0.7,
     })),
+    // City blog index pages (only cities that have posts)
+    ...[...new Set(blogPosts.map((p) => p.citySlug).filter(Boolean))].map(
+      (citySlug) => {
+        const posts = getBlogPostsByCity(citySlug);
+        const latest = posts[0]?.publishedAt ?? now;
+        return {
+          url: `${BASE_URL}/blog/${citySlug}`,
+          lastModified: latest,
+          changeFrequency: "weekly",
+          priority: 0.8,
+        };
+      },
+    ),
+    {
+      url: `${BASE_URL}/blogs`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
     {
       url: `${BASE_URL}/booking`,
       lastModified: now,

@@ -22,7 +22,10 @@ const CitiesPopup = ({ open, onOpenChange }) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const pathname = usePathname();
-  const isServicePage = pathname.split("/").length === 3;
+  const segments = pathname.split("/");
+  const firstSegment = segments[1];
+  const isServicePage =
+    segments.length === 3 && citiesMap[firstSegment] !== undefined;
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange} className="">
@@ -46,9 +49,12 @@ const CitiesPopup = ({ open, onOpenChange }) => {
                 )}
                 onClick={() => {
                   setCity(citiesMap[cityName]);
+                  document.cookie = `selectedCity=${cityName};path=/;max-age=31536000`;
 
                   if (isServicePage) {
-                    router.push(`/${cityName}/${pathname.split("/")[2]}`);
+                    router.push(`/${cityName}/${segments[2]}`);
+                  } else if (firstSegment === "blog") {
+                    router.push(`/blog/${cityName}`);
                   } else {
                     router.push(`/${cityName}`);
                   }

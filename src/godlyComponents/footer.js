@@ -137,12 +137,12 @@ const Footer = () => {
   return (
     <div className="paper-bg-16 bg-[#262424]">
       <div className="flex flex-col items-center justify-center pt-[30px] text-white">
-        <div className="relative flex w-full items-center justify-center">
-          <h1 className="trim text-whites max-w-[200px] text-center text-[64px] leading-[80px] sm:max-w-[40px]">
-            CITIES SERVE
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="trim text-center text-[64px] leading-none text-white">
+            CITIES
           </h1>
           <span
-            className="trim absolute top-[23px] left-[170px] h-full w-full -rotate-[8deg] font-['luminaire-script'] text-[40px] text-[#FFE7AF] sm:-top-[55px] sm:left-6 sm:translate-x-1/2"
+            className="trim -rotate-[8deg] font-['luminaire-script'] text-[40px] text-[#FFE7AF]"
             style={{
               textShadow:
                 "-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, " +
@@ -151,8 +151,11 @@ const Footer = () => {
           >
             We
           </span>
+          <h1 className="trim text-center text-[64px] leading-none text-white">
+            SERVE
+          </h1>
         </div>
-        <div className="grid grid-cols-2 grid-rows-13 px-4 py-[60px] md:grid-cols-5 md:grid-rows-5 md:px-0">
+        <div className="grid grid-cols-2 grid-rows-13 px-4 py-[60px] md:grid-cols-5 md:grid-rows-5">
           {citiesData.slice(0, 25).map((city, index) => (
             <Link
               key={index}

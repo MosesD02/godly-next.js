@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import ServicesPage from "@/godlyComponents/servicesPage";
 import { citiesMap } from "@/data/cities";
 import {
@@ -5,6 +6,7 @@ import {
   generateServiceDescription,
 } from "@/data/metaTitles";
 import { getRelatedBlogPosts } from "@/data/blog-content";
+import Services from "@/data/servicesData";
 
 // Dynamic metadata generation for service pages
 export async function generateMetadata({ params }) {
@@ -47,6 +49,11 @@ export async function generateMetadata({ params }) {
 export default async function GodlyServices({ params }) {
   const param = await params;
   const { slug, city } = param;
+
+  if (!Services[slug]) {
+    notFound();
+  }
+
   const relatedPosts = getRelatedBlogPosts(city, slug);
 
   return <ServicesPage slug={slug} city={city} relatedPosts={relatedPosts} />;

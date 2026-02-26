@@ -6,7 +6,7 @@ import Image from "next/image";
 import WebsiteLayout from "../websiteLayout";
 import { format } from "date-fns";
 
-export default function BlogIndex({ posts }) {
+export default function BlogIndex({ posts, cityName }) {
   return (
     <WebsiteLayout>
       <div className="mt-17 flex flex-col bg-[#262424] px-[35px] py-[100px] md:mt-17 md:p-16 md:py-[70px]">
@@ -15,19 +15,30 @@ export default function BlogIndex({ posts }) {
             className="trim text-center text-[50px] text-[#FDE4C8] md:text-[96px]"
             style={{ textShadow: "4px 0px 0px #AF8F6E" }}
           >
-            Godly resources
+            {cityName ? `${cityName} resources` : "Godly resources"}
           </h1>
           <div className="flex flex-col gap-0.5">
             <div className="h-[1px] w-[340px] bg-white md:w-[662px]" />
             <div className="h-[3px] w-[340px] bg-white md:w-[662px]" />
           </div>
           <p className="text-center font-['satoshi-light'] text-xs text-[#FFFFFF94] md:font-['satoshi-regular'] md:text-[24px]">
-            Expert tips on keeping your South Florida property spotless.
+            Expert tips on keeping your{" "}
+            {cityName ? `${cityName}` : "South Florida"} property spotless.
           </p>
         </div>
       </div>
 
       <div className="flex flex-col gap-[40px] bg-[#fdf6ed] md:pb-16">
+        {posts.length === 0 && (
+          <div className="mx-auto flex w-full max-w-[1311px] flex-col items-center gap-3 px-[30px] py-[80px] md:px-12">
+            <span className="font-['marlton'] text-sm tracking-[2.5px] text-[#AF8F6E]">
+              COMING SOON
+            </span>
+            <p className="text-center font-['satoshi-light'] text-[20px] text-[#6A6464]">
+              No posts yet for this location — check back soon.
+            </p>
+          </div>
+        )}
         {posts[0] && posts[0].image && (
           <>
             <div className="hidden pt-[40px] md:block md:px-12">
@@ -58,12 +69,14 @@ export default function BlogIndex({ posts }) {
                   <p className="mb-4 line-clamp-[9] font-['satoshi-light'] text-[20px] leading-[31px] text-gray-800">
                     {posts[0].excerpt}
                   </p>
-                  <Link
-                    href={`/blog/${posts[0].slug}`}
-                    className="flex w-full justify-end text-end text-[24px] text-[#003953] hover:underline"
-                  >
-                    READ MORE
-                  </Link>
+                  <div className="flex w-full justify-end">
+                    <Link
+                      href={`/blog/${posts[0].slug}`}
+                      className="text-[24px] text-[#003953]"
+                    >
+                      <div className="underline">READ MORE</div>
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="flex flex-col gap-0.5">
@@ -100,12 +113,14 @@ export default function BlogIndex({ posts }) {
                 </p>
               </div>
               <div>
-                <Link
-                  href={`/blog/${posts[0].slug}`}
-                  className="flex w-full justify-end text-end text-xl leading-[24px] text-[#003953]"
-                >
-                  READ MORE
-                </Link>
+                <div className="w/full flex justify-end">
+                  <Link
+                    href={`/blog/${posts[0].slug}`}
+                    className="text-xl leading-[24px] text-[#003953]"
+                  >
+                    <div className="underline">READ MORE</div>
+                  </Link>
+                </div>
               </div>
               <div className="flex flex-col gap-0.5">
                 <div className="h-[1px] w-full bg-black" />
@@ -158,10 +173,18 @@ export default function BlogIndex({ posts }) {
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
-                      <p className="font-['satoshi-light'] text-base text-[#373A44] md:mt-2 md:text-sm">
+                      <p className="font-['satoshi-light'] text-base text-[#373A44] md:mt-2 md:text-[24px]">
                         {format(new Date(post.publishedAt), "MMMM d, yyyy")}
                       </p>
-                      <p className="text-xl leading-snug font-bold text-[#373A44] md:mt-1 md:text-sm">
+                      <p
+                        className="text-xl leading-snug font-bold text-[#373A44] md:mt-1 md:text-[28px]"
+                        style={{
+                          display: "-webkit-box",
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
+                        }}
+                      >
                         {post.title}
                       </p>
                     </Link>

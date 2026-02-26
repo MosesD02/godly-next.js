@@ -5,8 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { format } from "date-fns";
 
-export default function RelatedBlogPosts({ posts }) {
+export default function RelatedBlogPosts({ posts, citySlug }) {
   if (!posts || posts.length === 0) return null;
+
+  const blogHref = citySlug ? `/blog/${citySlug}` : "/blog";
 
   return (
     <section className="bg-[#fdf6ed] px-[30px] py-[60px] md:px-12 md:py-[80px]">
@@ -21,7 +23,7 @@ export default function RelatedBlogPosts({ posts }) {
             </h2>
           </div>
           <Link
-            href="/blog"
+            href={blogHref}
             className="hidden shrink-0 font-['satoshi-regular'] text-sm text-[#003953] underline underline-offset-2 hover:text-[#AF8F6E] md:block"
           >
             View all articles →
@@ -65,7 +67,7 @@ export default function RelatedBlogPosts({ posts }) {
         </div>
 
         <Link
-          href="/blog"
+          href={blogHref}
           className="mt-10 flex items-center justify-center font-['satoshi-regular'] text-sm text-[#003953] underline underline-offset-2 hover:text-[#AF8F6E] md:hidden"
         >
           View all articles →

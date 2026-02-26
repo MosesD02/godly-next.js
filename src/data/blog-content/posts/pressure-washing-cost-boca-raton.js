@@ -8,6 +8,7 @@ export default {
   secondaryLink: "https://godlywindows.com/boca-raton",
   targetCity: "Boca Raton",
   citySlug: "boca-raton",
+  serviceCategory: "pressure-washing",
   businessName: "Godly Windows & Wash Co. Boca Raton",
   publishedAt: "2026-02-23",
   title: "How Much Does Pressure Washing Cost in Boca Raton? What to Know Before You Hire",
