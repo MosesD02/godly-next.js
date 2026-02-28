@@ -30,7 +30,7 @@ export default async function BlogPage() {
   const cookieStore = await cookies();
   const savedCity = cookieStore.get("selectedCity")?.value;
   const citySlug =
-    savedCity && citiesMap[savedCity] ? savedCity : "fort-lauderdale";
+    savedCity && citiesMap[savedCity] ? savedCity : "south-florida";
   const cityName = citiesMap[citySlug];
   const posts = getBlogPostsByCity(citySlug);
   return <BlogIndex posts={posts} cityName={cityName} />;

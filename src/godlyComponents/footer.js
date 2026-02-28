@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
 import { citiesMap } from "./header/CitiesPopup";
 import { usePathname } from "next/navigation";
+import SectionButton from "@/components/sectionButton";
 
 const citiesData = [
   "BOCA RATON",
@@ -108,6 +109,10 @@ export const getPhoneNumber = (city) => {
     ].includes(cityToCheck)
   ) {
     return "(561) 826-4461";
+  } else if (
+    ["WESTON", "MIRAMAR", "SOUTHWEST RANCHES", "HALLANDALE BEACH", "MIAMI"].includes(cityToCheck)
+  ) {
+    return "(954) 738-3421";
   } else {
     return "(954) 738-3421";
   }
@@ -190,18 +195,76 @@ const Footer = () => {
               Lauderdale, FL
             </p>
           )}
-          {city === "BOCA RATON" && (
-            <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Boca
-              Raton, FL
-            </p>
-          )}
-          {city === "WESTON" && (
-            <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Weston,
-              FL
-            </p>
-          )}
+          {city === "BOCA RATON" && (() => {
+            const phone = getPhoneNumber("BOCA RATON");
+            return (
+              <div className="flex flex-col items-center gap-4 text-center">
+                <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
+                  Whether you're in{" "}
+                  <span className="font-['satoshi-bold'] text-[#FDE4C8]">
+                    Royal Palm Yacht & Country Club
+                  </span>
+                  ,{" "}
+                  <span className="font-['satoshi-bold'] text-[#FDE4C8]">
+                    Mizner Park
+                  </span>
+                  , or a waterfront estate along the Intracoastal—
+                  <Link
+                    href="https://godlywindows.com/"
+                    className="font-['satoshi-bold'] text-[#FDE4C8] underline decoration-current decoration-solid transition-colors hover:text-white"
+                  >
+                    Godly Windows
+                  </Link>{" "}
+                  is your go-to team for cleaner windows and brighter exteriors.
+                </p>
+                <p className="font-['satoshi-regular'] text-base text-white/80 md:text-lg">
+                  Book online for a free, no pressure quote.
+                </p>
+                <a
+                  href={`tel:${phone.replace(/\D/g, "")}`}
+                  className="font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
+                >
+                  {phone}
+                </a>
+                <SectionButton>Get a Free Estimate</SectionButton>
+              </div>
+            );
+          })()}
+          {city === "WESTON" && (() => {
+            const phone = getPhoneNumber("WESTON");
+            return (
+              <div className="flex flex-col items-center gap-4 text-center">
+                <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
+                  Whether you're in{" "}
+                  <span className="font-['satoshi-bold'] text-[#FDE4C8]">
+                    Weston Hills
+                  </span>
+                  ,{" "}
+                  <span className="font-['satoshi-bold'] text-[#FDE4C8]">
+                    Savanna
+                  </span>
+                  , or a lakefront home along Bonaventure Boulevard—
+                  <Link
+                    href="https://godlywindows.com/"
+                    className="font-['satoshi-bold'] text-[#FDE4C8] underline decoration-current decoration-solid transition-colors hover:text-white"
+                  >
+                    Godly Windows
+                  </Link>{" "}
+                  is your go-to team for cleaner windows and brighter exteriors.
+                </p>
+                <p className="font-['satoshi-regular'] text-base text-white/80 md:text-lg">
+                  Book online for a free, no pressure quote.
+                </p>
+                <a
+                  href={`tel:${phone.replace(/\D/g, "")}`}
+                  className="font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
+                >
+                  {phone}
+                </a>
+                <SectionButton>Get a Free Estimate</SectionButton>
+              </div>
+            );
+          })()}
           {city === "POMPANO BEACH" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
               Expert Window Cleaning, House Washing & Roof Cleaning in Pompano
@@ -332,9 +395,11 @@ const Footer = () => {
               Palm Beach, FL
             </p>
           )}
-          <h2 className="text-center text-2xl font-bold text-white md:text-4xl">
-            Available 24 hours for you
-          </h2>
+          {city !== "BOCA RATON" && city !== "WESTON" && (
+            <h2 className="text-center text-2xl font-bold text-white md:text-4xl">
+              Available 24 hours for you
+            </h2>
+          )}
         </div>
       </div>
       <div className="paper-bg-16 w-full flex-col bg-[#262424] md:flex">

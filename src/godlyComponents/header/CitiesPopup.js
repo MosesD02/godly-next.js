@@ -51,13 +51,17 @@ const CitiesPopup = ({ open, onOpenChange }) => {
                   setCity(citiesMap[cityName]);
                   document.cookie = `selectedCity=${cityName};path=/;max-age=31536000`;
 
+                  let url;
                   if (isServicePage) {
-                    router.push(`/${cityName}/${segments[2]}`);
+                    url = `/${cityName}/${segments[2]}`;
                   } else if (firstSegment === "blog") {
-                    router.push(`/blog/${cityName}`);
+                    url = `/blog/${cityName}`;
                   } else {
-                    router.push(`/${cityName}`);
+                    url = `/${cityName}`;
                   }
+                  router.push(url);
+                  // router.push() may not return a Promise in Next.js 15; defer refresh so new page loads
+                  setTimeout(() => router.refresh(), 100);
                   onOpenChange(false);
                 }}
                 onTouchStart={() => setActiveIndex(index)}

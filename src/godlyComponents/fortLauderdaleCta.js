@@ -3,15 +3,15 @@ import React from "react";
 import { useGodlyContext } from "@/context/godlyContext";
 import SectionButton from "@/components/sectionButton";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { getPhoneNumber } from "./footer";
 
 const FortLauderdaleCta = () => {
   const { city } = useGodlyContext();
 
-  // Only show for Fort Lauderdale
-  if (city !== "FORT LAUDERDALE") {
-    return null;
-  }
+  if (city !== "FORT LAUDERDALE") return null;
+
+  const phoneNumber = getPhoneNumber(city);
+  const formattedPhoneNumber = phoneNumber.replace(/\D/g, "");
 
   return (
     <div className="paper-bg-16 bg-[#262424]">
@@ -35,19 +35,16 @@ const FortLauderdaleCta = () => {
             </Link>{" "}
             is your go-to team for cleaner windows and brighter exteriors.
           </p>
-          <p className="text-center font-['satoshi-regular'] text-base font-normal text-white/80 md:text-lg">
-            📞 Call now or book online for a free, no-pressure quote.
-          </p>
-        </div>
 
-        <div className="flex flex-col items-center justify-center gap-4">
-          <a
-            href="tel:(954) 852-5326"
-            className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
-          >
-            Call Now: (954) 852-5326
-          </a>
-          <SectionButton>Get a Free Estimate</SectionButton>
+          <p className="text-center font-['satoshi-regular'] text-base font-normal text-white/80 md:text-lg">
+            Book online for a free, no pressure quote.
+          </p>
+          <div className="flex flex-col items-center justify-center gap-2">
+            <a href={`tel:${formattedPhoneNumber}`} className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg">
+              {phoneNumber}
+            </a>
+            <SectionButton>Get a Free Estimate</SectionButton>
+          </div>
         </div>
       </div>
     </div>

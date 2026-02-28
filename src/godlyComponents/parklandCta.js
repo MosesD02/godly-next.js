@@ -2,15 +2,15 @@
 import React from "react";
 import { useGodlyContext } from "@/context/godlyContext";
 import SectionButton from "@/components/sectionButton";
-import { Button } from "@/components/ui/button";
+import { getPhoneNumber } from "./footer";
 
 const ParklandCta = () => {
   const { city } = useGodlyContext();
 
-  // Only show for Parkland
-  if (city !== "PARKLAND") {
-    return null;
-  }
+  if (city !== "PARKLAND") return null;
+
+  const phoneNumber = getPhoneNumber(city);
+  const formattedPhoneNumber = phoneNumber.replace(/\D/g, "");
 
   return (
     <div className="paper-bg-16 bg-[#262424]">
@@ -28,19 +28,16 @@ const ParklandCta = () => {
             , or a quiet cul-de-sac, our Parkland team is here to make your
             property shine.
           </p>
-          <p className="text-center font-['satoshi-regular'] text-base font-normal text-white/80 md:text-lg">
-            Call now or book online for a free, no-pressure quote.
-          </p>
-        </div>
 
-        <div className="flex flex-col items-center justify-center gap-4">
-          <a
-            href="tel:(561) 826-4461"
-            className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
-          >
-            Call Now: (561) 826-4461
-          </a>
-          <SectionButton>Get a Free Estimate</SectionButton>
+          <p className="text-center font-['satoshi-regular'] text-base font-normal text-white/80 md:text-lg">
+            Book online for a free, no pressure quote.
+          </p>
+          <div className="flex flex-col items-center justify-center gap-2">
+            <a href={`tel:${formattedPhoneNumber}`} className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg">
+              {phoneNumber}
+            </a>
+            <SectionButton>Get a Free Estimate</SectionButton>
+          </div>
         </div>
       </div>
     </div>

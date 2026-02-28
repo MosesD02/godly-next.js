@@ -16,7 +16,7 @@ export default function BlogPostPage({ post }) {
         <div className="mx-auto flex w-full max-w-[800px] flex-col">
           <nav className="mb-6">
             <Link
-              href={`/blog/${post.citySlug || "fort-lauderdale"}`}
+              href={`/blog`}
               className="font-['satoshi-light'] text-sm text-[#AF8F6E] underline"
             >
               ← Back to Blog
@@ -25,9 +25,10 @@ export default function BlogPostPage({ post }) {
 
           <header className="mb-8 border-b-4 border-double border-black pb-8">
             <p className="mb-2 font-['satoshi-light'] text-sm text-[#373A44]">
-              {format(new Date(post.publishedAt), "MMMM d, yyyy")} · {post.targetCity}
+              {format(new Date(post.publishedAt), "MMMM d, yyyy")} ·{" "}
+              {post.targetCity}
             </p>
-            <h1 className="trim text-[32px] font-bold leading-tight text-[#312E2C] md:text-5xl">
+            <h1 className="trim text-[32px] leading-tight font-bold text-[#312E2C] md:text-5xl">
               {post.title}
             </h1>
           </header>

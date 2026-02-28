@@ -1,12 +1,16 @@
 "use client";
 import React from "react";
 import { useGodlyContext } from "@/context/godlyContext";
+import { getPhoneNumber } from "./footer";
 import Link from "next/link";
 
 const CoralSpringsCta = () => {
   const { city } = useGodlyContext();
 
   if (city !== "CORAL SPRINGS") return null;
+
+  const phoneNumber = getPhoneNumber(city);
+  const formattedPhoneNumber = phoneNumber.replace(/\D/g, "");
 
   return (
     <div className="paper-bg-16 bg-[#262424] flex flex-col items-center justify-center gap-6 py-20 px-8">
@@ -21,16 +25,13 @@ const CoralSpringsCta = () => {
           </Link>{" "}
           for professional window cleaning and exterior services. Fast response, honest pricing, and guaranteed results.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a
-            href="tel:(954) 852-5326"
-            className="bg-[#FDE4C8] text-[#2D2B2B] px-8 py-3 rounded-md font-bold hover:bg-[#f1d4a6] transition-colors"
-          >
-            Call (954) 852-5326
-          </a>
+        <div className="flex flex-col items-center gap-2">
           <p className="text-[#FDE4C8] text-sm">
-            Or get your free estimate in under 30 minutes
+            Book online for a free, no pressure quote.
           </p>
+          <a href={`tel:${formattedPhoneNumber}`} className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg">
+            {phoneNumber}
+          </a>
         </div>
       </div>
     </div>

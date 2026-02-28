@@ -34,7 +34,6 @@ import PompanoBeachCta from "./pompanoBeachCta";
 import WestPalmBeachCta from "./westPalmBeachCta";
 import LauderdaleByTheSeaCta from "./lauderdaleByTheSeaCta";
 import OaklandParkCta from "./oaklandParkCta";
-import WestonCta from "./westonCta";
 import RoyalPalmBeachCta from "./royalPalmBeachCta";
 import { useGodlyContext } from "@/context/godlyContext";
 
@@ -96,7 +95,6 @@ export default function GodlyHome({ city }) {
       <WestPalmBeachCta />
       <LauderdaleByTheSeaCta />
       <OaklandParkCta />
-      <WestonCta />
       <RoyalPalmBeachCta />
       <PopupModal />
     </WebsiteLayout>

@@ -151,8 +151,8 @@ const Hero = () => {
     }
     if (city === "BOCA RATON") {
       return {
-        heading: "Professional Window Cleaning in Boca Raton, FL",
-        subheading: "Window Cleaning & Exterior Washing Services in Boca Raton, FL"
+        heading: "Expert Window Cleaning, House Washing & Roof Cleaning in Boca Raton, FL",
+        subheading: "Available 24 hours for you"
       };
     }
     if (city === "ROYAL PALM BEACH") {

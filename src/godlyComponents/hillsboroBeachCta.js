@@ -10,7 +10,7 @@ const HillsboroBeachCta = () => {
   if (city !== "HILLSBORO BEACH") return null;
 
   const phoneNumber = getPhoneNumber(city);
-  const formattedPhoneNumber = phoneNumber.replace(/-/g, "");
+  const formattedPhoneNumber = phoneNumber.replace(/\D/g, "");
 
   return (
     <div className="paper-bg-16 bg-[#262424] flex flex-col items-center justify-center gap-6 py-20 px-8">
@@ -25,16 +25,13 @@ const HillsboroBeachCta = () => {
           </Link>{" "}
           is your trusted local partner for professional window cleaning and exterior care in Hillsboro Beach.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a
-            href={`tel:${formattedPhoneNumber}`}
-            className="bg-[#FDE4C8] text-[#2D2B2B] px-8 py-3 rounded-md font-bold hover:bg-[#f1d4a6] transition-colors"
-          >
-            📞 Call {phoneNumber}
-          </a>
+        <div className="flex flex-col items-center gap-2">
           <p className="text-[#FDE4C8] text-sm">
-            Call now or book online for a free, no-pressure quote
+            Book online for a free, no pressure quote.
           </p>
+          <a href={`tel:${formattedPhoneNumber}`} className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg">
+            {phoneNumber}
+          </a>
         </div>
       </div>
     </div>

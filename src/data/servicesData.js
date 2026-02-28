@@ -119,7 +119,7 @@ const Services = {
       },
       {
         number: "04",
-        title: "RAINGUARD TECHNOLOGY",
+        title: "RAINSHIELD TECHNOLOGY",
         text: "Our unique solution repels water, keeping your windows cleaner for longer.",
       },
       {

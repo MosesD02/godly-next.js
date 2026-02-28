@@ -29,12 +29,12 @@ const RoyalPalmBeachCta = () => {
           is your trusted provider for clean windows and beautifully restored
           exteriors in Royal Palm Beach.
         </p>
-        <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-center">
-          <a
-            href={`tel:${phoneNumber}`}
-            className="rounded-md bg-[#FDE4C8] px-8 py-4 font-['satoshi-bold'] text-lg font-bold text-[#1F1D1D] transition-colors hover:bg-[#F3CA9E]"
-          >
-            Call {phoneNumber}
+        <p className="mx-auto mb-2 max-w-3xl font-['satoshi-regular'] text-base text-white/80 md:text-lg">
+          Book online for a free, no pressure quote.
+        </p>
+        <div className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:gap-6">
+          <a href={`tel:${phoneNumber.replace(/\D/g, "")}`} className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg">
+            {phoneNumber}
           </a>
           <Link
             href="/royal-palm-beach/quote"
