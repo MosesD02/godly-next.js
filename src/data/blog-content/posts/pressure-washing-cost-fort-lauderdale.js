@@ -9,25 +9,37 @@ export default {
   targetCity: "Fort Lauderdale",
   citySlug: "fort-lauderdale",
   businessName: "Godly Windows & Wash Co. Fort Lauderdale",
-  publishedAt: "2025-02-01",
-  title: "How Much Does Pressure Washing Cost in Fort Lauderdale? What to Know Before You Hire",
+  publishedAt: "2026-03-02",
+  title:
+    "How Much Does Pressure Washing Cost in Fort Lauderdale? What to Know Before You Hire",
   excerpt:
     "Pressure washing costs in Fort Lauderdale depend on your property's size, what's being cleaned, and how much buildup your home's exterior has accumulated. In a coastal city, salt air changes the equation.",
+  image: "/blogs/3.jpg",
   sections: [
     {
       type: "p",
       content:
         "Pressure washing costs in Fort Lauderdale depend on your property's size, what's being cleaned, and how much buildup your home's exterior has accumulated. But in a coastal city like Fort Lauderdale, there's an added factor that most pricing guides don't mention: salt air. The combination of ocean salt, constant humidity, and South Florida heat creates some of the most aggressive conditions for exterior surfaces anywhere in the state — and how a company handles that determines whether you get lasting results or a wasted investment.",
       links: [
-        { phrase: "pressure washing", url: "https://godlywindows.com/fort-lauderdale/pressure-washing" },
-        { phrase: "Fort Lauderdale", url: "https://godlywindows.com/fort-lauderdale" },
+        {
+          phrase: "pressure washing",
+          url: "https://godlywindows.com/fort-lauderdale/pressure-washing",
+        },
+        {
+          phrase: "Fort Lauderdale",
+          url: "https://godlywindows.com/fort-lauderdale",
+        },
       ],
     },
     {
       type: "p",
-      content: "Here's what Fort Lauderdale homeowners should actually consider when getting pressure washing quotes.",
+      content:
+        "Here's what Fort Lauderdale homeowners should actually consider when getting pressure washing quotes.",
     },
-    { type: "h2", text: "Fort Lauderdale's Coastal Climate Changes the Equation" },
+    {
+      type: "h2",
+      text: "Fort Lauderdale's Coastal Climate Changes the Equation",
+    },
     {
       type: "p",
       content:
@@ -43,7 +55,10 @@ export default {
       content:
         "High pressure belongs on your concrete driveway, sidewalks, pool deck, and pavers — surfaces that can handle the force and need it to remove embedded stains. Your stucco walls, painted surfaces, roofing, and screened areas need the gentle approach of soft washing. Any company that doesn't make this distinction isn't one you want working on your home.",
     },
-    { type: "h2", text: "What Affects Pressure Washing Pricing in Fort Lauderdale" },
+    {
+      type: "h2",
+      text: "What Affects Pressure Washing Pricing in Fort Lauderdale",
+    },
     {
       type: "p",
       content:
@@ -64,7 +79,10 @@ export default {
       content:
         "The only way to get a real number is a property-specific assessment. Cookie-cutter pricing doesn't account for the variables that make every Fort Lauderdale home unique.",
     },
-    { type: "h2", text: "Don't Choose Your Pressure Washing Company on Price Alone" },
+    {
+      type: "h2",
+      text: "Don't Choose Your Pressure Washing Company on Price Alone",
+    },
     {
       type: "p",
       content:
@@ -80,7 +98,10 @@ export default {
       content:
         "When you get estimates, ask specifically what methods they'll use on your stucco versus your concrete. Ask about their cleaning products. And look at their reviews — not just the star rating, but what people say about the thoroughness and lasting quality of the work.",
     },
-    { type: "h2", text: "How Often Should You Pressure Wash in Fort Lauderdale?" },
+    {
+      type: "h2",
+      text: "How Often Should You Pressure Wash in Fort Lauderdale?",
+    },
     {
       type: "p",
       content:
@@ -96,7 +117,10 @@ export default {
       content:
         "Staying on a regular schedule is the most cost-effective approach. Every time you let buildup accumulate beyond the normal range, the next cleaning takes longer and requires more work. Maintenance cleaning is always more affordable than restoration cleaning.",
     },
-    { type: "h2", text: "Get a Free Quote From Godly Windows & Wash Co. Fort Lauderdale" },
+    {
+      type: "h2",
+      text: "Get a Free Quote From Godly Windows & Wash Co. Fort Lauderdale",
+    },
     {
       type: "p",
       content:
@@ -110,7 +134,8 @@ export default {
         "It depends on your property's size, surfaces, and condition. Coastal homes with heavy salt and mold buildup may require more extensive work. Request a free quote for an accurate assessment of your specific property.",
     },
     {
-      question: "Why does mold come back so fast after pressure washing in Fort Lauderdale?",
+      question:
+        "Why does mold come back so fast after pressure washing in Fort Lauderdale?",
       answer:
         "If mold returns within weeks, it was likely blasted off the surface with pressure rather than treated with soft wash solutions that kill the root system. Proper soft washing delivers results that last significantly longer.",
     },
