@@ -15,7 +15,10 @@ export async function generateMetadata({ params }) {
   const title = generateCityTitle(cityName);
   const description = generateCityDescription(cityName);
 
+  const isNoIndex = city === "south-florida";
+
   return {
+    robots: isNoIndex ? "noindex, nofollow" : "index, follow",
     title,
     description,
     keywords: [

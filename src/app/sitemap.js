@@ -6,7 +6,9 @@ import { getAllBlogPosts, getBlogPostsByCity } from "@/data/blog-content";
 export default function sitemap() {
   const now = new Date().toISOString();
 
-  const cities = Object.keys(citiesMap);
+  const cities = Object.keys(citiesMap).filter(
+    (city) => city !== "south-florida",
+  );
   const services = Object.keys(serviceMetaTitles);
   const blogPosts = getAllBlogPosts();
 
