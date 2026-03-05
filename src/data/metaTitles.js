@@ -43,6 +43,13 @@ export function getPhoneForCity(citySlug) {
   return "(954) 852-5326"; // default
 }
 
+// Google Business Profile URLs by region (matches phone number groups)
+const phoneToGoogleUrl = {
+  "(954) 852-5326": "https://g.co/kgs/uCqteyx", // Fort Lauderdale
+  "(561) 826-4461": "https://maps.app.goo.gl/WpnaZdfDi6Pp3rs69?g_st=ic", // Boca Raton
+  "(954) 738-3421": "https://maps.app.goo.gl/3AHJVTMEPf8SWVrS7?g_st=ic", // Weston
+};
+
 // JSON-LD schema for city pages — HomeAndConstructionBusiness with aggregateRating
 // Injected via Script component (type="application/ld+json") in [city]/page.js
 export function generateCitySchema(citySlug) {
@@ -50,12 +57,20 @@ export function generateCitySchema(citySlug) {
 
   const cityName = capitalizeString(citiesMap[citySlug]);
   const phone = getPhoneForCity(citySlug);
+  const googleUrl = phoneToGoogleUrl[phone];
+
+  const sameAs = [
+    ...(googleUrl ? [googleUrl] : []),
+    "https://facebook.com/godlywindows",
+    "https://instagram.com/godlywindows",
+  ];
 
   return {
     "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     name: "Godly Windows & Wash Co.",
     url: `https://godlywindows.com/${citySlug}`,
+    description: `Top-rated window cleaning & exterior services in ${cityName}. Family-owned, fully insured, 5-star rated. Free estimate in 24 hours. Call ${phone}.`,
     telephone: phone,
     address: {
       "@type": "PostalAddress",
@@ -63,6 +78,9 @@ export function generateCitySchema(citySlug) {
       addressRegion: "FL",
       addressCountry: "US",
     },
+    openingHours: "Mo-Su 00:00-23:59",
+    priceRange: "$$",
+    sameAs,
     areaServed: `${cityName}, FL`,
     aggregateRating: {
       "@type": "AggregateRating",
