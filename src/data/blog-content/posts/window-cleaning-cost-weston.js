@@ -10,6 +10,7 @@ export default {
   citySlug: "weston",
   businessName: "Godly Windows & Wash Co. Weston",
   publishedAt: "2026-03-05",
+  image: "/blogs/4.jpg",
   title:
     "Professional Window Cleaning in Weston: What Homeowners Should Know Before Hiring",
   excerpt:
