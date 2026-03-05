@@ -71,26 +71,12 @@ export default function sitemap() {
       priority: 0.9,
     });
 
-    urls.push({
-      url: `${BASE_URL}/landing/window-cleaning/${city}`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    });
-
     services.forEach((service) => {
       urls.push({
         url: `${BASE_URL}/${city}/${service}`,
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.8,
-      });
-
-      urls.push({
-        url: `${BASE_URL}/landing/${service}/${city}`,
-        lastModified: now,
-        changeFrequency: "monthly",
-        priority: 0.7,
       });
     });
   });

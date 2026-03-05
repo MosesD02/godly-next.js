@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
-    robots: "noindex, follow",
+    robots: "noindex, nofollow",
     keywords: [
       `${serviceMetaTitles[service] || service} ${location}`,
       `${service} services ${location}`,
