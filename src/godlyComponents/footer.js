@@ -110,7 +110,13 @@ export const getPhoneNumber = (city) => {
   ) {
     return "(561) 826-4461";
   } else if (
-    ["WESTON", "MIRAMAR", "SOUTHWEST RANCHES", "HALLANDALE BEACH", "MIAMI"].includes(cityToCheck)
+    [
+      "WESTON",
+      "MIRAMAR",
+      "SOUTHWEST RANCHES",
+      "HALLANDALE BEACH",
+      "MIAMI",
+    ].includes(cityToCheck)
   ) {
     return "(954) 738-3421";
   } else {
@@ -195,76 +201,80 @@ const Footer = () => {
               Lauderdale, FL
             </p>
           )}
-          {city === "BOCA RATON" && (() => {
-            const phone = getPhoneNumber("BOCA RATON");
-            return (
-              <div className="flex flex-col items-center gap-4 text-center">
-                <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
-                  Whether you're in{" "}
-                  <span className="font-['satoshi-bold'] text-[#FDE4C8]">
-                    Royal Palm Yacht & Country Club
-                  </span>
-                  ,{" "}
-                  <span className="font-['satoshi-bold'] text-[#FDE4C8]">
-                    Mizner Park
-                  </span>
-                  , or a waterfront estate along the Intracoastal—
-                  <Link
-                    href="https://godlywindows.com/"
-                    className="font-['satoshi-bold'] text-[#FDE4C8] underline decoration-current decoration-solid transition-colors hover:text-white"
+          {city === "BOCA RATON" &&
+            (() => {
+              const phone = getPhoneNumber("BOCA RATON");
+              return (
+                <div className="flex flex-col items-center gap-4 text-center">
+                  <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
+                    Whether you're in{" "}
+                    <span className="font-['satoshi-bold'] text-[#FDE4C8]">
+                      Royal Palm Yacht & Country Club
+                    </span>
+                    ,{" "}
+                    <span className="font-['satoshi-bold'] text-[#FDE4C8]">
+                      Mizner Park
+                    </span>
+                    , or a waterfront estate along the Intracoastal—
+                    <Link
+                      href="https://godlywindows.com/"
+                      className="font-['satoshi-bold'] text-[#FDE4C8] underline decoration-current decoration-solid transition-colors hover:text-white"
+                    >
+                      Godly Windows
+                    </Link>{" "}
+                    is your go-to team for cleaner windows and brighter
+                    exteriors.
+                  </p>
+                  <p className="font-['satoshi-regular'] text-base text-white/80 md:text-lg">
+                    Book online for a free, no pressure quote.
+                  </p>
+                  <a
+                    href={`tel:${phone.replace(/\D/g, "")}`}
+                    className="font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
                   >
-                    Godly Windows
-                  </Link>{" "}
-                  is your go-to team for cleaner windows and brighter exteriors.
-                </p>
-                <p className="font-['satoshi-regular'] text-base text-white/80 md:text-lg">
-                  Book online for a free, no pressure quote.
-                </p>
-                <a
-                  href={`tel:${phone.replace(/\D/g, "")}`}
-                  className="font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
-                >
-                  {phone}
-                </a>
-                <SectionButton>Get a Free Estimate</SectionButton>
-              </div>
-            );
-          })()}
-          {city === "WESTON" && (() => {
-            const phone = getPhoneNumber("WESTON");
-            return (
-              <div className="flex flex-col items-center gap-4 text-center">
-                <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
-                  Whether you're in{" "}
-                  <span className="font-['satoshi-bold'] text-[#FDE4C8]">
-                    Weston Hills
-                  </span>
-                  ,{" "}
-                  <span className="font-['satoshi-bold'] text-[#FDE4C8]">
-                    Savanna
-                  </span>
-                  , or a lakefront home along Bonaventure Boulevard—
-                  <Link
-                    href="https://godlywindows.com/"
-                    className="font-['satoshi-bold'] text-[#FDE4C8] underline decoration-current decoration-solid transition-colors hover:text-white"
+                    {phone}
+                  </a>
+                  <SectionButton>Get a Free Estimate</SectionButton>
+                </div>
+              );
+            })()}
+          {city === "WESTON" &&
+            (() => {
+              const phone = getPhoneNumber("WESTON");
+              return (
+                <div className="flex flex-col items-center gap-4 text-center">
+                  <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
+                    Whether you're in{" "}
+                    <span className="font-['satoshi-bold'] text-[#FDE4C8]">
+                      Weston Hills
+                    </span>
+                    ,{" "}
+                    <span className="font-['satoshi-bold'] text-[#FDE4C8]">
+                      Savanna
+                    </span>
+                    , or a lakefront home along Bonaventure Boulevard—
+                    <Link
+                      href="https://godlywindows.com/"
+                      className="font-['satoshi-bold'] text-[#FDE4C8] underline decoration-current decoration-solid transition-colors hover:text-white"
+                    >
+                      Godly Windows
+                    </Link>{" "}
+                    is your go-to team for cleaner windows and brighter
+                    exteriors.
+                  </p>
+                  <p className="font-['satoshi-regular'] text-base text-white/80 md:text-lg">
+                    Book online for a free, no pressure quote.
+                  </p>
+                  <a
+                    href={`tel:${phone.replace(/\D/g, "")}`}
+                    className="font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
                   >
-                    Godly Windows
-                  </Link>{" "}
-                  is your go-to team for cleaner windows and brighter exteriors.
-                </p>
-                <p className="font-['satoshi-regular'] text-base text-white/80 md:text-lg">
-                  Book online for a free, no pressure quote.
-                </p>
-                <a
-                  href={`tel:${phone.replace(/\D/g, "")}`}
-                  className="font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
-                >
-                  {phone}
-                </a>
-                <SectionButton>Get a Free Estimate</SectionButton>
-              </div>
-            );
-          })()}
+                    {phone}
+                  </a>
+                  <SectionButton>Get a Free Estimate</SectionButton>
+                </div>
+              );
+            })()}
           {city === "POMPANO BEACH" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
               Expert Window Cleaning, House Washing & Roof Cleaning in Pompano

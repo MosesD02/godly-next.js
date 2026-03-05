@@ -1,11 +1,13 @@
 # Godly Windows Landing Pages
 
 ## URL Pattern
+
 `https://godlywindows.com/landing/[service]/[city]`
 
 ---
 
 ## Fort Lauderdale
+
 - https://godlywindows.com/landing/exterior-window-cleaning/fort-lauderdale
 - https://godlywindows.com/landing/interior-window-cleaning/fort-lauderdale
 - https://godlywindows.com/landing/gutter-cleaning/fort-lauderdale
@@ -20,6 +22,7 @@
 - https://godlywindows.com/landing/paver-sealing/fort-lauderdale
 
 ## Boca Raton
+
 - https://godlywindows.com/landing/exterior-window-cleaning/boca-raton
 - https://godlywindows.com/landing/interior-window-cleaning/boca-raton
 - https://godlywindows.com/landing/gutter-cleaning/boca-raton
@@ -34,6 +37,7 @@
 - https://godlywindows.com/landing/paver-sealing/boca-raton
 
 ## Weston
+
 - https://godlywindows.com/landing/exterior-window-cleaning/weston
 - https://godlywindows.com/landing/interior-window-cleaning/weston
 - https://godlywindows.com/landing/gutter-cleaning/weston
@@ -48,6 +52,7 @@
 - https://godlywindows.com/landing/paver-sealing/weston
 
 ## Coral Springs
+
 - https://godlywindows.com/landing/exterior-window-cleaning/coral-springs
 - https://godlywindows.com/landing/interior-window-cleaning/coral-springs
 - https://godlywindows.com/landing/gutter-cleaning/coral-springs
@@ -62,6 +67,7 @@
 - https://godlywindows.com/landing/paver-sealing/coral-springs
 
 ## Davie
+
 - https://godlywindows.com/landing/exterior-window-cleaning/davie
 - https://godlywindows.com/landing/interior-window-cleaning/davie
 - https://godlywindows.com/landing/gutter-cleaning/davie
@@ -76,6 +82,7 @@
 - https://godlywindows.com/landing/paver-sealing/davie
 
 ## Deerfield Beach
+
 - https://godlywindows.com/landing/exterior-window-cleaning/deerfield-beach
 - https://godlywindows.com/landing/interior-window-cleaning/deerfield-beach
 - https://godlywindows.com/landing/gutter-cleaning/deerfield-beach
@@ -90,6 +97,7 @@
 - https://godlywindows.com/landing/paver-sealing/deerfield-beach
 
 ## Delray Beach
+
 - https://godlywindows.com/landing/exterior-window-cleaning/delray-beach
 - https://godlywindows.com/landing/interior-window-cleaning/delray-beach
 - https://godlywindows.com/landing/gutter-cleaning/delray-beach
@@ -104,6 +112,7 @@
 - https://godlywindows.com/landing/paver-sealing/delray-beach
 
 ## Hallandale Beach
+
 - https://godlywindows.com/landing/exterior-window-cleaning/hallandale-beach
 - https://godlywindows.com/landing/interior-window-cleaning/hallandale-beach
 - https://godlywindows.com/landing/gutter-cleaning/hallandale-beach
@@ -118,6 +127,7 @@
 - https://godlywindows.com/landing/paver-sealing/hallandale-beach
 
 ## Hillsboro Beach
+
 - https://godlywindows.com/landing/exterior-window-cleaning/hillsboro-beach
 - https://godlywindows.com/landing/interior-window-cleaning/hillsboro-beach
 - https://godlywindows.com/landing/gutter-cleaning/hillsboro-beach
@@ -132,6 +142,7 @@
 - https://godlywindows.com/landing/paver-sealing/hillsboro-beach
 
 ## Hollywood
+
 - https://godlywindows.com/landing/exterior-window-cleaning/hollywood
 - https://godlywindows.com/landing/interior-window-cleaning/hollywood
 - https://godlywindows.com/landing/gutter-cleaning/hollywood
@@ -146,6 +157,7 @@
 - https://godlywindows.com/landing/paver-sealing/hollywood
 
 ## Lauderdale-by-the-Sea
+
 - https://godlywindows.com/landing/exterior-window-cleaning/lauderdale-by-the-sea
 - https://godlywindows.com/landing/interior-window-cleaning/lauderdale-by-the-sea
 - https://godlywindows.com/landing/gutter-cleaning/lauderdale-by-the-sea
@@ -160,6 +172,7 @@
 - https://godlywindows.com/landing/paver-sealing/lauderdale-by-the-sea
 
 ## Lighthouse Point
+
 - https://godlywindows.com/landing/exterior-window-cleaning/lighthouse-point
 - https://godlywindows.com/landing/interior-window-cleaning/lighthouse-point
 - https://godlywindows.com/landing/gutter-cleaning/lighthouse-point
@@ -174,6 +187,7 @@
 - https://godlywindows.com/landing/paver-sealing/lighthouse-point
 
 ## Margate
+
 - https://godlywindows.com/landing/exterior-window-cleaning/margate
 - https://godlywindows.com/landing/interior-window-cleaning/margate
 - https://godlywindows.com/landing/gutter-cleaning/margate
@@ -188,6 +202,7 @@
 - https://godlywindows.com/landing/paver-sealing/margate
 
 ## Miami
+
 - https://godlywindows.com/landing/exterior-window-cleaning/miami
 - https://godlywindows.com/landing/interior-window-cleaning/miami
 - https://godlywindows.com/landing/gutter-cleaning/miami
@@ -202,6 +217,7 @@
 - https://godlywindows.com/landing/paver-sealing/miami
 
 ## Miramar
+
 - https://godlywindows.com/landing/exterior-window-cleaning/miramar
 - https://godlywindows.com/landing/interior-window-cleaning/miramar
 - https://godlywindows.com/landing/gutter-cleaning/miramar
@@ -216,6 +232,7 @@
 - https://godlywindows.com/landing/paver-sealing/miramar
 
 ## Oakland Park
+
 - https://godlywindows.com/landing/exterior-window-cleaning/oakland-park
 - https://godlywindows.com/landing/interior-window-cleaning/oakland-park
 - https://godlywindows.com/landing/gutter-cleaning/oakland-park
@@ -230,6 +247,7 @@
 - https://godlywindows.com/landing/paver-sealing/oakland-park
 
 ## Parkland
+
 - https://godlywindows.com/landing/exterior-window-cleaning/parkland
 - https://godlywindows.com/landing/interior-window-cleaning/parkland
 - https://godlywindows.com/landing/gutter-cleaning/parkland
@@ -244,6 +262,7 @@
 - https://godlywindows.com/landing/paver-sealing/parkland
 
 ## Pembroke Pines
+
 - https://godlywindows.com/landing/exterior-window-cleaning/pembroke-pines
 - https://godlywindows.com/landing/interior-window-cleaning/pembroke-pines
 - https://godlywindows.com/landing/gutter-cleaning/pembroke-pines
@@ -258,6 +277,7 @@
 - https://godlywindows.com/landing/paver-sealing/pembroke-pines
 
 ## Plantation
+
 - https://godlywindows.com/landing/exterior-window-cleaning/plantation
 - https://godlywindows.com/landing/interior-window-cleaning/plantation
 - https://godlywindows.com/landing/gutter-cleaning/plantation
@@ -272,6 +292,7 @@
 - https://godlywindows.com/landing/paver-sealing/plantation
 
 ## Pompano Beach
+
 - https://godlywindows.com/landing/exterior-window-cleaning/pompano-beach
 - https://godlywindows.com/landing/interior-window-cleaning/pompano-beach
 - https://godlywindows.com/landing/gutter-cleaning/pompano-beach
@@ -286,6 +307,7 @@
 - https://godlywindows.com/landing/paver-sealing/pompano-beach
 
 ## Royal Palm Beach
+
 - https://godlywindows.com/landing/exterior-window-cleaning/royal-palm-beach
 - https://godlywindows.com/landing/interior-window-cleaning/royal-palm-beach
 - https://godlywindows.com/landing/gutter-cleaning/royal-palm-beach
@@ -300,6 +322,7 @@
 - https://godlywindows.com/landing/paver-sealing/royal-palm-beach
 
 ## Southwest Ranches
+
 - https://godlywindows.com/landing/exterior-window-cleaning/southwest-ranches
 - https://godlywindows.com/landing/interior-window-cleaning/southwest-ranches
 - https://godlywindows.com/landing/gutter-cleaning/southwest-ranches
@@ -314,6 +337,7 @@
 - https://godlywindows.com/landing/paver-sealing/southwest-ranches
 
 ## Sunrise
+
 - https://godlywindows.com/landing/exterior-window-cleaning/sunrise
 - https://godlywindows.com/landing/interior-window-cleaning/sunrise
 - https://godlywindows.com/landing/gutter-cleaning/sunrise
@@ -328,6 +352,7 @@
 - https://godlywindows.com/landing/paver-sealing/sunrise
 
 ## Tamarac
+
 - https://godlywindows.com/landing/exterior-window-cleaning/tamarac
 - https://godlywindows.com/landing/interior-window-cleaning/tamarac
 - https://godlywindows.com/landing/gutter-cleaning/tamarac
@@ -342,6 +367,7 @@
 - https://godlywindows.com/landing/paver-sealing/tamarac
 
 ## West Palm Beach
+
 - https://godlywindows.com/landing/exterior-window-cleaning/west-palm-beach
 - https://godlywindows.com/landing/interior-window-cleaning/west-palm-beach
 - https://godlywindows.com/landing/gutter-cleaning/west-palm-beach
@@ -358,6 +384,7 @@
 ---
 
 ## Summary
+
 - **Total Services:** 12
 - **Total Cities:** 25
 - **Total Landing Pages:** 300

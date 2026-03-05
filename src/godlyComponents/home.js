@@ -15,6 +15,7 @@ import TeamGallery from "./teamGallery";
 import ParklandCta from "./parklandCta";
 import MiamiCta from "./miamiCta";
 import FortLauderdaleCta from "./fortLauderdaleCta";
+import WestonCta from "./westonCta";
 import LighthousePointCta from "./lighthousePointCta";
 import SouthwestRanchesCta from "./southwestRanchesCta";
 import CoralSpringsCta from "./coralSpringsCta";
@@ -35,7 +36,7 @@ import WestPalmBeachCta from "./westPalmBeachCta";
 import LauderdaleByTheSeaCta from "./lauderdaleByTheSeaCta";
 import OaklandParkCta from "./oaklandParkCta";
 import RoyalPalmBeachCta from "./royalPalmBeachCta";
-import { useGodlyContext } from "@/context/godlyContext";
+import { useGodlyContext, getCityFromCookie } from "@/context/godlyContext";
 
 import { citiesMap } from "./header/CitiesPopup";
 import { PopupModal } from "@/components/popup-modal";
@@ -44,9 +45,13 @@ export default function GodlyHome({ city }) {
   const { setCity } = useGodlyContext();
 
   useEffect(() => {
-    if (Object.keys(citiesMap).includes(city)) {
+    if (city && Object.keys(citiesMap).includes(city)) {
       const formattedCity = citiesMap[city];
       setCity(formattedCity);
+      document.cookie = `selectedCity=${city};path=/;max-age=31536000`;
+    } else if (!city) {
+      // Home page (/): no city in URL – sync context from cookie
+      setCity(getCityFromCookie());
     }
 
     // Track main page view
@@ -72,10 +77,11 @@ export default function GodlyHome({ city }) {
       <Testimonials />
       <HowItWorks />
       <Savings />
-      <Location />
+      <Location city={city} />
       <ParklandCta />
       <MiamiCta />
       <FortLauderdaleCta />
+      <WestonCta />
       <LighthousePointCta />
       <SouthwestRanchesCta />
       <CoralSpringsCta />

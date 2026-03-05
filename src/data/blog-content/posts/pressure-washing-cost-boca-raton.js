@@ -11,7 +11,8 @@ export default {
   serviceCategory: "pressure-washing",
   businessName: "Godly Windows & Wash Co. Boca Raton",
   publishedAt: "2026-02-23",
-  title: "How Much Does Pressure Washing Cost in Boca Raton? What to Know Before You Hire",
+  title:
+    "How Much Does Pressure Washing Cost in Boca Raton? What to Know Before You Hire",
   excerpt:
     "Pressure washing costs in Boca Raton depend on the size of your property, the surfaces being cleaned, and how much buildup has accumulated. Here's what drives the real cost and what to look for before you hire.",
   image: "/blogs/1.jpg",
@@ -20,7 +21,12 @@ export default {
       type: "p",
       content:
         "Pressure washing costs in Boca Raton depend on the size of your property, the surfaces being cleaned, and how much buildup has accumulated on your home's exterior. But the price on the invoice is only part of the equation. The more important question is whether the company you hire actually knows the difference between the surfaces on your home — because in Boca Raton, the wrong cleaning method can cause thousands of dollars in damage.",
-      links: [{ phrase: "pressure washing", url: "https://godlywindows.com/boca-raton/pressure-washing" }],
+      links: [
+        {
+          phrase: "pressure washing",
+          url: "https://godlywindows.com/boca-raton/pressure-washing",
+        },
+      ],
     },
     {
       type: "p",
@@ -32,7 +38,9 @@ export default {
       type: "p",
       content:
         "The majority of homes in Boca Raton — from the estates in Royal Palm Yacht & Country Club to the family homes in Boca Falls, Boca Isles, and Mizner's Preserve — are built with stucco exteriors. Stucco should never be cleaned with high-pressure water. It requires soft washing, which uses low pressure combined with professional cleaning solutions that kill mold, mildew, and algae at the root without cracking, chipping, or forcing water behind the finish.",
-      links: [{ phrase: "Boca Raton", url: "https://godlywindows.com/boca-raton" }],
+      links: [
+        { phrase: "Boca Raton", url: "https://godlywindows.com/boca-raton" },
+      ],
     },
     {
       type: "p",
@@ -44,7 +52,10 @@ export default {
       content:
         "A company that shows up and hits everything with the same high-pressure setting is a company that doesn't understand what they're doing. And your stucco, paint, and roofing will pay the price.",
     },
-    { type: "h2", text: "What Drives the Price of Pressure Washing in Boca Raton" },
+    {
+      type: "h2",
+      text: "What Drives the Price of Pressure Washing in Boca Raton",
+    },
     {
       type: "p",
       content:
@@ -65,7 +76,10 @@ export default {
       content:
         "The best way to get an accurate price is to have a company come assess your specific property. Generic per-square-foot estimates don't account for the real-world variables that make every Boca Raton home different.",
     },
-    { type: "h2", text: "Why the Cheapest Quote Is Usually the Most Expensive Mistake" },
+    {
+      type: "h2",
+      text: "Why the Cheapest Quote Is Usually the Most Expensive Mistake",
+    },
     {
       type: "p",
       content:
@@ -78,7 +92,8 @@ export default {
     },
     {
       type: "p",
-      content: "Quality work takes time. If someone promises to wash your entire home in under an hour, ask yourself what they're skipping.",
+      content:
+        "Quality work takes time. If someone promises to wash your entire home in under an hour, ask yourself what they're skipping.",
     },
     { type: "h2", text: "How Often Should You Pressure Wash in Boca Raton?" },
     {
@@ -96,7 +111,10 @@ export default {
       content:
         "Consistent maintenance also protects your home's value. Mold and algae degrade paint, deteriorate concrete, and shorten the lifespan of exterior surfaces. A yearly cleaning is one of the most practical investments you can make in your property.",
     },
-    { type: "h2", text: "Get a Free Quote From Godly Windows & Wash Co. Boca Raton" },
+    {
+      type: "h2",
+      text: "Get a Free Quote From Godly Windows & Wash Co. Boca Raton",
+    },
     {
       type: "p",
       content:
@@ -110,7 +128,8 @@ export default {
         "Pricing varies based on your property's size, surface types, and condition. Every home is different, so the most accurate way to get a number is to request a free quote from a company that will assess your specific property.",
     },
     {
-      question: "Should my Boca Raton stucco home be pressure washed or soft washed?",
+      question:
+        "Should my Boca Raton stucco home be pressure washed or soft washed?",
       answer:
         "Always soft washed. High-pressure water can crack stucco, strip paint, and force moisture behind the surface. Soft washing uses low pressure with professional solutions that safely eliminate mold and algae without damage.",
     },

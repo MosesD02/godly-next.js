@@ -4,11 +4,11 @@ import { citiesMap } from "@/data/cities";
 
 const GodlyContext = createContext();
 
-function getCityFromCookie() {
+export function getCityFromCookie() {
   if (typeof document === "undefined") return "SOUTH FLORIDA";
   const match = document.cookie.match(/selectedCity=([^;]+)/);
   const slug = match?.[1]?.trim();
-  return (slug && citiesMap[slug]) ? citiesMap[slug] : "SOUTH FLORIDA";
+  return slug && citiesMap[slug] ? citiesMap[slug] : "SOUTH FLORIDA";
 }
 
 export function AppWrapper({ children }) {
@@ -23,7 +23,14 @@ export function AppWrapper({ children }) {
 
   return (
     <GodlyContext.Provider
-      value={{ city, setCity, service, setService, formPopupOpen, setFormPopupOpen }}
+      value={{
+        city,
+        setCity,
+        service,
+        setService,
+        formPopupOpen,
+        setFormPopupOpen,
+      }}
     >
       {children}
     </GodlyContext.Provider>

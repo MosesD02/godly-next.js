@@ -10,7 +10,8 @@ export default {
   citySlug: "weston",
   businessName: "Godly Windows & Wash Co. Weston",
   publishedAt: "2025-02-01",
-  title: "How Much Does Pressure Washing Cost in Weston, FL? What to Know Before You Hire",
+  title:
+    "How Much Does Pressure Washing Cost in Weston, FL? What to Know Before You Hire",
   excerpt:
     "Pressure washing costs in Weston depend on the size of your property, which surfaces need cleaning, and how long it's been since your last service. For Weston homeowners, HOA requirements also drive the conversation.",
   sections: [
@@ -19,7 +20,10 @@ export default {
       content:
         "Pressure washing costs in Weston depend on the size of your property, which surfaces need cleaning, and how long it's been since your last service. But for Weston homeowners specifically, there's another factor that drives the conversation: your HOA. Many Weston communities have strict exterior maintenance requirements, and staying ahead of your cleaning schedule isn't just about curb appeal — it's about avoiding violations and fines.",
       links: [
-        { phrase: "pressure washing", url: "https://godlywindows.com/weston/pressure-washing" },
+        {
+          phrase: "pressure washing",
+          url: "https://godlywindows.com/weston/pressure-washing",
+        },
         { phrase: "Weston", url: "https://godlywindows.com/weston" },
       ],
     },
@@ -44,7 +48,10 @@ export default {
       content:
         "If you've received a notice or if you know an inspection cycle is coming, getting your home professionally cleaned before the deadline saves you the stress and potential fines. But more importantly, staying on a proactive cleaning schedule means you never have to scramble. One thorough cleaning per year keeps most Weston homes well within compliance.",
     },
-    { type: "h2", text: "Soft Washing vs. Pressure Washing: What Your Weston Home Actually Needs" },
+    {
+      type: "h2",
+      text: "Soft Washing vs. Pressure Washing: What Your Weston Home Actually Needs",
+    },
     {
       type: "p",
       content:
@@ -97,7 +104,10 @@ export default {
       content:
         "Make sure they're licensed and insured. And be cautious of quotes that seem dramatically lower than everyone else's. In pressure washing, a low price usually means a fast job, and a fast job usually means corners cut. That's not a trade-off worth making when your home's exterior and your HOA compliance are on the line.",
     },
-    { type: "h2", text: "Get a Free Quote From Godly Windows & Wash Co. Weston" },
+    {
+      type: "h2",
+      text: "Get a Free Quote From Godly Windows & Wash Co. Weston",
+    },
     {
       type: "p",
       content:

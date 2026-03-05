@@ -2,10 +2,7 @@ import { ImageResponse } from "next/og";
 import { OgLayout, OG_SIZE } from "@/app/lib/og-image";
 import { loadOgFonts, loadOgLogo, loadOgPaperBg } from "@/app/lib/og-fonts";
 import { citiesMap } from "@/data/cities";
-import {
-  generateServiceTitle,
-  serviceMetaTitles,
-} from "@/data/metaTitles";
+import { generateServiceTitle, serviceMetaTitles } from "@/data/metaTitles";
 import { getBlogPostBySlug } from "@/data/blog-content";
 import { format } from "date-fns";
 
@@ -37,19 +34,21 @@ export default async function Image({ params }) {
   if (BLOG_LIKE_SEGMENTS.has(city)) {
     const post = getBlogPostBySlug(slug);
     const title = post?.metaTitle || post?.title || "Blog | Godly Windows";
-    const subtitle = post?.targetCity ? `${post.targetCity} | Godly Windows` : "Godly Windows";
-    const date = post?.publishedAt ? format(new Date(post.publishedAt), "MMMM d, yyyy") : null;
+    const subtitle = post?.targetCity
+      ? `${post.targetCity} | Godly Windows`
+      : "Godly Windows";
+    const date = post?.publishedAt
+      ? format(new Date(post.publishedAt), "MMMM d, yyyy")
+      : null;
     return new ImageResponse(
-      (
-        <OgLayout
-          title={title}
-          subtitle={subtitle}
-          logoSrc={logoSrc}
-          paperBgSrc={paperBgSrc}
-          date={date}
-        />
-      ),
-      { ...OG_SIZE, fonts }
+      <OgLayout
+        title={title}
+        subtitle={subtitle}
+        logoSrc={logoSrc}
+        paperBgSrc={paperBgSrc}
+        date={date}
+      />,
+      { ...OG_SIZE, fonts },
     );
   }
 
@@ -61,15 +60,13 @@ export default async function Image({ params }) {
   const location = cityName ? capitalize(cityName) : "South Florida";
 
   return new ImageResponse(
-    (
-      <OgLayout
-        title={title}
-        subtitle={`${serviceName} in ${location}`}
-        logoSrc={logoSrc}
-        paperBgSrc={paperBgSrc}
-        locationBadge={location}
-      />
-    ),
-    { ...OG_SIZE, fonts }
+    <OgLayout
+      title={title}
+      subtitle={`${serviceName} in ${location}`}
+      logoSrc={logoSrc}
+      paperBgSrc={paperBgSrc}
+      locationBadge={location}
+    />,
+    { ...OG_SIZE, fonts },
   );
 }

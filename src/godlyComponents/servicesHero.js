@@ -16,9 +16,10 @@ const ServicesHero = ({ slug }) => {
   const displayCity = cityName
     ? cityName.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase())
     : "South Florida";
-  const heroDescription = typeof Services[slug]["hero"][3] === "function"
-    ? Services[slug]["hero"][3](displayCity)
-    : Services[slug]["hero"][3];
+  const heroDescription =
+    typeof Services[slug]["hero"][3] === "function"
+      ? Services[slug]["hero"][3](displayCity)
+      : Services[slug]["hero"][3];
 
   return (
     <div className="paper-bg-16 mt-17 flex flex-col items-center justify-center gap-20 bg-[#252525] px-[30px] py-[42px] md:mt-14 md:py-[100px]">

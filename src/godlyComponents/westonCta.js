@@ -2,12 +2,13 @@
 import React from "react";
 import { useGodlyContext } from "@/context/godlyContext";
 import SectionButton from "@/components/sectionButton";
+import Link from "next/link";
 import { getPhoneNumber } from "./footer";
 
-const ParklandCta = () => {
+const WestonCta = () => {
   const { city } = useGodlyContext();
 
-  if (city !== "PARKLAND") return null;
+  if (city !== "WESTON") return null;
 
   const phoneNumber = getPhoneNumber(city);
   const formattedPhoneNumber = phoneNumber.replace(/\D/g, "");
@@ -19,14 +20,25 @@ const ParklandCta = () => {
           <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] font-normal text-white/90 md:text-[24px] lg:text-[26px]">
             Whether you're in{" "}
             <span className="font-['satoshi-bold'] text-[#FDE4C8]">
-              Heron Bay
+              Bonaventure
             </span>
             ,{" "}
             <span className="font-['satoshi-bold'] text-[#FDE4C8]">
-              MiraLago
+              Windmill Ranch
             </span>
-            , or a quiet cul-de-sac, our Parkland team is here to make your
-            property shine.
+            , or{" "}
+            <span className="font-['satoshi-bold'] text-[#FDE4C8]">
+              Sector 7
+            </span>
+            —{" "}
+            <Link
+              href="https://godlywindows.com/"
+              className="font-['satoshi-bold'] text-[#FDE4C8] underline decoration-current decoration-solid transition-colors hover:text-white"
+            >
+              Godly Windows
+            </Link>{" "}
+            knows exactly what Weston homes need: impact windows, pool screen
+            enclosures, or a full exterior wash.
           </p>
 
           <p className="text-center font-['satoshi-regular'] text-base font-normal text-white/80 md:text-lg">
@@ -47,4 +59,4 @@ const ParklandCta = () => {
   );
 };
 
-export default ParklandCta;
+export default WestonCta;

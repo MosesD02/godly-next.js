@@ -15,14 +15,12 @@ export default async function Image() {
     loadOgPaperBg(),
   ]);
   return new ImageResponse(
-    (
-      <OgLayout
-        title="Blog | Godly Windows & Wash Co."
-        subtitle="Expert tips on pressure washing and window cleaning for South Florida"
-        logoSrc={logoSrc}
-        paperBgSrc={paperBgSrc}
-      />
-    ),
-    { ...OG_SIZE, fonts }
+    <OgLayout
+      title="Blog | Godly Windows & Wash Co."
+      subtitle="Expert tips on pressure washing and window cleaning for South Florida"
+      logoSrc={logoSrc}
+      paperBgSrc={paperBgSrc}
+    />,
+    { ...OG_SIZE, fonts },
   );
 }

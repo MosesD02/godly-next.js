@@ -9,7 +9,11 @@ import Link from "next/link";
  */
 function ParagraphWithLinks({ content, links = [] }) {
   if (!links.length) {
-    return <p className="font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">{content}</p>;
+    return (
+      <p className="font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+        {content}
+      </p>
+    );
   }
 
   // Find all link positions and sort by start index
@@ -17,7 +21,9 @@ function ParagraphWithLinks({ content, links = [] }) {
   const linkData = links
     .map(({ phrase, url }) => {
       const pos = content.indexOf(phrase);
-      return pos >= 0 ? { phrase, url, start: pos, end: pos + phrase.length } : null;
+      return pos >= 0
+        ? { phrase, url, start: pos, end: pos + phrase.length }
+        : null;
     })
     .filter(Boolean)
     .sort((a, b) => a.start - b.start);
@@ -37,16 +43,18 @@ function ParagraphWithLinks({ content, links = [] }) {
   const elements = [];
   filtered.forEach(({ phrase, url, start, end }, index) => {
     if (start > prevEnd) {
-      elements.push(<span key={`t-${index}`}>{content.slice(prevEnd, start)}</span>);
+      elements.push(
+        <span key={`t-${index}`}>{content.slice(prevEnd, start)}</span>,
+      );
     }
     elements.push(
       <Link
         key={`l-${index}`}
         href={url}
-        className="font-['satoshi-medium'] text-[#AF8F6E] !underline decoration-solid decoration-[#AF8F6E] underline-offset-2 transition-colors hover:text-[#8B6F4E]"
+        className="font-['satoshi-medium'] text-[#AF8F6E] !underline decoration-[#AF8F6E] decoration-solid underline-offset-2 transition-colors hover:text-[#8B6F4E]"
       >
         {phrase}
-      </Link>
+      </Link>,
     );
     prevEnd = end;
   });

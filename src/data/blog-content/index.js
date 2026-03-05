@@ -47,7 +47,6 @@ export function getRelatedBlogPosts(citySlug, serviceSlug) {
   const category = SERVICE_SLUG_TO_CATEGORY[serviceSlug];
   if (!category) return [];
   return blogPosts.filter(
-    (post) =>
-      post.citySlug === citySlug && post.serviceCategory === category,
+    (post) => post.citySlug === citySlug && post.serviceCategory === category,
   );
 }

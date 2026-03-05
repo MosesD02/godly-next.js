@@ -15,14 +15,12 @@ export default async function Image() {
     loadOgPaperBg(),
   ]);
   return new ImageResponse(
-    (
-      <OgLayout
-        title="Terms and Conditions"
-        subtitle="Service policies and user agreements | Godly Windows"
-        logoSrc={logoSrc}
-        paperBgSrc={paperBgSrc}
-      />
-    ),
-    { ...OG_SIZE, fonts }
+    <OgLayout
+      title="Terms and Conditions"
+      subtitle="Service policies and user agreements | Godly Windows"
+      logoSrc={logoSrc}
+      paperBgSrc={paperBgSrc}
+    />,
+    { ...OG_SIZE, fonts },
   );
 }

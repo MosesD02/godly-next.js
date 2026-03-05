@@ -2,10 +2,7 @@ import { ImageResponse } from "next/og";
 import { OgLayout, OG_SIZE } from "@/app/lib/og-image";
 import { loadOgFonts, loadOgLogo, loadOgPaperBg } from "@/app/lib/og-fonts";
 import { citiesMap } from "@/data/cities";
-import {
-  generateServiceTitle,
-  serviceMetaTitles,
-} from "@/data/metaTitles";
+import { generateServiceTitle, serviceMetaTitles } from "@/data/metaTitles";
 
 export const runtime = "nodejs";
 export const size = OG_SIZE;
@@ -35,15 +32,13 @@ export default async function Image({ params }) {
   const locationFormatted = location ? capitalize(location) : "South Florida";
 
   return new ImageResponse(
-    (
-      <OgLayout
-        title={title}
-        subtitle={`${serviceName} in ${locationFormatted}`}
-        logoSrc={logoSrc}
-        paperBgSrc={paperBgSrc}
-        locationBadge={locationFormatted}
-      />
-    ),
-    { ...OG_SIZE, fonts }
+    <OgLayout
+      title={title}
+      subtitle={`${serviceName} in ${locationFormatted}`}
+      logoSrc={logoSrc}
+      paperBgSrc={paperBgSrc}
+      locationBadge={locationFormatted}
+    />,
+    { ...OG_SIZE, fonts },
   );
 }

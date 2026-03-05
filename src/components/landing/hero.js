@@ -44,7 +44,7 @@ const Hero = ({ service, source }) => {
               93 Reviews
             </span>
           </div>
-          <h1 className="sr-only">{generateHomeH1()}</h1>
+          <h1 className="sr-only">{generateHomeH1(city)}</h1>
           <div
             className="flex flex-wrap items-center gap-4 xl:gap-8"
             role="heading"

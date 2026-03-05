@@ -29,15 +29,13 @@ export default async function Image({ params }) {
   const location = cityName ? capitalize(cityName) : "South Florida";
 
   return new ImageResponse(
-    (
-      <OgLayout
-        title={title}
-        subtitle={`Professional window cleaning & pressure washing in ${location}`}
-        logoSrc={logoSrc}
-        paperBgSrc={paperBgSrc}
-        locationBadge={location}
-      />
-    ),
-    { ...OG_SIZE, fonts }
+    <OgLayout
+      title={title}
+      subtitle={`Professional window cleaning & pressure washing in ${location}`}
+      logoSrc={logoSrc}
+      paperBgSrc={paperBgSrc}
+      locationBadge={location}
+    />,
+    { ...OG_SIZE, fonts },
   );
 }

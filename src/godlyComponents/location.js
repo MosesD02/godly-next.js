@@ -3,8 +3,9 @@ import React from "react";
 import map from "@/assets/map.webp";
 import SectionButton from "@/components/sectionButton";
 import Image from "next/image";
+import CityIntroParagraph from "./CityIntroParagraph";
 
-const Location = () => {
+const Location = ({ city }) => {
   return (
     <div className="paper-bg-16 bg-[#262424]">
       <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-center gap-[15px] bg-cover bg-center bg-no-repeat py-[43px] bg-blend-multiply md:gap-[14px] md:p-16">
@@ -32,6 +33,7 @@ const Location = () => {
             Florida
           </span>
         </h4>
+        <CityIntroParagraph city={city} />
       </div>
       <div className="paper-bg-16 flex flex-col items-center justify-items-center gap-10 bg-[#ebded1] bg-cover bg-center bg-no-repeat p-16 bg-blend-multiply">
         <Image

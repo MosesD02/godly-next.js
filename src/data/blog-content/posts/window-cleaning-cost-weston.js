@@ -10,7 +10,8 @@ export default {
   citySlug: "weston",
   businessName: "Godly Windows & Wash Co. Weston",
   publishedAt: "2025-02-01",
-  title: "Professional Window Cleaning in Weston: What Homeowners Should Know Before Hiring",
+  title:
+    "Professional Window Cleaning in Weston: What Homeowners Should Know Before Hiring",
   excerpt:
     "Window cleaning costs in Weston depend on your home's size, window count, and accessibility. But the real question is: what kind of clean are you actually getting?",
   sections: [
@@ -19,7 +20,10 @@ export default {
       content:
         "Window cleaning costs in Weston depend on the size of your home, the number of windows, accessibility, and how long it's been since your last professional cleaning. But beyond the price, the question Weston homeowners should really be asking is: what kind of clean are you actually getting? Because in a city full of well-maintained homes and active HOAs, the bar for \"clean\" is higher than average — and a surface-level spray job isn't going to cut it.",
       links: [
-        { phrase: "window cleaning", url: "https://godlywindows.com/weston/exterior-window-cleaning" },
+        {
+          phrase: "window cleaning",
+          url: "https://godlywindows.com/weston/exterior-window-cleaning",
+        },
         { phrase: "Weston", url: "https://godlywindows.com/weston" },
       ],
     },
@@ -44,7 +48,10 @@ export default {
       content:
         "For most Weston homes — whether you're in Weston Hills Country Club, Savanna, The Ridges, or any of the Sectors communities — professional window cleaning two to three times per year keeps everything in excellent condition. Homes with extensive landscaping or lots of sprinkler exposure may benefit from quarterly cleaning.",
     },
-    { type: "h2", text: "Most Window Cleaners Skip the Details. Here's What That Looks Like." },
+    {
+      type: "h2",
+      text: "Most Window Cleaners Skip the Details. Here's What That Looks Like.",
+    },
     {
       type: "p",
       content:
@@ -87,7 +94,10 @@ export default {
       content:
         "Our service plans are designed around scheduled exterior cleaning with the flexibility to add interior cleaning whenever you want it. The quarterly plan includes our Rain Shield glass coating at no extra charge — it's a protective treatment that causes water to bead and roll off your windows, keeping them cleaner between visits. Think of it as Rain-X for your home.",
     },
-    { type: "h2", text: "Get a Free Quote From Godly Windows & Wash Co. Weston" },
+    {
+      type: "h2",
+      text: "Get a Free Quote From Godly Windows & Wash Co. Weston",
+    },
     {
       type: "p",
       content:

@@ -22,6 +22,8 @@ export default function ServicesPage({ slug, city, relatedPosts }) {
     if (Object.keys(citiesMap).includes(city)) {
       const formattedCity = citiesMap[city];
       setCity(formattedCity);
+      // Persist to cookie so header and other pages reflect this city
+      document.cookie = `selectedCity=${city};path=/;max-age=31536000`;
     }
   }, [city, setCity]);
   return (

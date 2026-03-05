@@ -34,7 +34,10 @@ const OaklandParkCta = () => {
           Book online for a free, no pressure quote.
         </p>
         <div className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:gap-6">
-          <a href={`tel:${phoneNumber.replace(/\D/g, "")}`} className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg">
+          <a
+            href={`tel:${phoneNumber.replace(/\D/g, "")}`}
+            className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
+          >
             {phoneNumber}
           </a>
           <Link

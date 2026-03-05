@@ -15,14 +15,12 @@ export default async function Image() {
     loadOgPaperBg(),
   ]);
   return new ImageResponse(
-    (
-      <OgLayout
-        title="Book Your Service"
-        subtitle="Window cleaning & pressure washing in South Florida | Free estimates"
-        logoSrc={logoSrc}
-        paperBgSrc={paperBgSrc}
-      />
-    ),
-    { ...OG_SIZE, fonts }
+    <OgLayout
+      title="Book Your Service"
+      subtitle="Window cleaning & pressure washing in South Florida | Free estimates"
+      logoSrc={logoSrc}
+      paperBgSrc={paperBgSrc}
+    />,
+    { ...OG_SIZE, fonts },
   );
 }

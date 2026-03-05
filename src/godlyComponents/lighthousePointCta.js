@@ -40,7 +40,10 @@ const LighthousePointCta = () => {
             Book online for a free, no pressure quote.
           </p>
           <div className="flex flex-col items-center justify-center gap-2">
-            <a href={`tel:${formattedPhoneNumber}`} className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg">
+            <a
+              href={`tel:${formattedPhoneNumber}`}
+              className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
+            >
               {phoneNumber}
             </a>
             <SectionButton>Get a Free Estimate</SectionButton>

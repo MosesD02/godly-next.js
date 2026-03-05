@@ -20,15 +20,13 @@ export default async function Image({ params }) {
 
   if (!post) {
     return new ImageResponse(
-      (
-        <OgLayout
-          title="Blog | Godly Windows"
-          subtitle="Window cleaning & pressure washing in South Florida"
-          logoSrc={logoSrc}
-          paperBgSrc={paperBgSrc}
-        />
-      ),
-      { ...OG_SIZE, fonts }
+      <OgLayout
+        title="Blog | Godly Windows"
+        subtitle="Window cleaning & pressure washing in South Florida"
+        logoSrc={logoSrc}
+        paperBgSrc={paperBgSrc}
+      />,
+      { ...OG_SIZE, fonts },
     );
   }
 
@@ -41,15 +39,13 @@ export default async function Image({ params }) {
     : null;
 
   return new ImageResponse(
-    (
-      <OgLayout
-        title={title}
-        subtitle={subtitle}
-        logoSrc={logoSrc}
-        paperBgSrc={paperBgSrc}
-        date={date}
-      />
-    ),
-    { ...OG_SIZE, fonts }
+    <OgLayout
+      title={title}
+      subtitle={subtitle}
+      logoSrc={logoSrc}
+      paperBgSrc={paperBgSrc}
+      date={date}
+    />,
+    { ...OG_SIZE, fonts },
   );
 }

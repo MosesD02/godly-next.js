@@ -23,6 +23,7 @@ export default function GodlyHome({ city, service }) {
     if (Object.keys(citiesMap).includes(city)) {
       const formattedCity = citiesMap[city];
       setCity(formattedCity);
+      document.cookie = `selectedCity=${city};path=/;max-age=31536000`;
     }
 
     // Track landing page view

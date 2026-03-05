@@ -10,7 +10,8 @@ export default {
   citySlug: "boca-raton",
   businessName: "Godly Windows & Wash Co. Boca Raton",
   publishedAt: "2025-02-01",
-  title: "How Often Should You Clean Your Windows in Boca Raton? And Why the Method Matters",
+  title:
+    "How Often Should You Clean Your Windows in Boca Raton? And Why the Method Matters",
   excerpt:
     "Most Boca Raton homeowners should have their windows professionally cleaned two to three times per year. But how often you clean is only half the equation — the method makes a dramatic difference.",
   sections: [
@@ -19,7 +20,10 @@ export default {
       content:
         "Most Boca Raton homeowners should have their windows professionally cleaned two to three times per year. Homes closer to the coast — east of I-95 toward A1A — may need cleaning every three to four months due to salt air exposure that can permanently damage glass if left untreated.",
       links: [
-        { phrase: "window cleaning", url: "https://godlywindows.com/boca-raton/exterior-window-cleaning" },
+        {
+          phrase: "window cleaning",
+          url: "https://godlywindows.com/boca-raton/exterior-window-cleaning",
+        },
         { phrase: "Boca Raton", url: "https://godlywindows.com/boca-raton" },
       ],
     },
@@ -44,7 +48,10 @@ export default {
       content:
         "Hard water from sprinklers leaves mineral spots every time water hits your glass and evaporates. Pollen blankets everything from late winter through spring. And Florida's constant humidity encourages mold growth on frames, tracks, and sills. All of these factors compound, which is why windows that were cleaned a month ago can already look neglected.",
     },
-    { type: "h2", text: "Why Most Window Cleaning Companies Leave Buildup Behind" },
+    {
+      type: "h2",
+      text: "Why Most Window Cleaning Companies Leave Buildup Behind",
+    },
     {
       type: "p",
       content:
@@ -82,7 +89,10 @@ export default {
       content:
         "Our service plans focus on exterior cleaning on a regular schedule, with the option to add interior cleaning anytime you need it. This gives you the best of both worlds — consistent exterior maintenance without paying for interior work you don't need every visit.",
     },
-    { type: "h2", text: "Rain Shield: Your Windows Stay Cleaner Between Visits" },
+    {
+      type: "h2",
+      text: "Rain Shield: Your Windows Stay Cleaner Between Visits",
+    },
     {
       type: "p",
       content:
@@ -93,7 +103,10 @@ export default {
       content:
         "Rain Shield is included at no extra charge with our quarterly service plan. We also offer it during periodic promotions throughout the year.",
     },
-    { type: "h2", text: "Get a Free Quote From Godly Windows & Wash Co. Boca Raton" },
+    {
+      type: "h2",
+      text: "Get a Free Quote From Godly Windows & Wash Co. Boca Raton",
+    },
     {
       type: "p",
       content:

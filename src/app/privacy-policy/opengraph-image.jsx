@@ -15,14 +15,12 @@ export default async function Image() {
     loadOgPaperBg(),
   ]);
   return new ImageResponse(
-    (
-      <OgLayout
-        title="Privacy Policy"
-        subtitle="How we protect your data | Godly Windows"
-        logoSrc={logoSrc}
-        paperBgSrc={paperBgSrc}
-      />
-    ),
-    { ...OG_SIZE, fonts }
+    <OgLayout
+      title="Privacy Policy"
+      subtitle="How we protect your data | Godly Windows"
+      logoSrc={logoSrc}
+      paperBgSrc={paperBgSrc}
+    />,
+    { ...OG_SIZE, fonts },
   );
 }

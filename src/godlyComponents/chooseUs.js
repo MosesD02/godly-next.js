@@ -324,8 +324,7 @@ const chooseUsData = {
 };
 
 const ChooseUs = ({ slug }) => {
-  const services =
-    chooseUsData[slug] ?? chooseUsData["solar-panel-cleaning"];
+  const services = chooseUsData[slug] ?? chooseUsData["solar-panel-cleaning"];
 
   return (
     <div>
