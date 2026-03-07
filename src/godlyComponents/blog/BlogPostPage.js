@@ -9,14 +9,14 @@ import BlogPostContent from "./BlogPostContent";
 import BlogPostFaq from "./BlogPostFaq";
 import BlogPostCta from "./BlogPostCta";
 
-export default function BlogPostPage({ post }) {
+export default function BlogPostPage({ post, basePath = "/blog" }) {
   return (
     <WebsiteLayout>
       <article className="mt-17 flex w-full flex-col bg-[#fef7ea] px-[30px] py-[45px] text-[#312E2C] md:mt-14 md:px-16 md:py-16">
         <div className="mx-auto flex w-full max-w-[800px] flex-col">
           <nav className="mb-6">
             <Link
-              href={`/blog`}
+              href={basePath}
               className="font-['satoshi-light'] text-sm text-[#AF8F6E] underline"
             >
               ← Back to Blog
@@ -47,7 +47,7 @@ export default function BlogPostPage({ post }) {
           )}
 
           <div className="prose prose-lg max-w-none">
-            <BlogPostContent sections={post.sections} />
+            <BlogPostContent body={post.body} />
           </div>
 
           <BlogPostCta

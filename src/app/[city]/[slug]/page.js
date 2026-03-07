@@ -5,7 +5,7 @@ import {
   generateServiceTitle,
   generateServiceDescription,
 } from "@/data/metaTitles";
-import { getRelatedBlogPosts } from "@/data/blog-content";
+import { getRelatedBlogPosts } from "@/data/sanity-content";
 import Services from "@/data/servicesData";
 
 // Dynamic metadata generation for service pages

@@ -3,7 +3,7 @@ import { OgLayout, OG_SIZE } from "@/app/lib/og-image";
 import { loadOgFonts, loadOgLogo, loadOgPaperBg } from "@/app/lib/og-fonts";
 import { citiesMap } from "@/data/cities";
 import { generateServiceTitle, serviceMetaTitles } from "@/data/metaTitles";
-import { getBlogPostBySlug } from "@/data/blog-content";
+import { getSanityPostBySlug } from "@/data/sanity-content";
 import { format } from "date-fns";
 
 export const runtime = "nodejs";
@@ -32,7 +32,7 @@ export default async function Image({ params }) {
 
   // If [city] matched "blog" (route conflict), render blog post OG image
   if (BLOG_LIKE_SEGMENTS.has(city)) {
-    const post = getBlogPostBySlug(slug);
+    const post = await getSanityPostBySlug(slug);
     const title = post?.metaTitle || post?.title || "Blog | Godly Windows";
     const subtitle = post?.targetCity
       ? `${post.targetCity} | Godly Windows`

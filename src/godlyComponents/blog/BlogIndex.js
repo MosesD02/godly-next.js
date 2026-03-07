@@ -6,7 +6,7 @@ import Image from "next/image";
 import WebsiteLayout from "../websiteLayout";
 import { format } from "date-fns";
 
-export default function BlogIndex({ posts, cityName }) {
+export default function BlogIndex({ posts, cityName, basePath = "/blog" }) {
   return (
     <WebsiteLayout>
       <div className="mt-17 flex flex-col bg-[#262424] px-[35px] py-[100px] md:mt-17 md:p-16 md:py-[70px]">
@@ -46,7 +46,7 @@ export default function BlogIndex({ posts, cityName }) {
                 <div className="w-full md:w-1/2">
                   <div className="mx-auto aspect-[4/3] max-w-[650px] overflow-hidden border-8 border-[#6A64641F] shadow-md">
                     <Link
-                      href={`/blog/${posts[0].slug}`}
+                      href={`${basePath}/${posts[0].slug}`}
                       className="block h-full w-full"
                     >
                       <Image
@@ -71,7 +71,7 @@ export default function BlogIndex({ posts, cityName }) {
                   </p>
                   <div className="flex w-full justify-end">
                     <Link
-                      href={`/blog/${posts[0].slug}`}
+                      href={`${basePath}/${posts[0].slug}`}
                       className="text-[24px] text-[#003953]"
                     >
                       <div className="underline">READ MORE</div>
@@ -93,7 +93,7 @@ export default function BlogIndex({ posts, cityName }) {
                   {format(new Date(posts[0].publishedAt), "MMMM d, yyyy")}
                 </p>
                 <Link
-                  href={`/blog/${posts[0].slug}`}
+                  href={`${basePath}/${posts[0].slug}`}
                   className="mx-auto flex w-fit justify-center"
                 >
                   <div className="aspect-[4/3] w-[334px] overflow-hidden border-[6px] border-[#6A64641F] shadow-md">
@@ -115,7 +115,7 @@ export default function BlogIndex({ posts, cityName }) {
               <div>
                 <div className="w/full flex justify-end">
                   <Link
-                    href={`/blog/${posts[0].slug}`}
+                    href={`${basePath}/${posts[0].slug}`}
                     className="text-xl leading-[24px] text-[#003953]"
                   >
                     <div className="underline">READ MORE</div>
@@ -133,7 +133,7 @@ export default function BlogIndex({ posts, cityName }) {
           <div className="mx-auto max-w-[1311px] px-[30px] py-[40px] md:px-12">
             <article className="flex flex-col gap-3 border-b border-[#6A64641F] pb-6">
               <Link
-                href={`/blog/${posts[0].slug}`}
+                href={`${basePath}/${posts[0].slug}`}
                 className="flex flex-col gap-3"
               >
                 <p className="font-['satoshi-light'] text-base text-[#373A44]">
@@ -161,7 +161,7 @@ export default function BlogIndex({ posts, cityName }) {
                 .map((post) => (
                   <div key={post.slug} className="flex flex-col gap-3">
                     <Link
-                      href={`/blog/${post.slug}`}
+                      href={`${basePath}/${post.slug}`}
                       className="flex flex-col gap-3"
                     >
                       <div className="aspect-[4/3] w-full overflow-hidden">

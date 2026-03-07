@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 import { citiesMap } from "@/data/cities";
-import { getBlogPostsByCity } from "@/data/blog-content";
+import { getSanityPostsByCity } from "@/data/sanity-content";
 import BlogIndex from "@/godlyComponents/blog/BlogIndex";
 
 export const metadata = {
@@ -15,16 +15,10 @@ export const metadata = {
     url: "https://godlywindows.com/blog",
     siteName: "Godly Windows",
     type: "website",
-    images: [
-      {
-        url: "/blog/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "Expert tips on pressure washing and window cleaning for South Florida homeowners.",
-      },
-    ],
   },
 };
+
+export const revalidate = 60;
 
 export default async function BlogPage() {
   const cookieStore = await cookies();
@@ -32,6 +26,6 @@ export default async function BlogPage() {
   const citySlug =
     savedCity && citiesMap[savedCity] ? savedCity : "south-florida";
   const cityName = citiesMap[citySlug];
-  const posts = getBlogPostsByCity(citySlug);
+  const posts = await getSanityPostsByCity(citySlug);
   return <BlogIndex posts={posts} cityName={cityName} />;
 }

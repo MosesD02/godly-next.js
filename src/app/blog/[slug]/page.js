@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import {
-  getBlogPostBySlug,
-  getAllBlogSlugs,
-  getAllBlogPosts,
-  getBlogPostsByCity,
-} from "@/data/blog-content";
+  getSanityPostBySlug,
+  getAllSanitySlugs,
+  getSanityCitySlugs,
+  getSanityPostsByCity,
+} from "@/data/sanity-content";
 import BlogPostPage from "@/godlyComponents/blog/BlogPostPage";
 import BlogIndex from "@/godlyComponents/blog/BlogIndex";
 import { BASE_URL } from "@/app/lib/constants";
@@ -13,15 +13,18 @@ import { citiesMap } from "@/data/cities";
 
 function toCityTitle(citySlug) {
   return citiesMap[citySlug]
-    .split(" ")
-    .map((w) => w.charAt(0) + w.slice(1).toLowerCase())
-    .join(" ");
+    ? citiesMap[citySlug]
+        .split(" ")
+        .map((w) => w.charAt(0) + w.slice(1).toLowerCase())
+        .join(" ")
+    : citySlug;
 }
 
 export async function generateStaticParams() {
-  const postSlugs = getAllBlogSlugs();
-  const posts = getAllBlogPosts();
-  const citySlugs = [...new Set(posts.map((p) => p.citySlug).filter(Boolean))];
+  const [postSlugs, citySlugs] = await Promise.all([
+    getAllSanitySlugs(),
+    getSanityCitySlugs(),
+  ]);
   return [
     ...postSlugs.map((slug) => ({ slug })),
     ...citySlugs.map((slug) => ({ slug })),
@@ -51,15 +54,17 @@ export async function generateMetadata({ params }) {
   }
 
   // Individual blog post metadata
-  const post = getBlogPostBySlug(slug);
+  const post = await getSanityPostBySlug(slug);
   if (!post) return {};
 
   return {
-    title: post.metaTitle,
+    title: post.metaTitle || post.title,
     description: post.metaDescription,
-    keywords: [post.targetKeyword, post.targetCity, "Godly Windows"],
+    keywords: [post.targetKeyword, post.targetCity, "Godly Windows"].filter(
+      Boolean,
+    ),
     openGraph: {
-      title: post.metaTitle,
+      title: post.metaTitle || post.title,
       description: post.metaDescription,
       url: `${BASE_URL}/blog/${post.slug}`,
       siteName: "Godly Windows",
@@ -69,7 +74,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: post.metaTitle,
+      title: post.metaTitle || post.title,
       description: post.metaDescription,
     },
     alternates: {
@@ -78,46 +83,53 @@ export async function generateMetadata({ params }) {
   };
 }
 
+export const revalidate = 60;
+
 export default async function BlogPostRoute({ params }) {
   const { slug } = await params;
 
   // City blog index
   if (citiesMap[slug]) {
-    const posts = getBlogPostsByCity(slug);
+    const posts = await getSanityPostsByCity(slug);
     const cityName = toCityTitle(slug);
     return <BlogIndex posts={posts} cityName={cityName} />;
   }
 
   // Individual blog post
-  const post = getBlogPostBySlug(slug);
+  const post = await getSanityPostBySlug(slug);
 
   if (!post) {
     notFound();
   }
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: post.faq.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  };
+  const faqSchema =
+    post.faq?.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: post.faq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
 
   return (
     <>
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
-        }}
-        strategy="beforeInteractive"
-      />
+      {faqSchema && (
+        <Script
+          id="faq-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+          }}
+          strategy="beforeInteractive"
+        />
+      )}
       <BlogPostPage post={post} />
     </>
   );

@@ -20,6 +20,9 @@ const nextConfig: NextConfig = {
 
     // Domains for external images (if needed)
     domains: [],
+    remotePatterns: [
+      { protocol: "https", hostname: "cdn.sanity.io" },
+    ],
 
     // Disable static optimization for better performance
     unoptimized: false,
@@ -34,12 +37,22 @@ const nextConfig: NextConfig = {
   // Performance optimizations
   compress: true,
 
-  // Redirect /blogs to /blog (canonical blog index)
+  // Redirect /blogs and /sanity to /blog (canonical blog index)
   async redirects() {
     return [
       {
         source: "/blogs",
         destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/sanity",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/sanity/:path*",
+        destination: "/blog/:path*",
         permanent: true,
       },
     ];

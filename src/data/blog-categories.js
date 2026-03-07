@@ -1,11 +1,6 @@
 /**
  * Blog taxonomy — service categories.
- *
- * Each blog post should have:
- *   citySlug       — location tag  (e.g. "fort-lauderdale")
- *   serviceCategory — service tag  (e.g. "window-cleaning")
- *
- * Add the serviceCategory field to every post in posts/.
+ * Maps service page slugs to blog post categories for related posts.
  */
 
 /** All valid service categories */

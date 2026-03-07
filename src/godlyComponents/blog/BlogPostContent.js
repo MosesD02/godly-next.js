@@ -2,98 +2,91 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { PortableText } from "@portabletext/react";
+import { urlFor } from "@/sanity/image";
 
-/**
- * Renders a paragraph with optional internal links.
- * Replaces each link phrase with an actual anchor tag (first occurrence per phrase).
- */
-function ParagraphWithLinks({ content, links = [] }) {
-  if (!links.length) {
-    return (
-      <p className="font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
-        {content}
-      </p>
-    );
-  }
+const linkClassName =
+  "font-['satoshi-medium'] text-[#AF8F6E] !underline decoration-[#AF8F6E] decoration-solid underline-offset-2 transition-colors hover:text-[#8B6F4E]";
 
-  // Find all link positions and sort by start index
-  const segments = [];
-  const linkData = links
-    .map(({ phrase, url }) => {
-      const pos = content.indexOf(phrase);
-      return pos >= 0
-        ? { phrase, url, start: pos, end: pos + phrase.length }
-        : null;
-    })
-    .filter(Boolean)
-    .sort((a, b) => a.start - b.start);
-
-  // Remove overlaps (take first non-overlapping)
-  const filtered = [];
-  let lastEnd = 0;
-  for (const link of linkData) {
-    if (link.start >= lastEnd) {
-      filtered.push(link);
-      lastEnd = link.end;
-    }
-  }
-
-  // Build output segments
-  let prevEnd = 0;
-  const elements = [];
-  filtered.forEach(({ phrase, url, start, end }, index) => {
-    if (start > prevEnd) {
-      elements.push(
-        <span key={`t-${index}`}>{content.slice(prevEnd, start)}</span>,
+const components = {
+  types: {
+    image: ({ value }) => {
+      if (!value?.asset) return null;
+      const imageUrl = urlFor(value).width(800).height(600).url();
+      const alt = value.alt || "";
+      return (
+        <figure className="my-8">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
+            <Image
+              src={imageUrl}
+              alt={alt}
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 768px) 100vw, 800px"
+            />
+          </div>
+          {value.caption && (
+            <figcaption className="mt-2 text-center font-['satoshi-light'] text-sm text-[#6A6464]">
+              {value.caption}
+            </figcaption>
+          )}
+        </figure>
       );
-    }
-    elements.push(
-      <Link
-        key={`l-${index}`}
-        href={url}
-        className="font-['satoshi-medium'] text-[#AF8F6E] !underline decoration-[#AF8F6E] decoration-solid underline-offset-2 transition-colors hover:text-[#8B6F4E]"
-      >
-        {phrase}
-      </Link>,
-    );
-    prevEnd = end;
-  });
-  if (prevEnd < content.length) {
-    elements.push(<span key="tail">{content.slice(prevEnd)}</span>);
+    },
+  },
+  marks: {
+    link: ({ value, children }) => {
+      const href = value?.href;
+      if (!href) return <span>{children}</span>;
+      const isGodlyWindows = href.startsWith("https://godlywindows.com");
+      if (isGodlyWindows) {
+        const path = href.replace("https://godlywindows.com", "") || "/";
+        return (
+          <Link href={path} className={linkClassName}>
+            {children}
+          </Link>
+        );
+      }
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={linkClassName}
+        >
+          {children}
+        </a>
+      );
+    },
+  },
+  block: {
+    h2: ({ children }) => (
+      <h2 className="trim mt-8 text-2xl font-bold text-[#312E2C] md:text-3xl">
+        {children}
+      </h2>
+    ),
+    h3: ({ children }) => (
+      <h3 className="trim mt-6 text-xl font-bold text-[#312E2C] md:text-2xl">
+        {children}
+      </h3>
+    ),
+    normal: ({ children }) => (
+      <p className="font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+        {children}
+      </p>
+    ),
+  },
+};
+
+export default function BlogPostContent({ body }) {
+  if (!body || !Array.isArray(body) || body.length === 0) {
+    return null;
   }
 
-  return (
-    <p className="font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
-      {elements.length ? elements : content}
-    </p>
-  );
-}
-
-export default function BlogPostContent({ sections }) {
   return (
     <div className="flex flex-col gap-6">
-      {sections.map((section, index) => {
-        if (section.type === "h2") {
-          return (
-            <h2
-              key={index}
-              className="trim mt-8 text-2xl font-bold text-[#312E2C] md:text-3xl"
-            >
-              {section.text}
-            </h2>
-          );
-        }
-        if (section.type === "p") {
-          return (
-            <ParagraphWithLinks
-              key={index}
-              content={section.content}
-              links={section.links}
-            />
-          );
-        }
-        return null;
-      })}
+      <PortableText value={body} components={components} />
     </div>
   );
 }

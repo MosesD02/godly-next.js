@@ -1,16 +1,19 @@
 import { BASE_URL } from "./lib/constants";
 import { citiesMap } from "@/data/cities";
 import { serviceMetaTitles } from "@/data/metaTitles";
-import { getAllBlogPosts, getBlogPostsByCity } from "@/data/blog-content";
+import {
+  getAllSanityPosts,
+  getSanityPostsByCity,
+} from "@/data/sanity-content";
 
-export default function sitemap() {
+export default async function sitemap() {
   const now = new Date().toISOString();
 
   const cities = Object.keys(citiesMap).filter(
     (city) => city !== "south-florida",
   );
   const services = Object.keys(serviceMetaTitles);
-  const blogPosts = getAllBlogPosts();
+  const blogPosts = await getAllSanityPosts();
 
   const urls = [
     {
@@ -27,18 +30,20 @@ export default function sitemap() {
       priority: 0.7,
     })),
     // City blog index pages (only cities that have posts)
-    ...[...new Set(blogPosts.map((p) => p.citySlug).filter(Boolean))].map(
-      (citySlug) => {
-        const posts = getBlogPostsByCity(citySlug);
-        const latest = posts[0]?.publishedAt ?? now;
-        return {
-          url: `${BASE_URL}/blog/${citySlug}`,
-          lastModified: latest,
-          changeFrequency: "weekly",
-          priority: 0.8,
-        };
-      },
-    ),
+    ...(await Promise.all(
+      [...new Set(blogPosts.map((p) => p.citySlug).filter(Boolean))].map(
+        async (citySlug) => {
+          const posts = await getSanityPostsByCity(citySlug);
+          const latest = posts[0]?.publishedAt ?? now;
+          return {
+            url: `${BASE_URL}/blog/${citySlug}`,
+            lastModified: latest,
+            changeFrequency: "weekly",
+            priority: 0.8,
+          };
+        },
+      ),
+    )),
     {
       url: `${BASE_URL}/blogs`,
       lastModified: now,
