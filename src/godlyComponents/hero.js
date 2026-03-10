@@ -260,28 +260,39 @@ const Hero = () => {
             </div>
           ) : (
             <div
-              className="flex flex-wrap items-center gap-4 xl:gap-8"
+              className="flex flex-wrap items-baseline gap-x-3 gap-y-1.5 md:gap-x-4 xl:gap-x-8 xl:gap-y-4"
               role="heading"
               aria-level="1"
             >
-              <span className="flex flex-wrap items-center gap-2">
-                <span className="font-marlton trim shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
-                  Window cleaning
-                </span>
-                <span className="shrink-0 text-center font-['luminaire-script'] text-[16px] text-[#FDE4C8] md:text-lg xl:text-2xl">
-                  And
-                </span>
-                <span className="hidden md:block"></span>
-                <span className="font-marlton trim mt-2 shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:mt-0 md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
-                  pressure Washing
-                </span>
+              <span className="font-marlton trim shrink-0 text-[32px] font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+                Window
               </span>
-              <span className="font-marlton trim shrink-0 items-center gap-2 text-4xl font-normal tracking-[3px] text-white md:block md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
-                services In
+              <span className="font-marlton trim shrink-0 text-[32px] font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+                cleaning
               </span>
-              <span className="font-marlton trim shrink-0 items-center gap-2 text-4xl font-normal tracking-[3px] text-white md:block md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
-                {city}
+              <span className="shrink-0 self-center font-['luminaire-script'] text-[16px] leading-[1] text-[#FDE4C8] md:text-lg xl:text-2xl">
+                And
               </span>
+              <span className="font-marlton trim shrink-0 text-[32px] font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+                pressure
+              </span>
+              <span className="font-marlton trim shrink-0 text-[32px] font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+                Washing
+              </span>
+              <span className="font-marlton trim shrink-0 text-4xl font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
+                services
+              </span>
+              <span className="font-marlton trim shrink-0 text-4xl font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
+                In
+              </span>
+              {(city || "SOUTH FLORIDA").split(" ").map((word) => (
+                <span
+                  key={word}
+                  className="font-marlton trim shrink-0 text-4xl font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]"
+                >
+                  {word}
+                </span>
+              ))}
             </div>
           )}
           <p className="font-['satoshi-regular'] text-sm font-medium text-white md:text-base xl:text-xl">
