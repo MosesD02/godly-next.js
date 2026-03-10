@@ -1,0 +1,46 @@
+/**
+ * n8n lead tracking webhook URLs for automated lead management.
+ * Each form sends name + phone (digits only) as JSON POST on submit.
+ *
+ * Form mapping:
+ * - /landing/[service]/[city] → Google Ads (PPC)
+ * - / (homepage) → Main website
+ * - /fort-lauderdale, /fort-lauderdale/* → Fort Lauderdale GBP
+ * - /boca-raton, /boca-raton/* → Boca Raton GBP
+ * - /weston, /weston/* → Weston GBP
+ */
+export const LEAD_WEBHOOKS = {
+  /** /landing - Google Ads (PPC) landing page */
+  GOOGLE_ADS: "https://removedfast.app.n8n.cloud/webhook/72feec39-8655-40da-8886-52a44f21fe5a",
+  /** Fort Lauderdale GBP city pages */
+  FORT_LAUDERDALE: "https://removedfast.app.n8n.cloud/webhook/8567e870-bc81-4461-9b42-41900d6e9607",
+  /** Boca Raton GBP city pages */
+  BOCA_RATON: "https://removedfast.app.n8n.cloud/webhook/7f5ca51a-6c0b-476a-8acd-5fb642eb7529",
+  /** Weston GBP city pages */
+  WESTON: "https://removedfast.app.n8n.cloud/webhook/cfd84135-65a6-4fcf-803d-22706be9b73e",
+  /** / (homepage) - Main website contact form */
+  MAIN_WEBSITE: "https://removedfast.app.n8n.cloud/webhook/85e43544-463b-4464-8409-4a235f297d26",
+};
+
+/**
+ * Send lead to n8n webhook. Fires and forgets (non-blocking).
+ * @param {string} url - Webhook URL
+ * @param {string} name - Lead name
+ * @param {string} phone - Phone (will be normalized to digits only)
+ */
+export async function sendLeadWebhook(url, name, phone) {
+  const digitsOnly = (phone || "").replace(/\D/g, "");
+  const payload = { name: (name || "").trim(), phone: digitsOnly };
+
+  if (!payload.name || !payload.phone) return;
+
+  try {
+    await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+  } catch (err) {
+    console.error("[Lead Webhook] Failed to send:", err);
+  }
+}

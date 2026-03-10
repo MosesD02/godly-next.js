@@ -16,7 +16,7 @@ import SingleReview from "./singleReview";
 import Faq from "./faq";
 // import { PopupModal } from "../popup-modal";
 
-export default function GodlyHome({ city, service }) {
+export default function GodlyHome({ city, service, serviceSlug }) {
   const { setCity } = useGodlyContext();
 
   useEffect(() => {
@@ -40,8 +40,8 @@ export default function GodlyHome({ city, service }) {
   }, [city, service, setCity]);
 
   return (
-    <WebsiteLayout>
-      <Hero service={service} />
+    <WebsiteLayout service={service}>
+      <Hero service={service} serviceSlug={serviceSlug} />
       <SingleReview />
       <FourStepProcess />
       <TeamGallery />

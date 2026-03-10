@@ -15,6 +15,8 @@ import Airtable from "airtable";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
+import { usePathname } from "next/navigation";
+import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 
 const servicesList = [
   { id: "exterior-window-cleaning", name: "Exterior Window Cleaning" },
@@ -31,6 +33,7 @@ const servicesList = [
 
 export default function QuoteForm({ isDialog }) {
   const { city } = useGodlyContext();
+  const pathname = usePathname();
 
   // City-specific form content
   const getFormContent = () => {
@@ -378,6 +381,18 @@ export default function QuoteForm({ isDialog }) {
         },
       );
 
+      // n8n lead tracking: /landing* → PPC, /fort-lauderdale* → FL GBP, /boca-raton* → Boca GBP, /weston* → Weston GBP, / → main
+      const webhook = pathname?.startsWith("/landing")
+        ? LEAD_WEBHOOKS.GOOGLE_ADS
+        : pathname?.startsWith("/fort-lauderdale")
+          ? LEAD_WEBHOOKS.FORT_LAUDERDALE
+          : pathname?.startsWith("/boca-raton")
+            ? LEAD_WEBHOOKS.BOCA_RATON
+            : pathname?.startsWith("/weston")
+              ? LEAD_WEBHOOKS.WESTON
+              : LEAD_WEBHOOKS.MAIN_WEBSITE;
+      sendLeadWebhook(webhook, formData.name, formData.phone);
+
       if (typeof window !== "undefined" && window.gtag) {
         const gtag = window.gtag;
 
@@ -452,7 +467,7 @@ export default function QuoteForm({ isDialog }) {
         <div className="paper-bg-14 relative z-20 grid grid-cols-2 items-center justify-between rounded-t-[10px] bg-[#AB8459] px-[27px] py-[25px] md:flex md:h-[100px] md:px-10 md:py-6 xl:flex xl:h-[128px] xl:px-12 xl:py-8">
           <h2
             className={cn(
-              "trim text-[24px] leading-6 font-normal tracking-[1.2px] text-[#2D2B2B] md:min-w-[120px] md:text-4xl xl:min-w-[137px] xl:text-5xl xl:text-[40px]",
+              "trim text-[24px] leading-6 font-normal tracking-[1.2px] text-[#2D2B2B] md:min-w-[120px] md:leading-0 xl:min-w-[137px] xl:text-5xl xl:text-[40px]",
               isDialog
                 ? "text-[24px] md:text-3xl xl:text-4xl xl:text-[40px]"
                 : "",

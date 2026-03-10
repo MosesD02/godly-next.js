@@ -71,7 +71,7 @@ export const getPhoneNumber = (city) => {
   }
 };
 
-const Footer = ({ form = true }) => {
+const Footer = ({ form = true, service }) => {
   return (
     <>
       <div className="paper-bg-16 bg-[#262424]">
@@ -139,7 +139,7 @@ const Footer = ({ form = true }) => {
             we specialize in window washing, room washing, soft washing, paver
             sealing, and more.
           </p> */}
-              <QuoteForm />
+              <QuoteForm service={service} />
             </div>
           )}
           <div

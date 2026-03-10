@@ -7,7 +7,6 @@ import {
   generateServiceHeroAlt,
   serviceMetaTitles,
 } from "@/data/metaTitles";
-import { servicesData } from "@/godlyComponents/servicesData";
 import Script from "next/script";
 
 // Generate metadata for service/city pages
@@ -62,9 +61,14 @@ export default async function LandingPage({ params }) {
     return <div>Missing service or city</div>;
   }
 
-  const serviceName = servicesData[service] || service.replace(/-/g, " ");
+  const serviceName =
+    serviceMetaTitles[service] ||
+    service.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
 
   // Structured data for service pages
+  const cityFormatted = (citiesMap[city] || city.replace(/-/g, " "))
+    .toLowerCase()
+    .replace(/\b\w/g, (l) => l.toUpperCase());
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -76,14 +80,14 @@ export default async function LandingPage({ params }) {
       telephone: "+1-555-GODLY-WIN",
       address: {
         "@type": "PostalAddress",
-        addressLocality: city,
+        addressLocality: cityFormatted,
         addressRegion: "FL",
         addressCountry: "US",
       },
     },
     areaServed: {
       "@type": "City",
-      name: city,
+      name: cityFormatted,
       addressRegion: "FL",
       addressCountry: "US",
     },
@@ -100,7 +104,7 @@ export default async function LandingPage({ params }) {
           __html: JSON.stringify(structuredData),
         }}
       />
-      <GodlyHome city={city} service={serviceName} />
+      <GodlyHome city={city} service={serviceName} serviceSlug={service} />
     </>
   );
 }

@@ -3,14 +3,14 @@ import React from "react";
 import "@/styles/fourstepprocess.css";
 import QuoteForm from "./quoteForm";
 import { useGodlyContext } from "@/context/godlyContext";
-import { generateHomeH1 } from "@/data/metaTitles";
+import { generateHomeH1, generateServiceH1 } from "@/data/metaTitles";
 
-const Hero = ({ service, source }) => {
+const Hero = ({ service, source, serviceSlug }) => {
   const { city } = useGodlyContext();
 
-  const formatCity = (city) => {
-    if (!city) return "South Florida";
-    return city
+  const formatCity = (cityVal) => {
+    if (!cityVal) return "South Florida";
+    return cityVal
       .toLowerCase()
       .split(" ")
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
@@ -41,10 +41,14 @@ const Hero = ({ service, source }) => {
               <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
             </div>
             <span className="font-marlton trim text-base tracking-[2.07px] text-[#FDE4C8] md:text-base xl:text-[20.704px]">
-              93 Reviews
+              157 Reviews
             </span>
           </div>
-          <h1 className="sr-only">{generateHomeH1(city)}</h1>
+          <h1 className="sr-only">
+            {serviceSlug && city
+              ? generateServiceH1(serviceSlug, city)
+              : generateHomeH1(city)}
+          </h1>
           <div
             className="flex flex-wrap items-center gap-4 xl:gap-8"
             role="heading"
@@ -66,21 +70,17 @@ const Hero = ({ service, source }) => {
               services In
             </span>
             <span className="font-marlton trim shrink-0 items-center gap-2 text-4xl font-normal tracking-[3px] text-white md:block md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
-              {city}
+              {formatCity(city)}
             </span> */}
             <h3 className="font-marlton trim w-full shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
-              {formatCity(city)}’s #1 Trusted Window Washers – Backed by Our
-              100% Satisfaction Guarantee
+              {formatCity(city)}’s #1 Trusted {service || "Window Washing"} Pros
+              – Backed by Our 100% Satisfaction Guarantee
             </h3>
           </div>
           <p className="font-['satoshi-regular'] text-sm font-medium text-white md:text-base xl:text-xl">
-            Get Spotless Windows + a FREE RainShield Treatment this{" "}
-            {new Date(
-              new Date().toLocaleString("en-US", {
-                timeZone: "America/New_York",
-              }),
-            ).toLocaleString("en-US", { month: "long" })}{" "}
-            Only.
+            {service
+              ? `Get a free quote for ${service} in ${formatCity(city)} – no pressure, just honest pricing.`
+              : `Get Spotless Windows + a FREE RainShield Treatment this ${new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" })).toLocaleString("en-US", { month: "long" })} Only.`}
           </p>
         </div>
         <QuoteForm service={service} source={source} />

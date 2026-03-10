@@ -85,7 +85,7 @@ export function generateCitySchema(citySlug) {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5",
-      reviewCount: "50",
+      reviewCount: "157",
     },
   };
 }

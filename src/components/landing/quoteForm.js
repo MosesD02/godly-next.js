@@ -7,6 +7,7 @@ import { format } from "date-fns";
 import QuoteButton from "@/components/quoteButton";
 import Airtable from "airtable";
 import { cn } from "@/lib/utils";
+import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 
 export default function QuoteForm({ isDialog, service, source }) {
   const [date, setDate] = useState();
@@ -181,6 +182,9 @@ export default function QuoteForm({ isDialog, service, source }) {
           }),
         },
       );
+
+      // n8n lead tracking (/landing - Google Ads PPC)
+      sendLeadWebhook(LEAD_WEBHOOKS.GOOGLE_ADS, formData.name, formData.phone);
 
       if (typeof window !== "undefined" && window.gtag) {
         const gtag = window.gtag;
