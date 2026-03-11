@@ -72,7 +72,7 @@ const Hero = ({ service, source, serviceSlug }) => {
             <span className="font-marlton trim shrink-0 items-center gap-2 text-4xl font-normal tracking-[3px] text-white md:block md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
               {formatCity(city)}
             </span> */}
-            <h3 className="font-marlton trim w-full shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+            <h3 className="font-marlton trim w-full shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px] leading-[100%] md:leading-normal">
               {formatCity(city)}’s #1 Trusted {service || "Window Washing"} Pros
               – Backed by Our 100% Satisfaction Guarantee
             </h3>
