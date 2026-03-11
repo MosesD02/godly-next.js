@@ -54,7 +54,7 @@ export default async function GodlyServices({ params }) {
     notFound();
   }
 
-  const relatedPosts = getRelatedBlogPosts(city, slug);
+  const relatedPosts = await getRelatedBlogPosts(city, slug);
 
   return <ServicesPage slug={slug} city={city} relatedPosts={relatedPosts} />;
 }
