@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(find /c/Users/itexp/moses-godly/src/app/\\\\[city\\\\] -type f 2>/dev/null)",
+      "Bash(grep -l \"<h3\" /c/Users/itexp/moses-godly/src/components/landing/*.js)"
     ]
   }
 }

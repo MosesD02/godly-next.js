@@ -183,8 +183,11 @@ export default function QuoteForm({ isDialog, service, source }) {
         },
       );
 
-      // n8n lead tracking (/landing - Google Ads PPC)
-      sendLeadWebhook(LEAD_WEBHOOKS.GOOGLE_ADS, formData.name, formData.phone);
+      // n8n lead tracking: all /landing/* pages (city + service/city) → same webhook
+      const webhook = LEAD_WEBHOOKS.GOOGLE_ADS;
+      const pageUrl =
+        typeof window !== "undefined" ? window.location.href : null;
+      sendLeadWebhook(webhook, formData.name, formData.phone, pageUrl);
 
       if (typeof window !== "undefined" && window.gtag) {
         const gtag = window.gtag;

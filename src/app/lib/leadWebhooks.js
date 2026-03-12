@@ -3,14 +3,14 @@
  * Each form sends name + phone (digits only) as JSON POST on submit.
  *
  * Form mapping:
- * - /landing/[service]/[city] → Google Ads (PPC)
+ * - /landing/[city], /landing/[service]/[city] → All landing city pages (Fort Lauderdale, Boca Raton, Weston, etc.)
  * - / (homepage) → Main website
  * - /fort-lauderdale, /fort-lauderdale/* → Fort Lauderdale GBP
  * - /boca-raton, /boca-raton/* → Boca Raton GBP
  * - /weston, /weston/* → Weston GBP
  */
 export const LEAD_WEBHOOKS = {
-  /** /landing - Google Ads (PPC) landing page */
+  /** /landing - All landing city pages (/landing/fort-lauderdale, /landing/boca-raton, /landing/[service]/[city], etc.) */
   GOOGLE_ADS: "https://removedfast.app.n8n.cloud/webhook/72feec39-8655-40da-8886-52a44f21fe5a",
   /** Fort Lauderdale GBP city pages */
   FORT_LAUDERDALE: "https://removedfast.app.n8n.cloud/webhook/8567e870-bc81-4461-9b42-41900d6e9607",
@@ -27,10 +27,12 @@ export const LEAD_WEBHOOKS = {
  * @param {string} url - Webhook URL
  * @param {string} name - Lead name
  * @param {string} phone - Phone (will be normalized to digits only)
+ * @param {string} [pageUrl] - Optional page URL for workflow routing (e.g. godlywindows.com/landing/fort-lauderdale)
  */
-export async function sendLeadWebhook(url, name, phone) {
+export async function sendLeadWebhook(url, name, phone, pageUrl) {
   const digitsOnly = (phone || "").replace(/\D/g, "");
   const payload = { name: (name || "").trim(), phone: digitsOnly };
+  if (pageUrl) payload.pageUrl = pageUrl;
 
   if (!payload.name || !payload.phone) return;
 
