@@ -75,6 +75,17 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
+        <Script strategy="afterInteractive">
+          {`window.helpcrunchSettings = {
+ organization: 'godlywindows',
+ appId: 'db6ee22c-efdb-4487-be2b-33564fc9a13d',
+};`}
+        </Script>
+
+        <Script strategy="afterInteractive">
+          {`(function(w,d){var hS=w.helpcrunchSettings;if(!hS||!hS.organization){return;}var widgetSrc='https://embed.helpcrunch.com/sdk.js';w.HelpCrunch=function(){w.HelpCrunch.q.push(arguments)};w.HelpCrunch.q=[];function r(){if (d.querySelector('script[src="' + widgetSrc + '"')) { return; }var s=d.createElement('script');s.async=1;s.type='text/javascript';s.src=widgetSrc;(d.body||d.head).appendChild(s);}if(d.readyState === 'complete'||hS.loadImmediately){r();} else if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}})(window, document)`}
+        </Script>
+
         {/* Google tag (gtag.js) */}
         <Script
           strategy="afterInteractive"
