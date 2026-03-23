@@ -3,7 +3,17 @@
     "allow": [
       "Bash(ls:*)",
       "Bash(find /c/Users/itexp/moses-godly/src/app/\\\\[city\\\\] -type f 2>/dev/null)",
-      "Bash(grep -l \"<h3\" /c/Users/itexp/moses-godly/src/components/landing/*.js)"
+      "Bash(grep -l \"<h3\" /c/Users/itexp/moses-godly/src/components/landing/*.js)",
+      "Bash(grep -A 20 \"generateStaticParams\" /c/Users/itexp/moses-godly/src/app/[city]/page.js)",
+      "Bash(sed 's/\"\"\"\"//g')",
+      "Bash(grep -E '^\\\\s+\"\"\"\"[a-z-]+\"\"\"\": \\\\{$' /c/Users/itexp/moses-godly/src/data/customMetaData.js)",
+      "Bash(sed 's/^[[:space:]]*//')",
+      "Bash(grep -E '^\\\\s+\"\"\"\"[a-z-]+\"\"\"\": \\\\{\\\\s*$' /c/Users/itexp/moses-godly/src/data/customMetaData.js)",
+      "Bash(sed 's/\"\"\"\": .*//')",
+      "Bash(sed 's/[[:space:]]*\"\"\"\"//')",
+      "Bash(grep -E '^  [a-z-]+: \\\\{$' /c/Users/itexp/moses-godly/src/data/customMetaData.js)",
+      "Bash(sed 's/[[:space:]]*//')",
+      "Bash(sed 's/\"\"\"\": *$//')"
     ]
   }
 }

@@ -50,8 +50,8 @@ export default function GodlyHome({ city }) {
       setCity(formattedCity);
       document.cookie = `selectedCity=${city};path=/;max-age=31536000`;
     } else if (!city) {
-      // Home page (/): no city in URL – sync context from cookie
-      setCity(getCityFromCookie());
+      // Home page (/): always show SOUTH FLORIDA regardless of cookie
+      setCity("SOUTH FLORIDA");
     }
 
     // Track main page view
