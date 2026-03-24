@@ -17,6 +17,7 @@ import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
 import { usePathname } from "next/navigation";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
+import Link from "next/link";
 
 const servicesList = [
   { id: "exterior-window-cleaning", name: "Exterior Window Cleaning" },
@@ -685,11 +686,17 @@ export default function QuoteForm({ isDialog }) {
             <label
               htmlFor="agree"
               className={cn(
-                "font-['satoshi-regular'] text-sm md:text-base xl:text-xl",
+                "pr-4 font-['satoshi-regular'] text-xs md:text-sm xl:text-base",
               )}
             >
-              I agree to get information text messages from Godly about my
-              estimate and project
+              By checking this box, I agree to receive SMS text messages from
+              Godly Windows & Wash Co. regarding my appointment confirmations,
+              job updates, and service reminders. Message & data rates may
+              apply. Reply STOP to opt out. View our{" "}
+              <Link href="/privacy-policy" className="underline!">
+                Privacy Policy
+              </Link>
+              .
             </label>
           </div>
 
