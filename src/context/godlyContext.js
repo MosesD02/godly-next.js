@@ -27,8 +27,8 @@ export function AppWrapper({ children }) {
       setCity(cityFromSlug || "SOUTH FLORIDA");
       return;
     }
-    // Home page (/): always show SOUTH FLORIDA regardless of cookie
-    if (pathname === "/") {
+    // Home (/) and main blog index (/blog): SOUTH FLORIDA in header regardless of cookie
+    if (pathname === "/" || pathname === "/blog") {
       setCity("SOUTH FLORIDA");
       return;
     }

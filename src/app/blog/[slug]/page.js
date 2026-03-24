@@ -10,6 +10,10 @@ import BlogPostPage from "@/godlyComponents/blog/BlogPostPage";
 import BlogIndex from "@/godlyComponents/blog/BlogIndex";
 import { BASE_URL } from "@/app/lib/constants";
 import { citiesMap } from "@/data/cities";
+import {
+  paginateBlogPosts,
+  redirectIfBlogListPageMismatch,
+} from "@/lib/blog-pagination";
 
 function toCityTitle(citySlug) {
   return citiesMap[citySlug]
@@ -25,10 +29,12 @@ export async function generateStaticParams() {
     getAllSanitySlugs(),
     getSanityCitySlugs(),
   ]);
-  return [
-    ...postSlugs.map((slug) => ({ slug })),
-    ...citySlugs.map((slug) => ({ slug })),
-  ];
+  const allSlugs = new Set([
+    ...postSlugs,
+    ...citySlugs,
+    ...Object.keys(citiesMap),
+  ]);
+  return [...allSlugs].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }) {
@@ -85,14 +91,29 @@ export async function generateMetadata({ params }) {
 
 export const revalidate = 60;
 
-export default async function BlogPostRoute({ params }) {
+export default async function BlogPostRoute({ params, searchParams }) {
   const { slug } = await params;
+  const sp = await searchParams;
 
   // City blog index
   if (citiesMap[slug]) {
-    const posts = await getSanityPostsByCity(slug);
+    const allPosts = await getSanityPostsByCity(slug);
     const cityName = toCityTitle(slug);
-    return <BlogIndex posts={posts} cityName={cityName} />;
+    const { pagePosts, currentPage, totalPages } = paginateBlogPosts(
+      allPosts,
+      sp?.page,
+    );
+    const listBase = `/blog/${slug}`;
+    redirectIfBlogListPageMismatch(listBase, sp?.page, currentPage, totalPages);
+    return (
+      <BlogIndex
+        posts={pagePosts}
+        cityName={cityName}
+        basePath={listBase}
+        currentPage={currentPage}
+        totalPages={totalPages}
+      />
+    );
   }
 
   // Individual blog post

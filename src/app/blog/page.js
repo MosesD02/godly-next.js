@@ -1,6 +1,9 @@
-import { cookies } from "next/headers";
 import { citiesMap } from "@/data/cities";
-import { getSanityPostsByCity } from "@/data/sanity-content";
+import { getAllSanityPosts } from "@/data/sanity-content";
+import {
+  paginateBlogPosts,
+  redirectIfBlogListPageMismatch,
+} from "@/lib/blog-pagination";
 import BlogIndex from "@/godlyComponents/blog/BlogIndex";
 
 export const metadata = {
@@ -20,12 +23,23 @@ export const metadata = {
 
 export const revalidate = 60;
 
-export default async function BlogPage() {
-  const cookieStore = await cookies();
-  const savedCity = cookieStore.get("selectedCity")?.value;
-  const citySlug =
-    savedCity && citiesMap[savedCity] ? savedCity : "south-florida";
-  const cityName = citiesMap[citySlug];
-  const posts = await getSanityPostsByCity(citySlug);
-  return <BlogIndex posts={posts} cityName={cityName} />;
+export default async function BlogPage({ searchParams }) {
+  const sp = await searchParams;
+  // Same UX as home (/): show SOUTH FLORIDA in the UI, list every city's posts
+  const cityName = citiesMap["south-florida"];
+  const allPosts = await getAllSanityPosts();
+  const { pagePosts, currentPage, totalPages } = paginateBlogPosts(
+    allPosts,
+    sp?.page,
+  );
+  redirectIfBlogListPageMismatch("/blog", sp?.page, currentPage, totalPages);
+  return (
+    <BlogIndex
+      posts={pagePosts}
+      cityName={cityName}
+      basePath="/blog"
+      currentPage={currentPage}
+      totalPages={totalPages}
+    />
+  );
 }
