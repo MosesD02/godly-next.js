@@ -41,34 +41,7 @@ const FourStepProcess = () => {
         ],
       };
     }
-    if (city === "MIAMI") {
-      return {
-        mainHeading:
-          "Our Exclusive RainShield™ Glass Shielding System in Miami",
-        steps: [
-          {
-            number: "01",
-            title: "Scrub",
-            text: "We thoroughly scrub every inch of the glass using precision tools to break down stubborn dirt, smudges, and built-up grime.",
-          },
-          {
-            number: "02",
-            title: "Squeegee",
-            text: "Our commercial-grade squeegees remove all moisture and debris, delivering a streak-free, ultra-clear finish every time.",
-          },
-          {
-            number: "03",
-            title: "Detail",
-            text: "We meticulously wipe edges, frames, and corners to eliminate drip marks and ensure a polished, professional result from every angle.",
-          },
-          {
-            number: "04",
-            title: "RainShield Tech",
-            text: "We apply our exclusive RainShield™ formula; an invisible barrier that repels rain and residue, helping your windows stay cleaner for longer.",
-          },
-        ],
-      };
-    }
+
     if (city === "FORT LAUDERDALE") {
       return {
         mainHeading:
@@ -542,34 +515,6 @@ const FourStepProcess = () => {
         ],
       };
     }
-    if (city === "WEST PALM BEACH") {
-      return {
-        mainHeading:
-          "RainShield™ Glass Protection Built for West Palm Beach Properties",
-        steps: [
-          {
-            number: "01",
-            title: "Scrub",
-            text: "We remove coastal buildup, smog film, and grime with a detailed glass scrub that preps each surface for a lasting clean.",
-          },
-          {
-            number: "02",
-            title: "Squeegee",
-            text: "We use pro-level squeegees to eliminate all moisture and streaks, ensuring a perfectly clear finish.",
-          },
-          {
-            number: "03",
-            title: "Detail",
-            text: "Our team hand-wipes frames, sills, and corners to deliver a high-polish result with no missed spots.",
-          },
-          {
-            number: "04",
-            title: "RainShield Tech",
-            text: "We finish with RainShield™—our invisible barrier that helps resist rain, salt spray, and dust so your windows stay cleaner longer.",
-          },
-        ],
-      };
-    }
     if (city === "LAUDERDALE-BY-THE-SEA") {
       return {
         mainHeading:
@@ -807,7 +752,9 @@ const FourStepProcess = () => {
         <div className="heading relative flex flex-col gap-0">
           <div className="relative flex flex-col items-center justify-center gap-0">
             {city === "PARKLAND" ||
-            city === "MIAMI" ||
+            city === "COCONUT CREEK" ||
+            city === "COOPER CITY" ||
+            city === "WEST PARK" ||
             city === "FORT LAUDERDALE" ||
             city === "LIGHTHOUSE POINT" ||
             city === "SOUTHWEST RANCHES" ||
@@ -825,7 +772,6 @@ const FourStepProcess = () => {
             city === "HOLLYWOOD" ||
             city === "MIRAMAR" ||
             city === "POMPANO BEACH" ||
-            city === "WEST PALM BEACH" ||
             city === "LAUDERDALE-BY-THE-SEA" ||
             city === "OAKLAND PARK" ||
             city === "WESTON" ||

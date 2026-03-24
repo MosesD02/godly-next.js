@@ -18,11 +18,11 @@ export const cityPhoneMap = {
     "coral-springs",
     "sunrise",
     "hillsboro-beach",
+    "coconut-creek",
   ],
   "(561) 826-4461": [
     "boca-raton",
     "delray-beach",
-    "west-palm-beach",
     "royal-palm-beach",
   ],
   "(954) 738-3421": [
@@ -32,7 +32,8 @@ export const cityPhoneMap = {
     "pembroke-pines",
     "plantation",
     "southwest-ranches",
-    "miami",
+    "cooper-city",
+    "west-park",
   ],
 };
 

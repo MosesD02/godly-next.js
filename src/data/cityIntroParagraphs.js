@@ -8,6 +8,10 @@ export const cityIntroParagraphs = {
 
   "boca-raton": `Boca Raton homes deal with salt air from Atlantic winds, hard water deposits, and year-round pollen from mature tree canopies. We service communities throughout East Boca, West Boca, Broken Sound, and Woodfield Country Club. If you have impact glass, our team knows how to clean it without causing damage.`,
 
+  "coconut-creek": `We serve homeowners throughout Coconut Creek and the greater Fort Lauderdale area. Fully insured, locally owned, and 5-star rated. Call (954) 852-5326 for a free estimate.`,
+
+  "cooper-city": `Godly Windows serves Cooper City and the surrounding Weston area. From window cleaning to pressure washing and paver sealing, our team gets it done right. Call (954) 738-3421 for a free estimate.`,
+
   "coral-springs": `We serve homeowners throughout Coral Springs and the greater Fort Lauderdale area. Same 5-star service, same team, available 7 days a week. Call (954) 852-5326 for a free estimate.`,
 
   davie: `Godly Windows serves Davie and the surrounding Weston area. From window cleaning to pressure washing and paver sealing, we handle it all. Call (954) 738-3421 for a free estimate.`,
@@ -28,7 +32,6 @@ export const cityIntroParagraphs = {
 
   margate: `Godly Windows serves Margate and the surrounding Fort Lauderdale area. From window cleaning to house washing, we handle every job with care. Call (954) 852-5326 for a free estimate.`,
 
-  miami: `We serve homeowners throughout Miami and the surrounding area. Fully insured, locally owned, and available 7 days a week. Call (954) 738-3421 for a free estimate.`,
 
   miramar: `Godly Windows serves Miramar and the surrounding Weston area. Whether it's window cleaning, pressure washing, or paver sealing, our team gets it done right. Call (954) 738-3421.`,
 
@@ -50,5 +53,5 @@ export const cityIntroParagraphs = {
 
   tamarac: `Godly Windows serves Tamarac and the surrounding Fort Lauderdale area. Window cleaning, pressure washing, gutter cleaning — we do it all. Call (954) 852-5326 for a free estimate.`,
 
-  "west-palm-beach": `We serve homeowners throughout West Palm Beach and the surrounding Boca Raton area. Fully insured, locally owned, and 5-star rated. Call (561) 826-4461 for a free estimate.`,
+  "west-park": `We serve homeowners throughout West Park and the surrounding Weston area. Fully insured, locally owned, and available 7 days a week. Call (954) 738-3421 for a free estimate.`,
 };

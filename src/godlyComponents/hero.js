@@ -19,10 +19,25 @@ const Hero = () => {
           "Window Cleaning & Exterior Washing Services in Parkland, FL",
       };
     }
-    if (city === "MIAMI") {
+    if (city === "COCONUT CREEK") {
       return {
-        heading: "Professional Window Cleaning in Miami, FL",
-        subheading: "Window Cleaning & Exterior Washing Services in Miami, FL",
+        heading: "Professional Window Cleaning in Coconut Creek, FL",
+        subheading:
+          "Window Cleaning & Exterior Washing Services in Coconut Creek, FL",
+      };
+    }
+    if (city === "COOPER CITY") {
+      return {
+        heading: "Professional Window Cleaning in Cooper City, FL",
+        subheading:
+          "Window Cleaning & Exterior Washing Services in Cooper City, FL",
+      };
+    }
+    if (city === "WEST PARK") {
+      return {
+        heading: "Professional Window Cleaning in West Park, FL",
+        subheading:
+          "Window Cleaning & Exterior Washing Services in West Park, FL",
       };
     }
     if (city === "FORT LAUDERDALE") {
@@ -143,13 +158,6 @@ const Hero = () => {
           "Window Cleaning & Exterior Washing Services in Pompano Beach, FL",
       };
     }
-    if (city === "WEST PALM BEACH") {
-      return {
-        heading: "Professional Window Cleaning in West Palm Beach, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in West Palm Beach, FL",
-      };
-    }
     if (city === "LAUDERDALE-BY-THE-SEA") {
       return {
         heading: "Professional Window Cleaning in Lauderdale-by-the-Sea, FL",
@@ -225,7 +233,9 @@ const Hero = () => {
           </div>
           <h1 className="sr-only">{generateHomeH1(city)}</h1>
           {city === "PARKLAND" ||
-          city === "MIAMI" ||
+          city === "COCONUT CREEK" ||
+          city === "COOPER CITY" ||
+          city === "WEST PARK" ||
           city === "FORT LAUDERDALE" ||
           city === "LIGHTHOUSE POINT" ||
           city === "SOUTHWEST RANCHES" ||
@@ -243,7 +253,6 @@ const Hero = () => {
           city === "HOLLYWOOD" ||
           city === "MIRAMAR" ||
           city === "POMPANO BEACH" ||
-          city === "WEST PALM BEACH" ||
           city === "LAUDERDALE-BY-THE-SEA" ||
           city === "OAKLAND PARK" ||
           city === "WESTON" ||

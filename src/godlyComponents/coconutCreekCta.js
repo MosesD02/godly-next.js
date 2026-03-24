@@ -4,10 +4,10 @@ import { useGodlyContext } from "@/context/godlyContext";
 import { getPhoneNumber } from "./footer";
 import Link from "next/link";
 
-const WestPalmBeachCta = () => {
+const CoconutCreekCta = () => {
   const { city } = useGodlyContext();
 
-  if (city !== "WEST PALM BEACH") return null;
+  if (city !== "COCONUT CREEK") return null;
 
   const phoneNumber = getPhoneNumber(city);
   const formattedPhoneNumber = phoneNumber.replace(/\D/g, "");
@@ -16,18 +16,18 @@ const WestPalmBeachCta = () => {
     <div className="paper-bg-16 flex flex-col items-center justify-center gap-6 bg-[#262424] px-8 py-20">
       <div className="max-w-4xl text-center">
         <h2 className="mb-6 text-3xl font-bold text-[#FDE4C8] md:text-4xl lg:text-5xl">
-          Expert Window & Exterior Cleaning in West Palm Beach
+          Ready for Sparkling Clean Windows in Coconut Creek?
         </h2>
         <p className="mb-8 text-lg text-white md:text-xl">
-          Whether you're in El Cid, Northwood, or CityPlace—{" "}
+          Join hundreds of satisfied Coconut Creek customers who trust{" "}
           <Link
             href="https://godlywindows.com/"
             className="underline decoration-current decoration-solid transition-colors hover:text-[#FDE4C8]"
           >
             Godly Windows
           </Link>{" "}
-          is West Palm Beach's trusted name for crystal-clear windows and
-          exterior surface care.
+          for professional window cleaning and exterior services. Fast response,
+          honest pricing, and guaranteed results.
         </p>
         <div className="flex flex-col items-center gap-2">
           <p className="text-sm text-[#FDE4C8]">
@@ -45,4 +45,4 @@ const WestPalmBeachCta = () => {
   );
 };
 
-export default WestPalmBeachCta;
+export default CoconutCreekCta;

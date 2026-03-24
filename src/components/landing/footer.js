@@ -9,6 +9,8 @@ import QuoteForm from "./quoteForm";
 
 const citiesData = [
   "BOCA RATON",
+  "COCONUT CREEK",
+  "COOPER CITY",
   "CORAL SPRINGS",
   "DAVIE",
   "DEERFIELD BEACH",
@@ -20,7 +22,6 @@ const citiesData = [
   "LAUDERDALE-BY-THE_SEA",
   "LIGHTHOUSE POINT",
   "MARGATE",
-  "MIAMI",
   "MIRAMAR",
   "OAKLAND PARK",
   "PARKLAND",
@@ -31,7 +32,7 @@ const citiesData = [
   "SOUTHWEST RANCHES",
   "SUNRISE",
   "TAMARAC",
-  "WEST PALM BEACH",
+  "WEST PARK",
   "WESTON",
 ];
 
@@ -48,12 +49,12 @@ export const getPhoneNumber = (city) => {
       "LIGHTHOUSE POINT",
       "LAUDERDALE-BY-THE-SEA",
       "SOUTH FLORIDA",
+      "COCONUT CREEK",
     ].includes(cityToCheck)
   ) {
     return "(954) 852-5326";
   } else if (
     [
-      "WEST PALM BEACH",
       "DELRAY BEACH",
       "BOCA RATON",
       "TAMARAC",
@@ -91,8 +92,8 @@ const Footer = ({ form = true, service }) => {
               We
             </span>
           </div>
-          <div className="grid grid-cols-2 grid-rows-13 px-4 py-[60px] md:grid-cols-5 md:grid-rows-5 md:px-0">
-            {citiesData.slice(0, 25).map((city, index) => (
+          <div className="grid grid-cols-2 px-4 py-[60px] md:grid-cols-4 md:px-0">
+            {citiesData.map((city, index) => (
               <Link
                 key={index}
                 href={`/${city.toLowerCase().replace(/\s+/g, "-").replace(/_/g, "-")}`}

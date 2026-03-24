@@ -13,7 +13,9 @@ import Hero from "./hero";
 import WebsiteLayout from "./websiteLayout";
 import TeamGallery from "./teamGallery";
 import ParklandCta from "./parklandCta";
-import MiamiCta from "./miamiCta";
+import CoconutCreekCta from "./coconutCreekCta";
+import CooperCityCta from "./cooperCityCta";
+import WestParkCta from "./westParkCta";
 import FortLauderdaleCta from "./fortLauderdaleCta";
 import WestonCta from "./westonCta";
 import LighthousePointCta from "./lighthousePointCta";
@@ -32,7 +34,6 @@ import DeerfieldBeachCta from "./deerfieldBeachCta";
 import HollywoodCta from "./hollywoodCta";
 import MiramarCta from "./miramarCta";
 import PompanoBeachCta from "./pompanoBeachCta";
-import WestPalmBeachCta from "./westPalmBeachCta";
 import LauderdaleByTheSeaCta from "./lauderdaleByTheSeaCta";
 import OaklandParkCta from "./oaklandParkCta";
 import RoyalPalmBeachCta from "./royalPalmBeachCta";
@@ -79,7 +80,9 @@ export default function GodlyHome({ city }) {
       <Savings />
       <Location city={city} />
       <ParklandCta />
-      <MiamiCta />
+      <CoconutCreekCta />
+      <CooperCityCta />
+      <WestParkCta />
       <FortLauderdaleCta />
       <WestonCta />
       <LighthousePointCta />
@@ -98,7 +101,6 @@ export default function GodlyHome({ city }) {
       <HollywoodCta />
       <MiramarCta />
       <PompanoBeachCta />
-      <WestPalmBeachCta />
       <LauderdaleByTheSeaCta />
       <OaklandParkCta />
       <RoyalPalmBeachCta />

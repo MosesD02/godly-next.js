@@ -11,19 +11,16 @@ const CityTags = () => {
   const cities = useMemo(() => {
     return [
       "LAUDERDALE-BY-THE-SEA",
-      "WELLINGTON",
       "PEMBROKE PINES",
       "DEERFIELD BEACH",
-      "NORTH PALM BEACH",
       "COCONUT CREEK",
+      "COOPER CITY",
       "CORAL SPRINGS",
       "POMPANO BEACH",
       "TAMARAC",
       "HILLSBORO BEACH",
-      "MIAMI",
       "ROYAL PALM BEACH",
       "MARGATE",
-      "JUPITER",
       "BOCA RATON",
       "OAKLAND PARK",
       "SUNRISE",
@@ -33,12 +30,12 @@ const CityTags = () => {
       "PLANTATION",
       "DAVIE",
       "WESTON",
-      "PALM BEACH GARDENS",
+      "WEST PARK",
       "MIRAMAR",
-      "WEST PALM BEACH",
       "HOLLYWOOD",
       "DELRAY BEACH",
       "HALLANDALE BEACH",
+      "PARKLAND",
     ];
   }, []);
 

@@ -201,21 +201,6 @@
 - https://godlywindows.com/landing/solar-panel-cleaning/margate
 - https://godlywindows.com/landing/paver-sealing/margate
 
-## Miami
-
-- https://godlywindows.com/landing/exterior-window-cleaning/miami
-- https://godlywindows.com/landing/interior-window-cleaning/miami
-- https://godlywindows.com/landing/gutter-cleaning/miami
-- https://godlywindows.com/landing/house-washing/miami
-- https://godlywindows.com/landing/roof-washing/miami
-- https://godlywindows.com/landing/pressure-washing/miami
-- https://godlywindows.com/landing/high-dusting/miami
-- https://godlywindows.com/landing/light-fixture-cleaning/miami
-- https://godlywindows.com/landing/screen-cleaning/miami
-- https://godlywindows.com/landing/skylight-cleaning/miami
-- https://godlywindows.com/landing/solar-panel-cleaning/miami
-- https://godlywindows.com/landing/paver-sealing/miami
-
 ## Miramar
 
 - https://godlywindows.com/landing/exterior-window-cleaning/miramar
@@ -366,25 +351,55 @@
 - https://godlywindows.com/landing/solar-panel-cleaning/tamarac
 - https://godlywindows.com/landing/paver-sealing/tamarac
 
-## West Palm Beach
+## Coconut Creek
 
-- https://godlywindows.com/landing/exterior-window-cleaning/west-palm-beach
-- https://godlywindows.com/landing/interior-window-cleaning/west-palm-beach
-- https://godlywindows.com/landing/gutter-cleaning/west-palm-beach
-- https://godlywindows.com/landing/house-washing/west-palm-beach
-- https://godlywindows.com/landing/roof-washing/west-palm-beach
-- https://godlywindows.com/landing/pressure-washing/west-palm-beach
-- https://godlywindows.com/landing/high-dusting/west-palm-beach
-- https://godlywindows.com/landing/light-fixture-cleaning/west-palm-beach
-- https://godlywindows.com/landing/screen-cleaning/west-palm-beach
-- https://godlywindows.com/landing/skylight-cleaning/west-palm-beach
-- https://godlywindows.com/landing/solar-panel-cleaning/west-palm-beach
-- https://godlywindows.com/landing/paver-sealing/west-palm-beach
+- https://godlywindows.com/landing/exterior-window-cleaning/coconut-creek
+- https://godlywindows.com/landing/interior-window-cleaning/coconut-creek
+- https://godlywindows.com/landing/gutter-cleaning/coconut-creek
+- https://godlywindows.com/landing/house-washing/coconut-creek
+- https://godlywindows.com/landing/roof-washing/coconut-creek
+- https://godlywindows.com/landing/pressure-washing/coconut-creek
+- https://godlywindows.com/landing/high-dusting/coconut-creek
+- https://godlywindows.com/landing/light-fixture-cleaning/coconut-creek
+- https://godlywindows.com/landing/screen-cleaning/coconut-creek
+- https://godlywindows.com/landing/skylight-cleaning/coconut-creek
+- https://godlywindows.com/landing/solar-panel-cleaning/coconut-creek
+- https://godlywindows.com/landing/paver-sealing/coconut-creek
+
+## Cooper City
+
+- https://godlywindows.com/landing/exterior-window-cleaning/cooper-city
+- https://godlywindows.com/landing/interior-window-cleaning/cooper-city
+- https://godlywindows.com/landing/gutter-cleaning/cooper-city
+- https://godlywindows.com/landing/house-washing/cooper-city
+- https://godlywindows.com/landing/roof-washing/cooper-city
+- https://godlywindows.com/landing/pressure-washing/cooper-city
+- https://godlywindows.com/landing/high-dusting/cooper-city
+- https://godlywindows.com/landing/light-fixture-cleaning/cooper-city
+- https://godlywindows.com/landing/screen-cleaning/cooper-city
+- https://godlywindows.com/landing/skylight-cleaning/cooper-city
+- https://godlywindows.com/landing/solar-panel-cleaning/cooper-city
+- https://godlywindows.com/landing/paver-sealing/cooper-city
+
+## West Park
+
+- https://godlywindows.com/landing/exterior-window-cleaning/west-park
+- https://godlywindows.com/landing/interior-window-cleaning/west-park
+- https://godlywindows.com/landing/gutter-cleaning/west-park
+- https://godlywindows.com/landing/house-washing/west-park
+- https://godlywindows.com/landing/roof-washing/west-park
+- https://godlywindows.com/landing/pressure-washing/west-park
+- https://godlywindows.com/landing/high-dusting/west-park
+- https://godlywindows.com/landing/light-fixture-cleaning/west-park
+- https://godlywindows.com/landing/screen-cleaning/west-park
+- https://godlywindows.com/landing/skylight-cleaning/west-park
+- https://godlywindows.com/landing/solar-panel-cleaning/west-park
+- https://godlywindows.com/landing/paver-sealing/west-park
 
 ---
 
 ## Summary
 
 - **Total Services:** 12
-- **Total Cities:** 25
-- **Total Landing Pages:** 300
+- **Total Cities:** 22
+- **Total Landing Pages:** 264

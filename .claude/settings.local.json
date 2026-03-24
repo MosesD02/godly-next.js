@@ -13,7 +13,11 @@
       "Bash(sed 's/[[:space:]]*\"\"\"\"//')",
       "Bash(grep -E '^  [a-z-]+: \\\\{$' /c/Users/itexp/moses-godly/src/data/customMetaData.js)",
       "Bash(sed 's/[[:space:]]*//')",
-      "Bash(sed 's/\"\"\"\": *$//')"
+      "Bash(sed 's/\"\"\"\": *$//')",
+      "Bash(node -c /c/Users/itexp/moses-godly/src/godlyComponents/quoteForm.js)",
+      "Bash(node -c /c/Users/itexp/moses-godly/src/components/landing/quoteForm.js)",
+      "Bash(grep -r -i \"miami\\\\|west.palm\" /c/Users/itexp/moses-godly/src --include=*.js --include=*.jsx --include=*.ts --include=*.tsx --include=*.json --include=*.md)",
+      "Bash(grep:*)"
     ]
   }
 }

@@ -14,6 +14,8 @@ import SectionButton from "@/components/sectionButton";
 
 const citiesData = [
   "BOCA RATON",
+  "COCONUT CREEK",
+  "COOPER CITY",
   "CORAL SPRINGS",
   "DAVIE",
   "DEERFIELD BEACH",
@@ -25,7 +27,6 @@ const citiesData = [
   "LAUDERDALE-BY-THE_SEA",
   "LIGHTHOUSE POINT",
   "MARGATE",
-  "MIAMI",
   "MIRAMAR",
   "OAKLAND PARK",
   "PARKLAND",
@@ -36,7 +37,7 @@ const citiesData = [
   "SOUTHWEST RANCHES",
   "SUNRISE",
   "TAMARAC",
-  "WEST PALM BEACH",
+  "WEST PARK",
   "WESTON",
 ];
 
@@ -52,12 +53,12 @@ const getAddress = (city) => {
       "SUNRISE",
       "LIGHTHOUSE POINT",
       "LAUDERDALE-BY-THE-SEA",
+      "COCONUT CREEK",
     ].includes(cityToCheck)
   ) {
     return "3315 E Oakland Park Blvd. Suite 204\nFt. Lauderdale, FL 33308";
   } else if (
     [
-      "WEST PALM BEACH",
       "DELRAY BEACH",
       "BOCA RATON",
       "TAMARAC",
@@ -90,19 +91,18 @@ export const getPhoneNumber = (city) => {
       "LIGHTHOUSE POINT",
       "LAUDERDALE-BY-THE-SEA",
       "SOUTH FLORIDA",
+      "COCONUT CREEK",
     ].includes(cityToCheck)
   ) {
     return "(954) 852-5326";
   } else if (
     [
-      "WEST PALM BEACH",
       "DELRAY BEACH",
       "BOCA RATON",
       "TAMARAC",
       "MARGATE",
       "CORAL SPRINGS",
       "PARKLAND",
-      "PEMBROKE PINES",
       "ROYAL PALM BEACH",
       "DEERFIELD BEACH",
       "HILLSBORO BEACH",
@@ -113,9 +113,11 @@ export const getPhoneNumber = (city) => {
     [
       "WESTON",
       "MIRAMAR",
+      "PEMBROKE PINES",
       "SOUTHWEST RANCHES",
       "HALLANDALE BEACH",
-      "MIAMI",
+      "COOPER CITY",
+      "WEST PARK",
     ].includes(cityToCheck)
   ) {
     return "(954) 738-3421";
@@ -166,8 +168,8 @@ const Footer = () => {
             SERVE
           </h1>
         </div>
-        <div className="grid grid-cols-2 grid-rows-13 px-4 py-[60px] md:grid-cols-5 md:grid-rows-5">
-          {citiesData.slice(0, 25).map((city, index) => (
+        <div className="grid grid-cols-2 px-4 py-[60px] md:grid-cols-4">
+          {citiesData.map((city, index) => (
             <Link
               key={index}
               href={`/${city.toLowerCase().replace(/\s+/g, "-").replace(/_/g, "-")}`}
@@ -322,11 +324,7 @@ const Footer = () => {
               Beach, FL
             </p>
           )}
-          {city === "MIAMI" && (
-            <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in Miami, FL
-            </p>
-          )}
+
           {city === "CORAL SPRINGS" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
               Expert Window Cleaning, House Washing & Roof Cleaning in Coral
@@ -381,12 +379,6 @@ const Footer = () => {
               FL
             </p>
           )}
-          {city === "WEST PALM BEACH" && (
-            <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
-              Expert Window Cleaning, House Washing & Roof Cleaning in West Palm
-              Beach, FL
-            </p>
-          )}
           {city === "LAUDERDALE-BY-THE-SEA" && (
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
               Expert Window Cleaning, House Washing & Roof Cleaning in
@@ -403,6 +395,24 @@ const Footer = () => {
             <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
               Expert Window Cleaning, House Washing & Roof Cleaning in Royal
               Palm Beach, FL
+            </p>
+          )}
+          {city === "COCONUT CREEK" && (
+            <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
+              Expert Window Cleaning, House Washing & Roof Cleaning in Coconut
+              Creek, FL
+            </p>
+          )}
+          {city === "COOPER CITY" && (
+            <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
+              Expert Window Cleaning, House Washing & Roof Cleaning in Cooper
+              City, FL
+            </p>
+          )}
+          {city === "WEST PARK" && (
+            <p className="text-center font-['satoshi-regular'] text-lg text-white/90 md:text-xl">
+              Expert Window Cleaning, House Washing & Roof Cleaning in West
+              Park, FL
             </p>
           )}
           {city !== "BOCA RATON" && city !== "WESTON" && (

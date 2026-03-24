@@ -1,6 +1,8 @@
 // Cities mapping for SEO and routing
 export const citiesMap = {
   "boca-raton": "BOCA RATON",
+  "coconut-creek": "COCONUT CREEK",
+  "cooper-city": "COOPER CITY",
   "coral-springs": "CORAL SPRINGS",
   davie: "DAVIE",
   "deerfield-beach": "DEERFIELD BEACH",
@@ -12,7 +14,7 @@ export const citiesMap = {
   "lauderdale-by-the-sea": "LAUDERDALE-BY-THE-SEA",
   "lighthouse-point": "LIGHTHOUSE POINT",
   margate: "MARGATE",
-  miami: "MIAMI",
+
   miramar: "MIRAMAR",
   "oakland-park": "OAKLAND PARK",
   parkland: "PARKLAND",
@@ -24,6 +26,6 @@ export const citiesMap = {
   "southwest-ranches": "SOUTHWEST RANCHES",
   sunrise: "SUNRISE",
   tamarac: "TAMARAC",
-  "west-palm-beach": "WEST PALM BEACH",
+  "west-park": "WEST PARK",
   weston: "WESTON",
 };

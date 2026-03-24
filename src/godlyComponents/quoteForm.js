@@ -45,7 +45,21 @@ export default function QuoteForm({ isDialog }) {
           "Receive a call within 30 minutes during normal business hours.",
       };
     }
-    if (city === "MIAMI") {
+    if (city === "COCONUT CREEK") {
+      return {
+        heading: "Need a quick estimate?",
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
+      };
+    }
+    if (city === "COOPER CITY") {
+      return {
+        heading: "Need a quick estimate?",
+        description:
+          "Receive a call within 30 minutes during normal business hours.",
+      };
+    }
+    if (city === "WEST PARK") {
       return {
         heading: "Need a quick estimate?",
         description:
@@ -165,13 +179,6 @@ export default function QuoteForm({ isDialog }) {
       };
     }
     if (city === "POMPANO BEACH") {
-      return {
-        heading: "Need a quick estimate?",
-        description:
-          "Receive a call within 30 minutes during normal business hours.",
-      };
-    }
-    if (city === "WEST PALM BEACH") {
       return {
         heading: "Need a quick estimate?",
         description:

@@ -50,8 +50,12 @@ const Services = () => {
           <p className="text-trim hidden text-center font-[satoshi-regular] text-[24px] leading-[115%] text-white/60 sm:text-[20px] md:block md:text-[24px] lg:text-[26px] xl:text-[28px]">
             {city === "PARKLAND" ? (
               <>Your full-service exterior cleaning team in Parkland.</>
-            ) : city === "MIAMI" ? (
-              <>Your full-service exterior cleaning team in Miami.</>
+            ) : city === "COCONUT CREEK" ? (
+              <>Your full-service exterior cleaning team in Coconut Creek.</>
+            ) : city === "COOPER CITY" ? (
+              <>Your full-service exterior cleaning team in Cooper City.</>
+            ) : city === "WEST PARK" ? (
+              <>Your full-service exterior cleaning team in West Park.</>
             ) : city === "FORT LAUDERDALE" ? (
               <>Your full-service exterior cleaning team in Fort Lauderdale.</>
             ) : city === "LIGHTHOUSE POINT" ? (
@@ -88,8 +92,6 @@ const Services = () => {
               <>Your full-service exterior cleaning team in Miramar, FL.</>
             ) : city === "POMPANO BEACH" ? (
               <>Your full-service exterior cleaning team in Pompano Beach.</>
-            ) : city === "WEST PALM BEACH" ? (
-              <>Your full-service exterior cleaning team in West Palm Beach.</>
             ) : city === "LAUDERDALE-BY-THE-SEA" ? (
               <>
                 Your full-service exterior cleaning team in
@@ -130,9 +132,13 @@ const Services = () => {
               <h4 className="relative text-center font-['satoshi-black'] text-[32px] leading-[130%] text-[#FDE4C8] md:text-[96px]">
                 {city === "PARKLAND"
                   ? "Holiday Lights Without the Ladder"
-                  : city === "MIAMI"
+                  : city === "COCONUT CREEK"
                     ? "Holiday Lights Without the Ladder"
-                    : city === "PEMBROKE PINES"
+                    : city === "COOPER CITY"
+                      ? "Holiday Lights Without the Ladder"
+                      : city === "WEST PARK"
+                        ? "Holiday Lights Without the Ladder"
+                  : city === "PEMBROKE PINES"
                       ? "Holiday Lights Without the Ladder"
                       : city === "SUNRISE"
                         ? "Holiday Lights Without the Ladder"
@@ -154,9 +160,7 @@ const Services = () => {
                                         ? "Holiday Lights Without the Ladder"
                                         : city === "POMPANO BEACH"
                                           ? "Holiday Lights Without the Ladder"
-                                          : city === "WEST PALM BEACH"
-                                            ? "Holiday Lights Without the Ladder"
-                                            : city === "LAUDERDALE-BY-THE-SEA"
+                                          : city === "LAUDERDALE-BY-THE-SEA"
                                               ? "Holiday Lights Without the Ladder"
                                               : city === "OAKLAND PARK"
                                                 ? "Holiday Lights Without the Ladder"
@@ -201,17 +205,41 @@ const Services = () => {
                   displays, xmas lights, and full décor setups that make your
                   home shine.
                 </>
-              ) : city === "MIAMI" ? (
+              ) : city === "COCONUT CREEK" ? (
                 <>
                   <Link
                     href={`/${cityKey}/holiday-light-installation`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
-                    Christmas light installation in Miami
-                  </Link>
-                  , professionally done. Our experts handle outdoor holiday
-                  lighting with care—so your home shines without you lifting a
-                  finger.
+                    Holiday light installation in Coconut Creek
+                  </Link>{" "}
+                  just got easier. We install outdoor Christmas lights and
+                  custom holiday displays—no ladders, no stress, just sparkling
+                  results.
+                </>
+              ) : city === "COOPER CITY" ? (
+                <>
+                  <Link
+                    href={`/${cityKey}/holiday-light-installation`}
+                    className="underline decoration-current decoration-solid transition-colors hover:text-white"
+                  >
+                    Holiday light installation in Cooper City
+                  </Link>{" "}
+                  just got easier. We install outdoor Christmas lights and
+                  custom holiday displays—no ladders, no stress, just sparkling
+                  results.
+                </>
+              ) : city === "WEST PARK" ? (
+                <>
+                  <Link
+                    href={`/${cityKey}/holiday-light-installation`}
+                    className="underline decoration-current decoration-solid transition-colors hover:text-white"
+                  >
+                    Holiday light installation in West Park
+                  </Link>{" "}
+                  just got easier. We install outdoor Christmas lights and
+                  custom holiday displays—no ladders, no stress, just sparkling
+                  results.
                 </>
               ) : city === "FORT LAUDERDALE" ? (
                 <>
@@ -406,17 +434,6 @@ const Services = () => {
                   . We install outdoor lights and displays that brighten your
                   home—safely and professionally.
                 </>
-              ) : city === "WEST PALM BEACH" ? (
-                <>
-                  <Link
-                    href={`/${cityKey}/holiday-light-installation`}
-                    className="underline decoration-current decoration-solid transition-colors hover:text-white"
-                  >
-                    Christmas light installation in West Palm Beach
-                  </Link>{" "}
-                  with no shortcuts. Our team sets up holiday lights and décor
-                  to wow your neighborhood—zero stress, maximum sparkle.
-                </>
               ) : city === "LAUDERDALE-BY-THE-SEA" ? (
                 <>
                   <Link
@@ -537,36 +554,6 @@ function ServicesGrid() {
     return parklandDescriptions[serviceName] || null;
   };
 
-  const getMiamiServiceDescription = (serviceName) => {
-    const miamiDescriptions = {
-      "Exterior Window Cleaning":
-        "Blast away Miami's mildew, salt spray, and grime with our streak-free, RainShield™-powered exterior window cleaning. Ideal for oceanfront and inland homes alike.",
-      "Interior Window Cleaning":
-        "From pet nose prints to kitchen grease, we make your indoor glass sparkle again; without harsh chemicals or mess.",
-      "Gutter Cleaning":
-        "Keep those South Florida storms from flooding your foundation. We clear leaves, pine needles, and buildup so your gutters drain freely.",
-      "House Washing":
-        "Our soft wash service removes algae, mold, and dirt without damaging your siding or paint; perfect for Miami's tropical climate.",
-      "Roof Washing":
-        "Extend the life of your tile or shingle roof by removing black streaks, lichen, and debris with our gentle but effective low-pressure wash.",
-      "Pressure & Soft Washing":
-        "Restore the look of your driveway, patio, or pool deck. We adjust pressure based on surface type; powerful where needed, soft where it matters.",
-      "High Dusting":
-        "Say goodbye to ceiling cobwebs and dusty corners. We reach what ladders can't with high-reach tools and precision dusting.",
-      "Light Fixture Cleaning":
-        "Chandeliers, sconces, and outdoor lanterns deserve a shine-up too. We handle delicate fixtures with safe, detailed cleaning.",
-      "Screen Cleaning":
-        "Our tools gently clean screened lanais and enclosures; removing dust, mildew, and film so you can enjoy clear views and fresh air again.",
-      "Skylight Cleaning":
-        "Miami sunshine should come crystal clear. We clean skylights inside and out; even those hard-to-reach ones; so natural light beams through.",
-      "Solar Panel Cleaning":
-        "Get the most from your solar investment. We remove pollen, dust, and bird droppings to boost energy output and lifespan.",
-      "Paver Sealing":
-        "Protect your pavers from Miami's sun and storms. We deep-clean, seal, and restore driveways, walkways, and patios for a polished, long-lasting look.",
-    };
-
-    return miamiDescriptions[serviceName] || null;
-  };
 
   const getFortLauderdaleServiceDescription = (serviceName) => {
     const fortLauderdaleDescriptions = {
@@ -967,36 +954,6 @@ function ServicesGrid() {
     return pompanoBeachDescriptions[serviceName] || null;
   };
 
-  const getWestPalmBeachServiceDescription = (serviceName) => {
-    const westPalmBeachDescriptions = {
-      "Exterior Window Cleaning":
-        "Our RainShield™ window service removes buildup caused by wind, salt, and humidity—ideal for West Palm Beach homes and offices.",
-      "Interior Window Cleaning":
-        "We clean indoor windows to perfection—eliminating smudges, haze, and dust for a brighter, cleaner living space.",
-      "Gutter Cleaning":
-        "Protect your home from storm-related overflow by keeping your gutters clear of leaves, sand, and roofing debris.",
-      "House Washing":
-        "We gently wash away mold, algae, and dirt from siding, stucco, or brick without damaging paint or landscaping.",
-      "Roof Washing":
-        "Low-pressure roof cleaning removes streaks, lichen, and dirt—extending the life of tile and asphalt shingles.",
-      "Pressure & Soft Washing":
-        "We clean walkways, patios, driveways, and pool decks with the perfect pressure setting for every surface type.",
-      "High Dusting":
-        "Our high-reach tools remove cobwebs and dust from ceilings, beams, and vaulted spaces—ideal for luxury homes and condos.",
-      "Light Fixture Cleaning":
-        "We safely clean all light fixtures—indoor and outdoor—to restore sparkle and improve lighting clarity.",
-      "Screen Cleaning":
-        "We clean screens, lanais, and pool enclosures to remove mildew, dust, and grime—restoring visibility and airflow.",
-      "Skylight Cleaning":
-        "Let natural light flood your space through freshly cleaned skylights—inside and out, even at height.",
-      "Solar Panel Cleaning":
-        "Increase solar energy output by removing the film and debris that reduce efficiency—especially near coastal areas.",
-      "Paver Sealing":
-        "We clean and seal pavers to protect against UV damage, stains, and erosion—preserving beauty and structure.",
-    };
-    return westPalmBeachDescriptions[serviceName] || null;
-  };
-
   const getLauderdaleByTheSeaServiceDescription = (serviceName) => {
     const lauderdaleByTheSeaDescriptions = {
       "Exterior Window Cleaning":
@@ -1307,9 +1264,7 @@ function ServicesGrid() {
                                         ? `${service.name} in Deerfield Beach`
                                         : city === "HILLSBORO BEACH"
                                           ? `${service.name} in Hillsboro Beach`
-                                          : city === "MIAMI"
-                                            ? `${service.name} in Miami`
-                                            : city === "CORAL SPRINGS"
+                                          : city === "CORAL SPRINGS"
                                               ? `${service.name} in Coral Springs`
                                               : city === "HALLANDALE BEACH"
                                                 ? `${service.name} in Hallandale Beach`
@@ -1328,9 +1283,6 @@ function ServicesGrid() {
                                                             : city === "MIRAMAR"
                                                               ? `${service.name} in Miramar`
                                                               : city ===
-                                                                  "WEST PALM BEACH"
-                                                                ? `${service.name} in West Palm Beach`
-                                                                : city ===
                                                                     "LAUDERDALE-BY-THE-SEA"
                                                                   ? `${service.name} in Lauderdale-by-the-Sea`
                                                                   : city ===
@@ -1339,7 +1291,13 @@ function ServicesGrid() {
                                                                     : city ===
                                                                         "ROYAL PALM BEACH"
                                                                       ? `${service.name} in Royal Palm Beach`
-                                                                      : service.name}
+                                                                      : city === "COCONUT CREEK"
+                                                                        ? `${service.name} in Coconut Creek`
+                                                                        : city === "COOPER CITY"
+                                                                          ? `${service.name} in Cooper City`
+                                                                          : city === "WEST PARK"
+                                                                            ? `${service.name} in West Park`
+                                                                            : service.name}
                   </h3>
                   <p
                     className={`font-[satoshi-regular] text-xs font-normal ${isActive ? "text-white" : "text-[#1f1d1d]"} group-hover:text-white md:text-base`}
@@ -1347,10 +1305,7 @@ function ServicesGrid() {
                     {city === "PARKLAND"
                       ? getParklandServiceDescription(service.name) ||
                         service.description
-                      : city === "MIAMI"
-                        ? getMiamiServiceDescription(service.name) ||
-                          service.description
-                        : city === "FORT LAUDERDALE"
+                      : city === "FORT LAUDERDALE"
                           ? getFortLauderdaleServiceDescription(service.name) ||
                             service.description
                           : city === "LIGHTHOUSE POINT"
@@ -1421,12 +1376,6 @@ function ServicesGrid() {
                                                             ) ||
                                                             service.description
                                                           : city ===
-                                                              "WEST PALM BEACH"
-                                                            ? getWestPalmBeachServiceDescription(
-                                                                service.name,
-                                                              ) ||
-                                                              service.description
-                                                            : city ===
                                                                 "LAUDERDALE-BY-THE-SEA"
                                                               ? getLauderdaleByTheSeaServiceDescription(
                                                                   service.name,
