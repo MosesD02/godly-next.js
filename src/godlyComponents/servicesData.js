@@ -4,11 +4,10 @@ import {
   HouseWashingIcon,
   RoofWashingIcon,
   PressureWashingIcon,
-  HighDustingIcon,
   ScreenCleansIcon,
-  SkylightsIcon,
   SolarPanelsIcon,
   SealCoatingIcon,
+  HolidayLightIcon,
 } from "./servicesIcons";
 
 export const servicesData = [
@@ -25,6 +24,13 @@ export const servicesData = [
     link: "interior-window-cleaning",
     description:
       "Pet slobber, fingerprints, and so much more can leave residue that is tricky to get off.",
+  },
+  {
+    name: "Window Cleaning",
+    icon: <WindowIcon />,
+    link: "window-cleaning",
+    description:
+      "RODI purified water, hand scrubbing, and streak-free glass—residential and commercial—with our 7-day sparkle guarantee.",
   },
   {
     name: "Gutter Cleaning",
@@ -55,11 +61,11 @@ export const servicesData = [
       "Get rid of the slippery film and gunk on your driveway, walkways, porches, pool areas, and more.",
   },
   {
-    name: "High Dusting",
-    icon: <HighDustingIcon />,
-    link: "high-dusting",
+    name: "Soft Washing",
+    icon: <HouseWashingIcon />,
+    link: "soft-washing",
     description:
-      "Eliminate the cobwebs and dust in those hard to reach corners.",
+      "Custom low-pressure treatments for roofs, siding, and exteriors—safe chemistry that lifts algae without damage.",
   },
   {
     name: "Light Fixture Cleaning",
@@ -77,11 +83,11 @@ export const servicesData = [
       "Our special solution and professional equipment leaves window screens & pool screen enclosures looking brand new.",
   },
   {
-    name: "Skylight Cleaning",
-    icon: <SkylightsIcon />,
-    link: "skylight-cleaning",
+    name: "Holiday Lighting",
+    icon: <HolidayLightIcon />,
+    link: "holiday-lighting",
     description:
-      "Nearly impossible and slightly dangerous to reach, leave it to Godly to keep your skylights in top-notch shape.",
+      "Design, install, premium LEDs, maintenance, and removal—custom holiday displays without the ladder.",
   },
   {
     name: "Solar Panel Cleaning",

@@ -20,9 +20,10 @@ export const SERVICE_CATEGORIES = {
 export const SERVICE_SLUG_TO_CATEGORY = {
   "exterior-window-cleaning": "window-cleaning",
   "interior-window-cleaning": "window-cleaning",
+  "window-cleaning": "window-cleaning",
   "pressure-washing": "pressure-washing",
   "house-washing": "house-washing",
   "roof-washing": "roof-cleaning",
   "paver-sealing": "paver-sealing",
-  "holiday-light-installation": "christmas-lights",
+  "holiday-lighting": "christmas-lights",
 };

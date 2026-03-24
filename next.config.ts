@@ -55,6 +55,21 @@ const nextConfig: NextConfig = {
         destination: "/blog/:path*",
         permanent: true,
       },
+      {
+        source: "/:city/holiday-light-installation",
+        destination: "/:city/holiday-lighting",
+        permanent: true,
+      },
+      {
+        source: "/:city/skylight-cleaning",
+        destination: "/:city/window-cleaning",
+        permanent: true,
+      },
+      {
+        source: "/:city/high-dusting",
+        destination: "/:city/window-cleaning",
+        permanent: true,
+      },
     ];
   },
 

@@ -6,45 +6,16 @@ import "@/styles/fourstepprocess.css";
 import Image from "next/image";
 import { citiesMap } from "./header/CitiesPopup";
 import { generateServiceHeroAlt } from "@/data/metaTitles";
+import { getRelatedServiceSteps } from "@/data/relatedServices";
 
-import service10 from "@/assets/serviceData/service10.webp";
-import service12 from "@/assets/serviceData/service12.webp";
-import service2 from "@/assets/serviceData/service2.webp";
-import service9 from "@/assets/serviceData/service9.webp";
-
-const steps = [
-  {
-    number: "01",
-    title: "Screen Cleaning",
-    link: "screen-cleaning",
-    Image: service10,
-  },
-  {
-    number: "02",
-    title: "Exterior Window Cleaning",
-    link: "exterior-window-cleaning",
-    Image: service2,
-  },
-  {
-    number: "03",
-    title: "SKYLIGHT CLEANING",
-    link: "skylight-cleaning",
-    Image: service9,
-  },
-  {
-    number: "04",
-    title: "HIGH DUSTING",
-    link: "high-dusting",
-    Image: service12,
-  },
-];
-
-const OtherServices = () => {
+const OtherServices = ({ slug }) => {
   const { city } = useGodlyContext();
   const [activeCard, setActiveCard] = useState(null);
 
   const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
   const cityName = citiesMap[cityKey];
+
+  const steps = getRelatedServiceSteps(slug);
 
   const handleCardClick = (index, e) => {
     if (activeCard !== index) {

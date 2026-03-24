@@ -34,7 +34,7 @@ export default function ServicesPage({ slug, city, relatedPosts }) {
       <ServiceNearYou slug={slug} />
       <ChooseUs slug={slug} />
       {/* <Faq /> */}
-      <OtherServices />
+      <OtherServices slug={slug} />
       <RelatedBlogPosts posts={relatedPosts} citySlug={city} />
     </WebsiteLayout>
   );

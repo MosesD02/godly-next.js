@@ -22,12 +22,11 @@ import gutterCleaning from "@/assets/homepageServices/gutter_cleaning.webp";
 import houseWashing from "@/assets/homepageServices/house_washing.webp";
 import roofWashing from "@/assets/homepageServices/roof_washing.webp";
 import pressureWashing from "@/assets/homepageServices/pressure_washing.webp";
-import highDusting from "@/assets/homepageServices/high_dusting.webp";
 import lightFixtures from "@/assets/homepageServices/light_fixtures.webp";
 import screenCleans from "@/assets/homepageServices/screen_cleans.webp";
-import skylights from "@/assets/homepageServices/sky_light.webp";
 import solarPanels from "@/assets/homepageServices/solar_panels.webp";
 import sealCoating from "@/assets/homepageServices/seal_coating.webp";
+import santaBg from "@/assets/homepageServices/santa_bg.webp";
 
 const services = [
   {
@@ -43,6 +42,13 @@ const services = [
     image: interiorWindow,
     description:
       "Pet slobber, fingerprints, and so much more can leave residue that is tricky to get off.",
+  },
+  {
+    name: "Window Cleaning",
+    link: "window-cleaning",
+    image: exteriorWindow,
+    description:
+      "RODI purified water, hand scrubbing, and streak-free glass—residential and commercial—with our 7-day sparkle guarantee.",
   },
   {
     name: "Gutter Cleaning",
@@ -73,11 +79,11 @@ const services = [
       "Get rid of the slippery film and gunk on your driveway, walkways, porches, pool areas, and more.",
   },
   {
-    name: "High Dusting",
-    link: "high-dusting",
-    image: highDusting,
+    name: "Soft Washing",
+    link: "soft-washing",
+    image: houseWashing,
     description:
-      "Eliminate the cobwebs and dust in those hard to reach corners.",
+      "Custom low-pressure treatments for roofs, siding, and exteriors—safe chemistry that lifts algae without damage.",
   },
   {
     name: "Light Fixture Cleaning",
@@ -94,11 +100,11 @@ const services = [
       "We'll happily remove, clean, and even replace your screens if necessary.",
   },
   {
-    name: "Skylight Cleaning",
-    link: "skylight-cleaning",
-    image: skylights,
+    name: "Holiday Lighting",
+    link: "holiday-lighting",
+    image: santaBg,
     description:
-      "Nearly impossible and slightly dangerous to reach, leave it to Godly to keep your skylights in top-notch shape.",
+      "Design, install, premium LEDs, maintenance, and removal—custom holiday displays without the ladder.",
   },
   {
     name: "Solar Panel Cleaning",

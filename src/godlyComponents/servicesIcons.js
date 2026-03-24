@@ -250,6 +250,21 @@ export const SolarPanelsIcon = () => (
     />
   </svg>
 );
+export const HolidayLightIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="50"
+    height="50"
+    viewBox="0 0 50 50"
+    fill="none"
+  >
+    <path
+      d="M25 4L28.2 16.2L41 17L31.5 24.5L34.7 37L25 30L15.3 37L18.5 24.5L9 17L21.8 16.2L25 4Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
 export const SealCoatingIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

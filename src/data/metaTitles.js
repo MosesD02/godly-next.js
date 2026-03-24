@@ -103,9 +103,9 @@ export const serviceMetaTitles = {
   "paver-sealing": "Paver Sealing",
   "light-fixture-cleaning": "Light Fixture Cleaning",
   "screen-cleaning": "Screen Cleaning",
-  "skylight-cleaning": "Skylight Cleaning",
-  "holiday-light-installation": "Holiday Light Installation",
-  "high-dusting": "High Dusting Services",
+  "window-cleaning": "Window Cleaning",
+  "soft-washing": "Soft Washing",
+  "holiday-lighting": "Holiday Lighting",
 };
 
 function capitalizeString(str) {
@@ -203,12 +203,12 @@ const serviceDescriptions = {
     "Light fixture cleaning in {location}. Maximize brightness with professional cleaning services. Expert results guaranteed.",
   "screen-cleaning":
     "Screen cleaning in {location}. Restore clarity & improve airflow with professional screen services. Satisfaction guaranteed.",
-  "skylight-cleaning":
-    "Skylight cleaning in {location}. Maximize natural light with professional cleaning services. Expert care with satisfaction guarantee.",
-  "holiday-light-installation":
-    "Holiday light installation in {location}. Hassle-free setup, maintenance & removal. Professional service with guarantee.",
-  "high-dusting":
-    "High dusting services in {location}. Professional cleaning for hard-to-reach areas. Expert service with satisfaction guarantee.",
+  "window-cleaning":
+    "Professional window cleaning in {location}. RODI purified water, hand scrubbing & streak-free results. Free quotes & 7-day sparkle guarantee.",
+  "soft-washing":
+    "Soft washing in {location}. Safe low-pressure cleaning for roofs, siding & exteriors. Custom blends & satisfaction guarantee.",
+  "holiday-lighting":
+    "Holiday & Christmas lighting in {location}. Design, install, LED lights, maintenance & removal. Professional display—stress-free season.",
 };
 
 // Generate SEO-optimized meta description for service pages
@@ -329,9 +329,9 @@ export const generateServiceHeroAlt = (serviceSlug, cityName) => {
     "paver-sealing": `paver sealing and restoration in ${location}`,
     "light-fixture-cleaning": `light fixture cleaning service in ${location}`,
     "screen-cleaning": `screen cleaning professionals in ${location}`,
-    "skylight-cleaning": `skylight cleaning service in ${location}`,
-    "holiday-light-installation": `holiday light installation service in ${location}`,
-    "high-dusting": `high dusting cleaning service in ${location}`,
+    "window-cleaning": `professional window cleaning in ${location}`,
+    "soft-washing": `soft washing service in ${location}`,
+    "holiday-lighting": `holiday and Christmas lighting installation in ${location}`,
   };
 
   return (

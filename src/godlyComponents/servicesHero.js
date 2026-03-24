@@ -112,7 +112,23 @@ const ServicesHero = ({ slug }) => {
       <div className="text-left font-['satoshi-regular'] text-sm leading-6 text-white sm:max-w-none sm:text-left sm:text-base sm:leading-6 sm:text-white md:max-w-[700px] md:text-center md:text-base md:leading-7 md:text-[#FFFFFF94] lg:max-w-[800px] lg:text-center lg:text-lg lg:leading-7 lg:text-[#FFFFFF94] xl:max-w-[900px] xl:text-center xl:text-xl xl:leading-8 xl:text-[#FFFFFF94]">
         <p>{heroDescription}</p>
       </div>
-      <FreeQuoteButton>Get a Free Quote</FreeQuoteButton>
+      {slug === "holiday-lighting" ? (
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <a href="tel:9547514128" className="free-button">
+            <span>GET A FREE QUOTE — (954) 751-4128</span>
+          </a>
+          <a
+            href="https://godlyholidaylights.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="free-button"
+          >
+            <span>VIEW GODLY HOLIDAY LIGHTS</span>
+          </a>
+        </div>
+      ) : (
+        <FreeQuoteButton>Get a Free Quote</FreeQuoteButton>
+      )}
     </div>
   );
 };

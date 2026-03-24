@@ -41,9 +41,9 @@ const services = [
   "paver-sealing",
   "light-fixture-cleaning",
   "screen-cleaning",
-  "skylight-cleaning",
-  "holiday-light-installation",
-  "high-dusting",
+  "window-cleaning",
+  "soft-washing",
+  "holiday-lighting",
 ];
 
 const serviceHeaders = services.map((s) =>

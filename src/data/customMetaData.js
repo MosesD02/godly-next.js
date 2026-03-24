@@ -59,21 +59,9 @@ export const customMetaData = {
         description:
           "Foggy or dusty window screens? Our Boca Raton screen cleaning restores airflow and clarity. Breathe easier—book expert screen cleaning with Godly Windows.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Boca Raton - Let the Sunshine In",
-        description:
-          "Smudged skylights? Our Boca Raton team brings back bright, clear views with expert glass cleaning. Enjoy the light—schedule skylight cleaning service today!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Boca Raton - Godly Windows",
-        description:
-          "Make your home shine this season with professional holiday light installation in Boca Raton. Safe, stylish, and stress-free lighting by Godly Windows. Call now.",
-      },
-      "high-dusting": {
-        title: "High Dusting Services in Boca Raton - Godly Windows",
-        description:
-          "Expert high dusting services in Boca Raton for homes and businesses. Godly Windows safely removes dust from hard-to-reach areas. Book your cleaning today!",
-      },
+      
+      
+      
     },
   },
   "fort-lauderdale": {
@@ -133,21 +121,9 @@ export const customMetaData = {
         description:
           "Trusted screen cleaning in Fort Lauderdale. Local pros remove dust, grime, and buildup for clear, fresh screens. Residential & commercial service—call now!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Fort Lauderdale - Godly Windows",
-        description:
-          "Expert skylight cleaning in Fort Lauderdale by Godly Windows. Boost brightness, energy savings & curb appeal. Trusted local team—schedule your clean now!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Fort Lauderdale - Godly Windows",
-        description:
-          "Professional holiday light installation in Fort Lauderdale. Beautiful, safe Christmas light design service by local team. Reserve your spot today with us!",
-      },
-      "high-dusting": {
-        title: "High Dusting Services in Fort Lauderdale - Godly Windows",
-        description:
-          "Expert high dusting services in Fort Lauderdale. Clean chandeliers, fans & tall ceilings safely with skilled local pros. Book your detailed service today!",
-      },
+      
+      
+      
     },
   },
   "lighthouse-point": {
@@ -207,21 +183,9 @@ export const customMetaData = {
         description:
           "Get pristine window & door screens in Lighthouse Point with our local screen cleaning service. Dust, pollen & allergens gone—call for same‑day booking!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Lighthouse Point - Godly Windows",
-        description:
-          "Skylight cleaning service in Lighthouse Point? We eliminate streaks, dirt and debris for brighter, safer interiors. Your Trusted local service—call today!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Lighthouse Point - Godly Windows",
-        description:
-          "Transform your home with festive holiday light installation in Lighthouse Point. Safe, stunning designs by trusted locals—book early to secure your spot!",
-      },
-      "high-dusting": {
-        title: "High Dusting in Lighthouse Point - Ceiling to Corner Clean",
-        description:
-          "Need high dusting near me in Lighthouse Point? We remove cobwebs, ceiling fans & vents with care—professional, safe & fully insured. Call for service.",
-      },
+      
+      
+      
     },
   },
   parkland: {
@@ -281,21 +245,9 @@ export const customMetaData = {
         description:
           "Let fresh air in—without the dust. Our screen cleaning in Parkland clears out pollen, dirt, and debris so your windows stay fresh & fully functional year-round.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Parkland - Spotless Views Overhead",
-        description:
-          "Cloudy skylights? We remove dirt and film with safe techniques. Book skylight cleaning in Parkland to brighten your rooms with more natural light, risk-free.",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Parkland - Godly Windows",
-        description:
-          "Bring your home to life with holiday light installation in Parkland. We design, install, and remove your Christmas lights safely—so you enjoy the season.",
-      },
-      "high-dusting": {
-        title: "High Dusting Services in Parkland - Ceilings, Vents & Beams",
-        description:
-          "Remove dust and allergens from hard-to-reach places. Our high dusting in Parkland covers ceilings, vents, and light fixtures—handled safely by trained pros.",
-      },
+      
+      
+      
     },
   },
   "southwest-ranches": {
@@ -355,21 +307,9 @@ export const customMetaData = {
         description:
           "Dusty screens block airflow and clarity. Book screen cleaning in Southwest Ranches to enjoy fresh air, better views, and cleaner living, inside and out.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Southwest Ranches - Godly Windows",
-        description:
-          "Cloudy or streaked skylights? Our pros clean overhead glass safely. Southwest Ranches skylight cleaning brings in sunlight without the grime or glare.",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation Southwest Ranches - Godly Windows",
-        description:
-          "Light up Southwest Ranches with custom holiday light installation. Godly Windows handles it all—design, install & takedown. Book your festive display today!",
-      },
-      "high-dusting": {
-        title: "High Dusting in Southwest Ranches - Book Godly Windows",
-        description:
-          "Our Southwest Ranches high dusting service reaches where others can't—perfect for ceilings, vents, fans, and lights. Safe, thorough, and allergy-reducing.",
-      },
+      
+      
+      
     },
   },
   margate: {
@@ -429,21 +369,9 @@ export const customMetaData = {
         description:
           "Dirty window screens? Our Margate pros clean for better air and brighter views. Schedule your screen cleaning today with Godly Windows—fast & affordable!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning Services in Margate - Godly Windows",
-        description:
-          "Cloudy skylights? Our Margate team cleans safely and thoroughly for better light and views. Book expert skylight cleaning services with Godly Windows today!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Margate - Godly Windows",
-        description:
-          "Make your Margate home shine this season! Professional holiday light installation by Godly Windows—safe, custom designs with hassle-free setup and takedown.",
-      },
-      "high-dusting": {
-        title: "High Dusting in Margate - Fans, Beams & Ceilings Cleaned",
-        description:
-          "Dust on fans, vents or rafters? We handle high dusting in Margate with pro tools and care. Breathe cleaner air—book today for detailed top-to-bottom cleaning!",
-      },
+      
+      
+      
     },
   },
   "pembroke-pines": {
@@ -503,21 +431,9 @@ export const customMetaData = {
         description:
           "Foggy or dusty screens? We clean them fast in Pembroke Pines to improve airflow and light. Book screen cleaning with Godly Windows—your view will thank you!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Pembroke Pines - Godly Windows",
-        description:
-          "Let in the sun! Our Pembroke Pines team safely removes grime and buildup from skylights. Book your professional skylight cleaning with Godly Windows today!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Pembroke Pines - Call Today",
-        description:
-          "Skip the hassle and shine bright! Our Pembroke Pines team installs Christmas lights safely and beautifully. Book or call for holiday light installation now!",
-      },
-      "high-dusting": {
-        title: "High Dusting in Pembroke Pines - Beams, Fans & Vents Cleaned",
-        description:
-          "Let the professionals at Pembroke Pines clean those difficult-to-reach areas with our high dusting services. Book or call Godly Windows today!",
-      },
+      
+      
+      
     },
   },
   plantation: {
@@ -577,21 +493,9 @@ export const customMetaData = {
         description:
           "Screen cleaning in Plantation to remove pollen, dust, and buildup. Breathe easier and enjoy clear airflow—expert service by Godly Windows starts here.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning Services in Plantation - Godly Windows",
-        description:
-          "Skylight cleaning in Plantation that restores natural light and eliminates grime. Let your skylights shine again—schedule with Godly Windows today. Call today.",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Plantation - Godly Windows",
-        description:
-          "Holiday light installation in Plantation made easy. Safe, beautiful displays by expert installers. Book early with Godly Windows for a stress-free season.",
-      },
-      "high-dusting": {
-        title: "High Dusting in Plantation - Clean Ceilings, Beams & Vents",
-        description:
-          "High dusting in Plantation for ceilings, beams, and vents. Remove dust and allergens from hard-to-reach areas. Safe and detailed service by Godly Windows.",
-      },
+      
+      
+      
     },
   },
   sunrise: {
@@ -651,21 +555,9 @@ export const customMetaData = {
         description:
           "Foggy or dusty screens? Our Sunrise pros clean them fast for better airflow and clear views. Schedule your window or door screen cleaning today with us!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning Services in Sunrise - Godly Windows",
-        description:
-          "Cloudy skylights? We clean them safely and thoroughly across Sunrise, FL. Restore overhead light and beauty—book our professional skylight cleaning now!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Sunrise - Godly Windows",
-        description:
-          "Brighten your Sunrise home with custom holiday light installation. Godly Windows handles design, setup, and takedown—safe, stunning, and stress-free. Book now!",
-      },
-      "high-dusting": {
-        title: "High Dusting in Sunrise - Ceilings, Fans, Beams Cleaned",
-        description:
-          "Dust in hard-to-reach places? Our Sunrise pros handle fans, ceilings, vents & more with care. Breathe easier—book our high dusting cleaning service now!",
-      },
+      
+      
+      
     },
   },
   davie: {
@@ -725,21 +617,9 @@ export const customMetaData = {
         description:
           "Dusty screens? Our Davie pros clean mesh screens on windows, patios, and doors to restore light and airflow. Schedule your screen cleaning today with us.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning Services in Davie - Book Godly Windows",
-        description:
-          "Let in more light! Our Davie skylight cleaning service removes dust and buildup with care. Book now or call and enjoy a brighter, cleaner space today!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Davie - Godly Windows",
-        description:
-          "Make your Davie home shine bright this season with professional holiday light installation. Godly Windows handles design, install & takedown. Book now!",
-      },
-      "high-dusting": {
-        title: "High Dusting in Davie - Clean Ceilings, Fans, & Fixtures",
-        description:
-          "Dust in high places? Our Davie high dusting service tackles vents, beams & lights safely. Clear air and spotless ceilings—schedule your clean today! Call now.",
-      },
+      
+      
+      
     },
   },
   "hillsboro-beach": {
@@ -799,21 +679,9 @@ export const customMetaData = {
         description:
           "Say goodbye to dusty, clogged screens. Godly Windows offers detailed screen cleaning in Hillsboro Beach for brighter views and better airflow. Book now!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning Services in Hillsboro Beach - Godly Windows",
-        description:
-          "Enjoy streak-free sunlight with professional skylight cleaning in Hillsboro Beach. Godly Windows safely cleans hard-to-reach skylights. Book your clean now!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Hillsboro Beach - Godly Windows",
-        description:
-          "Light up your home with expert holiday light installation in Hillsboro Beach. From setup to takedown, Godly Windows brings festive magic—book or call now!",
-      },
-      "high-dusting": {
-        title: "High Dusting Services in Hillsboro Beach - Godly Windows",
-        description:
-          "Remove dust from ceiling fans, vents & beams with professional high dusting in Hillsboro Beach. Godly Windows offers safe, detailed service. Book now!",
-      },
+      
+      
+      
     },
   },
   tamarac: {
@@ -873,21 +741,9 @@ export const customMetaData = {
         description:
           "Restore airflow and visibility with professional screen cleaning in Tamarac. We remove pollen, debris, and dust without damaging the mesh or window frames.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning Services in Tamarac - Godly Windows",
-        description:
-          "Let the sunlight in with our streak-free skylight cleaning. We reach tough angles, remove grime, and leave your glass clear and bright for any room in Tamarac.",
-      },
-      "holiday-light-installation": {
-        title: "Holiday & Christmas Light Installation in Tamarac - Call Today",
-        description:
-          "Get your home holiday-ready with professional Christmas light installation in Tamarac. Hassle-free service and dazzling results. Schedule now! Call today.",
-      },
-      "high-dusting": {
-        title: "High Dusting Services in Tamarac - Ceiling & Fixtures",
-        description:
-          "We reach what others can't. From ceiling beams to ductwork and chandeliers, our high dusting service in Tamarac removes buildup for a cleaner, healthier space.",
-      },
+      
+      
+      
     },
   },
   miramar: {
@@ -947,21 +803,9 @@ export const customMetaData = {
         description:
           "Get clear views with expert screen cleaning in Miramar, FL. We clean window and patio screens safely, removing dirt, dust, and debris. Book your service today!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning Services in Miramar - Godly Windows",
-        description:
-          "Skylight cleaning in Miramar, FL to remove dust, grime, and buildup. We clean high and hard-to-reach glass safely and efficiently. Book your service today!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Miramar - Godly Windows",
-        description:
-          "Light up your holidays with expert holiday light installation in Miramar, FL. Safe, stunning, and hassle-free service for homes and businesses. Book now!",
-      },
-      "high-dusting": {
-        title: "High Dusting Services in Miramar - Ceilings to Fixtures",
-        description:
-          "Reach the unreachable with expert high dusting services in Miramar. We clean vents, beams, ceilings, and more—safe, detailed, and professional service.",
-      },
+      
+      
+      
     },
   },
   "pompano-beach": {
@@ -1021,21 +865,9 @@ export const customMetaData = {
         description:
           "Professional screen cleaning in Pompano Beach for windows, patios, and more. Improve airflow and clarity. Fast, reliable service—book with Godly Windows!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Pompano Beach - Godly Windows",
-        description:
-          "Enjoy crystal-clear skylights with skylight cleaning in Pompano Beach. We clean interior and exterior glass safely and efficiently. Schedule your service now!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Pompano Beach - Godly Windows",
-        description:
-          "Celebrate in style with professional holiday light installation in Pompano Beach. Hassle-free service from design to takedown. Schedule now with Godly Windows!",
-      },
-      "high-dusting": {
-        title: "High Dusting Services in Pompano Beach - Godly Windows",
-        description:
-          "Remove dust from high ceilings, vents, and beams with expert high dusting services in Pompano Beach. Safe, thorough cleaning for homes and businesses. Book now!",
-      },
+      
+      
+      
     },
   },
   "delray-beach": {
@@ -1096,21 +928,9 @@ export const customMetaData = {
         description:
           "Keep your window and door screens spotless. We provide thorough screen cleaning in Delray Beach. Affordable service near you—schedule your service today!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Delray Beach - Call Godly Windows",
-        description:
-          "Clear your skylights with professional cleaning in Delray Beach. Streak-free glass, expert care, and safe access. Book skylight cleaning services today!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Delray Beach - Godly Windows",
-        description:
-          "Brighten your holidays with expert holiday light installation in Delray Beach. Safe, beautiful outdoor holiday lights—book professional installers near you now.",
-      },
-      "high-dusting": {
-        title: "High Dusting in Delray Beach - Hard-to-Reach Dust Removal",
-        description:
-          "Get rid of dust on high ceilings and fixtures with expert high dusting services in Delray Beach. Professional, safe service for homes and businesses—book now!",
-      },
+      
+      
+      
     },
   },
   "oakland-park": {
@@ -1171,21 +991,9 @@ export const customMetaData = {
         description:
           "Remove dust, pollen, and grime from your window screens. Oakland Park's screen cleaning team offers gentle, effective service near you. Book now at Godly Windows!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Oakland Park - Brighten Your Space",
-        description:
-          "Let the light shine through! We clean skylights safely and streak-free in Oakland Park. Perfect for homes & businesses. Schedule your skylight cleaning today!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Oakland Park - Godly Windows",
-        description:
-          "Dazzle your neighborhood this season! We handle outdoor holiday lights, Holiday light installation & takedown across Oakland Park. Book early!",
-      },
-      "high-dusting": {
-        title: "High Dusting Services in Oakland Park - Ceilings, Fans & Beams",
-        description:
-          "Dust hiding in high places? Our Oakland Park high dusting experts clean rafters, beams, fans & vents safely and thoroughly. Get a quote today at Godly Windows!",
-      },
+      
+      
+      
     },
   },
   weston: {
@@ -1245,21 +1053,9 @@ export const customMetaData = {
         description:
           "Professional screen cleaning in Weston to remove dust, dirt, and debris from window and patio screens. Improve airflow and visibility—book trusted service now.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Weston - Clear, Streak-Free Shine",
-        description:
-          "Professional skylight cleaning in Weston for homes and businesses. We clean interior and exterior glass safely for spotless, streak-free results. Book now.",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Weston - Godly Windows",
-        description:
-          "Stress-free holiday light installation in Weston. Our experts design, install, and remove your Christmas lights. Make your home shine—schedule early for priority!",
-      },
-      "high-dusting": {
-        title: "High Dusting in Weston - Ceilings, Beams & Fixtures",
-        description:
-          "Precision high dusting in Weston for ceilings, beams, and fixtures. We remove built-up dust in hard-to-reach places. Improve indoor air quality—book today.",
-      },
+      
+      
+      
     },
   },
   "royal-palm-beach": {
@@ -1319,21 +1115,9 @@ export const customMetaData = {
         description:
           "Restore fresh airflow and visibility with our expert screen cleaning in Royal Palm Beach. At Godly Windows, we gently remove dust, pollen, and grime. Book now.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Royal Palm Beach - Godly Windows",
-        description:
-          "We deliver streak-free skylight cleaning in Royal Palm Beach—removing dust, grime, and water spots safely and professionally. Brighten your home today!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Royal Palm Beach - Godly Windows",
-        description:
-          "We offer safe, professional holiday light installation in Royal Palm Beach—careful setup, and full cleanup. Relax while we bring your festive vision to life!",
-      },
-      "high-dusting": {
-        title: "Expert High Dusting in Royal Palm Beach - Godly Windows",
-        description:
-          "At Godly Windows, we provide safe, detailed high dusting services in Royal Palm Beach for ceilings, vents, beams, & more. We clean what others miss—book today!",
-      },
+      
+      
+      
     },
   },
   "lauderdale-by-the-sea": {
@@ -1375,11 +1159,7 @@ export const customMetaData = {
         description:
           "Whether it's your driveway, patio, or siding—we blast away dirt with expert pressure washing in Lauderdale-by-the-Sea. Clean surfaces, strong results, every time.",
       },
-      "high-dusting": {
-        title: "High Dusting Services in Lauderdale-by-the-Sea - Godly Windows",
-        description:
-          "We handle the hard-to-reach spots with precision. Our high dusting in Lauderdale-by-the-Sea keeps ceilings, vents, and fixtures spotless and allergen-free.",
-      },
+      
       "light-fixture-cleaning": {
         title: "Light Fixture Cleaning Lauderdale-by-the-Sea - Godly Windows",
         description:
@@ -1390,11 +1170,7 @@ export const customMetaData = {
         description:
           "Screen cleaning for patios and windows. We clean your window and door screens in Lauderdale-by-the-Sea so fresh air flows through and your views stay clear.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Lauderdale-by-the-Sea - Godly Windows",
-        description:
-          "Enjoy natural light without streaks. We provide skylight cleaning in Lauderdale-by-the-Sea to keep your glass spotless, bright, & crystal clear all year round.",
-      },
+      
       "solar-panel-cleaning": {
         title: "Solar Panel Cleaning in Lauderdale-by-the-Sea - Godly Windows",
         description:
@@ -1464,21 +1240,9 @@ export const customMetaData = {
         description:
           "Dirty window screens block airflow & light. Our screen cleaning in Coral Springs removes grime and allergens fast. Local, efficient, and done right. Call today.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Coral Springs - Clear, Bright Ceilings",
-        description:
-          "Skylights not letting light in? We offer safe skylight cleaning in Coral Springs for homes with hard-to-reach windows. Local, insured, and ready to help.",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation Coral Springs - Godly Windows",
-        description:
-          "Let your home shine bright! We offer professional Holiday light installation in Coral Springs with safe ladders, timers, and glowing design options. Call today.",
-      },
-      "high-dusting": {
-        title: "High Dusting Services Coral Springs - Godly Windows",
-        description:
-          "Dust on fans, beams, and ceiling corners? Our Coral Springs high dusting services team tackles the tall stuff safely. Great for post-reno and allergy relief.",
-      },
+      
+      
+      
     },
   },
   "hallandale-beach": {
@@ -1538,21 +1302,9 @@ export const customMetaData = {
         description:
           "Screened windows looking dull? Our Hallandale Beach screen cleaning clears dirt, pollen, and bugs. Get clearer views and better airflow—schedule with us today.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Hallandale Beach - Godly Windows",
-        description:
-          "Dirty skylights? Let natural light shine through again. We offer safe, streak-free skylight cleaning in Hallandale Beach. Book now with the team locals trust.",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Hallandale Beach - Call Today",
-        description:
-          "Celebrate safely with custom holiday light installation in Hallandale Beach. We design, hang & remove lights so you don't have to. Book early with Godly Windows.",
-      },
-      "high-dusting": {
-        title: "High Dusting Services in Hallandale Beach - Clean Ceilings",
-        description:
-          "Remove dust from vents, rafters & high shelves with Godly Windows' high dusting in Hallandale Beach. We clean what others can't reach—fast, safe, and effective.",
-      },
+      
+      
+      
     },
   },
   hollywood: {
@@ -1613,21 +1365,9 @@ export const customMetaData = {
         description:
           "Let the light in with professional screen cleaning in Hollywood. We clean high glass surfaces with care and top safety standards. Book at Godly Windows.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Hollywood - Clear & Streak-Free",
-        description:
-          "Let the light in with professional skylight cleaning in Hollywood. We clean high glass surfaces with care and top safety standards. Book at Godly Windows.",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Hollywood - Godly Windows",
-        description:
-          "Transform your home with Christmas and holiday light installation in Hollywood. We design, install, and remove lights for any property. Call at Godly Windows.",
-      },
-      "high-dusting": {
-        title: "High Dusting in Hollywood - Ceiling & Vent Cleaning",
-        description:
-          "Remove hidden dust and cobwebs with our high dusting services in Hollywood. Perfect for ceilings, vents, fans, and light fixtures. Call at Godly Windows.",
-      },
+      
+      
+      
     },
   },
   "deerfield-beach": {
@@ -1687,21 +1427,9 @@ export const customMetaData = {
         description:
           "Improve airflow and clarity with professional screen cleaning in Deerfield Beach. Remove dust and debris for clear views. Schedule your service today!",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning in Deerfield Beach - Let the Light In",
-        description:
-          "Maximize natural light with expert skylight cleaning in Deerfield Beach. Safe, streak-free cleaning to brighten your space. Book your service today!",
-      },
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in Deerfield Beach - Godly Windows",
-        description:
-          "Make your holidays magical with professional holiday light installation in Deerfield Beach. Setup, maintenance, and removal included. Book early!",
-      },
-      "high-dusting": {
-        title: "High Dusting Services in Deerfield Beach - Godly Windows",
-        description:
-          "Reach every dusty corner with professional high dusting services in Deerfield Beach. Safe cleaning for ceilings, fans, and high fixtures. Book today!",
-      },
+      
+      
+      
     },
   },
 
@@ -1732,11 +1460,7 @@ export const customMetaData = {
   // South Florida region services
   "south-florida": {
     services: {
-      "holiday-light-installation": {
-        title: "Holiday Light Installation in South Florida - Godly Windows",
-        description:
-          "Celebrate the season with dazzling holiday light installation in South Florida. Godly Windows handles design, setup, and takedown with safety and style in mind.",
-      },
+      
       "exterior-window-cleaning": {
         title: "Exterior Window Cleaning in South Florida - Godly Windows",
         description:
@@ -1768,11 +1492,7 @@ export const customMetaData = {
         description:
           "Blast away years of dirt and grime with our pressure washing service in South Florida. We clean driveways, patios, walls, and more with powerful precision.",
       },
-      "high-dusting": {
-        title: "High Dusting Cleaning Service in South Florida - Call Today",
-        description:
-          "Reach new heights of clean with high dusting cleaning service in South Florida. We tackle vents, beams, lights, and hard-to-reach spots to improve air quality.",
-      },
+      
       "light-fixture-cleaning": {
         title: "Light Fixture Cleaning in South Florida - Call Experts",
         description:
@@ -1783,11 +1503,7 @@ export const customMetaData = {
         description:
           "Let your screens breathe again. We provide expert screen cleaning in South Florida to remove dust, pollen, and grime so your windows stay fresh and clear.",
       },
-      "skylight-cleaning": {
-        title: "Skylight Cleaning Service in South Florida - Godly Windows",
-        description:
-          "We bring clarity back to your skylights. Our skylight cleaning service in South Florida removes streaks, dirt, and buildup to brighten every space in your home.",
-      },
+      
       "solar-panel-cleaning": {
         title: "Solar Panel Cleaning in South Florida - Godly Windows",
         description:

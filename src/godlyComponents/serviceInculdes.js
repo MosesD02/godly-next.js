@@ -41,9 +41,9 @@ const ServiceIncludes = ({ slug }) => {
           </span>{" "}
           <span
             className="text-grain hidden !bg-[#191717] md:inline-block"
-            data-text={`${Services[slug]["hero"][0]} CLEANING`}
+            data-text={`${Services[slug]["hero"][0]} ${Services[slug]["hero"][1]}`}
           >
-            {Services[slug]["hero"][0]} CLEANING
+            {Services[slug]["hero"][0]} {Services[slug]["hero"][1]}
           </span>{" "}
           <span className="text-grain !bg-[#191717]" data-text="SERVICE">
             SERVICE

@@ -460,7 +460,7 @@ const Footer = () => {
                     Our Process
                   </Link>
                   <Link
-                    href={`/${urlCityKey}/holiday-light-installation`}
+                    href={`/${urlCityKey}/holiday-lighting`}
                     className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"
                   >
                     Holiday Lighting

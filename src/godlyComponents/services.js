@@ -138,37 +138,38 @@ const Services = () => {
                       ? "Holiday Lights Without the Ladder"
                       : city === "WEST PARK"
                         ? "Holiday Lights Without the Ladder"
-                  : city === "PEMBROKE PINES"
-                      ? "Holiday Lights Without the Ladder"
-                      : city === "SUNRISE"
-                        ? "Holiday Lights Without the Ladder"
-                        : city === "DAVIE"
+                        : city === "PEMBROKE PINES"
                           ? "Holiday Lights Without the Ladder"
-                          : city === "DELRAY BEACH"
+                          : city === "SUNRISE"
                             ? "Holiday Lights Without the Ladder"
-                            : city === "HILLSBORO BEACH"
+                            : city === "DAVIE"
                               ? "Holiday Lights Without the Ladder"
-                              : city === "PLANTATION"
+                              : city === "DELRAY BEACH"
                                 ? "Holiday Lights Without the Ladder"
-                                : city === "TAMARAC"
+                                : city === "HILLSBORO BEACH"
                                   ? "Holiday Lights Without the Ladder"
-                                  : city === "DEERFIELD BEACH"
+                                  : city === "PLANTATION"
                                     ? "Holiday Lights Without the Ladder"
-                                    : city === "HOLLYWOOD"
+                                    : city === "TAMARAC"
                                       ? "Holiday Lights Without the Ladder"
-                                      : city === "MIRAMAR"
+                                      : city === "DEERFIELD BEACH"
                                         ? "Holiday Lights Without the Ladder"
-                                        : city === "POMPANO BEACH"
+                                        : city === "HOLLYWOOD"
                                           ? "Holiday Lights Without the Ladder"
-                                          : city === "LAUDERDALE-BY-THE-SEA"
+                                          : city === "MIRAMAR"
+                                            ? "Holiday Lights Without the Ladder"
+                                            : city === "POMPANO BEACH"
                                               ? "Holiday Lights Without the Ladder"
-                                              : city === "OAKLAND PARK"
+                                              : city === "LAUDERDALE-BY-THE-SEA"
                                                 ? "Holiday Lights Without the Ladder"
-                                                : city === "WESTON"
+                                                : city === "OAKLAND PARK"
                                                   ? "Holiday Lights Without the Ladder"
-                                                  : city === "ROYAL PALM BEACH"
+                                                  : city === "WESTON"
                                                     ? "Holiday Lights Without the Ladder"
-                                                    : "Holiday Light Installation"}
+                                                    : city ===
+                                                        "ROYAL PALM BEACH"
+                                                      ? "Holiday Lights Without the Ladder"
+                                                      : "Holiday Light Installation"}
                 <Image
                   src={Cap}
                   height={102}
@@ -196,7 +197,7 @@ const Services = () => {
                 <>
                   Looking for{" "}
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Christmas light installation in Parkland
@@ -208,7 +209,7 @@ const Services = () => {
               ) : city === "COCONUT CREEK" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Holiday light installation in Coconut Creek
@@ -220,7 +221,7 @@ const Services = () => {
               ) : city === "COOPER CITY" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Holiday light installation in Cooper City
@@ -232,7 +233,7 @@ const Services = () => {
               ) : city === "WEST PARK" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Holiday light installation in West Park
@@ -244,7 +245,7 @@ const Services = () => {
               ) : city === "FORT LAUDERDALE" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Holiday light installation in Fort Lauderdale
@@ -256,7 +257,7 @@ const Services = () => {
               ) : city === "LIGHTHOUSE POINT" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Looking for holiday light installers near me?
@@ -268,7 +269,7 @@ const Services = () => {
               ) : city === "SOUTHWEST RANCHES" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Christmas light installation in Southwest Ranches
@@ -280,7 +281,7 @@ const Services = () => {
               ) : city === "CORAL SPRINGS" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Holiday light installation in Coral Springs
@@ -293,7 +294,7 @@ const Services = () => {
                 <>
                   Enjoy professional{" "}
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     holiday light installation in Hallandale Beach
@@ -304,7 +305,7 @@ const Services = () => {
               ) : city === "MARGATE" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Christmas light installation in Margate
@@ -316,7 +317,7 @@ const Services = () => {
               ) : city === "PEMBROKE PINES" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Holiday light installation in Pembroke Pines
@@ -329,7 +330,7 @@ const Services = () => {
                 <>
                   Celebrate brighter with{" "}
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Christmas light installation in Sunrise
@@ -340,7 +341,7 @@ const Services = () => {
               ) : city === "DAVIE" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Holiday light installation in Davie
@@ -365,7 +366,7 @@ const Services = () => {
               ) : city === "PLANTATION" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Holiday light installation in Plantation
@@ -378,7 +379,7 @@ const Services = () => {
                 <>
                   Get{" "}
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     holiday light installation in Tamarac
@@ -390,7 +391,7 @@ const Services = () => {
               ) : city === "DEERFIELD BEACH" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Christmas light installation in Deerfield Beach
@@ -402,7 +403,7 @@ const Services = () => {
                 <>
                   Outdoor{" "}
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Christmas light installation in Hollywood
@@ -413,7 +414,7 @@ const Services = () => {
               ) : city === "MIRAMAR" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Miramar holiday light installation
@@ -426,7 +427,7 @@ const Services = () => {
                 <>
                   Bring your holiday vision to life with{" "}
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Christmas light installation in Pompano Beach
@@ -437,7 +438,7 @@ const Services = () => {
               ) : city === "LAUDERDALE-BY-THE-SEA" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Holiday light installation in Lauderdale-by-the-Sea
@@ -448,7 +449,7 @@ const Services = () => {
               ) : city === "OAKLAND PARK" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Christmas light installation in Oakland Park
@@ -461,7 +462,7 @@ const Services = () => {
                 <>
                   Weston's go-to for{" "}
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     holiday light installation
@@ -472,7 +473,7 @@ const Services = () => {
               ) : city === "ROYAL PALM BEACH" ? (
                 <>
                   <Link
-                    href={`/${cityKey}/holiday-light-installation`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"
                   >
                     Christmas light installation in Royal Palm Beach
@@ -489,7 +490,7 @@ const Services = () => {
                 </>
               )}
             </p>
-            <Link href={`/${cityKey}/holiday-light-installation`}>
+            <Link href={`/${cityKey}/holiday-lighting`}>
               <Button className="trim flex h-auto cursor-pointer rounded-[6.32px] bg-white p-3 font-[satoshi-bold] text-sm text-[10px] text-[312E2C] hover:bg-white/80 md:px-4 md:py-[14px] md:text-sm">
                 What We Offer
               </Button>
@@ -537,14 +538,16 @@ function ServicesGrid() {
         "Our gentle roof cleaning removes algae, mold and debris, extending the life and look of your shingles,metal or tile roof..",
       "Pressure & Soft Washing":
         "We clean driveways, patios, and pavers with care; power where needed, soft wash where it counts.",
-      "High Dusting":
-        "Cobwebs and dust in high corners? We safely tackle what ladders can't reach, indoors or out.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "Restore brilliance to your lanterns, pendants, and exterior fixtures with our safe and careful clean.",
       "Screen Cleaning":
         "We remove film, pollen, spider webs and mildew from screen rooms and pool cages; keeping your views and airflow clear.",
-      "Skylight Cleaning":
-        "We clean interior and exterior skylights; even those high up; so Parkland sunshine comes through crystal clear.",
       "Solar Panel Cleaning":
         "Dust and debris lower efficiency. We clean solar panels to maximize output and energy savings.",
       "Paver Sealing":
@@ -553,7 +556,6 @@ function ServicesGrid() {
 
     return parklandDescriptions[serviceName] || null;
   };
-
 
   const getFortLauderdaleServiceDescription = (serviceName) => {
     const fortLauderdaleDescriptions = {
@@ -569,14 +571,16 @@ function ServicesGrid() {
         "Extend the life of your tile or shingle roof by clearing away black streaks, moss, and debris using our low-pressure method.",
       "Pressure & Soft Washing":
         "Whether it's a weather-worn driveway or delicate pavers, we tailor our cleaning pressure to protect your surfaces while restoring their shine.",
-      "High Dusting":
-        "We eliminate cobwebs and buildup from high ceilings, beams, and light fixtures with specialized equipment and care.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "Let your chandeliers, sconces, and lanterns shine again with our careful, detailed clean—indoors or outdoors.",
       "Screen Cleaning":
         "We safely remove grime, mildew, and buildup from screened patios and pool enclosures for clear views and fresh airflow.",
-      "Skylight Cleaning":
-        "South Florida sunlight should shine cleanly through. We clean skylights from both sides—even those hard to reach.",
       "Solar Panel Cleaning":
         "Keep your solar system performing efficiently by removing the dust and residue that reduce energy output.",
       "Paver Sealing":
@@ -600,14 +604,16 @@ function ServicesGrid() {
         "Extend the life of your roof by clearing black streaks and algae with our low-pressure, tile-safe cleaning system.",
       "Pressure & Soft Washing":
         "Whether your surfaces need power or precision, we safely clean driveways, walkways, and patios based on the material.",
-      "High Dusting":
-        "From ceiling fans to beams and corners, we handle high-up dust removal with professional tools and care.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "We clean chandeliers, sconces, and outdoor lights—restoring brilliance without damaging delicate features.",
       "Screen Cleaning":
         "Enjoy better airflow and views with screens free of grime, mildew, and haze. Ideal for Lighthouse Point's breezy coastal living.",
-      "Skylight Cleaning":
-        "We clean both sides of your skylights—even the tough-to-reach ones—so natural light flows through clearly and beautifully.",
       "Solar Panel Cleaning":
         "Boost solar output by clearing dust, pollen, and salt residue from panels. Cleaner panels mean better energy efficiency.",
       "Paver Sealing":
@@ -631,14 +637,16 @@ function ServicesGrid() {
         "Preserve the value and lifespan of your roof by removing stains, grime, and algae buildup with our gentle low-pressure method.",
       "Pressure & Soft Washing":
         "Whether it's concrete, barn walkways, or patios, we clean all outdoor surfaces using the correct pressure for each material.",
-      "High Dusting":
-        "We safely remove dust and cobwebs from high ceilings, beams, and barn interiors using specialty equipment.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "Our team restores clarity and brightness to both interior chandeliers and outdoor lighting features.",
       "Screen Cleaning":
         "From pool cages to porch screens, we gently remove buildup, letting light and fresh air back into your space.",
-      "Skylight Cleaning":
-        "Enjoy clear skies and natural light again. We clean skylights inside and out—even those that are hard to reach.",
       "Solar Panel Cleaning":
         "We remove residue, pollen, and dust that reduce solar panel efficiency—ensuring you get the most from your investment.",
       "Paver Sealing":
@@ -662,14 +670,16 @@ function ServicesGrid() {
         "Extend roof life by safely removing black streaks, algae, and debris using our low-pressure cleaning method.",
       "Pressure & Soft Washing":
         "We clean driveways, walkways, and patios with the right pressure for each surface—powerful where needed, gentle where it counts.",
-      "High Dusting":
-        "Reach what ladders can't with our professional high-dusting service, clearing cobwebs and buildup from ceilings and corners.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "Restore brilliance to chandeliers, sconces, and outdoor lights with our careful, detailed cleaning process.",
       "Screen Cleaning":
         "Keep your views clear and air flowing with screens free of buildup, pollen, and mildew—perfect for Coral Springs living.",
-      "Skylight Cleaning":
-        "We clean both sides of your skylights—even hard-to-reach ones—so natural light flows through crystal clear.",
       "Solar Panel Cleaning":
         "Maximize energy output by removing dust, pollen, and debris that reduce solar panel efficiency and performance.",
       "Paver Sealing":
@@ -693,14 +703,16 @@ function ServicesGrid() {
         "Protect and brighten your roof by clearing away black streaks and buildup using our low-pressure roof-safe system.",
       "Pressure & Soft Washing":
         "We restore the beauty of driveways, pavers, and patios with the right pressure for each surface—powerful on stone, gentle on paint.",
-      "High Dusting":
-        "Using professional tools, we remove hard-to-reach cobwebs and ceiling dust in foyers, entryways, and high corners.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "Indoor and outdoor lights regain their glow with our detailed and damage-free fixture cleaning service.",
       "Screen Cleaning":
         "We clean screen enclosures and lanai cages to remove mold, film, and buildup—perfect for open-air living near the coast.",
-      "Skylight Cleaning":
-        "Bring more natural light indoors. We safely clean skylights inside and out for clearer, brighter spaces.",
       "Solar Panel Cleaning":
         "Maximize energy output by removing dust, pollen, and salt deposits from your solar panels.",
       "Paver Sealing":
@@ -724,14 +736,16 @@ function ServicesGrid() {
         "We use low-pressure equipment to lift off black streaks, lichen, and roof grime—preserving shingles and enhancing appearance.",
       "Pressure & Soft Washing":
         "We clean driveways, entryways, patios, and walkways with precision—adjusting pressure based on surface needs.",
-      "High Dusting":
-        "From indoor beams to high corners, we eliminate dust and cobwebs in hard-to-reach areas using specialized tools.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "Let your lights shine again. We clean chandeliers, sconces, and exterior fixtures with care and attention to detail.",
       "Screen Cleaning":
         "We remove mold, dust, and mildew from screened patios and pool cages to restore airflow and visibility.",
-      "Skylight Cleaning":
-        "We clean skylights from both sides, ensuring maximum clarity and improved natural lighting indoors.",
       "Solar Panel Cleaning":
         "Improve your system's energy output by clearing away dust, pollen, and surface buildup.",
       "Paver Sealing":
@@ -755,14 +769,16 @@ function ServicesGrid() {
         "Extend your roof's life with our gentle, low-pressure wash that eliminates black streaks, lichen, and organic buildup.",
       "Pressure & Soft Washing":
         "From patios to pavers, we restore outdoor surfaces using the right pressure for safe and effective results.",
-      "High Dusting":
-        "We eliminate cobwebs and dust from high ceilings, corners, and beams in both homes and commercial spaces.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "We safely clean interior and exterior light fixtures—including chandeliers, sconces, and porch lights—to restore brilliance.",
       "Screen Cleaning":
         "We clean pool cages, screened porches, and lanai enclosures to improve airflow and bring back clear views.",
-      "Skylight Cleaning":
-        "Natural light looks better through clean glass. We clean skylights inside and out—even at difficult-to-reach heights.",
       "Solar Panel Cleaning":
         "Remove dust, sap, and buildup to boost solar performance and efficiency with regular cleaning.",
       "Paver Sealing":
@@ -786,14 +802,16 @@ function ServicesGrid() {
         "Our low-pressure roof wash removes black streaks, mildew, and roof debris while preserving the structure and finish.",
       "Pressure & Soft Washing":
         "We clean walkways, patios, driveways, and more—adjusting pressure to match the surface type for safe, thorough results.",
-      "High Dusting":
-        "Remove dust and cobwebs from high ceilings, corners, and beams with our professional high-reach dusting equipment.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "Chandeliers, pendant lights, and outdoor fixtures are safely cleaned and restored to their original clarity and shine.",
       "Screen Cleaning":
         "We clean screen enclosures and lanai cages, removing mildew and film so you can enjoy the view and airflow again.",
-      "Skylight Cleaning":
-        "Enjoy more natural light with our interior and exterior skylight cleaning—even for hard-to-reach models.",
       "Solar Panel Cleaning":
         "Improve solar panel performance with routine cleanings that remove dust, dirt, and leaf residue.",
       "Paver Sealing":
@@ -817,14 +835,16 @@ function ServicesGrid() {
         "Gentle low-pressure roof cleaning removes black streaks, mildew, and buildup while preserving shingles and tile.",
       "Pressure & Soft Washing":
         "From patios to driveways and walkways, we tailor the pressure for every surface to clean safely and effectively.",
-      "High Dusting":
-        "Remove dust and cobwebs from high ceilings, fans, and beams with professional-grade tools that reach where ladders can't.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "We clean indoor and outdoor fixtures—restoring brilliance to chandeliers, sconces, porch lights, and more.",
       "Screen Cleaning":
         "We clean screen enclosures and pool cages to remove mildew and dirt buildup—reviving your outdoor spaces.",
-      "Skylight Cleaning":
-        "Let more sunlight in with our streak-free interior and exterior skylight cleaning service—even for hard-to-reach models.",
       "Solar Panel Cleaning":
         "Increase solar efficiency by removing layers of dirt, pollen, and residue that block sunlight and reduce output.",
       "Paver Sealing":
@@ -848,14 +868,16 @@ function ServicesGrid() {
         "Our low-pressure roof washing removes black streaks, mildew, and organic growth—extending your roof's lifespan and appearance.",
       "Pressure & Soft Washing":
         "From paver patios to driveways and walkways, we clean all surfaces using the right pressure to avoid damage.",
-      "High Dusting":
-        "Dust and cobwebs in high corners? We reach them safely and cleanly with our specialized tools.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "Indoor chandeliers or outdoor sconces—we bring back their shine with a careful, detailed cleaning process.",
       "Screen Cleaning":
         "We clean and restore pool cages and screened patios by removing mildew, dirt, and salt film from every surface.",
-      "Skylight Cleaning":
-        "Let more Florida sun into your home with streak-free skylight cleaning—interior and exterior.",
       "Solar Panel Cleaning":
         "Get the most from your solar setup by keeping panels clear of salt, pollen, and dust buildup.",
       "Paver Sealing":
@@ -878,14 +900,16 @@ function ServicesGrid() {
         "Our low-pressure roof cleaning removes dark streaks, organic buildup, and debris—extending the life and look of your roof.",
       "Pressure & Soft Washing":
         "We clean driveways, patios, fences, and walkways using the right pressure for every surface to ensure safe, thorough results.",
-      "High Dusting":
-        "Dust and cobwebs on beams or vaulted ceilings? We safely remove them with high-reach tools and great attention to detail.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "We restore clarity and shine to interior and exterior fixtures—including chandeliers, sconces, porch lights, and more.",
       "Screen Cleaning":
         "We remove mildew, dirt, and haze from screened lanais and pool cages—restoring airflow and clear views.",
-      "Skylight Cleaning":
-        "More light, less grime. We clean skylights inside and out—even those in hard-to-reach spots—for maximum brightness.",
       "Solar Panel Cleaning":
         "Keep your solar system running efficiently with regular cleanings that remove salt, dust, and debris.",
       "Paver Sealing":
@@ -908,14 +932,16 @@ function ServicesGrid() {
         "Protect your shingles or tiles with our low-pressure roof cleaning system that removes black streaks, debris, and moss.",
       "Pressure & Soft Washing":
         "From driveways to walkways, we apply the perfect pressure to lift stains and dirt without damaging your hardscapes.",
-      "High Dusting":
-        "We remove dust and cobwebs from ceilings, beams, and high fixtures with professional tools and precision care.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "From outdoor lights to indoor chandeliers, we bring back the shine without leaving streaks or residue behind.",
       "Screen Cleaning":
         "We clean patio screens and pool enclosures to remove mildew, film, and dust—restoring clear views and airflow.",
-      "Skylight Cleaning":
-        "Enjoy more natural light through spotless skylights—cleaned inside and out, even in hard-to-reach spots.",
       "Solar Panel Cleaning":
         "We safely clean solar panels to improve energy efficiency by removing debris, dust, and environmental buildup.",
       "Paver Sealing":
@@ -938,14 +964,16 @@ function ServicesGrid() {
         "We gently remove black streaks, roof algae, and debris with a low-pressure wash that protects tile and shingles alike.",
       "Pressure & Soft Washing":
         "Whether it's your driveway, seawall path, or patio, we clean it safely and effectively with surface-appropriate pressure.",
-      "High Dusting":
-        "From vaulted ceilings to exposed beams, we reach and remove dust and cobwebs—leaving your home refreshed and clean.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "We clean indoor and outdoor light fixtures to restore brightness and detail without damage or residue.",
       "Screen Cleaning":
         "We clear salt, dust, and mildew from screened patios and pool enclosures—improving airflow and restoring views.",
-      "Skylight Cleaning":
-        "We clean skylights from inside and out, ensuring you enjoy uninterrupted sunshine and clear views above.",
       "Solar Panel Cleaning":
         "Keep your solar investment efficient and productive with regular cleanings that remove debris, sand, and salt film.",
       "Paver Sealing":
@@ -968,14 +996,16 @@ function ServicesGrid() {
         "Our low-pressure roof cleaning lifts black streaks, dirt, and organic buildup—extending the life of tile and shingle roofs.",
       "Pressure & Soft Washing":
         "We clean walkways, driveways, pool decks, and patios—using the proper pressure to safely restore any surface.",
-      "High Dusting":
-        "We safely remove dust and cobwebs from vaulted ceilings, beams, and hard-to-reach corners with professional tools.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "Restore brilliance to your indoor and outdoor lighting with our detailed, streak-free fixture cleaning.",
       "Screen Cleaning":
         "We clean screens and pool enclosures to remove mildew and grime—improving views and airflow around your home.",
-      "Skylight Cleaning":
-        "We clean skylights from the inside and out—helping Lauderdale-by-the-Sea's sunshine beam through crystal-clear glass.",
       "Solar Panel Cleaning":
         "Maximize energy efficiency by removing layers of salt, pollen, and dirt that reduce panel output over time.",
       "Paver Sealing":
@@ -998,14 +1028,16 @@ function ServicesGrid() {
         "Protect your roof and enhance curb appeal with our low-pressure wash that eliminates black streaks and roof grime.",
       "Pressure & Soft Washing":
         "We clean patios, driveways, pavers, and more—matching pressure to the surface to ensure a deep but safe clean.",
-      "High Dusting":
-        "We remove cobwebs and buildup from high beams, corners, and entryways—perfect for Delray homes with vaulted ceilings or open spaces.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "From chandeliers to outdoor lanterns, we clean fixtures with care—restoring their brightness and detail.",
       "Screen Cleaning":
         "Enjoy unobstructed views again. We remove mildew and dirt from screened patios and pool cages for a fresh, clear finish.",
-      "Skylight Cleaning":
-        "We clean interior and exterior skylights—even at height—so more natural Delray sunlight can shine through.",
       "Solar Panel Cleaning":
         "Boost solar panel performance by removing dust, salt, and pollen buildup that blocks energy output.",
       "Paver Sealing":
@@ -1029,14 +1061,16 @@ function ServicesGrid() {
         "Our low-pressure method safely removes black streaks and roof algae—helping extend the life of your tiles or shingles.",
       "Pressure & Soft Washing":
         "From seawall walkways to driveway pavers, we match the right pressure to each surface for a thorough yet safe clean.",
-      "High Dusting":
-        "We clean high corners, beams, and fixtures—perfect for luxury homes with vaulted ceilings or multi-level foyers.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "We carefully clean both interior and exterior lighting—restoring brilliance to chandeliers, sconces, and entry lights.",
       "Screen Cleaning":
         "Remove film, mildew, and salt from screened areas—improving visibility and airflow in your lanai or patio enclosure.",
-      "Skylight Cleaning":
-        "Enjoy Hillsboro sunshine through crystal-clear skylights. We clean both sides—even at height—for maximum light and clarity.",
       "Solar Panel Cleaning":
         "Salt, dust, and pollen can lower solar efficiency. We keep your panels clean to maintain peak energy performance.",
       "Paver Sealing":
@@ -1060,14 +1094,16 @@ function ServicesGrid() {
         "Restore the beauty of your roof and extend its lifespan by removing black streaks and grime using our low-pressure, tile-safe approach.",
       "Pressure & Soft Washing":
         "We clean driveways, walkways, and patios using the appropriate pressure to safely remove dirt and stains without surface damage.",
-      "High Dusting":
-        "Remove dust and cobwebs from high ceilings, beams, and light fixtures—perfect for homes with tall interiors or open spaces.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "Chandeliers, sconces, and porch lights are restored to their original clarity with careful, streak-free cleaning.",
       "Screen Cleaning":
         "Enjoy the outdoors again with clean, mildew-free screens and pool enclosures that enhance airflow and visibility.",
-      "Skylight Cleaning":
-        "We clean interior and exterior skylights—even at height—so natural Plantation sunlight beams through with clarity.",
       "Solar Panel Cleaning":
         "Maximize solar efficiency by removing buildup, dust, and pollen that block energy production.",
       "Paver Sealing":
@@ -1091,14 +1127,16 @@ function ServicesGrid() {
         "We remove black streaks, organic buildup, and roof stains with a low-pressure system that preserves your roof's structure.",
       "Pressure & Soft Washing":
         "From driveways and patios to pavers and walkways, we tailor our approach to clean thoroughly without surface damage.",
-      "High Dusting":
-        "Remove cobwebs and buildup from high ceilings, fans, and beams using our safe, high-reach tools.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "We restore clarity to your interior and exterior fixtures—from chandeliers to porch lights—without scratching or damage.",
       "Screen Cleaning":
         "Keep your screened areas fresh and functional. We remove mildew and debris from pool cages and patio enclosures.",
-      "Skylight Cleaning":
-        "Enjoy clearer, brighter spaces with our professional skylight cleaning—interior and exterior—even in hard-to-reach spots.",
       "Solar Panel Cleaning":
         "Improve solar performance by clearing away dust, leaves, and debris that block energy absorption.",
       "Paver Sealing":
@@ -1122,14 +1160,16 @@ function ServicesGrid() {
         "We use low-pressure cleaning to remove black streaks, algae, and debris—extending the life and appearance of your roof.",
       "Pressure & Soft Washing":
         "From driveways to patios and walkways, we clean all surfaces using the appropriate pressure for safe and effective results.",
-      "High Dusting":
-        "Remove dust and cobwebs from high ceilings, beams, and corners with our professional high-reach tools and careful technique.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "We restore brightness to interior and exterior fixtures—from chandeliers to porch lights—with detailed, streak-free cleaning.",
       "Screen Cleaning":
         "We clean screened patios and pool enclosures to remove buildup and mildew—improving airflow and visibility.",
-      "Skylight Cleaning":
-        "Let more natural light in with our thorough skylight cleaning—interior and exterior—even for hard-to-reach installations.",
       "Solar Panel Cleaning":
         "Maximize energy efficiency by removing dust, pollen, and debris that reduce solar panel output and performance.",
       "Paver Sealing":
@@ -1153,14 +1193,16 @@ function ServicesGrid() {
         "Our low-pressure roof cleaning removes black streaks, moss, and debris—preserving roof integrity and curb appeal.",
       "Pressure & Soft Washing":
         "We restore walkways, patios, and pavers using the right cleaning method for every surface—safe, powerful, and lasting.",
-      "High Dusting":
-        "We remove dust and cobwebs from ceiling corners, beams, and high fixtures using professional high-reach tools.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "From outdoor sconces to foyer chandeliers, we clean fixtures thoroughly—restoring light and brilliance.",
       "Screen Cleaning":
         "We remove haze, mildew, and dirt from screened lanais and pool enclosures—perfect for Weston's outdoor spaces.",
-      "Skylight Cleaning":
-        "We clean skylights inside and out—even hard-to-reach ones—so natural light flows freely and beautifully into your home.",
       "Solar Panel Cleaning":
         "We improve solar output by removing the dust, pollen, and residue that block sunlight and reduce efficiency.",
       "Paver Sealing":
@@ -1184,14 +1226,16 @@ function ServicesGrid() {
         "Extend the life of your roof with our low-pressure wash that eliminates black streaks, moss, and algae growth.",
       "Pressure & Soft Washing":
         "We clean pavers, driveways, patios, and pool decks—adjusting pressure for each surface to ensure a safe and thorough clean.",
-      "High Dusting":
-        "Our high-reach tools remove dust and cobwebs from ceiling corners, beams, and light fixtures—refreshing your interior.",
+      "Window Cleaning":
+        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+      "Soft Washing":
+        "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
+      "Holiday Lighting":
+        "Custom design, professional installation, premium LEDs, maintenance, and removal—hands-free holiday displays for your property.",
       "Light Fixture Cleaning":
         "From entryway lanterns to living room chandeliers, we clean light fixtures inside and out for full brightness and sparkle.",
       "Screen Cleaning":
         "We restore screened areas and pool cages by removing mildew, dust, and buildup—improving airflow and outdoor visibility.",
-      "Skylight Cleaning":
-        "Let the Florida sunshine pour in through freshly cleaned skylights—inside and out, even at height.",
       "Solar Panel Cleaning":
         "Maximize energy output by removing the dirt, pollen, and residue that reduce solar performance.",
       "Paver Sealing":
@@ -1265,39 +1309,42 @@ function ServicesGrid() {
                                         : city === "HILLSBORO BEACH"
                                           ? `${service.name} in Hillsboro Beach`
                                           : city === "CORAL SPRINGS"
-                                              ? `${service.name} in Coral Springs`
-                                              : city === "HALLANDALE BEACH"
-                                                ? `${service.name} in Hallandale Beach`
-                                                : city === "MARGATE"
-                                                  ? `${service.name} in Margate`
-                                                  : city === "PEMBROKE PINES"
-                                                    ? `${service.name} in Pembroke Pines`
-                                                    : city === "SUNRISE"
-                                                      ? `${service.name} in Sunrise`
-                                                      : city === "PLANTATION"
-                                                        ? `${service.name} in Plantation`
-                                                        : city === "TAMARAC"
-                                                          ? `${service.name} in Tamarac`
-                                                          : city === "HOLLYWOOD"
-                                                            ? `${service.name} in Hollywood`
-                                                            : city === "MIRAMAR"
-                                                              ? `${service.name} in Miramar`
+                                            ? `${service.name} in Coral Springs`
+                                            : city === "HALLANDALE BEACH"
+                                              ? `${service.name} in Hallandale Beach`
+                                              : city === "MARGATE"
+                                                ? `${service.name} in Margate`
+                                                : city === "PEMBROKE PINES"
+                                                  ? `${service.name} in Pembroke Pines`
+                                                  : city === "SUNRISE"
+                                                    ? `${service.name} in Sunrise`
+                                                    : city === "PLANTATION"
+                                                      ? `${service.name} in Plantation`
+                                                      : city === "TAMARAC"
+                                                        ? `${service.name} in Tamarac`
+                                                        : city === "HOLLYWOOD"
+                                                          ? `${service.name} in Hollywood`
+                                                          : city === "MIRAMAR"
+                                                            ? `${service.name} in Miramar`
+                                                            : city ===
+                                                                "LAUDERDALE-BY-THE-SEA"
+                                                              ? `${service.name} in Lauderdale-by-the-Sea`
                                                               : city ===
-                                                                    "LAUDERDALE-BY-THE-SEA"
-                                                                  ? `${service.name} in Lauderdale-by-the-Sea`
+                                                                  "OAKLAND PARK"
+                                                                ? `${service.name} in Oakland Park`
+                                                                : city ===
+                                                                    "ROYAL PALM BEACH"
+                                                                  ? `${service.name} in Royal Palm Beach`
                                                                   : city ===
-                                                                      "OAKLAND PARK"
-                                                                    ? `${service.name} in Oakland Park`
+                                                                      "COCONUT CREEK"
+                                                                    ? `${service.name} in Coconut Creek`
                                                                     : city ===
-                                                                        "ROYAL PALM BEACH"
-                                                                      ? `${service.name} in Royal Palm Beach`
-                                                                      : city === "COCONUT CREEK"
-                                                                        ? `${service.name} in Coconut Creek`
-                                                                        : city === "COOPER CITY"
-                                                                          ? `${service.name} in Cooper City`
-                                                                          : city === "WEST PARK"
-                                                                            ? `${service.name} in West Park`
-                                                                            : service.name}
+                                                                        "COOPER CITY"
+                                                                      ? `${service.name} in Cooper City`
+                                                                      : city ===
+                                                                          "WEST PARK"
+                                                                        ? `${service.name} in West Park`
+                                                                        : service.name}
                   </h3>
                   <p
                     className={`font-[satoshi-regular] text-xs font-normal ${isActive ? "text-white" : "text-[#1f1d1d]"} group-hover:text-white md:text-base`}
@@ -1306,100 +1353,97 @@ function ServicesGrid() {
                       ? getParklandServiceDescription(service.name) ||
                         service.description
                       : city === "FORT LAUDERDALE"
-                          ? getFortLauderdaleServiceDescription(service.name) ||
-                            service.description
-                          : city === "LIGHTHOUSE POINT"
-                            ? getLighthousePointServiceDescription(
+                        ? getFortLauderdaleServiceDescription(service.name) ||
+                          service.description
+                        : city === "LIGHTHOUSE POINT"
+                          ? getLighthousePointServiceDescription(
+                              service.name,
+                            ) || service.description
+                          : city === "SOUTHWEST RANCHES"
+                            ? getSouthwestRanchesServiceDescription(
                                 service.name,
                               ) || service.description
-                            : city === "SOUTHWEST RANCHES"
-                              ? getSouthwestRanchesServiceDescription(
+                            : city === "CORAL SPRINGS"
+                              ? getCoralSpringsServiceDescription(
                                   service.name,
                                 ) || service.description
-                              : city === "CORAL SPRINGS"
-                                ? getCoralSpringsServiceDescription(
+                              : city === "HALLANDALE BEACH"
+                                ? getHallandaleBeachServiceDescription(
                                     service.name,
                                   ) || service.description
-                                : city === "HALLANDALE BEACH"
-                                  ? getHallandaleBeachServiceDescription(
+                                : city === "MARGATE"
+                                  ? getMargateServiceDescription(
                                       service.name,
                                     ) || service.description
-                                  : city === "MARGATE"
-                                    ? getMargateServiceDescription(
+                                  : city === "PEMBROKE PINES"
+                                    ? getPembrokePinesServiceDescription(
                                         service.name,
                                       ) || service.description
-                                    : city === "PEMBROKE PINES"
-                                      ? getPembrokePinesServiceDescription(
+                                    : city === "SUNRISE"
+                                      ? getSunriseServiceDescription(
                                           service.name,
                                         ) || service.description
-                                      : city === "SUNRISE"
-                                        ? getSunriseServiceDescription(
+                                      : city === "DAVIE"
+                                        ? getDavieServiceDescription(
                                             service.name,
                                           ) || service.description
-                                        : city === "DAVIE"
-                                          ? getDavieServiceDescription(
+                                        : city === "DELRAY BEACH"
+                                          ? getDelrayBeachServiceDescription(
                                               service.name,
                                             ) || service.description
-                                          : city === "DELRAY BEACH"
-                                            ? getDelrayBeachServiceDescription(
+                                          : city === "HILLSBORO BEACH"
+                                            ? getHillsboroBeachServiceDescription(
                                                 service.name,
                                               ) || service.description
-                                            : city === "HILLSBORO BEACH"
-                                              ? getHillsboroBeachServiceDescription(
+                                            : city === "PLANTATION"
+                                              ? getPlantationServiceDescription(
                                                   service.name,
                                                 ) || service.description
-                                              : city === "PLANTATION"
-                                                ? getPlantationServiceDescription(
+                                              : city === "TAMARAC"
+                                                ? getTamaracServiceDescription(
                                                     service.name,
                                                   ) || service.description
-                                                : city === "TAMARAC"
-                                                  ? getTamaracServiceDescription(
+                                                : city === "DEERFIELD BEACH"
+                                                  ? getDeerfieldBeachServiceDescription(
                                                       service.name,
                                                     ) || service.description
-                                                  : city === "DEERFIELD BEACH"
-                                                    ? getDeerfieldBeachServiceDescription(
+                                                  : city === "HOLLYWOOD"
+                                                    ? getHollywoodServiceDescription(
                                                         service.name,
                                                       ) || service.description
-                                                    : city === "HOLLYWOOD"
-                                                      ? getHollywoodServiceDescription(
+                                                    : city === "MIRAMAR"
+                                                      ? getMiramarServiceDescription(
                                                           service.name,
                                                         ) || service.description
-                                                      : city === "MIRAMAR"
-                                                        ? getMiramarServiceDescription(
+                                                      : city === "POMPANO BEACH"
+                                                        ? getPompanoBeachServiceDescription(
                                                             service.name,
                                                           ) ||
                                                           service.description
                                                         : city ===
-                                                            "POMPANO BEACH"
-                                                          ? getPompanoBeachServiceDescription(
+                                                            "LAUDERDALE-BY-THE-SEA"
+                                                          ? getLauderdaleByTheSeaServiceDescription(
                                                               service.name,
                                                             ) ||
                                                             service.description
                                                           : city ===
-                                                                "LAUDERDALE-BY-THE-SEA"
-                                                              ? getLauderdaleByTheSeaServiceDescription(
+                                                              "OAKLAND PARK"
+                                                            ? getOaklandParkServiceDescription(
+                                                                service.name,
+                                                              ) ||
+                                                              service.description
+                                                            : city === "WESTON"
+                                                              ? getWestonServiceDescription(
                                                                   service.name,
                                                                 ) ||
                                                                 service.description
                                                               : city ===
-                                                                  "OAKLAND PARK"
-                                                                ? getOaklandParkServiceDescription(
+                                                                  "ROYAL PALM BEACH"
+                                                                ? getRoyalPalmBeachServiceDescription(
                                                                     service.name,
                                                                   ) ||
                                                                   service.description
-                                                                : city ===
-                                                                    "WESTON"
-                                                                  ? getWestonServiceDescription(
-                                                                      service.name,
-                                                                    ) ||
-                                                                    service.description
-                                                                  : city ===
-                                                                      "ROYAL PALM BEACH"
-                                                                    ? getRoyalPalmBeachServiceDescription(
-                                                                        service.name,
-                                                                      ) ||
-                                                                      service.description
-                                                                    : service.description}
+                                                                : service.description}
                   </p>
                 </div>
                 <div className="flex w-full items-center justify-end gap-4">

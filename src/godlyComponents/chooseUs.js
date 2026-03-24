@@ -297,28 +297,82 @@ const chooseUsData = {
       description: "If you're not happy, we'll make it right.",
     },
   ],
-  "holiday-light-installation": [
+  "window-cleaning": [
     {
       name: "Trained Professionals",
       svg: shieldSvg,
       description:
-        "Skilled in safely cleaning delicate solar panels without damage.",
+        "Expert technicians hand-scrub every pane and finish with RODI purified water for streak-free, spotless glass.",
     },
     {
       name: "Fully Insured & Equipped",
       svg: toolboxSvg,
-      description: "Industry-grade tools ensure a thorough and safe clean.",
+      description:
+        "Professional poles, ladders, and tools for homes and businesses—safely reaching every window we service.",
     },
     {
-      name: "Eco-Friendly Cleaning Solutions",
+      name: "Purified Water & Smart Finishes",
       svg: leafSvg,
       description:
-        "Non-abrasive and safe for your panels and surrounding areas.",
+        "Zero-TDS rinses and optional Rain Shield help your windows stay cleaner longer without harsh residue.",
     },
     {
-      name: "Satisfaction Guarantee",
+      name: "7-Day Sparkle Guarantee",
       svg: badgeSvg,
-      description: "If you're not happy, we'll make it right.",
+      description:
+        "Storm, pet, or bird mess within a week? We come back and make it right—your satisfaction is the standard.",
+    },
+  ],
+  "soft-washing": [
+    {
+      name: "Trained Professionals",
+      svg: shieldSvg,
+      description:
+        "We match the right low-pressure technique and chemical blend to your siding, roof, or concrete—never one-size-fits-all.",
+    },
+    {
+      name: "Fully Insured & Equipped",
+      svg: toolboxSvg,
+      description:
+        "Commercial-grade soft wash systems and full insurance on every job, residential or commercial.",
+    },
+    {
+      name: "Surface-Safe Chemistry",
+      svg: leafSvg,
+      description:
+        "Custom treatments lift algae and organic growth at the source while protecting paint, landscaping, and finishes.",
+    },
+    {
+      name: "7-Day Clean Guarantee",
+      svg: badgeSvg,
+      description:
+        "Not thrilled with the result? Call within seven days and we return to make it right.",
+    },
+  ],
+  "holiday-lighting": [
+    {
+      name: "Trained Professionals",
+      svg: shieldSvg,
+      description:
+        "Design, installation, maintenance, and removal handled by an experienced holiday lighting team.",
+    },
+    {
+      name: "Fully Insured & Equipped",
+      svg: toolboxSvg,
+      description:
+        "Bucket truck access for rooflines and elevations, premium LED inventory, and coverage you can trust.",
+    },
+    {
+      name: "Free Custom Design",
+      svg: leafSvg,
+      description:
+        "We plan your display before a single bulb goes up—tailored to your home, style, and budget.",
+    },
+    {
+      name: "Full Season Support",
+      svg: badgeSvg,
+      description:
+        "24-hour maintenance during the season and full takedown when the holidays end—hands-free for you.",
     },
   ],
 };

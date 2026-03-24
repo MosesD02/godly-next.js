@@ -800,242 +800,266 @@ const Services = {
       },
     ],
   },
-  "skylight-cleaning": {
+  "window-cleaning": {
     hero: [
-      "SkyLight",
+      "Window",
       "Cleaning",
-      service9,
-      "Skylights bring natural light into your home, but dirt, algae, and hard water stains quickly dim that effect. Our skylight cleaning service safely restores clarity to both sides — from ground level to the highest installations — for maximum brightness and a spotless finish.",
+      service2,
+      (city) =>
+        `This is our jam. We specialize in residential and commercial window cleaning in ${city}. Using RODI purified water and hand scrubbing, we remove everything from silicone to overspray without leaving a single streak. Backed by our 100% money back guarantee.`,
     ],
     included: [
       {
         number: "01",
-        title: "Interior & Exterior Skylight Cleaning",
-        text: "Thoroughly removes dust, grime, and water stains from both sides.",
+        title: "Thorough Glass Scrub",
+        text: "We manually scrub every pane to lift dirt, mildew, silicone, stickers, and overspray safely.",
       },
       {
         number: "02",
-        title: "Frame &  Seal Inspection",
-        text: "Checks for signs of wear and leaks to help prevent future issues.",
+        title: "RODI Purified Water Rinse",
+        text: "Zero TDS purified water means no minerals, no spots, and no streaks when it dries.",
       },
       {
         number: "03",
-        title: "Screen & Track Cleaning",
-        text: "Ensures smooth operation for skylights that open.",
+        title: "Detail and Sill Cleaning",
+        text: "Wiping down frames and cleaning sills so every surface gets the attention it deserves.",
       },
       {
         number: "04",
-        title: "Hard Water Stain Removal",
-        text: "Eliminates mineral buildup for a streak-free shine.",
+        title: "Rain Shield Technology",
+        text: "Our unique coating repels water and dirt, keeping your windows cleaner for longer.",
+      },
+      {
+        number: "05",
+        title: "7-Day Sparkle Guarantee",
+        text: "Storm, bird, or dog got to your windows? Call us within 7 days and we make it right.",
       },
     ],
     essential: [
       {
         number: "01.",
-        title: "Maximizes Natural Light",
-        text: "Enhances brightness in your home or business.",
+        title: "Enhanced Appearance",
+        text: "Instantly boost the look of your home and keep your curb appeal on point.",
       },
       {
         number: "02.",
-        title: "Extends Skylight Lifespan",
-        text: "Prevents damage from debris buildup and water stains.",
+        title: "Increased Longevity",
+        text: "Regular cleaning prevents mineral buildup, permanent staining, and glass degradation over time.",
       },
       {
         number: "03.",
-        title: "Improves Energy Efficiency",
-        text: "A clean skylight allows for better insulation and temperature regulation.",
+        title: "Unobstructed Views",
+        text: "Whether it's the water or your backyard, clean windows keep your views crystal clear.",
       },
       {
         number: "04.",
-        title: "Enhances Aesthetic Appeal",
-        text: "Keeps your property looking pristine and well-maintained.",
+        title: "Maximize Natural Light",
+        text: "Dust, pollen, and grime block more sunlight than you think. Clean glass brightens every room.",
       },
     ],
     nearyou: [
       {
         number: "01",
-        title: "Residential Skylight Cleaning",
-        text: "Restore natural light to living rooms, kitchens, and bedrooms with streak-free cleaning.",
+        title: "Routine Home Window Cleaning",
+        text: "Regular window cleaning to maintain a clear view and keep your home looking fresh.",
       },
       {
         number: "02",
-        title: "Commercial Skylight Cleaning",
-        text: "Keep office buildings, retail spaces, and atriums bright and professional.",
+        title: "Commercial Window Cleaning",
+        text: "Regular cleaning for stores, offices, restaurants, hotels, and healthcare facilities to keep an inviting environment.",
       },
       {
         number: "03",
-        title: "Hard Water Stain Removal",
-        text: "Eliminate mineral deposits and streaks that cloud skylight glass over time.",
+        title: "Post-Construction Window Cleaning",
+        text: "Cleaning windows after new construction or home renovations to remove dust, stickers, paint, and debris.",
       },
       {
         number: "04",
-        title: "Post-Storm Skylight Cleaning",
-        text: "Remove debris and buildup left after rain, wind, or storm impact.",
+        title: "Real Estate Window Cleaning",
+        text: "Cleaning windows to enhance curb appeal and help potential buyers fall in love at first sight.",
       },
       {
         number: "05",
-        title: "New Construction Skylight Cleaning",
-        text: "Remove stickers, dust, and construction residue from newly installed skylights.",
+        title: "Boat Window Cleaning",
+        text: "Cleaning windows on boats and yachts, ensuring clear visibility while enhancing the overall appearance.",
       },
     ],
+    quote:
+      "Crystal clear windows, guaranteed — RODI purified water, hand scrubbing, and our 7-Day Sparkle Guarantee.",
   },
-  "holiday-light-installation": {
+  "soft-washing": {
     hero: [
-      "Holiday Light",
-      "Installation",
+      "Soft",
+      "Washing",
+      service5,
+      (city) =>
+        `This is our jam. We specialize in residential and commercial soft washing in ${city}. Every treatment starts with a custom chemical blend tailored to exactly what your surface needs, nothing more, nothing less. Backed by our 100% money back guarantee.`,
+    ],
+    included: [
+      {
+        number: "01",
+        title: "Custom Treatment Assessment",
+        text: "We evaluate your surface first and formulate the right blend at the lowest effective concentration.",
+      },
+      {
+        number: "02",
+        title: "Low Pressure Application",
+        text: "Safe, controlled application that cleans thoroughly without damaging your exterior or landscaping.",
+      },
+      {
+        number: "03",
+        title: "Targeted Problem Removal",
+        text: "Algae, mold, mildew, and organic growth eliminated at the source, not just rinsed off the top.",
+      },
+      {
+        number: "04",
+        title: "Exterior and Surface Protection",
+        text: "Our process protects paint, siding, and roofing materials while delivering a like-new result.",
+      },
+      {
+        number: "05",
+        title: "7-Day Clean Guarantee",
+        text: "Not satisfied with the result? Call us within 7 days and we come back and make it right.",
+      },
+    ],
+    essential: [
+      {
+        number: "01.",
+        title: "HOA Compliance",
+        text: "Got a letter? We handle it fast and get your home back in good standing without the stress.",
+      },
+      {
+        number: "02.",
+        title: "Extended Roof Life",
+        text: "Algae and organic growth break down roofing materials over time. Soft washing stops that damage early.",
+      },
+      {
+        number: "03.",
+        title: "Protects Your Investment",
+        text: "Harsh pressure washing strips and damages. Our low pressure approach cleans without costing you later.",
+      },
+      {
+        number: "04.",
+        title: "Curb Appeal That Lasts",
+        text: "A properly soft washed exterior stays cleaner longer because we remove the root cause, not just the surface.",
+      },
+    ],
+    nearyou: [
+      {
+        number: "01",
+        title: "Roof Soft Washing",
+        text: "Safe low pressure treatment that removes algae, mold, and streaking without damaging shingles or tiles.",
+      },
+      {
+        number: "02",
+        title: "House Soft Washing",
+        text: "Full exterior treatment for stucco, siding, and painted surfaces that restores your home's original look.",
+      },
+      {
+        number: "03",
+        title: "Driveway and Paver Soft Washing",
+        text: "Gentle treatment for pavers and concrete that lifts organic growth without etching or surface damage.",
+      },
+      {
+        number: "04",
+        title: "HOA Violation Soft Washing",
+        text: "Got a notice? We respond fast and get your property cleaned and compliant quickly.",
+      },
+      {
+        number: "05",
+        title: "Commercial Soft Washing",
+        text: "Keeping storefronts, office buildings, and commercial properties clean and professionally maintained.",
+      },
+    ],
+    quote:
+      "Custom chemical blends, low pressure, and a 7-Day Clean Guarantee — soft washing done right.",
+  },
+  "holiday-lighting": {
+    hero: [
+      "Holiday Lighting &",
+      "Christmas Lighting",
       service11,
-      "Skip the ladders, tangled wires, and hours of frustration. Our professional holiday light installation service handles everything from design to takedown — delivering stunning displays that make your home or business stand out all season long.",
+      (city) =>
+        `This is our jam. We bring the magic of the season to homes, communities, and businesses across ${city} without you lifting a finger. Professional installation, top of the line LED lights, free custom design, and full removal when the season ends. You enjoy it. We handle everything.`,
     ],
     included: [
       {
         number: "01",
-        title: "Lights",
-        text: "All the lights to make your Christmas wonderland a reality are provided.",
+        title: "Free Custom Design",
+        text: "We design your display before we touch a single light. Tailored to your home, your style, and your vision at no extra charge.",
       },
       {
         number: "02",
-        title: "INSTALLATION",
-        text: "Skip the hassle of installation, our elves have all the tools needed to handle it for you.",
+        title: "Premium LED Lights Provided",
+        text: "We bring everything. Top of the line energy efficient LED lights in any color, all included. You don't buy a thing.",
       },
       {
         number: "03",
-        title: "Maintainance",
-        text: "Bulb go out? Strand won't turn on? All maintenance is handled within 24 hours at no extra cost.",
+        title: "Professional Installation",
+        text: "From standard rooflines to high elevations, our bucket truck handles properties of any size safely and beautifully.",
       },
       {
         number: "04",
-        title: "Removal",
-        text: "Once the holidays are wrapped up, our team will make it look like the lights were never even there.",
+        title: "24-Hour Maintenance",
+        text: "Something goes out during the season? We're back within 24 hours to fix it. You stay hands-free the entire holiday season.",
+      },
+      {
+        number: "05",
+        title: "Full Removal Included",
+        text: "When the season ends we come back, take everything down, and leave your property exactly as we found it.",
       },
     ],
     essential: [
       {
         number: "01.",
-        title: "Safety First – Skip the Ladder & Risk",
-        text: "We handle the heights and wiring so you don't have to.",
+        title: "Completely Hands-Free",
+        text: "No ladders, no storage, no stress. We handle design, installation, maintenance, and removal so you enjoy the season.",
       },
       {
         number: "02.",
-        title: "Professional Look – Show-Stopping Results",
-        text: "Crisp lines, perfect placement, and custom designs.",
+        title: "Stunning First Impressions",
+        text: "Professional Christmas lighting transforms your home or property and makes it the one everyone remembers.",
       },
       {
         number: "03.",
-        title: "All-Inclusive – We Provide & Store the Lights",
-        text: "You don't need to buy a thing. We supply premium lights, install them, and store them for next year.",
+        title: "Safe and Insured",
+        text: "Our trained team handles all heights and property types safely. Bucket truck capability means no job is too big.",
       },
       {
         number: "04.",
-        title: "Save Time – Enjoy the Holidays",
-        text: "Free up your time and energy. We'll take care of everything start to finish",
+        title: "The Entire Season Covered",
+        text: "From installation to takedown, your display is maintained and monitored so it looks perfect every single night.",
       },
     ],
     nearyou: [
       {
         number: "01",
-        title: "Holiday Light Installation for Busy Families",
-        text: "Save time with pro Christmas light setup—no ladders, no stress.",
+        title: "Residential Holiday Lighting",
+        text: "Custom designed Christmas lighting displays for homes. We install, maintain, and remove everything so you enjoy a stress-free season.",
       },
       {
         number: "02",
-        title: "Christmas Lighting for Seniors",
-        text: "Safe, hands-free holiday lights for older homeowners.",
+        title: "Commercial Holiday Lighting",
+        text: "Storefronts, office buildings, and business properties transformed with professional festive displays.",
       },
       {
         number: "03",
-        title: "Lighting Services for Large & Luxury Homes",
-        text: "Custom designs and clean installs that make big homes shine.",
+        title: "HOA and Community Lighting",
+        text: "We handle entire communities and neighborhoods. Consistent, beautiful displays across multiple properties with one call.",
       },
       {
         number: "04",
-        title: "Commercial Christmas Light Installation",
-        text: "Attract customers with festive lighting for stores, restaurants, and offices.",
+        title: "Roofline and Architectural Lighting",
+        text: "From standard rooflines to high elevations, our bucket truck handles any height safely and with precision.",
       },
       {
         number: "05",
-        title: "HOA & Property Management Lighting",
-        text: "Professional displays for neighborhoods, apartment complexes, and buildings.",
+        title: "Wreaths and Accent Decor",
+        text: "Complement your display with premium wreaths and accent pieces. Available as an add-on to complete your holiday look.",
       },
     ],
-  },
-  "high-dusting": {
-    hero: [
-      "High",
-      "Dusting",
-      service12,
-      "Cobwebs, dust, and buildup in high corners and ceilings don't just look bad — they affect air quality and make your home feel neglected. Our high dusting service safely removes debris from hard-to-reach beams, fans, vaulted ceilings, and ledges using professional-grade equipment.",
-    ],
-    included: [
-      {
-        number: "01",
-        title: "Assessment & Equipment Setup",
-        text: "We assess ceiling height and surface type to select the right high-reach tools.",
-      },
-      {
-        number: "02",
-        title: "Ceiling Fan & Fixture Cleaning",
-        text: "Blades, casings, and light covers are carefully wiped down to remove dust buildup.",
-      },
-      {
-        number: "03",
-        title: "Cobweb & Debris Removal",
-        text: "Using extended tools, we clear dust and webs from corners, beams, and ledges.",
-      },
-      {
-        number: "04",
-        title: "Final Wipe-Down & Cleanup",
-        text: "Fallen debris is collected and surfaces below are left clean.",
-      },
-    ],
-    essential: [
-      {
-        number: "01.",
-        title: "Improves Air Quality",
-        text: "Removes dust, allergens, and cobwebs that circulate through your home.",
-      },
-      {
-        number: "02.",
-        title: "Safer Than DIY",
-        text: "No ladders needed. Our tools safely reach where others can't.",
-      },
-      {
-        number: "03.",
-        title: "Protects Your Surfaces",
-        text: "Prevents dust buildup from damaging fixtures, fans, and finishes over time.",
-      },
-      {
-        number: "04.",
-        title: "Fresher, Cleaner Home",
-        text: "Hard-to-reach areas stay cleaner longer with professional-grade equipment.",
-      },
-    ],
-    nearyou: [
-      {
-        number: "01",
-        title: "Ceiling & Beam Dusting",
-        text: "Remove years of accumulated dust and cobwebs from vaulted ceilings and exposed beams.",
-      },
-      {
-        number: "02",
-        title: "Ceiling Fan Cleaning",
-        text: "Safely clean dusty fan blades that spread allergens every time they spin.",
-      },
-      {
-        number: "03",
-        title: "High Corner Cobweb Removal",
-        text: "Clear persistent spider webs from entryways, stairwells, and tall rooms.",
-      },
-      {
-        number: "04",
-        title: "Commercial High Dusting",
-        text: "Professional dusting for warehouses, retail spaces, offices, and event venues.",
-      },
-      {
-        number: "05",
-        title: "Post-Construction Dusting",
-        text: "Remove fine construction dust from rafters, beams, and hard-to-reach surfaces.",
-      },
-    ],
+    quote:
+      "Holiday and Christmas lighting — design, install, maintain, and remove. You enjoy the season; we handle the rest.",
   },
 };
 export default Services;
