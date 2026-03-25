@@ -1,8 +1,8 @@
 // City-specific content overrides for service pages.
 // Structure: cityServicesData[citySlug][serviceSlug] = { hero, essential, faqs, localCta }
 //
-// citySlug: matches the URL param (e.g. "boca_raton", "fort_lauderdale")
-// serviceSlug: matches the key in servicesData.js (e.g. "window_cleaning", "seal_coating")
+// citySlug: matches the URL param (e.g. "boca-raton", "fort-lauderdale")
+// serviceSlug: matches the URL param (e.g. "window-cleaning", "seal-coating")
 //
 // All fields are optional — if omitted, the default content from servicesData.js is used.
 //
@@ -12,8 +12,8 @@
 // localCta: string — override for the local CTA text at the bottom of the page
 
 export const cityServicesData = {
-  boca_raton: {
-    exterior_windows: {
+  "boca-raton": {
+    "window-cleaning": {
       hero: "Salt air, hard water, and South Florida humidity don't stand a chance. Our Boca Raton window cleaning crew uses purified RO/DI water and pro-grade tools to leave your glass spotless — inside, outside, every time. Backed by our money-back guarantee — if you're not happy, we don't want your money.",
       essential: [
         { number: "01.", title: "Boca's Salt Air Is Relentless", text: "Living near the Intracoastal or along the coast in Boca Raton means salt constantly coats your glass. Regular window cleaning prevents permanent etching and keeps your views crystal clear." },
