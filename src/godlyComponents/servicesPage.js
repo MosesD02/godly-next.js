@@ -19,26 +19,31 @@ import { cityServicesData } from "@/data/cityServicesData";
 export default function ServicesPage({ slug, city }) {
   const { setCity } = useGodlyContext();
 
+  // URL params use dashes; citiesMap and Services use underscores
+  const normalizedSlug = slug?.replace(/-/g, "_");
+  const normalizedCity = city?.replace(/-/g, "_");
+
   useEffect(() => {
-    if (Object.keys(citiesMap).includes(city)) {
-      const formattedCity = citiesMap[city];
+    if (Object.keys(citiesMap).includes(normalizedCity)) {
+      const formattedCity = citiesMap[normalizedCity];
       setCity(formattedCity);
     }
-  }, [city, setCity]);
+  }, [normalizedCity, setCity]);
 
+  // cityServicesData uses dashes (matches URL params directly)
   const cityData = cityServicesData[city]?.[slug] ?? {};
 
   return (
     <WebsiteLayout>
-      <ServicesHero slug={slug} heroOverride={cityData.hero} />
-      <ServiceIncludes slug={slug} />
-      <EssentialService slug={slug} essentialOverride={cityData.essential} />
-      <ServiceNearYou slug={slug} />
+      <ServicesHero slug={normalizedSlug} heroOverride={cityData.hero} />
+      <ServiceIncludes slug={normalizedSlug} />
+      <EssentialService slug={normalizedSlug} essentialOverride={cityData.essential} />
+      <ServiceNearYou slug={normalizedSlug} />
       <ChooseUs />
       <Faq
         faqs={cityData.faqs}
-        serviceName={slug?.replace(/_/g, " ")}
-        cityName={citiesMap[city]}
+        serviceName={slug?.replace(/-/g, " ")}
+        cityName={citiesMap[normalizedCity]}
       />
       {cityData.localCta && <LocalCta text={cityData.localCta} />}
       <OtherServices />
