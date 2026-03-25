@@ -9,29 +9,16 @@ import {
 import SectionButton from "@/components/sectionButton";
 import { cn } from "@/lib/utils";
 
-const questions = [
-  "How often should I seal coat my driveway?",
-  "Can you seal coat commercial parking lots?",
-  "How long does the seal coating process take?",
-  "Will seal coating fix cracks in my driveway?",
-  "How soon can I drive on my driveway after seal coating?",
-];
-const answers = [
-  "We recommend seal coating every 2-3 years to maintain protection and appearance.",
-  "Yes! We provide seal coating for both residential and commercial properties.",
-  "Most jobs are completed in 4-6 hours, but drying time can take up to 24 hours before full use.",
-  "Yes, it will fix cracks in your driveway. However, it may not be the best solution for all types of cracks.",
-  "You can drive on your driveway immediately after seal coating.",
-];
-
-const Faq = () => {
-  const [expandedItem, setExpandedItem] = useState("item-1"); // Set default value to item-1
+const Faq = ({ faqs, serviceName, cityName }) => {
+  const [expandedItem, setExpandedItem] = useState("item-1");
 
   const handleAccordionChange = (value) => {
     if (value) {
       setExpandedItem(value);
     }
   };
+
+  if (!faqs || faqs.length === 0) return null;
 
   return (
     <div
@@ -59,6 +46,11 @@ const Faq = () => {
             Questions
           </span>
         </h4>
+        {(serviceName || cityName) && (
+          <p className="mt-2 text-center font-['satoshi-regular'] text-sm text-[#2D2B2B] md:text-base">
+            {[serviceName, cityName].filter(Boolean).join(" · ")}
+          </p>
+        )}
 
         <div className="mt-10 w-full">
           <Accordion
@@ -68,17 +60,17 @@ const Faq = () => {
             value={expandedItem}
             onValueChange={handleAccordionChange}
           >
-            {questions.map((question, i) => (
+            {faqs.map((faq, i) => (
               <AccordionItem
                 key={i}
                 value={`item-${i + 1}`}
                 className="border-b border-[#332B2B21]"
               >
                 <AccordionTrigger className="text-lg text-[#2D2B2B]">
-                  {question}
+                  {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="font-sans text-sm font-normal text-[#2D2B2B]">
-                  {answers[i]}
+                  {faq.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}

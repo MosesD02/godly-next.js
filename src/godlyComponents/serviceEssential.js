@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Services from "@/data/servicesData";
 import { cn } from "@/lib/utils";
 
-const EssentialService = ({ slug }) => {
+const EssentialService = ({ slug, essentialOverride }) => {
   // Add state to track active card
   const [activeCard, setActiveCard] = useState(null);
 
@@ -46,7 +46,8 @@ const EssentialService = ({ slug }) => {
 
       {/* Info Cards Section */}
       <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-[24px] lg:gap-[28px] xl:gap-[32px]">
-        {Services[slug]["essential"].map((point, index) => {
+        {(essentialOverride ?? Services[slug]["essential"]).map((point, index) => {
+          const items = essentialOverride ?? Services[slug]["essential"];
           const isActive = activeCard === index;
           return (
             <div
@@ -55,8 +56,8 @@ const EssentialService = ({ slug }) => {
                 "paper-bg-8 min-h-[209px] rounded-[18px] p-2 shadow-md sm:min-h-[220px] md:max-h-full md:min-h-[240px] md:w-100 xl:min-h-[260px] xl:min-w-[522px]",
                 isActive ? "bg-[#E9E5E4]" : "bg-[#CBB7A0]",
                 "hover:bg-[#E9E5E4]",
-                index === Services[slug]["essential"].length - 1 &&
-                  Services[slug]["essential"].length % 2 === 1 &&
+                index === items.length - 1 &&
+                  items.length % 2 === 1 &&
                   "col-span-2 mx-auto max-w-1/2",
               )}
               onClick={() => toggleCard(index)}
