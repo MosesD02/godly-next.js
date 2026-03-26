@@ -36,7 +36,8 @@
       "Bash(npm ls:*)",
       "Bash(npm install:*)",
       "Bash(npx eslint:*)",
-      "Bash(npx next:*)"
+      "Bash(npx next:*)",
+      "Bash(find /c/Users/itexp/moses-godly -name sanity.config.* -o -name schema*)"
     ]
   }
 }

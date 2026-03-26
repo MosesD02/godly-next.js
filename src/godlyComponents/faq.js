@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import {
   Accordion,
   AccordionContent,
@@ -9,14 +8,6 @@ import {
 import { cn } from "@/lib/utils";
 
 const Faq = ({ faqs, serviceName, cityName }) => {
-  const [expandedItem, setExpandedItem] = useState("item-1");
-
-  const handleAccordionChange = (value) => {
-    if (value) {
-      setExpandedItem(value);
-    }
-  };
-
   if (!faqs || faqs.length === 0) return null;
 
   return (
@@ -52,13 +43,7 @@ const Faq = ({ faqs, serviceName, cityName }) => {
         )}
 
         <div className="mt-10 w-full">
-          <Accordion
-            type="single"
-            collapsible
-            className="w-full space-y-2"
-            value={expandedItem}
-            onValueChange={handleAccordionChange}
-          >
+          <Accordion type="single" collapsible className="w-full space-y-2">
             {faqs.map((faq, i) => (
               <AccordionItem
                 key={i}
