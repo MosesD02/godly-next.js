@@ -18,7 +18,7 @@ const FortLauderdaleCta = () => {
       <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-center gap-[20px] px-6 py-[60px] md:gap-[30px] md:px-16 md:py-[100px]">
         <div className="flex flex-col items-center justify-center gap-4 text-center">
           <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] font-normal text-white/90 md:text-[24px] lg:text-[26px]">
-            Whether you're in{" "}
+            Whether you&apos;re in{" "}
             <span className="font-['satoshi-bold'] text-[#FDE4C8]">
               Victoria Park
             </span>

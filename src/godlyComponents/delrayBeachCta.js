@@ -19,7 +19,7 @@ const DelrayBeachCta = () => {
           Reliable Window & Exterior Cleaning in Delray Beach
         </h2>
         <p className="mb-8 text-lg text-white md:text-xl">
-          Whether you're in Tropic Isle, Kings Point, or Delray Shores—{" "}
+          Whether you&apos;re in Tropic Isle, Kings Point, or Delray Shores—{" "}
           <Link
             href="https://godlywindows.com/"
             className="underline decoration-current decoration-solid transition-colors hover:text-[#FDE4C8]"

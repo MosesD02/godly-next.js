@@ -19,7 +19,7 @@ const HollywoodCta = () => {
           Expert Window & Exterior Cleaning in Hollywood
         </h2>
         <p className="mb-8 text-lg text-white md:text-xl">
-          Whether you're in Emerald Hills, Hollywood Lakes, or near Young
+          Whether you&apos;re in Emerald Hills, Hollywood Lakes, or near Young
           Circle—{" "}
           <Link
             href="https://godlywindows.com/"

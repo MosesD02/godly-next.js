@@ -335,7 +335,7 @@ const Services = ({ cityName: city }) => {
                     Christmas light installation in Sunrise
                   </Link>
                   . Our team delivers full-service outdoor holiday lighting—from
-                  setup to removal, it's holiday magic made easy.
+                  setup to removal, it&apos;s holiday magic made easy.
                 </>
               ) : city === "DAVIE" ? (
                 <>
@@ -395,7 +395,7 @@ const Services = ({ cityName: city }) => {
                   >
                     Christmas light installation in Deerfield Beach
                   </Link>{" "}
-                  that's safe and stylish. We set up outdoor lights and décor
+                  that&apos;s safe and stylish. We set up outdoor lights and décor
                   that transform your space—without ladders, hassle, or delay.
                 </>
               ) : city === "HOLLYWOOD" ? (
@@ -453,13 +453,13 @@ const Services = ({ cityName: city }) => {
                   >
                     Christmas light installation in Oakland Park
                   </Link>{" "}
-                  that's professional and stress-free. We handle outdoor holiday
+                  that&apos;s professional and stress-free. We handle outdoor holiday
                   lighting and décor—no ladders, no hassle, just brilliant
                   results for your home or business.
                 </>
               ) : city === "WESTON" ? (
                 <>
-                  Weston's go-to for{" "}
+                  Weston&apos;s go-to for{" "}
                   <Link
                     href={`/${cityKey}/holiday-lighting`}
                     className="underline decoration-current decoration-solid transition-colors hover:text-white"

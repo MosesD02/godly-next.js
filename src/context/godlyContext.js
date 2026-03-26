@@ -24,7 +24,7 @@ export function AppWrapper({ children }) {
       const segments = pathname.split("/").filter(Boolean);
       const citySlug = segments[segments.length - 1];
       const cityFromSlug = citiesMap[citySlug];
-      setCity(cityFromSlug || "SOUTH FLORIDA");
+      setCity(cityFromSlug || "SOUTH FLORIDA"); // eslint-disable-line react-hooks/set-state-in-effect
       return;
     }
     // Home (/) and main blog index (/blog): SOUTH FLORIDA in header regardless of cookie

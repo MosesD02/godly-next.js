@@ -19,7 +19,7 @@ const PompanoBeachCta = () => {
           Expert Window & Exterior Cleaning in Pompano Beach
         </h2>
         <p className="mb-8 text-lg text-white md:text-xl">
-          Whether you're in Garden Isles, Cypress Point, or along Atlantic
+          Whether you&apos;re in Garden Isles, Cypress Point, or along Atlantic
           Boulevard—{" "}
           <Link
             href="https://godlywindows.com/"

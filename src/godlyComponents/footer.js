@@ -163,7 +163,7 @@ const Footer = () => {
               return (
                 <div className="flex flex-col items-center gap-4 text-center">
                   <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
-                    Whether you're in{" "}
+                    Whether you&apos;re in{" "}
                     <span className="font-['satoshi-bold'] text-[#FDE4C8]">
                       Royal Palm Yacht & Country Club
                     </span>
@@ -200,7 +200,7 @@ const Footer = () => {
               return (
                 <div className="flex flex-col items-center gap-4 text-center">
                   <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
-                    Whether you're in{" "}
+                    Whether you&apos;re in{" "}
                     <span className="font-['satoshi-bold'] text-[#FDE4C8]">
                       Weston Hills
                     </span>

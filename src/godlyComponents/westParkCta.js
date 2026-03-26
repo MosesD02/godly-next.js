@@ -26,7 +26,7 @@ const WestParkCta = () => {
           >
             Godly Windows
           </Link>{" "}
-          is West Park's trusted team for spotless windows and professional
+          is West Park&apos;s trusted team for spotless windows and professional
           exterior cleaning. Fast response, honest pricing, and guaranteed
           results.
         </p>

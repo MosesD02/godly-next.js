@@ -175,6 +175,7 @@ export function OgLayout({
             justifyContent: "flex-end",
           }}
         >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={logoSrc}
             alt="Godly Windows"

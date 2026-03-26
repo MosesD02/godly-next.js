@@ -58,7 +58,7 @@ export function PopupModal() {
     // Create end of current month in Eastern Time (11:59:59 PM)
     const endOfMonth = new Date(year, month + 1, 0, 23, 59, 59, 999);
 
-    setTargetDate(endOfMonth);
+    setTargetDate(endOfMonth); // eslint-disable-line react-hooks/set-state-in-effect
 
     const updateTimer = () => {
       const now = new Date();

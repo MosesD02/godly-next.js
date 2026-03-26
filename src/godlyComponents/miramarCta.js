@@ -26,7 +26,7 @@ const MiramarCta = () => {
           >
             Godly Windows
           </Link>{" "}
-          is Miramar's go-to team for spotless windows and top-tier exterior
+          is Miramar&apos;s go-to team for spotless windows and top-tier exterior
           cleaning.
         </p>
         <div className="flex flex-col items-center gap-2">

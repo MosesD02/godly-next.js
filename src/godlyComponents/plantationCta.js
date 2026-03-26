@@ -19,7 +19,7 @@ const PlantationCta = () => {
           Quality Window & Exterior Cleaning in Plantation
         </h2>
         <p className="mb-8 text-lg text-white md:text-xl">
-          Whether you're in Central Park, Plantation Isles, or a gated
+          Whether you&apos;re in Central Park, Plantation Isles, or a gated
           community—{" "}
           <Link
             href="https://godlywindows.com/"

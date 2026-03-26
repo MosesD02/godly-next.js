@@ -661,6 +661,7 @@ const FourStepProcess = () => {
   // Static icons for each step (remain the same)
   const stepIcons = [
     <svg
+      key="step-icon-0"
       xmlns="http://www.w3.org/2000/svg"
       width="73"
       height="73"
@@ -685,6 +686,7 @@ const FourStepProcess = () => {
       </defs>
     </svg>,
     <svg
+      key="step-icon-1"
       xmlns="http://www.w3.org/2000/svg"
       width="55"
       height="55"
@@ -697,6 +699,7 @@ const FourStepProcess = () => {
       />
     </svg>,
     <svg
+      key="step-icon-2"
       xmlns="http://www.w3.org/2000/svg"
       width="59"
       height="59"
@@ -712,6 +715,7 @@ const FourStepProcess = () => {
       />
     </svg>,
     <svg
+      key="step-icon-3"
       xmlns="http://www.w3.org/2000/svg"
       width="59"
       height="59"

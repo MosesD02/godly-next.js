@@ -26,7 +26,7 @@ const CooperCityCta = () => {
           >
             Godly Windows
           </Link>{" "}
-          is Cooper City's go-to team for spotless windows and top-tier exterior
+          is Cooper City&apos;s go-to team for spotless windows and top-tier exterior
           cleaning.
         </p>
         <div className="flex flex-col items-center gap-2">

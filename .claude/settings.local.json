@@ -29,7 +29,13 @@
       "WebFetch(domain:ricketyroo.com)",
       "WebFetch(domain:searchengineland.com)",
       "Bash(find /c/Users/itexp/moses-godly/src/godlyComponents/blog -type f \\\\\\(-name *.js -o -name *.jsx -o -name *.ts -o -name *.tsx \\\\\\))",
-      "Bash(head -80 /c/Users/itexp/moses-godly/src/app/[city]/page.js)"
+      "Bash(head -80 /c/Users/itexp/moses-godly/src/app/[city]/page.js)",
+      "Bash(npm run:*)",
+      "Bash(node -e \"console.log\\(require\\(''@eslint/eslintrc/package.json''\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\(''eslint/package.json''\\).version\\)\")",
+      "Bash(npm ls:*)",
+      "Bash(npm install:*)",
+      "Bash(npx eslint:*)"
     ]
   }
 }

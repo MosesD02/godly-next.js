@@ -17,7 +17,7 @@ const RoyalPalmBeachCta = () => {
     <div className="paper-bg-16 bg-[#262424] py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 text-center">
         <h2 className="font-marlton mb-6 text-3xl font-normal tracking-wide text-white md:text-5xl">
-          Whether you're in Madison Green, Counterpoint Estates, or La Mancha
+          Whether you&apos;re in Madison Green, Counterpoint Estates, or La Mancha
         </h2>
         <p className="mx-auto mb-8 max-w-3xl font-['satoshi-regular'] text-lg text-white/80 md:text-xl">
           <Link
