@@ -806,7 +806,7 @@ const Services = {
       "Cleaning",
       service2,
       (city) =>
-        `This is our jam. We specialize in residential and commercial window cleaning in ${city}. Using RODI purified water and hand scrubbing, we remove everything from silicone to overspray without leaving a single streak. Backed by our 100% money back guarantee.`,
+        `This is our jam. We specialize in residential and commercial window cleaning in ${city}. Using RO/DI purified water and hand scrubbing, we remove everything from silicone to overspray without leaving a single streak. Backed by our 100% money back guarantee.`,
     ],
     included: [
       {
@@ -816,7 +816,7 @@ const Services = {
       },
       {
         number: "02",
-        title: "RODI Purified Water Rinse",
+        title: "RO/DI Purified Water Rinse",
         text: "Zero TDS purified water means no minerals, no spots, and no streaks when it dries.",
       },
       {
@@ -885,7 +885,7 @@ const Services = {
       },
     ],
     quote:
-      "Crystal clear windows, guaranteed — RODI purified water, hand scrubbing, and our 7-Day Sparkle Guarantee.",
+      "Crystal clear windows, guaranteed — RO/DI purified water, hand scrubbing, and our 7-Day Sparkle Guarantee.",
   },
   "soft-washing": {
     hero: [

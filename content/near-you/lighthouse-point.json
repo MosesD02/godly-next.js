@@ -1,0 +1,132 @@
+[
+  {
+    "city": "lighthouse-point",
+    "service": "window-cleaning",
+    "services_near_you": [
+      { "title": "Cap's Place Island Views", "description": "Homes near historic Cap's Place enjoy stunning water views that deserve crystal-clear glass. Our professional window cleaning removes salt haze and coastal film from every pane." },
+      { "title": "Venetian Drive Waterfront", "description": "Canal-front homes along Venetian Drive collect salt spray and mineral deposits fast. Our RO/DI pure water system leaves windows spotless without streaks or water spots." },
+      { "title": "Royal Palm Drive Estates", "description": "Royal Palm Drive's waterfront estates feature expansive glass that demands expert care. We clean every window so your Intracoastal views stay unobstructed." },
+      { "title": "NE 24th Street Residences", "description": "Homeowners in the NE 24th Street neighborhood trust our team to deliver streak-free windows that let in all of Lighthouse Point's natural light." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "exterior-window-cleaning",
+    "services_near_you": [
+      { "title": "Hillsboro Inlet Properties", "description": "Exterior windows near the Hillsboro Inlet take a beating from salt air and wind-driven moisture. Our cleaning removes stubborn mineral buildup and restores clarity." },
+      { "title": "Sample Road Corridor Homes", "description": "Properties along the Sample Road corridor benefit from exterior window cleaning that eliminates pollen, hard water stains, and South Florida grime from every surface." },
+      { "title": "NE 26th Street Neighborhood", "description": "Our team handles exterior windows throughout the NE 26th Street area, reaching every floor and tackling the coastal residue that accumulates between cleanings." },
+      { "title": "Lighthouse Point Marina Area", "description": "Homes and businesses near Lighthouse Point Marina need exterior glass that sparkles. We cut through dock-side haze and salt film so your property looks its best." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "interior-window-cleaning",
+    "services_near_you": [
+      { "title": "Royal Palm Drive Canal Homes", "description": "Interior window cleaning for Royal Palm Drive canal homes means detailed attention to tracks, sills, and glass so you enjoy pristine views of the waterway." },
+      { "title": "NE 28th Street Properties", "description": "NE 28th Street homeowners love coming home to spotless interior windows. We handle all the detail work so every room feels brighter and more open." },
+      { "title": "Federal Highway Corridor", "description": "Homes and offices along the Federal Highway corridor benefit from interior window cleaning that removes dust, fingerprints, and humidity haze from every pane." },
+      { "title": "Venetian Drive Residences", "description": "Venetian Drive's upscale canal homes deserve interior windows as polished as the lifestyle. We clean every pane with care and precision from the inside out." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "pressure-washing",
+    "services_near_you": [
+      { "title": "Sample Road Area Driveways", "description": "Driveways and walkways along the Sample Road corridor take a beating from Florida weather. Our pressure washing blasts away oil stains, mildew, and embedded dirt." },
+      { "title": "Lighthouse Point Marina Docks", "description": "Dock areas and patios near the marina collect algae and grime fast in the salt air. Professional pressure washing keeps your outdoor spaces safe and clean." },
+      { "title": "NE 24th Street Walkways", "description": "From pool decks to front entries, NE 24th Street homes benefit from pressure washing that removes built-up grime and restores original surface color." },
+      { "title": "Cap's Place Area Patios", "description": "Waterfront patios in the Cap's Place area see constant moisture and organic buildup. Pressure washing eliminates slippery algae and brings hardscape back to life." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "soft-washing",
+    "services_near_you": [
+      { "title": "Royal Palm Drive Estates", "description": "Soft washing is ideal for Royal Palm Drive's waterfront estates, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae." },
+      { "title": "Hillsboro Inlet Home Exteriors", "description": "Homes near the Hillsboro Inlet with delicate stucco or painted finishes need the gentle touch of soft washing to get clean without risking surface damage." },
+      { "title": "NE 26th Street Pool Enclosures", "description": "Pool enclosures throughout the NE 26th Street neighborhood collect green algae and grime. Soft washing eliminates buildup without the high pressure that can warp screens." },
+      { "title": "Venetian Drive Canal Properties", "description": "Soft washing is the smart choice for Venetian Drive canal homes with painted wood or vinyl siding, lifting salt residue and biological growth without stripping finishes." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "house-washing",
+    "services_near_you": [
+      { "title": "NE 28th Street Homes", "description": "A full house wash brings NE 28th Street homes back to life, removing the dark streaks and discoloration that Lighthouse Point's coastal humidity creates on exterior walls." },
+      { "title": "Federal Highway Properties", "description": "Homeowners along the Federal Highway corridor keep their properties looking sharp with regular house washing that tackles mildew, cobwebs, and dirt from every surface." },
+      { "title": "Cap's Place Area Residences", "description": "House washing near Cap's Place means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating salt-air grime." },
+      { "title": "Sample Road Neighborhood", "description": "Homes throughout the Sample Road area maintain their curb appeal with professional house washing that covers walls, eaves, and fascia boards from top to bottom." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "roof-washing",
+    "services_near_you": [
+      { "title": "Venetian Drive Tile Roofs", "description": "Venetian Drive's beautiful tile roofs are prone to dark algae streaks. Our soft wash roof cleaning removes Gloeocapsa magma stains and restores your roof's original look." },
+      { "title": "Royal Palm Drive Rooflines", "description": "Waterfront estates on Royal Palm Drive protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials." },
+      { "title": "NE 24th Street Shingle Roofs", "description": "Shingle roofs in the NE 24th Street neighborhood take a beating from coastal humidity. Professional roof washing extends roof life and eliminates ugly black streaks." },
+      { "title": "Hillsboro Inlet Area Properties", "description": "Properties near the Hillsboro Inlet benefit from roof washing that improves curb appeal and helps prevent costly roof repairs caused by unchecked algae growth." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "gutter-cleaning",
+    "services_near_you": [
+      { "title": "Cap's Place Waterfront Homes", "description": "Waterfront homes near Cap's Place are surrounded by tropical landscaping that fills gutters fast. Regular gutter cleaning prevents water damage and foundation issues." },
+      { "title": "NE 26th Street Properties", "description": "Clogged gutters in the NE 26th Street neighborhood can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed." },
+      { "title": "Sample Road Corridor Homes", "description": "Properties along the Sample Road corridor depend on clean gutters, especially during South Florida's rainy season when afternoon downpours are relentless." },
+      { "title": "Federal Highway Area Residences", "description": "Mature tree canopy along the Federal Highway corridor means gutters fill up with leaves and debris fast. Professional gutter cleaning keeps water flowing properly." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "paver-sealing",
+    "services_near_you": [
+      { "title": "Lighthouse Point Marina Walkways", "description": "Paver walkways and patios near the marina look stunning when freshly sealed. We lock in color, prevent weed growth, and protect against salt-air staining." },
+      { "title": "Royal Palm Drive Driveways", "description": "Royal Palm Drive homeowners invest in quality pavers for their waterfront estates, and professional sealing keeps them looking rich and vibrant year-round." },
+      { "title": "NE 28th Street Pool Decks", "description": "Pool deck pavers in the NE 28th Street area stay slip-resistant and beautiful with professional sealing that repels water, oil, and organic stains." },
+      { "title": "Venetian Drive Entryways", "description": "Paver sealing on Venetian Drive extends the life of your hardscape by preventing sand erosion, ant hills, and color fading from UV exposure on canal-front properties." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "solar-panel-cleaning",
+    "services_near_you": [
+      { "title": "Hillsboro Inlet Solar Systems", "description": "Homeowners near the Hillsboro Inlet with solar panels maximize energy output with professional cleaning that removes salt film, pollen, and bird droppings from panel surfaces." },
+      { "title": "NE 24th Street Solar Installations", "description": "Dirty solar panels in the NE 24th Street neighborhood can lose up to 25% efficiency. Our RO/DI pure water cleaning restores full performance without scratching panel glass." },
+      { "title": "Sample Road Area Rooftop Panels", "description": "Solar panel cleaning along the Sample Road corridor ensures your renewable energy investment keeps performing at peak levels year after year." },
+      { "title": "Cap's Place Area Homes", "description": "Waterfront homeowners near Cap's Place trust us to safely clean rooftop solar panels and keep their electricity savings on track despite heavy coastal buildup." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "screen-cleaning",
+    "services_near_you": [
+      { "title": "Royal Palm Drive Lanais", "description": "Screen enclosures on Royal Palm Drive's waterfront estates collect salt spray, pollen, and algae. Professional screen cleaning brightens your lanai and improves airflow." },
+      { "title": "NE 26th Street Pool Cages", "description": "Pool cage screens in the NE 26th Street area get grimy fast in the Florida climate. We clean every panel so your outdoor living space feels fresh and open." },
+      { "title": "Venetian Drive Porches", "description": "Screened porches along Venetian Drive stay inviting with regular cleaning that removes canal-side buildup from mesh without tearing or stretching screens." },
+      { "title": "Federal Highway Corridor Enclosures", "description": "Properties along the Federal Highway corridor deal with constant pollen and organic debris clinging to screens. Our cleaning process restores visibility and keeps bugs out." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "light-fixture-cleaning",
+    "services_near_you": [
+      { "title": "Lighthouse Point Marina Fixtures", "description": "Clean light fixtures near the marina make a big difference after dark. We remove bug residue, salt corrosion, and grime so your property shines at night." },
+      { "title": "NE 28th Street Exterior Sconces", "description": "Salt air corrodes and clouds light fixtures throughout the NE 28th Street neighborhood. Our cleaning service restores clarity and brightness to your exterior lighting." },
+      { "title": "Hillsboro Inlet Entryway Lights", "description": "Entryway and porch light fixtures on homes near the Hillsboro Inlet deserve regular cleaning to maintain welcoming curb appeal and proper illumination." },
+      { "title": "Sample Road Area Outdoor Lighting", "description": "Outdoor light fixtures along the Sample Road corridor collect insects and cobwebs fast. Professional cleaning keeps your property well-lit and looking polished." }
+    ]
+  },
+  {
+    "city": "lighthouse-point",
+    "service": "holiday-lighting",
+    "services_near_you": [
+      { "title": "Venetian Drive Canal Displays", "description": "Holiday lights along Venetian Drive's canal homes create a magical waterfront scene. We handle design, installation, and takedown so you just enjoy the season." },
+      { "title": "Royal Palm Drive Yacht Estates", "description": "Royal Palm Drive's yacht properties go all out for the holidays. Our team designs custom lighting packages for estates and handles every detail from setup through removal." },
+      { "title": "Cap's Place Waterfront Glow", "description": "Make your waterfront property near Cap's Place stand out during the holidays with professional lighting installation that turns heads from both land and water." },
+      { "title": "NE 24th Street Festive Homes", "description": "NE 24th Street residents love the holiday season, and our professional lighting design and installation makes decorating effortless from roofline to landscaping." }
+    ]
+  }
+]

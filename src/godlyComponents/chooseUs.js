@@ -302,7 +302,7 @@ const chooseUsData = {
       name: "Trained Professionals",
       svg: shieldSvg,
       description:
-        "Expert technicians hand-scrub every pane and finish with RODI purified water for streak-free, spotless glass.",
+        "Expert technicians hand-scrub every pane and finish with RO/DI purified water for streak-free, spotless glass.",
     },
     {
       name: "Fully Insured & Equipped",

@@ -1,0 +1,132 @@
+[
+  {
+    "city": "weston",
+    "service": "window-cleaning",
+    "services_near_you": [
+      { "title": "Weston Hills Country Club Estates", "description": "Weston Hills Country Club homeowners enjoy panoramic golf course views when every window is professionally cleaned. Our RO/DI pure water system removes hard water spots, pollen, and buildup from every pane." },
+      { "title": "Bonaventure Residences", "description": "Bonaventure families deserve spotless windows that let in all of South Florida's natural light. We clean glass, tracks, sills, and frames throughout your home for a complete refresh." },
+      { "title": "Savanna Community Homes", "description": "Windows in Savanna collect dust and humidity film quickly. Our professional window cleaning restores crystal-clear visibility so you can enjoy your community's beautiful surroundings." },
+      { "title": "Emerald Estates Properties", "description": "Emerald Estates homeowners trust us to keep every window gleaming. We handle single-story and two-story homes with the same meticulous attention to detail and streak-free results." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "exterior-window-cleaning",
+    "services_near_you": [
+      { "title": "Windmill Ranch Estates", "description": "Exterior windows on Windmill Ranch estate homes face constant exposure to pollen, rain, and South Florida humidity. Our professional cleaning restores clarity and curb appeal to every window." },
+      { "title": "The Ridges Homes", "description": "Homes in The Ridges benefit from exterior window cleaning that tackles the stubborn film and water spots South Florida's weather leaves behind on your glass." },
+      { "title": "Lakeside Community", "description": "Lakeside properties near the water collect mineral deposits and moisture haze on exterior glass. We remove it all, leaving windows spotless and streak-free." },
+      { "title": "Tequesta Trace Residences", "description": "Exterior window cleaning for Tequesta Trace homes eliminates grime buildup without disrupting your day or damaging window seals. Satisfaction guarantees are available on every job." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "interior-window-cleaning",
+    "services_near_you": [
+      { "title": "Country Isles Homes", "description": "Interior window cleaning for Country Isles homes means detailed attention to tracks, sills, and glass so every window sparkles from the inside out." },
+      { "title": "Weston Hills Interiors", "description": "Weston Hills residents love coming home to spotless interior windows. We handle all the detail work so you can enjoy unobstructed views of the golf course and landscaping." },
+      { "title": "The Falls Residences", "description": "Our interior window cleaning service is perfect for The Falls homes where dust and humidity can cloud your glass over time. We leave every pane crystal clear." },
+      { "title": "Bonaventure Living Spaces", "description": "Interior windows at Bonaventure deserve the same care as the lush tropical views outside. We clean every pane, track, and sill with precision and care." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "pressure-washing",
+    "services_near_you": [
+      { "title": "Savanna Driveways & Walkways", "description": "Driveways and walkways throughout Savanna collect algae and tire marks fast in the Florida heat. Pressure washing restores surfaces to like-new condition." },
+      { "title": "Emerald Estates Pool Decks", "description": "Pool decks and patios in Emerald Estates take a beating from sun, rain, and foot traffic. Our pressure washing blasts away embedded dirt and slippery algae." },
+      { "title": "Weston Town Center Surfaces", "description": "Commercial walkways and storefronts near Weston Town Center stay inviting with professional pressure washing that removes oil stains, gum, and ground-in grime." },
+      { "title": "Windmill Ranch Hardscapes", "description": "From expansive driveways to pool patios, Windmill Ranch properties benefit from pressure washing that removes built-up grime and restores original surface color." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "soft-washing",
+    "services_near_you": [
+      { "title": "The Ridges Home Exteriors", "description": "Soft washing is ideal for The Ridges home exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae." },
+      { "title": "Lakeside Stucco & Siding", "description": "Lakeside homes with delicate stucco or painted siding need the gentle touch of soft washing to get clean without risking surface damage." },
+      { "title": "Tequesta Trace Pool Enclosures", "description": "Pool enclosures throughout Tequesta Trace collect green algae and grime. Soft washing eliminates buildup without the high pressure that can warp screens." },
+      { "title": "Country Isles Painted Surfaces", "description": "Soft washing is the smart choice for Country Isles homes with painted wood or vinyl siding, lifting dirt and biological growth without stripping finishes." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "house-washing",
+    "services_near_you": [
+      { "title": "Bonaventure Exteriors", "description": "A full house wash brings Bonaventure homes back to life, removing the dark streaks and discoloration that Florida's humidity creates on exterior walls." },
+      { "title": "The Falls Residences", "description": "The Falls homeowners keep their properties looking sharp with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface." },
+      { "title": "Weston Hills Facades", "description": "House washing at Weston Hills means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating grime." },
+      { "title": "Savanna Neighborhood Homes", "description": "Homes in Savanna maintain their fresh appearance with professional house washing that covers walls, eaves, and fascia boards from top to bottom." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "roof-washing",
+    "services_near_you": [
+      { "title": "Emerald Estates Tile Roofs", "description": "Emerald Estates tile roofs are prone to dark algae streaks. Our soft wash roof cleaning removes Gloeocapsa magma stains and restores your roof's original look." },
+      { "title": "Windmill Ranch Rooflines", "description": "Estate roofs in Windmill Ranch take a beating from South Florida humidity. Professional roof washing extends roof life and eliminates those ugly black streaks." },
+      { "title": "The Ridges Properties", "description": "The Ridges property owners protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials." },
+      { "title": "Lakeside Roof Systems", "description": "Properties throughout Lakeside benefit from roof washing that improves curb appeal and helps prevent costly roof repairs caused by unchecked biological growth." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "gutter-cleaning",
+    "services_near_you": [
+      { "title": "Tequesta Trace Tree-Lined Streets", "description": "Tequesta Trace's mature tree canopy means gutters fill up fast with leaves and debris. Regular gutter cleaning prevents water damage and foundation issues." },
+      { "title": "Country Isles Properties", "description": "Country Isles homes surrounded by tropical landscaping need consistent gutter cleaning to keep water flowing properly and away from your foundation." },
+      { "title": "Bonaventure Homes", "description": "Clogged gutters in Bonaventure can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed." },
+      { "title": "Weston Hills Estates", "description": "Weston Hills' lush golf course surroundings drop plenty of leaves and seed pods into your gutters. We keep them clear, especially heading into rainy season." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "paver-sealing",
+    "services_near_you": [
+      { "title": "Savanna Paver Driveways", "description": "Paver driveways in Savanna look stunning when sealed properly. We clean, sand, and seal your pavers to lock in color and protect against Florida's sun and rain." },
+      { "title": "The Falls Pool Patios", "description": "Pool deck pavers at The Falls homes stay vibrant and slip-resistant with professional sealing that blocks moisture penetration and inhibits weed growth between joints." },
+      { "title": "Windmill Ranch Walkways", "description": "Windmill Ranch estate walkways and entryways make a lasting first impression when pavers are professionally sealed. We restore faded color and add long-term protection." },
+      { "title": "Emerald Estates Outdoor Living", "description": "Outdoor living spaces in Emerald Estates feature beautiful paver installations. Our sealing service preserves their appearance and prevents shifting, cracking, and staining." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "solar-panel-cleaning",
+    "services_near_you": [
+      { "title": "Weston Hills Solar Systems", "description": "Solar panels at Weston Hills homes lose efficiency when covered in pollen, bird droppings, and dust. Our RO/DI pure water cleaning restores optimal energy output safely." },
+      { "title": "The Ridges Rooftop Panels", "description": "Rooftop solar panels in The Ridges need regular cleaning to perform at peak capacity. We use professional-grade methods that never void your panel warranty." },
+      { "title": "Lakeside Solar Installations", "description": "Lakeside homeowners maximize their solar investment with regular panel cleaning. Dirty panels can lose up to 25% efficiency, and our service brings that power back." },
+      { "title": "Tequesta Trace Solar Arrays", "description": "Tequesta Trace residents with solar arrays count on us for safe, thorough cleaning that removes buildup and keeps energy production at its highest. Satisfaction guarantees are available." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "screen-cleaning",
+    "services_near_you": [
+      { "title": "Bonaventure Pool Enclosures", "description": "Pool enclosure screens in Bonaventure trap dirt, algae, and pollen over time. Our professional screen cleaning restores airflow and visibility without damaging delicate mesh." },
+      { "title": "Country Isles Lanai Screens", "description": "Lanai screens throughout Country Isles collect grime that blocks your view and restricts fresh air. We clean every panel carefully for a brighter outdoor living space." },
+      { "title": "Savanna Patio Screens", "description": "Patio screen enclosures in Savanna stay looking new with regular professional cleaning that removes mildew, cobwebs, and embedded dirt from frames and mesh." },
+      { "title": "Weston Town Center Area Homes", "description": "Screen enclosures near Weston Town Center benefit from our detailed cleaning process that covers mesh, frames, and hardware for a complete restoration." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "light-fixture-cleaning",
+    "services_near_you": [
+      { "title": "Windmill Ranch Estate Fixtures", "description": "Grand light fixtures in Windmill Ranch estate homes collect dust and insect debris that dims their output. Our professional cleaning restores full brightness and sparkle." },
+      { "title": "The Falls Interior Lighting", "description": "Interior light fixtures throughout The Falls homes accumulate film and dust that reduces illumination. We carefully clean each fixture to restore clarity and light quality." },
+      { "title": "Weston Hills Exterior Sconces", "description": "Exterior light fixtures at Weston Hills collect cobwebs, dirt, and moisture residue. Our cleaning service keeps your home's outdoor lighting bright and welcoming." },
+      { "title": "Emerald Estates Chandeliers", "description": "Chandeliers and decorative fixtures in Emerald Estates homes deserve detailed cleaning that brings back their original brilliance without risk of damage to delicate components." }
+    ]
+  },
+  {
+    "city": "weston",
+    "service": "holiday-lighting",
+    "services_near_you": [
+      { "title": "The Ridges Holiday Displays", "description": "The Ridges homes stand out during the holiday season with professional lighting installations. We handle design, installation, maintenance, and takedown so you can enjoy the season stress-free." },
+      { "title": "Lakeside Festive Lighting", "description": "Lakeside properties look stunning with custom holiday lighting along rooflines, entryways, and landscaping. Our team handles every detail from planning to post-season removal." },
+      { "title": "Tequesta Trace Seasonal Decor", "description": "Tequesta Trace families love our professional holiday lighting service. We create custom displays tailored to your home's architecture and your personal style preferences." },
+      { "title": "Country Isles Holiday Installations", "description": "Country Isles homeowners trust us for safe, beautiful holiday lighting installations. Commercial-grade LED lights and secure mounting mean your display looks great all season long." }
+    ]
+  }
+]

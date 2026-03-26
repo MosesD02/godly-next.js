@@ -15,13 +15,12 @@ import { useEffect } from "react";
 import { useGodlyContext } from "@/context/godlyContext";
 
 import { citiesMap } from "./header/CitiesPopup";
-import { cityServicesData } from "@/data/cityServicesData";
+import { cityServicesData } from "@/data/cityServicesData/index";
 
 export default function ServicesPage({ slug, city, relatedPosts }) {
   const { setCity } = useGodlyContext();
 
-  // URL params use dashes; citiesMap and Services use underscores
-  const normalizedSlug = slug?.replace(/-/g, "_");
+  // URL params use dashes; citiesMap uses underscores for city keys
   const normalizedCity = city?.replace(/-/g, "_");
 
   useEffect(() => {
@@ -38,18 +37,18 @@ export default function ServicesPage({ slug, city, relatedPosts }) {
 
   return (
     <WebsiteLayout>
-      <ServicesHero slug={normalizedSlug} heroOverride={cityData.hero} />
-      <ServiceIncludes slug={normalizedSlug} />
-      <EssentialService slug={normalizedSlug} essentialOverride={cityData.essential} />
-      <ServiceNearYou slug={normalizedSlug} />
-      <ChooseUs slug={normalizedSlug} />
+      <ServicesHero slug={slug} heroOverride={cityData.hero} />
+      <ServiceIncludes slug={slug} />
+      <EssentialService slug={slug} essentialOverride={cityData.essential} />
+      <ServiceNearYou slug={slug} nearYouOverride={cityData.nearYou} />
+      <ChooseUs slug={slug} />
       <Faq
         faqs={cityData.faqs}
         serviceName={slug?.replace(/-/g, " ")}
         cityName={citiesMap[normalizedCity]}
       />
       {cityData.localCta && <LocalCta text={cityData.localCta} />}
-      <OtherServices slug={normalizedSlug} />
+      <OtherServices slug={slug} />
       <RelatedBlogPosts posts={relatedPosts} citySlug={city} />
     </WebsiteLayout>
   );

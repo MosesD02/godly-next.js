@@ -539,7 +539,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We clean driveways, patios, and pavers with care; power where needed, soft wash where it counts.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -572,7 +572,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "Whether it's a weather-worn driveway or delicate pavers, we tailor our cleaning pressure to protect your surfaces while restoring their shine.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -605,7 +605,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "Whether your surfaces need power or precision, we safely clean driveways, walkways, and patios based on the material.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -638,7 +638,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "Whether it's concrete, barn walkways, or patios, we clean all outdoor surfaces using the correct pressure for each material.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -671,7 +671,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We clean driveways, walkways, and patios with the right pressure for each surface—powerful where needed, gentle where it counts.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -704,7 +704,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We restore the beauty of driveways, pavers, and patios with the right pressure for each surface—powerful on stone, gentle on paint.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -737,7 +737,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We clean driveways, entryways, patios, and walkways with precision—adjusting pressure based on surface needs.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -770,7 +770,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "From patios to pavers, we restore outdoor surfaces using the right pressure for safe and effective results.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -803,7 +803,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We clean walkways, patios, driveways, and more—adjusting pressure to match the surface type for safe, thorough results.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -836,7 +836,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "From patios to driveways and walkways, we tailor the pressure for every surface to clean safely and effectively.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -869,7 +869,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "From paver patios to driveways and walkways, we clean all surfaces using the right pressure to avoid damage.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -901,7 +901,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We clean driveways, patios, fences, and walkways using the right pressure for every surface to ensure safe, thorough results.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -933,7 +933,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "From driveways to walkways, we apply the perfect pressure to lift stains and dirt without damaging your hardscapes.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -965,7 +965,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "Whether it's your driveway, seawall path, or patio, we clean it safely and effectively with surface-appropriate pressure.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -997,7 +997,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We clean walkways, driveways, pool decks, and patios—using the proper pressure to safely restore any surface.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -1029,7 +1029,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We clean patios, driveways, pavers, and more—matching pressure to the surface to ensure a deep but safe clean.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -1062,7 +1062,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "From seawall walkways to driveway pavers, we match the right pressure to each surface for a thorough yet safe clean.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -1095,7 +1095,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We clean driveways, walkways, and patios using the appropriate pressure to safely remove dirt and stains without surface damage.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -1128,7 +1128,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "From driveways and patios to pavers and walkways, we tailor our approach to clean thoroughly without surface damage.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -1161,7 +1161,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "From driveways to patios and walkways, we clean all surfaces using the appropriate pressure for safe and effective results.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -1194,7 +1194,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We restore walkways, patios, and pavers using the right cleaning method for every surface—safe, powerful, and lasting.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":
@@ -1227,7 +1227,7 @@ function ServicesGrid() {
       "Pressure & Soft Washing":
         "We clean pavers, driveways, patios, and pool decks—adjusting pressure for each surface to ensure a safe and thorough clean.",
       "Window Cleaning":
-        "RODI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
+        "RO/DI purified water and hand scrubbing for every pane—residential and commercial—with streak-free results and our 7-day sparkle guarantee.",
       "Soft Washing":
         "Custom low-pressure treatments for roofs, siding, and exteriors—algae and organic growth removed without damaging finishes.",
       "Holiday Lighting":

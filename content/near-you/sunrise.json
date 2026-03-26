@@ -1,0 +1,132 @@
+[
+  {
+    "city": "sunrise",
+    "service": "window-cleaning",
+    "services_near_you": [
+      { "title": "Sawgrass Mills Area Homes", "description": "Homeowners near Sawgrass Mills enjoy crystal-clear views after our professional window cleaning removes pollen, hard water spots, and everyday grime from every pane." },
+      { "title": "Sunrise Lakes Residences", "description": "Our RO/DI pure water system leaves Sunrise Lakes windows streak-free and spotless, even with South Florida's humidity working against you." },
+      { "title": "Spring Lake Properties", "description": "Spring Lake families deserve windows that let in all that natural light. Our thorough cleaning covers glass, tracks, sills, and frames throughout your home." },
+      { "title": "Nob Hill Area Living", "description": "Homes in the Nob Hill area stay looking polished with regular window cleaning that removes dust, fingerprints, and weather buildup from every window." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "exterior-window-cleaning",
+    "services_near_you": [
+      { "title": "Welleby Community Homes", "description": "Exterior windows in Welleby collect pollen, dust, and water spots quickly. Our professional cleaning restores clarity and curb appeal to every window." },
+      { "title": "Sunset Strip Properties", "description": "Sunset Strip homes benefit from exterior window cleaning that tackles the buildup South Florida's rain and humidity leave behind on your glass." },
+      { "title": "Sawgrass International Corporate Park", "description": "Commercial buildings at Sawgrass International Corporate Park count on us for exterior window cleaning that maintains a professional appearance year-round." },
+      { "title": "Sunrise Golf Village Homes", "description": "Exterior window cleaning in Sunrise Golf Village brings new life to homes along the fairways, clearing away weather residue and restoring bright, clean sightlines." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "interior-window-cleaning",
+    "services_near_you": [
+      { "title": "The Metropica Residences", "description": "Interior window cleaning for Metropica homes means detailed attention to tracks, sills, and glass so every window sparkles from the inside out." },
+      { "title": "New River Greenway Homes", "description": "Residents near the New River Greenway love coming home to spotless interior windows. We handle all the detail work so you can enjoy unobstructed views." },
+      { "title": "Sawgrass Mills Area Interiors", "description": "Our interior window cleaning service is perfect for homes near Sawgrass Mills where dust and humidity can cloud your glass over time." },
+      { "title": "Sunrise Lakes Interiors", "description": "Interior windows at Sunrise Lakes deserve the same attention as the beautiful community views outside. We clean every pane with care and precision." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "pressure-washing",
+    "services_near_you": [
+      { "title": "Spring Lake Driveways", "description": "Driveways and walkways throughout Spring Lake collect algae and tire marks fast in the Florida heat. Pressure washing restores surfaces to like-new condition." },
+      { "title": "Welleby Pool Decks", "description": "Pool decks and patios in Welleby take a beating from sun, rain, and foot traffic. Our pressure washing blasts away embedded dirt and slippery algae." },
+      { "title": "Sawgrass International Corporate Park Walkways", "description": "Commercial walkways and entryways at Sawgrass International Corporate Park stay inviting with professional pressure washing that removes oil stains, gum, and ground-in grime." },
+      { "title": "Nob Hill Area Surfaces", "description": "From front walkways to garage pads, Nob Hill area properties benefit from pressure washing that removes built-up grime and restores original surface color." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "soft-washing",
+    "services_near_you": [
+      { "title": "Sunset Strip Home Exteriors", "description": "Soft washing is ideal for Sunset Strip home exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae." },
+      { "title": "Sunrise Golf Village Stucco & Siding", "description": "Sunrise Golf Village homes with delicate stucco or painted siding need the gentle touch of soft washing to get clean without risking surface damage." },
+      { "title": "The Metropica Pool Enclosures", "description": "Pool enclosures throughout The Metropica collect green algae and grime. Soft washing eliminates buildup without the high pressure that can warp screens." },
+      { "title": "New River Greenway Painted Surfaces", "description": "Soft washing is the smart choice for homes near the New River Greenway with painted wood or vinyl siding, lifting dirt and biological growth without stripping finishes." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "house-washing",
+    "services_near_you": [
+      { "title": "Sunrise Lakes Exteriors", "description": "A full house wash brings Sunrise Lakes homes back to life, removing the dark streaks and discoloration that Florida's humidity creates on exterior walls." },
+      { "title": "Sawgrass Mills Area Residences", "description": "Homeowners near Sawgrass Mills keep their properties looking sharp with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface." },
+      { "title": "Spring Lake Facades", "description": "House washing at Spring Lake means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating grime." },
+      { "title": "Welleby Neighborhood", "description": "Homes in Welleby maintain their fresh appearance with professional house washing that covers walls, eaves, and fascia boards from top to bottom." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "roof-washing",
+    "services_near_you": [
+      { "title": "Nob Hill Area Tile Roofs", "description": "Nob Hill area tile roofs are prone to dark algae streaks. Our soft wash roof cleaning removes Gloeocapsa magma stains and restores your roof's original look." },
+      { "title": "Sunset Strip Shingle Roofs", "description": "Shingle roofs along Sunset Strip take a beating from South Florida humidity. Professional roof washing extends roof life and eliminates those ugly black streaks." },
+      { "title": "Sunrise Golf Village Rooflines", "description": "Sunrise Golf Village property owners protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials." },
+      { "title": "The Metropica Properties", "description": "Properties throughout The Metropica benefit from roof washing that improves curb appeal and helps prevent costly roof repairs down the road." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "gutter-cleaning",
+    "services_near_you": [
+      { "title": "New River Greenway Tree-Lined Streets", "description": "The mature tree canopy near the New River Greenway means gutters fill up fast with leaves and debris. Regular gutter cleaning prevents water damage and foundation issues." },
+      { "title": "Spring Lake Properties", "description": "Spring Lake homes surrounded by tropical landscaping need consistent gutter cleaning to keep water flowing properly and away from your foundation." },
+      { "title": "Sawgrass Mills Area Homes", "description": "Clogged gutters near Sawgrass Mills can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed." },
+      { "title": "Sunrise Lakes Residences", "description": "Sunrise Lakes' lush surroundings drop plenty of leaves and seed pods into your gutters. We keep them clear, especially during rainy season." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "paver-sealing",
+    "services_near_you": [
+      { "title": "Welleby Driveways", "description": "Paver driveways throughout Welleby look brand new after our sealing service locks in color, prevents weed growth, and protects against oil stains." },
+      { "title": "Nob Hill Area Pool Decks", "description": "Nob Hill area pool deck pavers stay vibrant and slip-resistant with professional sealing that shields against UV fading and water absorption." },
+      { "title": "Sunset Strip Walkways", "description": "Walkway and patio pavers along Sunset Strip benefit from sealing that enhances color, prevents shifting, and keeps sand joints locked in place." },
+      { "title": "Sunrise Golf Village Patios", "description": "Outdoor living spaces in Sunrise Golf Village maintain their polished look with paver sealing that guards against Florida's sun, rain, and heavy foot traffic." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "solar-panel-cleaning",
+    "services_near_you": [
+      { "title": "The Metropica Solar Homes", "description": "Solar panels on Metropica rooftops lose efficiency when covered in pollen and dust. Our RO/DI pure water cleaning restores maximum energy output safely." },
+      { "title": "Spring Lake Solar Systems", "description": "Spring Lake homeowners protect their solar investment with professional panel cleaning that removes bird droppings, dirt, and film without scratching the surface." },
+      { "title": "Sawgrass Mills Area Rooftop Panels", "description": "Solar panels near Sawgrass Mills perform at their best after our gentle cleaning process removes the grime that South Florida weather deposits on your array." },
+      { "title": "New River Greenway Solar Arrays", "description": "Dirty solar panels near the New River Greenway can lose up to 25 percent efficiency. Our professional cleaning gets your system back to peak performance with satisfaction guarantees available." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "screen-cleaning",
+    "services_near_you": [
+      { "title": "Sunrise Lakes Screen Enclosures", "description": "Screen enclosures in Sunrise Lakes trap pollen, dust, and mildew over time. Our professional cleaning restores airflow and visibility throughout your lanai." },
+      { "title": "Welleby Pool Screens", "description": "Pool screen enclosures in Welleby stay bright and clean with our thorough washing that removes green algae and grime without tearing the mesh." },
+      { "title": "Nob Hill Area Lanai Screens", "description": "Nob Hill area homeowners enjoy their outdoor living spaces more with professionally cleaned screens that let in the breeze without the buildup." },
+      { "title": "Sunrise Golf Village Porches", "description": "Screened porches throughout Sunrise Golf Village collect debris and discoloration from Florida weather. We clean every panel so your porch feels open and inviting again." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "light-fixture-cleaning",
+    "services_near_you": [
+      { "title": "Sunset Strip Entryways", "description": "Exterior light fixtures along Sunset Strip collect bugs, dust, and grime that dim your curb appeal. Professional cleaning restores full brightness to every fixture." },
+      { "title": "The Metropica Outdoor Lighting", "description": "Outdoor light fixtures at The Metropica deserve the same attention as your home's interior. We clean glass, housings, and frames so your lighting shines bright." },
+      { "title": "Spring Lake Porch Lights", "description": "Porch and garage light fixtures throughout Spring Lake look brand new after our detailed cleaning removes cobwebs, insect buildup, and weather stains." },
+      { "title": "New River Greenway Landscape Fixtures", "description": "Landscape and pathway light fixtures near the New River Greenway lose their impact when covered in grime. Our cleaning service brings back the warm glow your property deserves." }
+    ]
+  },
+  {
+    "city": "sunrise",
+    "service": "holiday-lighting",
+    "services_near_you": [
+      { "title": "Sawgrass Mills Area Holiday Displays", "description": "Homes near Sawgrass Mills stand out during the holidays with professional lighting installation that covers rooflines, trees, and entryways with a custom design for your property." },
+      { "title": "Sunrise Lakes Seasonal Lighting", "description": "Sunrise Lakes families enjoy a stress-free holiday season with our full-service lighting package that includes design, installation, maintenance, and takedown." },
+      { "title": "Welleby Community Festivities", "description": "Homes throughout Welleby create a festive atmosphere with professional holiday lighting that draws attention and spreads seasonal cheer across the neighborhood." },
+      { "title": "Nob Hill Area Holiday Decor", "description": "Nob Hill area properties shine bright all season long with custom holiday lighting installations. Satisfaction guarantees available on every project we complete." }
+    ]
+  }
+]

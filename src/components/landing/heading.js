@@ -42,7 +42,7 @@ const services = [
     link: "window-cleaning",
     image: exteriorWindow,
     description:
-      "RODI purified water, hand scrubbing, and streak-free glass—residential and commercial—with our 7-day sparkle guarantee.",
+      "RO/DI purified water, hand scrubbing, and streak-free glass—residential and commercial—with our 7-day sparkle guarantee.",
   },
   {
     name: "Gutter Cleaning",

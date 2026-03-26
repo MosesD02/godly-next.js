@@ -1,0 +1,132 @@
+[
+  {
+    "city": "miramar-fl",
+    "service": "window-cleaning",
+    "services_near_you": [
+      { "title": "Sunset Lakes Residences", "description": "Sunset Lakes homeowners enjoy crystal-clear lake views after our professional window cleaning removes pollen, hard water spots, and everyday grime from every pane." },
+      { "title": "Monarch Lakes Homes", "description": "Our RO/DI pure water system leaves Monarch Lakes windows streak-free and spotless, even with South Florida's humidity working against you." },
+      { "title": "Riviera Isles Properties", "description": "Riviera Isles families deserve windows that let in all that natural light. Our thorough cleaning covers glass, tracks, sills, and frames throughout your home." },
+      { "title": "Miramar Town Center Living", "description": "Homes and businesses near Miramar Town Center stay looking polished with regular window cleaning that removes dust, fingerprints, and weather buildup." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "exterior-window-cleaning",
+    "services_near_you": [
+      { "title": "Silver Shores Homes", "description": "Exterior windows in Silver Shores collect pollen, dust, and water spots quickly. Our professional cleaning restores clarity and curb appeal to every window." },
+      { "title": "Lakeshore Estates", "description": "Lakeshore properties benefit from exterior window cleaning that tackles the buildup South Florida's rain and humidity leave behind on your glass." },
+      { "title": "Huntington Community", "description": "Huntington homeowners count on us for exterior window cleaning that removes stubborn grime without disrupting your day or damaging window seals." },
+      { "title": "Historic Miramar Properties", "description": "Exterior window cleaning in Historic Miramar brings new life to classic homes, clearing away years of weather residue and restoring bright, clean sightlines." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "interior-window-cleaning",
+    "services_near_you": [
+      { "title": "Vizcaya Residences", "description": "Interior window cleaning for Vizcaya homes means detailed attention to tracks, sills, and glass so every window sparkles from the inside out." },
+      { "title": "Miramar Park Homes", "description": "Miramar Park residents love coming home to spotless interior windows. We handle all the detail work so you can enjoy unobstructed views of your neighborhood." },
+      { "title": "Island Reserve Living", "description": "Our interior window cleaning service is perfect for Island Reserve homes where dust and humidity can cloud your glass over time." },
+      { "title": "Sunset Lakes Interiors", "description": "Interior windows at Sunset Lakes deserve the same attention as the beautiful lake views outside. We clean every pane with care and precision." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "pressure-washing",
+    "services_near_you": [
+      { "title": "Monarch Lakes Driveways", "description": "Driveways and walkways throughout Monarch Lakes collect algae and tire marks fast in the Florida heat. Pressure washing restores surfaces to like-new condition." },
+      { "title": "Riviera Isles Pool Decks", "description": "Pool decks and patios in Riviera Isles take a beating from sun, rain, and foot traffic. Our pressure washing blasts away embedded dirt and slippery algae." },
+      { "title": "Miramar Town Center Walkways", "description": "Commercial walkways and storefronts near Miramar Town Center stay inviting with professional pressure washing that removes oil stains, gum, and ground-in grime." },
+      { "title": "Huntington Community Surfaces", "description": "From front walkways to garage pads, Huntington properties benefit from pressure washing that removes built-up grime and restores original surface color." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "soft-washing",
+    "services_near_you": [
+      { "title": "Silver Shores Home Exteriors", "description": "Soft washing is ideal for Silver Shores home exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae." },
+      { "title": "Lakeshore Stucco & Siding", "description": "Lakeshore homes with delicate stucco or painted siding need the gentle touch of soft washing to get clean without risking surface damage." },
+      { "title": "Vizcaya Pool Enclosures", "description": "Pool enclosures throughout Vizcaya collect green algae and grime. Soft washing eliminates buildup without the high pressure that can warp screens." },
+      { "title": "Historic Miramar Painted Surfaces", "description": "Soft washing is the smart choice for Historic Miramar homes with painted wood or vinyl siding, lifting dirt and biological growth without stripping finishes." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "house-washing",
+    "services_near_you": [
+      { "title": "Miramar Park Exteriors", "description": "A full house wash brings Miramar Park homes back to life, removing the dark streaks and discoloration that Florida's humidity creates on exterior walls." },
+      { "title": "Island Reserve Residences", "description": "Island Reserve homeowners keep their properties looking sharp with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface." },
+      { "title": "Sunset Lakes Facades", "description": "House washing at Sunset Lakes means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating grime." },
+      { "title": "Monarch Lakes Neighborhood", "description": "Homes in Monarch Lakes maintain their fresh appearance with professional house washing that covers walls, eaves, and fascia boards from top to bottom." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "roof-washing",
+    "services_near_you": [
+      { "title": "Riviera Isles Tile Roofs", "description": "Riviera Isles tile roofs are prone to dark algae streaks. Our soft wash roof cleaning removes Gloeocapsa magma stains and restores your roof's original look." },
+      { "title": "Huntington Shingle Roofs", "description": "Shingle roofs in Huntington take a beating from South Florida humidity. Professional roof washing extends roof life and eliminates those ugly black streaks." },
+      { "title": "Lakeshore Rooflines", "description": "Lakeshore property owners protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials." },
+      { "title": "Vizcaya Properties", "description": "Properties throughout Vizcaya benefit from roof washing that improves curb appeal and helps prevent costly roof repairs down the road." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "gutter-cleaning",
+    "services_near_you": [
+      { "title": "Historic Miramar Tree-Lined Streets", "description": "Historic Miramar's mature tree canopy means gutters fill up fast with leaves and debris. Regular gutter cleaning prevents water damage and foundation issues." },
+      { "title": "Silver Shores Properties", "description": "Silver Shores homes surrounded by tropical landscaping need consistent gutter cleaning to keep water flowing properly and away from your foundation." },
+      { "title": "Miramar Park Homes", "description": "Clogged gutters in Miramar Park can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed." },
+      { "title": "Island Reserve Residences", "description": "Island Reserve's lush surroundings drop plenty of leaves and seed pods into your gutters. We keep them clear, especially during rainy season." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "paver-sealing",
+    "services_near_you": [
+      { "title": "Sunset Lakes Driveways", "description": "Paver driveways throughout Sunset Lakes look brand new after our sealing service locks in color, prevents weed growth, and protects against oil stains." },
+      { "title": "Monarch Lakes Pool Decks", "description": "Monarch Lakes pool deck pavers stay vibrant and slip-resistant with professional sealing that shields against UV fading and water absorption." },
+      { "title": "Riviera Isles Walkways", "description": "Walkway and patio pavers in Riviera Isles benefit from sealing that enhances color, prevents shifting, and keeps sand joints locked in place." },
+      { "title": "Miramar Town Center Patios", "description": "Outdoor living spaces near Miramar Town Center maintain their polished look with paver sealing that guards against Florida's sun, rain, and heavy foot traffic." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "solar-panel-cleaning",
+    "services_near_you": [
+      { "title": "Huntington Solar Homes", "description": "Solar panels on Huntington rooftops lose efficiency when covered in pollen and dust. Our RO/DI pure water cleaning restores maximum energy output safely." },
+      { "title": "Lakeshore Solar Systems", "description": "Lakeshore homeowners protect their solar investment with professional panel cleaning that removes bird droppings, dirt, and film without scratching the surface." },
+      { "title": "Vizcaya Rooftop Panels", "description": "Solar panels throughout Vizcaya perform at their best after our gentle cleaning process removes the grime that South Florida weather deposits on your array." },
+      { "title": "Silver Shores Solar Arrays", "description": "Dirty solar panels in Silver Shores can lose up to 25 percent efficiency. Our professional cleaning gets your system back to peak performance with satisfaction guarantees available." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "screen-cleaning",
+    "services_near_you": [
+      { "title": "Miramar Park Screen Enclosures", "description": "Screen enclosures in Miramar Park trap pollen, dust, and mildew over time. Our professional cleaning restores airflow and visibility throughout your lanai." },
+      { "title": "Sunset Lakes Pool Screens", "description": "Pool screen enclosures at Sunset Lakes stay bright and clean with our thorough washing that removes green algae and grime without tearing the mesh." },
+      { "title": "Island Reserve Lanai Screens", "description": "Island Reserve homeowners enjoy their outdoor living spaces more with professionally cleaned screens that let in the breeze without the buildup." },
+      { "title": "Historic Miramar Porches", "description": "Screened porches throughout Historic Miramar collect debris and discoloration from Florida weather. We clean every panel so your porch feels open and inviting again." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "light-fixture-cleaning",
+    "services_near_you": [
+      { "title": "Monarch Lakes Entryways", "description": "Exterior light fixtures at Monarch Lakes homes collect bugs, dust, and grime that dim your curb appeal. Professional cleaning restores full brightness to every fixture." },
+      { "title": "Riviera Isles Outdoor Lighting", "description": "Outdoor light fixtures in Riviera Isles deserve the same attention as your home's interior. We clean glass, housings, and frames so your lighting shines bright." },
+      { "title": "Huntington Porch Lights", "description": "Porch and garage light fixtures throughout Huntington look brand new after our detailed cleaning removes cobwebs, insect buildup, and weather stains." },
+      { "title": "Lakeshore Landscape Fixtures", "description": "Landscape and pathway light fixtures in Lakeshore lose their impact when covered in grime. Our cleaning service brings back the warm glow your property deserves." }
+    ]
+  },
+  {
+    "city": "miramar-fl",
+    "service": "holiday-lighting",
+    "services_near_you": [
+      { "title": "Vizcaya Holiday Displays", "description": "Vizcaya homes stand out during the holidays with professional lighting installation that covers rooflines, trees, and entryways with a custom design for your property." },
+      { "title": "Silver Shores Seasonal Lighting", "description": "Silver Shores families enjoy a stress-free holiday season with our full-service lighting package that includes design, installation, maintenance, and takedown." },
+      { "title": "Miramar Town Center Festivities", "description": "Homes and businesses near Miramar Town Center create a festive atmosphere with professional holiday lighting that draws attention and spreads seasonal cheer." },
+      { "title": "Sunset Lakes Holiday Decor", "description": "Sunset Lakes properties shine bright all season long with custom holiday lighting installations. Satisfaction guarantees available on every project we complete." }
+    ]
+  }
+]

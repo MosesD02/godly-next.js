@@ -1,0 +1,132 @@
+[
+  {
+    "city": "southwest-ranches",
+    "service": "window-cleaning",
+    "services_near_you": [
+      { "title": "Country Estates Properties", "description": "Large estate homes in Country Estates feature oversized windows designed to showcase sprawling acreage views. Our RO/DI pure water system delivers streak-free results on every pane without leaving mineral deposits behind." },
+      { "title": "Sunshine Ranches Homes", "description": "Sunshine Ranches homeowners with horse barns and paddocks nearby deal with dust and debris on windows year-round. Professional window cleaning restores clarity so you can enjoy your pastoral views from every room." },
+      { "title": "Rolling Oaks Residences", "description": "Rolling Oaks properties surrounded by mature oak canopy collect pollen, tree sap, and water spots on exterior glass. We clean every window inside and out for a total transformation." },
+      { "title": "Ivanhoe Estates Homes", "description": "Ivanhoe Estates features custom-built homes with expansive window layouts. Our window cleaning service handles multi-story glass, transom windows, and specialty shapes so natural light floods your living spaces." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "exterior-window-cleaning",
+    "services_near_you": [
+      { "title": "Frontier Trails Properties", "description": "Exterior windows on Frontier Trails estate homes collect layers of dust kicked up from unpaved roads and equestrian activity. Our team removes every trace for a spotless finish." },
+      { "title": "Griffin Road Corridor Homes", "description": "Properties along the Griffin Road corridor face road grime and exhaust residue on exterior glass. Professional exterior window cleaning eliminates buildup and restores curb appeal." },
+      { "title": "Sunshine Ranches Estates", "description": "Exterior windows throughout Sunshine Ranches take a beating from South Florida's humidity, pollen, and hard water runoff. We restore every pane to crystal-clear condition." },
+      { "title": "Flamingo Road Area Residences", "description": "Homes near the Flamingo Road area benefit from exterior window cleaning that tackles the dust, cobwebs, and insect residue that accumulate on large estate windows between cleanings." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "interior-window-cleaning",
+    "services_near_you": [
+      { "title": "Rolling Oaks Interiors", "description": "Interior window cleaning for Rolling Oaks homes includes detailed attention to tracks, sills, and frames so every window sparkles from the inside. We handle the hard-to-reach glass you cannot." },
+      { "title": "Country Estates Great Rooms", "description": "Country Estates homes feature soaring great rooms with floor-to-ceiling windows. Our interior window cleaning removes fingerprints, film, and humidity haze for unobstructed views of your property." },
+      { "title": "Volunteer Park Area Homes", "description": "Homes near the Volunteer Park area enjoy brighter, cleaner living spaces after our interior window service. We detail every pane, track, and sill throughout your home." },
+      { "title": "Ivanhoe Estates Interiors", "description": "Ivanhoe Estates homeowners love the difference clean interior windows make in their custom homes. We eliminate dust, pet smudges, and buildup you might not notice until the glass is sparkling." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "pressure-washing",
+    "services_near_you": [
+      { "title": "Sunshine Ranches Driveways", "description": "Long driveways on Sunshine Ranches properties collect dirt, mud, and organic stains from surrounding acreage. Pressure washing blasts away embedded grime and restores concrete to like-new condition." },
+      { "title": "Frontier Trails Walkways", "description": "Walkways and patios throughout Frontier Trails develop algae and mildew fast in the South Florida climate. Professional pressure washing removes buildup and restores traction to outdoor surfaces." },
+      { "title": "Griffin Road Corridor Properties", "description": "Commercial and residential properties along the Griffin Road corridor benefit from pressure washing that removes oil stains, tire marks, and ground-in debris from driveways and entryways." },
+      { "title": "Country Estates Pool Decks", "description": "Pool decks and outdoor entertaining areas on Country Estates properties get slippery from algae growth. Our pressure washing service eliminates buildup and keeps surfaces safe for your family." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "soft-washing",
+    "services_near_you": [
+      { "title": "Rolling Oaks Stucco Homes", "description": "Soft washing is the right approach for Rolling Oaks stucco exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae without surface damage." },
+      { "title": "Ivanhoe Estates Painted Surfaces", "description": "Ivanhoe Estates homes with painted siding and decorative finishes need the gentle approach of soft washing to get clean without risking peeling or discoloration." },
+      { "title": "Flamingo Road Area Exteriors", "description": "Homes near Flamingo Road face accelerated mildew growth from South Florida humidity and tree canopy shade. Soft washing treats the root cause and keeps exteriors looking fresh for months." },
+      { "title": "Volunteer Park Area Pool Enclosures", "description": "Pool enclosures near the Volunteer Park area collect green algae and organic buildup. Soft washing eliminates it all without the high pressure that can warp or damage screens and frames." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "house-washing",
+    "services_near_you": [
+      { "title": "Country Estates Facades", "description": "A full house wash brings Country Estates homes back to life, removing the dark streaks and discoloration that Florida's tropical climate creates on large estate exteriors." },
+      { "title": "Sunshine Ranches Properties", "description": "Sunshine Ranches homeowners maintain their property value with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface top to bottom." },
+      { "title": "Frontier Trails Residences", "description": "House washing throughout Frontier Trails means a complete exterior refresh using professional-grade cleaning solutions that protect your paint and stucco while eliminating years of grime." },
+      { "title": "Griffin Road Corridor Homes", "description": "Homes along the Griffin Road corridor pick up extra dust and road film on exterior walls. Our house washing service covers walls, eaves, soffits, and fascia boards for a total transformation." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "roof-washing",
+    "services_near_you": [
+      { "title": "Rolling Oaks Tile Roofs", "description": "Rolling Oaks homes with barrel tile roofs develop black streaks from algae and lichen under heavy tree cover. Our soft wash roof cleaning removes staining and extends the life of your roof." },
+      { "title": "Ivanhoe Estates Rooflines", "description": "Ivanhoe Estates features large rooflines on custom estate homes. Professional roof washing eliminates unsightly dark streaks and prevents the organic growth that leads to premature deterioration." },
+      { "title": "Flamingo Road Area Roofs", "description": "Roofs near the Flamingo Road area collect moisture from surrounding vegetation and shade, accelerating algae growth. Our roof washing service restores your roof's original appearance safely." },
+      { "title": "Volunteer Park Area Properties", "description": "Homes near Volunteer Park benefit from roof washing that removes moss, algae, and debris buildup. We use professional-grade cleaning solutions applied at low pressure to protect your roofing materials." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "gutter-cleaning",
+    "services_near_you": [
+      { "title": "Sunshine Ranches Gutters", "description": "Mature trees throughout Sunshine Ranches drop leaves, seed pods, and branches into gutters constantly. Our gutter cleaning service clears every downspout and channel to prevent water damage to your estate." },
+      { "title": "Country Estates Drainage Systems", "description": "Country Estates homes on large lots need properly flowing gutters to handle South Florida's heavy rain. We remove all debris and flush downspouts so water drains away from your foundation." },
+      { "title": "Rolling Oaks Properties", "description": "Oak canopy throughout Rolling Oaks means gutters fill up fast with leaves and organic matter. Professional gutter cleaning keeps your system flowing and prevents overflow damage to landscaping." },
+      { "title": "Frontier Trails Homes", "description": "Frontier Trails homeowners with sprawling properties rely on clean gutters to protect exterior walls and foundations. We clear clogs, check flow, and remove built-up debris from every run of gutter." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "paver-sealing",
+    "services_near_you": [
+      { "title": "Ivanhoe Estates Driveways", "description": "Ivanhoe Estates features elegant paver driveways that need sealing to maintain their color and structural integrity. Our paver sealing service locks in joint sand and protects against staining and fading." },
+      { "title": "Country Estates Patios", "description": "Outdoor entertaining areas on Country Estates properties feature custom paver work. Professional paver sealing enhances color, prevents weed growth between joints, and extends the life of your investment." },
+      { "title": "Flamingo Road Area Walkways", "description": "Paver walkways and pool decks near the Flamingo Road area face heavy sun exposure and rain. Sealing protects the surface from UV damage and keeps pavers looking freshly installed." },
+      { "title": "Griffin Road Corridor Properties", "description": "Properties along the Griffin Road corridor with paver driveways and courtyards benefit from professional sealing that prevents oil stains, tire marks, and organic discoloration from setting in." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "solar-panel-cleaning",
+    "services_near_you": [
+      { "title": "Sunshine Ranches Solar Arrays", "description": "Solar panels on Sunshine Ranches estates collect dust from equestrian activity and unpaved roads, reducing energy output. Our RO/DI pure water cleaning restores peak panel efficiency without scratching." },
+      { "title": "Frontier Trails Solar Installations", "description": "Frontier Trails homeowners investing in solar energy need clean panels to maximize return. We remove pollen, bird droppings, and dust buildup so your system performs at its rated capacity." },
+      { "title": "Rolling Oaks Rooftop Panels", "description": "Tree sap and leaf debris from Rolling Oaks' dense canopy settle on solar panels and block sunlight. Professional cleaning removes residue safely and restores full energy production." },
+      { "title": "Volunteer Park Area Solar Systems", "description": "Solar panels near the Volunteer Park area accumulate grime from humidity and airborne particulates. Regular professional cleaning keeps your panels operating at maximum efficiency year-round." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "screen-cleaning",
+    "services_near_you": [
+      { "title": "Country Estates Screen Enclosures", "description": "Large screen enclosures on Country Estates properties trap dust, pollen, and cobwebs between cleanings. Our screen cleaning service restores airflow and visibility so your outdoor spaces feel open and bright." },
+      { "title": "Ivanhoe Estates Pool Screens", "description": "Pool screen enclosures throughout Ivanhoe Estates develop green algae and mildew in the South Florida humidity. We clean every panel and frame to keep your pool area looking its best." },
+      { "title": "Flamingo Road Area Lanais", "description": "Screened lanais near the Flamingo Road area collect debris from surrounding vegetation. Professional screen cleaning removes buildup without stretching or damaging the mesh." },
+      { "title": "Sunshine Ranches Patio Screens", "description": "Patio screens on Sunshine Ranches properties deal with dust from nearby equestrian trails and paddocks. Our cleaning service restores screen clarity and removes embedded dirt from frames and tracks." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "light-fixture-cleaning",
+    "services_near_you": [
+      { "title": "Rolling Oaks Exterior Fixtures", "description": "Exterior light fixtures on Rolling Oaks homes collect insects, cobwebs, and oxidation under the tree canopy. Our light fixture cleaning service restores brightness and curb appeal to your property." },
+      { "title": "Griffin Road Corridor Entryways", "description": "Entryway and landscape light fixtures along the Griffin Road corridor accumulate grime and insect debris. Professional cleaning removes buildup so your fixtures shine at full brightness." },
+      { "title": "Frontier Trails Estate Lighting", "description": "Estate lighting throughout Frontier Trails properties needs regular cleaning to keep long driveways and entrances well-lit. We detail every fixture, globe, and lens for maximum light output." },
+      { "title": "Volunteer Park Area Outdoor Lighting", "description": "Outdoor fixtures near the Volunteer Park area collect moisture residue and bug debris that dims their output. Our cleaning service restores each fixture to peak performance and appearance." }
+    ]
+  },
+  {
+    "city": "southwest-ranches",
+    "service": "holiday-lighting",
+    "services_near_you": [
+      { "title": "Country Estates Holiday Displays", "description": "Country Estates homes on multi-acre lots deserve holiday lighting that matches their grand scale. Our team designs, installs, and removes custom displays so you enjoy the season without climbing a ladder." },
+      { "title": "Ivanhoe Estates Seasonal Decor", "description": "Ivanhoe Estates homeowners set the standard for holiday curb appeal. We handle professional holiday lighting installation on rooflines, columns, and trees with removal and storage available at season's end." },
+      { "title": "Sunshine Ranches Ranch-Style Displays", "description": "Sunshine Ranches properties with long fence lines, barns, and estate entrances look stunning with professionally installed holiday lighting. We customize every display to highlight your property's unique character." },
+      { "title": "Flamingo Road Area Homes", "description": "Homes near the Flamingo Road area light up the neighborhood during the holidays with professional installations. We handle design, setup, maintenance, and takedown so you can focus on celebrating." }
+    ]
+  }
+]

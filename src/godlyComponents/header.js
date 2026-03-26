@@ -30,25 +30,11 @@ import santaBg from "@/assets/homepageServices/santa_bg.webp";
 
 const services = [
   {
-    name: "Exterior Window Cleaning",
-    link: "exterior-window-cleaning",
-    image: exteriorWindow,
-    description:
-      "It's what we do best! Get rid of that nasty build-up of nature's mildew and grime.",
-  },
-  {
-    name: "Interior Window Cleaning",
-    link: "interior-window-cleaning",
-    image: interiorWindow,
-    description:
-      "Pet slobber, fingerprints, and so much more can leave residue that is tricky to get off.",
-  },
-  {
     name: "Window Cleaning",
     link: "window-cleaning",
     image: exteriorWindow,
     description:
-      "RODI purified water, hand scrubbing, and streak-free glass—residential and commercial—with our 7-day sparkle guarantee.",
+      "RO/DI purified water, hand scrubbing, and streak-free glass—residential and commercial—with our 7-day sparkle guarantee.",
   },
   {
     name: "Gutter Cleaning",
@@ -119,6 +105,20 @@ const services = [
     image: sealCoating,
     description:
       "Add a protective coating to your driveway/parking lot that protects against water, oils, and other damaging elements.",
+  },
+  {
+    name: "Exterior Window Cleaning",
+    link: "exterior-window-cleaning",
+    image: exteriorWindow,
+    description:
+      "It's what we do best! Get rid of that nasty build-up of nature's mildew and grime.",
+  },
+  {
+    name: "Interior Window Cleaning",
+    link: "interior-window-cleaning",
+    image: interiorWindow,
+    description:
+      "Pet slobber, fingerprints, and so much more can leave residue that is tricky to get off.",
   },
 ];
 

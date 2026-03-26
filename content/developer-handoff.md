@@ -15,14 +15,14 @@ Code changes on branch `city-specific-content` add support for per-city content 
 
 **Files changed:**
 
-| File | What Changed |
-|------|-------------|
-| `src/godlyComponents/servicesPage.js` | Imports `cityServicesData`, passes city-specific overrides to sub-components, renders FAQ and LocalCta sections |
-| `src/godlyComponents/servicesHero.js` | Accepts new `heroOverride` prop to replace the description paragraph |
-| `src/godlyComponents/serviceEssential.js` | Accepts new `essentialOverride` prop to replace the 4 "Why Essential" items |
-| `src/godlyComponents/faq.js` | Now dynamic — accepts `faqs`, `serviceName`, and `cityName` props |
-| `src/godlyComponents/localCta.js` | **NEW** component for city-specific call-to-action blocks |
-| `src/data/cityServicesData.js` | **NEW** data file (currently contains sample Boca Raton window cleaning data) |
+| File                                      | What Changed                                                                                                    |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `src/godlyComponents/servicesPage.js`     | Imports `cityServicesData`, passes city-specific overrides to sub-components, renders FAQ and LocalCta sections |
+| `src/godlyComponents/servicesHero.js`     | Accepts new `heroOverride` prop to replace the description paragraph                                            |
+| `src/godlyComponents/serviceEssential.js` | Accepts new `essentialOverride` prop to replace the 4 "Why Essential" items                                     |
+| `src/godlyComponents/faq.js`              | Now dynamic — accepts `faqs`, `serviceName`, and `cityName` props                                               |
+| `src/godlyComponents/localCta.js`         | **NEW** component for city-specific call-to-action blocks                                                       |
+| `src/data/cityServicesData.js`            | **NEW** data file (currently contains sample Boca Raton window cleaning data)                                   |
 
 **Dash/underscore normalization:** URL params arrive as dashes (`boca-raton`), but the internal `Services` and `citiesMap` objects use underscores. `servicesPage.js` normalizes both directions so lookups work regardless of format.
 
@@ -41,25 +41,25 @@ export const cityServicesData = {
         { number: "01.", title: "...", text: "..." },
         { number: "02.", title: "...", text: "..." },
         { number: "03.", title: "...", text: "..." },
-        { number: "04.", title: "...", text: "..." }
+        { number: "04.", title: "...", text: "..." },
       ],
       faqs: [
         { question: "...", answer: "..." },
         { question: "...", answer: "..." },
         { question: "...", answer: "..." },
         { question: "...", answer: "..." },
-        { question: "...", answer: "..." }
+        { question: "...", answer: "..." },
       ],
-      localCta: "city-specific CTA text..."
+      localCta: "city-specific CTA text...",
     },
     "pressure-washing": {
       // same structure
-    }
+    },
     // ... remaining services
   },
   "coconut-creek": {
     // ... all 13 services
-  }
+  },
   // ... remaining cities
 };
 ```
@@ -76,15 +76,15 @@ export const cityServicesData = {
 
 The generated JSON files use slightly different field names than the code expects. Here is the mapping:
 
-| JSON Field (from content generation) | cityServicesData Field | Notes |
-|--------------------------------------|----------------------|-------|
-| `hero_paragraph` | `hero` | String — replaces the description paragraph only (not the title or image) |
-| `why_essential` | `essential` | Array of objects — add a `number` field (`"01."`, `"02."`, etc.) to each item |
-| `faqs` | `faqs` | Array of `{ question, answer }` pairs — use as-is |
-| `local_cta` | `localCta` | String — the city-specific CTA message |
-| `whats_included` | *(not wired up yet)* | Could optionally be added as an `included` override — the plumbing is straightforward to add |
-| `meta_title` | *(separate file)* | Add to `customMetaData.js` for SEO |
-| `meta_description` | *(separate file)* | Add to `customMetaData.js` for SEO |
+| JSON Field (from content generation) | cityServicesData Field | Notes                                                                                        |
+| ------------------------------------ | ---------------------- | -------------------------------------------------------------------------------------------- |
+| `hero_paragraph`                     | `hero`                 | String — replaces the description paragraph only (not the title or image)                    |
+| `why_essential`                      | `essential`            | Array of objects — add a `number` field (`"01."`, `"02."`, etc.) to each item                |
+| `faqs`                               | `faqs`                 | Array of `{ question, answer }` pairs — use as-is                                            |
+| `local_cta`                          | `localCta`             | String — the city-specific CTA message                                                       |
+| `whats_included`                     | _(not wired up yet)_   | Could optionally be added as an `included` override — the plumbing is straightforward to add |
+| `meta_title`                         | _(separate file)_      | Add to `customMetaData.js` for SEO                                                           |
+| `meta_description`                   | _(separate file)_      | Add to `customMetaData.js` for SEO                                                           |
 
 ---
 
@@ -133,4 +133,4 @@ These rules apply to the generated content and any future manual edits:
 - **Rain Shield Technology** — Available as an add-on, not applied automatically.
 - **No "eco-friendly"** — Use "professional-grade cleaning solutions" instead.
 - **Money-back guarantee** — Applies to all services; safe to reference broadly.
-- **RO/DI water** — Always write as "RO/DI" with a slash, never "RODI."
+- **RO/DI water** — Always write as "RO/DI" with a slash, never "RO/DI."

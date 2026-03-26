@@ -43,11 +43,12 @@ const taglines = {
   },
 };
 
-const ServiceNearYou = ({ slug }) => {
+const ServiceNearYou = ({ slug, nearYouOverride }) => {
   const { city } = useGodlyContext();
   const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
   const cityName = citiesMap[cityKey];
   const headings = generateServiceSectionHeadings(slug, cityName);
+  const nearYouItems = nearYouOverride ?? Services[slug]["nearyou"];
 
   // const steps1 = [
   //   {
@@ -154,7 +155,7 @@ const ServiceNearYou = ({ slug }) => {
 
         <div className="pt-20 pb-6 text-white md:hidden md:pb-16">
           <div className="relative z-10 grid grid-cols-2 gap-3 px-4 py-5">
-            {Services[slug]["nearyou"].map((step, index) => (
+            {nearYouItems.map((step, index) => (
               <div
                 key={index}
                 className={cn(
@@ -188,7 +189,7 @@ const ServiceNearYou = ({ slug }) => {
           // style={{ marginTop: "1rem", marginBottom: "3rem" }}
         >
           <div className="relative z-10 flex flex-wrap justify-center gap-6 px-4 py-5 sm:gap-8 sm:px-6 md:gap-12 md:px-8">
-            {Services[slug]["nearyou"].slice(0, 2).map((step, index) => (
+            {nearYouItems.slice(0, 2).map((step, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="relative z-10 h-full w-64 rounded-md bg-[#CDB9A2] p-3 text-black">
                   <div className="flex h-full flex-col items-center justify-between rounded-md border-[1.5px] border-dashed border-[#2D2B2B] p-2 text-[#2D2B2B]">
@@ -210,7 +211,7 @@ const ServiceNearYou = ({ slug }) => {
             ))}
           </div>
           <div className="relative z-10 flex flex-wrap justify-center gap-6 px-4 py-5 sm:gap-8 sm:px-6 md:gap-12 md:px-8">
-            {Services[slug]["nearyou"].slice(2, 5).map((step, index) => (
+            {nearYouItems.slice(2, 5).map((step, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div className="relative z-10 h-full w-64 rounded-md bg-[#CDB9A2] p-3 text-black">
                   <div className="flex h-full flex-col items-center justify-between rounded-md border-[1.5px] border-dashed border-[#2D2B2B] p-2 text-[#2D2B2B]">

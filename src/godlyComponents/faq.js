@@ -6,7 +6,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import SectionButton from "@/components/sectionButton";
 import { cn } from "@/lib/utils";
 
 const Faq = ({ faqs, serviceName, cityName }) => {
@@ -77,7 +76,6 @@ const Faq = ({ faqs, serviceName, cityName }) => {
           </Accordion>
         </div>
       </div>
-      <SectionButton>Get a Free Estimate</SectionButton>
     </div>
   );
 };

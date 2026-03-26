@@ -1,0 +1,132 @@
+[
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "window-cleaning",
+    "services_near_you": [
+      { "title": "A1A Beachfront Condos", "description": "High-rise and mid-rise condos along A1A deal with constant salt spray and wind-driven grime. Our professional window cleaning restores panoramic ocean views floor by floor." },
+      { "title": "Anglin's Pier Area Homes", "description": "Homes near Anglin's Pier sit in the heart of the salt zone. We use RO/DI pure water systems to leave every pane streak-free despite the coastal exposure." },
+      { "title": "El Mar Drive Residences", "description": "El Mar Drive's charming beachside homes deserve windows as clear as the waterfront setting. Our team handles everything from jalousies to impact glass with precision." },
+      { "title": "Terra Mar Vacation Rentals", "description": "Vacation rental turnover in Terra Mar demands spotless windows every time. Our reliable scheduling and quality results keep your property guest-ready year-round." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "exterior-window-cleaning",
+    "services_near_you": [
+      { "title": "Sea Ranch Lakes Estates", "description": "Sea Ranch Lakes properties feature expansive glass overlooking manicured grounds. Our exterior window cleaning removes hard water deposits, pollen, and salt residue from every surface." },
+      { "title": "Commercial Blvd Corridor Shops", "description": "Storefronts along the Commercial Blvd corridor need exterior glass that attracts customers. We keep your business windows spotless so your displays look their best." },
+      { "title": "Bougainvilla Drive Properties", "description": "Tropical landscaping along Bougainvilla Drive means pollen and organic debris constantly coat exterior glass. Our cleaning eliminates buildup and brings back full natural light." },
+      { "title": "Pine Avenue Beachside Homes", "description": "Pine Avenue homes just steps from the sand collect heavy salt film on exterior windows. Our RO/DI pure water method delivers spot-free results that last." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "interior-window-cleaning",
+    "services_near_you": [
+      { "title": "A1A Condo Interiors", "description": "Interior window cleaning for A1A condo residents means meticulous attention to tracks, sills, and frames so you enjoy unobstructed views of the Atlantic from every room." },
+      { "title": "El Mar Drive Living Spaces", "description": "El Mar Drive homeowners appreciate interior window cleaning that removes dust, humidity film, and fingerprints from every pane without disrupting their daily routine." },
+      { "title": "Anglin's Square Residences", "description": "Homes around Anglin's Square benefit from detailed interior window cleaning that tackles the haze South Florida humidity leaves on indoor glass surfaces." },
+      { "title": "Terra Mar Island Homes", "description": "Terra Mar's waterfront homes feature large windows designed to capture the view. Our interior cleaning ensures nothing stands between you and the scenery." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "pressure-washing",
+    "services_near_you": [
+      { "title": "Commercial Blvd Sidewalks", "description": "Heavy foot traffic along Commercial Blvd leaves sidewalks and entryways stained and dingy. Pressure washing restores surfaces to like-new condition and boosts curb appeal." },
+      { "title": "Pine Avenue Driveways", "description": "Pine Avenue driveways collect oil stains, tire marks, and mildew from the coastal air. Our pressure washing blasts away buildup and reveals the original surface underneath." },
+      { "title": "Anglin's Pier Area Patios", "description": "Outdoor patios and pool decks near Anglin's Pier develop algae and salt deposits fast. Professional pressure washing keeps your entertaining spaces safe and clean." },
+      { "title": "Sea Ranch Lakes Pool Decks", "description": "Pool decks and walkways throughout Sea Ranch Lakes benefit from pressure washing that removes slippery algae growth and restores traction to hardscape surfaces." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "soft-washing",
+    "services_near_you": [
+      { "title": "Bougainvilla Drive Stucco Homes", "description": "Bougainvilla Drive's stucco-finished homes need the gentle approach of soft washing, using professional-grade cleaning solutions at low pressure to safely lift mold and algae." },
+      { "title": "El Mar Drive Painted Exteriors", "description": "Painted siding and trim along El Mar Drive stay vibrant with soft washing that removes biological growth without stripping finishes or damaging delicate surfaces." },
+      { "title": "A1A Condo Facades", "description": "Beachfront condo buildings along A1A accumulate salt and mildew on exterior walls. Soft washing cleans large facade areas efficiently without risk to coatings or sealants." },
+      { "title": "Terra Mar Lanai Enclosures", "description": "Lanai and pool enclosures in Terra Mar collect green algae and grime between the screen panels. Soft washing eliminates buildup without the high pressure that can warp screens." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "house-washing",
+    "services_near_you": [
+      { "title": "Pine Avenue Beach Cottages", "description": "A full house wash brings Pine Avenue's beach cottages back to life, removing the dark streaks and discoloration that salt air and humidity create on exterior walls." },
+      { "title": "Sea Ranch Lakes Exteriors", "description": "Sea Ranch Lakes homeowners maintain their property values with regular house washing that tackles mildew, cobwebs, and grime from every exterior surface top to bottom." },
+      { "title": "Commercial Blvd Area Buildings", "description": "House washing along the Commercial Blvd area means a complete exterior refresh using professional-grade cleaning solutions that protect your surfaces while eliminating years of buildup." },
+      { "title": "Bougainvilla Drive Residences", "description": "Bougainvilla Drive homes surrounded by lush tropical landscaping benefit from house washing that clears organic stains, dirt, and mildew from walls, eaves, and fascia." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "roof-washing",
+    "services_near_you": [
+      { "title": "El Mar Drive Tile Roofs", "description": "El Mar Drive's barrel tile roofs are prone to dark algae streaks. Our soft wash roof cleaning removes Gloeocapsa magma stains and restores your roof's original appearance." },
+      { "title": "Anglin's Pier Area Rooflines", "description": "Roofs near Anglin's Pier face relentless coastal exposure. Professional roof washing extends roof life and eliminates the black streaks that make homes look neglected." },
+      { "title": "Terra Mar Flat Roofs", "description": "Flat and low-slope roofs throughout Terra Mar collect standing moisture that feeds algae and moss. Our roof washing process clears growth and helps prevent long-term damage." },
+      { "title": "A1A Condo Roof Systems", "description": "Condo associations along A1A protect their roofing investment with professional roof washing that safely removes biological growth without damaging membrane or tile materials." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "gutter-cleaning",
+    "services_near_you": [
+      { "title": "Bougainvilla Drive Tree Canopy", "description": "Bougainvilla Drive's mature tropical trees drop leaves and seed pods into gutters constantly. Regular gutter cleaning prevents water damage and keeps your system flowing properly." },
+      { "title": "Pine Avenue Beachside Properties", "description": "Salt air corrosion and wind-blown sand clog gutters along Pine Avenue faster than most areas. We clear every downspout and gutter run so water drains as designed." },
+      { "title": "Sea Ranch Lakes Homes", "description": "Sea Ranch Lakes properties with large roof areas and lush landscaping need consistent gutter cleaning to prevent overflow, fascia rot, and foundation erosion." },
+      { "title": "Commercial Blvd Mixed-Use Buildings", "description": "Commercial and residential buildings along Commercial Blvd depend on clean gutters, especially during South Florida's rainy season when afternoon downpours are relentless." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "paver-sealing",
+    "services_near_you": [
+      { "title": "El Mar Drive Driveways", "description": "Paver driveways along El Mar Drive take a beating from salt air and UV exposure. Professional sealing locks in color, hardens joint sand, and prevents weed growth." },
+      { "title": "Anglin's Pier Area Pool Decks", "description": "Pool deck pavers near Anglin's Pier fade and shift without proper sealing. Our process cleans, re-sands, and seals to restore the original look and prevent future damage." },
+      { "title": "Terra Mar Walkways", "description": "Terra Mar's paver walkways and patios benefit from sealing that enhances color and provides a protective barrier against Florida's intense sun and heavy rain." },
+      { "title": "A1A Condo Common Areas", "description": "Condo associations along A1A keep shared paver areas looking sharp with professional sealing that resists staining, inhibits mold growth, and extends the life of the hardscape." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "solar-panel-cleaning",
+    "services_near_you": [
+      { "title": "Sea Ranch Lakes Solar Arrays", "description": "Sea Ranch Lakes homeowners maximize their solar investment with professional panel cleaning that removes salt film, pollen, and bird droppings that reduce energy output." },
+      { "title": "Pine Avenue Rooftop Panels", "description": "Rooftop solar panels along Pine Avenue collect ocean salt haze that cuts efficiency. Our RO/DI pure water cleaning restores panels to peak performance without scratching." },
+      { "title": "Commercial Blvd Business Installations", "description": "Commercial solar installations along the Commercial Blvd corridor need regular cleaning to maintain output. We work around business hours to minimize any disruption." },
+      { "title": "Bougainvilla Drive Residential Systems", "description": "Tree debris and pollen from Bougainvilla Drive's tropical canopy coat solar panels quickly. Professional cleaning keeps your system producing at full capacity all year." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "screen-cleaning",
+    "services_near_you": [
+      { "title": "Terra Mar Pool Enclosures", "description": "Pool screen enclosures in Terra Mar trap dirt, algae, and salt residue between mesh panels. Our cleaning process brightens screens and improves airflow throughout the enclosure." },
+      { "title": "El Mar Drive Lanai Screens", "description": "Lanai screens along El Mar Drive turn green and dingy from coastal humidity. Professional screen cleaning restores visibility and lets the ocean breeze flow through freely." },
+      { "title": "A1A Condo Balcony Screens", "description": "Condo balcony screens along A1A collect salt spray and wind-blown debris daily. Our team cleans screen panels and frames so your balcony feels open and inviting." },
+      { "title": "Anglin's Pier Area Porch Screens", "description": "Front porch and patio screens near Anglin's Pier accumulate grime fast in the salt zone. We clean every panel and track so your screened spaces stay bright and comfortable." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "light-fixture-cleaning",
+    "services_near_you": [
+      { "title": "A1A Beachfront Lobby Fixtures", "description": "Condo lobbies and common areas along A1A feature statement light fixtures that dull from salt air exposure. Our cleaning restores full brightness and keeps your building looking upscale." },
+      { "title": "Sea Ranch Lakes Exterior Sconces", "description": "Exterior sconces and landscape lighting throughout Sea Ranch Lakes collect insect residue and oxidation. Professional cleaning keeps your property well-lit and elegant after dark." },
+      { "title": "Commercial Blvd Storefront Lighting", "description": "Storefront and signage lighting along Commercial Blvd needs to shine bright to attract evening foot traffic. We clean fixtures inside and out for maximum visibility." },
+      { "title": "Bougainvilla Drive Chandeliers", "description": "Beachfront estate chandeliers and decorative fixtures along Bougainvilla Drive deserve careful hand cleaning that removes dust and grime without damaging delicate components." }
+    ]
+  },
+  {
+    "city": "lauderdale-by-the-sea",
+    "service": "holiday-lighting",
+    "services_near_you": [
+      { "title": "Anglin's Pier Area Displays", "description": "Homes near Anglin's Pier light up the holiday season with custom displays designed to withstand ocean wind and salt air. Professional installation and takedown services are available." },
+      { "title": "El Mar Drive Beachfront Estates", "description": "El Mar Drive's beachfront properties make a stunning backdrop for holiday lighting. We design, install, and maintain displays that complement your home's coastal architecture." },
+      { "title": "Commercial Blvd Business Fronts", "description": "Businesses along Commercial Blvd attract holiday shoppers with eye-catching light displays. Our commercial installation team handles rooflines, trees, and storefronts of any size." },
+      { "title": "Pine Avenue Neighborhood Glow", "description": "Pine Avenue's walkable streets and cozy beach homes are perfect for warm holiday lighting that brings neighbors together. Design consultation and full-service installation are available." }
+    ]
+  }
+]

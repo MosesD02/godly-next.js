@@ -1,0 +1,132 @@
+[
+  {
+    "city": "parkland",
+    "service": "window-cleaning",
+    "services_near_you": [
+      { "title": "Heron Bay Window Cleaning", "description": "Heron Bay homeowners enjoy expansive lake and golf course views that deserve spotless glass. Our RO/DI pure water system removes hard water spots and pollen so every window is streak-free." },
+      { "title": "Parkland Golf & Country Club Estates", "description": "Large estate homes in Parkland Golf & Country Club feature walls of windows overlooking manicured fairways. We clean every pane inside and out to keep those views crystal clear." },
+      { "title": "MarinaLago Residences", "description": "MarinaLago homes surrounded by lush tropical landscaping collect pollen and humidity film fast. Professional window cleaning restores full natural light to every room." },
+      { "title": "Cypress Head Properties", "description": "Cypress Head homeowners count on regular window cleaning to remove the dust, cobwebs, and water spots that South Florida weather leaves behind on glass surfaces." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "exterior-window-cleaning",
+    "services_near_you": [
+      { "title": "Watercrest Exterior Windows", "description": "Exterior windows throughout Watercrest collect pollen, hard water stains, and organic buildup from surrounding trees. Our team restores every pane to a spotless finish without disrupting your day." },
+      { "title": "Terramar Homes", "description": "Terramar properties feature large windows that face lush landscaping. Exterior window cleaning removes the grime and mineral deposits that dull your home's curb appeal." },
+      { "title": "Parkland Isles Exteriors", "description": "Parkland Isles homeowners rely on exterior window cleaning to tackle the humidity-driven film and water spots that build up on glass between Florida's frequent rainstorms." },
+      { "title": "Pine Trails Park Area", "description": "Homes near Pine Trails Park face extra pollen and dust from surrounding green spaces. Our exterior window cleaning keeps glass sparkling so your home looks its best from the street." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "interior-window-cleaning",
+    "services_near_you": [
+      { "title": "Heron Bay Interior Windows", "description": "Interior window cleaning for Heron Bay homes includes detailed attention to tracks, sills, and frames so every window sparkles from the inside out and lets in maximum natural light." },
+      { "title": "The Groves Residences", "description": "The Groves homeowners love the difference clean interior windows make. We handle fingerprints, dust, and humidity film so you enjoy brighter, clearer rooms every day." },
+      { "title": "Parkland Golf & Country Club Interiors", "description": "Large estate windows at Parkland Golf & Country Club collect interior dust and cooking film over time. Our interior cleaning ensures your fairway views stay sharp and unobstructed." },
+      { "title": "Watercrest Interior Cleaning", "description": "Watercrest homes with open floor plans benefit from interior window cleaning that removes buildup you might not notice until the glass is sparkling clean and light fills the space." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "pressure-washing",
+    "services_near_you": [
+      { "title": "Terramar Driveways & Walkways", "description": "Driveways and walkways throughout Terramar collect algae, oil stains, and tire marks fast. Professional pressure washing blasts away embedded grime and keeps surfaces safe underfoot." },
+      { "title": "Parkland Isles Pool Decks", "description": "Pool decks and patios in Parkland Isles get slippery from algae growth in Florida's humid climate. Our pressure washing service removes buildup and restores traction to outdoor surfaces." },
+      { "title": "Pine Trails Park Area Sidewalks", "description": "Homes near Pine Trails Park see extra foot traffic and debris on walkways and driveways. Pressure washing restores concrete and pavers to like-new condition quickly." },
+      { "title": "Cypress Head Entryways", "description": "Front entryways and garage aprons in Cypress Head accumulate dirt and mildew stains. Pressure washing delivers a clean first impression every time someone approaches your home." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "soft-washing",
+    "services_near_you": [
+      { "title": "Heron Bay Stucco Homes", "description": "Soft washing is the right approach for Heron Bay stucco exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae without surface damage." },
+      { "title": "MarinaLago Painted Surfaces", "description": "MarinaLago homes with painted siding or delicate finishes need the gentle approach of soft washing to get clean without risking peeling, chipping, or surface wear." },
+      { "title": "The Groves Pool Enclosures", "description": "Pool enclosures in The Groves collect green algae and organic buildup season after season. Soft washing eliminates it all without the high pressure that can warp or damage screens." },
+      { "title": "Watercrest Tile Roofs", "description": "Watercrest homes with barrel tile roofs benefit from soft washing that treats mold and dark streaks at the source, keeping roofing materials intact while restoring a like-new appearance." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "house-washing",
+    "services_near_you": [
+      { "title": "Parkland Golf & Country Club Facades", "description": "A full house wash brings Parkland Golf & Country Club homes back to life, removing dark streaks and discoloration that Florida's tropical climate creates on exterior walls." },
+      { "title": "Terramar Neighborhood", "description": "Terramar homeowners maintain their property value with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface top to bottom." },
+      { "title": "Parkland Isles Residences", "description": "House washing throughout Parkland Isles means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating built-up grime." },
+      { "title": "Cypress Head Waterfront Homes", "description": "Homes along the waterways of Cypress Head pick up extra moisture and organic growth. Our house washing service covers walls, eaves, and fascia boards for a total transformation." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "roof-washing",
+    "services_near_you": [
+      { "title": "Heron Bay Roof Cleaning", "description": "Barrel tile and flat roofs throughout Heron Bay develop dark algae streaks that hurt curb appeal. Our soft wash roof cleaning removes those stains and helps extend the life of your roofing materials." },
+      { "title": "MarinaLago Tile Roofs", "description": "MarinaLago roofs face constant exposure to South Florida humidity and rain. Professional roof washing with professional-grade cleaning solutions eliminates mold, mildew, and black streaks safely." },
+      { "title": "The Groves Roof Maintenance", "description": "Roof washing in The Groves prevents organic growth from deteriorating shingles and tiles. We treat every square foot so your roof stays clean and your home looks well maintained." },
+      { "title": "Pine Trails Park Area Rooftops", "description": "Homes near Pine Trails Park collect extra tree debris and pollen on roof surfaces. Our roof washing service clears it all away and treats underlying algae to prevent rapid regrowth." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "gutter-cleaning",
+    "services_near_you": [
+      { "title": "Watercrest Gutter Service", "description": "Watercrest homes surrounded by mature trees see gutters fill with leaves and debris quickly. Our gutter cleaning service clears blockages and ensures proper water flow away from your foundation." },
+      { "title": "Parkland Isles Gutter Maintenance", "description": "Parkland Isles properties with tile roofs accumulate granules and organic matter in gutters. We remove every obstruction and flush downspouts so your drainage system works as designed." },
+      { "title": "Terramar Gutter Clearing", "description": "Clogged gutters in Terramar lead to water overflow that stains fascia boards and damages landscaping. Professional gutter cleaning prevents costly water damage before it starts." },
+      { "title": "Cypress Head Downspout Service", "description": "Cypress Head homeowners dealing with standing water near foundations often trace the issue back to clogged gutters. We clean gutters and downspouts thoroughly with satisfaction guarantees available." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "paver-sealing",
+    "services_near_you": [
+      { "title": "Heron Bay Paver Driveways", "description": "Heron Bay driveways and pool decks feature decorative pavers that fade and shift without proper sealing. Our paver sealing service locks in color and stabilizes joint sand for lasting results." },
+      { "title": "Parkland Golf & Country Club Patios", "description": "Outdoor living spaces at Parkland Golf & Country Club homes deserve pavers that look as sharp as the fairways. We clean, re-sand, and seal pavers to protect against UV fade and weed growth." },
+      { "title": "MarinaLago Walkways", "description": "MarinaLago walkways and entryways take a beating from foot traffic and Florida sun. Paver sealing restores rich color and provides a protective barrier against stains and moisture intrusion." },
+      { "title": "The Groves Pool Surrounds", "description": "Pool deck pavers in The Groves lose their grip and color over time. Professional paver sealing enhances traction, revives appearance, and extends the life of your outdoor surfaces." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "solar-panel-cleaning",
+    "services_near_you": [
+      { "title": "Watercrest Solar Panel Service", "description": "Watercrest homeowners with rooftop solar arrays lose efficiency when panels collect pollen, dust, and bird droppings. Our RO/DI pure water cleaning restores peak energy output without scratching glass." },
+      { "title": "Terramar Solar Maintenance", "description": "Solar panels on Terramar homes face constant exposure to South Florida dust and humidity film. Professional cleaning ensures your investment generates maximum power year-round." },
+      { "title": "Parkland Isles Solar Cleaning", "description": "Parkland Isles residents investing in solar energy deserve panels performing at full capacity. We clean each panel carefully with purified water and soft tools to protect manufacturer warranties." },
+      { "title": "Pine Trails Park Area Solar Arrays", "description": "Homes near Pine Trails Park see extra tree debris settling on solar panels. Regular professional cleaning removes buildup that blocks sunlight and reduces your system's energy production." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "screen-cleaning",
+    "services_near_you": [
+      { "title": "Heron Bay Screen Enclosures", "description": "Heron Bay pool and patio screen enclosures turn green and hazy from algae and pollen buildup. Our screen cleaning service restores visibility and airflow so you can enjoy your outdoor living space." },
+      { "title": "Cypress Head Lanai Screens", "description": "Lanai screens in Cypress Head trap dust, cobwebs, and organic matter that dim natural light. Professional screen cleaning brightens your outdoor area without risking tears or damage to mesh." },
+      { "title": "Parkland Golf & Country Club Screens", "description": "Large screened enclosures at Parkland Golf & Country Club estates need regular cleaning to maintain views of the surrounding landscape. We clean frames, mesh, and tracks thoroughly." },
+      { "title": "The Groves Pool Cages", "description": "Pool cage screens in The Groves collect mildew and hard water stains from sprinklers. Our screen cleaning removes every layer of buildup and leaves frames looking like new." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "light-fixture-cleaning",
+    "services_near_you": [
+      { "title": "MarinaLago Light Fixtures", "description": "Exterior and interior light fixtures in MarinaLago homes collect dead insects, dust, and grime that reduce light output. Professional cleaning restores full brightness and keeps fixtures looking elegant." },
+      { "title": "Watercrest Outdoor Lighting", "description": "Outdoor coach lights and landscape fixtures throughout Watercrest lose their shine from weather exposure. Our light fixture cleaning removes oxidation and buildup so your home glows after dark." },
+      { "title": "Heron Bay Chandelier Service", "description": "Heron Bay estate homes with large chandeliers and statement fixtures deserve detailed cleaning that reaches every crystal, globe, and surface. We handle the height and complexity so you do not have to." },
+      { "title": "Terramar Entrance Lighting", "description": "Front entry and garage light fixtures in Terramar create your home's first impression after sunset. Our cleaning service removes cobwebs, bug residue, and cloudy film for maximum curb appeal." }
+    ]
+  },
+  {
+    "city": "parkland",
+    "service": "holiday-lighting",
+    "services_near_you": [
+      { "title": "Parkland Golf & Country Club Holiday Displays", "description": "Estate homes at Parkland Golf & Country Club go all out for the holidays. Our professional holiday lighting installation covers rooflines, trees, and entryways with custom designs and takedown service available." },
+      { "title": "Heron Bay Holiday Lighting", "description": "Heron Bay homeowners light up the neighborhood every holiday season. We handle design, installation, maintenance, and removal so you enjoy the festive look without climbing a single ladder." },
+      { "title": "Parkland Isles Seasonal Displays", "description": "Parkland Isles families love creating a holiday atmosphere. Our team installs commercial-grade LED lighting along rooflines, columns, and landscaping with storage service available after the season." },
+      { "title": "The Groves Holiday Installations", "description": "The Groves community shines during the holidays with professionally installed lighting displays. We custom-fit every strand to your roofline and wrap trees for a polished, cohesive look from the street." }
+    ]
+  }
+]

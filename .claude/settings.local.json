@@ -18,7 +18,16 @@
       "Bash(node -c /c/Users/itexp/moses-godly/src/components/landing/quoteForm.js)",
       "Bash(grep -r -i \"miami\\\\|west.palm\" /c/Users/itexp/moses-godly/src --include=*.js --include=*.jsx --include=*.ts --include=*.tsx --include=*.json --include=*.md)",
       "Bash(grep:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(git checkout:*)",
+      "Bash(git cherry-pick:*)",
+      "Bash(git add:*)",
+      "Bash(git log:*)",
+      "Bash(wc:*)",
+      "WebSearch",
+      "WebFetch(domain:www.sterlingsky.ca)",
+      "WebFetch(domain:ricketyroo.com)",
+      "WebFetch(domain:searchengineland.com)"
     ]
   }
 }

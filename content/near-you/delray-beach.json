@@ -1,0 +1,132 @@
+[
+  {
+    "city": "delray-beach",
+    "service": "window-cleaning",
+    "services_near_you": [
+      { "title": "Pineapple Grove Windows", "description": "Keep your Pineapple Grove home or storefront looking pristine with professional window cleaning that cuts through salt air buildup and coastal grime." },
+      { "title": "Seagate Residences", "description": "Seagate homeowners trust our RO/DI pure water system to leave windows streak-free without spots, even in the Florida humidity." },
+      { "title": "Lake Ida Homes", "description": "From lakefront views to tree-lined streets, Lake Ida windows deserve a thorough cleaning that lets in all that natural light." },
+      { "title": "Tropic Isle Waterfront", "description": "Living on the water in Tropic Isle means constant salt spray on your glass. Our professional window cleaning restores crystal-clear views of the Intracoastal." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "exterior-window-cleaning",
+    "services_near_you": [
+      { "title": "Palm Trail Estates", "description": "Palm Trail's elegant homes benefit from exterior window cleaning that removes hard water stains, pollen, and salt residue from every pane." },
+      { "title": "Rainberry Bay Properties", "description": "Our team handles exterior windows throughout Rainberry Bay, tackling the buildup that South Florida weather leaves behind season after season." },
+      { "title": "Barwick Estates Homes", "description": "Barwick Estates homeowners count on us for exterior window cleaning that makes curb appeal pop without disrupting your day." },
+      { "title": "Atlantic Avenue Businesses", "description": "Storefront windows along Atlantic Avenue need to shine for foot traffic. We keep your exterior glass spotless so your business looks its best." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "interior-window-cleaning",
+    "services_near_you": [
+      { "title": "The Colony Residences", "description": "Interior window cleaning for The Colony homes means detailed attention to tracks, sills, and glass so every window sparkles from the inside out." },
+      { "title": "Kings Point Condos", "description": "Kings Point residents love coming home to clean interior windows. We handle all the detail work so you can enjoy unobstructed views." },
+      { "title": "High Point Community", "description": "Our interior window cleaning service is perfect for High Point homes where dust and humidity can cloud your glass over time." },
+      { "title": "Delray Beach Club Area", "description": "Homes near the Delray Beach Club deserve interior windows as polished as the lifestyle. We clean every pane with care and precision." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "pressure-washing",
+    "services_near_you": [
+      { "title": "Pineapple Grove Storefronts", "description": "Sidewalks and building facades in Pineapple Grove see heavy foot traffic. Pressure washing restores surfaces to like-new condition and keeps your storefront inviting." },
+      { "title": "Linton Blvd Area Driveways", "description": "Driveways and walkways along the Linton Blvd corridor take a beating from Florida weather. Our pressure washing blasts away oil stains, mildew, and dirt." },
+      { "title": "Tropic Isle Docks & Patios", "description": "Waterfront patios and dock areas in Tropic Isle collect algae and grime fast. Professional pressure washing keeps your outdoor spaces safe and clean." },
+      { "title": "Barwick Estates Walkways", "description": "From pool decks to front walkways, Barwick Estates homes benefit from pressure washing that removes built-up grime and restores original surface color." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "soft-washing",
+    "services_near_you": [
+      { "title": "Seagate Home Exteriors", "description": "Soft washing is ideal for Seagate's upscale home exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae." },
+      { "title": "Palm Trail Stucco & Siding", "description": "Palm Trail homes with delicate stucco or painted siding need the gentle touch of soft washing to get clean without risking surface damage." },
+      { "title": "Rainberry Bay Pool Enclosures", "description": "Pool enclosures throughout Rainberry Bay collect green algae and grime. Soft washing eliminates buildup without the high pressure that can warp screens." },
+      { "title": "Lake Ida Painted Surfaces", "description": "Soft washing is the smart choice for Lake Ida homes with painted wood or vinyl siding, lifting dirt and biological growth without stripping finishes." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "house-washing",
+    "services_near_you": [
+      { "title": "Kings Point Exteriors", "description": "A full house wash brings Kings Point homes back to life, removing the dark streaks and discoloration that Florida's humidity creates on exterior walls." },
+      { "title": "High Point Residences", "description": "High Point homeowners keep their properties looking sharp with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface." },
+      { "title": "The Colony Facades", "description": "House washing at The Colony means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating grime." },
+      { "title": "Delray Beach Club Neighborhood", "description": "Homes near the Delray Beach Club maintain their charm with professional house washing that covers walls, eaves, and fascia boards from top to bottom." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "roof-washing",
+    "services_near_you": [
+      { "title": "Seagate Tile Roofs", "description": "Seagate's beautiful tile roofs are prone to dark algae streaks. Our soft wash roof cleaning removes Gloeocapsa magma stains and restores your roof's original look." },
+      { "title": "Tropic Isle Shingle Roofs", "description": "Shingle roofs in Tropic Isle take a beating from coastal humidity. Professional roof washing extends roof life and eliminates those ugly black streaks." },
+      { "title": "Barwick Estates Rooflines", "description": "Barwick Estates homeowners protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials." },
+      { "title": "Linton Blvd Area Properties", "description": "Properties along the Linton Blvd corridor benefit from roof washing that improves curb appeal and helps prevent costly roof repairs down the road." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "gutter-cleaning",
+    "services_near_you": [
+      { "title": "Lake Ida Tree-Lined Streets", "description": "Lake Ida's mature tree canopy means gutters fill up fast with leaves and debris. Regular gutter cleaning prevents water damage and foundation issues." },
+      { "title": "Palm Trail Properties", "description": "Palm Trail homes surrounded by tropical landscaping need consistent gutter cleaning to keep water flowing properly and away from your foundation." },
+      { "title": "Rainberry Bay Homes", "description": "Clogged gutters in Rainberry Bay can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed." },
+      { "title": "Pineapple Grove Buildings", "description": "Commercial and residential buildings in Pineapple Grove depend on clean gutters, especially during South Florida's rainy season when downpours are relentless." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "paver-sealing",
+    "services_near_you": [
+      { "title": "Atlantic Avenue Properties", "description": "Paver driveways and patios near Atlantic Avenue look stunning when freshly sealed. We lock in color, prevent weed growth, and protect against staining." },
+      { "title": "Seagate Driveways & Patios", "description": "Seagate homeowners invest in quality pavers, and professional sealing keeps them looking rich and vibrant while guarding against Florida's sun and rain." },
+      { "title": "Kings Point Walkways", "description": "Paver sealing throughout Kings Point extends the life of your hardscape by preventing sand erosion, ant hills, and color fading from UV exposure." },
+      { "title": "Tropic Isle Pool Decks", "description": "Pool deck pavers in Tropic Isle stay slip-resistant and beautiful with professional sealing that repels water, oil, and organic stains." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "solar-panel-cleaning",
+    "services_near_you": [
+      { "title": "High Point Solar Systems", "description": "High Point homeowners with solar panels maximize energy output with professional cleaning that removes pollen, bird droppings, and salt film from panel surfaces." },
+      { "title": "Lake Ida Solar Installations", "description": "Dirty solar panels in Lake Ida can lose up to 25% efficiency. Our RO/DI pure water cleaning restores full performance without scratching panel glass." },
+      { "title": "Barwick Estates Rooftop Panels", "description": "Solar panel cleaning in Barwick Estates ensures your renewable energy investment keeps performing at peak levels year after year." },
+      { "title": "Linton Blvd Area Homes", "description": "Homeowners along the Linton Blvd corridor trust us to safely clean rooftop solar panels and keep their electricity savings on track." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "screen-cleaning",
+    "services_near_you": [
+      { "title": "Rainberry Bay Lanais", "description": "Screen enclosures throughout Rainberry Bay collect dust, pollen, and algae. Professional screen cleaning brightens your lanai and improves airflow." },
+      { "title": "The Colony Pool Cages", "description": "Pool cage screens at The Colony get grimy fast in the Florida climate. We clean every panel so your outdoor living space feels fresh and open." },
+      { "title": "Delray Beach Club Porches", "description": "Screened porches near the Delray Beach Club stay inviting with regular cleaning that removes buildup from mesh without tearing or stretching screens." },
+      { "title": "Palm Trail Enclosures", "description": "Palm Trail's lush landscaping means pollen and organic debris cling to screens constantly. Our cleaning process restores visibility and keeps bugs where they belong." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "light-fixture-cleaning",
+    "services_near_you": [
+      { "title": "Atlantic Avenue Retail Lighting", "description": "Clean light fixtures on Atlantic Avenue storefronts make a big difference after dark. We remove bug residue, dust, and grime so your business shines." },
+      { "title": "Pineapple Grove Outdoor Fixtures", "description": "Outdoor light fixtures in Pineapple Grove collect insects and cobwebs fast. Professional cleaning keeps your property well-lit and looking polished." },
+      { "title": "Seagate Exterior Sconces", "description": "Salt air corrodes and clouds light fixtures in Seagate. Our cleaning service restores clarity and brightness to your exterior lighting." },
+      { "title": "High Point Entryway Lights", "description": "Entryway and porch light fixtures at High Point homes deserve regular cleaning to maintain welcoming curb appeal and proper illumination." }
+    ]
+  },
+  {
+    "city": "delray-beach",
+    "service": "holiday-lighting",
+    "services_near_you": [
+      { "title": "Atlantic Avenue Holiday Displays", "description": "Make your Atlantic Avenue property stand out during the holidays with professional lighting installation that turns heads and draws visitors to your business." },
+      { "title": "Kings Point Festive Homes", "description": "Kings Point residents love the holiday season, and our professional lighting design and installation makes decorating effortless from roofline to landscaping." },
+      { "title": "Tropic Isle Waterfront Glow", "description": "Holiday lights along Tropic Isle's waterfront create a magical scene. We handle design, installation, and takedown so you just enjoy the season." },
+      { "title": "Lake Ida Neighborhood Lights", "description": "Lake Ida homes go all out for the holidays. Our team designs custom lighting packages and handles every detail from setup through removal." }
+    ]
+  }
+]

@@ -20,11 +20,7 @@ export const cityPhoneMap = {
     "hillsboro-beach",
     "coconut-creek",
   ],
-  "(561) 826-4461": [
-    "boca-raton",
-    "delray-beach",
-    "royal-palm-beach",
-  ],
+  "(561) 826-4461": ["boca-raton", "delray-beach", "royal-palm-beach"],
   "(954) 738-3421": [
     "weston",
     "davie",
@@ -204,7 +200,7 @@ const serviceDescriptions = {
   "screen-cleaning":
     "Screen cleaning in {location}. Restore clarity & improve airflow with professional screen services. Satisfaction guaranteed.",
   "window-cleaning":
-    "Professional window cleaning in {location}. RODI purified water, hand scrubbing & streak-free results. Free quotes & 7-day sparkle guarantee.",
+    "Professional window cleaning in {location}. RO/DI purified water, hand scrubbing & streak-free results. Free quotes & 7-day sparkle guarantee.",
   "soft-washing":
     "Soft washing in {location}. Safe low-pressure cleaning for roofs, siding & exteriors. Custom blends & satisfaction guarantee.",
   "holiday-lighting":
