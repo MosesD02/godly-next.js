@@ -4,13 +4,10 @@ import React, { useState } from "react";
 import Services from "@/data/servicesData";
 import { cn } from "@/lib/utils";
 import { generateServiceSectionHeadings } from "@/data/metaTitles";
-import { citiesMap } from "@/data/cities";
-import { useGodlyContext } from "@/context/godlyContext";
 
-const EssentialService = ({ slug, essentialOverride }) => {
-  const { city } = useGodlyContext();
-  const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
-  const cityName = citiesMap[cityKey];
+// cityName is passed as a prop from the server so headings are correct in the
+// initial SSR HTML. useState/onClick interactivity is still client-only.
+const EssentialService = ({ slug, essentialOverride, cityName }) => {
   const headings = generateServiceSectionHeadings(slug, cityName);
 
   // Add state to track active card

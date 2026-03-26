@@ -1,172 +1,79 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useCallback } from "react";
+import dynamic from "next/dynamic";
 
-// Import the new components (adjust paths if necessary)
+// Critical above-the-fold components — imported eagerly
 import Logo from "./header/Logo";
 import MobileMenuToggle from "./header/MobileMenuToggle";
 import DesktopNav from "./header/DesktopNav";
-import MobileNav from "./header/MobileNav";
 import CitySelector from "./header/CitySelector";
 import PhoneNumber from "./header/PhoneNumber";
-import ServicePopup from "./header/ServicePopup";
-import CitiesPopup from "./header/CitiesPopup";
-import FormPopup from "./header/FormPopup";
-import HeaderButton from "@/components/HeaderButton"; // Keep this import
+import HeaderButton from "@/components/HeaderButton";
 import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
 
-// Keep data definitions or move to a separate file
-import exteriorWindow from "@/assets/homepageServices/exterior_window.webp";
-import interiorWindow from "@/assets/homepageServices/interior_window.webp";
-import gutterCleaning from "@/assets/homepageServices/gutter_cleaning.webp";
-import houseWashing from "@/assets/homepageServices/house_washing.webp";
-import roofWashing from "@/assets/homepageServices/roof_washing.webp";
-import pressureWashing from "@/assets/homepageServices/pressure_washing.webp";
-import lightFixtures from "@/assets/homepageServices/light_fixtures.webp";
-import screenCleans from "@/assets/homepageServices/screen_cleans.webp";
-import solarPanels from "@/assets/homepageServices/solar_panels.webp";
-import sealCoating from "@/assets/homepageServices/seal_coating.webp";
-import santaBg from "@/assets/homepageServices/santa_bg.webp";
-
-const services = [
-  {
-    name: "Window Cleaning",
-    link: "window-cleaning",
-    image: exteriorWindow,
-    description:
-      "RO/DI purified water, hand scrubbing, and streak-free glass—residential and commercial—with our 7-day sparkle guarantee.",
-  },
-  {
-    name: "Gutter Cleaning",
-    link: "gutter-cleaning",
-    image: gutterCleaning,
-    description:
-      "A thorough cleaning that is guaranteed to keep them flowing freely.",
-  },
-  {
-    name: "House Washing",
-    link: "house-washing",
-    image: houseWashing,
-    description:
-      "Wash away years of pollen, mold, rust, and dirt – bringing that shine back to your property's exterior.",
-  },
-  {
-    name: "Roof Washing",
-    link: "roof-washing",
-    image: roofWashing,
-    description:
-      "Removing all the debris from your roof is the easiest way to increase its longevity.",
-  },
-  {
-    name: "Pressure & Soft Washing",
-    link: "pressure-washing",
-    image: pressureWashing,
-    description:
-      "Get rid of the slippery film and gunk on your driveway, walkways, porches, pool areas, and more.",
-  },
-  {
-    name: "Soft Washing",
-    link: "soft-washing",
-    image: houseWashing,
-    description:
-      "Custom low-pressure treatments for roofs, siding, and exteriors—safe chemistry that lifts algae without damage.",
-  },
-  {
-    name: "Light Fixture Cleaning",
-    link: "light-fixture-cleaning",
-    image: lightFixtures,
-    description:
-      "Keep both your interior and exterior lighting bright with thorough cleanings of your lanterns, sconces, and more.",
-  },
-  {
-    name: "Screen Cleaning",
-    link: "screen-cleaning",
-    image: screenCleans,
-    description:
-      "We'll happily remove, clean, and even replace your screens if necessary.",
-  },
-  {
-    name: "Holiday Lighting",
-    link: "holiday-lighting",
-    image: santaBg,
-    description:
-      "Design, install, premium LEDs, maintenance, and removal—custom holiday displays without the ladder.",
-  },
-  {
-    name: "Solar Panel Cleaning",
-    link: "solar-panel-cleaning",
-    image: solarPanels,
-    description:
-      "Dirty solar panels lead to less efficient energy absorption – keep them clean and running to their full potential. ",
-  },
-  {
-    name: "Paver Sealing",
-    link: "paver-sealing",
-    image: sealCoating,
-    description:
-      "Add a protective coating to your driveway/parking lot that protects against water, oils, and other damaging elements.",
-  },
-  {
-    name: "Exterior Window Cleaning",
-    link: "exterior-window-cleaning",
-    image: exteriorWindow,
-    description:
-      "It's what we do best! Get rid of that nasty build-up of nature's mildew and grime.",
-  },
-  {
-    name: "Interior Window Cleaning",
-    link: "interior-window-cleaning",
-    image: interiorWindow,
-    description:
-      "Pet slobber, fingerprints, and so much more can leave residue that is tricky to get off.",
-  },
-];
+// Lazy-load components not visible on initial render (popups & mobile menu)
+const MobileNav = dynamic(() => import("./header/MobileNav"), { ssr: false });
+const ServicePopup = dynamic(() => import("./header/ServicePopup"), {
+  ssr: false,
+});
+const CitiesPopup = dynamic(() => import("./header/CitiesPopup"), {
+  ssr: false,
+});
+const FormPopup = dynamic(() => import("./header/FormPopup"), {
+  ssr: false,
+});
 
 const Header = () => {
   const { formPopupOpen, setFormPopupOpen } = useGodlyContext();
   const [servicesOpen, setServicesOpen] = useState(false);
   const [citiesOpen, setCitiesOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    setIsClient(true);
+  // Track whether each popup has ever been opened so we only mount
+  // the dynamically-imported component after the first trigger.
+  const [servicesEverOpened, setServicesEverOpened] = useState(false);
+  const [citiesEverOpened, setCitiesEverOpened] = useState(false);
+  const [formEverOpened, setFormEverOpened] = useState(false);
+
+  // Memoize handlers to avoid unnecessary child re-renders
+  const handleServicesClick = useCallback(() => {
+    setServicesOpen(true);
+    setServicesEverOpened(true);
+    setMobileMenuOpen(false);
   }, []);
 
-  // Define handlers to pass down
-  const handleServicesClick = () => {
-    setServicesOpen(true);
-    setMobileMenuOpen(false); // Close mobile menu if open
-  };
-
-  const handleCitiesClick = () => {
+  const handleCitiesClick = useCallback(() => {
     setCitiesOpen(true);
-    setMobileMenuOpen(false); // Close mobile menu if open
-  };
-
-  const handleQuoteClick = () => {
-    setFormPopupOpen(true);
-    setMobileMenuOpen(false); // Close mobile menu if open
-  };
-
-  const handleMobileLinkClick = () => {
+    setCitiesEverOpened(true);
     setMobileMenuOpen(false);
-  };
+  }, []);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
+  const handleQuoteClick = useCallback(() => {
+    setFormPopupOpen(true);
+    setFormEverOpened(true);
+    setMobileMenuOpen(false);
+  }, [setFormPopupOpen]);
 
-  if (!isClient) {
-    return null;
+  const handleMobileLinkClick = useCallback(() => {
+    setMobileMenuOpen(false);
+  }, []);
+
+  const toggleMobileMenu = useCallback(() => {
+    setMobileMenuOpen((prev) => !prev);
+  }, []);
+
+  // Keep formEverOpened in sync when opened externally via context
+  if (formPopupOpen && !formEverOpened) {
+    setFormEverOpened(true);
   }
 
   return (
     <>
       {mobileMenuOpen && (
         <div
-          className="fixed inset-0 z-30 bg-[rgba(45,43,43,0.85)] backdrop-blur-[2px] lg:hidden" // z-30, hidden on medium screens and up
-          onClick={toggleMobileMenu} // Close menu when overlay is clicked
+          className="fixed inset-0 z-30 bg-[rgba(45,43,43,0.85)] backdrop-blur-[2px] lg:hidden"
+          onClick={toggleMobileMenu}
         ></div>
       )}
       <div
@@ -190,7 +97,7 @@ const Header = () => {
             <DesktopNav onServicesClick={handleServicesClick} />
           </div>
 
-          {/* Mobile Navigation */}
+          {/* Mobile Navigation — only mounted when menu is open */}
           {mobileMenuOpen && (
             <>
               <MobileNav
@@ -209,25 +116,24 @@ const Header = () => {
           {/* Right side: Desktop Contact Info & Quote Button */}
           <div className="hidden items-center lg:flex lg:gap-5">
             <div className="flex items-center gap-1">
-              {/* Use CitySelector component */}
               <CitySelector onClick={handleCitiesClick} />
-              {/* Use PhoneNumber component */}
               <PhoneNumber />
             </div>
-            {/* Use HeaderButton component */}
             <HeaderButton onClick={handleQuoteClick} />
           </div>
         </div>
       </div>
 
-      {/* Render Popups */}
-      <ServicePopup
-        open={servicesOpen}
-        onOpenChange={setServicesOpen}
-        services={services}
-      />
-      <CitiesPopup open={citiesOpen} onOpenChange={setCitiesOpen} />
-      <FormPopup open={formPopupOpen} onOpenChange={setFormPopupOpen} />
+      {/* Popups — only mounted after first trigger to defer chunk loading */}
+      {servicesEverOpened && (
+        <ServicePopup open={servicesOpen} onOpenChange={setServicesOpen} />
+      )}
+      {citiesEverOpened && (
+        <CitiesPopup open={citiesOpen} onOpenChange={setCitiesOpen} />
+      )}
+      {formEverOpened && (
+        <FormPopup open={formPopupOpen} onOpenChange={setFormPopupOpen} />
+      )}
     </>
   );
 };

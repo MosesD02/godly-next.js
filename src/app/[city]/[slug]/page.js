@@ -7,6 +7,17 @@ import {
 } from "@/data/metaTitles";
 import { getRelatedBlogPosts } from "@/data/sanity-content";
 import Services from "@/data/servicesData";
+import { cityServicesData } from "@/data/cityServicesData/index";
+
+export async function generateStaticParams() {
+  const cities = Object.keys(citiesMap).filter((c) => c !== "south-florida");
+  const services = Object.keys(Services);
+  return cities.flatMap((city) =>
+    services.map((slug) => ({ city, slug }))
+  );
+}
+
+export const revalidate = 3600;
 
 // Dynamic metadata generation for service pages
 export async function generateMetadata({ params }) {
@@ -54,7 +65,20 @@ export default async function GodlyServices({ params }) {
     notFound();
   }
 
+  // Resolve city name and city-specific content on the server so they appear
+  // in the initial HTML response for Google to crawl.
+  const cityName = citiesMap[city] ?? null;
+  const cityData = cityServicesData[city]?.[slug] ?? {};
+
   const relatedPosts = await getRelatedBlogPosts(city, slug);
 
-  return <ServicesPage slug={slug} city={city} relatedPosts={relatedPosts} />;
+  return (
+    <ServicesPage
+      slug={slug}
+      city={city}
+      cityName={cityName}
+      cityData={cityData}
+      relatedPosts={relatedPosts}
+    />
+  );
 }

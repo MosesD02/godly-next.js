@@ -66,6 +66,7 @@ export default async function CityLandingPage({ params }) {
     notFound();
   }
 
+  const cityName = citiesMap[city];
   const schemaMarkup = generateCitySchema(city);
 
   return (
@@ -79,7 +80,7 @@ export default async function CityLandingPage({ params }) {
           }}
         />
       )}
-      <GodlyHome city={city} />
+      <GodlyHome city={city} cityName={cityName} />
     </>
   );
 }

@@ -1,18 +1,14 @@
-"use client";
-import { useGodlyContext } from "@/context/godlyContext";
 import React from "react";
 import "@/styles/fourstepprocess.css";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import FreeQuoteButton from "@/components/freeQuote";
 import Services from "@/data/servicesData";
-import { citiesMap } from "@/data/cities";
 import { generateServiceH1, generateServiceHeroAlt } from "@/data/metaTitles";
 
-const ServicesHero = ({ slug, heroOverride }) => {
-  const { city } = useGodlyContext();
-  const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
-  const cityName = citiesMap[cityKey];
+// cityName is passed as a prop from the server so the correct value is in the
+// initial SSR HTML.
+const ServicesHero = ({ slug, heroOverride, cityName }) => {
   const displayCity = cityName
     ? cityName.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase())
     : "South Florida";
@@ -70,7 +66,7 @@ const ServicesHero = ({ slug, heroOverride }) => {
               )}
             >
               <span className="absolute top-60 right-25 hidden max-w-[100px] rotate-[6.668deg] text-left font-['marlton'] text-base font-[400] tracking-[2px] text-[#FDE4C8] md:-top-5 md:-right-30 md:block">
-                {city}
+                {displayCity}
               </span>
               <span
                 className={cn(
@@ -88,7 +84,7 @@ const ServicesHero = ({ slug, heroOverride }) => {
               </span>
             </div>
             <span className="absolute top-6 right-0 max-w-[100px] font-['marlton'] text-base leading-tight font-[400] tracking-[2px] text-[#FDE4C8] md:hidden">
-              {city}
+              {displayCity}
             </span>
           </div>
         </div>

@@ -1,0 +1,22 @@
+"use client";
+
+import { useEffect } from "react";
+import { useGodlyContext } from "@/context/godlyContext";
+import { citiesMap } from "@/data/cities";
+
+// Tiny client component that syncs the selected city to context and cookie.
+// Extracted so the rest of the services page can be a server component.
+export default function CitySync({ city }) {
+  const { setCity } = useGodlyContext();
+  const normalizedCity = city?.replace(/-/g, "_");
+
+  useEffect(() => {
+    if (Object.keys(citiesMap).includes(normalizedCity)) {
+      const formattedCity = citiesMap[normalizedCity];
+      setCity(formattedCity);
+      document.cookie = `selectedCity=${city};path=/;max-age=31536000`;
+    }
+  }, [normalizedCity, city, setCity]);
+
+  return null;
+}

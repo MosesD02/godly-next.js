@@ -12,6 +12,9 @@ const Logo = () => {
           src={logo}
           alt="Logo"
           className="header-logo h-[30px] w-[60px] md:h-[42.542px] md:w-[88.344px]"
+          priority
+          width={88}
+          height={43}
         />
       </Link>
     </div>

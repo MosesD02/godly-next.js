@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import "@/styles/fourstepprocess.css";
 import Image from "next/image";
@@ -10,9 +8,7 @@ import near4 from "@/assets/near4.webp";
 import near5 from "@/assets/near5.webp";
 import Services from "@/data/servicesData";
 import { cn } from "@/lib/utils";
-import { useGodlyContext } from "@/context/godlyContext";
 import { generateServiceSectionHeadings } from "@/data/metaTitles";
-import { citiesMap } from "@/data/cities";
 
 const taglines = {
   "solar-panel-cleaning": {
@@ -43,10 +39,7 @@ const taglines = {
   },
 };
 
-const ServiceNearYou = ({ slug, nearYouOverride }) => {
-  const { city } = useGodlyContext();
-  const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
-  const cityName = citiesMap[cityKey];
+const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
   const headings = generateServiceSectionHeadings(slug, cityName);
   const nearYouItems = nearYouOverride ?? Services[slug]["nearyou"];
 
@@ -148,7 +141,7 @@ const ServiceNearYou = ({ slug, nearYouOverride }) => {
           >
             Near You
             <span className="mt-1.5 inline-flex text-left font-['marlton'] text-[8px] tracking-[1px] text-[#FDE4C8] md:mb-2 md:max-w-[94px] md:text-base md:tracking-[2px]">
-              {city}
+              {cityName}
             </span>
           </div>
         </div>

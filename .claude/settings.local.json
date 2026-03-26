@@ -27,7 +27,9 @@
       "WebSearch",
       "WebFetch(domain:www.sterlingsky.ca)",
       "WebFetch(domain:ricketyroo.com)",
-      "WebFetch(domain:searchengineland.com)"
+      "WebFetch(domain:searchengineland.com)",
+      "Bash(find /c/Users/itexp/moses-godly/src/godlyComponents/blog -type f \\\\\\(-name *.js -o -name *.jsx -o -name *.ts -o -name *.tsx \\\\\\))",
+      "Bash(head -80 /c/Users/itexp/moses-godly/src/app/[city]/page.js)"
     ]
   }
 }

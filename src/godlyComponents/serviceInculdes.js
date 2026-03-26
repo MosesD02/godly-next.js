@@ -1,16 +1,12 @@
+"use client";
 import React, { useState } from "react";
 import "@/styles/fourstepprocess.css";
 import background from "../assets/texture.webp";
 import Services from "@/data/servicesData";
 import { cn } from "@/lib/utils";
 import { generateServiceSectionHeadings } from "@/data/metaTitles";
-import { citiesMap } from "@/data/cities";
-import { useGodlyContext } from "@/context/godlyContext";
 
-const ServiceIncludes = ({ slug }) => {
-  const { city } = useGodlyContext();
-  const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
-  const cityName = citiesMap[cityKey];
+const ServiceIncludes = ({ slug, cityName }) => {
   const headings = generateServiceSectionHeadings(slug, cityName);
 
   // Add state to track active card

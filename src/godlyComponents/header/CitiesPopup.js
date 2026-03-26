@@ -13,7 +13,6 @@ import { useGodlyContext } from "@/context/godlyContext";
 import { usePathname, useRouter } from "next/navigation";
 
 import { citiesMap } from "@/data/cities";
-export { citiesMap };
 
 const CitiesPopup = ({ open, onOpenChange }) => {
   const { setCity } = useGodlyContext();

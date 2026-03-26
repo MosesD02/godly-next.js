@@ -8,9 +8,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
-import { citiesMap } from "./header/CitiesPopup";
+import { citiesMap } from "@/data/cities";
 import { usePathname } from "next/navigation";
 import SectionButton from "@/components/sectionButton";
+import { getPhoneNumber } from "@/lib/getPhoneNumber";
+export { getPhoneNumber };
 
 const citiesData = [
   "BOCA RATON",
@@ -75,54 +77,6 @@ const getAddress = (city) => {
     return "";
   } else {
     return "2800 Glades Cir Suite 106\nWeston, FL 33327";
-  }
-};
-
-export const getPhoneNumber = (city) => {
-  const cityToCheck = city.toUpperCase();
-
-  if (
-    [
-      "POMPANO BEACH",
-      "FORT LAUDERDALE",
-      "HOLLYWOOD",
-      "OAKLAND PARK",
-      "SUNRISE",
-      "LIGHTHOUSE POINT",
-      "LAUDERDALE-BY-THE-SEA",
-      "SOUTH FLORIDA",
-      "COCONUT CREEK",
-    ].includes(cityToCheck)
-  ) {
-    return "(954) 852-5326";
-  } else if (
-    [
-      "DELRAY BEACH",
-      "BOCA RATON",
-      "TAMARAC",
-      "MARGATE",
-      "CORAL SPRINGS",
-      "PARKLAND",
-      "ROYAL PALM BEACH",
-      "DEERFIELD BEACH",
-      "HILLSBORO BEACH",
-    ].includes(cityToCheck)
-  ) {
-    return "(561) 826-4461";
-  } else if (
-    [
-      "WESTON",
-      "MIRAMAR",
-      "PEMBROKE PINES",
-      "SOUTHWEST RANCHES",
-      "HALLANDALE BEACH",
-      "COOPER CITY",
-      "WEST PARK",
-    ].includes(cityToCheck)
-  ) {
-    return "(954) 738-3421";
-  } else {
-    return "(954) 738-3421";
   }
 };
 

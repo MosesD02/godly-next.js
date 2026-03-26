@@ -9,12 +9,11 @@ import textWaveBg from "@/assets/text-bg-wave.webp";
 import Cap from "@/assets/santaCap.webp";
 import Santa from "@/assets/santa.webp";
 import Link from "next/link";
-import { citiesMap } from "./header/CitiesPopup";
+import { citiesMap } from "@/data/cities";
 
 import { servicesData } from "./servicesData";
 
-const Services = () => {
-  const { city } = useGodlyContext();
+const Services = ({ cityName: city }) => {
   const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
 
   return (

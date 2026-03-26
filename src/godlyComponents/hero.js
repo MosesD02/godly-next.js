@@ -3,12 +3,10 @@ import React from "react";
 import Image from "next/image";
 import "@/styles/fourstepprocess.css";
 import QuoteForm from "./quoteForm";
-import { useGodlyContext } from "@/context/godlyContext";
 import { generateHomeH1, generateCityHeroAlt } from "@/data/metaTitles";
 import Link from "next/link";
 
-const Hero = () => {
-  const { city } = useGodlyContext();
+const Hero = ({ cityName: city }) => {
 
   // City-specific content
   const getCitySpecificContent = () => {

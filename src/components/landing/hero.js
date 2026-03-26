@@ -1,21 +1,19 @@
-"use client";
 import React from "react";
 import "@/styles/fourstepprocess.css";
 import QuoteForm from "./quoteForm";
-import { useGodlyContext } from "@/context/godlyContext";
 import { generateHomeH1, generateServiceH1 } from "@/data/metaTitles";
 
-const Hero = ({ service, source, serviceSlug }) => {
-  const { city } = useGodlyContext();
+const formatCity = (cityVal) => {
+  if (!cityVal) return "South Florida";
+  return cityVal
+    .toLowerCase()
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
 
-  const formatCity = (cityVal) => {
-    if (!cityVal) return "South Florida";
-    return cityVal
-      .toLowerCase()
-      .split(" ")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
-  };
+const Hero = ({ service, source, serviceSlug, cityName }) => {
+  const city = cityName;
 
   return (
     <div className="relative overflow-x-clip bg-[#1F1D1D]">

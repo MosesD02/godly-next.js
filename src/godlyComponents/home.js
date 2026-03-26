@@ -39,11 +39,14 @@ import OaklandParkCta from "./oaklandParkCta";
 import RoyalPalmBeachCta from "./royalPalmBeachCta";
 import { useGodlyContext, getCityFromCookie } from "@/context/godlyContext";
 
-import { citiesMap } from "./header/CitiesPopup";
+import { citiesMap } from "@/data/cities";
 import { PopupModal } from "@/components/popup-modal";
 
 export default function GodlyHome({ city }) {
   const { setCity } = useGodlyContext();
+
+  // Compute display name from route param immediately (no useEffect needed)
+  const cityName = city && citiesMap[city] ? citiesMap[city] : "SOUTH FLORIDA";
 
   useEffect(() => {
     if (city && Object.keys(citiesMap).includes(city)) {
@@ -69,9 +72,9 @@ export default function GodlyHome({ city }) {
 
   return (
     <WebsiteLayout>
-      <Hero />
+      <Hero cityName={cityName} />
       <FourStepProcess />
-      <Services />
+      <Services cityName={cityName} />
       <Promise />
       <Gurantee />
       <TeamGallery />

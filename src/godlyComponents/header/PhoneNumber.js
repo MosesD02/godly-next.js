@@ -2,7 +2,7 @@
 import React from "react";
 import { Phone } from "lucide-react";
 import { useGodlyContext } from "@/context/godlyContext";
-import { getPhoneNumber } from "../footer";
+import { getPhoneNumber } from "@/lib/getPhoneNumber";
 
 const PhoneNumber = () => {
   const { city } = useGodlyContext();

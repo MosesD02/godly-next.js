@@ -65,8 +65,11 @@ export default async function LandingPage({ params }) {
     serviceMetaTitles[service] ||
     service.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
 
+  // Resolve cityName on the server so it renders on first paint
+  const cityName = citiesMap[city] || city.replace(/-/g, " ").toUpperCase();
+
   // Structured data for service pages
-  const cityFormatted = (citiesMap[city] || city.replace(/-/g, " "))
+  const cityFormatted = cityName
     .toLowerCase()
     .replace(/\b\w/g, (l) => l.toUpperCase());
   const structuredData = {
@@ -104,7 +107,12 @@ export default async function LandingPage({ params }) {
           __html: JSON.stringify(structuredData),
         }}
       />
-      <GodlyHome city={city} service={serviceName} serviceSlug={service} />
+      <GodlyHome
+        city={city}
+        cityName={cityName}
+        service={serviceName}
+        serviceSlug={service}
+      />
     </>
   );
 }

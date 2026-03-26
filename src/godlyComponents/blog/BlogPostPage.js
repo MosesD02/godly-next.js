@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { format } from "date-fns";
@@ -8,30 +6,12 @@ import WebsiteLayout from "../websiteLayout";
 import BlogPostContent from "./BlogPostContent";
 import BlogPostFaq from "./BlogPostFaq";
 import BlogPostCta from "./BlogPostCta";
-import { citiesMap } from "@/data/cities";
-import { useGodlyContext } from "@/context/godlyContext";
+import BlogCitySync from "./BlogCitySync";
 
 export default function BlogPostPage({ post, basePath = "/blog" }) {
-  const { setCity } = useGodlyContext();
-
-  useEffect(() => {
-    if (post.citySlug && citiesMap[post.citySlug]) {
-      setCity(citiesMap[post.citySlug]);
-      document.cookie = `selectedCity=${post.citySlug};path=/;max-age=31536000`;
-      return;
-    }
-    const match = Object.entries(citiesMap).find(
-      ([, label]) =>
-        label.toUpperCase() === (post.targetCity || "").toUpperCase().trim(),
-    );
-    if (match) {
-      setCity(match[1]);
-      document.cookie = `selectedCity=${match[0]};path=/;max-age=31536000`;
-    }
-  }, [post.citySlug, post.targetCity, post.slug, setCity]);
-
   return (
     <WebsiteLayout>
+      <BlogCitySync citySlug={post.citySlug} targetCity={post.targetCity} />
       <article className="mt-17 flex w-full flex-col bg-[#fef7ea] px-[30px] py-[45px] text-[#312E2C] md:mt-14 md:px-16 md:py-16">
         <div className="mx-auto flex w-full max-w-[800px] flex-col">
           <nav className="mb-6">

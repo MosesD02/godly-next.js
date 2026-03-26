@@ -42,183 +42,183 @@ export default function QuoteForm({ isDialog }) {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "COCONUT CREEK") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "COOPER CITY") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "WEST PARK") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "FORT LAUDERDALE") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "LIGHTHOUSE POINT") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "SOUTHWEST RANCHES") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "CORAL SPRINGS") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "HALLANDALE BEACH") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "MARGATE") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "PEMBROKE PINES") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "SUNRISE") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "DAVIE") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "DELRAY BEACH") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "HILLSBORO BEACH") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "PLANTATION") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "TAMARAC") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "DEERFIELD BEACH") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "HOLLYWOOD") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "MIRAMAR") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "POMPANO BEACH") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "LAUDERDALE-BY-THE-SEA") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "OAKLAND PARK") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "WESTON") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
     if (city === "ROYAL PALM BEACH") {
       return {
         heading: "Need a quick estimate?",
         description:
-          "Receive a call within 30 minutes during normal business hours.",
+          "Receive a call within 5 minutes during normal business hours.",
       };
     }
 
     // Default content
     return {
-      heading: "LET US CALL YOU!",
+      heading: "Need a quick estimate?",
       description:
-        "Receive a call within 30 minutes during normal business hours.",
+        "Receive a call within 5 minutes during normal business hours.",
     };
   };
 

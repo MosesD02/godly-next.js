@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import "@/styles/fourstepprocess.css";
 import Image from "next/image";

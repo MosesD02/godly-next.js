@@ -10,10 +10,117 @@ import {
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
-import { citiesMap } from "./CitiesPopup";
+import { citiesMap } from "@/data/cities";
 import { usePathname } from "next/navigation";
 
-const ServicePopup = ({ open, onOpenChange, services }) => {
+// Service images — only loaded when this dynamically-imported chunk is fetched
+import exteriorWindow from "@/assets/homepageServices/exterior_window.webp";
+import interiorWindow from "@/assets/homepageServices/interior_window.webp";
+import gutterCleaning from "@/assets/homepageServices/gutter_cleaning.webp";
+import houseWashing from "@/assets/homepageServices/house_washing.webp";
+import roofWashing from "@/assets/homepageServices/roof_washing.webp";
+import pressureWashing from "@/assets/homepageServices/pressure_washing.webp";
+import lightFixtures from "@/assets/homepageServices/light_fixtures.webp";
+import screenCleans from "@/assets/homepageServices/screen_cleans.webp";
+import solarPanels from "@/assets/homepageServices/solar_panels.webp";
+import sealCoating from "@/assets/homepageServices/seal_coating.webp";
+import santaBg from "@/assets/homepageServices/santa_bg.webp";
+
+const services = [
+  {
+    name: "Window Cleaning",
+    link: "window-cleaning",
+    image: exteriorWindow,
+    description:
+      "RO/DI purified water, hand scrubbing, and streak-free glass—residential and commercial—with our 7-day sparkle guarantee.",
+  },
+  {
+    name: "Gutter Cleaning",
+    link: "gutter-cleaning",
+    image: gutterCleaning,
+    description:
+      "A thorough cleaning that is guaranteed to keep them flowing freely.",
+  },
+  {
+    name: "House Washing",
+    link: "house-washing",
+    image: houseWashing,
+    description:
+      "Wash away years of pollen, mold, rust, and dirt – bringing that shine back to your property's exterior.",
+  },
+  {
+    name: "Roof Washing",
+    link: "roof-washing",
+    image: roofWashing,
+    description:
+      "Removing all the debris from your roof is the easiest way to increase its longevity.",
+  },
+  {
+    name: "Pressure & Soft Washing",
+    link: "pressure-washing",
+    image: pressureWashing,
+    description:
+      "Get rid of the slippery film and gunk on your driveway, walkways, porches, pool areas, and more.",
+  },
+  {
+    name: "Soft Washing",
+    link: "soft-washing",
+    image: houseWashing,
+    description:
+      "Custom low-pressure treatments for roofs, siding, and exteriors—safe chemistry that lifts algae without damage.",
+  },
+  {
+    name: "Light Fixture Cleaning",
+    link: "light-fixture-cleaning",
+    image: lightFixtures,
+    description:
+      "Keep both your interior and exterior lighting bright with thorough cleanings of your lanterns, sconces, and more.",
+  },
+  {
+    name: "Screen Cleaning",
+    link: "screen-cleaning",
+    image: screenCleans,
+    description:
+      "We'll happily remove, clean, and even replace your screens if necessary.",
+  },
+  {
+    name: "Holiday Lighting",
+    link: "holiday-lighting",
+    image: santaBg,
+    description:
+      "Design, install, premium LEDs, maintenance, and removal—custom holiday displays without the ladder.",
+  },
+  {
+    name: "Solar Panel Cleaning",
+    link: "solar-panel-cleaning",
+    image: solarPanels,
+    description:
+      "Dirty solar panels lead to less efficient energy absorption – keep them clean and running to their full potential. ",
+  },
+  {
+    name: "Paver Sealing",
+    link: "paver-sealing",
+    image: sealCoating,
+    description:
+      "Add a protective coating to your driveway/parking lot that protects against water, oils, and other damaging elements.",
+  },
+  {
+    name: "Exterior Window Cleaning",
+    link: "exterior-window-cleaning",
+    image: exteriorWindow,
+    description:
+      "It's what we do best! Get rid of that nasty build-up of nature's mildew and grime.",
+  },
+  {
+    name: "Interior Window Cleaning",
+    link: "interior-window-cleaning",
+    image: interiorWindow,
+    description:
+      "Pet slobber, fingerprints, and so much more can leave residue that is tricky to get off.",
+  },
+];
+
+const ServicePopup = ({ open, onOpenChange }) => {
   const { city } = useGodlyContext();
   // Add state to track active/touched item on mobile
   const [activeIndex, setActiveIndex] = useState(null);
