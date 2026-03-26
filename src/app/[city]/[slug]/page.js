@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import ServicesPage from "@/godlyComponents/servicesPage";
+import FaqSchema from "@/components/FaqSchema";
 import { citiesMap } from "@/data/cities";
 import {
   generateServiceTitle,
@@ -73,12 +74,15 @@ export default async function GodlyServices({ params }) {
   const relatedPosts = await getRelatedBlogPosts(city, slug);
 
   return (
-    <ServicesPage
-      slug={slug}
-      city={city}
-      cityName={cityName}
-      cityData={cityData}
-      relatedPosts={relatedPosts}
-    />
+    <>
+      <FaqSchema faqs={cityData.faqs} />
+      <ServicesPage
+        slug={slug}
+        city={city}
+        cityName={cityName}
+        cityData={cityData}
+        relatedPosts={relatedPosts}
+      />
+    </>
   );
 }

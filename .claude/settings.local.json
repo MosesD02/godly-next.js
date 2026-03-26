@@ -35,7 +35,8 @@
       "Bash(node -e \"console.log\\(require\\(''eslint/package.json''\\).version\\)\")",
       "Bash(npm ls:*)",
       "Bash(npm install:*)",
-      "Bash(npx eslint:*)"
+      "Bash(npx eslint:*)",
+      "Bash(npx next:*)"
     ]
   }
 }
