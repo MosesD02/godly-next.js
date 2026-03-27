@@ -1,12 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   images: {
     // Enable image optimization
     formats: ["image/webp", "image/avif"],
@@ -20,9 +14,7 @@ const nextConfig: NextConfig = {
 
     // Domains for external images (if needed)
     domains: [],
-    remotePatterns: [
-      { protocol: "https", hostname: "cdn.sanity.io" },
-    ],
+    remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
 
     // Disable static optimization for better performance
     unoptimized: false,

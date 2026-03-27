@@ -86,8 +86,13 @@ const PrivacyPolicy = () => {
             </h2>
             <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
               <li className="list-disc">
-                We do not sell, rent, or share your personal information with
-                third parties.
+                We do not sell or share mobile or personal data with third
+                parties, affiliates, or partners for marketing or promotional
+                purposes. We only share data with third parties when it is
+                strictly necessary to deliver our service and only under binding
+                agreements that ensure confidentiality. Under no circumstances
+                will mobile data be shared or sold for advertising or promotional
+                use.
               </li>
               <li className="list-disc">
                 We may only disclose information if required by law or to

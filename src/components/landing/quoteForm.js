@@ -8,6 +8,7 @@ import QuoteButton from "@/components/quoteButton";
 import Airtable from "airtable";
 import { cn } from "@/lib/utils";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
+import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
 import Link from "next/link";
 
 export default function QuoteForm({ isDialog, service, source }) {
@@ -18,7 +19,9 @@ export default function QuoteForm({ isDialog, service, source }) {
     phone: "",
     services: [service],
     zipcode: "",
-    agree: false,
+    consentMarketingSmsCalls: false,
+    consentInformationalSms: false,
+    consentMarketingEmail: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -50,19 +53,6 @@ export default function QuoteForm({ isDialog, service, source }) {
       "patUUfkvMZUeWcpBx.3b8a637c96292840817c1a291c161b70a0b5952d6a75d9ab0f000bb70a097e51",
   }).base("appzgFLd0zSxa5rIx");
 
-  const formatPhoneNumber = (value) => {
-    // Remove all non-digits
-    const phoneNumber = value.replace(/\D/g, "");
-
-    // Format as xxx-xxx-xxxx
-    if (phoneNumber.length >= 6) {
-      return `${phoneNumber.slice(0, 3)}-${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6)}`;
-    } else if (phoneNumber.length >= 3) {
-      return `${phoneNumber.slice(0, 3)}-${phoneNumber.slice(3)}`;
-    }
-    return phoneNumber;
-  };
-
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
 
@@ -79,7 +69,7 @@ export default function QuoteForm({ isDialog, service, source }) {
     }
 
     if (name === "phone") {
-      const formattedPhone = formatPhoneNumber(value);
+      const formattedPhone = formatUsPhoneInput(value);
       setFormData((prev) => ({
         ...prev,
         phone: formattedPhone,
@@ -95,14 +85,13 @@ export default function QuoteForm({ isDialog, service, source }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Prevent submission if checkbox is not checked
-    if (!formData.agree) {
-      setSubmitStatus("error-no-agree");
+    if (formData.services.length === 0) {
+      setSubmitStatus("error-no-services");
       return;
     }
 
-    if (formData.services.length === 0) {
-      setSubmitStatus("error-no-services");
+    if (!isUsPhoneValid(formData.phone)) {
+      setSubmitStatus("error-invalid-phone");
       return;
     }
 
@@ -139,6 +128,9 @@ export default function QuoteForm({ isDialog, service, source }) {
             source: "Google Ads",
             pageUrl:
               typeof window !== "undefined" ? window.location.href : null,
+            consentMarketingSmsCalls: formData.consentMarketingSmsCalls,
+            consentInformationalSms: formData.consentInformationalSms,
+            consentMarketingEmail: formData.consentMarketingEmail,
           }),
         },
       );
@@ -160,6 +152,9 @@ export default function QuoteForm({ isDialog, service, source }) {
             utm_source: source || "google ads",
             pageUrl:
               typeof window !== "undefined" ? window.location.href : null,
+            consentMarketingSmsCalls: formData.consentMarketingSmsCalls,
+            consentInformationalSms: formData.consentInformationalSms,
+            consentMarketingEmail: formData.consentMarketingEmail,
           }),
         },
       );
@@ -180,6 +175,9 @@ export default function QuoteForm({ isDialog, service, source }) {
             zipcode: formData.zipcode,
             pageUrl:
               typeof window !== "undefined" ? window.location.href : null,
+            consentMarketingSmsCalls: formData.consentMarketingSmsCalls,
+            consentInformationalSms: formData.consentInformationalSms,
+            consentMarketingEmail: formData.consentMarketingEmail,
           }),
         },
       );
@@ -217,7 +215,9 @@ export default function QuoteForm({ isDialog, service, source }) {
         services: [service],
         phone: "",
         zipcode: "",
-        agree: false,
+        consentMarketingSmsCalls: false,
+        consentInformationalSms: false,
+        consentMarketingEmail: false,
       });
       setDate(undefined);
     } catch (error) {
@@ -328,35 +328,90 @@ export default function QuoteForm({ isDialog, service, source }) {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between px-12 pb-6 md:flex-row">
-          <div className="mt-4 flex items-center space-x-3">
-            <Checkbox
-              id="agree"
-              name="agree"
-              checked={formData.agree}
-              className="size-[18px] bg-transparent md:size-[16px] xl:size-[22px]"
-              onCheckedChange={(checked) =>
-                setFormData((prev) => ({ ...prev, agree: checked }))
-              }
-            />
-            <label
-              htmlFor="agree"
-              className={cn(
-                "pr-4 font-['satoshi-regular'] text-xs md:text-sm xl:text-base",
-              )}
-            >
-              By checking this box, I agree to receive SMS text messages from
-              Godly Windows & Wash Co. regarding my appointment confirmations,
-              job updates, and service reminders. Message & data rates may
-              apply. Reply STOP to opt out. View our{" "}
-              <Link href="/privacy-policy" className="underline!">
-                Privacy Policy
-              </Link>
-              .
-            </label>
+        <div className="flex flex-col items-stretch justify-between gap-4 px-12 pb-6 md:flex-row md:items-end">
+          <div className="mt-4 flex w-full min-w-0 flex-col gap-4 md:max-w-[70%] xl:max-w-[75%]">
+            <div className="flex items-start gap-3">
+              <Checkbox
+                id="landing-consent-marketing-sms-calls"
+                name="consentMarketingSmsCalls"
+                checked={formData.consentMarketingSmsCalls}
+                className="mt-0.5 size-[18px] shrink-0 bg-transparent md:size-[16px] xl:size-[22px]"
+                onCheckedChange={(checked) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    consentMarketingSmsCalls: Boolean(checked),
+                  }))
+                }
+              />
+              <label
+                htmlFor="landing-consent-marketing-sms-calls"
+                className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
+              >
+                By checking, I agree to receive marketing SMS and calls from
+                Godly Windows & Wash Co., for window cleaning estimates and
+                promotional offers. Message frequency varies. Message & data
+                rates may apply. Reply STOP to opt out, HELP for help. Consent
+                is not a condition of purchase.
+              </label>
+            </div>
+            <div className="flex items-start gap-3">
+              <Checkbox
+                id="landing-consent-informational-sms"
+                name="consentInformationalSms"
+                checked={formData.consentInformationalSms}
+                className="mt-0.5 size-[18px] shrink-0 bg-transparent md:size-[16px] xl:size-[22px]"
+                onCheckedChange={(checked) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    consentInformationalSms: Boolean(checked),
+                  }))
+                }
+              />
+              <label
+                htmlFor="landing-consent-informational-sms"
+                className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
+              >
+                By checking, I agree to receive informational SMS from Godly
+                Windows & Wash Co. regarding my appointment confirmations, job
+                updates, and service reminders. Message & data rates may apply.
+                Reply STOP to opt out.
+              </label>
+            </div>
+            <div className="flex items-start gap-3">
+              <Checkbox
+                id="landing-consent-marketing-email"
+                name="consentMarketingEmail"
+                checked={formData.consentMarketingEmail}
+                className="mt-0.5 size-[18px] shrink-0 bg-transparent md:size-[16px] xl:size-[22px]"
+                onCheckedChange={(checked) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    consentMarketingEmail: Boolean(checked),
+                  }))
+                }
+              />
+              <label
+                htmlFor="landing-consent-marketing-email"
+                className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
+              >
+                By checking, I agree to receive marketing emails from Godly
+                Windows & Wash Co. and I accept{" "}
+                <Link
+                  href="/terms-and-conditions"
+                  className="underline!"
+                >
+                  Terms and Conditions
+                </Link>{" "}
+                and{" "}
+                <Link href="/privacy-policy" className="underline!">
+                  Privacy Policy
+                </Link>
+                .
+              </label>
+            </div>
           </div>
 
-          <div className="mt-6 mb-6 text-right md:mb-0">
+          <div className="mt-2 mb-6 shrink-0 text-right md:mt-0 md:mb-0">
             <QuoteButton
               type="submit"
               disabled={isSubmitting}
@@ -382,14 +437,14 @@ export default function QuoteForm({ isDialog, service, source }) {
           Error submitting form. Please try again.
         </div>
       )}
-      {submitStatus === "error-no-agree" && (
-        <div className="mt-4 rounded bg-red-100 p-4 text-red-700">
-          Please agree to the terms before submitting.
-        </div>
-      )}
       {submitStatus === "error-no-services" && (
         <div className="mt-4 rounded bg-red-100 p-4 text-red-700">
           Please select at least one service before submitting.
+        </div>
+      )}
+      {submitStatus === "error-invalid-phone" && (
+        <div className="mt-4 rounded bg-red-100 p-4 text-red-700">
+          Please enter a valid U.S. phone number.
         </div>
       )}
 

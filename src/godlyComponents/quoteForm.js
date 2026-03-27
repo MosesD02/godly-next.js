@@ -1,5 +1,5 @@
 "use client";
-import { React, useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -17,6 +17,7 @@ import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
 import { usePathname } from "next/navigation";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
+import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
 import Link from "next/link";
 
 const servicesList = [
@@ -230,50 +231,20 @@ export default function QuoteForm({ isDialog }) {
     phone: "",
     services: [],
     zipcode: "",
-    agree: false,
+    consentMarketingSmsCalls: false,
+    consentInformationalSms: false,
+    consentMarketingEmail: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const [showServices, setShowServices] = useState(false);
-  const servicesRef = useRef(null);
-
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (servicesRef.current && !servicesRef.current.contains(event.target)) {
-        setShowServices(false);
-      }
-    }
-
-    // Add event listener when dropdown is open
-    if (showServices) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
-
-    // Clean up the event listener
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [showServices]);
 
   // Initialize Airtable
   const base = new Airtable({
     apiKey:
       "patUUfkvMZUeWcpBx.3b8a637c96292840817c1a291c161b70a0b5952d6a75d9ab0f000bb70a097e51",
   }).base("appzgFLd0zSxa5rIx");
-
-  const formatPhoneNumber = (value) => {
-    // Remove all non-digits
-    const phoneNumber = value.replace(/\D/g, "");
-
-    // Format as xxx-xxx-xxxx
-    if (phoneNumber.length >= 6) {
-      return `${phoneNumber.slice(0, 3)}-${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6)}`;
-    } else if (phoneNumber.length >= 3) {
-      return `${phoneNumber.slice(0, 3)}-${phoneNumber.slice(3)}`;
-    }
-    return phoneNumber;
-  };
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -290,7 +261,7 @@ export default function QuoteForm({ isDialog }) {
     }
 
     if (name === "phone") {
-      const formattedPhone = formatPhoneNumber(value);
+      const formattedPhone = formatUsPhoneInput(value);
       setFormData((prev) => ({
         ...prev,
         phone: formattedPhone,
@@ -306,14 +277,13 @@ export default function QuoteForm({ isDialog }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Prevent submission if checkbox is not checked
-    if (!formData.agree) {
-      setSubmitStatus("error-no-agree");
+    if (formData.services.length === 0) {
+      setSubmitStatus("error-no-services");
       return;
     }
 
-    if (formData.services.length === 0) {
-      setSubmitStatus("error-no-services");
+    if (!isUsPhoneValid(formData.phone)) {
+      setSubmitStatus("error-invalid-phone");
       return;
     }
 
@@ -347,6 +317,9 @@ export default function QuoteForm({ isDialog }) {
             source: "Organic",
             pageUrl:
               typeof window !== "undefined" ? window.location.href : null,
+            consentMarketingSmsCalls: formData.consentMarketingSmsCalls,
+            consentInformationalSms: formData.consentInformationalSms,
+            consentMarketingEmail: formData.consentMarketingEmail,
           }),
         },
       );
@@ -365,6 +338,9 @@ export default function QuoteForm({ isDialog }) {
             utm_source: "organic",
             pageUrl:
               typeof window !== "undefined" ? window.location.href : null,
+            consentMarketingSmsCalls: formData.consentMarketingSmsCalls,
+            consentInformationalSms: formData.consentInformationalSms,
+            consentMarketingEmail: formData.consentMarketingEmail,
           }),
         },
       );
@@ -385,6 +361,9 @@ export default function QuoteForm({ isDialog }) {
             zipcode: formData.zipcode,
             pageUrl:
               typeof window !== "undefined" ? window.location.href : null,
+            consentMarketingSmsCalls: formData.consentMarketingSmsCalls,
+            consentInformationalSms: formData.consentInformationalSms,
+            consentMarketingEmail: formData.consentMarketingEmail,
           }),
         },
       );
@@ -428,7 +407,9 @@ export default function QuoteForm({ isDialog }) {
         phone: "",
         services: [],
         zipcode: "",
-        agree: false,
+        consentMarketingSmsCalls: false,
+        consentInformationalSms: false,
+        consentMarketingEmail: false,
       });
       setDate(undefined);
     } catch (error) {
@@ -544,57 +525,67 @@ export default function QuoteForm({ isDialog }) {
               "relative md:col-span-3 xl:col-span-5",
               isDialog ? "md:col-span-3" : "",
             )}
-            ref={servicesRef}
           >
             <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
               What services do you need?
             </label>
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                setShowServices(!showServices);
-              }}
-              className="w-full rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-[15px] text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
-            >
-              <div className="flex w-full items-center space-x-2">
-                <p className="overflow-hidden text-ellipsis whitespace-nowrap">
-                  {formData.services.join(", ") || (
-                    <span className="text-[rgba(49,46,44,0.20)]">
-                      Choose your service
-                    </span>
-                  )}
-                </p>
-                {showServices ? (
-                  <ChevronUp className="ms-auto" />
-                ) : (
-                  <ChevronDown className="ms-auto" />
-                )}
-              </div>
-            </button>
-
-            {showServices && (
-              <div className="paper-bg-14 absolute top-full right-0 z-50 flex w-full flex-col gap-5 rounded-lg bg-[#AB8459] p-6 shadow-xl md:w-[300px] xl:w-[335px]">
-                {servicesList.map((service) => (
-                  <div
-                    key={service.id}
-                    className="flex cursor-pointer items-center"
-                  >
-                    <label
-                      htmlFor={service.id}
-                      className="flex-1 cursor-pointer text-base font-normal text-[#2D2B2B]"
-                    >
-                      {service.name}
-                    </label>
-                    <Checkbox
-                      id={service.id}
-                      checked={formData.services.includes(service.name)}
-                      onCheckedChange={() => handleServiceToggle(service.name)}
-                      className="size-[22px] bg-transparent"
-                    />
+            <Popover open={showServices} onOpenChange={setShowServices}>
+              <PopoverTrigger asChild>
+                <button
+                  type="button"
+                  className="w-full rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-[15px] text-left text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+                >
+                  <div className="flex w-full items-center space-x-2">
+                    <p className="overflow-hidden text-ellipsis whitespace-nowrap">
+                      {formData.services.join(", ") || (
+                        <span className="text-[rgba(49,46,44,0.20)]">
+                          Choose your service
+                        </span>
+                      )}
+                    </p>
+                    {showServices ? (
+                      <ChevronUp className="ms-auto shrink-0" />
+                    ) : (
+                      <ChevronDown className="ms-auto shrink-0" />
+                    )}
                   </div>
-                ))}
-              </div>
-            )}
+                </button>
+              </PopoverTrigger>
+              <PopoverContent
+                align="start"
+                side="bottom"
+                sideOffset={4}
+                className={cn(
+                  "paper-bg-14 z-[200] w-[var(--radix-popover-trigger-width)] max-h-[min(22rem,calc(100vh-6rem))] max-w-[calc(100vw-2rem)] overflow-y-auto border-0 bg-[#AB8459] p-6 shadow-xl",
+                  "md:min-w-[300px] xl:min-w-[335px]",
+                )}
+                onOpenAutoFocus={(e) => e.preventDefault()}
+              >
+                <div className="flex flex-col gap-5">
+                  {servicesList.map((service) => (
+                    <div
+                      key={service.id}
+                      className="flex cursor-pointer items-center"
+                    >
+                      <label
+                        htmlFor={service.id}
+                        className="flex-1 cursor-pointer text-base font-normal text-[#2D2B2B]"
+                      >
+                        {service.name}
+                      </label>
+                      <Checkbox
+                        id={service.id}
+                        checked={formData.services.includes(service.name)}
+                        onCheckedChange={() =>
+                          handleServiceToggle(service.name)
+                        }
+                        className="size-[22px] bg-transparent"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </PopoverContent>
+            </Popover>
           </div>
 
           <div
@@ -679,35 +670,90 @@ export default function QuoteForm({ isDialog }) {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between px-12 pb-6 md:flex-row">
-          <div className="mt-4 flex items-center space-x-3">
-            <Checkbox
-              id="agree"
-              name="agree"
-              checked={formData.agree}
-              className="size-[18px] bg-transparent md:size-[16px] xl:size-[22px]"
-              onCheckedChange={(checked) =>
-                setFormData((prev) => ({ ...prev, agree: checked }))
-              }
-            />
-            <label
-              htmlFor="agree"
-              className={cn(
-                "pr-4 font-['satoshi-regular'] text-xs md:text-sm xl:text-base",
-              )}
-            >
-              By checking this box, I agree to receive SMS text messages from
-              Godly Windows & Wash Co. regarding my appointment confirmations,
-              job updates, and service reminders. Message & data rates may
-              apply. Reply STOP to opt out. View our{" "}
-              <Link href="/privacy-policy" className="underline!">
-                Privacy Policy
-              </Link>
-              .
-            </label>
+        <div className="flex flex-col items-stretch justify-between gap-4 px-12 pb-6 md:flex-row md:items-end">
+          <div className="mt-4 flex w-full min-w-0 flex-col gap-4 md:max-w-[70%] xl:max-w-[75%]">
+            <div className="flex items-start gap-3">
+              <Checkbox
+                id="consent-marketing-sms-calls"
+                name="consentMarketingSmsCalls"
+                checked={formData.consentMarketingSmsCalls}
+                className="mt-0.5 size-[18px] shrink-0 bg-transparent md:size-[16px] xl:size-[22px]"
+                onCheckedChange={(checked) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    consentMarketingSmsCalls: Boolean(checked),
+                  }))
+                }
+              />
+              <label
+                htmlFor="consent-marketing-sms-calls"
+                className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
+              >
+                By checking, I agree to receive marketing SMS and calls from
+                Godly Windows & Wash Co., for window cleaning estimates and
+                promotional offers. Message frequency varies. Message & data
+                rates may apply. Reply STOP to opt out, HELP for help. Consent
+                is not a condition of purchase.
+              </label>
+            </div>
+            <div className="flex items-start gap-3">
+              <Checkbox
+                id="consent-informational-sms"
+                name="consentInformationalSms"
+                checked={formData.consentInformationalSms}
+                className="mt-0.5 size-[18px] shrink-0 bg-transparent md:size-[16px] xl:size-[22px]"
+                onCheckedChange={(checked) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    consentInformationalSms: Boolean(checked),
+                  }))
+                }
+              />
+              <label
+                htmlFor="consent-informational-sms"
+                className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
+              >
+                By checking, I agree to receive informational SMS from Godly
+                Windows & Wash Co. regarding my appointment confirmations, job
+                updates, and service reminders. Message & data rates may apply.
+                Reply STOP to opt out.
+              </label>
+            </div>
+            <div className="flex items-start gap-3">
+              <Checkbox
+                id="consent-marketing-email"
+                name="consentMarketingEmail"
+                checked={formData.consentMarketingEmail}
+                className="mt-0.5 size-[18px] shrink-0 bg-transparent md:size-[16px] xl:size-[22px]"
+                onCheckedChange={(checked) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    consentMarketingEmail: Boolean(checked),
+                  }))
+                }
+              />
+              <label
+                htmlFor="consent-marketing-email"
+                className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
+              >
+                By checking, I agree to receive marketing emails from Godly
+                Windows & Wash Co. and I accept{" "}
+                <Link
+                  href="/terms-and-conditions"
+                  className="underline!"
+                >
+                  Terms and Conditions
+                </Link>{" "}
+                and{" "}
+                <Link href="/privacy-policy" className="underline!">
+                  Privacy Policy
+                </Link>
+                .
+              </label>
+            </div>
           </div>
 
-          <div className="mt-6 mb-6 text-right md:mb-0">
+          <div className="mt-2 mb-6 shrink-0 text-right md:mt-0 md:mb-0">
             <QuoteButton
               type="submit"
               disabled={isSubmitting}
@@ -733,14 +779,14 @@ export default function QuoteForm({ isDialog }) {
           Error submitting form. Please try again.
         </div>
       )}
-      {submitStatus === "error-no-agree" && (
-        <div className="mt-4 rounded bg-red-100 p-4 text-red-700">
-          Please agree to the terms before submitting.
-        </div>
-      )}
       {submitStatus === "error-no-services" && (
         <div className="mt-4 rounded bg-red-100 p-4 text-red-700">
           Please select at least one service before submitting.
+        </div>
+      )}
+      {submitStatus === "error-invalid-phone" && (
+        <div className="mt-4 rounded bg-red-100 p-4 text-red-700">
+          Please enter a valid U.S. phone number.
         </div>
       )}
 

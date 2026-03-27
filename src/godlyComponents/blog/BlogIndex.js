@@ -84,7 +84,7 @@ export default function BlogIndex({
     ].join(" ");
 
   const navButtonClass =
-    "estimate-button rounded-sm inline-flex w-fit min-w-0 items-center gap-2 px-4 py-2.5 disabled:pointer-events-none disabled:opacity-40";
+    "estimate-button rounded-sm inline-flex w-fit min-w-0 items-center gap-2 px-4 py-2.5 disabled:opacity-100! disabled:cursor-not-allowed!";
 
   const pageButtonMobileClass = (isActive) =>
     [
@@ -326,7 +326,7 @@ export default function BlogIndex({
 
             {/* Desktop / tablet: three-column layout */}
             <nav
-              className="mx-auto mb-12 hidden w-full max-w-[1311px] grid-cols-3 items-center gap-2 md:mb-0 md:grid"
+              className="mx-auto mb-12 hidden w-full max-w-[1400px] grid-cols-3 items-center gap-2 px-[30px] md:mb-0 md:grid md:px-12"
               aria-label="Blog pagination"
             >
               <div className="flex justify-start">
@@ -350,9 +350,7 @@ export default function BlogIndex({
                     <span>Back</span>
                   </Link>
                 ) : (
-                  <span
-                    className={`${navButtonClass} cursor-not-allowed opacity-40`}
-                  >
+                  <span className={`${navButtonClass} cursor-not-allowed`}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -417,9 +415,7 @@ export default function BlogIndex({
                     </svg>
                   </Link>
                 ) : (
-                  <span
-                    className={`${navButtonClass} cursor-not-allowed opacity-40`}
-                  >
+                  <span className={`${navButtonClass} cursor-not-allowed`}>
                     <span>Next</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -440,7 +436,7 @@ export default function BlogIndex({
         )}
 
         {showPagination && (
-          <div className="mx-auto hidden w-full max-w-[1311px] space-y-0.25 md:block">
+          <div className="mx-auto hidden w-full max-w-[1400px] space-y-0.25 px-[30px] md:block md:px-12">
             <div className="h-[1px] w-full bg-[#1c1c1c]" />
             <div className="h-[3px] w-full bg-[#1c1c1c]" />
           </div>
