@@ -7,6 +7,8 @@ import {
 } from "@/components/ui/accordion";
 
 export default function BlogPostFaq({ faq }) {
+  if (!faq || faq.length === 0) return null;
+
   return (
     <div className="mt-12">
       <h2 className="trim mb-6 text-2xl font-bold text-[#312E2C] md:text-3xl">
