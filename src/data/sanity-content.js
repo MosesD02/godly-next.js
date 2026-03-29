@@ -75,16 +75,24 @@ function toBlogPost(doc) {
  * Get all Sanity posts sorted by date (newest first)
  */
 export async function getAllSanityPosts() {
-  const docs = await client.fetch(POSTS_QUERY);
-  return (docs || []).map(toBlogPost);
+  try {
+    const docs = await client.fetch(POSTS_QUERY);
+    return (docs || []).map(toBlogPost);
+  } catch {
+    return [];
+  }
 }
 
 /**
  * Get a single Sanity post by slug
  */
 export async function getSanityPostBySlug(slug) {
-  const doc = await client.fetch(POST_BY_SLUG_QUERY, { slug });
-  return toBlogPost(doc);
+  try {
+    const doc = await client.fetch(POST_BY_SLUG_QUERY, { slug });
+    return toBlogPost(doc);
+  } catch {
+    return null;
+  }
 }
 
 /**

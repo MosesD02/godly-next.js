@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import GodlyHome from "@/components/landing/home";
 import { citiesMap } from "@/data/cities";
 import { BASE_URL } from "@/app/lib/constants";
@@ -8,6 +9,14 @@ import {
   serviceMetaTitles,
 } from "@/data/metaTitles";
 import Script from "next/script";
+
+export async function generateStaticParams() {
+  const services = Object.keys(serviceMetaTitles);
+  const cities = Object.keys(citiesMap).filter((c) => c !== "south-florida");
+  return services.flatMap((service) =>
+    cities.map((city) => ({ service, city }))
+  );
+}
 
 // Generate metadata for service/city pages
 export async function generateMetadata({ params }) {
@@ -57,8 +66,8 @@ export async function generateMetadata({ params }) {
 export default async function LandingPage({ params }) {
   const { service, city } = await params;
 
-  if (!service || !city) {
-    return <div>Missing service or city</div>;
+  if (!service || !city || !serviceMetaTitles[service] || !citiesMap[city]) {
+    notFound();
   }
 
   const serviceName =

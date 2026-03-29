@@ -53,7 +53,7 @@ export const cityServicesData = {
   "lauderdale-by-the-sea": lauderdaleByTheSea,
   "lighthouse-point": lighthousePoint,
   "margate": margate,
-  "miramar-fl": miramarFl,
+  "miramar": miramarFl,
   "oakland-park": oaklandPark,
   "parkland": parkland,
   "pembroke-pines": pembrokePines,

@@ -146,7 +146,7 @@ export default function QuoteForm({ isDialog, service, source }) {
             name: formData.name,
             email: formData.email,
             phone: formData.phone,
-            service: formData.services,
+            service: service,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
             utm_source: source || "google ads",
@@ -170,7 +170,7 @@ export default function QuoteForm({ isDialog, service, source }) {
             name: formData.name,
             email: formData.email,
             phone: formData.phone,
-            services: formData.services,
+            services: service,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
             pageUrl:

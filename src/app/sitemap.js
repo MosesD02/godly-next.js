@@ -45,7 +45,7 @@ export default async function sitemap() {
       ),
     )),
     {
-      url: `${BASE_URL}/blogs`,
+      url: `${BASE_URL}/blog`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,

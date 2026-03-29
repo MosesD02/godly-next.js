@@ -62,7 +62,7 @@ export default async function GodlyServices({ params }) {
   const param = await params;
   const { slug, city } = param;
 
-  if (!Services[slug]) {
+  if (!Services[slug] || !citiesMap[city]) {
     notFound();
   }
 
@@ -71,7 +71,12 @@ export default async function GodlyServices({ params }) {
   const cityName = citiesMap[city] ?? null;
   const cityData = cityServicesData[city]?.[slug] ?? {};
 
-  const relatedPosts = await getRelatedBlogPosts(city, slug);
+  let relatedPosts = [];
+  try {
+    relatedPosts = await getRelatedBlogPosts(city, slug);
+  } catch {
+    // Sanity unavailable — render the page without blog posts
+  }
 
   return (
     <>

@@ -11,6 +11,7 @@ export const metadata = {
     "Blog | Godly Windows & Wash Co. — Pressure Washing & Window Cleaning Tips",
   description:
     "Expert tips on pressure washing and window cleaning for South Florida. Learn what to know before you hire. Free quotes from Godly Windows.",
+  robots: "index, follow",
   openGraph: {
     title: "Blog | Godly Windows & Wash Co.",
     description:
@@ -18,6 +19,9 @@ export const metadata = {
     url: "https://godlywindows.com/blog",
     siteName: "Godly Windows",
     type: "website",
+  },
+  alternates: {
+    canonical: "/blog",
   },
 };
 

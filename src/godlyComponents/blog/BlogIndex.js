@@ -134,21 +134,21 @@ export default function BlogIndex({
                   <div className="mx-auto aspect-[4/3] max-w-[650px] overflow-hidden border-8 border-[#6A64641F] shadow-md">
                     <Link
                       href={blogPostHref(posts[0].slug)}
-                      className="block h-full w-full"
+                      className="block aspect-[4/3] h-full w-full"
                     >
                       <Image
                         src={posts[0].image}
                         alt={posts[0].title}
                         width={650}
                         height={488}
-                        className="h-full w-full object-cover object-center"
+                        className="aspect-[4/3] h-full w-full object-cover object-center"
                       />
                     </Link>
                   </div>
                 </div>
                 <div className="w-full md:w-1/2">
                   <p className="mb-1 font-['satoshi-light'] text-lg text-gray-500">
-                    {format(new Date(posts[0].publishedAt), "MMMM d, yyyy")}
+                    {posts[0].publishedAt ? format(new Date(posts[0].publishedAt), "MMMM d, yyyy") : ""}
                   </p>
                   <h2 className="mb-4 text-[36px] font-semibold text-gray-800">
                     {posts[0].title}
@@ -177,7 +177,7 @@ export default function BlogIndex({
                   {posts[0].title}
                 </h2>
                 <p className="font-['satoshi-light'] text-sm leading-[16px] text-[#373A44]">
-                  {format(new Date(posts[0].publishedAt), "MMMM d, yyyy")}
+                  {posts[0].publishedAt ? format(new Date(posts[0].publishedAt), "MMMM d, yyyy") : ""}
                 </p>
                 <Link
                   href={blogPostHref(posts[0].slug)}
@@ -189,7 +189,7 @@ export default function BlogIndex({
                       alt={posts[0].title}
                       width={334}
                       height={251}
-                      className="h-full w-full object-cover object-center"
+                      className="aspect-[4/3] h-full w-full object-cover object-center"
                     />
                   </div>
                 </Link>
@@ -224,7 +224,7 @@ export default function BlogIndex({
                 className="flex flex-col gap-3"
               >
                 <p className="font-['satoshi-light'] text-base text-[#373A44]">
-                  {format(new Date(posts[0].publishedAt), "MMMM d, yyyy")}
+                  {posts[0].publishedAt ? format(new Date(posts[0].publishedAt), "MMMM d, yyyy") : ""}
                 </p>
                 <h3 className="text-2xl leading-snug font-bold text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-4xl">
                   {posts[0].title}
@@ -257,11 +257,11 @@ export default function BlogIndex({
                           alt={post.title}
                           width={500}
                           height={375}
-                          className="h-full w-full object-cover object-center"
+                          className="aspect-[4/3] h-full w-full object-cover object-center"
                         />
                       </div>
                       <p className="font-['satoshi-light'] text-base text-[#373A44] md:mt-2 md:text-[24px]">
-                        {format(new Date(post.publishedAt), "MMMM d, yyyy")}
+                        {post.publishedAt ? format(new Date(post.publishedAt), "MMMM d, yyyy") : ""}
                       </p>
                       <p
                         className="text-xl leading-snug font-bold text-[#373A44] md:mt-1 md:text-[28px]"

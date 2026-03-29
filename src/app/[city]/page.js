@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import GodlyHome from "@/godlyComponents/home";
 import { citiesMap } from "@/data/cities";
 import {
@@ -6,6 +7,12 @@ import {
   generateCitySchema,
 } from "@/data/metaTitles";
 import Script from "next/script";
+
+export async function generateStaticParams() {
+  return Object.keys(citiesMap)
+    .filter((city) => city !== "south-florida")
+    .map((city) => ({ city }));
+}
 
 // Dynamic metadata generation for city pages
 export async function generateMetadata({ params }) {
@@ -52,6 +59,9 @@ export async function generateMetadata({ params }) {
 
 export default async function Page({ params }) {
   const { city } = await params;
+  if (!citiesMap[city]) {
+    notFound();
+  }
   const schemaMarkup = generateCitySchema(city);
 
   return (
