@@ -65,6 +65,24 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  // Add X-Robots-Tag: noindex to opengraph-image routes
+  async headers() {
+    return [
+      {
+        source: "/:path*/opengraph-image",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow" },
+        ],
+      },
+      {
+        source: "/opengraph-image",
+        headers: [
+          { key: "X-Robots-Tag", value: "noindex, nofollow" },
+        ],
+      },
+    ];
+  },
+
   // Experimental features for better performance
   experimental: {
     optimizePackageImports: ["@/components", "@/godlyComponents"],

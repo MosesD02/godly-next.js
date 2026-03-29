@@ -1,5 +1,8 @@
 User-Agent: *
 Allow: /
 Disallow: /private/
+Disallow: /*/opengraph-image
+Disallow: /opengraph-image
+Disallow: /landing/
 
 Sitemap: https://godlywindows.com/sitemap.xml

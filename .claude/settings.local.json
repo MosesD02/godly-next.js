@@ -42,7 +42,12 @@
       "Bash(curl:*)",
       "Bash(head:*)",
       "Bash(xargs head:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(sed \"s/<loc>//;s/<\\\\/loc>//\")",
+      "Read(//tmp/**)",
+      "Bash(for i:*)",
+      "Bash(do curl:*)",
+      "Bash(done)"
     ]
   }
 }
