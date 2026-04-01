@@ -18,7 +18,6 @@ import { useGodlyContext } from "@/context/godlyContext";
 import { usePathname } from "next/navigation";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
-import Link from "next/link";
 
 const servicesList = [
   { id: "exterior-window-cleaning", name: "Exterior Window Cleaning" },
@@ -231,9 +230,7 @@ export default function QuoteForm({ isDialog }) {
     phone: "",
     services: [],
     zipcode: "",
-    consentMarketingSmsCalls: false,
     consentInformationalSms: false,
-    consentMarketingEmail: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -317,9 +314,9 @@ export default function QuoteForm({ isDialog }) {
             source: "Organic",
             pageUrl:
               typeof window !== "undefined" ? window.location.href : null,
-            consentMarketingSmsCalls: formData.consentMarketingSmsCalls,
+            consentMarketingSmsCalls: false,
             consentInformationalSms: formData.consentInformationalSms,
-            consentMarketingEmail: formData.consentMarketingEmail,
+            consentMarketingEmail: false,
           }),
         },
       );
@@ -338,9 +335,9 @@ export default function QuoteForm({ isDialog }) {
             utm_source: "organic",
             pageUrl:
               typeof window !== "undefined" ? window.location.href : null,
-            consentMarketingSmsCalls: formData.consentMarketingSmsCalls,
+            consentMarketingSmsCalls: false,
             consentInformationalSms: formData.consentInformationalSms,
-            consentMarketingEmail: formData.consentMarketingEmail,
+            consentMarketingEmail: false,
           }),
         },
       );
@@ -361,9 +358,9 @@ export default function QuoteForm({ isDialog }) {
             zipcode: formData.zipcode,
             pageUrl:
               typeof window !== "undefined" ? window.location.href : null,
-            consentMarketingSmsCalls: formData.consentMarketingSmsCalls,
+            consentMarketingSmsCalls: false,
             consentInformationalSms: formData.consentInformationalSms,
-            consentMarketingEmail: formData.consentMarketingEmail,
+            consentMarketingEmail: false,
           }),
         },
       );
@@ -407,9 +404,7 @@ export default function QuoteForm({ isDialog }) {
         phone: "",
         services: [],
         zipcode: "",
-        consentMarketingSmsCalls: false,
         consentInformationalSms: false,
-        consentMarketingEmail: false,
       });
       setDate(undefined);
     } catch (error) {
@@ -670,32 +665,8 @@ export default function QuoteForm({ isDialog }) {
           </div>
         </div>
 
-        <div className="flex flex-col items-stretch justify-between gap-4 px-12 pb-6 md:flex-row md:items-end">
-          <div className="mt-4 flex w-full min-w-0 flex-col gap-4 md:max-w-[70%] xl:max-w-[75%]">
-            <div className="flex items-start gap-3">
-              <Checkbox
-                id="consent-marketing-sms-calls"
-                name="consentMarketingSmsCalls"
-                checked={formData.consentMarketingSmsCalls}
-                className="mt-0.5 size-[18px] shrink-0 bg-transparent md:size-[16px] xl:size-[22px]"
-                onCheckedChange={(checked) =>
-                  setFormData((prev) => ({
-                    ...prev,
-                    consentMarketingSmsCalls: Boolean(checked),
-                  }))
-                }
-              />
-              <label
-                htmlFor="consent-marketing-sms-calls"
-                className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
-              >
-                By checking, I agree to receive marketing SMS and calls from
-                Godly Windows & Wash Co., for window cleaning estimates and
-                promotional offers. Message frequency varies. Message & data
-                rates may apply. Reply STOP to opt out, HELP for help. Consent
-                is not a condition of purchase.
-              </label>
-            </div>
+        <div className="flex flex-col items-stretch justify-between gap-4 px-12 pb-6 md:flex-row md:items-center">
+          <div className="mt-4 flex w-full min-w-0 flex-col gap-4 md:mt-0 md:max-w-[70%] xl:max-w-[75%]">
             <div className="flex items-start gap-3">
               <Checkbox
                 id="consent-informational-sms"
@@ -713,47 +684,13 @@ export default function QuoteForm({ isDialog }) {
                 htmlFor="consent-informational-sms"
                 className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
               >
-                By checking, I agree to receive informational SMS from Godly
-                Windows & Wash Co. regarding my appointment confirmations, job
-                updates, and service reminders. Message & data rates may apply.
-                Reply STOP to opt out.
-              </label>
-            </div>
-            <div className="flex items-start gap-3">
-              <Checkbox
-                id="consent-marketing-email"
-                name="consentMarketingEmail"
-                checked={formData.consentMarketingEmail}
-                className="mt-0.5 size-[18px] shrink-0 bg-transparent md:size-[16px] xl:size-[22px]"
-                onCheckedChange={(checked) =>
-                  setFormData((prev) => ({
-                    ...prev,
-                    consentMarketingEmail: Boolean(checked),
-                  }))
-                }
-              />
-              <label
-                htmlFor="consent-marketing-email"
-                className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
-              >
-                By checking, I agree to receive marketing emails from Godly
-                Windows & Wash Co. and I accept{" "}
-                <Link
-                  href="/terms-and-conditions"
-                  className="underline!"
-                >
-                  Terms and Conditions
-                </Link>{" "}
-                and{" "}
-                <Link href="/privacy-policy" className="underline!">
-                  Privacy Policy
-                </Link>
-                .
+                I agree to get information text messages from Godly about my
+                estimate and project.
               </label>
             </div>
           </div>
 
-          <div className="mt-2 mb-6 shrink-0 text-right md:mt-0 md:mb-0">
+          <div className="mt-2 mb-6 shrink-0 self-center text-right md:mt-0 md:mb-0">
             <QuoteButton
               type="submit"
               disabled={isSubmitting}
