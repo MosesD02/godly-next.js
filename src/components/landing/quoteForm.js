@@ -259,7 +259,7 @@ export default function QuoteForm({ isDialog, service, source }) {
                 : "",
             )}
           >
-            We’ll call you within 30 minutes — no pressure, just a friendly
+            We’ll call you within 5 minutes — no pressure, just a friendly
             quote.
           </p>
         </div>

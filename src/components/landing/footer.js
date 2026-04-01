@@ -75,12 +75,12 @@ const Footer = ({ form = true, service }) => {
     <>
       <div className="paper-bg-16 bg-[#262424]">
         <div className="flex flex-col items-center justify-center pt-[30px] text-white">
-          <div className="relative flex w-full items-center justify-center">
-            <h1 className="trim text-whites max-w-[200px] text-center text-[64px] leading-[80px] sm:max-w-[40px]">
-              CITIES SERVE
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="trim text-center text-[64px] leading-none text-white">
+              CITIES
             </h1>
             <span
-              className="trim absolute top-[23px] left-[170px] h-full w-full -rotate-[8deg] font-['luminaire-script'] text-[40px] text-[#FFE7AF] sm:-top-[55px] sm:left-6 sm:translate-x-1/2"
+              className="trim -rotate-[8deg] font-['luminaire-script'] text-[40px] text-[#FFE7AF]"
               style={{
                 textShadow:
                   "-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, " +
@@ -89,6 +89,9 @@ const Footer = ({ form = true, service }) => {
             >
               We
             </span>
+            <h1 className="trim text-center text-[64px] leading-none text-white">
+              SERVE
+            </h1>
           </div>
           <div className="grid grid-cols-2 px-4 py-[60px] md:grid-cols-4 md:px-0">
             {citiesData.map((city, index) => (
