@@ -1,14 +1,16 @@
 import {
   WindowIcon,
   GutterIcon,
-  HouseWashingIcon,
   RoofWashingIcon,
-  PressureWashingIcon,
   ScreenCleansIcon,
   SolarPanelsIcon,
   SealCoatingIcon,
   HolidayLightIcon,
 } from "./servicesIcons";
+import pressureWashingImg from "@/assets/homepageServices/pressure_washing.webp";
+import pressureWashingImgColor from "@/assets/homepageServices/pressure_washing_color.webp";
+import houseWashingImg from "@/assets/homepageServices/house_washing.webp";
+import houseWashingImgColor from "@/assets/homepageServices/house_washing_color.webp";
 
 export const servicesData = [
   {
@@ -41,7 +43,8 @@ export const servicesData = [
   },
   {
     name: "House Washing",
-    icon: <HouseWashingIcon />,
+    image: houseWashingImg,
+    hoverImage: houseWashingImgColor,
     link: "house-washing",
     description:
       "Wash away years of pollen, mold, rust, and dirt — bringing that shine back to your property’s exterior.",
@@ -55,14 +58,16 @@ export const servicesData = [
   },
   {
     name: "Pressure & Soft Washing",
-    icon: <PressureWashingIcon />,
+    image: pressureWashingImg,
+    hoverImage: pressureWashingImgColor,
     link: "pressure-washing",
     description:
       "Get rid of the slippery film and gunk on your driveway, walkways, porches, pool areas, and more.",
   },
   {
     name: "Soft Washing",
-    icon: <HouseWashingIcon />,
+    image: houseWashingImg,
+    hoverImage: houseWashingImgColor,
     link: "soft-washing",
     description:
       "Custom low-pressure treatments for roofs, siding, and exteriors—safe chemistry that lifts algae without damage.",
