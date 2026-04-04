@@ -1,4 +1,4 @@
-import createImageUrlBuilder from "@sanity/image-url";
+import { createImageUrlBuilder } from "@sanity/image-url";
 
 /**
  * Standalone image URL builder — uses only project config so it can run in
