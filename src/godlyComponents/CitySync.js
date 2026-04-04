@@ -8,15 +8,13 @@ import { citiesMap } from "@/data/cities";
 // Extracted so the rest of the services page can be a server component.
 export default function CitySync({ city }) {
   const { setCity } = useGodlyContext();
-  const normalizedCity = city?.replace(/-/g, "_");
 
   useEffect(() => {
-    if (Object.keys(citiesMap).includes(normalizedCity)) {
-      const formattedCity = citiesMap[normalizedCity];
-      setCity(formattedCity);
+    if (city && citiesMap[city]) {
+      setCity(citiesMap[city]);
       document.cookie = `selectedCity=${city};path=/;max-age=31536000`;
     }
-  }, [normalizedCity, city, setCity]);
+  }, [city, setCity]);
 
   return null;
 }

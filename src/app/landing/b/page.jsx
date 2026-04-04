@@ -6,7 +6,7 @@ import {
   generateCityDescription,
   generateCitySchema,
 } from "@/data/metaTitles";
-import Script from "next/script";
+import JsonLd from "@/lib/jsonLd";
 
 const city = "south-florida";
 const cityName = citiesMap[city];
@@ -39,13 +39,7 @@ export default function LandingBPage() {
   return (
     <>
       {schemaMarkup && (
-        <Script
-          id="city-landing-structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaMarkup),
-          }}
-        />
+        <JsonLd id="city-landing-structured-data" data={schemaMarkup} />
       )}
       <GodlyHome city={city} cityName={cityName} />
     </>

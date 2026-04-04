@@ -40,6 +40,29 @@ export function getPhoneForCity(citySlug) {
   return "(954) 852-5326"; // default
 }
 
+/**
+ * Map UI/context city label (e.g. citiesMap value "BOCA RATON") to route slug.
+ */
+export function cityDisplayNameToSlug(displayName) {
+  if (!displayName || typeof displayName !== "string") return null;
+  const normalized = displayName
+    .toUpperCase()
+    .replace(/_/g, "-")
+    .replace(/\s+/g, " ")
+    .trim();
+  return (
+    Object.keys(citiesMap).find((slug) => citiesMap[slug] === normalized) ??
+    null
+  );
+}
+
+/** Phone for footer/header when you only have display city name (not slug). */
+export function getPhoneForCityDisplayName(displayName) {
+  const slug = cityDisplayNameToSlug(displayName);
+  if (slug) return getPhoneForCity(slug);
+  return "(954) 852-5326";
+}
+
 // Google Business Profile URLs by region (matches phone number groups)
 const phoneToGoogleUrl = {
   "(954) 852-5326": "https://g.co/kgs/uCqteyx", // Fort Lauderdale
@@ -47,38 +70,157 @@ const phoneToGoogleUrl = {
   "(954) 738-3421": "https://maps.app.goo.gl/3AHJVTMEPf8SWVrS7?g_st=ic", // Weston
 };
 
+/** Matches footer `getAddress` regions — physical office for that service area. */
+const FT_LAUDERDALE_OFFICE_SLUGS = new Set([
+  "pompano-beach",
+  "fort-lauderdale",
+  "hollywood",
+  "oakland-park",
+  "sunrise",
+  "lighthouse-point",
+  "lauderdale-by-the-sea",
+  "coconut-creek",
+]);
+
+const BOCA_OFFICE_SLUGS = new Set([
+  "delray-beach",
+  "boca-raton",
+  "tamarac",
+  "margate",
+  "coral-springs",
+  "parkland",
+  "deerfield-beach",
+  "hillsboro-beach",
+]);
+
+const OFFICES = {
+  ftLauderdale: {
+    streetAddress: "3315 E Oakland Park Blvd, Suite 204",
+    addressLocality: "Fort Lauderdale",
+    postalCode: "33308",
+    latitude: "26.1723",
+    longitude: "-80.1319",
+  },
+  bocaRaton: {
+    streetAddress: "491 W Camino Real",
+    addressLocality: "Boca Raton",
+    postalCode: "33432",
+    latitude: "26.3521",
+    longitude: "-80.0847",
+  },
+  weston: {
+    streetAddress: "2800 Glades Cir, Suite 106",
+    addressLocality: "Weston",
+    postalCode: "33327",
+    latitude: "26.1382",
+    longitude: "-80.3764",
+  },
+};
+
+function officeRegionKeyForCitySlug(citySlug) {
+  if (!citySlug || citySlug === "south-florida") return "ftLauderdale";
+  if (FT_LAUDERDALE_OFFICE_SLUGS.has(citySlug)) return "ftLauderdale";
+  if (BOCA_OFFICE_SLUGS.has(citySlug)) return "bocaRaton";
+  return "weston";
+}
+
+/** Physical office `PostalAddress` for the region that serves this city slug. */
+export function getOfficePostalAddressForCitySlug(citySlug) {
+  const o = OFFICES[officeRegionKeyForCitySlug(citySlug)];
+  return {
+    "@type": "PostalAddress",
+    streetAddress: o.streetAddress,
+    addressLocality: o.addressLocality,
+    addressRegion: "FL",
+    postalCode: o.postalCode,
+    addressCountry: "US",
+  };
+}
+
+/** Office coordinates for the region that serves this city slug. */
+export function getOfficeGeoForCitySlug(citySlug) {
+  const o = OFFICES[officeRegionKeyForCitySlug(citySlug)];
+  return {
+    "@type": "GeoCoordinates",
+    latitude: o.latitude,
+    longitude: o.longitude,
+  };
+}
+
+/**
+ * Multiline office address for footer (physical location for that market).
+ * Empty for south-florida / unknown.
+ */
+export function getOfficeAddressMultilineForDisplayName(displayName) {
+  const slug = cityDisplayNameToSlug(displayName);
+  if (!slug || slug === "south-florida") return "";
+  const o = OFFICES[officeRegionKeyForCitySlug(slug)];
+  return `${o.streetAddress}\n${o.addressLocality}, FL ${o.postalCode}`;
+}
+
+/** Customer / market city (where services are offered), not the office street city. */
+export function getCityAreaServedSchema(citySlug) {
+  if (!citySlug || !citiesMap[citySlug]) {
+    return {
+      "@type": "State",
+      name: "Florida",
+    };
+  }
+  const name = capitalizeString(citiesMap[citySlug]);
+  return {
+    "@type": "City",
+    name,
+    containedInPlace: { "@type": "State", name: "Florida" },
+  };
+}
+
+export function getSameAsForCitySlug(citySlug) {
+  const phone = getPhoneForCity(citySlug);
+  const googleUrl = phoneToGoogleUrl[phone];
+  return [
+    ...(googleUrl ? [googleUrl] : []),
+    "https://facebook.com/godlywindows",
+    "https://instagram.com/godlywindows",
+  ];
+}
+
+export const businessOpeningHoursSpecification = [
+  {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "08:00",
+    closes: "18:00",
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Saturday"],
+    opens: "08:00",
+    closes: "16:00",
+  },
+];
+
 // JSON-LD schema for city pages — HomeAndConstructionBusiness with aggregateRating
-// Injected via Script component (type="application/ld+json") in [city]/page.js
+// Injected via JsonLd (application/ld+json) in [city]/page.js
 export function generateCitySchema(citySlug) {
   if (!citySlug || !citiesMap[citySlug]) return null;
 
   const cityName = capitalizeString(citiesMap[citySlug]);
   const phone = getPhoneForCity(citySlug);
-  const googleUrl = phoneToGoogleUrl[phone];
-
-  const sameAs = [
-    ...(googleUrl ? [googleUrl] : []),
-    "https://facebook.com/godlywindows",
-    "https://instagram.com/godlywindows",
-  ];
 
   return {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     name: "Godly Windows & Wash Co.",
+    image: "https://godlywindows.com/favicon.svg",
     url: `https://godlywindows.com/${citySlug}`,
     description: `Top-rated window cleaning & exterior services in ${cityName}. Family-owned, fully insured, 5-star rated. Free estimate in 24 hours. Call ${phone}.`,
     telephone: phone,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: cityName,
-      addressRegion: "FL",
-      addressCountry: "US",
-    },
-    openingHours: "Mo-Su 00:00-23:59",
+    address: getOfficePostalAddressForCitySlug(citySlug),
+    geo: getOfficeGeoForCitySlug(citySlug),
+    openingHoursSpecification: businessOpeningHoursSpecification,
     priceRange: "$$",
-    sameAs,
-    areaServed: `${cityName}, FL`,
+    sameAs: getSameAsForCitySlug(citySlug),
+    areaServed: getCityAreaServedSchema(citySlug),
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5",

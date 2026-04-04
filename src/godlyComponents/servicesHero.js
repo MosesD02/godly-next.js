@@ -4,11 +4,17 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import FreeQuoteButton from "@/components/freeQuote";
 import Services from "@/data/servicesData";
-import { generateServiceH1, generateServiceHeroAlt } from "@/data/metaTitles";
+import {
+  generateServiceH1,
+  generateServiceHeroAlt,
+} from "@/data/metaTitles";
+import { getPhoneNumber } from "@/lib/getPhoneNumber";
 
 // cityName is passed as a prop from the server so the correct value is in the
 // initial SSR HTML.
 const ServicesHero = ({ slug, heroOverride, cityName }) => {
+  const quotePhone = getPhoneNumber(cityName ?? "SOUTH FLORIDA");
+  const quoteTel = quotePhone.replace(/\D/g, "");
   const displayCity = cityName
     ? cityName.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase())
     : "South Florida";
@@ -110,8 +116,8 @@ const ServicesHero = ({ slug, heroOverride, cityName }) => {
       </div>
       {slug === "holiday-lighting" ? (
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <a href="tel:9547514128" className="free-button">
-            <span>GET A FREE QUOTE — (954) 751-4128</span>
+          <a href={`tel:${quoteTel}`} className="free-button">
+            <span>GET A FREE QUOTE — {quotePhone}</span>
           </a>
           <a
             href="https://godlyholidaylights.com"

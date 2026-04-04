@@ -24,7 +24,7 @@ import lightFixtures from "@/assets/homepageServices/light_fixtures.webp";
 import screenCleans from "@/assets/homepageServices/screen_cleans.webp";
 import solarPanels from "@/assets/homepageServices/solar_panels.webp";
 import sealCoating from "@/assets/homepageServices/seal_coating.webp";
-import santaBg from "@/assets/homepageServices/santa_bg.webp";
+import santaBg from "@/assets/homepageServices/santa_bg.png";
 
 const services = [
   {

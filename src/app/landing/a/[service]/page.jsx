@@ -7,7 +7,7 @@ import {
   generateCitySchema,
 } from "@/data/metaTitles";
 import { notFound } from "next/navigation";
-import Script from "next/script";
+import JsonLd from "@/lib/jsonLd";
 
 // This page handles /landing/a/[city] routes (e.g. /landing/a/fort-lauderdale)
 // The [service] param is used as city slug since it's the same dynamic segment
@@ -72,13 +72,7 @@ export default async function CityLandingPage({ params }) {
   return (
     <>
       {schemaMarkup && (
-        <Script
-          id="city-landing-structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaMarkup),
-          }}
-        />
+        <JsonLd id="city-landing-structured-data" data={schemaMarkup} />
       )}
       <GodlyHome city={city} cityName={cityName} />
     </>

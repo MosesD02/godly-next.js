@@ -11,6 +11,7 @@ import { citiesMap } from "./cities";
 
 const POSTS_QUERY = `*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
   _id,
+  _updatedAt,
   title,
   "slug": slug.current,
   excerpt,
@@ -34,6 +35,7 @@ const POSTS_QUERY = `*[_type == "post" && defined(slug.current)] | order(publish
 
 const POST_BY_SLUG_QUERY = `*[_type == "post" && slug.current == $slug][0] {
   _id,
+  _updatedAt,
   title,
   "slug": slug.current,
   excerpt,

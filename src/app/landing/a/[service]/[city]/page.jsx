@@ -7,8 +7,14 @@ import {
   generateServiceDescription,
   generateServiceHeroAlt,
   serviceMetaTitles,
+  getPhoneForCity,
+  getOfficePostalAddressForCitySlug,
+  getOfficeGeoForCitySlug,
+  getCityAreaServedSchema,
+  getSameAsForCitySlug,
+  businessOpeningHoursSpecification,
 } from "@/data/metaTitles";
-import Script from "next/script";
+import JsonLd from "@/lib/jsonLd";
 
 export async function generateStaticParams() {
   const services = Object.keys(serviceMetaTitles);
@@ -77,45 +83,32 @@ export default async function LandingPage({ params }) {
   // Resolve cityName on the server so it renders on first paint
   const cityName = citiesMap[city] || city.replace(/-/g, " ").toUpperCase();
 
-  // Structured data for service pages
-  const cityFormatted = cityName
-    .toLowerCase()
-    .replace(/\b\w/g, (l) => l.toUpperCase());
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: serviceMetaTitles[service] || service.replace(/-/g, " "),
     provider: {
       "@type": "LocalBusiness",
-      name: "Godly Windows",
-      url: BASE_URL,
-      telephone: "+1-555-GODLY-WIN",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: cityFormatted,
-        addressRegion: "FL",
-        addressCountry: "US",
-      },
+      "@id": `${BASE_URL}/${city}#localbusiness`,
+      name: "Godly Windows & Wash Co.",
+      image: `${BASE_URL}/favicon.svg`,
+      url: `${BASE_URL}/${city}`,
+      telephone: getPhoneForCity(city),
+      priceRange: "$$",
+      address: getOfficePostalAddressForCitySlug(city),
+      geo: getOfficeGeoForCitySlug(city),
+      openingHoursSpecification: businessOpeningHoursSpecification,
+      sameAs: getSameAsForCitySlug(city),
+      areaServed: getCityAreaServedSchema(city),
     },
-    areaServed: {
-      "@type": "City",
-      name: cityFormatted,
-      addressRegion: "FL",
-      addressCountry: "US",
-    },
+    areaServed: getCityAreaServedSchema(city),
     description: generateServiceDescription(service, city),
     url: `${BASE_URL}/landing/a/${service}/${city}`,
   };
 
   return (
     <>
-      <Script
-        id="service-structured-data"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
-        }}
-      />
+      <JsonLd id="service-structured-data" data={structuredData} />
       <GodlyHome
         city={city}
         cityName={cityName}

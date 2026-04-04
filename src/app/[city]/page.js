@@ -6,7 +6,7 @@ import {
   generateCityDescription,
   generateCitySchema,
 } from "@/data/metaTitles";
-import Script from "next/script";
+import JsonLd from "@/lib/jsonLd";
 
 export async function generateStaticParams() {
   return Object.keys(citiesMap)
@@ -67,13 +67,7 @@ export default async function Page({ params }) {
   return (
     <>
       {schemaMarkup && (
-        <Script
-          id="city-structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schemaMarkup),
-          }}
-        />
+        <JsonLd id="city-structured-data" data={schemaMarkup} />
       )}
       <GodlyHome city={city} />
     </>

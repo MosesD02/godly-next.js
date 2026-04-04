@@ -12,6 +12,7 @@ import { citiesMap } from "@/data/cities";
 import { usePathname } from "next/navigation";
 import SectionButton from "@/components/sectionButton";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
+import { getOfficeAddressMultilineForDisplayName } from "@/data/metaTitles";
 export { getPhoneNumber };
 
 const citiesData = [
@@ -43,43 +44,6 @@ const citiesData = [
   "WESTON",
 ];
 
-const getAddress = (city) => {
-  const cityToCheck = city.toUpperCase();
-
-  if (
-    [
-      "POMPANO BEACH",
-      "FORT LAUDERDALE",
-      "HOLLYWOOD",
-      "OAKLAND PARK",
-      "SUNRISE",
-      "LIGHTHOUSE POINT",
-      "LAUDERDALE-BY-THE-SEA",
-      "COCONUT CREEK",
-    ].includes(cityToCheck)
-  ) {
-    return "3315 E Oakland Park Blvd. Suite 204\nFt. Lauderdale, FL 33308";
-  } else if (
-    [
-      "DELRAY BEACH",
-      "BOCA RATON",
-      "TAMARAC",
-      "MARGATE",
-      "CORAL SPRINGS",
-      "PARKLAND",
-      "ROYAL PALM BEACH",
-      "DEERFIELD BEACH",
-      "HILLSBORO BEACH",
-    ].includes(cityToCheck)
-  ) {
-    return "491 W Camino Real\nBoca Raton, FL 33432";
-  } else if ("SOUTH FLORIDA" === cityToCheck) {
-    return "";
-  } else {
-    return "2800 Glades Cir Suite 106\nWeston, FL 33327";
-  }
-};
-
 const Footer = () => {
   const { city } = useGodlyContext();
   const pathname = usePathname();
@@ -99,15 +63,15 @@ const Footer = () => {
 
   const urlCityKey = getCityFromUrl();
   const phoneNumber = getPhoneNumber(city);
-  const address = getAddress(city);
+  const address = getOfficeAddressMultilineForDisplayName(city);
 
   return (
     <div className="paper-bg-16 bg-[#262424]">
       <div className="flex flex-col items-center justify-center pt-[30px] text-white">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="trim text-center text-[64px] leading-none text-white">
+          <h2 className="trim text-center text-[64px] leading-none text-white">
             CITIES
-          </h1>
+          </h2>
           <span
             className="trim -rotate-[8deg] font-['luminaire-script'] text-[40px] text-[#FFE7AF]"
             style={{
@@ -118,9 +82,9 @@ const Footer = () => {
           >
             We
           </span>
-          <h1 className="trim text-center text-[64px] leading-none text-white">
+          <h2 className="trim text-center text-[64px] leading-none text-white">
             SERVE
-          </h1>
+          </h2>
         </div>
         <div className="grid grid-cols-2 px-4 py-[60px] md:grid-cols-4">
           {citiesData.map((city, index) => (
@@ -447,7 +411,9 @@ const Footer = () => {
 
               <div className="hidden flex-col gap-2 text-right md:flex md:items-end">
                 <p className="font-['satoshi-regular'] text-lg font-normal">
-                  <Link href={`tel:${phoneNumber}`}>{phoneNumber}</Link>
+                  <Link href={`tel:${phoneNumber.replace(/\D/g, "")}`}>
+                    {phoneNumber}
+                  </Link>
                 </p>
                 <Link href="mailto:hello@godlywindows.com">
                   <p className="font-['satoshi-regular'] text-sm font-normal">

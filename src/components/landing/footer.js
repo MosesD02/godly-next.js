@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import QuoteForm from "./quoteForm";
+import { getPhoneNumber } from "@/lib/getPhoneNumber";
 
 const citiesData = [
   "BOCA RATON",
@@ -34,51 +35,15 @@ const citiesData = [
   "WESTON",
 ];
 
-export const getPhoneNumber = (city) => {
-  const cityToCheck = city.toUpperCase();
-
-  if (
-    [
-      "POMPANO BEACH",
-      "FORT LAUDERDALE",
-      "HOLLYWOOD",
-      "OAKLAND PARK",
-      "SUNRISE",
-      "LIGHTHOUSE POINT",
-      "LAUDERDALE-BY-THE-SEA",
-      "SOUTH FLORIDA",
-      "COCONUT CREEK",
-    ].includes(cityToCheck)
-  ) {
-    return "(954) 852-5326";
-  } else if (
-    [
-      "DELRAY BEACH",
-      "BOCA RATON",
-      "TAMARAC",
-      "MARGATE",
-      "CORAL SPRINGS",
-      "PARKLAND",
-      "ROYAL PALM BEACH",
-      "DEERFIELD BEACH",
-      "HILLSBORO BEACH",
-    ].includes(cityToCheck)
-  ) {
-    return "(561) 826-4461";
-  } else {
-    return "(954) 738-3421";
-  }
-};
-
 const Footer = ({ form = true, service }) => {
   return (
     <>
       <div className="paper-bg-16 bg-[#262424]">
         <div className="flex flex-col items-center justify-center pt-[30px] text-white">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="trim text-center text-[64px] leading-none text-white">
+            <h2 className="trim text-center text-[64px] leading-none text-white">
               CITIES
-            </h1>
+            </h2>
             <span
               className="trim -rotate-[8deg] font-['luminaire-script'] text-[40px] text-[#FFE7AF]"
               style={{
@@ -89,9 +54,9 @@ const Footer = ({ form = true, service }) => {
             >
               We
             </span>
-            <h1 className="trim text-center text-[64px] leading-none text-white">
+            <h2 className="trim text-center text-[64px] leading-none text-white">
               SERVE
-            </h1>
+            </h2>
           </div>
           <div className="grid grid-cols-2 px-4 py-[60px] md:grid-cols-4 md:px-0">
             {citiesData.map((city, index) => (

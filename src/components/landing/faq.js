@@ -35,12 +35,12 @@ const Faq = () => {
         className="flex w-full max-w-4xl flex-col"
         style={{ alignItems: "center", justifyContent: "center" }}
       >
-        <h1
+        <h2
           className="text-grain !bg-[#191717] text-[32px] font-black tracking-wide md:text-8xl"
           data-text="FREQUENTLY"
         >
           FREQUENTLY
-        </h1>
+        </h2>
         <h4 className="text-[24px] font-semibold tracking-wide text-[#191717] md:text-2xl">
           <span>ASKED</span>{" "}
           <span

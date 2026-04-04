@@ -7,7 +7,6 @@ import { generateHomeH1, generateCityHeroAlt } from "@/data/metaTitles";
 import Link from "next/link";
 
 const Hero = ({ cityName: city }) => {
-
   // City-specific content
   const getCitySpecificContent = () => {
     if (city === "PARKLAND") {
@@ -271,31 +270,31 @@ const Hero = ({ cityName: city }) => {
               role="heading"
               aria-level="1"
             >
-              <span className="font-marlton trim shrink-0 text-[32px] font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+              <span className="font-marlton trim shrink-0 text-[32px] leading-[1.1] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]">
                 Window
               </span>
-              <span className="font-marlton trim shrink-0 text-[32px] font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+              <span className="font-marlton trim shrink-0 text-[32px] leading-[1.1] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]">
                 cleaning
               </span>
               <span className="shrink-0 self-center font-['luminaire-script'] text-[16px] leading-[1] text-[#FDE4C8] md:text-lg xl:text-2xl">
                 And
               </span>
-              <span className="font-marlton trim shrink-0 text-[32px] font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+              <span className="font-marlton trim shrink-0 text-[32px] leading-[1.1] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]">
                 pressure
               </span>
-              <span className="font-marlton trim shrink-0 text-[32px] font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
+              <span className="font-marlton trim shrink-0 text-[32px] leading-[1.1] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]">
                 Washing
               </span>
-              <span className="font-marlton trim shrink-0 text-4xl font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
+              <span className="font-marlton trim shrink-0 text-4xl leading-[1.1] font-normal tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]">
                 services
               </span>
-              <span className="font-marlton trim shrink-0 text-4xl font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]">
+              <span className="font-marlton trim shrink-0 text-4xl leading-[1.1] font-normal tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]">
                 In
               </span>
               {(city || "SOUTH FLORIDA").split(" ").map((word) => (
                 <span
                   key={word}
-                  className="font-marlton trim shrink-0 text-4xl font-normal leading-[1.1] xl:leading-[3] tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] 2xl:text-[73.161px]"
+                  className="font-marlton trim shrink-0 text-4xl leading-[1.1] font-normal tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]"
                 >
                   {word}
                 </span>

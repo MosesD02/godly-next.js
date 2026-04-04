@@ -1,14 +1,22 @@
 import { notFound } from "next/navigation";
 import ServicesPage from "@/godlyComponents/servicesPage";
-import FaqSchema from "@/components/FaqSchema";
 import { citiesMap } from "@/data/cities";
 import {
   generateServiceTitle,
   generateServiceDescription,
+  serviceMetaTitles,
+  getPhoneForCity,
+  getOfficePostalAddressForCitySlug,
+  getOfficeGeoForCitySlug,
+  getCityAreaServedSchema,
+  getSameAsForCitySlug,
+  businessOpeningHoursSpecification,
 } from "@/data/metaTitles";
 import { getRelatedBlogPosts } from "@/data/sanity-content";
 import Services from "@/data/servicesData";
 import { cityServicesData } from "@/data/cityServicesData/index";
+import JsonLd from "@/lib/jsonLd";
+import { BASE_URL } from "@/app/lib/constants";
 
 export async function generateStaticParams() {
   const cities = Object.keys(citiesMap).filter((c) => c !== "south-florida");
@@ -78,9 +86,79 @@ export default async function GodlyServices({ params }) {
     // Sanity unavailable — render the page without blog posts
   }
 
+  const serviceLabel =
+    serviceMetaTitles[slug] ||
+    slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
+  const pageUrl = `${BASE_URL}/${city}/${slug}`;
+  const cityUrl = `${BASE_URL}/${city}`;
+
+  const localBusiness = {
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@id": `${pageUrl}#localbusiness`,
+    name: "Godly Windows & Wash Co.",
+    image: `${BASE_URL}/favicon.svg`,
+    url: pageUrl,
+    telephone: getPhoneForCity(city),
+    description: generateServiceDescription(slug, cityName),
+    address: getOfficePostalAddressForCitySlug(city),
+    geo: getOfficeGeoForCitySlug(city),
+    openingHoursSpecification: businessOpeningHoursSpecification,
+    priceRange: "$$",
+    sameAs: getSameAsForCitySlug(city),
+    areaServed: getCityAreaServedSchema(city),
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "157",
+    },
+  };
+
+  const breadcrumbList = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: BASE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: cityName || city,
+        item: cityUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: `${serviceLabel} — ${cityName || city}`,
+        item: pageUrl,
+      },
+    ],
+  };
+
+  const graph = {
+    "@context": "https://schema.org",
+    "@graph": [localBusiness, breadcrumbList],
+  };
+
+  if (cityData.faqs?.length > 0) {
+    graph["@graph"].push({
+      "@type": "FAQPage",
+      mainEntity: cityData.faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    });
+  }
+
   return (
     <>
-      <FaqSchema faqs={cityData.faqs} />
+      <JsonLd id="service-page-schema" data={graph} />
       <ServicesPage
         slug={slug}
         city={city}
