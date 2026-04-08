@@ -61,12 +61,12 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}`}
         suppressHydrationWarning
       >
-        {/* Google Analytics */}
+        {/* Google Analytics (GA4) — beforeInteractive loads gtag.js from <head> */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-6P0ST66B9P"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

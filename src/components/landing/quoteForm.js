@@ -1,5 +1,6 @@
 "use client";
 import { React, useState, useRef, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -10,7 +11,15 @@ import { cn } from "@/lib/utils";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
 
-export default function QuoteForm({ isDialog, service, source }) {
+export default function QuoteForm({
+  isDialog,
+  service,
+  source,
+  formTrackingId = "main",
+}) {
+  const pathname = usePathname();
+  const isLandingAb =
+    pathname?.startsWith("/landing/a") || pathname?.startsWith("/landing/b");
   const [date, setDate] = useState();
   const [formData, setFormData] = useState({
     name: "",
@@ -226,6 +235,8 @@ export default function QuoteForm({ isDialog, service, source }) {
 
   return (
     <form
+      id={`landing-quote-${formTrackingId}`}
+      name={`landing-quote-${formTrackingId}`}
       onSubmit={handleSubmit}
       className={cn(
         "md:mt-2 xl:mt-3",
@@ -259,7 +270,7 @@ export default function QuoteForm({ isDialog, service, source }) {
                 : "",
             )}
           >
-            We’ll call you within 5 minutes — no pressure, just a friendly
+            We’ll call you within one minute — no pressure, just a friendly
             quote.
           </p>
         </div>
@@ -352,7 +363,10 @@ export default function QuoteForm({ isDialog, service, source }) {
             <QuoteButton
               type="submit"
               disabled={isSubmitting}
-              className={isDialog && "estimate-button"}
+              className={cn(
+                isDialog ? "estimate-button" : "quote-button",
+                isLandingAb && "cta",
+              )}
             >
               {isSubmitting ? "Submitting..." : "Get My Free Quote"}
             </QuoteButton>

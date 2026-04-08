@@ -9,6 +9,7 @@ import WebsiteLayout from "./websiteLayout";
 import TeamGallery from "@/godlyComponents/teamGallery";
 import CitySync from "@/godlyComponents/CitySync";
 import LandingTracker from "./LandingTracker";
+import LandingAbConversionScript from "./LandingAbConversionScript";
 
 import SingleReview from "./singleReview";
 import Faq from "./faq";
@@ -30,6 +31,7 @@ export default function GodlyHome({ city, cityName, service, serviceSlug }) {
       <Testimonials />
       <HowItWorks />
       <Faq />
+      <LandingAbConversionScript />
     </WebsiteLayout>
   );
 }

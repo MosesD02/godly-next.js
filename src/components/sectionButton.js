@@ -1,7 +1,9 @@
 // components/FreeEstimateButton.tsx
 "use client";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import {
   Dialog,
   DialogContent,
@@ -12,9 +14,15 @@ import QuoteForm from "@/godlyComponents/quoteForm";
 
 export default function SectionButton({ children }) {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const isLandingAb =
+    pathname?.startsWith("/landing/a") || pathname?.startsWith("/landing/b");
   return (
     <>
-      <Button onClick={() => setIsOpen(true)} className="estimate-button">
+      <Button
+        onClick={() => setIsOpen(true)}
+        className={cn("estimate-button", isLandingAb && "cta")}
+      >
         <span className="">{children}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
