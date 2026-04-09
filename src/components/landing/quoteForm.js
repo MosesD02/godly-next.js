@@ -270,7 +270,7 @@ export default function QuoteForm({
                 : "",
             )}
           >
-            We’ll call you within one minute — no pressure, just a friendly
+            We’ll call you within 1 minute — no pressure, just a friendly
             quote.
           </p>
         </div>
