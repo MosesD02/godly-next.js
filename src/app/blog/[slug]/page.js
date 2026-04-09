@@ -40,19 +40,51 @@ export async function generateStaticParams() {
     getAllSanitySlugs(),
     getSanityCitySlugs(),
   ]);
-  const allSlugs = new Set([
-    ...postSlugs,
-    ...citySlugs,
-    ...Object.keys(citiesMap),
-  ]);
+  const validCitySlugs = citySlugs.filter((s) => citiesMap[s]);
+  const allSlugs = new Set([...postSlugs, ...validCitySlugs]);
   return [...allSlugs].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
 
-  // City blog index metadata
+  const post = await getSanityPostBySlug(slug);
+  if (post) {
+    const description = clampMetaDescription(
+      post.metaDescription || post.excerpt || "",
+    );
+
+    return {
+      title: post.metaTitle || post.title,
+      description,
+      keywords: [post.targetKeyword, post.targetCity, "Godly Windows"].filter(
+        Boolean,
+      ),
+      openGraph: {
+        title: post.metaTitle || post.title,
+        description,
+        url: `${BASE_URL}/blog/${post.slug}`,
+        siteName: "Godly Windows",
+        locale: "en_US",
+        type: "article",
+        publishedTime: post.publishedAt,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: post.metaTitle || post.title,
+        description,
+      },
+      alternates: {
+        canonical: `/blog/${post.slug}`,
+      },
+    };
+  }
+
   if (citiesMap[slug]) {
+    const cityPosts = await getSanityPostsByCity(slug);
+    if (cityPosts.length === 0) {
+      return {};
+    }
     const cityName = toCityTitle(slug);
     return {
       title: `${cityName} Blog | Godly Windows & Wash Co.`,
@@ -70,38 +102,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  // Individual blog post metadata
-  const post = await getSanityPostBySlug(slug);
-  if (!post) return {};
-
-  const description = clampMetaDescription(
-    post.metaDescription || post.excerpt || "",
-  );
-
-  return {
-    title: post.metaTitle || post.title,
-    description,
-    keywords: [post.targetKeyword, post.targetCity, "Godly Windows"].filter(
-      Boolean,
-    ),
-    openGraph: {
-      title: post.metaTitle || post.title,
-      description,
-      url: `${BASE_URL}/blog/${post.slug}`,
-      siteName: "Godly Windows",
-      locale: "en_US",
-      type: "article",
-      publishedTime: post.publishedAt,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.metaTitle || post.title,
-      description,
-    },
-    alternates: {
-      canonical: `/blog/${post.slug}`,
-    },
-  };
+  return {};
 }
 
 export const revalidate = 60;
@@ -110,9 +111,101 @@ export default async function BlogPostRoute({ params, searchParams }) {
   const { slug } = await params;
   const sp = await searchParams;
 
-  // City blog index
+  const post = await getSanityPostBySlug(slug);
+  if (post) {
+    const headline = post.metaTitle || post.title;
+    const description = clampMetaDescription(
+      post.metaDescription || post.excerpt || "",
+    );
+    const pageUrl = `${BASE_URL}/blog/${post.slug}`;
+    const datePublished = toIsoDate(post.publishedAt);
+    const dateModified =
+      toIsoDate(post._updatedAt) || datePublished || undefined;
+
+    const org = {
+      "@type": "Organization",
+      name: "Godly Windows & Wash Co.",
+      url: BASE_URL,
+    };
+
+    const blogPosting = {
+      "@type": "BlogPosting",
+      headline,
+      description,
+      datePublished,
+      dateModified,
+      author: org,
+      publisher: { ...org },
+      url: pageUrl,
+      ...(post.citySlug && citiesMap[post.citySlug]
+        ? { contentLocation: getCityAreaServedSchema(post.citySlug) }
+        : post.targetCity
+          ? {
+              contentLocation: {
+                "@type": "City",
+                name: post.targetCity,
+                containedInPlace: { "@type": "State", name: "Florida" },
+              },
+            }
+          : {}),
+    };
+
+    const breadcrumbList = {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: BASE_URL,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: `${BASE_URL}/blog`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: headline,
+          item: pageUrl,
+        },
+      ],
+    };
+
+    const graph = {
+      "@context": "https://schema.org",
+      "@graph": [blogPosting, breadcrumbList],
+    };
+
+    if (post.faq?.length > 0) {
+      graph["@graph"].push({
+        "@type": "FAQPage",
+        mainEntity: post.faq.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      });
+    }
+
+    return (
+      <>
+        <JsonLd id="blog-post-schema" data={graph} />
+        <BlogPostPage post={post} />
+      </>
+    );
+  }
+
   if (citiesMap[slug]) {
     const allPosts = await getSanityPostsByCity(slug);
+    if (allPosts.length === 0) {
+      notFound();
+    }
     const cityName = toCityTitle(slug);
     const { pagePosts, currentPage, totalPages } = paginateBlogPosts(
       allPosts,
@@ -131,97 +224,5 @@ export default async function BlogPostRoute({ params, searchParams }) {
     );
   }
 
-  // Individual blog post
-  const post = await getSanityPostBySlug(slug);
-
-  if (!post) {
-    notFound();
-  }
-
-  const headline = post.metaTitle || post.title;
-  const description = clampMetaDescription(
-    post.metaDescription || post.excerpt || "",
-  );
-  const pageUrl = `${BASE_URL}/blog/${post.slug}`;
-  const datePublished = toIsoDate(post.publishedAt);
-  const dateModified =
-    toIsoDate(post._updatedAt) || datePublished || undefined;
-
-  const org = {
-    "@type": "Organization",
-    name: "Godly Windows & Wash Co.",
-    url: BASE_URL,
-  };
-
-  const blogPosting = {
-    "@type": "BlogPosting",
-    headline,
-    description,
-    datePublished,
-    dateModified,
-    author: org,
-    publisher: { ...org },
-    url: pageUrl,
-    ...(post.citySlug && citiesMap[post.citySlug]
-      ? { contentLocation: getCityAreaServedSchema(post.citySlug) }
-      : post.targetCity
-        ? {
-            contentLocation: {
-              "@type": "City",
-              name: post.targetCity,
-              containedInPlace: { "@type": "State", name: "Florida" },
-            },
-          }
-        : {}),
-  };
-
-  const breadcrumbList = {
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: BASE_URL,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Blog",
-        item: `${BASE_URL}/blog`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: headline,
-        item: pageUrl,
-      },
-    ],
-  };
-
-  const graph = {
-    "@context": "https://schema.org",
-    "@graph": [blogPosting, breadcrumbList],
-  };
-
-  if (post.faq?.length > 0) {
-    graph["@graph"].push({
-      "@type": "FAQPage",
-      mainEntity: post.faq.map((item) => ({
-        "@type": "Question",
-        name: item.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: item.answer,
-        },
-      })),
-    });
-  }
-
-  return (
-    <>
-      <JsonLd id="blog-post-schema" data={graph} />
-      <BlogPostPage post={post} />
-    </>
-  );
+  notFound();
 }

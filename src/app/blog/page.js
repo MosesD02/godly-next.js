@@ -1,5 +1,6 @@
 import { citiesMap } from "@/data/cities";
 import { getAllSanityPosts } from "@/data/sanity-content";
+import { BASE_URL } from "@/app/lib/constants";
 import {
   paginateBlogPosts,
   redirectIfBlogListPageMismatch,
@@ -16,7 +17,7 @@ export const metadata = {
     title: "Blog | Godly Windows & Wash Co.",
     description:
       "Expert tips on pressure washing and window cleaning for South Florida homeowners.",
-    url: "https://godlywindows.com/blog",
+    url: `${BASE_URL}/blog`,
     siteName: "Godly Windows",
     type: "website",
   },

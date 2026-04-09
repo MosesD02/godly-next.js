@@ -18,30 +18,25 @@ const INLINE =
     window.__getUtms = () => JSON.parse(sessionStorage.getItem('utms') || '{}');
   })();
 
-  document.addEventListener('submit', function (e) {
-    const form = e.target;
-    if (form.tagName !== 'FORM') return;
-    gtag('event', 'generate_lead', Object.assign({
-      form_id: form.id || form.name || 'unknown',
-      page_path: location.pathname
-    }, window.__getUtms()));
-  }, true);
-
-  document.addEventListener('click', function (e) {
-    const el = e.target.closest('a.cta, button.cta, a[href^="tel:"]');
-    if (!el) return;
-    const isCall = el.getAttribute('href')?.startsWith('tel:');
-    gtag('event', isCall ? 'call_click' : 'cta_click', Object.assign({
-      label: el.innerText.trim().slice(0, 50),
-      page_path: location.pathname
-    }, window.__getUtms()));
-  }, true);
+  (function () {
+    if (window.__godlyLandingClickTrackingBound) return;
+    window.__godlyLandingClickTrackingBound = true;
+    document.addEventListener('click', function (e) {
+      if (typeof gtag !== 'function') return;
+      const el = e.target.closest('a.cta, button.cta, a[href^="tel:"]');
+      if (!el) return;
+      const isCall = el.getAttribute('href')?.startsWith('tel:');
+      gtag('event', isCall ? 'call_click' : 'cta_click', Object.assign({
+        label: el.innerText.trim().slice(0, 50),
+        page_path: location.pathname
+      }, window.__getUtms()));
+    }, true);
+  })();
 `.trim();
 
 export default function LandingAbConversionScript() {
   const pathname = usePathname();
-  const enabled =
-    pathname?.startsWith("/landing/a") || pathname?.startsWith("/landing/b");
+  const enabled = pathname?.startsWith("/landing");
   if (!enabled) return null;
 
   return (

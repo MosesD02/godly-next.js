@@ -379,15 +379,49 @@ export default function QuoteForm({ isDialog }) {
 
       if (typeof window !== "undefined" && window.gtag) {
         const gtag = window.gtag;
+        const servicesParam = Array.isArray(formData.services)
+          ? formData.services.join(", ")
+          : String(formData.services ?? "");
+
+        gtag("event", "generate_lead", {
+          currency: "USD",
+          value: 1,
+          form_id: isDialog ? "main-quote-dialog" : "main-quote-embedded",
+          page_path: pathname || "",
+          services: servicesParam,
+          source: "organic",
+        });
+
+        // Matches Google Ads import: godlywindows.com (web) close_convert_lead
+        const leadTransactionId =
+          typeof crypto !== "undefined" && crypto.randomUUID
+            ? crypto.randomUUID()
+            : `lead_${Date.now()}`;
+        gtag("event", "close_convert_lead", {
+          currency: "USD",
+          value: 1,
+          transaction_id: leadTransactionId,
+          form_id: isDialog ? "main-quote-dialog" : "main-quote-embedded",
+          page_path: pathname || "",
+          services: servicesParam,
+          source: "organic",
+        });
+
+        gtag("event", "qualify_lead", {
+          currency: "USD",
+          value: 1,
+          transaction_id: leadTransactionId,
+          form_id: isDialog ? "main-quote-dialog" : "main-quote-embedded",
+          page_path: pathname || "",
+          services: servicesParam,
+          source: "organic",
+        });
 
         gtag("event", "quote_form_submission", {
           event_category: "engagement",
           event_label: "Quote Form Submission",
           value: 1,
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          services: [formData.services],
+          services: servicesParam,
           date: date ? format(date, "MM/dd/yyyy") : null,
           zipcode: formData.zipcode,
           source: "organic",

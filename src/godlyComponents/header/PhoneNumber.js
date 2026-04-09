@@ -14,7 +14,6 @@ const PhoneNumber = () => {
       window.gtag("event", "phone_number_click", {
         event_category: "engagement",
         event_label: "Phone Number Click",
-        phone_number: phoneNumber,
         city: city,
       });
     }

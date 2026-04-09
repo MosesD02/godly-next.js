@@ -1,4 +1,5 @@
 import PrivacyPolicy from "@/godlyComponents/privacyPolicy";
+import { BASE_URL } from "@/app/lib/constants";
 
 export const metadata = {
   title: "Privacy Policy | Godly Windows & Wash Co.",
@@ -16,7 +17,7 @@ export const metadata = {
     title: "Privacy Policy | Godly Windows & Wash Co.",
     description:
       "Privacy Policy for Godly Windows & Wash Co. Learn how we collect, use, and protect your personal information.",
-    url: "https://godlywindows.com/privacy-policy",
+    url: `${BASE_URL}/privacy-policy`,
     siteName: "Godly Windows",
     locale: "en_US",
     type: "website",

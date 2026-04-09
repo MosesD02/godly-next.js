@@ -7,6 +7,7 @@ import {
   generateCitySchema,
 } from "@/data/metaTitles";
 import JsonLd from "@/lib/jsonLd";
+import { BASE_URL } from "@/app/lib/constants";
 
 export async function generateStaticParams() {
   return Object.keys(citiesMap)
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title,
       description,
-      url: `https://godlywindows.com/${city}`,
+      url: `${BASE_URL}/${city}`,
       siteName: "Godly Windows",
       locale: "en_US",
       type: "website",

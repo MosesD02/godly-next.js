@@ -1,5 +1,6 @@
 import WebsiteLayout from "@/components/landing/websiteLayout";
 import Hero from "@/components/landing/hero";
+import { BASE_URL } from "@/app/lib/constants";
 
 // Generate metadata for booking page
 export const metadata = {
@@ -22,7 +23,7 @@ export const metadata = {
     title: "Book Window Cleaning & Pressure Washing Services | Godly Windows",
     description:
       "Book professional window cleaning and pressure washing services in South Florida. Free estimates, satisfaction guarantee, and expert exterior cleaning for homes and businesses.",
-    url: "https://godlywindows.com/booking",
+    url: `${BASE_URL}/booking`,
     siteName: "Godly Windows",
     locale: "en_US",
     type: "website",

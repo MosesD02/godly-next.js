@@ -1,4 +1,5 @@
 import TermsAndConditions from "@/godlyComponents/termsAndConditions";
+import { BASE_URL } from "@/app/lib/constants";
 
 export const metadata = {
   title: "Terms and Conditions | Godly Windows & Wash Co.",
@@ -17,7 +18,7 @@ export const metadata = {
     title: "Terms and Conditions | Godly Windows & Wash Co.",
     description:
       "Terms and Conditions for Godly Windows & Wash Co. Learn about our service policies and user agreements.",
-    url: "https://godlywindows.com/terms-and-conditions",
+    url: `${BASE_URL}/terms-and-conditions`,
     siteName: "Godly Windows",
     locale: "en_US",
     type: "website",

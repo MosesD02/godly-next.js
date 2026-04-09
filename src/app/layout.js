@@ -61,17 +61,18 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}`}
         suppressHydrationWarning
       >
-        {/* Google Analytics (GA4) — beforeInteractive loads gtag.js from <head> */}
+        {/* GA4 + Google Ads: one gtag.js load, two configs (avoids duplicate library fetch) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-6P0ST66B9P"
           strategy="beforeInteractive"
         />
-        <Script id="google-analytics" strategy="beforeInteractive">
+        <Script id="google-tags" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-6P0ST66B9P');
+            gtag('config', 'AW-16971177751');
           `}
         </Script>
 
@@ -84,20 +85,6 @@ export default function RootLayout({ children }) {
 
         <Script id="helpcrunch-loader" strategy="afterInteractive">
           {`(function(w,d){var hS=w.helpcrunchSettings;if(!hS||!hS.organization){return;}var widgetSrc='https://embed.helpcrunch.com/sdk.js';w.HelpCrunch=function(){w.HelpCrunch.q.push(arguments)};w.HelpCrunch.q=[];function r(){if (d.querySelector('script[src="' + widgetSrc + '"')) { return; }var s=d.createElement('script');s.async=1;s.type='text/javascript';s.src=widgetSrc;(d.body||d.head).appendChild(s);}if(d.readyState === 'complete'||hS.loadImmediately){r();} else if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}})(window, document)`}
-        </Script>
-
-        {/* Google tag (gtag.js) */}
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16971177751"
-        />
-        <Script id="google-analytics-1" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-16971177751');
-          `}
         </Script>
 
         <AppWrapper>{children}</AppWrapper>

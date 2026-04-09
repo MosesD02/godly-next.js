@@ -31,7 +31,13 @@ export default async function sitemap() {
     })),
     // City blog index pages (only cities that have posts)
     ...(await Promise.all(
-      [...new Set(blogPosts.map((p) => p.citySlug).filter(Boolean))].map(
+      [
+        ...new Set(
+          blogPosts
+            .map((p) => p.citySlug)
+            .filter((citySlug) => citySlug && citiesMap[citySlug]),
+        ),
+      ].map(
         async (citySlug) => {
           const posts = await getSanityPostsByCity(citySlug);
           const latest = posts[0]?.publishedAt ?? now;

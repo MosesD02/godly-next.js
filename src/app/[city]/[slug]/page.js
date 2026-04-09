@@ -50,7 +50,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title,
       description,
-      url: `https://godlywindows.com/${city}/${slug}`,
+      url: `${BASE_URL}/${city}/${slug}`,
       siteName: "Godly Windows",
       locale: "en_US",
       type: "website",
