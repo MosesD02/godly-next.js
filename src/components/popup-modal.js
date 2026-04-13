@@ -93,14 +93,6 @@ export function PopupModal() {
 
     const timeout = setTimeout(() => {
       setIsOpen(true);
-      // Track popup auto-open
-      if (typeof window !== "undefined" && window.gtag) {
-        window.gtag("event", "popup_modal_auto_open", {
-          event_category: "engagement",
-          event_label: "Popup Modal Auto Open",
-          value: 1,
-        });
-      }
     }, 7000);
 
     return () => clearTimeout(timeout);

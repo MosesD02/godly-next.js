@@ -18,6 +18,7 @@ import { useGodlyContext } from "@/context/godlyContext";
 import { usePathname } from "next/navigation";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
+import { fireGoogleAdsFormConversion } from "@/lib/googleAdsConversions";
 
 const servicesList = [
   { id: "exterior-window-cleaning", name: "Exterior Window Cleaning" },
@@ -426,6 +427,8 @@ export default function QuoteForm({ isDialog }) {
           zipcode: formData.zipcode,
           source: "organic",
         });
+
+        fireGoogleAdsFormConversion();
       }
 
       setSubmitStatus("success");
@@ -468,6 +471,7 @@ export default function QuoteForm({ isDialog }) {
 
   return (
     <form
+      id="quoteForm"
       onSubmit={handleSubmit}
       className={cn(
         "md:mt-2 xl:mt-3",
