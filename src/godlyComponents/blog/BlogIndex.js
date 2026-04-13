@@ -96,10 +96,10 @@ export default function BlogIndex({
 
   return (
     <WebsiteLayout>
-      <div className="mt-17 flex flex-col bg-[#262424] px-[35px] py-[100px] md:mt-17 md:p-16 md:py-[70px]">
+      <div className="mt-14 flex flex-col bg-[#262424] px-[35px] py-[100px] md:mt-17 md:p-16 md:py-[70px]">
         <div className="mx-auto flex w-full max-w-[1311px] flex-col items-center gap-2">
           <h1
-            className="trim text-center text-[50px] text-[#FDE4C8] md:text-[96px]"
+            className="trim text-center leading-[100%] text-[50px] text-[#FDE4C8] md:text-[96px]"
             style={{ textShadow: "4px 0px 0px #AF8F6E" }}
           >
             {cityName ? `${cityName} resources` : "Godly resources"}
@@ -173,7 +173,7 @@ export default function BlogIndex({
             </div>
             <div className="flex flex-col gap-[24px] px-[30px] py-[52px] md:hidden">
               <div className="flex w-full flex-col gap-3">
-                <h2 className="trim text-[32px] font-semibold text-[#312E2C]">
+                <h2 className="trim leading-[100%] text-[32px] font-semibold text-[#312E2C]">
                   {posts[0].title}
                 </h2>
                 <p className="font-['satoshi-light'] text-sm leading-[16px] text-[#373A44]">

@@ -53,7 +53,7 @@ const BlogsHeadline = () => {
       </div>
       <div className="flex flex-col gap-[24px] bg-[#fdf6ed] px-[30px] py-[52px] md:hidden">
         <div className="flex w-full flex-col gap-3">
-          <h2 className="trim text-[32px] font-semibold text-[#312E2C]">
+          <h2 className="trim text-[32px] font-semibold text-[#312E2C] leading-[100%]">
             NEWS HEADLINE
           </h2>
           <p className="font-['satoshi-light'] text-sm leading-[16px] text-[#373A44]">
