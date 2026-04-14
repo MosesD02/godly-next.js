@@ -1,7 +1,15 @@
-/** Google Ads conversion IDs — replace placeholder labels in Ads Manager when ready. */
+/**
+ * Google Ads conversion tracking (gtag `send_to`: AW-XXXXXXXXX/LABEL).
+ *
+ * TODO: Add real conversion labels from Google Ads (Goals > Conversions > your
+ * conversion > Tag setup). Use one label for phone clicks and one for form
+ * submits, then set GOOGLE_ADS_CONVERSION_LABEL_PHONE and
+ * GOOGLE_ADS_CONVERSION_LABEL_FORM below. Firing is skipped while labels are
+ * empty so production does not send placeholder/invalid conversions.
+ */
 export const GOOGLE_ADS_ID = "AW-16971177751";
-export const GOOGLE_ADS_CONVERSION_LABEL_PHONE = "PHONE_CLICK_LABEL";
-export const GOOGLE_ADS_CONVERSION_LABEL_FORM = "FORM_SUBMIT_LABEL";
+export const GOOGLE_ADS_CONVERSION_LABEL_PHONE = "";
+export const GOOGLE_ADS_CONVERSION_LABEL_FORM = "";
 
 /** Main business line (954) 852-5326 — digits only for matching tel: hrefs. */
 export const MAIN_LINE_TEL_DIGITS = "9548525326";
@@ -28,6 +36,7 @@ export function isMainLinePhoneDigits(digits) {
 }
 
 export function fireGoogleAdsPhoneConversion() {
+  if (!GOOGLE_ADS_CONVERSION_LABEL_PHONE) return;
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
   window.gtag("event", "conversion", {
     send_to: `${GOOGLE_ADS_ID}/${GOOGLE_ADS_CONVERSION_LABEL_PHONE}`,
@@ -35,6 +44,7 @@ export function fireGoogleAdsPhoneConversion() {
 }
 
 export function fireGoogleAdsFormConversion() {
+  if (!GOOGLE_ADS_CONVERSION_LABEL_FORM) return;
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
   window.gtag("event", "conversion", {
     send_to: `${GOOGLE_ADS_ID}/${GOOGLE_ADS_CONVERSION_LABEL_FORM}`,
