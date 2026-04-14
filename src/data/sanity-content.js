@@ -4,6 +4,7 @@
  * used by BlogIndex and BlogPostPage.
  */
 
+import { cache } from "react";
 import { client } from "@/sanity/client";
 import { urlFor } from "@/sanity/image";
 import { SERVICE_SLUG_TO_CATEGORY } from "./blog-categories";
@@ -74,16 +75,17 @@ function toBlogPost(doc) {
 }
 
 /**
- * Get all Sanity posts sorted by date (newest first)
+ * Get all Sanity posts sorted by date (newest first).
+ * Cached per request so generateMetadata and page can share one fetch.
  */
-export async function getAllSanityPosts() {
+export const getAllSanityPosts = cache(async function getAllSanityPosts() {
   try {
     const docs = await client.fetch(POSTS_QUERY);
     return (docs || []).map(toBlogPost);
   } catch {
     return [];
   }
-}
+});
 
 /**
  * Get a single Sanity post by slug

@@ -6,12 +6,9 @@ export default function robots() {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: [
-        "/private/",
-        "/*/opengraph-image",
-        "/opengraph-image",
-        "/landing/",
-      ],
+      // opengraph-image URLs use X-Robots-Tag: noindex in next.config.ts; do not
+      // disallow here or Google reports "indexed though blocked by robots.txt".
+      disallow: ["/private/", "/landing/"],
     },
     sitemap: `${BASE_URL.replace(/\/$/, "")}/sitemap.xml`,
   };

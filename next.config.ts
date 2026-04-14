@@ -47,6 +47,12 @@ const nextConfig: NextConfig = {
         destination: "/blog/:path*",
         permanent: true,
       },
+      // Malformed URLs like /privacy-policy/holiday-light-installation → canonical policy page
+      {
+        source: "/privacy-policy/:path+",
+        destination: "/privacy-policy",
+        permanent: true,
+      },
       {
         source: "/:city/holiday-light-installation",
         destination: "/:city/holiday-lighting",

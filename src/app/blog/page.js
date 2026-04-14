@@ -7,24 +7,31 @@ import {
 } from "@/lib/blog-pagination";
 import BlogIndex from "@/godlyComponents/blog/BlogIndex";
 
-export const metadata = {
-  title:
-    "Blog | Godly Windows & Wash Co. — Pressure Washing & Window Cleaning Tips",
-  description:
-    "Expert tips on pressure washing and window cleaning for South Florida. Learn what to know before you hire. Free quotes from Godly Windows.",
-  robots: "index, follow",
-  openGraph: {
-    title: "Blog | Godly Windows & Wash Co.",
-    description:
-      "Expert tips on pressure washing and window cleaning for South Florida homeowners.",
-    url: `${BASE_URL}/blog`,
-    siteName: "Godly Windows",
-    type: "website",
-  },
-  alternates: {
-    canonical: "/blog",
-  },
-};
+const BLOG_TITLE =
+  "Blog | Godly Windows & Wash Co. — Pressure Washing & Window Cleaning Tips";
+const BLOG_DESCRIPTION =
+  "Expert tips on pressure washing and window cleaning for South Florida. Learn what to know before you hire. Free quotes from Godly Windows.";
+
+export async function generateMetadata() {
+  const allPosts = await getAllSanityPosts();
+  const hasPosts = allPosts.length > 0;
+  return {
+    title: BLOG_TITLE,
+    description: BLOG_DESCRIPTION,
+    robots: hasPosts ? "index, follow" : { index: false, follow: true },
+    openGraph: {
+      title: "Blog | Godly Windows & Wash Co.",
+      description:
+        "Expert tips on pressure washing and window cleaning for South Florida homeowners.",
+      url: `${BASE_URL}/blog`,
+      siteName: "Godly Windows",
+      type: "website",
+    },
+    alternates: {
+      canonical: "/blog",
+    },
+  };
+}
 
 export const revalidate = 60;
 
