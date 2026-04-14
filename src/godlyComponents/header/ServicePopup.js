@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
-import { citiesMap } from "@/data/cities";
+import { getCitySlugForServiceLinks } from "@/lib/cityRouteContext";
 import { usePathname } from "next/navigation";
 
 // Service images — only loaded when this dynamically-imported chunk is fetched
@@ -126,22 +126,7 @@ const ServicePopup = ({ open, onOpenChange }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const pathname = usePathname();
 
-  // Get city from URL only when on a city or city/service page; otherwise use context
-  const getCityFromUrl = () => {
-    const fallback =
-      Object.keys(citiesMap).find((key) => citiesMap[key] === city) ||
-      "south-florida";
-    if (!pathname) return fallback;
-    const pathSegments = pathname.split("/").filter(Boolean);
-    const firstSegment = pathSegments[0];
-    // First segment must be a valid city slug (not blog, landing, etc.)
-    if (firstSegment && citiesMap[firstSegment]) {
-      return firstSegment;
-    }
-    return fallback;
-  };
-
-  const cityKey = getCityFromUrl();
+  const cityKey = getCitySlugForServiceLinks(pathname, city);
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange} className="">

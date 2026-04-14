@@ -13,6 +13,7 @@ import { useGodlyContext } from "@/context/godlyContext";
 import { usePathname, useRouter } from "next/navigation";
 
 import { citiesMap } from "@/data/cities";
+import { isLikelyCityServicePage } from "@/lib/cityRouteContext";
 
 const CitiesPopup = ({ open, onOpenChange }) => {
   const { setCity } = useGodlyContext();
@@ -23,8 +24,7 @@ const CitiesPopup = ({ open, onOpenChange }) => {
   const pathname = usePathname();
   const segments = pathname.split("/");
   const firstSegment = segments[1];
-  const isServicePage =
-    segments.length === 3 && citiesMap[firstSegment] !== undefined;
+  const isServicePage = isLikelyCityServicePage(pathname);
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange} className="">
@@ -53,7 +53,7 @@ const CitiesPopup = ({ open, onOpenChange }) => {
                   let url;
                   if (isServicePage) {
                     url = `/${cityName}/${segments[2]}`;
-                  } else if (firstSegment === "blog") {
+                  } else if (firstSegment === "blog" || firstSegment === "blogs") {
                     url = `/blog/${cityName}`;
                   } else {
                     url = `/${cityName}`;

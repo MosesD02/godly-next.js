@@ -1,4 +1,6 @@
 // src/godlyComponents/header/CitySelector.js
+// Display-only trigger for the city menu; safe /[city]/... URLs are built in
+// CitiesPopup (navigation) and ServicePopup (service links).
 import React from "react";
 import { MapPinHouse, ChevronDown } from "lucide-react";
 import { useGodlyContext } from "@/context/godlyContext";
