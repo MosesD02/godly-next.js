@@ -9,7 +9,7 @@
  */
 export const GOOGLE_ADS_ID = "AW-16971177751";
 export const GOOGLE_ADS_CONVERSION_LABEL_PHONE = "";
-export const GOOGLE_ADS_CONVERSION_LABEL_FORM = "";
+export const GOOGLE_ADS_CONVERSION_LABEL_FORM = "r0CECJ3dmZwcEJe-vpw_";
 
 /** Main business line (954) 852-5326 — digits only for matching tel: hrefs. */
 export const MAIN_LINE_TEL_DIGITS = "9548525326";
@@ -48,5 +48,7 @@ export function fireGoogleAdsFormConversion() {
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
   window.gtag("event", "conversion", {
     send_to: `${GOOGLE_ADS_ID}/${GOOGLE_ADS_CONVERSION_LABEL_FORM}`,
+    value: 1.0,
+    currency: "USD",
   });
 }

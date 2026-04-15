@@ -47,7 +47,8 @@
       "Read(//tmp/**)",
       "Bash(for i:*)",
       "Bash(do curl:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(find:*)"
     ]
   }
 }
