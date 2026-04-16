@@ -123,10 +123,10 @@
     "city": "oakland-park",
     "service": "holiday-lighting",
     "services_near_you": [
-      { "title": "Royal Palm Isles Holiday Displays", "description": "Royal Palm Isles homes stand out during the holidays with professional lighting installation. We handle design, setup, and takedown so you enjoy the season stress-free." },
-      { "title": "Oakland Park Main Street Decor", "description": "Businesses along Main Street draw more holiday shoppers with eye-catching lighting displays. Professional installation is available for storefronts of every size." },
-      { "title": "Corals Area Roofline Lighting", "description": "Roofline and landscape holiday lighting in the Corals area transforms your home into a neighborhood showpiece. Satisfaction guarantees are available on every installation." },
-      { "title": "Oakland Forest Neighborhood Displays", "description": "Oakland Forest families love festive holiday lighting without the hassle. Our team designs, installs, maintains, and removes your display so all you do is enjoy it." }
+      { "title": "Royal Palm Isles Holiday Displays", "description": "Royal Palm Isles gets coastal breezes, so we anchor rooflines and palm wraps securely, schedule crews around busy holiday traffic, and come back for takedown so you're not on ladders or chasing tripped breakers alone." },
+      { "title": "Oakland Park Main Street Decor", "description": "Main Street storefronts need dependable lighting for December shopping nights. We use fascia-safe mounts, replace failed bulbs quickly, and keep displays even so sidewalks feel festive instead of flickery." },
+      { "title": "Corals Area Roofline Lighting", "description": "In the Corals, rooflines, dormers, and yard accents look best when the whole plan is wired together. We sequence runs so the glow looks intentional from the street, without uneven bright spots or hectic flashing." },
+      { "title": "Oakland Forest Neighborhood Displays", "description": "Oakland Forest cul-de-sacs often look great with simple, coordinated color themes. We set timers, check displays mid-season, remove strands after the holidays, and label storage bins so next winter's setup goes faster." }
     ]
   }
 ]

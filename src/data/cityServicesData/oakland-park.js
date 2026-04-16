@@ -128,64 +128,64 @@ export const oaklandPark = {
     ]
   },
   "holiday-lighting": {
-    "hero": "We design, install, and remove. You enjoy the magic.",
+    "hero": "We plan your display, install it safely, and take it down when the season ends. You enjoy the holidays without ladders, tangles, or fighting your garage in January.",
     "essential": [
       {
         "number": "01.",
-        "title": "Safe Installation on Delicate Homes",
-        "text": "Older Corals homes need careful handling when securing lights to original or delicate materials. Professional installation protects your home's structure and finishes from damage."
+        "title": "Safe Mounts on Older Corals Homes",
+        "text": "The Corals area has plenty of older siding, soft trim, and careful paint lines. We pick clips and anchor points that hold lights securely without peeling paint, denting gutters, or stressing flashing along the roof."
       },
       {
         "number": "02.",
-        "title": "Design That Matches Your Home's Character",
-        "text": "Oakland Park's gentrifying neighborhood has diverse architectural styles. Professional design complements your home's specific character—whether it's vintage cottage or updated contemporary."
+        "title": "Design That Fits Mixed-Era Blocks",
+        "text": "Oakland Park mixes cottages, ranches, and newer builds on the same streets. We adjust color, spacing, and brightness so your display suits your home and your block, not a one-size-fits-all store-bought look."
       },
       {
         "number": "03.",
-        "title": "Holiday Curb Appeal in Competitive Neighborhood",
-        "text": "In The Corals' evolving community, beautiful holiday lighting signals care and festive spirit. It's a visible detail that neighbors and passersby notice and appreciate."
+        "title": "Curb Appeal Neighbors Actually Notice",
+        "text": "On NE corridors and throughout The Corals, people notice crooked lines, dark gaps, and hot spots from the sidewalk. Even, well-planned lighting feels welcoming; sloppy work reads as careless before guests reach the porch."
       },
       {
         "number": "04.",
-        "title": "Energy-Efficient & Safe Lighting",
-        "text": "Professional installations use quality fixtures, proper electrical setup, and energy-efficient LED options. No fire hazards, no tangled mess—just safe, beautiful light."
+        "title": "LEDs and Wiring Done Right",
+        "text": "We use grounded extensions, commercial-grade clips, and efficient LED strings so electrical loads stay within safe limits. That means fewer tripped breakers, less cord clutter, and no mystery heat building up along gutters or eaves."
       }
     ],
     "faqs": [
       {
-        "question": "How much does professional holiday lighting cost in Oakland Park?",
-        "answer": "Pricing depends on design complexity, square footage, and fixture choices. We provide free estimates showing costs upfront. Many homeowners find professional design and installation worth the investment for safety and beauty."
+        "question": "How much does custom holiday lighting cost in Oakland Park?",
+        "answer": "Cost depends on roofline length, how many trees or beds you want wrapped, and the hardware grade you choose. We send itemized pricing before crews start, and most homeowners say trading ladder risk for a cleaner street view is worth it."
       },
       {
-        "question": "Can you design lighting for older Corals homes without damaging vintage features?",
-        "answer": "Yes. We specialize in designing lighting for homes of all ages and styles. Older properties get careful, damage-free installation that respects original character while adding festive appeal."
+        "question": "Can you plan holiday lighting for older Corals homes without damaging vintage trim?",
+        "answer": "Yes. We map where each clip can go on delicate siding and woodwork, use low-impact fasteners, and spread the load so trim stays intact while porches and rooflines still look festive through New Year's."
       },
       {
-        "question": "Do you offer LED options to save on electricity?",
-        "answer": "Absolutely. LED lights use a fraction of the power of traditional options and last longer. We discuss energy-efficient choices during design to save you money all season."
+        "question": "Do your LED options help lower my December electric bill?",
+        "answer": "Yes. LED holiday strings use far less power than old incandescent sets and run cooler. When we design your display, we help you balance brightness with wattage so your December bill stays reasonable."
       },
       {
         "question": "Is there a money-back guarantee?",
-        "answer": "Yes. If you're not satisfied with your holiday lighting design or installation, we'll fix it or refund you. We're confident in making your Oakland Park home festively beautiful."
+        "answer": "Yes. If the layout or workmanship is not what we promised, we make it right or refund you. We want your Oakland Park home to look polished and stay reliable through the whole holiday season."
       }
     ],
-    "localCta": "Professional holiday lighting design and installation transforms your home. Schedule your free consultation and design today.",
+    "localCta": "Book a free walkthrough in Oakland Park. We plan the lights, install them, take them down after the season, and help you avoid a cluttered garage when January arrives.",
     "nearYou": [
       {
         "title": "Royal Palm Isles Holiday Displays",
-        "text": "Royal Palm Isles homes stand out during the holidays with professional lighting installation. We handle design, setup, and takedown so you enjoy the season stress-free."
+        "text": "Royal Palm Isles gets coastal breezes, so we anchor rooflines and palm wraps securely, schedule crews around busy holiday traffic, and come back for takedown so you're not on ladders or chasing tripped breakers alone."
       },
       {
         "title": "Oakland Park Main Street Decor",
-        "text": "Businesses along Main Street draw more holiday shoppers with eye-catching lighting displays. Professional installation is available for storefronts of every size."
+        "text": "Main Street storefronts need dependable lighting for December shopping nights. We use fascia-safe mounts, replace failed bulbs quickly, and keep displays even so sidewalks feel festive instead of flickery."
       },
       {
         "title": "Corals Area Roofline Lighting",
-        "text": "Roofline and landscape holiday lighting in the Corals area transforms your home into a neighborhood showpiece. Satisfaction guarantees are available on every installation."
+        "text": "In the Corals, rooflines, dormers, and yard accents look best when the whole plan is wired together. We sequence runs so the glow looks intentional from the street, without uneven bright spots or hectic flashing."
       },
       {
         "title": "Oakland Forest Neighborhood Displays",
-        "text": "Oakland Forest families love festive holiday lighting without the hassle. Our team designs, installs, maintains, and removes your display so all you do is enjoy it."
+        "text": "Oakland Forest cul-de-sacs often look great with simple, coordinated color themes. We set timers, check displays mid-season, remove strands after the holidays, and label storage bins so next winter's setup goes faster."
       }
     ]
   },
