@@ -144,6 +144,7 @@ const FourStepProcess = () => {
                           width={205}
                           height={20}
                           className="h-auto w-full object-cover"
+                          style={{ height: "auto" }}
                         />
                       </div>
                     )}

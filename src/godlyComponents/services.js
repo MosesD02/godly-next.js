@@ -103,10 +103,7 @@ const Services = ({ cityName: city }) => {
             ) : city === "ROYAL PALM BEACH" ? (
               <>Your full-service exterior cleaning team in Royal Palm Beach.</>
             ) : (
-              <>
-                Godly can clean nearly all components of <br /> your home or
-                building&apos;s exterior.
-              </>
+              <>Godly can clean nearly all components of <br />your home or building&apos;s exterior.</>
             )}
           </p>
         </div>

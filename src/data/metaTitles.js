@@ -1,5 +1,6 @@
 import { customMetaData } from "./customMetaData.js";
 import { citiesMap } from "./cities.js";
+import { getCityHeroContent } from "./cityHeroCopy.js";
 
 // Phone numbers by geographic group - use for city pages, schema, CTAs
 export const cityPhoneMap = {
@@ -420,10 +421,7 @@ export const generateCityH1 = (cityName) => {
 };
 
 export const generateHomeH1 = (cityName) => {
-  const location = cityName
-    ? `${capitalizeString(cityName)}, FL`
-    : "South Florida";
-  return `Professional Window Cleaning & Pressure Washing Services in ${location}`;
+  return getCityHeroContent(cityName).heading;
 };
 
 // Service page section headings

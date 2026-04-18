@@ -831,3 +831,30 @@ html body[data-scroll-locked]:not(#_):not(#_):not(#_) {
 
   background-blend-mode: normal, hard-light, normal;
 }
+
+/* TeamGallery mobile carousels — global CSS avoids styled-jsx hash mismatches on hydration */
+@keyframes team-gallery-marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+
+@keyframes team-gallery-marquee-right {
+  0% {
+    transform: translateX(calc(-100% / 2));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-carousel-left {
+  animation: team-gallery-marquee-left 30s linear infinite;
+}
+
+.animate-carousel-right {
+  animation: team-gallery-marquee-right 30s linear infinite;
+}

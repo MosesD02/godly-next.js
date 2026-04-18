@@ -289,13 +289,9 @@ function Story() {
           }}
         >
           Godly is founded by{" "}
-          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">
-            Perfectionist
-          </span>
-          looking to bridge the gaps between honest blue-collar work, modern
-          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">
-            Craftsmanship
-          </span>
+          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Perfectionist</span>{" "}
+          looking to bridge the gaps between honest blue-collar work, modern{" "}
+          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Craftsmanship</span>
           , and a fair price.
         </p>
         <p
@@ -304,11 +300,10 @@ function Story() {
             fontFamily: "var(--font-inter)",
           }}
         >
-          We want to ‘reverse time’ back to when you
-          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Trusted</span> the
-          people working on your home or Business. Back to when the standard was
-          to do exactly what you said you&apos;d do, rather than using it as
-          merely a
+          We want to ‘reverse time’ back to when you{" "}
+          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Trusted</span>
+          {" "}the people working on your home or Business. Back to when the standard was to do
+          exactly what you said you&apos;d do, rather than using it as merely a{" "}
           <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Guideline </span>.
         </p>
       </div>

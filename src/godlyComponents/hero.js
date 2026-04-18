@@ -4,210 +4,19 @@ import Image from "@/components/Image";
 import "@/styles/fourstepprocess.css";
 import QuoteForm from "./quoteForm";
 import { generateHomeH1, generateCityHeroAlt } from "@/data/metaTitles";
-import Link from "next/link";
+import { getCityHeroContent } from "@/data/cityHeroCopy";
 
 const Hero = ({ cityName: city }) => {
-  // City-specific content
-  const getCitySpecificContent = () => {
-    if (city === "PARKLAND") {
-      return {
-        heading: "Professional Window Cleaning in Parkland, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Parkland, FL",
-      };
-    }
-    if (city === "COCONUT CREEK") {
-      return {
-        heading: "Professional Window Cleaning in Coconut Creek, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Coconut Creek, FL",
-      };
-    }
-    if (city === "COOPER CITY") {
-      return {
-        heading: "Professional Window Cleaning in Cooper City, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Cooper City, FL",
-      };
-    }
-    if (city === "WEST PARK") {
-      return {
-        heading: "Professional Window Cleaning in West Park, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in West Park, FL",
-      };
-    }
-    if (city === "FORT LAUDERDALE") {
-      return {
-        heading: "Professional Window Cleaning in Fort Lauderdale, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Fort Lauderdale, FL",
-      };
-    }
-    if (city === "LIGHTHOUSE POINT") {
-      return {
-        heading: "Professional Window Cleaning in Lighthouse Point, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Lighthouse Point, FL",
-      };
-    }
-    if (city === "SOUTHWEST RANCHES") {
-      return {
-        heading: "Professional Window Cleaning in Southwest Ranches, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Southwest Ranches, FL",
-      };
-    }
-    if (city === "CORAL SPRINGS") {
-      return {
-        heading: "Professional Window Cleaning in Coral Springs, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Coral Springs, FL",
-      };
-    }
-    if (city === "HALLANDALE BEACH") {
-      return {
-        heading: "Professional Window Cleaning in Hallandale Beach, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Hallandale Beach, FL",
-      };
-    }
-    if (city === "MARGATE") {
-      return {
-        heading: "Professional Window Cleaning in Margate, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Margate, FL",
-      };
-    }
-    if (city === "PEMBROKE PINES") {
-      return {
-        heading: "Professional Window Cleaning in Pembroke Pines, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Pembroke Pines, FL",
-      };
-    }
-    if (city === "SUNRISE") {
-      return {
-        heading: "Professional Window Cleaning in Sunrise, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Sunrise, FL",
-      };
-    }
-    if (city === "DAVIE") {
-      return {
-        heading: "Professional Window Cleaning in Davie, FL",
-        subheading: "Window Cleaning & Exterior Washing Services in Davie, FL",
-      };
-    }
-    if (city === "DELRAY BEACH") {
-      return {
-        heading: "Professional Window Cleaning in Delray Beach, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Delray Beach, FL",
-      };
-    }
-    if (city === "HILLSBORO BEACH") {
-      return {
-        heading: "Professional Window Cleaning in Hillsboro Beach, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Hillsboro Beach, FL",
-      };
-    }
-    if (city === "PLANTATION") {
-      return {
-        heading: "Professional Window Cleaning in Plantation, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Plantation, FL",
-      };
-    }
-    if (city === "TAMARAC") {
-      return {
-        heading: "Professional Window Cleaning in Tamarac, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Tamarac, FL",
-      };
-    }
-    if (city === "DEERFIELD BEACH") {
-      return {
-        heading: "Professional Window Cleaning in Deerfield Beach, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Deerfield Beach, FL",
-      };
-    }
-    if (city === "HOLLYWOOD") {
-      return {
-        heading: "Professional Window Cleaning in Hollywood, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Hollywood, FL",
-      };
-    }
-    if (city === "MIRAMAR") {
-      return {
-        heading: "Professional Window Cleaning in Miramar, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Miramar, FL",
-      };
-    }
-    if (city === "POMPANO BEACH") {
-      return {
-        heading: "Professional Window Cleaning in Pompano Beach, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Pompano Beach, FL",
-      };
-    }
-    if (city === "LAUDERDALE-BY-THE-SEA") {
-      return {
-        heading: "Professional Window Cleaning in Lauderdale-by-the-Sea, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Lauderdale-by-the-Sea, FL",
-      };
-    }
-    if (city === "OAKLAND PARK") {
-      return {
-        heading: "Professional Window Cleaning in Oakland Park, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Oakland Park, FL",
-      };
-    }
-    if (city === "WESTON") {
-      return {
-        heading: "Professional Window Cleaning in Weston, FL",
-        subheading: "Window Cleaning & Exterior Washing Services in Weston, FL",
-      };
-    }
-    if (city === "BOCA RATON") {
-      return {
-        heading:
-          "Expert Window Cleaning, House Washing & Roof Cleaning in Boca Raton, FL",
-        subheading: "Available 24 hours for you",
-      };
-    }
-    if (city === "ROYAL PALM BEACH") {
-      return {
-        heading: "Professional Window Cleaning in Royal Palm Beach, FL",
-        subheading:
-          "Window Cleaning & Exterior Washing Services in Royal Palm Beach, FL",
-      };
-    }
-
-    // Default generic content
-    return {
-      heading: `Window cleaning and pressure Washing services In ${city}`,
-      subheading:
-        "we specialize in window washing, home washing, pressure washing, paver sealing and more.",
-    };
-  };
-
-  const cityContent = getCitySpecificContent();
+  const cityContent = getCityHeroContent(city);
 
   return (
     <div className="relative overflow-x-clip bg-[#1F1D1D]">
-      <div className="absolute top-[70px] left-0 h-[450px] w-full md:top-[20px] md:h-[700px]">
+      <div className="absolute top-[70px] left-0 h-[450px] w-full md:top-[44px] md:h-[700px]">
         <Image
           src="/assets/new-hero.jpeg"
           alt={generateCityHeroAlt(city)}
           fill
-          className="object-cover object-center md:object-[center_82%]"
+          className="object-cover object-center md:object-[center_60%]"
           priority
           sizes="100vw"
         />
@@ -302,20 +111,7 @@ const Hero = ({ cityName: city }) => {
             </div>
           )}
           <p className="font-['satoshi-regular'] text-sm font-medium text-white md:text-base xl:text-xl">
-            {city === "PARKLAND" ? (
-              <>
-                <Link
-                  href="https://godlywindows.com/"
-                  className="underline decoration-current decoration-solid transition-colors hover:text-[#FDE4C8]"
-                >
-                  Godly Windows
-                </Link>{" "}
-                delivers spotless windows and fresh exteriors to Parkland homes
-                and businesses with fast service and a personal touch.
-              </>
-            ) : (
-              cityContent.subheading
-            )}
+            {cityContent.subheading}
           </p>
         </div>
         <QuoteForm />

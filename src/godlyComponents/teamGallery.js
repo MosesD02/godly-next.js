@@ -155,34 +155,6 @@ const TeamGallery = () => {
             </div>
           </div>
         </div>
-
-        <style jsx global>{`
-          @keyframes carousel-left {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(calc(-100% / 2));
-            }
-          }
-
-          @keyframes carousel-right {
-            0% {
-              transform: translateX(calc(-100% / 2));
-            }
-            100% {
-              transform: translateX(0);
-            }
-          }
-
-          .animate-carousel-left {
-            animation: carousel-left 30s linear infinite;
-          }
-
-          .animate-carousel-right {
-            animation: carousel-right 30s linear infinite;
-          }
-        `}</style>
       </div>
     </div>
   );
