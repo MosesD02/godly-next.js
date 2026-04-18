@@ -122,6 +122,7 @@ const Services = ({ cityName: city }) => {
             src="/assets/santa-bg-sparkle.webp"
             alt=""
             fill
+            sizes="100vw"
             className="object-contain"
           />
         </div>
@@ -1270,12 +1271,14 @@ function ServicesGrid() {
                           src={service.image}
                           alt={service.name}
                           fill
+                          sizes="50px"
                           className={`shrink-0 object-contain transition-opacity duration-200 ${isActive ? "opacity-0" : "opacity-100"} md:group-hover:opacity-0`}
                         />
                         <Image
                           src={service.hoverImage}
                           alt={`${service.name} color`}
                           fill
+                          sizes="50px"
                           className={`shrink-0 object-contain transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-0"} md:group-hover:opacity-100`}
                         />
                       </>

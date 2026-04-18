@@ -23,12 +23,6 @@ const nextConfig: NextConfig = {
     unoptimized: false,
   },
 
-  // Webpack configuration for better image handling
-  webpack: (config) => {
-    // Add custom webpack rules for image optimization if needed
-    return config;
-  },
-
   // Performance optimizations
   compress: true,
 

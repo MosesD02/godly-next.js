@@ -63,6 +63,14 @@ export async function loadOgLogo() {
 const PAPER_WEBP = join(process.cwd(), "public/assets/vintage-paper-16.webp");
 const PAPER_PNG = join(process.cwd(), "public/assets/vintage-paper-16-og.png");
 
+/** OG canvas is 1200×630; full-size paper PNGs are multi‑MB and break @vercel/og parsing. */
+async function resizePaperForOg(input) {
+  return sharp(input)
+    .resize(1200, 630, { fit: "cover", position: "center" })
+    .png({ compressionLevel: 9 })
+    .toBuffer();
+}
+
 /**
  * Load paper texture as base64 data URL for OG ImageResponse.
  * Prefers pre-converted PNG; falls back to fetch when readFile fails.
@@ -71,18 +79,20 @@ export async function loadOgPaperBg() {
   try {
     try {
       const pngBuffer = await readFile(PAPER_PNG);
-      const base64 = pngBuffer.toString("base64");
+      const resized = await resizePaperForOg(pngBuffer);
+      const base64 = resized.toString("base64");
       return `data:image/png;base64,${base64}`;
     } catch {
       const webpBuffer = await readFile(PAPER_WEBP);
-      const pngBuffer = await sharp(webpBuffer).png().toBuffer();
+      const pngBuffer = await resizePaperForOg(webpBuffer);
       const base64 = pngBuffer.toString("base64");
       return `data:image/png;base64,${base64}`;
     }
   } catch {
     try {
       const pngBuffer = await fetchAsset("/assets/vintage-paper-16-og.png");
-      const base64 = pngBuffer.toString("base64");
+      const resized = await resizePaperForOg(pngBuffer);
+      const base64 = resized.toString("base64");
       return `data:image/png;base64,${base64}`;
     } catch {
       return null;

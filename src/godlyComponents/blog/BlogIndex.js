@@ -142,6 +142,10 @@ export default function BlogIndex({
                         width={650}
                         height={488}
                         className="aspect-4/3 h-full w-full object-cover object-center"
+                        placeholder={
+                          posts[0].imageBlurDataURL ? "blur" : undefined
+                        }
+                        blurDataURL={posts[0].imageBlurDataURL}
                       />
                     </Link>
                   </div>
@@ -190,6 +194,10 @@ export default function BlogIndex({
                       width={334}
                       height={251}
                       className="aspect-4/3 h-full w-full object-cover object-center"
+                      placeholder={
+                        posts[0].imageBlurDataURL ? "blur" : undefined
+                      }
+                      blurDataURL={posts[0].imageBlurDataURL}
                     />
                   </div>
                 </Link>
@@ -226,7 +234,9 @@ export default function BlogIndex({
                 <p className="font-['satoshi-light'] text-base text-[#373A44]">
                   {posts[0].publishedAt ? format(new Date(posts[0].publishedAt), "MMMM d, yyyy") : ""}
                 </p>
-                <h3 className="text-2xl leading-snug font-bold text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-4xl">
+                <h3 
+                  title={posts[0].title}
+                className="text-2xl leading-snug font-bold text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-4xl">
                   {posts[0].title}
                 </h3>
                 <span className="font-['satoshi-medium'] text-sm text-[#AF8F6E] underline">
@@ -248,6 +258,7 @@ export default function BlogIndex({
                 .map((post) => (
                   <div key={post.slug} className="flex flex-col gap-3">
                     <Link
+                    title={post.title}
                       href={blogPostHref(post.slug)}
                       className="flex flex-col gap-3"
                     >
@@ -258,6 +269,10 @@ export default function BlogIndex({
                           width={500}
                           height={375}
                           className="aspect-4/3 h-full w-full object-cover object-center"
+                          placeholder={
+                            post.imageBlurDataURL ? "blur" : undefined
+                          }
+                          blurDataURL={post.imageBlurDataURL}
                         />
                       </div>
                       <p className="font-['satoshi-light'] text-base text-[#373A44] md:mt-2 md:text-[24px]">

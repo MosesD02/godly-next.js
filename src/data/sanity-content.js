@@ -7,8 +7,35 @@
 import { cache } from "react";
 import { client } from "@/sanity/client";
 import { urlFor } from "@/sanity/image";
+import { sanityLqipToBlurDataURL } from "@/sanity/lqip";
 import { SERVICE_SLUG_TO_CATEGORY } from "./blog-categories";
-import { citiesMap } from "./cities";
+
+/** Featured image + LQIP for Next/Image blur placeholders */
+const IMAGE_WITH_LQIP = `image {
+  ...,
+  asset->{
+    _id,
+    metadata {
+      lqip,
+      dimensions
+    }
+  }
+}`;
+
+/** Portable Text: expand image assets so `metadata.lqip` is available */
+const BODY_WITH_IMAGE_LQIP = `body[]{
+  ...,
+  _type == "image" => {
+    ...,
+    asset->{
+      _id,
+      metadata {
+        lqip,
+        dimensions
+      }
+    }
+  }
+}`;
 
 const POSTS_QUERY = `*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
   _id,
@@ -16,7 +43,7 @@ const POSTS_QUERY = `*[_type == "post" && defined(slug.current)] | order(publish
   title,
   "slug": slug.current,
   excerpt,
-  image,
+  ${IMAGE_WITH_LQIP},
   publishedAt,
   metaTitle,
   metaDescription,
@@ -30,7 +57,7 @@ const POSTS_QUERY = `*[_type == "post" && defined(slug.current)] | order(publish
   ctaText,
   ctaLink,
   ctaQuoteLink,
-  body,
+  ${BODY_WITH_IMAGE_LQIP},
   faq[] { question, answer }
 }`;
 
@@ -40,7 +67,7 @@ const POST_BY_SLUG_QUERY = `*[_type == "post" && slug.current == $slug][0] {
   title,
   "slug": slug.current,
   excerpt,
-  image,
+  ${IMAGE_WITH_LQIP},
   publishedAt,
   metaTitle,
   metaDescription,
@@ -54,7 +81,7 @@ const POST_BY_SLUG_QUERY = `*[_type == "post" && slug.current == $slug][0] {
   ctaText,
   ctaLink,
   ctaQuoteLink,
-  body,
+  ${BODY_WITH_IMAGE_LQIP},
   faq[] { question, answer }
 }`;
 
@@ -63,12 +90,17 @@ const POST_BY_SLUG_QUERY = `*[_type == "post" && slug.current == $slug][0] {
  */
 function toBlogPost(doc) {
   if (!doc) return null;
-  const imageUrl = doc.image
-    ? urlFor(doc.image).width(1600).quality(90).auto("format").url()
+  const imageField = doc.image;
+  const imageUrl = imageField
+    ? urlFor(imageField).width(1600).quality(90).auto("format").url()
     : null;
+  const imageBlurDataURL = sanityLqipToBlurDataURL(
+    imageField?.asset?.metadata?.lqip,
+  );
   return {
     ...doc,
     image: imageUrl,
+    imageBlurDataURL,
     body: Array.isArray(doc.body) ? doc.body : [],
     faq: Array.isArray(doc.faq) ? doc.faq : [],
   };

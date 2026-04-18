@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "@/components/Image";
 import { PortableText } from "@portabletext/react";
 import { urlFor } from "@/sanity/image";
+import { sanityLqipToBlurDataURL } from "@/sanity/lqip";
 
 const linkClassName =
   "font-['satoshi-medium'] text-[#AF8F6E] underline! decoration-[#AF8F6E] decoration-solid underline-offset-2 transition-colors hover:text-[#8B6F4E]";
@@ -12,6 +13,7 @@ const components = {
     image: ({ value }) => {
       if (!value?.asset) return null;
       const imageUrl = urlFor(value).width(1600).quality(90).auto("format").url();
+      const blurDataURL = sanityLqipToBlurDataURL(value?.asset?.metadata?.lqip);
       const alt = value.alt || "";
       return (
         <figure className="my-8">
@@ -22,6 +24,8 @@ const components = {
               fill
               className="object-cover object-center"
               sizes="(max-width: 768px) 100vw, 800px"
+              placeholder={blurDataURL ? "blur" : undefined}
+              blurDataURL={blurDataURL}
             />
           </div>
           {value.caption && (

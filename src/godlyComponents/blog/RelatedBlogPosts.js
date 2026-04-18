@@ -45,6 +45,8 @@ export default function RelatedBlogPosts({ posts, citySlug }) {
                     width={600}
                     height={450}
                     className="aspect-4/3 w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
+                    placeholder={post.imageBlurDataURL ? "blur" : undefined}
+                    blurDataURL={post.imageBlurDataURL}
                   />
                 </div>
               )}

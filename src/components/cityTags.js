@@ -1,43 +1,41 @@
 "use client";
-import React, { useEffect, useMemo, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Matter from "matter-js";
+
+const CITY_NAMES = [
+  "LAUDERDALE-BY-THE-SEA",
+  "PEMBROKE PINES",
+  "DEERFIELD BEACH",
+  "COCONUT CREEK",
+  "COOPER CITY",
+  "CORAL SPRINGS",
+  "POMPANO BEACH",
+  "TAMARAC",
+  "HILLSBORO BEACH",
+  "ROYAL PALM BEACH",
+  "MARGATE",
+  "BOCA RATON",
+  "OAKLAND PARK",
+  "SUNRISE",
+  "LIGHTHOUSE POINT",
+  "SOUTHWEST RANCHES",
+  "FORT LAUDERDALE",
+  "PLANTATION",
+  "DAVIE",
+  "WESTON",
+  "WEST PARK",
+  "MIRAMAR",
+  "HOLLYWOOD",
+  "DELRAY BEACH",
+  "HALLANDALE BEACH",
+  "PARKLAND",
+];
 
 const CityTags = () => {
   const sceneRef = useRef(null);
   const engineRef = useRef(null);
   const renderRef = useRef(null);
   const runnerRef = useRef(null);
-
-  const cities = useMemo(() => {
-    return [
-      "LAUDERDALE-BY-THE-SEA",
-      "PEMBROKE PINES",
-      "DEERFIELD BEACH",
-      "COCONUT CREEK",
-      "COOPER CITY",
-      "CORAL SPRINGS",
-      "POMPANO BEACH",
-      "TAMARAC",
-      "HILLSBORO BEACH",
-      "ROYAL PALM BEACH",
-      "MARGATE",
-      "BOCA RATON",
-      "OAKLAND PARK",
-      "SUNRISE",
-      "LIGHTHOUSE POINT",
-      "SOUTHWEST RANCHES",
-      "FORT LAUDERDALE",
-      "PLANTATION",
-      "DAVIE",
-      "WESTON",
-      "WEST PARK",
-      "MIRAMAR",
-      "HOLLYWOOD",
-      "DELRAY BEACH",
-      "HALLANDALE BEACH",
-      "PARKLAND",
-    ];
-  }, []);
 
   const getRandomColor = () => {
     return Math.random() < 0.5 ? "#FFFFFF" : "#F3C99D";
@@ -101,7 +99,7 @@ const CityTags = () => {
     render.mouse = mouse;
 
     // Create pill-shaped bodies
-    const bodies = cities.map((city) => {
+    const bodies = CITY_NAMES.map((city) => {
       const width = city.length * 8 + 40; // Constrained width
       const height = 40;
 
@@ -226,7 +224,7 @@ const CityTags = () => {
         render.canvas.remove();
       }
     };
-  }, [cities]);
+  }, []);
 
   return (
     <div className="paper-bg-16 flex max-h-fit w-full justify-center bg-[#262424]">

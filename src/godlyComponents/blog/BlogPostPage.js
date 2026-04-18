@@ -41,6 +41,8 @@ export default function BlogPostPage({ post, basePath = "/blog" }) {
                 className="aspect-4/3 object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 800px"
                 priority
+                placeholder={post.imageBlurDataURL ? "blur" : undefined}
+                blurDataURL={post.imageBlurDataURL}
               />
             </div>
           )}

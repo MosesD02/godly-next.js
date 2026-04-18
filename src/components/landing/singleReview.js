@@ -48,12 +48,20 @@ const SingleReview = () => {
       return;
     }
 
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
-
-    api.on("select", () => {
+    const onSync = () => {
+      setCount(api.scrollSnapList().length);
       setCurrent(api.selectedScrollSnap() + 1);
-    });
+    };
+
+    queueMicrotask(onSync);
+
+    api.on("select", onSync);
+    api.on("reInit", onSync);
+
+    return () => {
+      api.off("select", onSync);
+      api.off("reInit", onSync);
+    };
   }, [api]);
 
   return (

@@ -240,19 +240,21 @@ const Promise = () => {
               }
               onClick={() => toggleCard(index)}
             >
-              <Image
-                src={step.icon}
-                alt={step.title}
-                width={80}
-                height={80}
-                className={`absolute top-0 right-0 ${
-                  index === 1
-                    ? (isActive ? "filter-[invert(0)]" : "filter-[invert(1)]") +
-                      " group-hover:filter-[invert(0)]"
-                    : (isActive ? "filter-[invert(1)]" : "") +
-                      " group-hover:filter-[invert(1)]"
-                }`}
-              />
+              <div className="absolute top-0 right-0 size-20">
+                <Image
+                  src={step.icon}
+                  alt={step.title}
+                  fill
+                  sizes="80px"
+                  className={`object-contain ${
+                    index === 1
+                      ? (isActive ? "filter-[invert(0)]" : "filter-[invert(1)]") +
+                        " group-hover:filter-[invert(0)]"
+                      : (isActive ? "filter-[invert(1)]" : "") +
+                        " group-hover:filter-[invert(1)]"
+                  }`}
+                />
+              </div>
               <div className="relative z-10 flex min-h-65 flex-col items-start justify-between gap-15 rounded-md border border-dashed border-[#6A6464] p-4">
                 <div className="flex flex-col gap-8">
                   <h5 className="text-base font-normal">
@@ -301,18 +303,19 @@ function Story() {
   useEffect(() => {
     if (!api) return;
 
-    setCount(api.scrollSnapList().length);
-
-    const onSelect = () => {
+    const onSync = () => {
+      setCount(api.scrollSnapList().length);
       setCurrent(api.selectedScrollSnap());
     };
 
-    api.on("select", onSelect);
-    api.on("reInit", onSelect);
+    queueMicrotask(onSync);
+
+    api.on("select", onSync);
+    api.on("reInit", onSync);
 
     return () => {
-      api.off("select", onSelect);
-      api.off("reInit", onSelect);
+      api.off("select", onSync);
+      api.off("reInit", onSync);
     };
   }, [api]);
   return (
