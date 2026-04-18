@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  reactCompiler: true,
+  
   images: {
     // Enable image optimization
     formats: ["image/webp", "image/avif"],
