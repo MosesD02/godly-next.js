@@ -26,22 +26,22 @@ const ServiceIncludes = ({ slug, cityName }) => {
       <div className="md:w-full md:max-w-[854px] md:py-10">
         <h2 className="sr-only">{headings.h2WhatIncluded}</h2>
         <div className="trim m-0 w-full p-0 text-center text-[36px] leading-tight font-normal tracking-wide text-[#191717] before:inset-0 md:text-[64px] md:leading-tight">
-          <span className="text-grain !bg-[#191717]" data-text="WHAT'S">
+          <span className="text-grain bg-[#191717]!" data-text="WHAT'S">
             WHAT&apos;S
           </span>{" "}
-          <span className="text-grain !bg-[#AB8459]" data-text="INCLUDED">
+          <span className="text-grain bg-[#AB8459]!" data-text="INCLUDED">
             INCLUDED
           </span>{" "}
-          <span className="text-grain !bg-[#191717]" data-text="IN OUR">
+          <span className="text-grain bg-[#191717]!" data-text="IN OUR">
             IN OUR
           </span>{" "}
           <span
-            className="text-grain hidden !bg-[#191717] md:inline-block"
+            className="text-grain hidden bg-[#191717]! md:inline-block"
             data-text={`${Services[slug]["hero"][0]} ${Services[slug]["hero"][1]}`}
           >
             {Services[slug]["hero"][0]} {Services[slug]["hero"][1]}
           </span>{" "}
-          <span className="text-grain !bg-[#191717]" data-text="SERVICE">
+          <span className="text-grain bg-[#191717]!" data-text="SERVICE">
             SERVICE
           </span>
         </div>
@@ -55,8 +55,8 @@ const ServiceIncludes = ({ slug, cityName }) => {
               key={index}
               className={cn(
                 `paper-bg-16 group min-h-[250px] w-full rounded-sm bg-[#312E2C] bg-size-[auto_10rem] bg-top-right p-2 sm:min-h-[270px] sm:p-3 md:min-h-[290px] md:max-w-[272px]`,
-                isActive ? "bg-[transparent]" : "",
-                "hover:bg-[transparent]",
+                isActive ? "bg-transparent" : "",
+                "hover:bg-transparent",
                 Services[slug]["included"].length === 5 && "md:max-w-[367px]",
                 index === Services[slug]["included"].length - 1 &&
                   Services[slug]["included"].length % 2 === 1 &&
@@ -81,8 +81,8 @@ const ServiceIncludes = ({ slug, cityName }) => {
                   <p
                     className={cn(
                       "trim text-grain text-center text-base before:uppercase md:text-2xl",
-                      isActive ? "!bg-[#2D2B2B]" : "!bg-white",
-                      "group-hover:!bg-[#2D2B2B]",
+                      isActive ? "bg-[#2D2B2B]!" : "bg-white!",
+                      "group-hover:bg-[#2D2B2B]!",
                     )}
                   >
                     {step.title}

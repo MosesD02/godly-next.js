@@ -42,7 +42,7 @@ const CitiesPopup = ({ open, onOpenChange }) => {
               <div
                 key={index}
                 className={cn(
-                  "group flex cursor-pointer flex-col gap-1 border-b-1 border-[#8d8477] py-1 transition-all hover:bg-[#2D2B2B] active:bg-[#2D2B2B]",
+                  "group flex cursor-pointer flex-col gap-1 border-b border-[#8d8477] py-1 transition-all hover:bg-[#2D2B2B] active:bg-[#2D2B2B]",
                   index % 1 === 0 ? "md:mx-[20px]" : "",
                   activeIndex === index ? "bg-[#2D2B2B]" : "",
                 )}

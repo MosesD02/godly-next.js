@@ -211,7 +211,7 @@ const Hero = ({ cityName: city }) => {
           priority
           sizes="100vw"
         />
-        <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-[#1F1D1D]/0 to-[#1F1D1D]"></div>
+        <div className="absolute top-0 left-0 h-full w-full bg-linear-to-b from-[#1F1D1D]/0 to-[#1F1D1D]"></div>
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1440px] px-[20px] md:px-14 md:pb-32">
@@ -276,7 +276,7 @@ const Hero = ({ cityName: city }) => {
               <span className="font-marlton trim shrink-0 text-[32px] leading-[1.1] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]">
                 cleaning
               </span>
-              <span className="shrink-0 self-center font-['luminaire-script'] text-[16px] leading-[1] text-[#FDE4C8] md:text-lg xl:text-2xl">
+              <span className="shrink-0 self-center font-['luminaire-script'] text-[16px] leading-none text-[#FDE4C8] md:text-lg xl:text-2xl">
                 And
               </span>
               <span className="font-marlton trim shrink-0 text-[32px] leading-[1.1] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]">

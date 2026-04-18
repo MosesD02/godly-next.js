@@ -37,7 +37,7 @@ const OtherServices = ({ slug, cityName: cityNameProp, citySlug }) => {
         enhance your cleaning with other services we offer in {cityName || city}
       </h4>
 
-      <div className="grid w-full max-w-screen-xl grid-cols-2 gap-10 px-4 py-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid w-full max-w-(--breakpoint-xl) grid-cols-2 gap-10 px-4 py-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {steps.map((step, index) => (
           <Link
             href={`/${cityKey}/${step.link}`}
@@ -50,10 +50,10 @@ const OtherServices = ({ slug, cityName: cityNameProp, citySlug }) => {
                 index % 2 === 0
                   ? activeCard === index
                     ? "rotate-0"
-                    : "rotate-[3deg] hover:rotate-0"
+                    : "rotate-3 hover:rotate-0"
                   : activeCard === index
                     ? "rotate-0"
-                    : "-rotate-[3deg] hover:rotate-0"
+                    : "-rotate-3 hover:rotate-0"
               }`}
             >
               <div className="relative flex flex-col justify-between gap-3 rounded-sm bg-[#e7e3df] p-[6.5] pb-[13px] text-[#1c1c1c] md:min-h-[250px] md:gap-4 md:p-2.5 md:pb-[18px]">

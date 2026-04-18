@@ -96,7 +96,7 @@ const Footer = ({ form = true, service }) => {
           {form && (
             <div className="flex max-w-[1000px] flex-col items-center justify-center gap-6">
               <h4
-                className="text-grain trim my-6 !bg-white text-center text-[18px] leading-[72px] tracking-[4.3px] text-white sm:text-[28px] md:text-[64px]"
+                className="text-grain trim my-6 bg-white! text-center text-[18px] leading-[72px] tracking-[4.3px] text-white sm:text-[28px] md:text-[64px]"
                 data-text="No hard sells. No spam. Just a fast, honest quote from a local, family-owned business."
               >
                 No hard sells. No spam. Just a fast, honest quote from a local,

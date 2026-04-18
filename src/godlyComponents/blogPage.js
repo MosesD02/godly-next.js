@@ -10,7 +10,7 @@ const BlogPage = () => {
     <WebsiteLayout>
       <div className="mt-17 flex w-full flex-col items-center justify-center bg-[#fef7ea] px-[30px] py-[45px] text-[#312E2C] md:mt-14 md:p-16">
         <div className="flex w-full max-w-[1311px] flex-col items-center justify-center gap-3 border-b-4 border-double border-black pb-8">
-          <div className="flex w-full flex-col gap-3 md:mb-2 md:border-b-1 md:border-solid md:border-black md:pb-4">
+          <div className="flex w-full flex-col gap-3 md:mb-2 md:border-b md:border-solid md:border-black md:pb-4">
             <h2 className="text-center text-[32px] text-[#312E2C] text-shadow-[#AF8F6E] md:pb-2 md:text-6xl">
               News HEADLINE
             </h2>

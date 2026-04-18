@@ -134,7 +134,7 @@ const Promise = () => {
     >
       <div className="mb-[150px] flex flex-col items-center gap-[70px]">
         <h4
-          className="text-grain trim !bg-[#191717] text-center text-4xl font-normal tracking-wide md:text-[64px]"
+          className="text-grain trim bg-[#191717]! text-center text-4xl font-normal tracking-wide md:text-[64px]"
           data-text="What It Really Looks Like When We Show Up"
         >
           What It Really Looks <br /> Like When We Show Up
@@ -142,7 +142,7 @@ const Promise = () => {
         <div className="paper-bg-8 flex w-full max-w-fit flex-col items-center justify-center gap-2 rounded-[2.395px] border-[1.2px] border-[rgba(106,100,100,0.12)] bg-white p-[7.2px] pb-[14.37px] md:mx-auto">
           <div className="relative w-full max-w-[400px]">
             <video
-              className="aspect-[9/16] h-auto w-full rounded-sm"
+              className="aspect-9/16 h-auto w-full rounded-sm"
               ref={videoRef}
               playsInline
               preload="metadata"
@@ -190,7 +190,7 @@ const Promise = () => {
           <h2 className="text-trim -rotate-2 text-[64px] font-normal tracking-[5.76px] text-[#191717]">
             old fashioned Values
           </h2>
-          <h4 className="absolute top-3/5 -mt-0 -rotate-2 text-3xl font-normal text-[#191717]">
+          <h4 className="absolute top-3/5 mt-0 -rotate-2 text-3xl font-normal text-[#191717]">
             <span className="text-[32px] underline">UNRIVALED</span>{" "}
             <span
               className="text-trim quality-text font-['luminaire-script'] text-[80px] text-[#B0906E]"
@@ -204,7 +204,7 @@ const Promise = () => {
       <Story />
       <div className="flex flex-col items-center justify-center gap-4 py-10 md:gap-10">
         <h4
-          className="text-grain trim !bg-[#191717] text-center text-4xl font-normal tracking-wide md:text-[64px]"
+          className="text-grain trim bg-[#191717]! text-center text-4xl font-normal tracking-wide md:text-[64px]"
           data-text="Services"
         >
           Services
@@ -217,7 +217,7 @@ const Promise = () => {
             The Way
           </span>{" "}
           <span
-            className="text-grain trim !bg-[#191717] text-4xl md:text-[64px]"
+            className="text-grain trim bg-[#191717]! text-4xl md:text-[64px]"
             data-text="It Should be"
           >
             It Should be
@@ -261,7 +261,7 @@ const Promise = () => {
 
                   <div
                     className={`text-grain max-w-[170px] text-left text-4xl ${
-                      isActive ? "!bg-[#2D2B2B]" : "!bg-white"
+                      isActive ? "bg-[#2D2B2B]!" : "bg-white!"
                     } group-hover:bg-[#2D2B2B]!`}
                     data-text={step.title}
                     style={{ marginBottom: "1rem" }}
@@ -272,7 +272,7 @@ const Promise = () => {
 
                 <p
                   className={`text-grain text-left text-base ${
-                    isActive ? "!bg-[#2D2B2B]" : "!bg-white"
+                    isActive ? "bg-[#2D2B2B]!" : "bg-white!"
                   } group-hover:bg-[#2D2B2B]!`}
                   data-text={step.text}
                   style={{ fontFamily: "Inter" }}
@@ -376,20 +376,20 @@ function Story() {
       <div className="flex flex-1 flex-col items-start justify-center gap-[34px] p-3 md:gap-[40px]">
         <h4 className="flex items-center gap-4 text-4xl text-white md:text-6xl">
           <span
-            className="text-grain !bg-[#F3CA9E] font-['marlton']"
+            className="text-grain bg-[#F3CA9E]! font-['marlton']"
             data-text="LOCAL"
           >
             LOCAL
           </span>
           <span
-            className="text-grain !bg-white font-['marlton']"
+            className="text-grain bg-white! font-['marlton']"
             data-text="FAMILY"
           >
             {" "}
             FAMILY
           </span>
           <span
-            className="text-grain !bg-white font-['marlton']"
+            className="text-grain bg-white! font-['marlton']"
             data-text="OWNED"
           >
             {" "}

@@ -33,12 +33,12 @@ export default function BlogPostPage({ post, basePath = "/blog" }) {
           </header>
 
           {post.image && (
-            <div className="relative mb-8 aspect-[4/3] w-full overflow-hidden rounded-lg">
+            <div className="relative mb-8 aspect-4/3 w-full overflow-hidden rounded-lg">
               <Image
                 src={post.image}
                 alt={post.title}
                 fill
-                className="aspect-[4/3] object-cover object-center"
+                className="aspect-4/3 object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 800px"
                 priority
               />

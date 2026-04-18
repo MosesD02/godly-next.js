@@ -780,13 +780,13 @@ const FourStepProcess = () => {
             city === "OAKLAND PARK" ||
             city === "WESTON" ||
             city === "ROYAL PALM BEACH" ? (
-              <h4 className="text-grain trim !bg-white text-center text-[20px] tracking-[2px] sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px]">
+              <h4 className="text-grain trim bg-white! text-center text-[20px] tracking-[2px] sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px]">
                 {cityContent.mainHeading}
               </h4>
             ) : (
               <>
                 <h4
-                  className="trim text-grain !bg-white text-[32px] tracking-[3.84px] md:text-[64px]"
+                  className="trim text-grain bg-white! text-[32px] tracking-[3.84px] md:text-[64px]"
                   data-text="OUR 4 STEP PROCESS"
                 >
                   OUR 4 STEP PROCESS
@@ -795,7 +795,7 @@ const FourStepProcess = () => {
                   With
                 </h4>
                 <h4
-                  className="text-grain trim !bg-white text-[24px] tracking-[3.84px] sm:text-[28px] md:text-[48px] lg:text-[56px] xl:text-[64px]"
+                  className="text-grain trim bg-white! text-[24px] tracking-[3.84px] sm:text-[28px] md:text-[48px] lg:text-[56px] xl:text-[64px]"
                   data-text="RAINSHIELD TECH"
                 >
                   RAINSHIELD TECH
@@ -819,7 +819,7 @@ const FourStepProcess = () => {
 
                     {/* Add the dotted line unless it's the last element */}
                     {index !== steps.length - 1 && (
-                      <div className="mx-1 max-w-[140px] flex-grow sm:mx-1 sm:max-w-[160px] md:mx-1.5 md:max-w-[180px] lg:mx-2 lg:max-w-[195px] xl:mx-3 xl:max-w-[205px]">
+                      <div className="mx-1 max-w-[140px] grow sm:mx-1 sm:max-w-[160px] md:mx-1.5 md:max-w-[180px] lg:mx-2 lg:max-w-[195px] xl:mx-3 xl:max-w-[205px]">
                         <Image
                           src="/assets/dotted-line.webp"
                           alt="dotted-line"
@@ -838,7 +838,7 @@ const FourStepProcess = () => {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center md:w-1/4 md:max-w-[230px] md:flex-shrink-0 xl:max-w-[250px]"
+                className="flex flex-col items-center md:w-1/4 md:max-w-[230px] md:shrink-0 xl:max-w-[250px]"
               >
                 <div className="trim pb-[18px] text-2xl font-normal tracking-[3.24px] text-[#FDE4C8] md:hidden md:text-3xl xl:text-[36px]">
                   {step.number}
@@ -848,7 +848,7 @@ const FourStepProcess = () => {
                     <div className="flex h-[42px] w-[42px] justify-center md:h-full md:w-full">
                       {step.icon}
                     </div>
-                    <div className="trim text-center font-['satoshi-black'] text-[16px] font-[900] text-[#1C1C1C] md:text-[22px] lg:text-[26px]">
+                    <div className="trim text-center font-['satoshi-black'] text-[16px] font-black text-[#1C1C1C] md:text-[22px] lg:text-[26px]">
                       {step.title}
                     </div>
                     <p className="trim font-[] text-center font-['satoshi-regular'] text-[9.345px] text-[#1F1D1D] md:text-sm lg:text-base">
@@ -879,7 +879,7 @@ const FourStepProcess = () => {
             isActive={activeBadges[1]}
             onClick={() => toggleBadge(1)}
           />
-          <div className="absolute right-2 -bottom-2 scale-75 -rotate-5 md:-bottom-0 md:scale-100">
+          <div className="absolute right-2 -bottom-2 scale-75 -rotate-5 md:bottom-0 md:scale-100">
             <Icon />
           </div>
         </div>
@@ -922,7 +922,7 @@ const Badge = ({
             alt="spark"
             src={image}
             className={cn(
-              "absolute -top-1 left-0.5 size-2.5 rotate-[15deg] object-contain opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100",
+              "absolute -top-1 left-0.5 size-2.5 rotate-15 object-contain opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100",
               isActive ? "opacity-100" : "",
             )}
           />
@@ -961,14 +961,14 @@ const Badge = ({
         src={image}
         className={cn(
           "relative z-20 size-6 object-contain transition-transform duration-500 md:h-auto md:w-auto",
-          sparks && "group-hover:rotate-[15deg]",
-          isActive ? "rotate-[15deg]" : "",
+          sparks && "group-hover:rotate-15",
+          isActive ? "rotate-15" : "",
         )}
       />
     </span>
     <h6 className="group relative">
       <span
-        className={`mr-4 border-b-3 border-[#f1caa0] font-sans text-base font-[900] text-[#f1caa0] uppercase transition-all duration-300 md:text-4xl ${
+        className={`mr-4 border-b-3 border-[#f1caa0] font-sans text-base font-black text-[#f1caa0] uppercase transition-all duration-300 md:text-4xl ${
           isActive ? "" : "text-[#f1caa0]"
         } `}
         data-text="FREE"

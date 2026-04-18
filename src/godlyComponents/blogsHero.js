@@ -12,7 +12,7 @@ const BlogsHero = () => {
           Godly resources
         </h1>
         <div className="flex flex-col gap-0.5">
-          <div className="h-[1px] w-[340px] bg-white md:w-[662px]" />
+          <div className="h-px w-[340px] bg-white md:w-[662px]" />
           <div className="h-[3px] w-[340px] bg-white md:w-[662px]" />
         </div>
       </div>

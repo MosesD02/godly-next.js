@@ -325,7 +325,7 @@ export default function QuoteForm({
               value={formData.name}
               onChange={handleChange}
               placeholder="YOUR NAME"
-              className="rounded-none border-t-0 border-r-0 !border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+              className="rounded-none border-t-0 border-r-0 border-b! border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
               required
             />
           </div>
@@ -339,7 +339,7 @@ export default function QuoteForm({
               placeholder="YOUR EMAIL"
               value={formData.email}
               onChange={handleChange}
-              className="rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+              className="rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
               required
             />
           </div>
@@ -355,7 +355,7 @@ export default function QuoteForm({
               placeholder="YOUR PHONE NUMBER"
               value={formData.phone}
               onChange={handleChange}
-              className="ml-6 rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+              className="ml-6 rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
               required
             />
           </div>
@@ -368,7 +368,7 @@ export default function QuoteForm({
               placeholder="YOUR ZIP CODE"
               value={formData.zipcode}
               onChange={handleChange}
-              className="w-full rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+              className="w-full rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
               required
             />
           </div>
@@ -418,7 +418,7 @@ export default function QuoteForm({
           width={234}
           height={267}
           className={cn(
-            "absolute top-0 left-full z-10 -translate-x-[calc(50%_+_38px)] -translate-y-[calc(50%_-_48px)] rotate-[-17.311deg]",
+            "absolute top-0 left-full z-10 -translate-x-[calc(50%+38px)] -translate-y-[calc(50%-48px)] rotate-[-17.311deg]",
             isDialog && "hidden",
           )}
         />

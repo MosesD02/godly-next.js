@@ -71,7 +71,7 @@ const ServicesHero = ({ slug, heroOverride, cityName }) => {
                 Services[slug]["hero"][0].split(" ").length === 1 && "md:ms-12",
               )}
             >
-              <span className="absolute top-60 right-25 hidden max-w-[100px] rotate-[6.668deg] text-left font-['marlton'] text-base font-[400] tracking-[2px] text-[#FDE4C8] md:-top-5 md:-right-30 md:block">
+              <span className="absolute top-60 right-25 hidden max-w-[100px] rotate-[6.668deg] text-left font-['marlton'] text-base font-normal tracking-[2px] text-[#FDE4C8] md:-top-5 md:-right-30 md:block">
                 {displayCity}
               </span>
               <span
@@ -89,7 +89,7 @@ const ServicesHero = ({ slug, heroOverride, cityName }) => {
                 {Services[slug]["hero"][1]}
               </span>
             </div>
-            <span className="absolute top-6 right-0 max-w-[100px] font-['marlton'] text-base leading-tight font-[400] tracking-[2px] text-[#FDE4C8] md:hidden">
+            <span className="absolute top-6 right-0 max-w-[100px] font-['marlton'] text-base leading-tight font-normal tracking-[2px] text-[#FDE4C8] md:hidden">
               {displayCity}
             </span>
           </div>

@@ -24,13 +24,13 @@ const EssentialService = ({ slug, essentialOverride, cityName }) => {
       <div className="flex flex-col items-center justify-center gap-1 md:gap-5">
         <h2 className="sr-only">{headings.h2WhyEssential}</h2>
         <span
-          className="text-grain trim !bg-[#FFFFFF] text-center text-base tracking-[1.35px] sm:text-lg sm:tracking-[1.5px] md:text-xl md:tracking-wide lg:text-2xl lg:tracking-wider xl:text-3xl xl:tracking-widest"
+          className="text-grain trim bg-[#FFFFFF]! text-center text-base tracking-[1.35px] sm:text-lg sm:tracking-[1.5px] md:text-xl md:tracking-wide lg:text-2xl lg:tracking-wider xl:text-3xl xl:tracking-widest"
           data-text="WHY KEEPING YOUR"
         >
           WHY KEEPING YOUR
         </span>
         <span
-          className="text-grain trim !bg-[#F3CA9E] text-center text-[32px] tracking-wide sm:text-[40px] md:text-7xl lg:text-[80px] xl:text-[90px]"
+          className="text-grain trim bg-[#F3CA9E]! text-center text-[32px] tracking-wide sm:text-[40px] md:text-7xl lg:text-[80px] xl:text-[90px]"
           data-text={
             Services[slug]["hero"][0] + " " + Services[slug]["hero"][1]
           }
@@ -68,7 +68,7 @@ const EssentialService = ({ slug, essentialOverride, cityName }) => {
               )}
               onClick={() => toggleCard(index)}
             >
-              <div className="flex h-full flex-grow flex-col gap-4 rounded-[12px] border-[1.7px] border-solid border-[#2D2B2B] px-3 py-3 sm:px-4 sm:py-4 md:px-5 md:py-5 lg:px-6 lg:py-6 xl:px-7 xl:py-7">
+              <div className="flex h-full grow flex-col gap-4 rounded-[12px] border-[1.7px] border-solid border-[#2D2B2B] px-3 py-3 sm:px-4 sm:py-4 md:px-5 md:py-5 lg:px-6 lg:py-6 xl:px-7 xl:py-7">
                 <h2
                   className={cn(
                     "stroke! trim stroke-[#2D2B2B33] stroke-1! text-[40px] font-bold sm:text-[48px] md:text-[64px] lg:text-[72px] xl:text-[80px]",

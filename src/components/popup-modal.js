@@ -111,17 +111,17 @@ export function PopupModal() {
         }}
       >
         <DialogContent
-          closeClass="md:top-4! bg-transparent md:right-5! [&_svg]:size-6! top-3! right-13! z-[70]!"
-          className="z-[100]! flex aspect-[1811/2711] min-h-[675px] max-w-[440px] scale-90 flex-col justify-center overflow-hidden border-0 bg-transparent bg-[url(/assets/UnionMobile.png)] bg-contain bg-center bg-no-repeat px-12 shadow-none md:max-w-[440px] md:scale-100 md:bg-[url(/assets/Union.png)] md:px-8"
+          closeClass="md:top-4! bg-transparent md:right-5! [&_svg]:size-6! top-3! right-13! z-70!"
+          className="z-100! flex aspect-1811/2711 min-h-[675px] max-w-[440px] scale-90 flex-col justify-center overflow-hidden border-0 bg-transparent bg-[url(/assets/UnionMobile.png)] bg-contain bg-center bg-no-repeat px-12 shadow-none md:max-w-[440px] md:scale-100 md:bg-[url(/assets/Union.png)] md:px-8"
         >
           <DialogHeader className="sr-only" />
           <DialogDescription className="sr-only" />
           <DialogTitle className="sr-only" />
 
-          <h2 className="trim mb-2 text-center text-[32px] leading-[1] text-black md:mt-8">
+          <h2 className="trim mb-2 text-center text-[32px] leading-none text-black md:mt-8">
             New Client Special
             <br className="md:hidden" />–{" "}
-            <span className="bg-gradient-to-b from-[#EC7F58] via-[#EC7B56] to-[#EB7753] bg-clip-text py-2 text-transparent">
+            <span className="bg-linear-to-b from-[#EC7F58] via-[#EC7B56] to-[#EB7753] bg-clip-text py-2 text-transparent">
               $50 Off
             </span>
           </h2>
@@ -160,15 +160,15 @@ export function PopupModal() {
             </div>
           </div>
 
-          <div className="absolute top-1/2 left-1/2 h-[1px] w-[calc(100%-clamp(90px,5vw,90px))] -translate-x-1/2 -translate-y-1/2 bg-[url(/assets/dashes-ticket.png)] object-cover md:w-[calc(100%-32px)]" />
+          <div className="absolute top-1/2 left-1/2 h-px w-[calc(100%-clamp(90px,5vw,90px))] -translate-x-1/2 -translate-y-1/2 bg-[url(/assets/dashes-ticket.png)] object-cover md:w-[calc(100%-32px)]" />
 
           <div className="flex flex-col rounded-[12px] border border-black p-2 md:mt-8">
             <div className="flex flex-col rounded-[8px] border border-black">
               <div className="grid grid-cols-2 items-center justify-center gap-2 md:gap-4">
-                <p className="trim bg-gradient-to-b from-[#EC7F58] via-[#EC7B56] to-[#EB7753] bg-clip-text py-4 text-right [font-size:clamp(48px,15vw,96px)] text-transparent">
+                <p className="trim bg-linear-to-b from-[#EC7F58] via-[#EC7B56] to-[#EB7753] bg-clip-text py-4 text-right text-[clamp(48px,15vw,96px)] text-transparent">
                   $50
                 </p>
-                <p className="trim text-left text-[20px] leading-[1] tracking-wide md:text-[24px]">
+                <p className="trim text-left text-[20px] leading-none tracking-wide md:text-[24px]">
                   OFF <br />
                   <span className="text-[#AE9D8A]">
                     FIRST SERVICE
@@ -177,7 +177,7 @@ export function PopupModal() {
                   </span>
                 </p>
               </div>
-              <div className="h-[1px] w-full bg-[#CCCACA]" />
+              <div className="h-px w-full bg-[#CCCACA]" />
               <p className="px-[6px] py-[15px] text-center font-[Satoshi-medium] text-sm font-medium tracking-[0.96px] md:text-base">
                 Perfect timing for a crystal-clear home. Expires{" "}
                 {targetDate
@@ -228,7 +228,7 @@ export function PopupModal() {
         <DialogHeader>
           <DialogTitle className="hidden">Contact Us</DialogTitle>
         </DialogHeader>
-        <DialogContent className="z-[100] border-none bg-transparent p-0 md:max-w-[1200px]">
+        <DialogContent className="z-100 border-none bg-transparent p-0 md:max-w-[1200px]">
           <QuoteForm isDialog={true} />
         </DialogContent>
       </Dialog>

@@ -5,7 +5,7 @@ import { PortableText } from "@portabletext/react";
 import { urlFor } from "@/sanity/image";
 
 const linkClassName =
-  "font-['satoshi-medium'] text-[#AF8F6E] !underline decoration-[#AF8F6E] decoration-solid underline-offset-2 transition-colors hover:text-[#8B6F4E]";
+  "font-['satoshi-medium'] text-[#AF8F6E] underline! decoration-[#AF8F6E] decoration-solid underline-offset-2 transition-colors hover:text-[#8B6F4E]";
 
 const components = {
   types: {
@@ -15,7 +15,7 @@ const components = {
       const alt = value.alt || "";
       return (
         <figure className="my-8">
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
+          <div className="relative aspect-4/3 w-full overflow-hidden rounded-lg">
             <Image
               src={imageUrl}
               alt={alt}

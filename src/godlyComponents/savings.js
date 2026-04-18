@@ -34,13 +34,13 @@ const Savings = () => {
     <div className="paper-bg-16 flex hidden flex-col items-center justify-items-center bg-[#ebded1] bg-cover bg-center bg-no-repeat p-16 bg-blend-multiply">
       <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-items-center bg-cover bg-center bg-no-repeat p-16 bg-blend-multiply">
         <h2
-          className="text-grain !bg-[#191717] text-[64px] font-normal"
+          className="text-grain bg-[#191717]! text-[64px] font-normal"
           data-text="HUGE SAVINGS AND"
         >
           HUGE SAVINGS AND
         </h2>
         <h2
-          className="text-grain -mt-8 !bg-[#191717] text-[64px] font-normal before:inset-0"
+          className="text-grain -mt-8 bg-[#191717]! text-[64px] font-normal before:inset-0"
           data-text="ALWAYS LOOK GREAT"
         >
           ALWAYS LOOK GREAT

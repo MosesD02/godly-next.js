@@ -7,7 +7,7 @@ const Gurantee = () => {
   return (
     <div className="paper-bg-16 bg-[#262424]">
       <div
-        className={`mx-auto flex max-w-[1440px] flex-col items-center gap-30 bg-[url('/assets/guarantee_bg_mobile.png')] bg-[50%_170px] px-6 py-[100px] md:bg-[url('/assets/gurantee_bg.webp')] md:bg-bottom md:py-[150px]`}
+        className={`mx-auto flex max-w-[1440px] flex-col items-center gap-30 bg-[url('/assets/guarantee_bg_mobile.png')] bg-position-[50%_170px] px-6 py-[100px] md:bg-[url('/assets/gurantee_bg.webp')] md:bg-bottom md:py-[150px]`}
         style={{
           alignItems: "center",
           justifyContent: "center",
@@ -21,7 +21,7 @@ const Gurantee = () => {
               THE
             </h4>
             <h4
-              className="trim md:text-trim text-grain !bg-[#F3CA9E] text-[48px] tracking-[4.32px] md:text-[102px] md:tracking-wide"
+              className="trim md:text-trim text-grain bg-[#F3CA9E]! text-[48px] tracking-[4.32px] md:text-[102px] md:tracking-wide"
               data-text="GODLY"
             >
               GODLY
@@ -42,7 +42,7 @@ const Gurantee = () => {
         <div className="flex w-full flex-col items-center gap-[220px] bg-contain bg-center bg-no-repeat md:min-h-screen md:gap-[250px]">
           <div className="relative min-w-[660px] scale-40 md:h-60 md:scale-100">
             <div
-              className="absolute -top-1 h-full w-full rotate-[6deg] bg-cover bg-center bg-no-repeat"
+              className="absolute -top-1 h-full w-full rotate-6 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${cardBg.src})` }}
             ></div>
             <div className="paper-bg-8 gurantee absolute top-0 min-w-[660px] rounded-md bg-[#CBB7A0]! p-2 shadow">

@@ -123,7 +123,7 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
         <div className="w-full text-center">
           <h2 className="sr-only">{headings.h2ServicesNearYou}</h2>
           <div
-            className="text-grain mx-auto !bg-[#FDE4C8] text-center text-[32px] md:text-6xl"
+            className="text-grain mx-auto bg-[#FDE4C8]! text-center text-[32px] md:text-6xl"
             data-text={
               Services[slug]["hero"][0] + " " + Services[slug]["hero"][1]
             }
@@ -157,7 +157,7 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
                 )}
               >
                 <div className="relative z-10 h-full w-full rounded-md bg-[#CDB9A2] p-3 text-black">
-                  <div className="flex h-full flex-col items-center justify-between rounded-md border-[2px] border-dashed border-[#2D2B2B] p-2 text-[#2D2B2B]">
+                  <div className="flex h-full flex-col items-center justify-between rounded-md border-2 border-dashed border-[#2D2B2B] p-2 text-[#2D2B2B]">
                     <div>
                       <div className="mb-4 flex justify-center">
                         {steps2[index % steps2.length].icon}

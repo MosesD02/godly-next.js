@@ -26,20 +26,20 @@ const Services = ({ cityName: city }) => {
           <div className="flex flex-col items-center justify-center">
             <div className="text-trim flex items-end">
               <h2
-                className="text-grain font-marlton !bg-white text-[32px] tracking-[3.84px] sm:text-[40px] md:text-[64px] lg:text-[72px] xl:text-[80px]"
+                className="text-grain font-marlton bg-white! text-[32px] tracking-[3.84px] sm:text-[40px] md:text-[64px] lg:text-[72px] xl:text-[80px]"
                 data-text="MORE THAN"
               >
                 MORE THAN
               </h2>
               <span
-                className="text-grain ms-2 mb-1 !bg-white text-sm tracking-[1.2px] sm:text-base md:ms-[21px] md:mb-3 md:text-[20px] lg:text-[22px] xl:text-[24px]"
+                className="text-grain ms-2 mb-1 bg-white! text-sm tracking-[1.2px] sm:text-base md:ms-[21px] md:mb-3 md:text-[20px] lg:text-[22px] xl:text-[24px]"
                 data-text="JUST"
               >
                 JUST
               </span>
             </div>
             <span
-              className="text-grain font-marlton -mt-2 !bg-white text-[32px] tracking-[3.84px] sm:text-[40px] md:-mt-5 md:text-[64px] lg:text-[72px] xl:text-[80px]"
+              className="text-grain font-marlton -mt-2 bg-white! text-[32px] tracking-[3.84px] sm:text-[40px] md:-mt-5 md:text-[64px] lg:text-[72px] xl:text-[80px]"
               data-text="WINDOW WASHERS"
             >
               WINDOW WASHERS
@@ -185,7 +185,7 @@ const Services = ({ cityName: city }) => {
                     height={400}
                     width={400}
                     alt=""
-                    className="absolute top-1/2 left-0 z-10 w-[calc(100%_+_32px)] -translate-y-1/2"
+                    className="absolute top-1/2 left-0 z-10 w-[calc(100%+32px)] -translate-y-1/2"
                   />
                   <p className="relative z-20 mx-2 -rotate-5 pb-0.5">{city}</p>
                 </div>
@@ -1251,11 +1251,11 @@ function ServicesGrid() {
         return (
           <Card
             key={idx}
-            className={`paper-bg-8 group relative flex h-full justify-between rounded-sm bg-[#E9E5E4] p-0 transition-transform duration-300 ${isActive ? "rotate-[3deg] border-[#382f2d] bg-[#382f2d]" : ""} hover:rotate-[3deg] hover:border-[#382f2d] hover:bg-[#382f2d]`}
+            className={`paper-bg-8 group relative flex h-full justify-between rounded-sm bg-[#E9E5E4] p-0 transition-transform duration-300 ${isActive ? "rotate-3 border-[#382f2d] bg-[#382f2d]" : ""} hover:rotate-3 hover:border-[#382f2d] hover:bg-[#382f2d]`}
             onClick={() => toggleCard(idx)}
           >
             <CardContent className="service-icon-hover flex h-full p-0">
-              <div className="flex h-full w-full flex-shrink-0 flex-col gap-6 px-3 py-6 md:px-4 md:py-8 md:group-hover:text-white">
+              <div className="flex h-full w-full shrink-0 flex-col gap-6 px-3 py-6 md:px-4 md:py-8 md:group-hover:text-white">
                 <div className="flex h-full flex-col gap-4">
                   <div className="relative size-[50px] shrink-0">
                     {service.icon ? (

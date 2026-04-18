@@ -146,7 +146,7 @@ const Header = () => {
       )}{" "}
       <div className="godlyheader w-full bg-[#252323] text-white">
         {" "}
-        <div className="gradient-bg relative items-center justify-center !bg-[#9B4531] p-4 text-center text-sm font-semibold text-white md:text-lg">
+        <div className="gradient-bg relative items-center justify-center bg-[#9B4531]! p-4 text-center text-sm font-semibold text-white md:text-lg">
           <p className="relative z-10 font-light">
             Get Spotless Windows + a FREE RainShield Treatment this{" "}
             {new Date(

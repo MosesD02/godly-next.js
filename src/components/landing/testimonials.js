@@ -26,13 +26,13 @@ const Testimonials = () => {
             </div>
             <h2 className="-mt-5 md:-mt-9">
               <span
-                className="text-grain !bg-[#FDE4C8] font-['luminaire-script'] text-base md:mr-4 md:ps-2 md:pb-2 md:text-[64px] md:before:inset-0"
+                className="text-grain bg-[#FDE4C8]! font-['luminaire-script'] text-base md:mr-4 md:ps-2 md:pb-2 md:text-[64px] md:before:inset-0"
                 data-text="Your"
               >
                 Your
               </span>{" "}
               <span
-                className="text-grain text-trim !bg-[#FFFFFF] text-[32px] tracking-wider md:text-[86px]"
+                className="text-grain text-trim bg-[#FFFFFF]! text-[32px] tracking-wider md:text-[86px]"
                 data-text="NEIGHBORS"
               >
                 NEIGHBORS
@@ -86,7 +86,7 @@ const Testimonials = () => {
             </CarouselContent>
             <div className="relative mt-16 h-16">
               <CarouselPrevious className="absolute left-1/2 size-[60px] -translate-x-[calc(100%+1.25rem)] transform rounded-full bg-white text-black" />
-              <CarouselNext className="absolute left-1/2 size-[60px] translate-x-[1.25rem] transform rounded-full bg-white text-black" />
+              <CarouselNext className="absolute left-1/2 size-[60px] translate-x-5 transform rounded-full bg-white text-black" />
             </div>
           </Carousel>
         </div>

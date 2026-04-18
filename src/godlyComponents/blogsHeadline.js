@@ -47,7 +47,7 @@ const BlogsHeadline = () => {
           </div>
         </div>
         <div className="flex flex-col gap-0.5">
-          <div className="h-[1px] w-[full] bg-black" />
+          <div className="h-px w-[full] bg-black" />
           <div className="h-[3px] w-[full] bg-black" />
         </div>
       </div>
@@ -68,7 +68,7 @@ const BlogsHeadline = () => {
           </div>
         </div>
         <div>
-          <p className="line-clamp-[8] font-['satoshi-light'] text-xl leading-[26px] text-[#312E2C]">
+          <p className="line-clamp-8 font-['satoshi-light'] text-xl leading-[26px] text-[#312E2C]">
             We aspire to transport you back to a time when trust was the
             cornerstone of every relationship, particularly within the realms of
             your home and business. Picture an era where commitments were not
@@ -92,7 +92,7 @@ const BlogsHeadline = () => {
           </Link>
         </div>
         <div className="flex flex-col gap-0.5">
-          <div className="h-[1px] w-[full] bg-black" />
+          <div className="h-px w-[full] bg-black" />
           <div className="h-[3px] w-[full] bg-black" />
         </div>
       </div>

@@ -44,7 +44,7 @@ export default function RelatedBlogPosts({ posts, citySlug }) {
                     alt={post.title}
                     width={600}
                     height={450}
-                    className="aspect-[4/3] w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
+                    className="aspect-4/3 w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
                   />
                 </div>
               )}

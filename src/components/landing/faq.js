@@ -36,7 +36,7 @@ const Faq = () => {
         style={{ alignItems: "center", justifyContent: "center" }}
       >
         <h2
-          className="text-grain !bg-[#191717] text-[32px] font-black tracking-wide md:text-8xl"
+          className="text-grain bg-[#191717]! text-[32px] font-black tracking-wide md:text-8xl"
           data-text="FREQUENTLY"
         >
           FREQUENTLY
@@ -44,7 +44,7 @@ const Faq = () => {
         <h4 className="text-[24px] font-semibold tracking-wide text-[#191717] md:text-2xl">
           <span>ASKED</span>{" "}
           <span
-            className="text-grain ml-3 !bg-[#61503E] font-['luminaire-script'] text-[48px] font-medium md:text-[64px]"
+            className="text-grain ml-3 bg-[#61503E]! font-['luminaire-script'] text-[48px] font-medium md:text-[64px]"
             data-text="Questions"
           >
             Questions

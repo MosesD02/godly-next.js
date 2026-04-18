@@ -87,7 +87,7 @@ const Promise = () => {
       <Story />
       <div className="flex flex-col items-center justify-center gap-4 py-10 md:gap-10">
         <h4
-          className="text-grain trim !bg-[#191717] text-center text-4xl font-normal tracking-wide md:text-[64px]"
+          className="text-grain trim bg-[#191717]! text-center text-4xl font-normal tracking-wide md:text-[64px]"
           data-text="Delivering"
         >
           Delivering
@@ -100,7 +100,7 @@ const Promise = () => {
             Trustworthy
           </span>{" "}
           <span
-            className="text-grain trim !bg-[#191717] text-4xl md:text-[64px]"
+            className="text-grain trim bg-[#191717]! text-4xl md:text-[64px]"
             data-text="Service"
           >
             Service
@@ -144,7 +144,7 @@ const Promise = () => {
 
                   <div
                     className={`text-grain max-w-[170px] text-left text-4xl ${
-                      isActive ? "!bg-[#2D2B2B]" : "!bg-white"
+                      isActive ? "bg-[#2D2B2B]!" : "bg-white!"
                     } group-hover:bg-[#2D2B2B]!`}
                     data-text={step.title}
                     style={{ marginBottom: "1rem" }}
@@ -155,7 +155,7 @@ const Promise = () => {
 
                 <p
                   className={`text-grain text-left text-base ${
-                    isActive ? "!bg-[#2D2B2B]" : "!bg-white"
+                    isActive ? "bg-[#2D2B2B]!" : "bg-white!"
                   } group-hover:bg-[#2D2B2B]!`}
                   data-text={step.text}
                   style={{ fontFamily: "Inter" }}
@@ -259,20 +259,20 @@ function Story() {
       <div className="flex flex-1 flex-col items-start justify-center gap-[34px] p-3 md:gap-[40px]">
         <h4 className="flex items-center gap-4 text-4xl text-white md:text-6xl">
           <span
-            className="text-grain !bg-[#F3CA9E] font-['marlton']"
+            className="text-grain bg-[#F3CA9E]! font-['marlton']"
             data-text="LOCAL"
           >
             LOCAL
           </span>
           <span
-            className="text-grain !bg-white font-['marlton']"
+            className="text-grain bg-white! font-['marlton']"
             data-text="FAMILY"
           >
             {" "}
             FAMILY
           </span>
           <span
-            className="text-grain !bg-white font-['marlton']"
+            className="text-grain bg-white! font-['marlton']"
             data-text="OWNED"
           >
             {" "}

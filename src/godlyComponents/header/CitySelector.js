@@ -15,7 +15,7 @@ const CitySelector = ({ onClick, isMobile = false }) => {
         className="flex items-center gap-1 text-sm text-[#FDE4C8] hover:text-[#FFCA8F] xl:text-base"
       >
         <MapPinHouse strokeWidth={1.2} size={18} />
-        <div className="border-b-1 border-solid border-[#FDE4C8] font-sans text-xs font-semibold">
+        <div className="border-b border-solid border-[#FDE4C8] font-sans text-xs font-semibold">
           {city}
         </div>{" "}
         <ChevronDown size={18} />
@@ -30,7 +30,7 @@ const CitySelector = ({ onClick, isMobile = false }) => {
       className="flex items-end gap-1 text-sm text-[#FDE4C8] hover:text-[#FFCA8F] xl:text-base"
     >
       <MapPinHouse strokeWidth={1.2} size={18} />
-      <div className="border-b-1 border-solid border-[#FDE4C8] font-sans text-xs font-semibold">
+      <div className="border-b border-solid border-[#FDE4C8] font-sans text-xs font-semibold">
         {city}
       </div>{" "}
       <span>

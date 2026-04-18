@@ -105,7 +105,7 @@ export default function BlogIndex({
             {cityName ? `${cityName} resources` : "Godly resources"}
           </h1>
           <div className="flex flex-col gap-0.5">
-            <div className="h-[1px] w-[340px] bg-white md:w-[662px]" />
+            <div className="h-px w-[340px] bg-white md:w-[662px]" />
             <div className="h-[3px] w-[340px] bg-white md:w-[662px]" />
           </div>
           <p className="text-center font-['satoshi-light'] text-xs text-[#FFFFFF94] md:font-['satoshi-regular'] md:text-[24px]">
@@ -131,17 +131,17 @@ export default function BlogIndex({
             <div className="hidden pt-[40px] md:block md:px-12">
               <div className="mx-auto flex max-w-[1311px] flex-col items-start gap-8 border-black pb-6 md:flex-row">
                 <div className="w-full md:w-1/2">
-                  <div className="mx-auto aspect-[4/3] max-w-[650px] overflow-hidden border-8 border-[#6A64641F] shadow-md">
+                  <div className="mx-auto aspect-4/3 max-w-[650px] overflow-hidden border-8 border-[#6A64641F] shadow-md">
                     <Link
                       href={blogPostHref(posts[0].slug)}
-                      className="block aspect-[4/3] h-full w-full"
+                      className="block aspect-4/3 h-full w-full"
                     >
                       <Image
                         src={posts[0].image}
                         alt={posts[0].title}
                         width={650}
                         height={488}
-                        className="aspect-[4/3] h-full w-full object-cover object-center"
+                        className="aspect-4/3 h-full w-full object-cover object-center"
                       />
                     </Link>
                   </div>
@@ -153,7 +153,7 @@ export default function BlogIndex({
                   <h2 className="mb-4 text-[36px] font-semibold text-gray-800">
                     {posts[0].title}
                   </h2>
-                  <p className="mb-4 line-clamp-[9] font-['satoshi-light'] text-[20px] leading-[31px] text-gray-800">
+                  <p className="mb-4 line-clamp-9 font-['satoshi-light'] text-[20px] leading-[31px] text-gray-800">
                     {posts[0].excerpt}
                   </p>
                   <div className="flex w-full justify-end">
@@ -167,7 +167,7 @@ export default function BlogIndex({
                 </div>
               </div>
               <div className="mx-auto flex max-w-[1311px] flex-col gap-0.5">
-                <div className="h-[1px] w-full bg-black" />
+                <div className="h-px w-full bg-black" />
                 <div className="h-[3px] w-full bg-black" />
               </div>
             </div>
@@ -183,19 +183,19 @@ export default function BlogIndex({
                   href={blogPostHref(posts[0].slug)}
                   className="mx-auto flex w-fit justify-center"
                 >
-                  <div className="aspect-[4/3] w-[334px] overflow-hidden border-[6px] border-[#6A64641F] shadow-md">
+                  <div className="aspect-4/3 w-[334px] overflow-hidden border-[6px] border-[#6A64641F] shadow-md">
                     <Image
                       src={posts[0].image}
                       alt={posts[0].title}
                       width={334}
                       height={251}
-                      className="aspect-[4/3] h-full w-full object-cover object-center"
+                      className="aspect-4/3 h-full w-full object-cover object-center"
                     />
                   </div>
                 </Link>
               </div>
               <div>
-                <p className="line-clamp-[8] font-['satoshi-light'] text-xl leading-[26px] text-[#312E2C]">
+                <p className="line-clamp-8 font-['satoshi-light'] text-xl leading-[26px] text-[#312E2C]">
                   {posts[0].excerpt}
                 </p>
               </div>
@@ -210,7 +210,7 @@ export default function BlogIndex({
                 </div>
               </div>
               <div className="mx-auto flex max-w-[1311px] flex-col gap-0.5">
-                <div className="h-[1px] w-full bg-black" />
+                <div className="h-px w-full bg-black" />
                 <div className="h-[3px] w-full bg-black" />
               </div>
             </div>
@@ -251,13 +251,13 @@ export default function BlogIndex({
                       href={blogPostHref(post.slug)}
                       className="flex flex-col gap-3"
                     >
-                      <div className="aspect-[4/3] w-full overflow-hidden">
+                      <div className="aspect-4/3 w-full overflow-hidden">
                         <Image
                           src={post.image}
                           alt={post.title}
                           width={500}
                           height={375}
-                          className="aspect-[4/3] h-full w-full object-cover object-center"
+                          className="aspect-4/3 h-full w-full object-cover object-center"
                         />
                       </div>
                       <p className="font-['satoshi-light'] text-base text-[#373A44] md:mt-2 md:text-[24px]">
@@ -437,7 +437,7 @@ export default function BlogIndex({
 
         {showPagination && (
           <div className="mx-auto hidden w-full max-w-[1400px] space-y-0.25 px-[30px] md:block md:px-12">
-            <div className="h-[1px] w-full bg-[#1c1c1c]" />
+            <div className="h-px w-full bg-[#1c1c1c]" />
             <div className="h-[3px] w-full bg-[#1c1c1c]" />
           </div>
         )}

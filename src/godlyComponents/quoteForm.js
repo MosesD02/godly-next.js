@@ -519,7 +519,7 @@ export default function QuoteForm({ isDialog }) {
               value={formData.name}
               onChange={handleChange}
               placeholder="YOUR NAME"
-              className="rounded-none border-t-0 border-r-0 !border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+              className="rounded-none border-t-0 border-r-0 border-b! border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
               required
             />
           </div>
@@ -533,7 +533,7 @@ export default function QuoteForm({ isDialog }) {
               placeholder="YOUR EMAIL"
               value={formData.email}
               onChange={handleChange}
-              className="rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+              className="rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
               required
             />
           </div>
@@ -549,7 +549,7 @@ export default function QuoteForm({ isDialog }) {
               placeholder="YOUR PHONE NUMBER"
               value={formData.phone}
               onChange={handleChange}
-              className="ml-4 rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:ml-6 md:text-xl xl:ml-6 xl:text-2xl"
+              className="ml-4 rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:ml-6 md:text-xl xl:ml-6 xl:text-2xl"
               required
             />
           </div>
@@ -566,7 +566,7 @@ export default function QuoteForm({ isDialog }) {
               <PopoverTrigger asChild>
                 <button
                   type="button"
-                  className="w-full rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-[15px] text-left text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+                  className="w-full rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-[15px] text-left text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
                 >
                   <div className="flex w-full items-center space-x-2">
                     <p className="overflow-hidden text-ellipsis whitespace-nowrap">
@@ -589,7 +589,7 @@ export default function QuoteForm({ isDialog }) {
                 side="bottom"
                 sideOffset={4}
                 className={cn(
-                  "paper-bg-14 z-[200] w-[var(--radix-popover-trigger-width)] max-h-[min(22rem,calc(100vh-6rem))] max-w-[calc(100vw-2rem)] overflow-y-auto border-0 bg-[#AB8459] p-6 shadow-xl",
+                  "paper-bg-14 z-200 w-(--radix-popover-trigger-width) max-h-[min(22rem,calc(100vh-6rem))] max-w-[calc(100vw-2rem)] overflow-y-auto border-0 bg-[#AB8459] p-6 shadow-xl",
                   "md:min-w-[300px] xl:min-w-[335px]",
                 )}
                 onOpenAutoFocus={(e) => e.preventDefault()}
@@ -697,7 +697,7 @@ export default function QuoteForm({ isDialog }) {
               placeholder="YOUR ZIP CODE"
               value={formData.zipcode}
               onChange={handleChange}
-              className="w-full rounded-none border-t-0 border-r-0 border-b-1 border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+              className="w-full rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
               required
             />
           </div>
@@ -744,7 +744,7 @@ export default function QuoteForm({ isDialog }) {
           width={234}
           height={267}
           className={cn(
-            "absolute top-0 left-full z-10 -translate-x-[calc(50%_+_38px)] -translate-y-[calc(50%_-_48px)] rotate-[-17.311deg]",
+            "absolute top-0 left-full z-10 -translate-x-[calc(50%+38px)] -translate-y-[calc(50%-48px)] rotate-[-17.311deg]",
             isDialog && "hidden",
           )}
         />
