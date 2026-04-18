@@ -105,12 +105,12 @@ const FourStepProcess = () => {
       <div className="fourstepprocess-inner relative flex flex-col items-center justify-center gap-[100px] md:gap-44">
         <div className="heading relative flex flex-col gap-0">
           <div className="relative flex flex-col items-center justify-center gap-0">
-            <h4
+            <h2
               className="trim text-grain bg-white! text-[32px] tracking-[3.84px] md:text-[64px]"
               data-text="Services"
             >
               Services
-            </h4>
+            </h2>
             {/* <h4 className="with-text-fourstepprocess trim z-10 text-center!">
               With
             </h4>
@@ -280,7 +280,7 @@ const Badge = ({
         )}
       />
     </span>
-    <h6 className="group relative">
+    <div className="group relative">
       <span
         className={`mr-4 border-b-3 border-[#f1caa0] font-sans text-base font-black text-[#f1caa0] uppercase transition-all duration-300 md:text-4xl ${
           isActive ? "" : "text-[#f1caa0]"
@@ -298,7 +298,7 @@ const Badge = ({
       >
         {text}
       </span>
-    </h6>
+    </div>
   </div>
 );
 

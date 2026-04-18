@@ -74,9 +74,9 @@ const ServiceIncludes = ({ slug, cityName }) => {
                 )}
               >
                 <div className="flex flex-col items-center justify-center gap-[32px]">
-                  <h5 className="text-center text-base font-normal">
+                  <div className="text-center text-base font-normal">
                     <span className="trim">{step.number}</span>
-                  </h5>
+                  </div>
 
                   <p
                     className={cn(

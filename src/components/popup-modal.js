@@ -116,7 +116,11 @@ export function PopupModal() {
         >
           <DialogHeader className="sr-only" />
           <DialogDescription className="sr-only" />
-          <DialogTitle className="sr-only" />
+          <DialogTitle asChild>
+            <span className="sr-only">
+              New Client Special — limited-time offer for first-time clients
+            </span>
+          </DialogTitle>
 
           <h2 className="trim mb-2 text-center text-[32px] leading-none text-black md:mt-8">
             New Client Special
@@ -226,7 +230,9 @@ export function PopupModal() {
       {/* Quote Form Modal */}
       <Dialog open={quoteFormOpen} onOpenChange={setQuoteFormOpen}>
         <DialogHeader>
-          <DialogTitle className="hidden">Contact Us</DialogTitle>
+          <DialogTitle asChild>
+            <span className="sr-only">Contact Us</span>
+          </DialogTitle>
         </DialogHeader>
         <DialogContent className="z-100 border-none bg-transparent p-0 md:max-w-[1200px]">
           <QuoteForm isDialog={true} />

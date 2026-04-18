@@ -40,12 +40,12 @@ const HowItWorks = () => {
         >
           HOW IT WORKS
         </h2>
-        <h4
+        <h3
           className="text-grain -mt-2 bg-[#61503E]! text-[20px] font-normal tracking-[1.8px] md:text-[32px] md:tracking-normal"
           data-text="IN 3 SIMPLE STEPS"
         >
           IN 3 SIMPLE STEPS
-        </h4>
+        </h3>
       </div>
       <div
         className="text-white md:pt-16 md:pb-16"
@@ -55,9 +55,9 @@ const HowItWorks = () => {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="relative z-10 flex flex-col gap-6 rounded-md bg-[#e7e3e0] p-6 text-black shadow md:w-80">
-                <h5 className="trim text-[32px] font-normal text-[#AE9D8A]">
+                <h4 className="trim text-[32px] font-normal text-[#AE9D8A]">
                   #<span className="font-[Stencil]">{step.number}</span>
-                </h5>
+                </h4>
 
                 <div className="text-left text-4xl md:mt-2 md:mb-4">
                   {step.title}

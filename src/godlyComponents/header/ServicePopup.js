@@ -131,7 +131,9 @@ const ServicePopup = ({ open, onOpenChange }) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange} className="">
       <DialogHeader>
-        <DialogTitle className="hidden">Our Services</DialogTitle>
+        <DialogTitle asChild>
+          <span className="sr-only">Our Services</span>
+        </DialogTitle>
       </DialogHeader>
       <DialogContent
         hideCloseButton

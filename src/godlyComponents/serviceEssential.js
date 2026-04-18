@@ -69,7 +69,7 @@ const EssentialService = ({ slug, essentialOverride, cityName }) => {
               onClick={() => toggleCard(index)}
             >
               <div className="flex h-full grow flex-col gap-4 rounded-[12px] border-[1.7px] border-solid border-[#2D2B2B] px-3 py-3 sm:px-4 sm:py-4 md:px-5 md:py-5 lg:px-6 lg:py-6 xl:px-7 xl:py-7">
-                <h2
+                <div
                   className={cn(
                     "stroke! trim stroke-[#2D2B2B33] stroke-1! text-[40px] font-bold sm:text-[48px] md:text-[64px] lg:text-[72px] xl:text-[80px]",
                     isActive ? "text-[#312E2C30]" : "text-[#312E2C30]",
@@ -77,10 +77,10 @@ const EssentialService = ({ slug, essentialOverride, cityName }) => {
                   )}
                 >
                   {point.number}
-                </h2>
-                <h3 className="trim font-['satoshi-bold'] text-sm text-[#2D2B2B] sm:text-base md:mt-2 md:text-[24px] lg:text-[28px] xl:text-[32px]">
+                </div>
+                <h2 className="trim font-['satoshi-bold'] text-sm text-[#2D2B2B] sm:text-base md:mt-2 md:text-[24px] lg:text-[28px] xl:text-[32px]">
                   {point.title}
-                </h3>
+                </h2>
                 <p className="trim font-[satoshi-medium] text-sm text-[#2D2B2B] sm:text-base md:mt-1 md:text-[20px] lg:text-[24px] xl:text-[28px]">
                   {point.text}
                 </p>

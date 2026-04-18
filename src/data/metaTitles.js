@@ -439,7 +439,6 @@ export const generateServiceSectionHeadings = (serviceSlug, cityName) => {
     h2Benefits: `Benefits of Professional ${serviceName}`,
     h2Areas: `${serviceName} Service Areas in ${location}`,
     h2Pricing: `${serviceName} Pricing in ${location}`,
-    h2Contact: `Contact Us for ${serviceName} in ${location}`,
   };
 };
 

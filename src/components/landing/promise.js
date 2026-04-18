@@ -133,12 +133,12 @@ const Promise = () => {
       className="paper-bg-16 flex flex-col items-center justify-items-center gap-10 bg-[#ede0d2] px-[30px] pt-[50px] pb-[100px] md:px-[86px] md:py-[150px]"
     >
       <div className="mb-[150px] flex flex-col items-center gap-[70px]">
-        <h4
+        <h2
           className="text-grain trim bg-[#191717]! text-center text-4xl font-normal tracking-wide md:text-[64px]"
           data-text="What It Really Looks Like When We Show Up"
         >
           What It Really Looks <br /> Like When We Show Up
-        </h4>
+        </h2>
         <div className="paper-bg-8 flex w-full max-w-fit flex-col items-center justify-center gap-2 rounded-[2.395px] border-[1.2px] border-[rgba(106,100,100,0.12)] bg-white p-[7.2px] pb-[14.37px] md:mx-auto">
           <div className="relative w-full max-w-[400px]">
             <video
@@ -187,10 +187,10 @@ const Promise = () => {
         }}
       >
         <div className="flex -translate-y-11 flex-col items-center gap-4">
-          <h2 className="text-trim -rotate-2 text-[64px] font-normal tracking-[5.76px] text-[#191717]">
+          <div className="text-trim -rotate-2 text-[64px] font-normal tracking-[5.76px] text-[#191717]">
             old fashioned Values
-          </h2>
-          <h4 className="absolute top-3/5 mt-0 -rotate-2 text-3xl font-normal text-[#191717]">
+          </div>
+          <div className="absolute top-3/5 mt-0 -rotate-2 text-3xl font-normal text-[#191717]">
             <span className="text-[32px] underline">UNRIVALED</span>{" "}
             <span
               className="text-trim quality-text font-['luminaire-script'] text-[80px] text-[#B0906E]"
@@ -198,18 +198,18 @@ const Promise = () => {
             >
               Quality
             </span>
-          </h4>
+          </div>
         </div>
       </div>
       <Story />
       <div className="flex flex-col items-center justify-center gap-4 py-10 md:gap-10">
-        <h4
+        <h2
           className="text-grain trim bg-[#191717]! text-center text-4xl font-normal tracking-wide md:text-[64px]"
           data-text="Services"
         >
           Services
-        </h4>
-        <h4 className="trim text-center text-4xl font-normal tracking-wide md:-mt-6 md:text-[64px]">
+        </h2>
+        <h3 className="trim text-center text-4xl font-normal tracking-wide md:-mt-6 md:text-[64px]">
           <span
             className="md:text-grain trim relative text-[#61503E] underline"
             data-text="The Way"
@@ -222,7 +222,7 @@ const Promise = () => {
           >
             It Should be
           </span>
-        </h4>
+        </h3>
       </div>
 
       <div className="relative z-10 flex flex-wrap justify-center gap-6 sm:gap-2 sm:px-4 md:gap-8">
@@ -257,9 +257,9 @@ const Promise = () => {
               </div>
               <div className="relative z-10 flex min-h-65 flex-col items-start justify-between gap-15 rounded-md border border-dashed border-[#6A6464] p-4">
                 <div className="flex flex-col gap-8">
-                  <h5 className="text-base font-normal">
+                  <div className="text-base font-normal">
                     <span className="text-base">{step.number}</span>
-                  </h5>
+                  </div>
 
                   <div
                     className={`text-grain max-w-[170px] text-left text-4xl ${
@@ -377,7 +377,7 @@ function Story() {
         </div>
       </div>
       <div className="flex flex-1 flex-col items-start justify-center gap-[34px] p-3 md:gap-[40px]">
-        <h4 className="flex items-center gap-4 text-4xl text-white md:text-6xl">
+        <div className="flex items-center gap-4 text-4xl text-white md:text-6xl">
           <span
             className="text-grain bg-[#F3CA9E]! font-['marlton']"
             data-text="LOCAL"
@@ -398,7 +398,7 @@ function Story() {
             {" "}
             OWNED
           </span>
-        </h4>
+        </div>
         <p
           className="text-justify text-sm tracking-wide text-[#A4A4A4] md:text-base"
           style={{

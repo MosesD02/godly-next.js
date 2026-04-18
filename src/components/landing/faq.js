@@ -41,7 +41,7 @@ const Faq = () => {
         >
           FREQUENTLY
         </h2>
-        <h4 className="text-[24px] font-semibold tracking-wide text-[#191717] md:text-2xl">
+        <h3 className="text-[24px] font-semibold tracking-wide text-[#191717] md:text-2xl">
           <span>ASKED</span>{" "}
           <span
             className="text-grain ml-3 bg-[#61503E]! font-['luminaire-script'] text-[48px] font-medium md:text-[64px]"
@@ -49,7 +49,7 @@ const Faq = () => {
           >
             Questions
           </span>
-        </h4>
+        </h3>
 
         <div className="mt-10 w-full">
           <Accordion type="single" collapsible className="w-full space-y-2">

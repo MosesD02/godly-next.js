@@ -27,7 +27,7 @@ const Faq = ({ faqs, serviceName, cityName }) => {
         >
           FREQUENTLY
         </h2>
-        <h4 className="text-[24px] font-semibold tracking-wide text-[#191717] md:text-2xl">
+        <h3 className="text-[24px] font-semibold tracking-wide text-[#191717] md:text-2xl">
           <span>ASKED</span>{" "}
           <span
             className="text-grain ml-3 bg-[#61503E]! font-['luminaire-script'] text-[48px] font-medium md:text-[64px]"
@@ -35,7 +35,7 @@ const Faq = ({ faqs, serviceName, cityName }) => {
           >
             Questions
           </span>
-        </h4>
+        </h3>
         {(serviceName || cityName) && (
           <p className="mt-2 text-center font-['satoshi-regular'] text-sm text-[#2D2B2B] md:text-base">
             {[serviceName, cityName].filter(Boolean).join(" · ")}

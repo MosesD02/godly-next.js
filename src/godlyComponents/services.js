@@ -25,12 +25,12 @@ const Services = ({ cityName: city }) => {
           </span>
           <div className="flex flex-col items-center justify-center">
             <div className="text-trim flex items-end">
-              <h2
+              <div
                 className="text-grain font-marlton bg-white! text-[32px] tracking-[3.84px] sm:text-[40px] md:text-[64px] lg:text-[72px] xl:text-[80px]"
                 data-text="MORE THAN"
               >
                 MORE THAN
-              </h2>
+              </div>
               <span
                 className="text-grain ms-2 mb-1 bg-white! text-sm tracking-[1.2px] sm:text-base md:ms-[21px] md:mb-3 md:text-[20px] lg:text-[22px] xl:text-[24px]"
                 data-text="JUST"
@@ -126,7 +126,7 @@ const Services = ({ cityName: city }) => {
         <div className="mt-4 mb-[164px] flex flex-col items-center justify-center gap-9 md:mb-[220px] md:max-w-[741px]">
           <div className="flex flex-col items-center justify-center gap-[35px]">
             <div className="relative max-w-[359px] md:max-w-full md:min-w-full">
-              <h4 className="relative text-center font-['satoshi-black'] text-[32px] leading-[130%] text-[#FDE4C8] md:text-[96px]">
+              <h2 className="relative text-center font-['satoshi-black'] text-[32px] leading-[130%] text-[#FDE4C8] md:text-[96px]">
                 {city === "PARKLAND"
                   ? "Holiday Lights Without the Ladder"
                   : city === "COCONUT CREEK"
@@ -174,7 +174,7 @@ const Services = ({ cityName: city }) => {
                   alt="holiday santa hat decoration"
                   className="pointer-events-none absolute -top-11 left-6 scale-50 md:-top-6 md:-left-1 md:scale-100"
                 />
-              </h4>
+              </h2>
 
               <div className="absolute right-15 -bottom-5 px-2 text-xs text-nowrap text-black md:right-15 md:bottom-0 md:text-sm">
                 <div className="relative">
@@ -1282,7 +1282,7 @@ function ServicesGrid() {
                     )}
                   </div>
 
-                  <h3
+                  <h2
                     className={`font-['satoshi-black'] text-sm font-bold ${isActive ? "text-white" : "text-[#1c1c1c]"} group-hover:text-white md:text-[24px]`}
                   >
                     {city === "FORT LAUDERDALE"
@@ -1344,7 +1344,7 @@ function ServicesGrid() {
                                                                           "WEST PARK"
                                                                         ? `${service.name} in West Park`
                                                                         : service.name}
-                  </h3>
+                  </h2>
                   <p
                     className={`font-[satoshi-regular] text-xs font-normal ${isActive ? "text-white" : "text-[#1f1d1d]"} group-hover:text-white md:text-base`}
                   >

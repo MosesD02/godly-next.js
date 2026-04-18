@@ -29,7 +29,9 @@ const CitiesPopup = ({ open, onOpenChange }) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange} className="">
       <DialogHeader>
-        <DialogTitle className="hidden">Our Cities</DialogTitle>
+        <DialogTitle asChild>
+          <span className="sr-only">Our Cities</span>
+        </DialogTitle>
       </DialogHeader>
       <DialogContent
         hideCloseButton

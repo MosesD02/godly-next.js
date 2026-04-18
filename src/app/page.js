@@ -101,6 +101,7 @@ const structuredData = {
           description: "South Florida surrounding areas",
         },
       ],
+      priceRange: "$$",
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Cleaning Services",
@@ -145,6 +146,15 @@ const structuredData = {
       name: "Godly Windows & Wash Co.",
       url: BASE_URL,
       telephone: "+1-954-852-5326",
+      image: `${BASE_URL}/favicon.svg`,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "3315 E Oakland Park Blvd, Suite 204",
+        addressLocality: "Fort Lauderdale",
+        addressRegion: "FL",
+        postalCode: "33308",
+        addressCountry: "US",
+      },
     },
   ],
 };

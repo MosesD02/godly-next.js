@@ -33,9 +33,9 @@ const OtherServices = ({ slug, cityName: cityNameProp, citySlug }) => {
       id="promise"
       className="paper-bg-16 flex flex-col items-center justify-center justify-items-center gap-10 bg-[#ebded1] bg-cover bg-center bg-no-repeat p-4 pb-24 bg-blend-multiply md:p-24 md:pt-0 md:pb-42"
     >
-      <h4 className="trim py-10 text-center text-[32px] leading-tight font-normal tracking-wide text-[#191717] md:max-w-[1200px] md:text-[64px]">
+      <h2 className="trim py-10 text-center text-[32px] leading-tight font-normal tracking-wide text-[#191717] md:max-w-[1200px] md:text-[64px]">
         enhance your cleaning with other services we offer in {cityName || city}
-      </h4>
+      </h2>
 
       <div className="grid w-full max-w-(--breakpoint-xl) grid-cols-2 gap-10 px-4 py-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {steps.map((step, index) => (

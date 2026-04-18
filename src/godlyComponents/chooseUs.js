@@ -383,15 +383,15 @@ const ChooseUs = ({ slug }) => {
     <div>
       <div className="paper-bg-16 flex flex-col items-center gap-[55px] bg-[#262424] px-6 pt-12 md:py-24">
         <div>
-          <h4 className="-mt-4 text-center font-['luminaire-script'] text-xl text-[#F3CA9E] underline">
+          <div className="-mt-4 text-center font-['luminaire-script'] text-xl text-[#F3CA9E] underline">
             Why
-          </h4>
-          <h4
+          </div>
+          <h2
             className="text-grain bg-[#FFFFFF]! text-[32px] tracking-wide md:text-6xl"
             data-text="CHOOSE US"
           >
             Choose US
-          </h4>
+          </h2>
         </div>
         <ServicesGrid services={services} />
       </div>

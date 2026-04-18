@@ -780,26 +780,26 @@ const FourStepProcess = () => {
             city === "OAKLAND PARK" ||
             city === "WESTON" ||
             city === "ROYAL PALM BEACH" ? (
-              <h4 className="text-grain trim bg-white! text-center text-[20px] tracking-[2px] sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px]">
+              <h2 className="text-grain trim bg-white! text-center text-[20px] tracking-[2px] sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px]">
                 {cityContent.mainHeading}
-              </h4>
+              </h2>
             ) : (
               <>
-                <h4
+                <h2
                   className="trim text-grain bg-white! text-[32px] tracking-[3.84px] md:text-[64px]"
                   data-text="OUR 4 STEP PROCESS"
                 >
                   OUR 4 STEP PROCESS
-                </h4>
-                <h4 className="with-text-fourstepprocess trim z-10 text-center!">
+                </h2>
+                <div className="with-text-fourstepprocess trim z-10 text-center!">
                   With
-                </h4>
-                <h4
+                </div>
+                <div
                   className="text-grain trim bg-white! text-[24px] tracking-[3.84px] sm:text-[28px] md:text-[48px] lg:text-[56px] xl:text-[64px]"
                   data-text="RAINSHIELD TECH"
                 >
                   RAINSHIELD TECH
-                </h4>
+                </div>
               </>
             )}
           </div>
@@ -967,7 +967,7 @@ const Badge = ({
         )}
       />
     </span>
-    <h6 className="group relative">
+    <div className="group relative">
       <span
         className={`mr-4 border-b-3 border-[#f1caa0] font-sans text-base font-black text-[#f1caa0] uppercase transition-all duration-300 md:text-4xl ${
           isActive ? "" : "text-[#f1caa0]"
@@ -985,7 +985,7 @@ const Badge = ({
       >
         {text}
       </span>
-    </h6>
+    </div>
   </div>
 );
 

@@ -33,18 +33,18 @@ const Savings = () => {
   return (
     <div className="paper-bg-16 flex hidden flex-col items-center justify-items-center bg-[#ebded1] bg-cover bg-center bg-no-repeat p-16 bg-blend-multiply">
       <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-items-center bg-cover bg-center bg-no-repeat p-16 bg-blend-multiply">
-        <h2
+        <div
           className="text-grain bg-[#191717]! text-[64px] font-normal"
           data-text="HUGE SAVINGS AND"
         >
           HUGE SAVINGS AND
-        </h2>
-        <h2
+        </div>
+        <div
           className="text-grain -mt-8 bg-[#191717]! text-[64px] font-normal before:inset-0"
           data-text="ALWAYS LOOK GREAT"
         >
           ALWAYS LOOK GREAT
-        </h2>
+        </div>
         <div
           className="pt-16 pb-16 text-white"
           // style={{ marginTop: "1rem", marginBottom: "3rem" }}
@@ -97,7 +97,9 @@ const FormPopup = ({ open, onOpenChange }) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
-        <DialogTitle className="hidden">Contact Us</DialogTitle>
+        <DialogTitle asChild>
+          <span className="sr-only">Contact Us</span>
+        </DialogTitle>
       </DialogHeader>
       <DialogContent className="z-100 border-none bg-transparent p-0 md:max-w-[1200px]">
         <QuoteForm isDialog={true} />
