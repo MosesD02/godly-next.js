@@ -1,6 +1,6 @@
 import React from "react";
 import "@/styles/fourstepprocess.css";
-import Image from "next/image";
+import Image from "@/components/Image";
 // import near1 from "@/assets/near1.webp";
 // import near2 from "@/assets/near2.webp";
 import near3 from "@/assets/near3.webp";

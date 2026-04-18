@@ -1,7 +1,7 @@
 "use client";
 import { React, useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
+import Image from "@/components/Image";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { format } from "date-fns";

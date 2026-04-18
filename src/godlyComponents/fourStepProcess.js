@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import "@/styles/fourstepprocess.css";
-import Image from "next/image";
+import Image from "@/components/Image";
 import spark from "../assets/spark.webp";
 import drop from "../assets/drop.webp";
 import { cn } from "@/lib/utils";

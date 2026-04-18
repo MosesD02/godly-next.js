@@ -4,7 +4,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import ServiceButton from "@/components/servicebutton";
-import Image from "next/image";
+import Image from "@/components/Image";
 import textWaveBg from "@/assets/text-bg-wave.webp";
 import Cap from "@/assets/santaCap.webp";
 import Santa from "@/assets/santa.webp";

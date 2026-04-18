@@ -2,7 +2,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import "@/styles/fourstepprocess.css";
-import Image from "next/image";
+import Image from "@/components/Image";
 
 import ticketBg from "@/assets/ticket-bg.webp";
 

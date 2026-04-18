@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+import Image from "@/components/Image";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Calendar } from "@/components/ui/calendar";

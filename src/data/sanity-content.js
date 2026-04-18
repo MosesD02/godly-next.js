@@ -64,7 +64,7 @@ const POST_BY_SLUG_QUERY = `*[_type == "post" && slug.current == $slug][0] {
 function toBlogPost(doc) {
   if (!doc) return null;
   const imageUrl = doc.image
-    ? urlFor(doc.image).width(800).height(600).url()
+    ? urlFor(doc.image).width(1600).quality(90).auto("format").url()
     : null;
   return {
     ...doc,

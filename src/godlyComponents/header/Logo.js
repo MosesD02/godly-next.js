@@ -1,7 +1,7 @@
 // src/godlyComponents/header/Logo.js
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/Image";
 import logo from "@/assets/logo-new.png";
 
 const Logo = () => {

@@ -1,5 +1,5 @@
 // components/LatestNews.tsx
-import Image from "next/image";
+import Image from "@/components/Image";
 import BlogsImage from "../assets/blogImage.webp";
 import Link from "next/link";
 

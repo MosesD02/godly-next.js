@@ -1,7 +1,12 @@
 import React from "react";
+import Image from "@/components/Image";
 import "@/styles/fourstepprocess.css";
 import QuoteForm from "./quoteForm";
-import { generateHomeH1, generateServiceH1 } from "@/data/metaTitles";
+import {
+  generateHomeH1,
+  generateServiceH1,
+  generateCityHeroAlt,
+} from "@/data/metaTitles";
 
 const formatCity = (cityVal) => {
   if (!cityVal) return "South Florida";
@@ -17,8 +22,16 @@ const Hero = ({ service, source, serviceSlug, cityName }) => {
 
   return (
     <div className="relative overflow-x-clip bg-[#1F1D1D]">
-      <div className="absolute top-[0px] left-0 h-[450px] w-full bg-[url('/assets/heroBanner.jpg')] bg-cover bg-center bg-no-repeat md:top-[0px] md:h-[700px]">
-        <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-b from-[#1F1D1D]/0 to-[#1F1D1D]"></div>
+      <div className="absolute top-[0px] left-0 h-[450px] w-full md:top-[0px] md:h-[700px]">
+        <Image
+          src="/assets/new-hero.jpeg"
+          alt={generateCityHeroAlt(city)}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center md:object-[center_82%]"
+        />
+        <div className="absolute top-0 left-0 z-[1] h-full w-full bg-gradient-to-b from-[#1F1D1D]/0 to-[#1F1D1D]" />
       </div>
       <div className="relative z-10 mx-auto max-w-[1440px] px-[20px] md:px-14 md:pb-32">
         <div className="flex min-h-[600px] flex-col justify-end gap-3 pb-10 xl:min-h-[815px]">

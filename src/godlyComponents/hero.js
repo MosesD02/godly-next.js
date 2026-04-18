@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import Image from "@/components/Image";
 import "@/styles/fourstepprocess.css";
 import QuoteForm from "./quoteForm";
 import { generateHomeH1, generateCityHeroAlt } from "@/data/metaTitles";
@@ -204,10 +204,10 @@ const Hero = ({ cityName: city }) => {
     <div className="relative overflow-x-clip bg-[#1F1D1D]">
       <div className="absolute top-[70px] left-0 h-[450px] w-full md:top-[20px] md:h-[700px]">
         <Image
-          src="/assets/heroBanner.jpg"
+          src="/assets/new-hero.jpeg"
           alt={generateCityHeroAlt(city)}
           fill
-          className="object-cover object-center"
+          className="object-cover object-center md:object-[center_82%]"
           priority
           sizes="100vw"
         />

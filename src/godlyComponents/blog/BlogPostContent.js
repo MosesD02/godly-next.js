@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/Image";
 import { PortableText } from "@portabletext/react";
 import { urlFor } from "@/sanity/image";
 
@@ -11,7 +11,7 @@ const components = {
   types: {
     image: ({ value }) => {
       if (!value?.asset) return null;
-      const imageUrl = urlFor(value).width(800).height(600).url();
+      const imageUrl = urlFor(value).width(1600).quality(90).auto("format").url();
       const alt = value.alt || "";
       return (
         <figure className="my-8">

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/Image";
 import { format } from "date-fns";
 
 export default function RelatedBlogPosts({ posts, citySlug }) {

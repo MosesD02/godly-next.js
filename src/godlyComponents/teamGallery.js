@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image from "@/components/Image";
 import pic1 from "@/assets/blue-collar/1.webp";
 import pic2 from "@/assets/blue-collar/2.webp";
 import pic3 from "@/assets/blue-collar/3.webp";

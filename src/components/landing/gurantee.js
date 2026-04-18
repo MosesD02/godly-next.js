@@ -1,7 +1,7 @@
 import cardBg from "@/assets/card_bg.webp";
 import React from "react";
 import barcode from "@/assets/barcode.webp";
-import Image from "next/image";
+import Image from "@/components/Image";
 
 const Gurantee = () => {
   return (

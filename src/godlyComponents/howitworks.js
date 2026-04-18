@@ -1,6 +1,6 @@
 import React from "react";
 import "@/styles/fourstepprocess.css";
-import Image from "next/image";
+import Image from "@/components/Image";
 import img1 from "@/assets/howitworks1.webp";
 import img2 from "@/assets/howitworks2.webp";
 import img3 from "@/assets/howitworks3.webp";

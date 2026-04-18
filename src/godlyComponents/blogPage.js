@@ -2,7 +2,7 @@ import React from "react";
 import "@/styles/fourstepprocess.css";
 import WebsiteLayout from "./websiteLayout";
 import windowCleaning from "@/assets/windowCleaning.webp";
-import Image from "next/image";
+import Image from "@/components/Image";
 import BlogsSection from "./blogsSection";
 
 const BlogPage = () => {

@@ -3,7 +3,7 @@ import { useGodlyContext } from "@/context/godlyContext";
 import React, { useState } from "react";
 import Link from "next/link";
 import "@/styles/fourstepprocess.css";
-import Image from "next/image";
+import Image from "@/components/Image";
 import { citiesMap } from "@/data/cities";
 import { generateServiceHeroAlt } from "@/data/metaTitles";
 import { getRelatedServiceSteps } from "@/data/relatedServices";

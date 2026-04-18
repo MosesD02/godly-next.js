@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Raster optimizations for public assets (hero banner WebP).
- * Requires source `public/assets/heroBanner.jpg` when present.
+ * Requires source `public/assets/new-hero.jpeg` when present.
  */
 import { existsSync } from "node:fs";
 import { mkdir } from "node:fs/promises";
@@ -10,12 +10,12 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
-const heroJpg = join(root, "public/assets/heroBanner.jpg");
-const heroWebp = join(root, "public/assets/heroBanner.webp");
+const heroJpg = join(root, "public/assets/new-hero.jpeg");
+const heroWebp = join(root, "public/assets/new-hero.webp");
 
 async function main() {
   if (!existsSync(heroJpg)) {
-    console.log("optimize-static-assets: no public/assets/heroBanner.jpg — skip");
+    console.log("optimize-static-assets: no public/assets/new-hero.jpeg — skip");
     return;
   }
 

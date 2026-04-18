@@ -1,6 +1,6 @@
 import React from "react";
 import "@/styles/fourstepprocess.css";
-import Image from "next/image";
+import Image from "@/components/Image";
 import { cn } from "@/lib/utils";
 import FreeQuoteButton from "@/components/freeQuote";
 import Services from "@/data/servicesData";

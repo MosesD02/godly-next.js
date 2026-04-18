@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import grainBg from "../assets/grain-bg.webp";
-import Image from "next/image";
+import Image from "@/components/Image";
 import subtract from "../assets/subtract.svg";
 import {
   Dialog,

@@ -3,7 +3,7 @@
 import React from "react";
 import { Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo-new.png";
-import Image from "next/image";
+import Image from "@/components/Image";
 // import CityTags from "@/components/cityTags";
 import Link from "next/link";
 import { cn } from "@/lib/utils";

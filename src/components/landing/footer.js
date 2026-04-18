@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "@/assets/logo-new.png";
-import Image from "next/image";
+import Image from "@/components/Image";
 import Link from "next/link";
 
 import QuoteForm from "./quoteForm";

@@ -1,5 +1,5 @@
 import grainBg from "../assets/grain-bg.webp";
-import Image from "next/image";
+import Image from "@/components/Image";
 import subtract from "../assets/subtract.svg";
 
 export default function HeaderButton({ onClick }) {
