@@ -241,6 +241,7 @@ export function generateCitySchema(citySlug) {
     };
   }
 
+  // Google rich-results validation does not accept aggregateRating on Service.
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -250,11 +251,6 @@ export function generateCitySchema(citySlug) {
     serviceType:
       "Window cleaning, pressure washing, gutter cleaning, house washing",
     url: `${BASE_URL}/${citySlug}`,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: "157",
-    },
   };
 }
 
