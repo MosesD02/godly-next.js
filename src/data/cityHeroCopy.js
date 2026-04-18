@@ -70,6 +70,11 @@ export const CITY_HERO_COPY = {
     subheading:
       "we offer window cleaning, soft wash house washing, paver sealing, pressure washing and more for coastal homes.",
   },
+  LAUDERHILL: {
+    heading: "Trusted Window Cleaning And Pressure Washing In Lauderhill",
+    subheading:
+      "professional window washing, house soft washing, paver sealing, driveway pressure washing and full exterior care.",
+  },
   "LIGHTHOUSE POINT": {
     heading: "High End Window Cleaning And Pressure Washing In Lighthouse Point",
     subheading:

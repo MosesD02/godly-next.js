@@ -1,6 +1,14 @@
 import { customMetaData } from "./customMetaData.js";
 import { citiesMap } from "./cities.js";
 import { getCityHeroContent } from "./cityHeroCopy.js";
+import { BASE_URL } from "@/app/lib/constants";
+
+/** Cities with a real physical office — LocalBusiness JSON-LD on `/[city]`; others use Service. */
+export const PHYSICAL_OFFICE_CITY_SLUGS = new Set(["boca-raton", "weston"]);
+
+export function citySlugHasPhysicalOffice(citySlug) {
+  return PHYSICAL_OFFICE_CITY_SLUGS.has(citySlug);
+}
 
 // Phone numbers by geographic group - use for city pages, schema, CTAs
 export const cityPhoneMap = {
@@ -20,6 +28,7 @@ export const cityPhoneMap = {
     "sunrise",
     "hillsboro-beach",
     "coconut-creek",
+    "lauderhill",
   ],
   "(561) 826-4461": ["boca-raton", "delray-beach", "royal-palm-beach"],
   "(954) 738-3421": [
@@ -149,12 +158,13 @@ export function getOfficeGeoForCitySlug(citySlug) {
 }
 
 /**
- * Multiline office address for footer (physical location for that market).
- * Empty for south-florida / unknown.
+ * Multiline office address for footer — only for cities with a real physical office.
+ * Group B service-area pages do not show a street address (avoids implying a non-existent location).
  */
 export function getOfficeAddressMultilineForDisplayName(displayName) {
   const slug = cityDisplayNameToSlug(displayName);
   if (!slug || slug === "south-florida") return "";
+  if (!citySlugHasPhysicalOffice(slug)) return "";
   const o = OFFICES[officeRegionKeyForCitySlug(slug)];
   return `${o.streetAddress}\n${o.addressLocality}, FL ${o.postalCode}`;
 }
@@ -200,28 +210,46 @@ export const businessOpeningHoursSpecification = [
   },
 ];
 
-// JSON-LD schema for city pages — HomeAndConstructionBusiness with aggregateRating
-// Injected via JsonLd (application/ld+json) in [city]/page.js
+// JSON-LD for `/[city]`: LocalBusiness only for real offices (Boca, Weston); Service elsewhere.
+// Injected via JsonLd in [city]/page.js
 export function generateCitySchema(citySlug) {
   if (!citySlug || !citiesMap[citySlug]) return null;
 
   const cityName = capitalizeString(citiesMap[citySlug]);
   const phone = getPhoneForCity(citySlug);
 
+  if (citySlugHasPhysicalOffice(citySlug)) {
+    return {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+      name: "Godly Windows & Wash Co.",
+      image: "https://godlywindows.com/favicon.svg",
+      url: `https://godlywindows.com/${citySlug}`,
+      description: `Top-rated window cleaning & exterior services in ${cityName}. Family-owned, fully insured, 5-star rated. Free estimate in 24 hours. Call ${phone}.`,
+      telephone: phone,
+      address: getOfficePostalAddressForCitySlug(citySlug),
+      geo: getOfficeGeoForCitySlug(citySlug),
+      openingHoursSpecification: businessOpeningHoursSpecification,
+      priceRange: "$$",
+      sameAs: getSameAsForCitySlug(citySlug),
+      areaServed: getCityAreaServedSchema(citySlug),
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "157",
+      },
+    };
+  }
+
   return {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-    name: "Godly Windows & Wash Co.",
-    image: "https://godlywindows.com/favicon.svg",
-    url: `https://godlywindows.com/${citySlug}`,
-    description: `Top-rated window cleaning & exterior services in ${cityName}. Family-owned, fully insured, 5-star rated. Free estimate in 24 hours. Call ${phone}.`,
-    telephone: phone,
-    address: getOfficePostalAddressForCitySlug(citySlug),
-    geo: getOfficeGeoForCitySlug(citySlug),
-    openingHoursSpecification: businessOpeningHoursSpecification,
-    priceRange: "$$",
-    sameAs: getSameAsForCitySlug(citySlug),
+    "@type": "Service",
+    name: `Window Cleaning & Pressure Washing in ${cityName}`,
+    provider: { "@id": `${BASE_URL}/#localbusiness` },
     areaServed: getCityAreaServedSchema(citySlug),
+    serviceType:
+      "Window cleaning, pressure washing, gutter cleaning, house washing",
+    url: `${BASE_URL}/${citySlug}`,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5",
