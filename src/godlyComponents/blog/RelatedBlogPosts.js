@@ -3,10 +3,15 @@ import Link from "next/link";
 import Image from "@/components/Image";
 import { format } from "date-fns";
 
-export default function RelatedBlogPosts({ posts, citySlug }) {
+export default function RelatedBlogPosts({ posts, city, citySlug }) {
   if (!posts || posts.length === 0) return null;
 
-  const blogHref = citySlug ? `/blog/${citySlug}` : "/blog";
+  const displayedPosts = posts.slice(0, 2);
+  const listCitySlug =
+    city ??
+    citySlug ??
+    displayedPosts.find((p) => p.citySlug)?.citySlug;
+  const blogHref = listCitySlug ? `/blog/${listCitySlug}` : "/blog";
 
   return (
     <section className="bg-[#fdf6ed] px-[30px] py-[60px] md:px-12 md:py-[80px]">
@@ -29,9 +34,9 @@ export default function RelatedBlogPosts({ posts, citySlug }) {
         </div>
 
         <div
-          className={`grid grid-cols-1 gap-8 ${posts.length > 1 ? "md:grid-cols-2" : "md:max-w-[600px]"}`}
+          className={`grid grid-cols-1 gap-8 ${displayedPosts.length > 1 ? "md:grid-cols-2" : "md:max-w-[600px]"}`}
         >
-          {posts.map((post) => (
+          {displayedPosts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
