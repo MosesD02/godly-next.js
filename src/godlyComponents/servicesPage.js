@@ -27,7 +27,7 @@ export default function ServicesPage({ slug, city, cityName, cityData = {}, rela
         cityName={cityName}
       />
       {cityData.localCta && <LocalCta text={cityData.localCta} />}
-      <RelatedBlogPosts posts={relatedPosts} citySlug={city} />
+      <RelatedBlogPosts posts={relatedPosts} city={city} />
       <OtherServices slug={slug} cityName={cityName} citySlug={city} />
       <ServiceNearbyCities citySlug={city} serviceSlug={slug} />
     </WebsiteLayout>
