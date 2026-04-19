@@ -692,63 +692,68 @@ export const parkland = {
     ]
   },
   "window-cleaning": {
-    "hero": "Your Parkland home deserves spotless glass — inside and out. We use professional-grade cleaning solutions and RO/DI pure water technology to leave every pane streak-free. No shortcuts, no excuses.",
+    "hero": "Thick tree canopy sap, trapped humidity, and preserve-adjacent pollen make Parkland windows a constant magnet for buildup. Our crew uses purified RO/DI water and pro-grade tools to cut through it all — spotless glass, inside and out, backed by our 7-day sparkle guarantee.",
     "essential": [
       {
         "number": "01.",
-        "title": "Parkland's canopy trees trap moisture and pollen against your windows year-round",
-        "text": "Parkland's canopy trees trap moisture and pollen against your windows year-round. That haze you're seeing isn't just dirt — it's layers of mineral deposits, pollen, and organic film that household cleaners can't touch."
+        "title": "Tree Canopy Sap Coats Your Glass",
+        "text": "Parkland's lush tree canopy means sap and resin constantly drip onto windows in Heron Bay, Cypress Head, and MiraLago. Regular cleaning removes sticky residue before it bonds to glass."
       },
       {
         "number": "02.",
-        "title": "We bring commercial-grade equipment and RO/DI purified water to every Parkland job",
-        "text": "We bring commercial-grade equipment and RO/DI purified water to every Parkland job. The result? Glass so clean it looks like it's not even there. No residue, no streaks, no water spots."
+        "title": "Preserve Humidity Traps Moisture",
+        "text": "Being preserve-adjacent traps humidity against your home, breeding mildew and water stains on glass faster than open neighborhoods. Consistent cleaning keeps your Parkland home spotless."
       },
       {
         "number": "03.",
-        "title": "Whether you're in Heron Bay or Watercrest, we treat every home like it's our own",
-        "text": "Whether you're in Heron Bay or Watercrest, we treat every home like it's our own. Your Parkland home sits on one of the most manicured streets in Broward County."
+        "title": "Protect Your Property Value",
+        "text": "Parkland homes — from Heron Bay estates to Cypress Head — carry serious value. Clean windows are the simplest way to maintain curb appeal and protect your investment."
+      },
+      {
+        "number": "04.",
+        "title": "Let the Natural Light In",
+        "text": "Parkland gets over 230 sunny days a year. Dirty windows block that light and make interiors feel dull. Clean glass transforms every room — especially those preserve and garden views."
       }
     ],
     "faqs": [
       {
         "question": "How often should I get my windows cleaned in Parkland?",
-        "answer": "Most Parkland homeowners go quarterly. parkland's canopy trees trap moisture and pollen against your windows year-round, so regular cleaning keeps buildup from becoming permanent damage."
+        "answer": "Most Parkland homeowners go with quarterly cleaning. If you're in Heron Bay or near the preserves, we recommend every 6–8 weeks because tree sap and trapped humidity accelerate buildup faster than open neighborhoods."
       },
       {
-        "question": "Do you use RO/DI water?",
-        "answer": "Every single job. RO/DI (reverse osmosis/deionized) water is stripped of minerals, so it dries without spots or streaks. It's the gold standard."
+        "question": "Can you handle homes with lots of trees and landscaping?",
+        "answer": "That's our specialty in Parkland. We deal with sap, resin, and pollen from mature tree canopies every single day. Our process removes sticky residue without scratching your glass or damaging window frames."
       },
       {
-        "question": "What about hard water stains?",
-        "answer": "Hard water removal is available as an add-on or included in certain plans. We'll assess your glass during the free estimate and let you know what's needed."
+        "question": "Will your cleaning damage my hurricane impact windows?",
+        "answer": "Not at all. Our techniques and RO/DI water system are completely safe for impact windows, which are standard throughout Parkland communities. We actually help extend their clarity and lifespan by removing buildup gently."
       },
       {
-        "question": "Is the 7-Day Sparkle Guarantee included?",
-        "answer": "The 7-Day Sparkle Guarantee is available on select plans. We'll walk you through your options during the estimate."
-      },
-      {
-        "question": "Do you serve all of Parkland?",
-        "answer": "Every corner. Heron Bay, Watercrest, MarinaLago, Terramar and Pine Trails Park — we cover all of Parkland."
+        "question": "What if it rains right after my cleaning?",
+        "answer": "That's what the Rain Shield is for — water beads right off. If you're not happy for any reason within seven days, we come back and re-clean at no charge. Rain or shine, your windows will look incredible."
       }
     ],
-    "localCta": "Parkland homeowners trust us for professional results. Book your free estimate today.",
+    "localCta": "From Heron Bay estates to Cypress Head and MiraLago, Parkland homeowners trust us for spotless, streak-free windows every time. Book your free estimate today.",
     "nearYou": [
       {
-        "title": "Heron Bay Window Cleaning",
-        "text": "Heron Bay homeowners enjoy expansive lake and golf course views that deserve spotless glass. Our RO/DI pure water system removes hard water spots and pollen so every window is streak-free."
+        "title": "Routine Home Window Cleaning",
+        "text": "Scheduled interior and exterior cleaning for Parkland homeowners who want spotless glass year-round without lifting a finger."
       },
       {
-        "title": "Parkland Golf & Country Club Estates",
-        "text": "Large estate homes in Parkland Golf & Country Club feature walls of windows overlooking manicured fairways. We clean every pane inside and out to keep those views crystal clear."
+        "title": "Commercial Window Cleaning",
+        "text": "Keep your Parkland office or retail space looking professional. We handle commercial properties with minimal disruption to your business."
       },
       {
-        "title": "MarinaLago Residences",
-        "text": "MarinaLago homes surrounded by lush tropical landscaping collect pollen and humidity film fast. Professional window cleaning restores full natural light to every room."
+        "title": "Post-Construction Window Cleaning",
+        "text": "New build or renovation? We remove paint overspray, stucco dust, and construction film so your brand-new windows actually look brand new."
       },
       {
-        "title": "Cypress Head Properties",
-        "text": "Cypress Head homeowners count on regular window cleaning to remove the dust, cobwebs, and water spots that South Florida weather leaves behind on glass surfaces."
+        "title": "Real Estate Window Cleaning",
+        "text": "Selling a Parkland property? Sparkling windows make listing photos pop and give buyers that move-in-ready feeling the moment they visit."
+      },
+      {
+        "title": "Lanai & Patio Glass Cleaning",
+        "text": "We clean lanai and patio glass throughout Parkland communities. Sap and pollen buildup doesn't stand a chance against our RO/DI system."
       }
     ]
   }

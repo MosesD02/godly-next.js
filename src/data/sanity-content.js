@@ -8,7 +8,10 @@ import { cache } from "react";
 import { client } from "@/sanity/client";
 import { urlFor } from "@/sanity/image";
 import { sanityLqipToBlurDataURL } from "@/sanity/lqip";
-import { SERVICE_SLUG_TO_CATEGORY } from "./blog-categories";
+import {
+  SERVICE_SLUG_TO_CATEGORY,
+  SERVICE_CATEGORIES,
+} from "./blog-categories";
 
 /** Featured image + LQIP for Next/Image blur placeholders */
 const IMAGE_WITH_LQIP = `image {
@@ -158,6 +161,40 @@ export async function getSanityCitySlugs() {
 }
 
 /**
+ * City match: CMS `citySlug` should match the URL city, but posts often encode
+ * the city only in the slug (e.g. window-cleaning-near-me-deerfield-beach).
+ */
+function postMatchesCitySlug(post, citySlug) {
+  if (!citySlug) return false;
+  if (post.citySlug === citySlug) return true;
+  if (typeof post.slug !== "string") return false;
+  return (
+    post.slug === citySlug ||
+    post.slug.endsWith(`-${citySlug}`) ||
+    post.slug.includes(`-${citySlug}-`)
+  );
+}
+
+/**
+ * Service match: CMS may store internal slug, page slug, display label, or omit
+ * the field when the SEO slug already contains the service (e.g. window-cleaning-...).
+ */
+function postMatchesServiceCategory(post, category, serviceSlug) {
+  const display = SERVICE_CATEGORIES[category];
+  if (
+    post.serviceCategory === category ||
+    post.serviceCategory === serviceSlug ||
+    (display && post.serviceCategory === display)
+  ) {
+    return true;
+  }
+  if (typeof post.slug !== "string" || !category) return false;
+  if (post.slug.includes(category)) return true;
+  if (serviceSlug && post.slug.includes(serviceSlug)) return true;
+  return false;
+}
+
+/**
  * Get related blog posts for a service page.
  * Matches on citySlug + the serviceCategory derived from the service page slug.
  */
@@ -167,8 +204,7 @@ export async function getRelatedBlogPosts(citySlug, serviceSlug) {
   const posts = await getAllSanityPosts();
   return posts.filter(
     (post) =>
-      post.citySlug === citySlug &&
-      (post.serviceCategory === category ||
-        post.serviceCategory === serviceSlug),
+      postMatchesCitySlug(post, citySlug) &&
+      postMatchesServiceCategory(post, category, serviceSlug),
   );
 }

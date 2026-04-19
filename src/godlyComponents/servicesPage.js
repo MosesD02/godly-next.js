@@ -3,6 +3,7 @@ import WebsiteLayout from "./websiteLayout";
 import ServicesHero from "./servicesHero";
 import ServiceIncludes from "./serviceInculdes";
 import OtherServices from "./otherServices";
+import ServiceNearbyCities from "./serviceNearbyCities";
 import ChooseUs from "./chooseUs";
 import EssentialService from "./serviceEssential";
 import ServiceNearYou from "./serviceNearYou";
@@ -26,8 +27,9 @@ export default function ServicesPage({ slug, city, cityName, cityData = {}, rela
         cityName={cityName}
       />
       {cityData.localCta && <LocalCta text={cityData.localCta} />}
-      <OtherServices slug={slug} cityName={cityName} citySlug={city} />
       <RelatedBlogPosts posts={relatedPosts} citySlug={city} />
+      <OtherServices slug={slug} cityName={cityName} citySlug={city} />
+      <ServiceNearbyCities citySlug={city} serviceSlug={slug} />
     </WebsiteLayout>
   );
 }

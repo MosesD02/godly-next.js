@@ -744,64 +744,68 @@ export const coralSprings = {
     ]
   },
   "window-cleaning": {
-    "hero": "Your windows take a beating in South Florida's sun and salt air. We get them sparkling clean—inside, outside, frames, sills, everything. Most jobs done in a day. Coral Springs families trust us to keep their views crystal clear.",
+    "hero": "Sandy soil dust, pool chemical splash, and everyday family fingerprints keep Coral Springs windows looking grimy fast. Our crew uses purified RO/DI water and pro-grade tools to cut through it all — spotless glass, inside and out, backed by our 7-day sparkle guarantee.",
     "essential": [
       {
         "number": "01.",
-        "title": "Salt Air Buildup",
-        "text": "Living near Coral Springs' planned communities means salt spray accumulates fast. Regular cleaning prevents permanent etching."
+        "title": "Sandy Soil Dust Films Up Fast",
+        "text": "Coral Springs' sandy soil kicks up fine dust that coats windows in Eagle Glen, the Hamptons, and Cypress Run. Regular cleaning prevents that hazy film from becoming permanent."
       },
       {
         "number": "02.",
-        "title": "Boost Your Home's Appeal",
-        "text": "Clean windows instantly brighten your entire home's curb appeal—especially important in Eagle Trace and Heron Bay."
+        "title": "Pool Chemicals Stain Your Glass",
+        "text": "Backyard pools are everywhere in Coral Springs, and chlorine splash leaves cloudy chemical residue on nearby glass. Our RO/DI system strips it clean without scratching."
       },
       {
         "number": "03.",
-        "title": "Extend Window Life",
-        "text": "Removing corrosive salt and debris prevents seal failure and keeps windows functioning smoothly for years."
+        "title": "Family Homes Mean More Smudges",
+        "text": "Coral Springs is a family town — kids, pets, and sports field dust mean fingerprints and grime build up fast on interior glass. Scheduled cleaning keeps every window sparkling."
       },
       {
         "number": "04.",
-        "title": "Better Natural Light",
-        "text": "You'll actually notice how much brighter your home feels when light streams through spotless glass."
+        "title": "Let the Natural Light In",
+        "text": "Coral Springs gets over 230 sunny days a year. Dirty windows block that light and make interiors feel dull. Clean glass transforms every room — especially those backyard pool views."
       }
     ],
     "faqs": [
       {
-        "question": "How often should I get my windows cleaned?",
-        "answer": "In Coral Springs, we recommend quarterly cleaning due to salt air and pollen. Heavy rain and wind seasons warrant more frequent service. Many families schedule every 3-4 months and love the maintenance."
+        "question": "How often should I get my windows cleaned in Coral Springs?",
+        "answer": "Most Coral Springs homeowners go with quarterly cleaning. If you're near sports fields or have a pool enclosure, we recommend every 6–8 weeks because dust and chemical splash build up faster than you'd expect."
       },
       {
-        "question": "Do you clean second-story windows safely?",
-        "answer": "Yes. We use professional ladders, harnesses, and safety equipment for all heights. Your safety and your home's protection is our priority."
+        "question": "Can you remove the cloudy film from pool chemical splash?",
+        "answer": "Absolutely. Pool chemical residue is one of the most common issues we see across Coral Springs neighborhoods. Our RO/DI purified water system dissolves that cloudy film completely without harsh chemicals or scratching."
       },
       {
-        "question": "What if I have hard water stains?",
-        "answer": "Hard water stains are tough but removable. Ask us about our hard water removal add-on—it uses specialized solutions to dissolve mineral buildup without scratching glass."
+        "question": "Will your cleaning damage my hurricane impact windows?",
+        "answer": "Not at all. Our techniques and RO/DI water system are completely safe for impact windows, which are standard throughout Coral Springs communities. We actually help extend their clarity and lifespan by removing deposits gently."
       },
       {
-        "question": "Can you clean windows if it just rained?",
-        "answer": "We can, but we prefer to wait 24 hours. Fresh rain means fresh water spots that'll dry as we work. We'll reschedule at no charge if weather's a factor."
-      },
-      {
-        "question": "Do you service townhomes and condos in Ramblewood?",
-        "answer": "Absolutely. We work with townhome communities throughout Coral Springs. Just confirm access with your HOA first."
+        "question": "What if it rains right after my cleaning?",
+        "answer": "That's what the Rain Shield is for — water beads right off. If you're not happy for any reason within seven days, we come back and re-clean at no charge. Rain or shine, your windows will look incredible."
       }
     ],
-    "localCta": "Ready for crystal-clear windows across your Coral Springs home? Call today—most jobs scheduled within 48 hours. We'll handle the details while you enjoy the view.",
+    "localCta": "From Eagle Glen to the Hamptons and Cypress Run, Coral Springs homeowners trust us for spotless, streak-free windows. Book your free estimate today.",
     "nearYou": [
       {
-        "title": "Heron Bay Homes",
-        "text": "We service the luxury planned community of Heron Bay with the premium care these properties deserve."
+        "title": "Routine Home Window Cleaning",
+        "text": "Scheduled interior and exterior cleaning for Coral Springs homeowners who want spotless glass year-round without lifting a finger."
       },
       {
-        "title": "Eagle Trace Area",
-        "text": "Golfers at Eagle Trace know that detail matters—same goes for window perfection across the neighborhood."
+        "title": "Commercial Window Cleaning",
+        "text": "Keep your Coral Springs storefront or office building looking professional. We handle commercial properties with minimal disruption to your business."
       },
       {
-        "title": "The Walk & Town Center",
-        "text": "From The Walk to Coral Square Mall area, we've cleaned windows across every Coral Springs neighborhood."
+        "title": "Post-Construction Window Cleaning",
+        "text": "New build or renovation? We remove paint overspray, stucco dust, and construction film so your brand-new windows actually look brand new."
+      },
+      {
+        "title": "Real Estate Window Cleaning",
+        "text": "Selling a Coral Springs property? Sparkling windows make listing photos pop and give buyers that move-in-ready feeling on their first visit."
+      },
+      {
+        "title": "Pool Enclosure Glass Cleaning",
+        "text": "We clean pool enclosure glass throughout Coral Springs. Chemical splash and dust buildup don't stand a chance against our RO/DI system."
       }
     ]
   }

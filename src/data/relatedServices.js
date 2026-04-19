@@ -14,7 +14,7 @@ import service9 from "@/assets/serviceData/service9.webp";
 import service10 from "@/assets/serviceData/service10.webp";
 import service11 from "@/assets/serviceData/service11.webp";
 
-const IMAGE_BY_LINK = {
+export const IMAGE_BY_LINK = {
   "solar-panel-cleaning": service1,
   "exterior-window-cleaning": service2,
   "interior-window-cleaning": service3,

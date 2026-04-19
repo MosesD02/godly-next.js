@@ -74,7 +74,7 @@ export default function GodlyHome({ city }) {
     <WebsiteLayout>
       <Hero cityName={cityName} />
       <FourStepProcess />
-      <Services cityName={cityName} />
+      <Services cityName={cityName} citySlug={city} />
       <Promise />
       <Gurantee />
       <TeamGallery />

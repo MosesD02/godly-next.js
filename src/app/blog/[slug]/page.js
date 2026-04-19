@@ -87,6 +87,17 @@ export async function generateMetadata({ params }) {
     }
     const cityName = toCityTitle(slug);
     return {
+      robots: {
+        index: false,
+        follow: true,
+        googleBot: {
+          index: false,
+          follow: true,
+          "max-video-preview": -1,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+        },
+      },
       title: `${cityName} Blog | Godly Windows & Wash Co.`,
       description: `Expert tips on pressure washing and window cleaning for ${cityName}. Learn what to know before you hire. Free quotes from Godly Windows.`,
       openGraph: {

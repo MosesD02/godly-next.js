@@ -1,10 +1,7 @@
 import { BASE_URL } from "./lib/constants";
 import { citiesMap } from "@/data/cities";
 import { serviceMetaTitles } from "@/data/metaTitles";
-import {
-  getAllSanityPosts,
-  getSanityPostsByCity,
-} from "@/data/sanity-content";
+import { getAllSanityPosts } from "@/data/sanity-content";
 
 function minimalSitemapEntries(now) {
   return [
@@ -65,27 +62,6 @@ export default async function sitemap() {
         changeFrequency: "monthly",
         priority: 0.7,
       })),
-      // City blog index pages (only cities that have posts)
-      ...(await Promise.all(
-        [
-          ...new Set(
-            blogPosts
-              .map((p) => p.citySlug)
-              .filter((citySlug) => citySlug && citiesMap[citySlug]),
-          ),
-        ].map(
-          async (citySlug) => {
-            const posts = await getSanityPostsByCity(citySlug);
-            const latest = posts[0]?.publishedAt ?? now;
-            return {
-              url: `${BASE_URL}/blog/${citySlug}`,
-              lastModified: latest,
-              changeFrequency: "weekly",
-              priority: 0.8,
-            };
-          },
-        ),
-      )),
       {
         url: `${BASE_URL}/blog`,
         lastModified: now,

@@ -760,72 +760,68 @@ export const fortLauderdale = {
     ]
   },
   "window-cleaning": {
-    "hero": "Salt-corroded windows don't stand a chance. We clean interior and exterior in one shot, leaving your Las Olas or Harbor Beach home spotless.",
+    "hero": "With 165 miles of waterways, Fort Lauderdale homes battle salt spray, mildew, and humidity nonstop. Our window cleaning crew uses purified RO/DI water and pro-grade tools to cut through it all — spotless glass, inside and out, backed by our 7-day sparkle guarantee.",
     "essential": [
       {
         "number": "01.",
-        "title": "Salt Air Damage",
-        "text": "Intracoastal and waterfront estates get hammered by salt spray. We remove corrosion and oxidation that eats into glass clarity."
+        "title": "Waterway Salt Spray Never Stops",
+        "text": "Living along the Intracoastal or in Harbor Beach means salt constantly coats your windows. Regular cleaning prevents permanent etching and keeps your waterfront views crystal clear."
       },
       {
         "number": "02.",
-        "title": "Year-Round Cleanliness",
-        "text": "Humid South Florida summers and salty sea breezes mean your windows need professional attention, not bucket-and-squeegee fixes."
+        "title": "Mildew Loves Your Glass",
+        "text": "Fort Lauderdale's tropical humidity breeds mildew fast, especially on shaded glass in Victoria Park and older Las Olas homes. Consistent cleaning stops it before it stains."
       },
       {
         "number": "03.",
-        "title": "Boost Your Property Value",
-        "text": "Investors and buyers notice clean windows on high-rises and historic homes. First impression matters in Coral Ridge's luxury market."
+        "title": "Protect Your Property Investment",
+        "text": "From Las Olas estates to Coral Ridge mid-centuries, Fort Lauderdale homes carry serious value. Clean windows are the easiest way to maintain curb appeal and resale potential."
       },
       {
         "number": "04.",
-        "title": "Spot-Free Shine",
-        "text": "Our mineral and salt-removal process leaves windows streak-free and sparkling longer than standard methods."
+        "title": "Construction Dust Settles Everywhere",
+        "text": "Flagler Village and downtown Fort Lauderdale construction kicks up dust and debris that films over nearby windows fast. Our deep-clean process removes stubborn grit other methods miss."
       }
     ],
     "faqs": [
       {
-        "question": "How often should I get windows cleaned in Fort Lauderdale?",
-        "answer": "With salt air and humidity, we recommend 2–3 times per year. High-rises and waterfront estates may benefit from quarterly service."
+        "question": "How often should I get my windows cleaned in Fort Lauderdale?",
+        "answer": "Most Fort Lauderdale homeowners go with quarterly cleaning. If you're on the Intracoastal or in Harbor Beach, we recommend every 6–8 weeks because salt spray and humidity build up faster than you'd think."
       },
       {
-        "question": "What's the 7-Day Sparkle Guarantee?",
-        "answer": "If your windows aren't crystal clear within 7 days, we'll come back and re-clean them at no charge. Available with our premium plans."
+        "question": "Do you clean high-rise condos and waterfront properties?",
+        "answer": "Absolutely. We service condos, high-rises, and waterfront estates throughout Fort Lauderdale on a regular basis. Our team has the professional equipment and full insurance to handle multi-story glass safely and efficiently."
       },
       {
-        "question": "Can you handle high-rise windows?",
-        "answer": "Yes. We're fully insured and equipped for multi-story homes, Rio Vista condos, and downtown Fort Lauderdale buildings."
+        "question": "Will your cleaning damage my hurricane impact windows?",
+        "answer": "Not at all. Our techniques and RO/DI water system are completely safe for impact windows, which are everywhere in Fort Lauderdale. We actually help extend their clarity and lifespan by removing corrosive salt deposits."
       },
       {
-        "question": "Do you remove hard water stains?",
-        "answer": "Hard water removal is available as an add-on service. We use professional-grade treatments to dissolve mineral deposits safely."
-      },
-      {
-        "question": "What about window frames and sills?",
-        "answer": "We clean frames, sills, and tracks—salt loves to hide in corners. One service, complete clean."
-      },
-      {
-        "question": "Is there a money-back guarantee?",
-        "answer": "Absolutely. If you're not satisfied, we'll make it right or refund your payment. No hassle, no questions."
+        "question": "What if it rains right after my cleaning?",
+        "answer": "That's what the Rain Shield is for — water beads right off. If you're not happy for any reason within seven days, we come back and re-clean at no charge. Rain or shine, your windows will look incredible."
       }
     ],
-    "localCta": "Whether you're in Las Olas or Harbor Beach, your windows deserve better than the salt-air blur. Let's get them sparkling.",
+    "localCta": "From Las Olas to Harbor Beach and Victoria Park, Fort Lauderdale homeowners trust us for spotless, streak-free windows. Book your free estimate today.",
     "nearYou": [
       {
-        "title": "Las Olas Boulevard Windows",
-        "text": "Keep your Las Olas home or storefront looking sharp with professional window cleaning that cuts through salt air buildup and coastal grime year-round."
+        "title": "Routine Home Window Cleaning",
+        "text": "Scheduled interior and exterior cleaning for Fort Lauderdale homeowners who want spotless glass year-round without lifting a finger."
       },
       {
-        "title": "Victoria Park Residences",
-        "text": "Victoria Park homeowners trust our RO/DI pure water system to leave windows streak-free without water spots, even in South Florida's humidity."
+        "title": "Commercial Window Cleaning",
+        "text": "Keep your Fort Lauderdale storefront or office building looking professional. We handle multi-story commercial properties with minimal disruption."
       },
       {
-        "title": "Harbor Beach Waterfront",
-        "text": "Living on the water in Harbor Beach means constant salt spray on your glass. Our professional window cleaning restores crystal-clear ocean and Intracoastal views."
+        "title": "Post-Construction Window Cleaning",
+        "text": "New build or renovation? We remove paint overspray, stucco dust, and construction film so your brand-new windows actually look brand new."
       },
       {
-        "title": "Coral Ridge Homes",
-        "text": "From mid-century gems to modern builds, Coral Ridge windows deserve a thorough cleaning that lets in all that natural Fort Lauderdale light."
+        "title": "Real Estate Window Cleaning",
+        "text": "Selling a Fort Lauderdale property? Sparkling windows make listing photos pop and give buyers that move-in-ready feeling instantly."
+      },
+      {
+        "title": "Boat & Yacht Window Cleaning",
+        "text": "We clean yacht and boat glass at Fort Lauderdale marinas and docks. Salt buildup doesn't stand a chance against our RO/DI system."
       }
     ]
   }

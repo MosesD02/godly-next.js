@@ -692,63 +692,68 @@ export const weston = {
     ]
   },
   "window-cleaning": {
-    "hero": "Your Weston home deserves spotless glass — inside and out. We use professional-grade cleaning solutions and RO/DI pure water technology to leave every pane streak-free. No shortcuts, no excuses.",
+    "hero": "Everglades pollen, reclaimed irrigation water minerals, and sticky tree sap take a real toll on Weston windows. Our crew uses purified RO/DI water and pro-grade tools to cut through it all — spotless glass, inside and out, backed by our 7-day sparkle guarantee.",
     "essential": [
       {
         "number": "01.",
-        "title": "Weston's Everglades proximity means extra bugs, moisture, and organic buildup on your glass",
-        "text": "Weston's Everglades proximity means extra bugs, moisture, and organic buildup on your glass. That haze you're seeing isn't just dirt — it's layers of mineral deposits, pollen, and organic film that household cleaners can't touch."
+        "title": "Everglades Pollen Coats Everything",
+        "text": "Weston sits right next to the Everglades, and seasonal pollen blankets your windows in a yellow-green film. Regular cleaning keeps your Weston Hills or Savanna home looking sharp."
       },
       {
         "number": "02.",
-        "title": "We bring commercial-grade equipment and RO/DI purified water to every Weston job",
-        "text": "We bring commercial-grade equipment and RO/DI purified water to every Weston job. The result? Glass so clean it looks like it's not even there. No residue, no streaks, no water spots."
+        "title": "Reclaimed Water Leaves Mineral Spots",
+        "text": "Weston's reclaimed irrigation water leaves mineral deposits on glass every time sprinklers run. Our RO/DI system strips those chalky spots that household cleaners can't touch."
       },
       {
         "number": "03.",
-        "title": "Whether you're in Weston Hills Country Club or The Ridges, we treat every home like it's our own",
-        "text": "Whether you're in Weston Hills Country Club or The Ridges, we treat every home like it's our own. Weston homes are built to impress — foggy, streaked windows aren't part of the plan."
+        "title": "Tree Sap and Resin Build Up Fast",
+        "text": "Mature landscaping in Windmill Ranch and Weston Hills means sap and resin constantly drip onto windows. Professional cleaning removes sticky residue without scratching your glass."
+      },
+      {
+        "number": "04.",
+        "title": "Let the Natural Light In",
+        "text": "Weston gets over 230 sunny days a year. Dirty windows block that light and make interiors feel dull. Clean glass transforms every room — especially those lush backyard views."
       }
     ],
     "faqs": [
       {
         "question": "How often should I get my windows cleaned in Weston?",
-        "answer": "Most Weston homeowners go quarterly. weston's everglades proximity means extra bugs, moisture, and organic buildup on your glass, so regular cleaning keeps buildup from becoming permanent damage."
+        "answer": "Most Weston homeowners go with quarterly cleaning. If you're near the Everglades or have heavy landscaping, we recommend every 6–8 weeks because pollen and tree sap accumulate on glass faster than you'd expect."
       },
       {
-        "question": "Do you use RO/DI water?",
-        "answer": "Every single job. RO/DI (reverse osmosis/deionized) water is stripped of minerals, so it dries without spots or streaks. It's the gold standard."
+        "question": "Can you remove the mineral spots from my sprinkler system?",
+        "answer": "Absolutely. Weston's reclaimed irrigation water leaves stubborn mineral deposits on glass that regular household cleaning simply can't touch. Our RO/DI purified water system strips those chalky white spots completely without chemicals or scratching."
       },
       {
-        "question": "What about hard water stains?",
-        "answer": "Hard water removal is available as an add-on or included in certain plans. We'll assess your glass during the free estimate and let you know what's needed."
+        "question": "Will your cleaning damage my hurricane impact windows?",
+        "answer": "Not at all. Our techniques and RO/DI water system are completely safe for impact windows, which are standard throughout Weston communities. We actually help extend their clarity and lifespan by removing buildup gently."
       },
       {
-        "question": "Is the 7-Day Sparkle Guarantee included?",
-        "answer": "The 7-Day Sparkle Guarantee is available on select plans. We'll walk you through your options during the estimate."
-      },
-      {
-        "question": "Do you serve all of Weston?",
-        "answer": "Every corner. Weston Hills Country Club, The Ridges, Savanna and Bonaventure — we cover all of Weston."
+        "question": "What if it rains right after my cleaning?",
+        "answer": "That's what the Rain Shield is for — water beads right off. If you're not happy for any reason within seven days, we come back and re-clean at no charge. Rain or shine, your windows will look incredible."
       }
     ],
-    "localCta": "Weston homeowners trust us for professional results. Book your free estimate today.",
+    "localCta": "From Weston Hills to Savanna and the Windmill Ranch Estates, Weston homeowners trust us for spotless, streak-free windows. Book your free estimate today.",
     "nearYou": [
       {
-        "title": "Weston Hills Country Club Estates",
-        "text": "Weston Hills Country Club homeowners enjoy panoramic golf course views when every window is professionally cleaned. Our RO/DI pure water system removes hard water spots, pollen, and buildup from every pane."
+        "title": "Routine Home Window Cleaning",
+        "text": "Scheduled interior and exterior cleaning for Weston homeowners who want spotless glass year-round without lifting a finger."
       },
       {
-        "title": "Bonaventure Residences",
-        "text": "Bonaventure families deserve spotless windows that let in all of South Florida's natural light. We clean glass, tracks, sills, and frames throughout your home for a complete refresh."
+        "title": "Commercial Window Cleaning",
+        "text": "Keep your Weston office or retail space looking professional. We handle commercial properties with minimal disruption to your business."
       },
       {
-        "title": "Savanna Community Homes",
-        "text": "Windows in Savanna collect dust and humidity film quickly. Our professional window cleaning restores crystal-clear visibility so you can enjoy your community's beautiful surroundings."
+        "title": "Post-Construction Window Cleaning",
+        "text": "New build or renovation? We remove paint overspray, stucco dust, and construction film so your brand-new windows actually look brand new."
       },
       {
-        "title": "Emerald Estates Properties",
-        "text": "Emerald Estates homeowners trust us to keep every window gleaming. We handle single-story and two-story homes with the same meticulous attention to detail and streak-free results."
+        "title": "Real Estate Window Cleaning",
+        "text": "Selling a Weston property? Sparkling windows make listing photos pop and give buyers that move-in-ready feeling the moment they visit."
+      },
+      {
+        "title": "Lanai & Patio Glass Cleaning",
+        "text": "We clean lanai and patio glass throughout Weston communities. Pollen and sap buildup doesn't stand a chance against our RO/DI system."
       }
     ]
   }

@@ -13,8 +13,11 @@ import { citiesMap } from "@/data/cities";
 
 import { servicesData } from "./servicesData";
 
-const Services = ({ cityName: city }) => {
-  const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
+const Services = ({ cityName: city, citySlug }) => {
+  const cityKeyFromName = Object.keys(citiesMap).find(
+    (key) => citiesMap[key] === city,
+  );
+  const cityKey = citySlug || cityKeyFromName;
 
   return (
     <div className="paper-bg-16 relative overflow-clip bg-[#262424]">
@@ -107,7 +110,7 @@ const Services = ({ cityName: city }) => {
             )}
           </p>
         </div>
-        <ServicesGrid />
+        <ServicesGrid citySlug={citySlug} />
       </div>
 
       <div
@@ -508,7 +511,7 @@ const Services = ({ cityName: city }) => {
 
 export default Services;
 
-function ServicesGrid() {
+function ServicesGrid({ citySlug: citySlugProp }) {
   const [activeCard, setActiveCard] = React.useState(null);
 
   // Toggle card active state when clicked/tapped
@@ -518,7 +521,10 @@ function ServicesGrid() {
 
   const { city } = useGodlyContext();
 
-  const cityKey = Object.keys(citiesMap).find((key) => citiesMap[key] === city);
+  const cityKeyFromContext = Object.keys(citiesMap).find(
+    (key) => citiesMap[key] === city,
+  );
+  const cityKey = citySlugProp || cityKeyFromContext;
 
   // City-specific service descriptions
   const getParklandServiceDescription = (serviceName) => {

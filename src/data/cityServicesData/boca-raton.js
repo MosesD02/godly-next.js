@@ -793,36 +793,36 @@ export const bocaRaton = {
       {
         "number": "01.",
         "title": "Boca's Salt Air Is Relentless",
-        "text": "Living near the Intracoastal or along the coast in Boca Raton means salt constantly coats your glass. Regular window cleaning prevents permanent etching and keeps your views crystal clear."
+        "text": "Living near the Intracoastal or along the coast means salt constantly coats your glass. Regular window cleaning prevents permanent etching and keeps your views crystal clear."
       },
       {
         "number": "02.",
         "title": "Protect Your Property Value",
-        "text": "Boca Raton homes — from Royal Palm Yacht & Country Club estates to West Boca gated communities — carry serious value. Clean windows are the simplest way to maintain your home's curb appeal and resale potential."
+        "text": "Boca Raton homes — from Royal Palm Yacht & Country Club estates to Woodfield Country Club — carry serious value. Clean windows are the simplest way to maintain curb appeal and resale potential."
       },
       {
         "number": "03.",
         "title": "Humidity Breeds Buildup Fast",
-        "text": "South Florida's humidity means mold, mildew, and hard water stains show up on your glass quicker than you'd expect. Consistent cleaning keeps your Boca home looking sharp year-round."
+        "text": "South Florida's humidity plus irrigation mineral deposits mean mold, mildew, and hard water stains show up on glass quicker than you'd expect. Consistent cleaning keeps your Boca home sharp year-round."
       },
       {
         "number": "04.",
         "title": "Let the Natural Light In",
-        "text": "Boca Raton gets over 230 sunny days a year. Dirty windows block that light and make your interiors feel dull. Clean glass transforms every room — especially those gorgeous waterfront views."
+        "text": "Boca Raton gets over 230 sunny days a year. Dirty windows block that light and make your interiors feel dull. Clean glass transforms every room — especially those Mizner Park and waterfront views."
       }
     ],
     "faqs": [
       {
         "question": "How often should I get my windows cleaned in Boca Raton?",
-        "answer": "Most Boca homeowners go with quarterly cleaning. If you're on the Intracoastal or near the beach, we recommend every 6-8 weeks because salt air builds up fast. Homes in West Boca can usually stretch it to every 3-4 months."
+        "answer": "Most Boca homeowners go with quarterly cleaning. If you're on the Intracoastal or near the beach, we recommend every 6–8 weeks because salt air builds up fast. Homes in West Boca can usually stretch it to every 3–4 months."
       },
       {
         "question": "Do you clean windows in high-rise condos near Mizner Park or the beach?",
-        "answer": "Absolutely. We service high-rise condos throughout Boca Raton, including buildings near Mizner Park, the Intracoastal, and along A1A. We're equipped for multi-story work and coordinate with building management for access."
+        "answer": "Absolutely. We service condos and high-rises along the coast and near Mizner Park on a regular basis. Our team has the professional equipment and full insurance to handle multi-story glass safely and efficiently."
       },
       {
         "question": "Will your cleaning damage my hurricane impact windows?",
-        "answer": "Not at all. Our techniques and RO/DI water system are completely safe for impact windows, which are super common in Boca. We actually help extend their clarity and lifespan by removing corrosive salt deposits."
+        "answer": "Not at all. Our techniques and RO/DI water system are completely safe for impact windows, which are super common in Boca. We actually help extend their clarity by removing corrosive salt deposits."
       },
       {
         "question": "What if it rains right after my cleaning?",
