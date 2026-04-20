@@ -1,7 +1,7 @@
 export const weston = {
   "exterior-window-cleaning": {
     hero:
-      "Showcase curb appeal in Weston is scored from the street—impact glass, tall elevations, and pool cages all need a ladder-free wash. We detail outdoor panes and cage glass with 40-foot pure-water poles only.",
+      "Weston curb appeal is judged from the driveway—impact glass, tall elevations, and pool cage exteriors that face the street or the golf course. We never set foot in your foyer for this scope: pure-water poles hit outdoor panes and cage glass up to 40 feet while stucco and landscaping stay dry.",
     included: [
       {
         number: "01",
@@ -299,7 +299,7 @@ export const weston = {
   },
   "interior-window-cleaning": {
     hero:
-      "Weston homes — from Windmill Ranches to Savanna — are held to a standard, and so are we. Our Weston crews deliver the kind of detail-level work you’d expect from a premium service, without the premium-service runaround.",
+      "Windmill Ranch and Savanna interiors are where fingerprints, chef-kitchen grease film, and pet hair on sills show up—on the glass that frames your living spaces, not the elevation facing the street. We work room-by-room inside only: protected floors, detailed tracks, and streak-free interior panes with white-glove care.",
     included: [
       {
         number: "01",
@@ -997,77 +997,5 @@ export const weston = {
     ],
     localCta:
       "From Weston Hills custom builds to Windmill Ranch additions, Weston builders trust us for spotless, move-in-ready post-construction windows. Book your final-clean estimate today.",
-  },
-  "rain-shield-tech": {
-    hero: "Weston's Everglades pollen, reclaimed water minerals, and tree sap don't stand a chance against Rain Shield. Our hydrophobic glass coating makes water bead and roll off, carrying dirt with it. The result: windows that stay cleaner longer, backed by our Rain Shield performance guarantee.",
-    essential: [
-      {
-        number: "01.",
-        title: "Everglades Pollen Coats Everything",
-        text: "Weston sits next to the Everglades, and seasonal pollen blankets your windows in a yellow-green film. Rain Shield makes pollen rinse off with rain instead of bonding and staining your glass permanently.",
-      },
-      {
-        number: "02.",
-        title: "Reclaimed Water Spots Your Glass",
-        text: "Weston's reclaimed irrigation water leaves chalky mineral spots every time sprinklers run. Rain Shield repels that mineral-heavy water so spots rinse off easily instead of bonding permanently to your glass.",
-      },
-      {
-        number: "03.",
-        title: "Tree Sap Sticks Without Protection",
-        text: "Mature landscaping in Weston Hills and Windmill Ranch drops sticky sap onto windows. Rain Shield's hydrophobic barrier prevents sap from bonding tightly, making it far easier to clean off later.",
-      },
-      {
-        number: "04.",
-        title: "Cleaner Views for Longer",
-        text: "With over 230 sunny days and frequent Weston rain, Rain Shield extends your window clarity between cleanings. You get lush backyard and golf course views that stay crystal-clear week after week.",
-      },
-    ],
-    nearYou: [
-      {
-        title: "Rain Shield for Home Windows",
-        text: "Hydrophobic coating applied to your full Weston home so every window repels pollen, minerals, and sap automatically.",
-      },
-      {
-        title: "Rain Shield for Commercial Glass",
-        text: "Keep your Weston office or retail space windows crystal-clear between cleanings with our pro-grade Rain Shield coating.",
-      },
-      {
-        title: "Rain Shield for Custom Estates",
-        text: "Weston Hills and Windmill Ranch custom estates benefit most from Rain Shield's long-lasting protection against pollen and minerals.",
-      },
-      {
-        title: "Rain Shield for Lanai & Patio Glass",
-        text: "Lanai and patio glass across Weston communities stay clear longer with Rain Shield blocking pollen and sap buildup.",
-      },
-      {
-        title: "Rain Shield for Pool Enclosure Glass",
-        text: "Pool enclosure glass takes a beating from chemicals and minerals — Rain Shield keeps it streak-free between full cleanings.",
-      },
-    ],
-    faqs: [
-      {
-        question: "How long does Rain Shield last on Weston windows?",
-        answer:
-          "Rain Shield typically lasts around three months or more between applications on Weston homes. Since it's included free on every service with our quarterly plan, your windows stay protected year-round without any extra scheduling or cost.",
-      },
-      {
-        question:
-          "Does Rain Shield block Weston's reclaimed water mineral spots?",
-        answer:
-          "Absolutely. That's one of Rain Shield's biggest wins in Weston. The hydrophobic coating causes mineral-heavy reclaimed water to bead and roll off before it dries, dramatically reducing those stubborn chalky spots.",
-      },
-      {
-        question: "Does Rain Shield work on hurricane impact windows?",
-        answer:
-          "Absolutely. Rain Shield is completely safe on hurricane impact windows, which are standard throughout Weston communities. The hydrophobic coating bonds directly to glass without damaging low-E coatings, tints, or protective manufacturer layers.",
-      },
-      {
-        question: "Is Rain Shield included with my cleaning service?",
-        answer:
-          "Yes — Rain Shield comes included free on every service with our quarterly maintenance plan, plus occasional seasonal promotions. We apply it during the cleaning process itself — no separate appointment or fee needed.",
-      },
-    ],
-    localCta:
-      "From Weston Hills custom homes to Windmill Ranch estates, Weston homeowners rely on Rain Shield for long-lasting window clarity. Book your Rain Shield application today.",
   },
 };

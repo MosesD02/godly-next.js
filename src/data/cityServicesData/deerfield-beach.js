@@ -1,7 +1,7 @@
 export const deerfieldBeach = {
   "exterior-window-cleaning": {
     hero:
-      "Salt fog and east breezes etch street-facing panes here faster than many owners expect. We rinse exterior frames, screens, and tracks so corrosive film never bakes onto your coastal investment.",
+      "Salt fog and east breezes hit the outside of Deerfield Beach glass first—ocean-facing panes, balcony railings, and screens before mist ever reaches your couch. We stay outdoors, rinsing exterior frames and tracks so corrosive film lifts off street-side and dune-side elevations.",
     included: [
       {
         number: "01",
@@ -325,7 +325,7 @@ export const deerfieldBeach = {
   },
   "interior-window-cleaning": {
     hero:
-      "Living a few blocks from the Atlantic is a privilege — but salt air, sea mist, and east-wind grit don’t care about your view. Our Deerfield Beach crews clean coastal glass the way it needs to be cleaned: often, carefully, and the right way.",
+      "A few blocks from the Atlantic, the issues indoors are different: AC condensation on inside panes, sandy feet smudging sliders, and film on the glass you open after a beach day. We clean interior sashes, tracks, and beach-entry doors with contained water—brightening the view from the sofa, not the roofline.",
     included: [
       {
         number: "01",
@@ -1079,76 +1079,5 @@ export const deerfieldBeach = {
     ],
     localCta:
       "From Deerfield Pier condos to The Cove oceanfront estates, builders count on us for flawless post-construction windows. Request your free final-clean estimate today.",
-  },
-  "rain-shield-tech": {
-    hero: "Deerfield Beach salt spray, tropical rain, and coastal humidity don't stand a chance against Rain Shield. Our hydrophobic glass coating makes water bead up and roll off cleanly, carrying salt and dirt away. The result: cleaner windows longer, from The Cove to Deerfield Pier and every beachside property.",
-    essential: [
-      {
-        number: "01.",
-        title: "Salt Spray Coats Coastal Glass",
-        text: "Deerfield Beach's coastal location means salt spray bonds to windows fast. Without Rain Shield, salt etches into glass permanently over time. Our coating blocks salt from reaching the surface so your windows stay protected longer between cleanings.",
-      },
-      {
-        number: "02.",
-        title: "Pier-Area Homes Need Protection",
-        text: "Homes near Deerfield Pier, The Cove, and oceanfront condos face constant salt exposure. Rain Shield creates a hydrophobic barrier that repels salt-laden water so spots rinse away with the next rain instead of bonding to glass.",
-      },
-      {
-        number: "03.",
-        title: "Tropical Rain Leaves Spots Fast",
-        text: "Tropical afternoon storms soak Deerfield Beach windows daily during rainy season. Rain Shield makes rainwater sheet off cleanly so spots don't dry into visible mineral-heavy residue on your panes between full professional cleanings.",
-      },
-      {
-        number: "04.",
-        title: "Impact Glass Gets Extra Defense",
-        text: "Hurricane impact glass is standard across Deerfield Beach coastal construction, and Rain Shield is completely safe on every pane. The hydrophobic coating bonds directly to glass without damaging low-E films, tints, or manufacturer-applied protective coatings.",
-      },
-    ],
-    nearYou: [
-      {
-        title: "Rain Shield for Home Windows",
-        text: "Whole-home hydrophobic coating for Deerfield Beach coastal residences so every window repels salt spray, rain, and mineral buildup automatically between cleanings.",
-      },
-      {
-        title: "Rain Shield for Oceanfront Condos",
-        text: "Oceanfront condo unit glass takes constant salt exposure — Rain Shield keeps every pane streak-free and visibly clearer between regular cleanings throughout the year.",
-      },
-      {
-        title: "Rain Shield for Commercial Glass",
-        text: "Deerfield Beach storefronts, offices, and retail windows stay crystal-clear between cleanings with our pro-grade Rain Shield hydrophobic coating applied evenly across surfaces.",
-      },
-      {
-        title: "Rain Shield for Boat & Yacht Glass",
-        text: "Yacht and boat glass at Deerfield Beach marinas takes relentless salt exposure — Rain Shield extends clarity between cleanings and protects your onboard visibility.",
-      },
-      {
-        title: "Rain Shield for Cove-Area Estates",
-        text: "The Cove and oceanfront estate windows get Rain Shield's premium protection against constant salt spray, tropical rain, and coastal humidity between full professional cleanings.",
-      },
-    ],
-    faqs: [
-      {
-        question: "How long does Rain Shield last here?",
-        answer:
-          "Rain Shield typically lasts around three months or more between applications on Deerfield Beach homes. Since it comes included free on every service with our quarterly plan, your windows stay protected year-round without any extra scheduling or cost.",
-      },
-      {
-        question: "Does Rain Shield block coastal salt?",
-        answer:
-          "Yes — blocking salt is one of Rain Shield's biggest wins in Deerfield Beach. The hydrophobic coating prevents salt from bonding directly to glass, so rain and rinse-offs carry it away before it etches the surface permanently.",
-      },
-      {
-        question: "Does Rain Shield work on impact windows?",
-        answer:
-          "Completely safe. Rain Shield is engineered for all glass types, including hurricane impact windows standard throughout Deerfield Beach coastal construction. The coating bonds directly to glass without damaging low-E films, manufacturer tints, or warranted layers.",
-      },
-      {
-        question: "Is Rain Shield included with my cleaning?",
-        answer:
-          "Yes — Rain Shield comes included free on every service with our quarterly maintenance plan, plus occasional seasonal promotions. We apply it during the cleaning process itself, so no separate appointment or fee is required.",
-      },
-    ],
-    localCta:
-      "From Deerfield Pier condos to The Cove oceanfront estates, homeowners rely on Rain Shield for long-lasting coastal window clarity. Book your Rain Shield application today.",
   },
 };

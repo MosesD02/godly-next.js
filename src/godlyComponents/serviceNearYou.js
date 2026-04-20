@@ -42,6 +42,7 @@ const taglines = {
 const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
   const headings = generateServiceSectionHeadings(slug, cityName);
   const nearYouItems = nearYouOverride ?? Services[slug]["nearyou"];
+  const isRainShieldHub = slug === "rain-shield";
 
   // const steps1 = [
   //   {
@@ -122,28 +123,60 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
       <div className="fourstepprocess-inner">
         <div className="w-full text-center">
           <h2 className="sr-only">{headings.h2ServicesNearYou}</h2>
-          <div
-            className="text-grain mx-auto bg-[#FDE4C8]! text-center text-[32px] md:text-6xl"
-            data-text={
-              Services[slug]["hero"][0] + " " + Services[slug]["hero"][1]
-            }
-          >
-            {Services[slug]["hero"][0]}&nbsp;{Services[slug]["hero"][1]}
-          </div>
-          <div
-            className="z-10 flex items-center justify-center gap-1.5 text-center font-['luminaire-script'] text-[20px] text-white md:-mt-10 md:items-end md:gap-5 md:text-[64px]"
-            style={{
-              WebkitTextStrokeWidth: "5px",
-              strokeLinecap: "round",
-              WebkitTextStrokeColor: "#1F1D1D",
-              paintOrder: "stroke",
-            }}
-          >
-            Near You
-            <span className="mt-1.5 inline-flex text-left font-['marlton'] text-[8px] tracking-[1px] text-[#FDE4C8] md:mb-2 md:max-w-23.5 md:text-base md:tracking-[2px]">
-              {cityName}
-            </span>
-          </div>
+          {isRainShieldHub ? (
+            <>
+              <div
+                className="text-grain mx-auto bg-[#FFFFFF]! text-center text-xl tracking-wide md:text-4xl"
+                data-text="WHERE"
+              >
+                WHERE
+              </div>
+              <div
+                className="text-grain mx-auto bg-[#FDE4C8]! text-center text-[32px] md:text-6xl"
+                data-text={
+                  Services[slug]["hero"][0] + " " + Services[slug]["hero"][1]
+                }
+              >
+                {Services[slug]["hero"][0]}&nbsp;{Services[slug]["hero"][1]}
+              </div>
+              <div
+                className="z-10 text-center font-['luminaire-script'] text-[20px] text-white md:-mt-6 md:text-[56px]"
+                style={{
+                  WebkitTextStrokeWidth: "5px",
+                  strokeLinecap: "round",
+                  WebkitTextStrokeColor: "#1F1D1D",
+                  paintOrder: "stroke",
+                }}
+              >
+                Makes the Biggest Difference
+              </div>
+            </>
+          ) : (
+            <>
+              <div
+                className="text-grain mx-auto bg-[#FDE4C8]! text-center text-[32px] md:text-6xl"
+                data-text={
+                  Services[slug]["hero"][0] + " " + Services[slug]["hero"][1]
+                }
+              >
+                {Services[slug]["hero"][0]}&nbsp;{Services[slug]["hero"][1]}
+              </div>
+              <div
+                className="z-10 flex items-center justify-center gap-1.5 text-center font-['luminaire-script'] text-[20px] text-white md:-mt-10 md:items-end md:gap-5 md:text-[64px]"
+                style={{
+                  WebkitTextStrokeWidth: "5px",
+                  strokeLinecap: "round",
+                  WebkitTextStrokeColor: "#1F1D1D",
+                  paintOrder: "stroke",
+                }}
+              >
+                Near You
+                <span className="mt-1.5 inline-flex text-left font-['marlton'] text-[8px] tracking-[1px] text-[#FDE4C8] md:mb-2 md:max-w-23.5 md:text-base md:tracking-[2px]">
+                  {cityName}
+                </span>
+              </div>
+            </>
+          )}
         </div>
 
         <div className="pt-20 pb-6 text-white md:hidden md:pb-16">

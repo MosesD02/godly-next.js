@@ -1,7 +1,7 @@
 export const davie = {
   "exterior-window-cleaning": {
     hero:
-      "Open ranch lots kick dust onto sun-facing panes while equestrian trails track fine grit to second stories. We reach every exterior pane with poles—no ladders leaning on aluminum or ranch fascia.",
+      "Open ranch lots and arena traffic throw dust at the outside of Davie glass—street- and barn-facing panes that never get touched by your vacuum. We stay outdoors, pole-washing sun-facing stories and clearing barn-adjacent frames so exterior glass sheds rain without grit left behind.",
     included: [
       {
         number: "01",
@@ -51,7 +51,7 @@ export const davie = {
       {
         question: "Will my exterior windows get spots again quickly?",
         answer:
-          "Not if you ask about our Rain Shield Technology add-on. It creates a protective coating that repels water and minerals, keeping your glass cleaner longer between services.",
+          "Not if you ask about Rain Shield Technology — included free on every service with our quarterly plan. It creates a protective coating that repels water and minerals, keeping your glass cleaner longer between services.",
       },
       {
         question: "How long does exterior cleaning take?",
@@ -286,7 +286,7 @@ export const davie = {
   },
   "interior-window-cleaning": {
     hero:
-      "From the ranch homes near Flamingo Road to the newer builds in Long Lake Ranches, Davie windows take a beating from dust, dirt roads, and Florida sun. We bring the gear and the patience to handle them right.",
+      "From Flamingo Road ranches to Long Lake Ranches new builds, the mess you feel indoors is handprints on sliders, dust in tracks, and dog nose smudges at kid height—not the same dust storm that hits the barn roof. We clean interior glass, tracks, and hardware with contained water so living rooms and offices brighten without outdoor gear crossing your threshold.",
     included: [
       {
         number: "01",
@@ -955,76 +955,5 @@ export const davie = {
     ],
     localCta:
       "From Long Lake estates to equestrian ranches across Davie, builders rely on us for a flawless post-construction window finish. Book your free estimate today.",
-  },
-  "rain-shield-tech": {
-    hero: "Davie rain, horse-country dust, and sprinkler mineral deposits don't stand a chance against Rain Shield. Our hydrophobic glass coating makes water bead and roll off cleanly, carrying dirt with it. The result: cleaner windows longer across every Davie ranch, equestrian estate, and family neighborhood you own.",
-    essential: [
-      {
-        number: "01.",
-        title: "Horse Country Dust Coats Glass",
-        text: "Davie's equestrian neighborhoods mean fine dust from paddocks and arenas settles onto windows constantly. Rain Shield prevents that fine dust from bonding to glass, letting rain rinse it away cleanly instead of leaving permanent haze.",
-      },
-      {
-        number: "02.",
-        title: "Ranch Properties Have More Windows",
-        text: "Davie's sprawling ranch-style homes have more windows than typical builds. Rain Shield treatment extends clarity across every pane — main house, guest house, barn, and outbuildings — so the whole property stays clearer between visits.",
-      },
-      {
-        number: "03.",
-        title: "Sprinkler Minerals Leave Spots",
-        text: "Davie's irrigation mineral deposits leave chalky spots every time sprinklers cycle. Rain Shield repels mineral-heavy reclaimed water so spots rinse off cleanly with the next rain instead of bonding permanently to your glass surfaces.",
-      },
-      {
-        number: "04.",
-        title: "Impact Glass Stays Safe",
-        text: "Hurricane impact glass is standard across Davie new construction, and Rain Shield is completely safe on every pane. The hydrophobic coating bonds directly to glass without damaging low-E films, manufacturer tints, or protective warranty layers.",
-      },
-    ],
-    nearYou: [
-      {
-        title: "Rain Shield for Ranch Homes",
-        text: "Whole-ranch hydrophobic coating for Davie estate homes so every pane repels rain, dust, and mineral spray automatically between scheduled cleanings consistently.",
-      },
-      {
-        title: "Rain Shield for Equestrian Properties",
-        text: "Equestrian properties get Rain Shield applied to main homes, guesthouses, and barns so every structure's windows stay clearer and cleaner between visits.",
-      },
-      {
-        title: "Rain Shield for Commercial Glass",
-        text: "Davie storefronts, offices, and retail windows stay crystal-clear between cleanings with our pro-grade Rain Shield hydrophobic coating applied evenly throughout the property.",
-      },
-      {
-        title: "Rain Shield for Lanai & Patio Glass",
-        text: "Lanai and patio glass across Davie ranches and family homes stay visibly cleaner longer with Rain Shield blocking dust, pollen, and mineral buildup effectively.",
-      },
-      {
-        title: "Rain Shield for Barn & Outbuilding Glass",
-        text: "Barn, stable, and outbuilding glass on Davie equestrian properties gets Rain Shield treatment so arena dust and ag-area debris rinse off with the next rain.",
-      },
-    ],
-    faqs: [
-      {
-        question: "How long does Rain Shield last in Davie?",
-        answer:
-          "Rain Shield typically lasts around three months or more between applications on Davie homes. Since it comes included free on every service with our quarterly plan, your windows stay protected year-round without any extra scheduling or cost.",
-      },
-      {
-        question: "Does Rain Shield handle ranch dust?",
-        answer:
-          "Yes — fine ranch and arena dust is one of the challenges Rain Shield handles best in Davie. The hydrophobic coating keeps dust from bonding tightly, letting rain and rinse-offs carry it away cleanly instead of leaving haze.",
-      },
-      {
-        question: "Does Rain Shield work on impact windows?",
-        answer:
-          "Completely safe. Rain Shield is engineered for all glass types, including hurricane impact windows standard throughout Davie modern construction. The coating bonds directly to glass without damaging low-E films, tints, or protective manufacturer layers.",
-      },
-      {
-        question: "Is Rain Shield included with my cleaning?",
-        answer:
-          "Yes — Rain Shield comes included free on every service with our quarterly maintenance plan, plus occasional seasonal promotions. We apply it during the cleaning process itself, so no separate appointment or fee is required.",
-      },
-    ],
-    localCta:
-      "From Long Lake to equestrian ranches across Davie, property owners rely on Rain Shield for long-lasting window clarity. Book your Rain Shield application today.",
   },
 };

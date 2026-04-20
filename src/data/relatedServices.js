@@ -5,7 +5,6 @@
 import service1 from "@/assets/serviceData/service1.webp";
 import windowCleaningHero from "@/assets/serviceData/window-cleaning.webp";
 import postConstructionHero from "@/assets/serviceData/post-construction.webp";
-import rainShieldHero from "@/assets/serviceData/rain-shield.webp";
 import service3 from "@/assets/serviceData/service3.webp";
 import service4 from "@/assets/serviceData/service4.webp";
 import service5 from "@/assets/serviceData/service5.webp";
@@ -29,7 +28,6 @@ export const IMAGE_BY_LINK = {
   "screen-cleaning": service10,
   "window-cleaning": windowCleaningHero,
   "post-construction-window-cleaning": postConstructionHero,
-  "rain-shield-tech": rainShieldHero,
   "soft-washing": service5,
   "holiday-lighting": service11,
 };

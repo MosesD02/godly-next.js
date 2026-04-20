@@ -401,7 +401,7 @@ const chooseUsData = {
         "If you spot any residue after we leave, we come back and make it right—no questions asked, every time.",
     },
   ],
-  "rain-shield-tech": [
+  "rain-shield": [
     {
       name: "Trained Rain Shield Technicians",
       svg: shieldSvg,

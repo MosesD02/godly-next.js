@@ -1151,13 +1151,15 @@ const Services = {
     quote:
       "Move-in ready windows, guaranteed — pro-grade scraping, RO/DI purified water, and our builder-ready finish guarantee.",
   },
-  "rain-shield-tech": {
+  /**
+   * Standalone hub only: `/rain-shield` (excluded from `/[city]/[slug]` static params).
+   */
+  "rain-shield": {
     hero: [
       "Rain Shield",
-      "Tech",
+      "Technology",
       rainShieldHero,
-      (city) =>
-        `Rain, salt spray, and sprinkler minerals don't stand a chance against Rain Shield in ${city}. Our hydrophobic glass coating makes water bead and roll off, carrying dirt with it. The result: windows that stay cleaner longer, backed by our Rain Shield performance guarantee.`,
+      "South Florida rain, salt spray, and sprinkler minerals don't stand a chance against Rain Shield. Our hydrophobic glass coating makes water bead and roll off, carrying dirt with it. The result: windows that stay cleaner longer — included free with every window cleaning we perform.",
     ],
     included: [
       {
@@ -1189,54 +1191,76 @@ const Services = {
     essential: [
       {
         number: "01.",
-        title: "Repels Water & Dirt",
-        text: "Rain beads up and sheets off cleanly instead of drying into spots, keeping your windows cleaner between visits.",
+        title: "Tropical Rain Soaks Windows Daily",
+        text: "South Florida afternoon storms soak windows daily, leaving water spots once glass dries. Rain Shield makes rain bead and sheet off cleanly, keeping your home spotless between full professional cleanings.",
       },
       {
         number: "02.",
-        title: "Blocks Salt & Minerals",
-        text: "Salt spray and irrigation mineral deposits repel off treated glass instead of bonding and etching into the surface.",
+        title: "Salt Air Bonds Without Protection",
+        text: "Salt spray from the Atlantic coast and Intracoastal waterways bonds to untreated glass fast. Our hydrophobic coating blocks salt from etching into the surface, protecting your windows and your investment long term.",
       },
       {
         number: "03.",
-        title: "Extends Cleaning Intervals",
-        text: "Rain Shield keeps glass cleaner longer, meaning fewer professional cleanings needed to maintain the same level of clarity.",
+        title: "Sprinkler Minerals Spot Glass Daily",
+        text: "South Florida irrigation mineral deposits leave chalky spots every time sprinklers run. Rain Shield repels that mineral-heavy water so spots rinse off with the next rain instead of bonding permanently to your glass.",
       },
       {
         number: "04.",
-        title: "Safe on All Window Types",
-        text: "From hurricane impact glass to tinted and low-E windows, Rain Shield bonds safely without damaging any protective coating.",
+        title: "Cleaner Views for Longer",
+        text: "With over 230 sunny days and regular South Florida rain, Rain Shield extends your window clarity between cleanings. You get crystal-clear views that stay sharp for weeks longer, automatically.",
       },
     ],
     nearyou: [
       {
         number: "01",
         title: "Rain Shield for Home Windows",
-        text: "Hydrophobic coating applied to your full home so every window repels water, salt, and dirt automatically.",
+        text: "Hydrophobic coating applied to your entire home so every window repels water, salt, and dirt automatically between cleanings.",
       },
       {
         number: "02",
-        title: "Rain Shield for Commercial Glass",
-        text: "Keep storefronts and office windows crystal-clear between cleanings with our pro-grade Rain Shield coating.",
+        title: "Rain Shield for High-Rise Condos",
+        text: "Protect your coastal high-rise condo glass with Rain Shield — fewer cleanings, clearer views, longer protection from salt spray.",
       },
       {
         number: "03",
-        title: "Rain Shield for High-Rise Condos",
-        text: "Protect high-rise condo glass with Rain Shield — fewer cleanings, clearer views, longer.",
+        title: "Rain Shield for Commercial Glass",
+        text: "Keep your storefront and office windows crystal-clear between professional cleanings with our pro-grade Rain Shield hydrophobic coating.",
       },
       {
         number: "04",
-        title: "Rain Shield for Pool Enclosure Glass",
-        text: "Pool enclosure glass takes a beating from chemicals and minerals — Rain Shield keeps it streak-free between cleanings.",
+        title: "Rain Shield for Waterfront Estates",
+        text: "Intracoastal, oceanfront, and canal-front estates benefit most — Rain Shield repels the constant salt spray from waterfront exposure.",
       },
       {
         number: "05",
-        title: "Rain Shield for Waterfront Estates",
-        text: "Waterfront properties benefit most — Rain Shield repels constant salt spray from marine and Intracoastal exposure.",
+        title: "Rain Shield for Boat & Yacht Glass",
+        text: "We apply Rain Shield to yacht and boat glass at South Florida marinas, blocking salt etching and improving visibility.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How long does Rain Shield last?",
+        answer:
+          "Rain Shield typically lasts around three months or more between applications, depending on exposure. Since it's included free on every service with our quarterly plan, your windows stay protected year-round without any extra scheduling or cost.",
+      },
+      {
+        question: "What makes Rain Shield different from regular glass cleaners?",
+        answer:
+          "Rain Shield is a professional-grade hydrophobic coating that bonds to your glass at the molecular level. Unlike consumer products, it creates a lasting water-repellent barrier that makes rain and dirt slide off cleanly for months at a time.",
+      },
+      {
+        question: "Does Rain Shield work on hurricane impact windows?",
+        answer:
+          "Absolutely. Rain Shield is completely safe on hurricane impact windows, which are standard throughout South Florida. The hydrophobic coating bonds directly to glass without damaging low-E coatings, tints, or protective manufacturer layers.",
+      },
+      {
+        question: "Is Rain Shield included with my cleaning service?",
+        answer:
+          "Yes — Rain Shield comes included free on every service with our quarterly maintenance plan, plus occasional seasonal promotions. We apply it during the cleaning process itself — no separate appointment or fee needed.",
       },
     ],
     quote:
-      "Hydrophobic glass coating that repels water, dirt, and salt — included free with our quarterly plan.",
+      "From Palm Beach County to Broward County, South Florida homeowners rely on Rain Shield for long-lasting window clarity — included free with every cleaning. Book your window cleaning today.",
   },
 };
 export default Services;

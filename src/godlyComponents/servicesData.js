@@ -115,11 +115,4 @@ export const servicesData = [
     description:
       "Pro-grade scraping and RO/DI purified water to remove stucco, paint, and construction residue — move-in ready every time.",
   },
-  {
-    name: "Rain Shield Tech",
-    icon: <WindowIcon />,
-    link: "rain-shield-tech",
-    description:
-      "Hydrophobic glass coating applied during cleaning that repels water, dirt, and salt — included free with our quarterly plan.",
-  },
 ];

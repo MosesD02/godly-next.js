@@ -1,7 +1,7 @@
 export const coralSprings = {
   "exterior-window-cleaning": {
     hero:
-      "Oak pollen and pine sap cake onto street-facing glass faster than most owners notice. We clear frames, screens, and sills, then pure-rinse every exterior story so HOA drive-bys catch sparkle—not chalky tree rings.",
+      "Oak pollen, pine sap, and afternoon storms hit the outside of Coral Springs glass first—frames, screens, and the panes your HOA sees from the street. We stay outdoors with pure-water poles, stripping tree film and grit from exterior stories so curb lines read clean, not chalky.",
     included: [
       {
         number: "01",
@@ -311,7 +311,7 @@ export const coralSprings = {
   },
   "interior-window-cleaning": {
     hero:
-      "Coral Springs’ tree-lined streets are beautiful, but all those oaks, palms, and slash pines drop pollen, sap, and leaf debris onto your glass year-round. We know this city’s HOAs, its microclimates, and exactly what it takes to keep Coral Springs windows looking sharp.",
+      "Once pollen makes it past the screens, it settles on interior sills, tracks, and the glass you look through at breakfast—not just the panes facing the yard. We clean the inside only: vacuum tracks, wipe hardware, and polish interior glass so family spaces brighten without dragging hoses through your home.",
     included: [
       {
         number: "01",
@@ -1033,76 +1033,5 @@ export const coralSprings = {
     ],
     localCta:
       "From Eagle Glen new builds to Hamptons remodels, Coral Springs builders trust us for spotless, move-in-ready post-construction windows. Book your final-clean estimate today.",
-  },
-  "rain-shield-tech": {
-    hero: "Coral Springs' sandy soil dust, pool chemical splash, and daily fingerprints don't stand a chance against Rain Shield. Our hydrophobic glass coating makes water bead and roll off, carrying dirt with it. The result: windows that stay cleaner longer, backed by our Rain Shield performance guarantee.",
-    essential: [
-      {
-        number: "01.",
-        title: "Sandy Soil Dust Coats Glass Daily",
-        text: "Coral Springs' sandy soil kicks up fine dust that films over windows in Eagle Glen, the Hamptons, and Cypress Run. Rain Shield makes dust rinse off with rain instead of bonding into a hazy permanent film.",
-      },
-      {
-        number: "02.",
-        title: "Pool Chemicals Stain Without Barrier",
-        text: "Backyard pools are everywhere in Coral Springs, and chlorine splash leaves cloudy residue on nearby glass. Rain Shield's barrier repels chemical splash so it rinses off cleanly instead of staining your pane.",
-      },
-      {
-        number: "03.",
-        title: "Family Smudges Are Constant",
-        text: "Coral Springs is a family town — kids, pets, and sports field dust mean fingerprints and grime constantly. Rain Shield makes interior glass easier to wipe clean between full professional window cleanings.",
-      },
-      {
-        number: "04.",
-        title: "Cleaner Views for Longer",
-        text: "With over 230 sunny days and regular Coral Springs rain, Rain Shield extends window clarity between cleanings. You get backyard pool and neighborhood views that stay crystal-clear week after week.",
-      },
-    ],
-    nearYou: [
-      {
-        title: "Rain Shield for Home Windows",
-        text: "Hydrophobic coating applied to your full Coral Springs home so every window repels dust, chemicals, and smudges automatically.",
-      },
-      {
-        title: "Rain Shield for Commercial Glass",
-        text: "Keep your Coral Springs office or retail space windows crystal-clear between cleanings with our pro-grade Rain Shield coating.",
-      },
-      {
-        title: "Rain Shield for Pool Enclosure Glass",
-        text: "Pool enclosure glass takes a beating from chlorine and splash — Rain Shield keeps every panel streak-free between cleanings.",
-      },
-      {
-        title: "Rain Shield for Lanai & Patio Glass",
-        text: "Lanai and patio glass across Coral Springs communities stay clear longer with Rain Shield blocking dust and pollen buildup.",
-      },
-      {
-        title: "Rain Shield for Storefront Windows",
-        text: "Storefront windows in Coral Springs benefit from Rain Shield's long-lasting protection — fewer cleanings, clearer glass, better curb appeal.",
-      },
-    ],
-    faqs: [
-      {
-        question: "How long does Rain Shield last on Coral Springs windows?",
-        answer:
-          "Rain Shield typically lasts around three months or more between applications on Coral Springs homes. Since it's included free on every service with our quarterly plan, your windows stay protected year-round without any extra scheduling or cost.",
-      },
-      {
-        question: "Does Rain Shield block pool chemical splash damage?",
-        answer:
-          "Absolutely. That's one of Rain Shield's biggest wins in Coral Springs. The hydrophobic coating repels chemical splash so chlorine and pool residue rinse off cleanly instead of staining or fogging up your glass.",
-      },
-      {
-        question: "Does Rain Shield work on hurricane impact windows?",
-        answer:
-          "Absolutely. Rain Shield is completely safe on hurricane impact windows, which are standard throughout Coral Springs. The hydrophobic coating bonds directly to glass without damaging low-E coatings, tints, or protective manufacturer layers.",
-      },
-      {
-        question: "Is Rain Shield included with my cleaning service?",
-        answer:
-          "Yes — Rain Shield comes included free on every service with our quarterly maintenance plan, plus occasional seasonal promotions. We apply it during the cleaning process itself — no separate appointment or fee needed.",
-      },
-    ],
-    localCta:
-      "From Eagle Glen pool homes to Hamptons and Cypress Run, Coral Springs homeowners rely on Rain Shield for long-lasting window clarity. Book today.",
   },
 };

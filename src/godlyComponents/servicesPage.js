@@ -1,6 +1,7 @@
 import React from "react";
 import WindowCleaningClusterNav from "@/components/WindowCleaningClusterNav";
 import { isWindowClusterSlug } from "@/data/windowCleaningCluster";
+import Services from "@/data/servicesData";
 import WebsiteLayout from "./websiteLayout";
 import ServicesHero from "./servicesHero";
 import ServiceIncludes from "./serviceInculdes";
@@ -12,6 +13,7 @@ import ServiceNearYou from "./serviceNearYou";
 import RelatedBlogPosts from "./blog/RelatedBlogPosts";
 import Faq from "./faq";
 import LocalCta from "./localCta";
+import RainShieldBookingCta from "./rainShieldBookingCta";
 import CitySync from "./CitySync";
 
 export default function ServicesPage({
@@ -39,6 +41,7 @@ export default function ServicesPage({
       <ServiceIncludes
         slug={slug}
         cityName={cityName}
+        citySlug={city}
         includedOverride={cityData.included}
       />
       <EssentialService
@@ -53,14 +56,22 @@ export default function ServicesPage({
       />
       <ChooseUs slug={slug} />
       <Faq
-        faqs={cityData.faqs}
+        faqs={cityData.faqs ?? Services[slug]?.faqs}
         serviceName={slug?.replace(/-/g, " ")}
         cityName={cityName}
       />
-      {cityData.localCta && <LocalCta text={cityData.localCta} />}
+      {slug === "rain-shield" ? (
+        <RainShieldBookingCta
+          text={cityData.localCta ?? Services[slug]?.quote}
+        />
+      ) : (
+        cityData.localCta && <LocalCta text={cityData.localCta} />
+      )}
       <RelatedBlogPosts posts={relatedPosts} city={city} />
       <OtherServices slug={slug} cityName={cityName} citySlug={city} />
-      <ServiceNearbyCities citySlug={city} serviceSlug={slug} />
+      {slug !== "rain-shield" && (
+        <ServiceNearbyCities citySlug={city} serviceSlug={slug} />
+      )}
     </WebsiteLayout>
   );
 }

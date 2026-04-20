@@ -67,6 +67,142 @@ const nextConfig: NextConfig = {
         destination: "/:city/window-cleaning",
         permanent: true,
       },
+      // Legacy city Rain Shield URLs → single hub (SEO punch list P1.2)
+      {
+        source: "/boca-raton/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/coconut-creek/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/cooper-city/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/coral-springs/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/davie/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/deerfield-beach/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/delray-beach/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/fort-lauderdale/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/hallandale-beach/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/hillsboro-beach/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/hollywood/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/lauderdale-by-the-sea/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/lauderhill/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/lighthouse-point/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/margate/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/miramar/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/oakland-park/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/parkland/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/pembroke-pines/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/plantation/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/pompano-beach/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/royal-palm-beach/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/southwest-ranches/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/sunrise/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/tamarac/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/west-park/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
+      {
+        source: "/weston/rain-shield-tech",
+        destination: "/rain-shield",
+        permanent: true,
+      },
       // Blog: legacy Sanity slugs with duplicated city segments (-fl-city or -city-city) → canonical slug
       {
         source: "/blog/house-washing-coconut-creek-fl-coconut-creek",

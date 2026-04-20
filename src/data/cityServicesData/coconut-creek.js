@@ -1,7 +1,7 @@
 export const coconutCreek = {
   "exterior-window-cleaning": {
     hero:
-      "Shade trees pour pollen and sap onto exterior panes every week. Our team strips outdoor grime, webs, and sprinkler film from every story—without leaning ladders into your mulch beds or stucco.",
+      "Shade trees dump pollen and sap on the outside of Township and Wynmoor glass—screens, frames, and street-facing panes the HOA sees first. We work outdoors only, clearing webs and sprinkler film with pure-water poles so exterior stories dry clean without gear in your foyer.",
     included: [
       {
         number: "01",
@@ -322,7 +322,7 @@ export const coconutCreek = {
   },
   "interior-window-cleaning": {
     hero:
-      "Coconut Creek earned its \"Butterfly Capital\" nickname for a reason — mature landscaping, lots of shade, and plenty of wildlife. Beautiful, but tough on glass. We clean windows in a way that respects both your home and the greenery around it.",
+      "Inside Coconut Creek homes, the wear shows up as patio-door fingerprints, lanai slider film, and fine dust on interior sills—especially where shade keeps windows closed. We detail interior tracks, screens-off glass, and living-room panes with low-odor solutions so indoor air stays pleasant while the view clears.",
     included: [
       {
         number: "01",
@@ -1072,76 +1072,5 @@ export const coconutCreek = {
     ],
     localCta:
       "From Township to Wynmoor and across Coconut Creek, builders rely on our post-construction cleaning team to deliver a flawless, move-in-ready finish. Request your free estimate today.",
-  },
-  "rain-shield-tech": {
-    hero: "Coconut Creek rain, humidity, and sprinkler mineral deposits don't stand a chance against Rain Shield. Our hydrophobic glass coating makes water bead and roll off cleanly, carrying dirt with it. Result: cleaner windows longer, across Township, Wynmoor, and every Coconut Creek neighborhood, backed by our performance guarantee.",
-    essential: [
-      {
-        number: "01.",
-        title: "Summer Rain Tests Every Window",
-        text: "Coconut Creek's afternoon summer storms soak windows daily. Without Rain Shield, water dries into visible mineral spots on every pane. Our coating makes rain sheet off cleanly so your Township or Wynmoor home stays clearer longer.",
-      },
-      {
-        number: "02.",
-        title: "Sprinkler Minerals Spot Glass Fast",
-        text: "Irrigation mineral deposits leave chalky spots across Coconut Creek windows every time sprinklers cycle. Rain Shield repels mineral-heavy water so spots rinse away with the next rain instead of bonding permanently to glass surfaces.",
-      },
-      {
-        number: "03.",
-        title: "Butterfly Capital Views Stay Clear",
-        text: "Coconut Creek's Butterfly Capital identity depends on nature-focused views staying clear year-round. Rain Shield extends window clarity between full cleanings so your backyard, lanai, and pool views stay crystal-clear for longer periods.",
-      },
-      {
-        number: "04.",
-        title: "Protection That Outlasts Storms",
-        text: "With 230+ sunny days and regular tropical rain, untreated Coconut Creek glass cycles between wet and dry constantly. Rain Shield creates a protective barrier that keeps your windows looking freshly cleaned weeks after each application.",
-      },
-    ],
-    nearYou: [
-      {
-        title: "Rain Shield for Home Windows",
-        text: "Whole-home hydrophobic coating for Coconut Creek residences so every pane repels rain, sprinkler minerals, and debris automatically between cleanings.",
-      },
-      {
-        title: "Rain Shield for Pool Enclosure Glass",
-        text: "Pool enclosure glass gets a beating from chemicals and irrigation spray — Rain Shield keeps every panel streak-free and easier to maintain between full cleans.",
-      },
-      {
-        title: "Rain Shield for Commercial Glass",
-        text: "Coconut Creek storefronts, offices, and retail windows stay crystal-clear between cleanings with our pro-grade Rain Shield hydrophobic coating applied throughout.",
-      },
-      {
-        title: "Rain Shield for Lanai & Patio Glass",
-        text: "Lanai and patio glass across Township, Wynmoor, and other Coconut Creek communities stay visibly cleaner longer with Rain Shield blocking pollen and mineral buildup.",
-      },
-      {
-        title: "Rain Shield for HOA Communities",
-        text: "Wynmoor and other Coconut Creek HOA communities schedule Rain Shield community-wide so residents enjoy clearer windows between scheduled visits every month.",
-      },
-    ],
-    faqs: [
-      {
-        question: "How long does Rain Shield last in Coconut Creek?",
-        answer:
-          "Rain Shield typically lasts around three months or more between applications on Coconut Creek homes. Since it comes included free on every service with our quarterly plan, your windows stay protected year-round without any extra scheduling or cost.",
-      },
-      {
-        question: "Does Rain Shield block mineral spots?",
-        answer:
-          "Yes — blocking mineral spots is one of Rain Shield's biggest wins in Coconut Creek. The hydrophobic coating repels mineral-heavy irrigation water so chalky spots rinse off before they bond to the glass surface permanently.",
-      },
-      {
-        question: "Does Rain Shield work on impact windows?",
-        answer:
-          "Completely safe. Rain Shield is designed for all glass types, including hurricane impact windows common throughout Coconut Creek. The coating bonds directly to glass without damaging low-E films, tints, or manufacturer-applied coatings.",
-      },
-      {
-        question: "Is Rain Shield included with my cleaning?",
-        answer:
-          "Yes — Rain Shield comes included free on every service with our quarterly maintenance plan, plus occasional seasonal promotions. We apply it during the cleaning process itself, so no separate appointment or fee is required.",
-      },
-    ],
-    localCta:
-      "From Township family homes to Wynmoor and across Coconut Creek, homeowners rely on Rain Shield for long-lasting window clarity. Book your Rain Shield application today.",
   },
 };

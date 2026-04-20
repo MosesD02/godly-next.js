@@ -1,7 +1,7 @@
 export const cooperCity = {
   "exterior-window-cleaning": {
     hero:
-      "Rock Creek to Embassy Lakes, Cooper City curb appeal starts at the glass facing the street. We remove pollen film and hard-water spots from every outdoor pane so stucco and trim stay untouched.",
+      "Rock Creek to Embassy Lakes, the glass that faces the street and the HOA carries pollen, irrigation mist, and storm grit on the outside only. We work from ladders and pure-water poles outdoors—lifting film off exterior panes and screens without opening your front door.",
     included: [
       {
         number: "01",
@@ -320,7 +320,7 @@ export const cooperCity = {
   },
   "interior-window-cleaning": {
     hero:
-      "Cooper City homes — from Rock Creek to Embassy Lakes — were built to be shown off, and your windows are a big part of that. Our crews treat every job like it's the one you'll judge us by, because it is.",
+      "Inside Rock Creek and Embassy Lakes homes, the story is smudges on sliders, dust in tracks, and film where kids and pets press against glass. We work indoors with drop cloths and quiet tools—detailing interior panes, hardware, and sills so living spaces look finished, not just “good from the curb.”",
     included: [
       {
         number: "01",
@@ -1062,76 +1062,5 @@ export const cooperCity = {
     ],
     localCta:
       "From Monterra family estates to Rock Creek new builds, Cooper City builders count on us for a flawless post-construction window finish. Book your free estimate today.",
-  },
-  "rain-shield-tech": {
-    hero: "Cooper City rain, landscaping debris, and irrigation spray don't stand a chance against Rain Shield. Our hydrophobic glass coating makes water bead up and sheet off cleanly, carrying dirt with it. The result: cleaner windows longer across Monterra, Rock Creek, and every Cooper City family neighborhood.",
-    essential: [
-      {
-        number: "01.",
-        title: "Family Homes See Constant Smudges",
-        text: "Cooper City is built around families, which means kids, pets, and everyday activity leave fingerprints and smudges on windows constantly. Rain Shield makes interior glass easier to wipe clean between full professional cleanings throughout every month.",
-      },
-      {
-        number: "02.",
-        title: "Rock Creek Gets Heavy Rain",
-        text: "Rock Creek and surrounding Cooper City neighborhoods get heavy tropical rain that leaves water spots on untreated glass. Rain Shield creates a hydrophobic barrier so rainwater sheets off cleanly before drying into visible mineral-heavy spots.",
-      },
-      {
-        number: "03.",
-        title: "Monterra Landscapes Drop Debris",
-        text: "Monterra and Embassy Lakes mature landscaping drops pollen, leaf particles, and organic debris onto windows regularly. Rain Shield prevents that debris from bonding tightly to glass, making it far easier to rinse off between cleanings.",
-      },
-      {
-        number: "04.",
-        title: "Protection for Every Impact Pane",
-        text: "Hurricane impact glass is standard across Cooper City, and Rain Shield is completely safe to apply. The hydrophobic coating bonds directly to glass surfaces without damaging protective manufacturer tints, low-E coatings, or any warranted finish layers.",
-      },
-    ],
-    nearYou: [
-      {
-        title: "Rain Shield for Family Homes",
-        text: "Whole-home hydrophobic coating for Cooper City family homes so every window repels water, smudges, and debris automatically between regular scheduled cleanings.",
-      },
-      {
-        title: "Rain Shield for Pool Enclosure Glass",
-        text: "Pool enclosure glass across Cooper City takes chemical spray constantly — Rain Shield keeps every panel streak-free and much easier to maintain between cleans.",
-      },
-      {
-        title: "Rain Shield for Commercial Glass",
-        text: "Cooper City storefronts, offices, and retail windows stay crystal-clear between cleanings with our pro-grade Rain Shield hydrophobic coating applied evenly throughout.",
-      },
-      {
-        title: "Rain Shield for Lanai & Patio Glass",
-        text: "Lanai and patio glass across Monterra, Rock Creek, and Embassy Lakes stay visibly cleaner longer with Rain Shield blocking pollen, debris, and mineral buildup.",
-      },
-      {
-        title: "Rain Shield for Custom Estates",
-        text: "Monterra, Rock Creek, and Embassy Lakes custom estates get Rain Shield's premium long-lasting protection against landscaping debris, rain spotting, and humidity damage.",
-      },
-    ],
-    faqs: [
-      {
-        question: "How long does Rain Shield last here?",
-        answer:
-          "Rain Shield typically lasts around three months or more between applications on Cooper City homes. Since it comes included free on every service with our quarterly plan, your windows stay protected year-round without any extra scheduling or cost.",
-      },
-      {
-        question: "Does Rain Shield help with family smudges?",
-        answer:
-          "Yes — Rain Shield makes interior glass far easier to wipe clean between professional visits. Fingerprints, smudges, and everyday family grime come off with a simple microfiber wipe instead of requiring deep cleaning each time.",
-      },
-      {
-        question: "Does Rain Shield work on impact windows?",
-        answer:
-          "Completely safe. Rain Shield is engineered for all glass types, including the hurricane impact windows standard throughout Cooper City. The coating bonds directly without damaging low-E films, manufacturer tints, or warranted protective layers.",
-      },
-      {
-        question: "Is Rain Shield included with my cleaning?",
-        answer:
-          "Yes — Rain Shield comes included free on every service with our quarterly maintenance plan, plus occasional seasonal promotions. We apply it during the cleaning process itself, so no separate appointment or fee is required.",
-      },
-    ],
-    localCta:
-      "From Monterra to Rock Creek and across Cooper City, families rely on Rain Shield for long-lasting window clarity. Book your Rain Shield application today.",
   },
 };

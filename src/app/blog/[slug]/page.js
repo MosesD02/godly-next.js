@@ -83,7 +83,32 @@ export async function generateMetadata({ params }) {
   if (citiesMap[slug]) {
     const cityPosts = await getSanityPostsByCity(slug);
     if (cityPosts.length === 0) {
-      return {};
+      const cityName = toCityTitle(slug);
+      return {
+        robots: {
+          index: false,
+          follow: true,
+          googleBot: {
+            index: false,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+          },
+        },
+        title: `${cityName} Blog | Godly Windows & Wash Co.`,
+        description: `Expert tips on pressure washing and window cleaning for ${cityName}. Learn what to know before you hire. Free quotes from Godly Windows.`,
+        openGraph: {
+          title: `${cityName} Blog | Godly Windows & Wash Co.`,
+          description: `Expert tips on pressure washing and window cleaning for ${cityName} homeowners.`,
+          url: `${BASE_URL}/blog/${slug}`,
+          siteName: "Godly Windows",
+          type: "website",
+        },
+        alternates: {
+          canonical: `/blog/${slug}`,
+        },
+      };
     }
     const cityName = toCityTitle(slug);
     return {
@@ -139,13 +164,22 @@ export default async function BlogPostRoute({ params, searchParams }) {
       url: BASE_URL,
     };
 
+    const rawImage = post.image;
+    const absoluteImage =
+      rawImage &&
+      (rawImage.startsWith("http://") || rawImage.startsWith("https://"))
+        ? rawImage
+        : rawImage
+          ? `${BASE_URL}${rawImage.startsWith("/") ? "" : "/"}${rawImage}`
+          : `${BASE_URL}/blog/${post.slug}/opengraph-image`;
+
     const blogPosting = {
       "@type": "BlogPosting",
       headline,
       description,
       datePublished,
       dateModified,
-      image: post.image || `${BASE_URL}/blog/${post.slug}/opengraph-image`,
+      image: absoluteImage,
       author: org,
       publisher: { ...org },
       url: pageUrl,
@@ -215,9 +249,6 @@ export default async function BlogPostRoute({ params, searchParams }) {
 
   if (citiesMap[slug]) {
     const allPosts = await getSanityPostsByCity(slug);
-    if (allPosts.length === 0) {
-      notFound();
-    }
     const cityName = toCityTitle(slug);
     const { pagePosts, currentPage, totalPages } = paginateBlogPosts(
       allPosts,

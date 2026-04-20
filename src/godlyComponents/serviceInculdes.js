@@ -1,12 +1,30 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import "@/styles/fourstepprocess.css";
 import background from "../assets/texture.webp";
 import Services from "@/data/servicesData";
+import { citiesMap } from "@/data/cities";
 import { cn } from "@/lib/utils";
 import { generateServiceSectionHeadings } from "@/data/metaTitles";
 
-const ServiceIncludes = ({ slug, cityName, includedOverride }) => {
+const RAIN_SHIELD_LINK_PHRASES = [
+  "Learn how Rain Shield works",
+  "See how Rain Shield protects your windows",
+  "How Rain Shield keeps glass cleaner longer",
+  "More about Rain Shield technology",
+];
+
+function rainShieldLinkLabelForCity(citySlug) {
+  const order = Object.keys(citiesMap)
+    .filter((c) => c !== "south-florida")
+    .sort();
+  const i = citySlug ? order.indexOf(citySlug) : -1;
+  const idx = i >= 0 ? i % RAIN_SHIELD_LINK_PHRASES.length : 0;
+  return RAIN_SHIELD_LINK_PHRASES[idx];
+}
+
+const ServiceIncludes = ({ slug, cityName, citySlug, includedOverride }) => {
   const headings = generateServiceSectionHeadings(slug, cityName);
   const steps =
     includedOverride?.length > 0
@@ -94,7 +112,20 @@ const ServiceIncludes = ({ slug, cityName, includedOverride }) => {
                 </div>
 
                 <p className="trim text-center text-xs md:text-base">
-                  {step.text}
+                  {slug === "window-cleaning" &&
+                  step.title === "Rain Shield Technology" ? (
+                    <>
+                      {step.text}{" "}
+                      <Link
+                        href="/rain-shield"
+                        className="font-medium text-[#FDE4C8] underline underline-offset-2 hover:text-white"
+                      >
+                        {rainShieldLinkLabelForCity(citySlug)} →
+                      </Link>
+                    </>
+                  ) : (
+                    step.text
+                  )}
                 </p>
               </div>
             </div>

@@ -73,7 +73,7 @@ const ServicesHero = ({ slug, heroOverride, cityName }) => {
               </span>
               <span
                 className={cn(
-                  "text-grain trim z-10 inline-block bg-[#FDE4C8]! pb-6 text-end font-['luminaire-script'] text-[48px] font-normal md:pb-12 md:text-[88px]",
+                  "text-grain trim z-10 inline-block bg-[#FDE4C8]! pb-6 text-end font-['luminaire-script']! text-[48px] font-normal md:pb-12 md:text-[88px]",
                 )}
                 data-text={`${Services[slug]["hero"][1]} `}
                 style={{
@@ -111,7 +111,7 @@ const ServicesHero = ({ slug, heroOverride, cityName }) => {
       <div className="text-left font-['satoshi-regular'] text-sm/6 text-white sm:max-w-none sm:text-left sm:text-base/6 sm:text-white md:max-w-175 md:text-center md:text-base/7 md:text-[#FFFFFF94] lg:max-w-200 lg:text-center lg:text-lg/7 lg:text-[#FFFFFF94] xl:max-w-225 xl:text-center xl:text-xl/8 xl:text-[#FFFFFF94]">
         <p>{heroOverride ?? heroDescription}</p>
       </div>
-      {slug === "holiday-lighting" ? (
+      {slug === "rain-shield" ? null : slug === "holiday-lighting" ? (
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a href={`tel:${quoteTel}`} className="free-button">
             <span>GET A FREE QUOTE — {quotePhone}</span>

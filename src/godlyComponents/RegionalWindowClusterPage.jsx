@@ -108,10 +108,11 @@ export default async function RegionalWindowClusterPage({ slug }) {
     "@graph": [primarySchema, breadcrumbList],
   };
 
-  if (cityData.faqs?.length > 0) {
+  const faqsForSchema = cityData.faqs ?? Services[slug]?.faqs;
+  if (faqsForSchema?.length > 0) {
     graph["@graph"].push({
       "@type": "FAQPage",
-      mainEntity: cityData.faqs.map((faq) => ({
+      mainEntity: faqsForSchema.map((faq) => ({
         "@type": "Question",
         name: faq.question,
         acceptedAnswer: {

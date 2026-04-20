@@ -4,7 +4,11 @@ import { getCityHeroContent } from "./cityHeroCopy.js";
 import { BASE_URL } from "@/app/lib/constants";
 
 /** Cities with a real physical office — LocalBusiness JSON-LD on `/[city]`; others use Service. */
-export const PHYSICAL_OFFICE_CITY_SLUGS = new Set(["boca-raton", "weston"]);
+export const PHYSICAL_OFFICE_CITY_SLUGS = new Set([
+  "boca-raton",
+  "weston",
+  "fort-lauderdale",
+]);
 
 /**
  * City landing pages that render LocalBusiness + AggregateRating.
@@ -284,7 +288,7 @@ export const serviceMetaTitles = {
   "soft-washing": "Soft Washing",
   "holiday-lighting": "Holiday Lighting",
   "post-construction-window-cleaning": "Post-Construction Window Cleaning",
-  "rain-shield-tech": "Rain Shield Tech",
+  "rain-shield": "Rain Shield",
 };
 
 function capitalizeString(str) {
@@ -309,6 +313,10 @@ const findCitySlug = (cityName) => {
 
 // Generate SEO-optimized title for service pages
 export const generateServiceTitle = (serviceSlug, cityName) => {
+  if (serviceSlug === "rain-shield") {
+    return "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows";
+  }
+
   // Check for custom meta data first - need to find the city slug
   const citySlug = findCitySlug(cityName);
 
@@ -390,8 +398,8 @@ const serviceDescriptions = {
     "Holiday & Christmas lighting in {location}. Design, install, LED lights, maintenance & removal. Professional display—stress-free season.",
   "post-construction-window-cleaning":
     "Post-construction window cleaning in {location} for builders & GCs — stucco dust, paint overspray & film removal. Punch-list and turnover ready. Pro tools & RO/DI rinse.",
-  "rain-shield-tech":
-    "Rain Shield hydrophobic coating in {location}. Repels water, dirt & salt on glass—extends clarity between cleanings. Ask about quarterly plans.",
+  "rain-shield":
+    "Rain Shield hydrophobic glass coating in South Florida. Repels water, salt & dirt on windows—included free with quarterly window cleaning. Book today.",
 };
 
 // Generate SEO-optimized meta description for service pages
@@ -467,6 +475,9 @@ export const generateServiceH1 = (serviceSlug, cityName) => {
   if (serviceSlug === "post-construction-window-cleaning") {
     return `Post-Construction Window Cleaning in ${location}`;
   }
+  if (serviceSlug === "rain-shield") {
+    return "Rain Shield Technology — Hydrophobic Glass Coating";
+  }
 
   const serviceName = serviceMetaTitles[serviceSlug];
 
@@ -495,6 +506,18 @@ export const generateServiceSectionHeadings = (serviceSlug, cityName) => {
     serviceMetaTitles[serviceSlug] ||
     serviceSlug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
   const location = cityName ? capitalizeString(cityName) : "South Florida";
+
+  if (serviceSlug === "rain-shield") {
+    return {
+      h2WhyEssential: "Why Rain Shield Matters",
+      h2WhatIncluded: "What's Included in Our Rain Shield Service",
+      h2ServicesNearYou: "Where Rain Shield Makes the Biggest Difference",
+      h2Process: "Our Rain Shield Process",
+      h2Benefits: "Benefits of Rain Shield",
+      h2Areas: `Rain Shield Service Areas in ${location}`,
+      h2Pricing: `Rain Shield Pricing in ${location}`,
+    };
+  }
 
   return {
     h2WhyEssential: `Why ${serviceName} is Essential in ${location}`,
@@ -533,7 +556,7 @@ export const generateServiceHeroAlt = (serviceSlug, cityName) => {
     "soft-washing": `soft washing service in ${location}`,
     "holiday-lighting": `holiday and Christmas lighting installation in ${location}`,
     "post-construction-window-cleaning": `post-construction window cleaning in ${location}`,
-    "rain-shield-tech": `Rain Shield hydrophobic glass coating in ${location}`,
+    "rain-shield": `Rain Shield hydrophobic glass coating in ${location}`,
   };
 
   return (

@@ -34,7 +34,7 @@ const OtherServices = ({ slug, cityName: cityNameProp, citySlug }) => {
         : "";
 
   const otherSlugs = Object.keys(Services)
-    .filter((s) => s !== slug)
+    .filter((s) => s !== slug && s !== "rain-shield")
     .sort();
 
   return (

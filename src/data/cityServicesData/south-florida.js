@@ -2,7 +2,7 @@
 export const southFlorida = {
   "interior-window-cleaning": {
     hero:
-      "Broward, Miami-Dade, and Palm Beach County homes see more sun, salt spray, and afternoon thunderstorms than almost any market in the country. That’s exactly why we built Godly Windows for South Florida glass — and why our crews know the difference a proper clean makes here.",
+      "Across Broward, Miami-Dade, and Palm Beach, interior glass battles fingerprints, cooking film, and AC dust that never shows up the same way outside. We work room-by-room on the inside only—furniture-safe tools, contained water, and detail on tracks and hardware so daylight actually reaches your floors.",
     included: [
       {
         number: "01",
@@ -78,7 +78,7 @@ export const southFlorida = {
   },
   "exterior-window-cleaning": {
     hero:
-      "South Florida’s Atlantic exposure seasons outdoor panes with salt mist, pollen fronts, and storm grit almost year-round. We clean exterior glass with pure-water poles so street-facing windows clear up fast—without ladders scraping your stucco or siding.",
+      "Atlantic salt, pollen fronts, and storm grit live on the outside of the glass—where ladders and lifts usually go. Our crews stay outdoors with pure-water-fed poles up to 40 feet, rinsing frames and screens so street-facing panes and HOA sightlines clear up without anyone walking through your living room.",
     included: [
       {
         number: "01",

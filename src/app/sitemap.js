@@ -36,6 +36,12 @@ function minimalSitemapEntries(now) {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    {
+      url: `${BASE_URL}/rain-shield`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
     ...WINDOW_CLUSTER_SLUGS.map((slug) => ({
       url: `${BASE_URL}/${slug}`,
       lastModified: now,
@@ -93,6 +99,12 @@ export default async function sitemap() {
         changeFrequency: "yearly",
         priority: 0.3,
       },
+      {
+        url: `${BASE_URL}/rain-shield`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.85,
+      },
     ];
 
     WINDOW_CLUSTER_SLUGS.forEach((slug) => {
@@ -113,6 +125,7 @@ export default async function sitemap() {
       });
 
       services.forEach((service) => {
+        if (service === "rain-shield") return;
         urls.push({
           url: `${BASE_URL}/${city}/${service}`,
           lastModified: now,
