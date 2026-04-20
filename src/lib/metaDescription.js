@@ -11,8 +11,10 @@ export function clampMetaDescription(text, max = DEFAULT_MAX) {
 
   const slice = t.slice(0, max);
   const lastSpace = slice.lastIndexOf(" ");
-  const end =
-    lastSpace >= MIN_WORD_BREAK ? lastSpace : max;
-  const out = slice.slice(0, end).trim().replace(/[,;:–—-]+$/, "");
+  const end = lastSpace >= MIN_WORD_BREAK ? lastSpace : max;
+  const out = slice
+    .slice(0, end)
+    .trim()
+    .replace(/[,;:–—-]+$/, "");
   return out.endsWith("…") ? out : `${out}…`;
 }

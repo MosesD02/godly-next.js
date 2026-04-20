@@ -6,7 +6,10 @@ import {
   generateCityDescription,
   generateCitySchema,
 } from "@/data/metaTitles";
-import { cityServicesData } from "@/data/cityServicesData/index";
+import {
+  getCityHomepageFaqs,
+  buildHomepageFaqPageNode,
+} from "@/data/homepageFaqData";
 import JsonLd from "@/lib/jsonLd";
 import { BASE_URL } from "@/app/lib/constants";
 
@@ -81,19 +84,13 @@ export default async function Page({ params }) {
     ],
   };
 
-  const cityFaqs = cityServicesData[city]?.["window-cleaning"]?.faqs ?? [];
+  const landingFaqs = getCityHomepageFaqs(cityDisplayName);
 
-  const graphItems = [schemaMarkup, breadcrumb].filter(Boolean);
-  if (cityFaqs.length > 0) {
-    graphItems.push({
-      "@type": "FAQPage",
-      mainEntity: cityFaqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: { "@type": "Answer", text: faq.answer },
-      })),
-    });
-  }
+  const graphItems = [
+    schemaMarkup,
+    breadcrumb,
+    buildHomepageFaqPageNode(landingFaqs, `${BASE_URL}/${city}`),
+  ].filter(Boolean);
 
   const graph = {
     "@context": "https://schema.org",

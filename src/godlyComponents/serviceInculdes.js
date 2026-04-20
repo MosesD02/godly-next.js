@@ -6,8 +6,12 @@ import Services from "@/data/servicesData";
 import { cn } from "@/lib/utils";
 import { generateServiceSectionHeadings } from "@/data/metaTitles";
 
-const ServiceIncludes = ({ slug, cityName }) => {
+const ServiceIncludes = ({ slug, cityName, includedOverride }) => {
   const headings = generateServiceSectionHeadings(slug, cityName);
+  const steps =
+    includedOverride?.length > 0
+      ? includedOverride
+      : Services[slug]["included"];
 
   // Add state to track active card
   const [activeCard, setActiveCard] = useState(null);
@@ -48,7 +52,7 @@ const ServiceIncludes = ({ slug, cityName }) => {
       </div>
 
       <div className="grid w-full max-w-[1126px] grid-cols-2 flex-wrap justify-center gap-3 md:flex md:flex-wrap lg:pb-12">
-        {Services[slug]["included"].map((step, index) => {
+        {steps.map((step, index) => {
           const isActive = activeCard === index;
           return (
             <div
@@ -57,9 +61,9 @@ const ServiceIncludes = ({ slug, cityName }) => {
                 `paper-bg-16 group min-h-[250px] w-full rounded-sm bg-[#312E2C] bg-size-[auto_10rem] bg-top-right p-2 sm:min-h-[270px] sm:p-3 md:min-h-[290px] md:max-w-[272px]`,
                 isActive ? "bg-transparent" : "",
                 "hover:bg-transparent",
-                Services[slug]["included"].length === 5 && "md:max-w-[367px]",
-                index === Services[slug]["included"].length - 1 &&
-                  Services[slug]["included"].length % 2 === 1 &&
+                steps.length === 5 && "md:max-w-[367px]",
+                index === steps.length - 1 &&
+                  steps.length % 2 === 1 &&
                   "last:col-span-2",
               )}
               onClick={() => toggleCard(index)}

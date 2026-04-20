@@ -25,7 +25,10 @@ export default function BlogPostPage({ post, basePath = "/blog" }) {
 
           <header className="mb-8 border-b-4 border-double border-black pb-8">
             <p className="mb-2 font-['satoshi-light'] text-sm text-[#373A44]">
-              {post.publishedAt && format(new Date(post.publishedAt), "MMMM d, yyyy")}{post.publishedAt && post.targetCity ? " · " : ""}{post.targetCity}
+              {post.publishedAt &&
+                format(new Date(post.publishedAt), "MMMM d, yyyy")}
+              {post.publishedAt && post.targetCity ? " · " : ""}
+              {post.targetCity}
             </p>
             <h1 className="trim text-[32px] leading-tight font-bold text-[#312E2C] md:text-5xl">
               {post.title}
@@ -52,10 +55,7 @@ export default function BlogPostPage({ post, basePath = "/blog" }) {
           </div>
 
           {post.ctaText && post.ctaLink && (
-            <BlogPostCta
-              ctaText={post.ctaText}
-              ctaLink={post.ctaLink}
-            />
+            <BlogPostCta ctaText={post.ctaText} ctaLink={post.ctaLink} />
           )}
 
           <BlogPostFaq faq={post.faq} />

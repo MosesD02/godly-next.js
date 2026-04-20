@@ -59,14 +59,12 @@ export const customMetaData = {
         description:
           "Foggy or dusty window screens? Our Boca Raton screen cleaning restores airflow and clarity. Breathe easier—book expert screen cleaning with Godly Windows.",
       },
-      
-      
-      
     },
   },
   "fort-lauderdale": {
     cityPage: {
-      title: "Window Cleaning Fort Lauderdale | Pressure Washing & More | Godly Windows",
+      title:
+        "Window Cleaning Fort Lauderdale | Pressure Washing & More | Godly Windows",
       description:
         "Professional window cleaning, house washing & gutter cleaning in Fort Lauderdale. Family-owned, fully insured, 5-star rated. Get your free quote today. Call (954) 852-5326.",
     },
@@ -121,9 +119,6 @@ export const customMetaData = {
         description:
           "Trusted screen cleaning in Fort Lauderdale. Local pros remove dust, grime, and buildup for clear, fresh screens. Residential & commercial service—call now!",
       },
-      
-      
-      
     },
   },
   "lighthouse-point": {
@@ -183,9 +178,6 @@ export const customMetaData = {
         description:
           "Get pristine window & door screens in Lighthouse Point with our local screen cleaning service. Dust, pollen & allergens gone—call for same‑day booking!",
       },
-      
-      
-      
     },
   },
   parkland: {
@@ -245,9 +237,6 @@ export const customMetaData = {
         description:
           "Let fresh air in—without the dust. Our screen cleaning in Parkland clears out pollen, dirt, and debris so your windows stay fresh & fully functional year-round.",
       },
-      
-      
-      
     },
   },
   "southwest-ranches": {
@@ -307,9 +296,6 @@ export const customMetaData = {
         description:
           "Dusty screens block airflow and clarity. Book screen cleaning in Southwest Ranches to enjoy fresh air, better views, and cleaner living, inside and out.",
       },
-      
-      
-      
     },
   },
   margate: {
@@ -369,9 +355,6 @@ export const customMetaData = {
         description:
           "Dirty window screens? Our Margate pros clean for better air and brighter views. Schedule your screen cleaning today with Godly Windows—fast & affordable!",
       },
-      
-      
-      
     },
   },
   "pembroke-pines": {
@@ -431,9 +414,6 @@ export const customMetaData = {
         description:
           "Foggy or dusty screens? We clean them fast in Pembroke Pines to improve airflow and light. Book screen cleaning with Godly Windows—your view will thank you!",
       },
-      
-      
-      
     },
   },
   plantation: {
@@ -493,9 +473,6 @@ export const customMetaData = {
         description:
           "Screen cleaning in Plantation to remove pollen, dust, and buildup. Breathe easier and enjoy clear airflow—expert service by Godly Windows starts here.",
       },
-      
-      
-      
     },
   },
   sunrise: {
@@ -555,9 +532,6 @@ export const customMetaData = {
         description:
           "Foggy or dusty screens? Our Sunrise pros clean them fast for better airflow and clear views. Schedule your window or door screen cleaning today with us!",
       },
-      
-      
-      
     },
   },
   davie: {
@@ -617,9 +591,6 @@ export const customMetaData = {
         description:
           "Dusty screens? Our Davie pros clean mesh screens on windows, patios, and doors to restore light and airflow. Schedule your screen cleaning today with us.",
       },
-      
-      
-      
     },
   },
   "hillsboro-beach": {
@@ -679,9 +650,6 @@ export const customMetaData = {
         description:
           "Say goodbye to dusty, clogged screens. Godly Windows offers detailed screen cleaning in Hillsboro Beach for brighter views and better airflow. Book now!",
       },
-      
-      
-      
     },
   },
   tamarac: {
@@ -741,9 +709,6 @@ export const customMetaData = {
         description:
           "Restore airflow and visibility with professional screen cleaning in Tamarac. We remove pollen, debris, and dust without damaging the mesh or window frames.",
       },
-      
-      
-      
     },
   },
   miramar: {
@@ -803,9 +768,6 @@ export const customMetaData = {
         description:
           "Get clear views with expert screen cleaning in Miramar, FL. We clean window and patio screens safely, removing dirt, dust, and debris. Book your service today!",
       },
-      
-      
-      
     },
   },
   "pompano-beach": {
@@ -865,9 +827,6 @@ export const customMetaData = {
         description:
           "Professional screen cleaning in Pompano Beach for windows, patios, and more. Improve airflow and clarity. Fast, reliable service—book with Godly Windows!",
       },
-      
-      
-      
     },
   },
   "delray-beach": {
@@ -928,9 +887,6 @@ export const customMetaData = {
         description:
           "Keep your window and door screens spotless. We provide thorough screen cleaning in Delray Beach. Affordable service near you—schedule your service today!",
       },
-      
-      
-      
     },
   },
   "oakland-park": {
@@ -991,9 +947,6 @@ export const customMetaData = {
         description:
           "Remove dust, pollen, and grime from your window screens. Oakland Park's screen cleaning team offers gentle, effective service near you. Book now at Godly Windows!",
       },
-      
-      
-      
     },
   },
   weston: {
@@ -1053,9 +1006,6 @@ export const customMetaData = {
         description:
           "Professional screen cleaning in Weston to remove dust, dirt, and debris from window and patio screens. Improve airflow and visibility—book trusted service now.",
       },
-      
-      
-      
     },
   },
   "royal-palm-beach": {
@@ -1115,14 +1065,12 @@ export const customMetaData = {
         description:
           "Restore fresh airflow and visibility with our expert screen cleaning in Royal Palm Beach. At Godly Windows, we gently remove dust, pollen, and grime. Book now.",
       },
-      
-      
-      
     },
   },
   "lauderdale-by-the-sea": {
     cityPage: {
-      title: "Window Cleaning Lauderdale-by-the-Sea FL | Godly Windows & Wash Co.",
+      title:
+        "Window Cleaning Lauderdale-by-the-Sea FL | Godly Windows & Wash Co.",
       description:
         "Top-rated window cleaning & exterior services in Lauderdale-by-the-Sea. Family-owned, fully insured, 5-star rated. Free estimate in 24 hours. Call (954) 852-5326.",
     },
@@ -1159,7 +1107,7 @@ export const customMetaData = {
         description:
           "Whether it's your driveway, patio, or siding—we blast away dirt with expert pressure washing in Lauderdale-by-the-Sea. Clean surfaces, strong results, every time.",
       },
-      
+
       "light-fixture-cleaning": {
         title: "Light Fixture Cleaning Lauderdale-by-the-Sea - Godly Windows",
         description:
@@ -1170,7 +1118,7 @@ export const customMetaData = {
         description:
           "Screen cleaning for patios and windows. We clean your window and door screens in Lauderdale-by-the-Sea so fresh air flows through and your views stay clear.",
       },
-      
+
       "solar-panel-cleaning": {
         title: "Solar Panel Cleaning in Lauderdale-by-the-Sea - Godly Windows",
         description:
@@ -1240,9 +1188,6 @@ export const customMetaData = {
         description:
           "Dirty window screens block airflow & light. Our screen cleaning in Coral Springs removes grime and allergens fast. Local, efficient, and done right. Call today.",
       },
-      
-      
-      
     },
   },
   "hallandale-beach": {
@@ -1302,9 +1247,6 @@ export const customMetaData = {
         description:
           "Screened windows looking dull? Our Hallandale Beach screen cleaning clears dirt, pollen, and bugs. Get clearer views and better airflow—schedule with us today.",
       },
-      
-      
-      
     },
   },
   hollywood: {
@@ -1365,9 +1307,6 @@ export const customMetaData = {
         description:
           "Let the light in with professional screen cleaning in Hollywood. We clean high glass surfaces with care and top safety standards. Book at Godly Windows.",
       },
-      
-      
-      
     },
   },
   "deerfield-beach": {
@@ -1427,9 +1366,6 @@ export const customMetaData = {
         description:
           "Improve airflow and clarity with professional screen cleaning in Deerfield Beach. Remove dust and debris for clear views. Schedule your service today!",
       },
-      
-      
-      
     },
   },
 
@@ -1460,7 +1396,6 @@ export const customMetaData = {
   // South Florida region services
   "south-florida": {
     services: {
-      
       "exterior-window-cleaning": {
         title: "Exterior Window Cleaning in South Florida - Godly Windows",
         description:
@@ -1492,7 +1427,7 @@ export const customMetaData = {
         description:
           "Blast away years of dirt and grime with our pressure washing service in South Florida. We clean driveways, patios, walls, and more with powerful precision.",
       },
-      
+
       "light-fixture-cleaning": {
         title: "Light Fixture Cleaning in South Florida - Call Experts",
         description:
@@ -1503,7 +1438,7 @@ export const customMetaData = {
         description:
           "Let your screens breathe again. We provide expert screen cleaning in South Florida to remove dust, pollen, and grime so your windows stay fresh and clear.",
       },
-      
+
       "solar-panel-cleaning": {
         title: "Solar Panel Cleaning in South Florida - Godly Windows",
         description:

@@ -198,9 +198,7 @@ export default function QuoteForm({
       if (typeof window !== "undefined" && window.gtag) {
         const gtag = window.gtag;
         const utms =
-          typeof window.__getUtms === "function"
-            ? window.__getUtms()
-            : {};
+          typeof window.__getUtms === "function" ? window.__getUtms() : {};
 
         // GA4 recommended lead event — use this (or map it) in GA4 / Google Ads conversions
         gtag("event", "generate_lead", {
@@ -310,8 +308,7 @@ export default function QuoteForm({
                 : "",
             )}
           >
-            We’ll call you within 1 minute — no pressure, just a friendly
-            quote.
+            We’ll call you within 1 minute — no pressure, just a friendly quote.
           </p>
         </div>
 

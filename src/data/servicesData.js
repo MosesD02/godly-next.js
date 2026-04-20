@@ -801,6 +801,7 @@ const Services = {
     ],
   },
   "window-cleaning": {
+    // "What's Included" — SHARED across all cities (City Page Rewrite Guide v2). Do not override per city.
     hero: [
       "Window",
       "Cleaning",
@@ -1060,6 +1061,180 @@ const Services = {
     ],
     quote:
       "Holiday and Christmas lighting — design, install, maintain, and remove. You enjoy the season; we handle the rest.",
+  },
+  "post-construction-window-cleaning": {
+    hero: [
+      "Post-Construction",
+      "Window Cleaning",
+      service2,
+      (city) =>
+        `New build or major renovation in ${city}? Stucco dust, paint overspray, and construction film don't stand a chance. Our post-construction window cleaning crew uses pro-grade tools and RO/DI purified water to leave every pane move-in ready — backed by our builder-ready guarantee.`,
+    ],
+    included: [
+      {
+        number: "01",
+        title: "Stucco & Paint Overspray Removal",
+        text: "We carefully lift stucco splatter, paint overspray, and silicone off every pane without scratching the glass.",
+      },
+      {
+        number: "02",
+        title: "Construction Film & Adhesive Scraping",
+        text: "Protective film, tape residue, and adhesive stickers all come off clean with our pro-grade scraping tools.",
+      },
+      {
+        number: "03",
+        title: "Interior Dust & Debris Detailing",
+        text: "Drywall dust, sawdust, and construction grit get wiped from interior glass and surrounding window surfaces.",
+      },
+      {
+        number: "04",
+        title: "Frame, Sill & Track Deep-Clean",
+        text: "Tracks, frames, and sills get a deep-clean to remove trapped debris that standard cleaning always misses.",
+      },
+      {
+        number: "05",
+        title: "Final RO/DI Purified Rinse",
+        text: "Zero-TDS purified water rinses the glass last — no minerals, no streaks, no spots when it dries.",
+      },
+    ],
+    essential: [
+      {
+        number: "01.",
+        title: "Protect Brand-New Glass",
+        text: "Construction debris scratches unprotected glass fast. Professional removal prevents permanent damage to expensive impact and low-E windows.",
+      },
+      {
+        number: "02.",
+        title: "Move-In Ready Finish",
+        text: "Buyers expect spotless windows on day one. Clean glass makes the whole property feel finished and premium.",
+      },
+      {
+        number: "03.",
+        title: "Remove Layered Residue",
+        text: "Stucco, paint, and silicone bond to glass during construction. Standard cleaning can't touch it — our scraping tools and purified rinse can.",
+      },
+      {
+        number: "04.",
+        title: "Builder Reputation on the Line",
+        text: "Builders and GCs rely on us for the final detail. Our crew delivers the builder-ready finish that protects your reputation.",
+      },
+    ],
+    nearyou: [
+      {
+        number: "01",
+        title: "New Home Build Cleaning",
+        text: "Full interior and exterior cleaning for new builds so buyers walk into spotless, streak-free glass on move-in day.",
+      },
+      {
+        number: "02",
+        title: "High-Rise Construction Cleaning",
+        text: "Post-construction cleaning for high-rises and condos with full safety rigging and pro equipment.",
+      },
+      {
+        number: "03",
+        title: "Commercial Build-Out Cleaning",
+        text: "We clean new storefronts, offices, and build-outs so your grand opening looks sharp from every angle.",
+      },
+      {
+        number: "04",
+        title: "Renovation & Remodel Cleaning",
+        text: "Kitchen, bathroom, or whole-home remodel? We remove paint splatter, grout haze, and dust from every affected window.",
+      },
+      {
+        number: "05",
+        title: "Estate Final Clean",
+        text: "Detailed post-construction window cleaning for luxury estates where the finish standard is absolute.",
+      },
+    ],
+    quote:
+      "Move-in ready windows, guaranteed — pro-grade scraping, RO/DI purified water, and our builder-ready finish guarantee.",
+  },
+  "rain-shield-tech": {
+    hero: [
+      "Rain Shield",
+      "Tech",
+      service2,
+      (city) =>
+        `Rain, salt spray, and sprinkler minerals don't stand a chance against Rain Shield in ${city}. Our hydrophobic glass coating makes water bead and roll off, carrying dirt with it. The result: windows that stay cleaner longer, backed by our Rain Shield performance guarantee.`,
+    ],
+    included: [
+      {
+        number: "01",
+        title: "Full Glass Scrub",
+        text: "We scrub every pane to lift dirt, mildew, silicone, stickers, and overspray before the Rain Shield coating goes on.",
+      },
+      {
+        number: "02",
+        title: "Rain Shield Applied During Cleaning",
+        text: "Rain Shield gets applied right during the cleaning process, creating an invisible hydrophobic barrier that repels water and dirt.",
+      },
+      {
+        number: "03",
+        title: "Even Coverage on Every Pane",
+        text: "Every pane receives full, consistent coverage — no missed spots, no thin areas, no streaking or haze anywhere.",
+      },
+      {
+        number: "04",
+        title: "RO/DI Purified Water Finish",
+        text: "Zero-TDS purified water rinses each window last, activating the coating so glass dries spotless and streak-free.",
+      },
+      {
+        number: "05",
+        title: "Included Free With Quarterly Plan",
+        text: "Rain Shield comes included free on every service with our quarterly plan, plus occasional seasonal promotions for new customers.",
+      },
+    ],
+    essential: [
+      {
+        number: "01.",
+        title: "Repels Water & Dirt",
+        text: "Rain beads up and sheets off cleanly instead of drying into spots, keeping your windows cleaner between visits.",
+      },
+      {
+        number: "02.",
+        title: "Blocks Salt & Minerals",
+        text: "Salt spray and irrigation mineral deposits repel off treated glass instead of bonding and etching into the surface.",
+      },
+      {
+        number: "03.",
+        title: "Extends Cleaning Intervals",
+        text: "Rain Shield keeps glass cleaner longer, meaning fewer professional cleanings needed to maintain the same level of clarity.",
+      },
+      {
+        number: "04.",
+        title: "Safe on All Window Types",
+        text: "From hurricane impact glass to tinted and low-E windows, Rain Shield bonds safely without damaging any protective coating.",
+      },
+    ],
+    nearyou: [
+      {
+        number: "01",
+        title: "Rain Shield for Home Windows",
+        text: "Hydrophobic coating applied to your full home so every window repels water, salt, and dirt automatically.",
+      },
+      {
+        number: "02",
+        title: "Rain Shield for Commercial Glass",
+        text: "Keep storefronts and office windows crystal-clear between cleanings with our pro-grade Rain Shield coating.",
+      },
+      {
+        number: "03",
+        title: "Rain Shield for High-Rise Condos",
+        text: "Protect high-rise condo glass with Rain Shield — fewer cleanings, clearer views, longer.",
+      },
+      {
+        number: "04",
+        title: "Rain Shield for Pool Enclosure Glass",
+        text: "Pool enclosure glass takes a beating from chemicals and minerals — Rain Shield keeps it streak-free between cleanings.",
+      },
+      {
+        number: "05",
+        title: "Rain Shield for Waterfront Estates",
+        text: "Waterfront properties benefit most — Rain Shield repels constant salt spray from marine and Intracoastal exposure.",
+      },
+    ],
+    quote:
+      "Hydrophobic glass coating that repels water, dirt, and salt — included free with our quarterly plan.",
   },
 };
 export default Services;

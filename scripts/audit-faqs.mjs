@@ -14,12 +14,12 @@ const CITY_DATA_DIR = join(process.cwd(), "src/data/cityServicesData");
 // Parse the cities map from cities.js
 const citiesFile = readFileSync(
   join(process.cwd(), "src/data/cities.js"),
-  "utf-8"
+  "utf-8",
 );
 const citiesMatch = citiesFile.match(/\{([\s\S]*)\}/);
 const citiesMap = {};
 for (const m of citiesMatch[1].matchAll(
-  /["']?([a-z-]+)["']?\s*:\s*"([^"]+)"/g
+  /["']?([a-z-]+)["']?\s*:\s*"([^"]+)"/g,
 )) {
   citiesMap[m[1]] = m[2];
 }
@@ -27,7 +27,7 @@ for (const m of citiesMatch[1].matchAll(
 // Parse service slugs from servicesData.js
 const servicesFile = readFileSync(
   join(process.cwd(), "src/data/servicesData.js"),
-  "utf-8"
+  "utf-8",
 );
 const serviceKeys = [];
 for (const m of servicesFile.matchAll(/"([a-z-]+)":\s*\{/g)) {
@@ -36,7 +36,7 @@ for (const m of servicesFile.matchAll(/"([a-z-]+)":\s*\{/g)) {
 
 // Parse each city file for faqs
 const cityFiles = readdirSync(CITY_DATA_DIR).filter(
-  (f) => f.endsWith(".js") && f !== "index.js"
+  (f) => f.endsWith(".js") && f !== "index.js",
 );
 
 const results = {};
@@ -57,7 +57,7 @@ for (const file of cityFiles) {
     // Check if this service block contains "faqs"
     const svcPattern = new RegExp(
       `"${svc}":\\s*\\{([\\s\\S]*?)(?=\\n  "[a-z-]+":\\s*\\{|\\n\\};)`,
-      "g"
+      "g",
     );
     const svcMatch = svcPattern.exec(content);
     if (svcMatch) {
@@ -84,7 +84,9 @@ console.log("=".repeat(70));
 console.log();
 
 // Summary table
-const allServices = [...new Set(Object.values(results).flatMap(Object.keys))].sort();
+const allServices = [
+  ...new Set(Object.values(results).flatMap(Object.keys)),
+].sort();
 
 console.log("SUMMARY BY CITY:");
 console.log("-".repeat(70));
@@ -92,7 +94,9 @@ console.log("-".repeat(70));
 for (const [city, services] of Object.entries(results).sort()) {
   const displayName = citiesMap[city] || city;
   const withFaq = Object.entries(services).filter(([, count]) => count > 0);
-  const withoutFaq = Object.entries(services).filter(([, count]) => count === 0);
+  const withoutFaq = Object.entries(services).filter(
+    ([, count]) => count === 0,
+  );
 
   console.log(`\n${displayName} (${city}):`);
   if (withFaq.length > 0) {
@@ -133,5 +137,7 @@ console.log("\n" + "=".repeat(70));
 console.log("TOTALS:");
 console.log(`  Service/city combos WITH FAQs:    ${totalWithFaq}`);
 console.log(`  Service/city combos WITHOUT FAQs:  ${totalWithoutFaq}`);
-console.log(`  Total service/city combos:         ${totalWithFaq + totalWithoutFaq}`);
+console.log(
+  `  Total service/city combos:         ${totalWithFaq + totalWithoutFaq}`,
+);
 console.log("=".repeat(70));

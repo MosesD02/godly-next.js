@@ -23,7 +23,7 @@ export default function ServiceNearbyCities({ citySlug, serviceSlug }) {
   return (
     <section
       id="service-nearby-cities"
-      className="paper-bg-16 flex flex-col items-center bg-[#ebded1] bg-cover bg-center bg-no-repeat bg-blend-multiply px-4 pb-20 pt-0 md:px-24 md:pb-42"
+      className="paper-bg-16 flex flex-col items-center bg-[#ebded1] bg-cover bg-center bg-no-repeat px-4 pt-0 pb-20 bg-blend-multiply md:px-24 md:pb-42"
     >
       <h2 className="trim max-w-[1200px] py-10 text-center text-[32px] leading-tight font-normal tracking-wide text-[#191717] md:text-[64px]">
         {serviceName} in Nearby Cities
@@ -58,7 +58,7 @@ export default function ServiceNearbyCities({ citySlug, serviceSlug }) {
                     />
                   </span>
                 </div>
-                <p className="font-[satoshi-regular] mt-3 text-left text-xs font-normal tracking-wide text-[#191717]/55 md:text-[13px]">
+                <p className="mt-3 text-left font-[satoshi-regular] text-xs font-normal tracking-wide text-[#191717]/55 md:text-[13px]">
                   View {serviceName.toLowerCase()}
                 </p>
               </div>

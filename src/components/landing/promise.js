@@ -248,7 +248,9 @@ const Promise = () => {
                   sizes="80px"
                   className={`object-contain ${
                     index === 1
-                      ? (isActive ? "filter-[invert(0)]" : "filter-[invert(1)]") +
+                      ? (isActive
+                          ? "filter-[invert(0)]"
+                          : "filter-[invert(1)]") +
                         " group-hover:filter-[invert(0)]"
                       : (isActive ? "filter-[invert(1)]" : "") +
                         " group-hover:filter-[invert(1)]"

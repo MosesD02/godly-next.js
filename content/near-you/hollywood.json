@@ -3,130 +3,286 @@
     "city": "hollywood",
     "service": "window-cleaning",
     "services_near_you": [
-      { "title": "Hollywood Beach & Broadwalk", "description": "Oceanfront condos and homes along the Hollywood Beach Broadwalk deal with constant salt spray. Our RO/DI pure water system delivers streak-free glass that lets you enjoy those Atlantic views." },
-      { "title": "Hollywood Lakes Estates", "description": "Hollywood Lakes homeowners keep their lakeside views crystal clear with professional window cleaning that removes pollen, hard water spots, and South Florida humidity buildup." },
-      { "title": "Emerald Hills Residences", "description": "Emerald Hills homes surrounded by lush golf course landscaping deserve spotless windows. We clean every pane inside and out so natural light floods your living spaces." },
-      { "title": "Downtown Hollywood Arts District", "description": "Storefronts and residences along Hollywood Boulevard and the Arts District stay looking their best with regular window cleaning that boosts curb appeal and foot traffic." }
+      {
+        "title": "Hollywood Beach & Broadwalk",
+        "description": "Oceanfront condos and homes along the Hollywood Beach Broadwalk deal with constant salt spray. Our RO/DI pure water system delivers streak-free glass that lets you enjoy those Atlantic views."
+      },
+      {
+        "title": "Hollywood Lakes Estates",
+        "description": "Hollywood Lakes homeowners keep their lakeside views crystal clear with professional window cleaning that removes pollen, hard water spots, and South Florida humidity buildup."
+      },
+      {
+        "title": "Emerald Hills Residences",
+        "description": "Emerald Hills homes surrounded by lush golf course landscaping deserve spotless windows. We clean every pane inside and out so natural light floods your living spaces."
+      },
+      {
+        "title": "Downtown Hollywood Arts District",
+        "description": "Storefronts and residences along Hollywood Boulevard and the Arts District stay looking their best with regular window cleaning that boosts curb appeal and foot traffic."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "exterior-window-cleaning",
     "services_near_you": [
-      { "title": "Hollywood Hills Homes", "description": "Exterior windows in Hollywood Hills collect dust, pollen, and grime from surrounding tree cover. Our team restores every pane to a spotless finish without disrupting your day." },
-      { "title": "Park East Properties", "description": "Park East homeowners rely on exterior window cleaning to tackle the buildup that South Florida's humidity and rain leave behind on glass surfaces." },
-      { "title": "Hollywood North Beach Condos", "description": "High-rise and low-rise condos near North Beach face relentless salt air. Our exterior window cleaning removes coastal residue so your ocean views stay sharp." },
-      { "title": "Oakridge Neighborhood", "description": "Exterior window cleaning throughout Oakridge means removing hard water stains, cobwebs, and screen grime so your home's facade always looks well maintained." }
+      {
+        "title": "Hollywood Hills Homes",
+        "description": "Exterior windows in Hollywood Hills collect dust, pollen, and grime from surrounding tree cover. Our team restores every pane to a spotless finish without disrupting your day."
+      },
+      {
+        "title": "Park East Properties",
+        "description": "Park East homeowners rely on exterior window cleaning to tackle the buildup that South Florida's humidity and rain leave behind on glass surfaces."
+      },
+      {
+        "title": "Hollywood North Beach Condos",
+        "description": "High-rise and low-rise condos near North Beach face relentless salt air. Our exterior window cleaning removes coastal residue so your ocean views stay sharp."
+      },
+      {
+        "title": "Oakridge Neighborhood",
+        "description": "Exterior window cleaning throughout Oakridge means removing hard water stains, cobwebs, and screen grime so your home's facade always looks well maintained."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "interior-window-cleaning",
     "services_near_you": [
-      { "title": "Emerald Hills Interiors", "description": "Interior window cleaning for Emerald Hills homes includes detailed attention to tracks, sills, and frames so every window sparkles from the inside out." },
-      { "title": "South Lake Residences", "description": "South Lake homeowners love the difference clean interior windows make. We handle all the detail work so you can enjoy brighter, clearer rooms every day." },
-      { "title": "Hollywood Beach Oceanfront Units", "description": "Salt haze and humidity sneak indoors at Hollywood Beach. Our interior window cleaning eliminates film and residue from every pane for unobstructed waterfront views." },
-      { "title": "Liberia Neighborhood Homes", "description": "Homes in the Liberia area benefit from interior window cleaning that removes dust, fingerprints, and buildup you might not even notice until the glass is sparkling clean." }
+      {
+        "title": "Emerald Hills Interiors",
+        "description": "Interior window cleaning for Emerald Hills homes includes detailed attention to tracks, sills, and frames so every window sparkles from the inside out."
+      },
+      {
+        "title": "South Lake Residences",
+        "description": "South Lake homeowners love the difference clean interior windows make. We handle all the detail work so you can enjoy brighter, clearer rooms every day."
+      },
+      {
+        "title": "Hollywood Beach Oceanfront Units",
+        "description": "Salt haze and humidity sneak indoors at Hollywood Beach. Our interior window cleaning eliminates film and residue from every pane for unobstructed waterfront views."
+      },
+      {
+        "title": "Liberia Neighborhood Homes",
+        "description": "Homes in the Liberia area benefit from interior window cleaning that removes dust, fingerprints, and buildup you might not even notice until the glass is sparkling clean."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "pressure-washing",
     "services_near_you": [
-      { "title": "Downtown Hollywood Sidewalks", "description": "Heavy foot traffic along Downtown Hollywood's sidewalks and storefronts leaves surfaces stained and dull. Pressure washing restores concrete and pavers to like-new condition." },
-      { "title": "Hollywood Lakes Driveways", "description": "Driveways and walkways throughout Hollywood Lakes collect algae and oil stains fast. Professional pressure washing blasts away embedded grime and keeps surfaces safe underfoot." },
-      { "title": "Chaminade Area Pool Decks", "description": "Pool decks and patios near the Chaminade area get slippery from algae growth. Our pressure washing service removes buildup and restores traction to outdoor surfaces." },
-      { "title": "Hollywood Beach Boardwalk Properties", "description": "Properties near the Broadwalk deal with sand, salt, and heavy use. Pressure washing removes ground-in debris from driveways, entryways, and common areas." }
+      {
+        "title": "Downtown Hollywood Sidewalks",
+        "description": "Heavy foot traffic along Downtown Hollywood's sidewalks and storefronts leaves surfaces stained and dull. Pressure washing restores concrete and pavers to like-new condition."
+      },
+      {
+        "title": "Hollywood Lakes Driveways",
+        "description": "Driveways and walkways throughout Hollywood Lakes collect algae and oil stains fast. Professional pressure washing blasts away embedded grime and keeps surfaces safe underfoot."
+      },
+      {
+        "title": "Chaminade Area Pool Decks",
+        "description": "Pool decks and patios near the Chaminade area get slippery from algae growth. Our pressure washing service removes buildup and restores traction to outdoor surfaces."
+      },
+      {
+        "title": "Hollywood Beach Boardwalk Properties",
+        "description": "Properties near the Broadwalk deal with sand, salt, and heavy use. Pressure washing removes ground-in debris from driveways, entryways, and common areas."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "soft-washing",
     "services_near_you": [
-      { "title": "Hollywood Hills Stucco Homes", "description": "Soft washing is the right call for Hollywood Hills stucco exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae." },
-      { "title": "Park East Painted Surfaces", "description": "Park East homes with painted siding or delicate finishes need the gentle approach of soft washing to get clean without risking surface damage or peeling." },
-      { "title": "Oakridge Pool Enclosures", "description": "Pool enclosures in Oakridge collect green algae and organic buildup. Soft washing eliminates it all without the high pressure that can warp or damage screens." },
-      { "title": "Hollywood North Beach Exteriors", "description": "Coastal homes near North Beach face accelerated mildew growth from salt air and humidity. Soft washing treats the root cause and keeps exteriors looking fresh for months." }
+      {
+        "title": "Hollywood Hills Stucco Homes",
+        "description": "Soft washing is the right call for Hollywood Hills stucco exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae."
+      },
+      {
+        "title": "Park East Painted Surfaces",
+        "description": "Park East homes with painted siding or delicate finishes need the gentle approach of soft washing to get clean without risking surface damage or peeling."
+      },
+      {
+        "title": "Oakridge Pool Enclosures",
+        "description": "Pool enclosures in Oakridge collect green algae and organic buildup. Soft washing eliminates it all without the high pressure that can warp or damage screens."
+      },
+      {
+        "title": "Hollywood North Beach Exteriors",
+        "description": "Coastal homes near North Beach face accelerated mildew growth from salt air and humidity. Soft washing treats the root cause and keeps exteriors looking fresh for months."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "house-washing",
     "services_near_you": [
-      { "title": "Emerald Hills Facades", "description": "A full house wash brings Emerald Hills homes back to life, removing the dark streaks and discoloration that Florida's tropical climate creates on exterior walls." },
-      { "title": "South Lake Neighborhood", "description": "South Lake homeowners maintain their property value with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface top to bottom." },
-      { "title": "Liberia Area Residences", "description": "House washing throughout the Liberia neighborhood means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating grime." },
-      { "title": "Hollywood Lakes Waterfront Homes", "description": "Waterfront homes along the Hollywood Lakes pick up extra moisture and organic growth. Our house washing service covers walls, eaves, and fascia boards for a total transformation." }
+      {
+        "title": "Emerald Hills Facades",
+        "description": "A full house wash brings Emerald Hills homes back to life, removing the dark streaks and discoloration that Florida's tropical climate creates on exterior walls."
+      },
+      {
+        "title": "South Lake Neighborhood",
+        "description": "South Lake homeowners maintain their property value with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface top to bottom."
+      },
+      {
+        "title": "Liberia Area Residences",
+        "description": "House washing throughout the Liberia neighborhood means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating grime."
+      },
+      {
+        "title": "Hollywood Lakes Waterfront Homes",
+        "description": "Waterfront homes along the Hollywood Lakes pick up extra moisture and organic growth. Our house washing service covers walls, eaves, and fascia boards for a total transformation."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "roof-washing",
     "services_near_you": [
-      { "title": "Hollywood Hills Tile Roofs", "description": "Hollywood Hills tile roofs are prone to dark algae streaks from Gloeocapsa magma. Our soft wash roof cleaning removes stains and restores your roof's original appearance." },
-      { "title": "Chaminade Area Shingle Roofs", "description": "Shingle roofs near the Chaminade area take a beating from South Florida humidity. Professional roof washing extends roof life and eliminates those unsightly black streaks." },
-      { "title": "Emerald Hills Rooflines", "description": "Property owners throughout Emerald Hills protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials." },
-      { "title": "Dania Beach Area Properties", "description": "Homes near the Dania Beach border benefit from roof washing that improves curb appeal and helps prevent the costly repairs that neglected algae growth can cause." }
+      {
+        "title": "Hollywood Hills Tile Roofs",
+        "description": "Hollywood Hills tile roofs are prone to dark algae streaks from Gloeocapsa magma. Our soft wash roof cleaning removes stains and restores your roof's original appearance."
+      },
+      {
+        "title": "Chaminade Area Shingle Roofs",
+        "description": "Shingle roofs near the Chaminade area take a beating from South Florida humidity. Professional roof washing extends roof life and eliminates those unsightly black streaks."
+      },
+      {
+        "title": "Emerald Hills Rooflines",
+        "description": "Property owners throughout Emerald Hills protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials."
+      },
+      {
+        "title": "Dania Beach Area Properties",
+        "description": "Homes near the Dania Beach border benefit from roof washing that improves curb appeal and helps prevent the costly repairs that neglected algae growth can cause."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "gutter-cleaning",
     "services_near_you": [
-      { "title": "Hollywood Hills Tree Canopy", "description": "Hollywood Hills' mature tree cover means gutters fill up fast with leaves and debris. Regular gutter cleaning prevents water damage, overflow, and foundation issues." },
-      { "title": "Oakridge Properties", "description": "Oakridge homes surrounded by tropical landscaping need consistent gutter cleaning to keep water flowing properly and away from your foundation during heavy rains." },
-      { "title": "Park East Residences", "description": "Clogged gutters in Park East can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed." },
-      { "title": "South Lake Homes", "description": "South Florida's rainy season hits South Lake hard. Keeping your gutters clear means water drains where it should instead of pooling around your home's foundation." }
+      {
+        "title": "Hollywood Hills Tree Canopy",
+        "description": "Hollywood Hills' mature tree cover means gutters fill up fast with leaves and debris. Regular gutter cleaning prevents water damage, overflow, and foundation issues."
+      },
+      {
+        "title": "Oakridge Properties",
+        "description": "Oakridge homes surrounded by tropical landscaping need consistent gutter cleaning to keep water flowing properly and away from your foundation during heavy rains."
+      },
+      {
+        "title": "Park East Residences",
+        "description": "Clogged gutters in Park East can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed."
+      },
+      {
+        "title": "South Lake Homes",
+        "description": "South Florida's rainy season hits South Lake hard. Keeping your gutters clear means water drains where it should instead of pooling around your home's foundation."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "paver-sealing",
     "services_near_you": [
-      { "title": "Hollywood Beach Walkways", "description": "Pavers near Hollywood Beach fade and shift from sun, sand, and salt exposure. Professional paver sealing locks in color and stabilizes joints to extend their lifespan." },
-      { "title": "Emerald Hills Driveways", "description": "Emerald Hills driveways and patios look stunning when freshly sealed. We clean, re-sand joints, and apply a protective sealant that guards against stains and weed growth." },
-      { "title": "Downtown Hollywood Courtyards", "description": "Commercial and residential courtyards in Downtown Hollywood stay polished with paver sealing that enhances color and provides a protective barrier against daily wear." },
-      { "title": "Hollywood Lakes Entryways", "description": "Paver entryways and pool decks throughout Hollywood Lakes deserve sealing that prevents fading, cracking, and ant hill damage while keeping surfaces looking freshly installed." }
+      {
+        "title": "Hollywood Beach Walkways",
+        "description": "Pavers near Hollywood Beach fade and shift from sun, sand, and salt exposure. Professional paver sealing locks in color and stabilizes joints to extend their lifespan."
+      },
+      {
+        "title": "Emerald Hills Driveways",
+        "description": "Emerald Hills driveways and patios look stunning when freshly sealed. We clean, re-sand joints, and apply a protective sealant that guards against stains and weed growth."
+      },
+      {
+        "title": "Downtown Hollywood Courtyards",
+        "description": "Commercial and residential courtyards in Downtown Hollywood stay polished with paver sealing that enhances color and provides a protective barrier against daily wear."
+      },
+      {
+        "title": "Hollywood Lakes Entryways",
+        "description": "Paver entryways and pool decks throughout Hollywood Lakes deserve sealing that prevents fading, cracking, and ant hill damage while keeping surfaces looking freshly installed."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "solar-panel-cleaning",
     "services_near_you": [
-      { "title": "Hollywood Hills Solar Installations", "description": "Dirty solar panels in Hollywood Hills lose efficiency fast. Our RO/DI pure water cleaning removes dust, pollen, and bird droppings to restore maximum energy output." },
-      { "title": "Emerald Hills Rooftop Panels", "description": "Emerald Hills homeowners with solar panels see measurable gains in energy production after professional cleaning that removes the film South Florida's climate deposits on glass." },
-      { "title": "Park East Solar Systems", "description": "Solar panel cleaning in Park East keeps your system performing at peak efficiency. We use pure water methods that leave no residue and won't void your warranty." },
-      { "title": "Dania Beach Area Arrays", "description": "Properties near Dania Beach with rooftop solar arrays benefit from regular cleaning that tackles salt haze, tree sap, and atmospheric grime for consistent energy savings." }
+      {
+        "title": "Hollywood Hills Solar Installations",
+        "description": "Dirty solar panels in Hollywood Hills lose efficiency fast. Our RO/DI pure water cleaning removes dust, pollen, and bird droppings to restore maximum energy output."
+      },
+      {
+        "title": "Emerald Hills Rooftop Panels",
+        "description": "Emerald Hills homeowners with solar panels see measurable gains in energy production after professional cleaning that removes the film South Florida's climate deposits on glass."
+      },
+      {
+        "title": "Park East Solar Systems",
+        "description": "Solar panel cleaning in Park East keeps your system performing at peak efficiency. We use pure water methods that leave no residue and won't void your warranty."
+      },
+      {
+        "title": "Dania Beach Area Arrays",
+        "description": "Properties near Dania Beach with rooftop solar arrays benefit from regular cleaning that tackles salt haze, tree sap, and atmospheric grime for consistent energy savings."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "screen-cleaning",
     "services_near_you": [
-      { "title": "Hollywood Beach Lanais", "description": "Screen enclosures near Hollywood Beach collect salt residue, sand, and mildew. Our screen cleaning service restores airflow and visibility so your lanai feels brand new." },
-      { "title": "Oakridge Pool Screens", "description": "Pool screen enclosures throughout Oakridge trap pollen, dirt, and algae over time. Professional screen cleaning brightens your outdoor space without risking tears or damage." },
-      { "title": "Hollywood Lakes Screened Porches", "description": "Screened porches in Hollywood Lakes are perfect for enjoying the outdoors, but only when the screens are clean. We remove buildup gently for a clear, bug-free view." },
-      { "title": "Chaminade Area Enclosures", "description": "Screen enclosures near the Chaminade area get cloudy from Florida's humidity and organic growth. We clean every panel so your enclosed patio looks and feels open again." }
+      {
+        "title": "Hollywood Beach Lanais",
+        "description": "Screen enclosures near Hollywood Beach collect salt residue, sand, and mildew. Our screen cleaning service restores airflow and visibility so your lanai feels brand new."
+      },
+      {
+        "title": "Oakridge Pool Screens",
+        "description": "Pool screen enclosures throughout Oakridge trap pollen, dirt, and algae over time. Professional screen cleaning brightens your outdoor space without risking tears or damage."
+      },
+      {
+        "title": "Hollywood Lakes Screened Porches",
+        "description": "Screened porches in Hollywood Lakes are perfect for enjoying the outdoors, but only when the screens are clean. We remove buildup gently for a clear, bug-free view."
+      },
+      {
+        "title": "Chaminade Area Enclosures",
+        "description": "Screen enclosures near the Chaminade area get cloudy from Florida's humidity and organic growth. We clean every panel so your enclosed patio looks and feels open again."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "light-fixture-cleaning",
     "services_near_you": [
-      { "title": "Hollywood Beach Condos", "description": "Salt air and coastal humidity leave light fixtures in Hollywood Beach condos dull and hazy. Professional cleaning restores full brightness and extends fixture life." },
-      { "title": "Downtown Hollywood Storefronts", "description": "Clean light fixtures make a noticeable difference for Downtown Hollywood businesses. We remove dust, bugs, and grime so your interior and exterior lighting shines at full strength." },
-      { "title": "Liberia Neighborhood Homes", "description": "Homeowners in the Liberia area are often surprised how much brighter rooms feel after a thorough light fixture cleaning that removes months of accumulated dust and debris." },
-      { "title": "Hollywood Hills Residences", "description": "Recessed lights, chandeliers, and exterior sconces throughout Hollywood Hills collect dust and insects. Our detailed cleaning service gets every fixture looking and performing like new." }
+      {
+        "title": "Hollywood Beach Condos",
+        "description": "Salt air and coastal humidity leave light fixtures in Hollywood Beach condos dull and hazy. Professional cleaning restores full brightness and extends fixture life."
+      },
+      {
+        "title": "Downtown Hollywood Storefronts",
+        "description": "Clean light fixtures make a noticeable difference for Downtown Hollywood businesses. We remove dust, bugs, and grime so your interior and exterior lighting shines at full strength."
+      },
+      {
+        "title": "Liberia Neighborhood Homes",
+        "description": "Homeowners in the Liberia area are often surprised how much brighter rooms feel after a thorough light fixture cleaning that removes months of accumulated dust and debris."
+      },
+      {
+        "title": "Hollywood Hills Residences",
+        "description": "Recessed lights, chandeliers, and exterior sconces throughout Hollywood Hills collect dust and insects. Our detailed cleaning service gets every fixture looking and performing like new."
+      }
     ]
   },
   {
     "city": "hollywood",
     "service": "holiday-lighting",
     "services_near_you": [
-      { "title": "Hollywood Beach Broadwalk Homes", "description": "Homes along the Hollywood Beach Broadwalk light up beautifully during the holidays. We handle design, installation, and takedown so you can enjoy the season stress-free." },
-      { "title": "Emerald Hills Holiday Displays", "description": "Emerald Hills neighborhoods go all out for the holidays. Our professional holiday lighting service covers rooflines, trees, and entryways with custom designs tailored to your home." },
-      { "title": "Downtown Hollywood Businesses", "description": "Holiday lighting transforms Downtown Hollywood storefronts and restaurants into festive destinations. We create eye-catching displays that draw customers and spread seasonal cheer." },
-      { "title": "Hollywood Lakes Estates", "description": "Hollywood Lakes homeowners make a statement with professionally installed holiday lighting. From warm white elegance to colorful displays, we bring your vision to life safely and on schedule." }
+      {
+        "title": "Hollywood Beach Broadwalk Homes",
+        "description": "Homes along the Hollywood Beach Broadwalk light up beautifully during the holidays. We handle design, installation, and takedown so you can enjoy the season stress-free."
+      },
+      {
+        "title": "Emerald Hills Holiday Displays",
+        "description": "Emerald Hills neighborhoods go all out for the holidays. Our professional holiday lighting service covers rooflines, trees, and entryways with custom designs tailored to your home."
+      },
+      {
+        "title": "Downtown Hollywood Businesses",
+        "description": "Holiday lighting transforms Downtown Hollywood storefronts and restaurants into festive destinations. We create eye-catching displays that draw customers and spread seasonal cheer."
+      },
+      {
+        "title": "Hollywood Lakes Estates",
+        "description": "Hollywood Lakes homeowners make a statement with professionally installed holiday lighting. From warm white elegance to colorful displays, we bring your vision to life safely and on schedule."
+      }
     ]
   }
 ]

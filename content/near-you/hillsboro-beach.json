@@ -3,130 +3,286 @@
     "city": "hillsboro-beach",
     "service": "window-cleaning",
     "services_near_you": [
-      { "title": "Hillsboro Mile Oceanfront", "description": "Floor-to-ceiling windows along the Hillsboro Mile deserve crystal-clear views of the Atlantic. Our RO/DI pure water system removes salt haze and hard water spots without leaving residue." },
-      { "title": "Hillsboro Inlet Estates", "description": "Homes near the Hillsboro Inlet face constant salt spray that fogs glass fast. Professional window cleaning restores those stunning waterfront views you moved here for." },
-      { "title": "A1A Corridor Condos", "description": "High-rise and mid-rise condos along A1A collect wind-driven grime on every floor. We handle all window cleaning from ground level to penthouse with streak-free results." },
-      { "title": "South End Residences", "description": "Residents at the south end of the island near Deerfield Beach enjoy our thorough window cleaning that tackles both coastal buildup and pollen from nearby vegetation." }
+      {
+        "title": "Hillsboro Mile Oceanfront",
+        "description": "Floor-to-ceiling windows along the Hillsboro Mile deserve crystal-clear views of the Atlantic. Our RO/DI pure water system removes salt haze and hard water spots without leaving residue."
+      },
+      {
+        "title": "Hillsboro Inlet Estates",
+        "description": "Homes near the Hillsboro Inlet face constant salt spray that fogs glass fast. Professional window cleaning restores those stunning waterfront views you moved here for."
+      },
+      {
+        "title": "A1A Corridor Condos",
+        "description": "High-rise and mid-rise condos along A1A collect wind-driven grime on every floor. We handle all window cleaning from ground level to penthouse with streak-free results."
+      },
+      {
+        "title": "South End Residences",
+        "description": "Residents at the south end of the island near Deerfield Beach enjoy our thorough window cleaning that tackles both coastal buildup and pollen from nearby vegetation."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "exterior-window-cleaning",
     "services_near_you": [
-      { "title": "Hillsboro Lighthouse Area Homes", "description": "Exterior windows near the Hillsboro Lighthouse take a beating from ocean wind and salt. We remove all that buildup so your glass looks brand new." },
-      { "title": "Barefoot Mailman Neighborhood", "description": "Properties along the historic Barefoot Mailman stretch need regular exterior window cleaning to combat the salt air that coats glass within days of a storm." },
-      { "title": "Oceanfront Condo Towers", "description": "Exterior window cleaning for the oceanfront condo buildings along Hillsboro Beach keeps every unit looking sharp and protects glass from long-term salt corrosion." },
-      { "title": "Intracoastal-Side Properties", "description": "Homes and condos facing the Intracoastal deal with humidity and waterborne deposits on exterior glass. Our team cleans every pane thoroughly from the outside in." }
+      {
+        "title": "Hillsboro Lighthouse Area Homes",
+        "description": "Exterior windows near the Hillsboro Lighthouse take a beating from ocean wind and salt. We remove all that buildup so your glass looks brand new."
+      },
+      {
+        "title": "Barefoot Mailman Neighborhood",
+        "description": "Properties along the historic Barefoot Mailman stretch need regular exterior window cleaning to combat the salt air that coats glass within days of a storm."
+      },
+      {
+        "title": "Oceanfront Condo Towers",
+        "description": "Exterior window cleaning for the oceanfront condo buildings along Hillsboro Beach keeps every unit looking sharp and protects glass from long-term salt corrosion."
+      },
+      {
+        "title": "Intracoastal-Side Properties",
+        "description": "Homes and condos facing the Intracoastal deal with humidity and waterborne deposits on exterior glass. Our team cleans every pane thoroughly from the outside in."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "interior-window-cleaning",
     "services_near_you": [
-      { "title": "Hillsboro Mile Luxury Condos", "description": "Interior window cleaning for Hillsboro Mile condos includes detailed attention to tracks, sills, and frames so your ocean views stay unobstructed year-round." },
-      { "title": "A1A Beachfront Residences", "description": "Dust, humidity, and cooking residue cloud interior glass over time. We restore clarity to every window in your A1A beachfront home with meticulous hand cleaning." },
-      { "title": "North End Waterfront Homes", "description": "Interior windows in the north end near Lighthouse Point collect film from humid air. Our crew cleans each pane with care, leaving nothing but sparkling glass." },
-      { "title": "Inlet-View Estates", "description": "Homes overlooking the Hillsboro Inlet deserve interior windows as stunning as the view. We handle the detail work so you can sit back and enjoy the scenery." }
+      {
+        "title": "Hillsboro Mile Luxury Condos",
+        "description": "Interior window cleaning for Hillsboro Mile condos includes detailed attention to tracks, sills, and frames so your ocean views stay unobstructed year-round."
+      },
+      {
+        "title": "A1A Beachfront Residences",
+        "description": "Dust, humidity, and cooking residue cloud interior glass over time. We restore clarity to every window in your A1A beachfront home with meticulous hand cleaning."
+      },
+      {
+        "title": "North End Waterfront Homes",
+        "description": "Interior windows in the north end near Lighthouse Point collect film from humid air. Our crew cleans each pane with care, leaving nothing but sparkling glass."
+      },
+      {
+        "title": "Inlet-View Estates",
+        "description": "Homes overlooking the Hillsboro Inlet deserve interior windows as stunning as the view. We handle the detail work so you can sit back and enjoy the scenery."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "pressure-washing",
     "services_near_you": [
-      { "title": "A1A Driveways & Walkways", "description": "Driveways and entry walkways along A1A accumulate algae and tire marks from constant coastal moisture. Pressure washing restores surfaces to their original clean finish." },
-      { "title": "Hillsboro Inlet Dock Areas", "description": "Dock walkways and seawalls near the Hillsboro Inlet collect slippery algae growth. Professional pressure washing keeps these surfaces safe and looking great." },
-      { "title": "South End Pool Decks", "description": "Pool decks on the south end of the island get coated in grime from salt air and rain. Our pressure washing removes buildup and brings back the original surface color." },
-      { "title": "Condo Common Areas", "description": "Shared walkways, parking garages, and entryways at Hillsboro Beach condos benefit from pressure washing that keeps the property looking well-maintained for every resident." }
+      {
+        "title": "A1A Driveways & Walkways",
+        "description": "Driveways and entry walkways along A1A accumulate algae and tire marks from constant coastal moisture. Pressure washing restores surfaces to their original clean finish."
+      },
+      {
+        "title": "Hillsboro Inlet Dock Areas",
+        "description": "Dock walkways and seawalls near the Hillsboro Inlet collect slippery algae growth. Professional pressure washing keeps these surfaces safe and looking great."
+      },
+      {
+        "title": "South End Pool Decks",
+        "description": "Pool decks on the south end of the island get coated in grime from salt air and rain. Our pressure washing removes buildup and brings back the original surface color."
+      },
+      {
+        "title": "Condo Common Areas",
+        "description": "Shared walkways, parking garages, and entryways at Hillsboro Beach condos benefit from pressure washing that keeps the property looking well-maintained for every resident."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "soft-washing",
     "services_near_you": [
-      { "title": "Hillsboro Mile Stucco Homes", "description": "Soft washing is the right call for the elegant stucco exteriors along Hillsboro Mile, using professional-grade cleaning solutions at low pressure to safely remove mold and algae." },
-      { "title": "Barefoot Mailman Painted Surfaces", "description": "Painted siding and trim in the Barefoot Mailman area need the gentle approach of soft washing to lift grime without stripping paint or damaging finishes." },
-      { "title": "Oceanfront Pool Enclosures", "description": "Pool enclosures along the oceanfront collect green algae and salt film quickly. Soft washing cleans screens and frames without the high pressure that can warp or tear them." },
-      { "title": "Intracoastal Estate Exteriors", "description": "Intracoastal-facing estates with delicate stone or wood accents benefit from soft washing that eliminates biological growth while preserving premium building materials." }
+      {
+        "title": "Hillsboro Mile Stucco Homes",
+        "description": "Soft washing is the right call for the elegant stucco exteriors along Hillsboro Mile, using professional-grade cleaning solutions at low pressure to safely remove mold and algae."
+      },
+      {
+        "title": "Barefoot Mailman Painted Surfaces",
+        "description": "Painted siding and trim in the Barefoot Mailman area need the gentle approach of soft washing to lift grime without stripping paint or damaging finishes."
+      },
+      {
+        "title": "Oceanfront Pool Enclosures",
+        "description": "Pool enclosures along the oceanfront collect green algae and salt film quickly. Soft washing cleans screens and frames without the high pressure that can warp or tear them."
+      },
+      {
+        "title": "Intracoastal Estate Exteriors",
+        "description": "Intracoastal-facing estates with delicate stone or wood accents benefit from soft washing that eliminates biological growth while preserving premium building materials."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "house-washing",
     "services_near_you": [
-      { "title": "Hillsboro Lighthouse Neighborhood", "description": "A full house wash brings homes near the Hillsboro Lighthouse back to life, removing the dark mildew streaks that coastal humidity leaves on exterior walls." },
-      { "title": "A1A Corridor Residences", "description": "House washing along the A1A corridor tackles salt deposits, cobwebs, and discoloration on every exterior surface from foundation to roofline." },
-      { "title": "South End Beach Homes", "description": "Beach homes on the south end near Deerfield take a beating from the elements. Our house washing covers walls, eaves, and fascia to give your home a complete refresh." },
-      { "title": "Hillsboro Mile Estate Homes", "description": "The grand estate homes along Hillsboro Mile maintain their curb appeal with professional house washing using professional-grade cleaning solutions that protect finishes while removing grime." }
+      {
+        "title": "Hillsboro Lighthouse Neighborhood",
+        "description": "A full house wash brings homes near the Hillsboro Lighthouse back to life, removing the dark mildew streaks that coastal humidity leaves on exterior walls."
+      },
+      {
+        "title": "A1A Corridor Residences",
+        "description": "House washing along the A1A corridor tackles salt deposits, cobwebs, and discoloration on every exterior surface from foundation to roofline."
+      },
+      {
+        "title": "South End Beach Homes",
+        "description": "Beach homes on the south end near Deerfield take a beating from the elements. Our house washing covers walls, eaves, and fascia to give your home a complete refresh."
+      },
+      {
+        "title": "Hillsboro Mile Estate Homes",
+        "description": "The grand estate homes along Hillsboro Mile maintain their curb appeal with professional house washing using professional-grade cleaning solutions that protect finishes while removing grime."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "roof-washing",
     "services_near_you": [
-      { "title": "Hillsboro Mile Tile Roofs", "description": "Tile roofs along the Hillsboro Mile are prone to dark Gloeocapsa magma stains. Our soft wash roof cleaning eliminates those black streaks and restores your roof's original appearance." },
-      { "title": "Oceanfront Condo Rooftops", "description": "Condo rooftops facing the ocean collect salt and algae that accelerate wear. Professional roof washing extends roof life and keeps the building looking its best." },
-      { "title": "North End Flat Roofs", "description": "Flat and low-slope roofs on the north end near Lighthouse Point trap moisture and debris. Roof washing removes buildup before it leads to leaks or structural issues." },
-      { "title": "Intracoastal Property Roofs", "description": "Roofs on Intracoastal-side properties deal with tree debris and humidity-driven moss growth. Our roof washing safely removes it all without damaging roofing materials." }
+      {
+        "title": "Hillsboro Mile Tile Roofs",
+        "description": "Tile roofs along the Hillsboro Mile are prone to dark Gloeocapsa magma stains. Our soft wash roof cleaning eliminates those black streaks and restores your roof's original appearance."
+      },
+      {
+        "title": "Oceanfront Condo Rooftops",
+        "description": "Condo rooftops facing the ocean collect salt and algae that accelerate wear. Professional roof washing extends roof life and keeps the building looking its best."
+      },
+      {
+        "title": "North End Flat Roofs",
+        "description": "Flat and low-slope roofs on the north end near Lighthouse Point trap moisture and debris. Roof washing removes buildup before it leads to leaks or structural issues."
+      },
+      {
+        "title": "Intracoastal Property Roofs",
+        "description": "Roofs on Intracoastal-side properties deal with tree debris and humidity-driven moss growth. Our roof washing safely removes it all without damaging roofing materials."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "gutter-cleaning",
     "services_near_you": [
-      { "title": "Hillsboro Mile Properties", "description": "Sea grape leaves and palm fronds fill gutters fast along the Hillsboro Mile. Regular gutter cleaning prevents overflow and protects your foundation from water damage." },
-      { "title": "South End Tree-Lined Lots", "description": "Homes on the south end surrounded by mature tropical landscaping need consistent gutter cleaning to keep water flowing properly during heavy Florida downpours." },
-      { "title": "Barefoot Mailman Residences", "description": "Clogged gutters in the Barefoot Mailman area lead to overflow and landscape erosion. We clear every gutter run and downspout so your system works as designed." },
-      { "title": "A1A Condo Buildings", "description": "Condo buildings along A1A depend on clean gutters, especially during South Florida's rainy season when storms can dump inches of water in minutes." }
+      {
+        "title": "Hillsboro Mile Properties",
+        "description": "Sea grape leaves and palm fronds fill gutters fast along the Hillsboro Mile. Regular gutter cleaning prevents overflow and protects your foundation from water damage."
+      },
+      {
+        "title": "South End Tree-Lined Lots",
+        "description": "Homes on the south end surrounded by mature tropical landscaping need consistent gutter cleaning to keep water flowing properly during heavy Florida downpours."
+      },
+      {
+        "title": "Barefoot Mailman Residences",
+        "description": "Clogged gutters in the Barefoot Mailman area lead to overflow and landscape erosion. We clear every gutter run and downspout so your system works as designed."
+      },
+      {
+        "title": "A1A Condo Buildings",
+        "description": "Condo buildings along A1A depend on clean gutters, especially during South Florida's rainy season when storms can dump inches of water in minutes."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "paver-sealing",
     "services_near_you": [
-      { "title": "Hillsboro Mile Driveways", "description": "Paver driveways along the Hillsboro Mile look stunning when properly sealed. We clean, sand, and seal your pavers to protect against salt exposure and color fading." },
-      { "title": "Oceanfront Patio Pavers", "description": "Oceanfront patios take constant abuse from salt air and UV rays. Professional paver sealing locks in joint sand and keeps your outdoor living space looking vibrant." },
-      { "title": "Intracoastal Pool Deck Pavers", "description": "Pool deck pavers on the Intracoastal side benefit from sealing that enhances color, prevents weed growth between joints, and adds slip resistance around the water." },
-      { "title": "South End Walkways & Entries", "description": "Entry walkways and courtyard pavers on the south end stay protected with our paver sealing service, which guards against staining, shifting, and weather wear." }
+      {
+        "title": "Hillsboro Mile Driveways",
+        "description": "Paver driveways along the Hillsboro Mile look stunning when properly sealed. We clean, sand, and seal your pavers to protect against salt exposure and color fading."
+      },
+      {
+        "title": "Oceanfront Patio Pavers",
+        "description": "Oceanfront patios take constant abuse from salt air and UV rays. Professional paver sealing locks in joint sand and keeps your outdoor living space looking vibrant."
+      },
+      {
+        "title": "Intracoastal Pool Deck Pavers",
+        "description": "Pool deck pavers on the Intracoastal side benefit from sealing that enhances color, prevents weed growth between joints, and adds slip resistance around the water."
+      },
+      {
+        "title": "South End Walkways & Entries",
+        "description": "Entry walkways and courtyard pavers on the south end stay protected with our paver sealing service, which guards against staining, shifting, and weather wear."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "solar-panel-cleaning",
     "services_near_you": [
-      { "title": "Hillsboro Mile Rooftop Arrays", "description": "Salt film and bird droppings reduce solar panel output on Hillsboro Mile homes. Our RO/DI pure water cleaning restores panels to peak efficiency without scratching." },
-      { "title": "A1A Condo Solar Installations", "description": "Condo buildings along A1A with rooftop solar arrays benefit from regular cleaning that removes coastal grime and keeps energy production where it should be." },
-      { "title": "Intracoastal Estate Solar Systems", "description": "Solar panels on Intracoastal-side estates collect pollen and humidity deposits that cut into performance. Professional cleaning gets your system back to full output." },
-      { "title": "North End Residential Panels", "description": "Homeowners on the north end near Lighthouse Point protect their solar investment with routine panel cleaning that clears dust, debris, and environmental buildup." }
+      {
+        "title": "Hillsboro Mile Rooftop Arrays",
+        "description": "Salt film and bird droppings reduce solar panel output on Hillsboro Mile homes. Our RO/DI pure water cleaning restores panels to peak efficiency without scratching."
+      },
+      {
+        "title": "A1A Condo Solar Installations",
+        "description": "Condo buildings along A1A with rooftop solar arrays benefit from regular cleaning that removes coastal grime and keeps energy production where it should be."
+      },
+      {
+        "title": "Intracoastal Estate Solar Systems",
+        "description": "Solar panels on Intracoastal-side estates collect pollen and humidity deposits that cut into performance. Professional cleaning gets your system back to full output."
+      },
+      {
+        "title": "North End Residential Panels",
+        "description": "Homeowners on the north end near Lighthouse Point protect their solar investment with routine panel cleaning that clears dust, debris, and environmental buildup."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "screen-cleaning",
     "services_near_you": [
-      { "title": "Hillsboro Mile Lanai Screens", "description": "Lanai and patio screens along the Hillsboro Mile collect salt residue and insect debris. Our screen cleaning restores airflow and visibility so you can enjoy the ocean breeze." },
-      { "title": "Oceanfront Pool Cage Screens", "description": "Pool cage screens on the oceanfront get coated in salt spray and algae. We gently clean every panel to keep your enclosure bright and your pool area inviting." },
-      { "title": "Barefoot Mailman Porch Screens", "description": "Screened porches in the Barefoot Mailman area trap dust and pollen that dull the view. Professional screen cleaning brings back the clarity you expect from island living." },
-      { "title": "A1A Condo Balcony Screens", "description": "Balcony screens on A1A condos face constant wind-driven grime. Our team cleans screens thoroughly without removing them, leaving your balcony fresh and open." }
+      {
+        "title": "Hillsboro Mile Lanai Screens",
+        "description": "Lanai and patio screens along the Hillsboro Mile collect salt residue and insect debris. Our screen cleaning restores airflow and visibility so you can enjoy the ocean breeze."
+      },
+      {
+        "title": "Oceanfront Pool Cage Screens",
+        "description": "Pool cage screens on the oceanfront get coated in salt spray and algae. We gently clean every panel to keep your enclosure bright and your pool area inviting."
+      },
+      {
+        "title": "Barefoot Mailman Porch Screens",
+        "description": "Screened porches in the Barefoot Mailman area trap dust and pollen that dull the view. Professional screen cleaning brings back the clarity you expect from island living."
+      },
+      {
+        "title": "A1A Condo Balcony Screens",
+        "description": "Balcony screens on A1A condos face constant wind-driven grime. Our team cleans screens thoroughly without removing them, leaving your balcony fresh and open."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "light-fixture-cleaning",
     "services_near_you": [
-      { "title": "Hillsboro Mile Estate Fixtures", "description": "Exterior and interior light fixtures on Hillsboro Mile estates collect salt corrosion and insect buildup. Professional cleaning restores full brightness and extends fixture life." },
-      { "title": "Oceanfront Condo Lobby Lighting", "description": "Lobby and common area light fixtures in oceanfront condos accumulate dust and grime that dims the space. We clean every fixture to keep your building welcoming." },
-      { "title": "Hillsboro Inlet Area Outdoor Lighting", "description": "Outdoor lighting near the Hillsboro Inlet faces harsh salt air that clouds glass covers and corrodes finishes. Our cleaning keeps your landscape lighting shining bright." },
-      { "title": "South End Chandelier & Pendant Lights", "description": "Chandeliers and pendant fixtures in south end homes collect dust and humidity residue over time. We carefully clean each component so your lighting looks and performs its best." }
+      {
+        "title": "Hillsboro Mile Estate Fixtures",
+        "description": "Exterior and interior light fixtures on Hillsboro Mile estates collect salt corrosion and insect buildup. Professional cleaning restores full brightness and extends fixture life."
+      },
+      {
+        "title": "Oceanfront Condo Lobby Lighting",
+        "description": "Lobby and common area light fixtures in oceanfront condos accumulate dust and grime that dims the space. We clean every fixture to keep your building welcoming."
+      },
+      {
+        "title": "Hillsboro Inlet Area Outdoor Lighting",
+        "description": "Outdoor lighting near the Hillsboro Inlet faces harsh salt air that clouds glass covers and corrodes finishes. Our cleaning keeps your landscape lighting shining bright."
+      },
+      {
+        "title": "South End Chandelier & Pendant Lights",
+        "description": "Chandeliers and pendant fixtures in south end homes collect dust and humidity residue over time. We carefully clean each component so your lighting looks and performs its best."
+      }
     ]
   },
   {
     "city": "hillsboro-beach",
     "service": "holiday-lighting",
     "services_near_you": [
-      { "title": "Hillsboro Mile Holiday Displays", "description": "Light up the Hillsboro Mile with professional holiday lighting that turns your oceanfront property into a seasonal showpiece. We handle design, installation, and takedown." },
-      { "title": "A1A Condo Holiday Decor", "description": "Condo buildings along A1A make a statement with holiday lighting on facades, entryways, and common areas. Our team manages every detail from concept to removal." },
-      { "title": "Intracoastal Waterfront Lighting", "description": "Homes on the Intracoastal side of Hillsboro Beach look spectacular with holiday lights reflecting off the water. We create custom displays tailored to your property." },
-      { "title": "Hillsboro Lighthouse Area Homes", "description": "Homes near the iconic Hillsboro Lighthouse bring extra holiday cheer to the neighborhood with professional lighting installations. We use commercial-grade LED lights built to handle coastal weather." }
+      {
+        "title": "Hillsboro Mile Holiday Displays",
+        "description": "Light up the Hillsboro Mile with professional holiday lighting that turns your oceanfront property into a seasonal showpiece. We handle design, installation, and takedown."
+      },
+      {
+        "title": "A1A Condo Holiday Decor",
+        "description": "Condo buildings along A1A make a statement with holiday lighting on facades, entryways, and common areas. Our team manages every detail from concept to removal."
+      },
+      {
+        "title": "Intracoastal Waterfront Lighting",
+        "description": "Homes on the Intracoastal side of Hillsboro Beach look spectacular with holiday lights reflecting off the water. We create custom displays tailored to your property."
+      },
+      {
+        "title": "Hillsboro Lighthouse Area Homes",
+        "description": "Homes near the iconic Hillsboro Lighthouse bring extra holiday cheer to the neighborhood with professional lighting installations. We use commercial-grade LED lights built to handle coastal weather."
+      }
     ]
   }
 ]

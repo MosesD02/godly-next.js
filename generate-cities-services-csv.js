@@ -47,19 +47,17 @@ const services = [
 ];
 
 const serviceHeaders = services.map((s) =>
-  s.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
+  s
+    .split("-")
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" "),
 );
 
 const header = ["City", "City Slug", "Landing Page URL", ...serviceHeaders];
 const rows = [header];
 
 for (const [slug, name] of Object.entries(citiesMap)) {
-  const row = [
-    name,
-    slug,
-    `/${slug}`,
-    ...services.map((s) => `/${slug}/${s}`),
-  ];
+  const row = [name, slug, `/${slug}`, ...services.map((s) => `/${slug}/${s}`)];
   rows.push(row);
 }
 

@@ -19,7 +19,8 @@ const DeerfieldBeachCta = () => {
           Expert Window & Exterior Cleaning in Deerfield Beach
         </h2>
         <p className="mb-8 text-lg text-white md:text-xl">
-          Whether you&apos;re in The Cove, Crystal Lake, or near Quiet Waters Park—{" "}
+          Whether you&apos;re in The Cove, Crystal Lake, or near Quiet Waters
+          Park—{" "}
           <Link
             href="https://godlywindows.com/"
             className="underline decoration-current decoration-solid transition-colors hover:text-[#FDE4C8]"

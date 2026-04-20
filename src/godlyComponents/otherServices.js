@@ -66,7 +66,9 @@ const OtherServices = ({ slug, cityName: cityNameProp, citySlug }) => {
                     height={500}
                     className="h-full max-h-[145px] min-h-[145px] w-full object-cover md:max-h-[223px] md:min-h-[223px]"
                   />
-                  <p className="trim text-center text-sm md:text-[22px]">{title}</p>
+                  <p className="trim text-center text-sm md:text-[22px]">
+                    {title}
+                  </p>
                   <p className="trim text-center font-sans text-xs underline md:text-base">
                     What We Offer
                   </p>

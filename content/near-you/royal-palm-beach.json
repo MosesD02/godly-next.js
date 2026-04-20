@@ -3,130 +3,286 @@
     "city": "royal-palm-beach",
     "service": "window-cleaning",
     "services_near_you": [
-      { "title": "Madison Green Windows", "description": "Madison Green homeowners enjoy crystal-clear views with professional window cleaning that removes hard water stains, pollen, and dust from every pane." },
-      { "title": "Crestwood Residences", "description": "Our RO/DI pure water system delivers streak-free results on Crestwood homes, leaving windows spotless even in South Florida's relentless humidity." },
-      { "title": "Royal Palm Beach Commons", "description": "Homes near Royal Palm Beach Commons deserve sparkling windows that let in all that natural Florida light. Satisfaction guarantee available on every visit." },
-      { "title": "Saratoga Community", "description": "Saratoga residents trust our team for thorough window cleaning that covers every pane, track, and sill throughout their home." }
+      {
+        "title": "Madison Green Windows",
+        "description": "Madison Green homeowners enjoy crystal-clear views with professional window cleaning that removes hard water stains, pollen, and dust from every pane."
+      },
+      {
+        "title": "Crestwood Residences",
+        "description": "Our RO/DI pure water system delivers streak-free results on Crestwood homes, leaving windows spotless even in South Florida's relentless humidity."
+      },
+      {
+        "title": "Royal Palm Beach Commons",
+        "description": "Homes near Royal Palm Beach Commons deserve sparkling windows that let in all that natural Florida light. Satisfaction guarantee available on every visit."
+      },
+      {
+        "title": "Saratoga Community",
+        "description": "Saratoga residents trust our team for thorough window cleaning that covers every pane, track, and sill throughout their home."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "exterior-window-cleaning",
     "services_near_you": [
-      { "title": "La Mancha Estates", "description": "La Mancha's beautiful homes benefit from exterior window cleaning that strips away pollen, dirt, and water spots using our RO/DI pure water system." },
-      { "title": "Cypress Lakes Properties", "description": "Exterior windows throughout Cypress Lakes collect grime from Florida's weather patterns. We restore clarity to every window your home faces outward." },
-      { "title": "Royal Palm Pines Homes", "description": "Royal Palm Pines homeowners count on us for exterior window cleaning that boosts curb appeal without disrupting your schedule." },
-      { "title": "Sandpiper Community", "description": "Sandpiper homes surrounded by mature landscaping need regular exterior window cleaning to keep glass free of organic buildup and hard water stains." }
+      {
+        "title": "La Mancha Estates",
+        "description": "La Mancha's beautiful homes benefit from exterior window cleaning that strips away pollen, dirt, and water spots using our RO/DI pure water system."
+      },
+      {
+        "title": "Cypress Lakes Properties",
+        "description": "Exterior windows throughout Cypress Lakes collect grime from Florida's weather patterns. We restore clarity to every window your home faces outward."
+      },
+      {
+        "title": "Royal Palm Pines Homes",
+        "description": "Royal Palm Pines homeowners count on us for exterior window cleaning that boosts curb appeal without disrupting your schedule."
+      },
+      {
+        "title": "Sandpiper Community",
+        "description": "Sandpiper homes surrounded by mature landscaping need regular exterior window cleaning to keep glass free of organic buildup and hard water stains."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "interior-window-cleaning",
     "services_near_you": [
-      { "title": "Madison Green Interiors", "description": "Interior window cleaning for Madison Green homes means detailed attention to tracks, sills, and glass so every room feels brighter and more inviting." },
-      { "title": "Willows Residences", "description": "Willows homeowners love coming home to spotless interior windows. We handle all the detail work so you can enjoy unobstructed views throughout your home." },
-      { "title": "Crestwood Living Spaces", "description": "Our interior window cleaning service is perfect for Crestwood homes where dust and humidity can cloud your glass over time." },
-      { "title": "Saratoga Homes", "description": "Saratoga homes deserve interior windows as polished as the community itself. We clean every pane with care and precision, inside and out." }
+      {
+        "title": "Madison Green Interiors",
+        "description": "Interior window cleaning for Madison Green homes means detailed attention to tracks, sills, and glass so every room feels brighter and more inviting."
+      },
+      {
+        "title": "Willows Residences",
+        "description": "Willows homeowners love coming home to spotless interior windows. We handle all the detail work so you can enjoy unobstructed views throughout your home."
+      },
+      {
+        "title": "Crestwood Living Spaces",
+        "description": "Our interior window cleaning service is perfect for Crestwood homes where dust and humidity can cloud your glass over time."
+      },
+      {
+        "title": "Saratoga Homes",
+        "description": "Saratoga homes deserve interior windows as polished as the community itself. We clean every pane with care and precision, inside and out."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "pressure-washing",
     "services_near_you": [
-      { "title": "Royal Palm Beach Commons Walkways", "description": "Walkways and common areas near Royal Palm Beach Commons take a beating from foot traffic and Florida weather. Pressure washing restores surfaces to like-new condition." },
-      { "title": "Acreage/Loxahatchee Border Driveways", "description": "Properties along the Acreage/Loxahatchee border accumulate dirt and mildew fast on driveways and patios. Our pressure washing blasts away years of buildup." },
-      { "title": "La Mancha Pool Decks", "description": "Pool decks and outdoor entertaining areas in La Mancha collect algae and grime quickly. Professional pressure washing keeps your surfaces safe and clean." },
-      { "title": "Cypress Lakes Walkways", "description": "From pool decks to front walkways, Cypress Lakes homes benefit from pressure washing that removes built-up grime and restores original surface color." }
+      {
+        "title": "Royal Palm Beach Commons Walkways",
+        "description": "Walkways and common areas near Royal Palm Beach Commons take a beating from foot traffic and Florida weather. Pressure washing restores surfaces to like-new condition."
+      },
+      {
+        "title": "Acreage/Loxahatchee Border Driveways",
+        "description": "Properties along the Acreage/Loxahatchee border accumulate dirt and mildew fast on driveways and patios. Our pressure washing blasts away years of buildup."
+      },
+      {
+        "title": "La Mancha Pool Decks",
+        "description": "Pool decks and outdoor entertaining areas in La Mancha collect algae and grime quickly. Professional pressure washing keeps your surfaces safe and clean."
+      },
+      {
+        "title": "Cypress Lakes Walkways",
+        "description": "From pool decks to front walkways, Cypress Lakes homes benefit from pressure washing that removes built-up grime and restores original surface color."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "soft-washing",
     "services_near_you": [
-      { "title": "Sandpiper Home Exteriors", "description": "Soft washing is ideal for Sandpiper's home exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae." },
-      { "title": "Royal Palm Pines Stucco", "description": "Royal Palm Pines homes with delicate stucco or painted siding need the gentle touch of soft washing to get clean without risking surface damage." },
-      { "title": "Willows Pool Enclosures", "description": "Pool enclosures throughout the Willows collect green algae and grime. Soft washing eliminates buildup without the high pressure that can warp screens." },
-      { "title": "Madison Green Painted Surfaces", "description": "Soft washing is the smart choice for Madison Green homes with painted wood or vinyl siding, lifting dirt and biological growth without stripping finishes." }
+      {
+        "title": "Sandpiper Home Exteriors",
+        "description": "Soft washing is ideal for Sandpiper's home exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae."
+      },
+      {
+        "title": "Royal Palm Pines Stucco",
+        "description": "Royal Palm Pines homes with delicate stucco or painted siding need the gentle touch of soft washing to get clean without risking surface damage."
+      },
+      {
+        "title": "Willows Pool Enclosures",
+        "description": "Pool enclosures throughout the Willows collect green algae and grime. Soft washing eliminates buildup without the high pressure that can warp screens."
+      },
+      {
+        "title": "Madison Green Painted Surfaces",
+        "description": "Soft washing is the smart choice for Madison Green homes with painted wood or vinyl siding, lifting dirt and biological growth without stripping finishes."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "house-washing",
     "services_near_you": [
-      { "title": "Crestwood Exteriors", "description": "A full house wash brings Crestwood homes back to life, removing the dark streaks and discoloration that Florida's humidity creates on exterior walls." },
-      { "title": "La Mancha Residences", "description": "La Mancha homeowners keep their properties looking sharp with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface." },
-      { "title": "Acreage/Loxahatchee Border Homes", "description": "Properties near the Acreage/Loxahatchee border are surrounded by open land that kicks up dust and debris. House washing covers walls, eaves, and fascia from top to bottom." },
-      { "title": "Saratoga Facades", "description": "House washing at Saratoga means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating grime." }
+      {
+        "title": "Crestwood Exteriors",
+        "description": "A full house wash brings Crestwood homes back to life, removing the dark streaks and discoloration that Florida's humidity creates on exterior walls."
+      },
+      {
+        "title": "La Mancha Residences",
+        "description": "La Mancha homeowners keep their properties looking sharp with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface."
+      },
+      {
+        "title": "Acreage/Loxahatchee Border Homes",
+        "description": "Properties near the Acreage/Loxahatchee border are surrounded by open land that kicks up dust and debris. House washing covers walls, eaves, and fascia from top to bottom."
+      },
+      {
+        "title": "Saratoga Facades",
+        "description": "House washing at Saratoga means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating grime."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "roof-washing",
     "services_near_you": [
-      { "title": "Cypress Lakes Tile Roofs", "description": "Cypress Lakes' tile roofs are prone to dark algae streaks. Our soft wash roof cleaning removes Gloeocapsa magma stains and restores your roof's original look." },
-      { "title": "Madison Green Shingle Roofs", "description": "Shingle roofs in Madison Green take a beating from Florida's humidity. Professional roof washing extends roof life and eliminates those ugly black streaks." },
-      { "title": "Sandpiper Rooflines", "description": "Sandpiper homeowners protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials." },
-      { "title": "Royal Palm Pines Properties", "description": "Royal Palm Pines properties benefit from roof washing that improves curb appeal and helps prevent costly roof repairs down the road." }
+      {
+        "title": "Cypress Lakes Tile Roofs",
+        "description": "Cypress Lakes' tile roofs are prone to dark algae streaks. Our soft wash roof cleaning removes Gloeocapsa magma stains and restores your roof's original look."
+      },
+      {
+        "title": "Madison Green Shingle Roofs",
+        "description": "Shingle roofs in Madison Green take a beating from Florida's humidity. Professional roof washing extends roof life and eliminates those ugly black streaks."
+      },
+      {
+        "title": "Sandpiper Rooflines",
+        "description": "Sandpiper homeowners protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials."
+      },
+      {
+        "title": "Royal Palm Pines Properties",
+        "description": "Royal Palm Pines properties benefit from roof washing that improves curb appeal and helps prevent costly roof repairs down the road."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "gutter-cleaning",
     "services_near_you": [
-      { "title": "Willows Tree-Lined Streets", "description": "The Willows' mature tree canopy means gutters fill up fast with leaves and debris. Regular gutter cleaning prevents water damage and foundation issues." },
-      { "title": "Acreage/Loxahatchee Border Properties", "description": "Properties along the Acreage/Loxahatchee border are surrounded by heavy vegetation that drops leaves and organic matter into gutters year-round." },
-      { "title": "Royal Palm Beach Commons Area", "description": "Clogged gutters near Royal Palm Beach Commons can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed." },
-      { "title": "Crestwood Homes", "description": "Crestwood homes depend on clean gutters, especially during South Florida's rainy season when afternoon downpours are relentless." }
+      {
+        "title": "Willows Tree-Lined Streets",
+        "description": "The Willows' mature tree canopy means gutters fill up fast with leaves and debris. Regular gutter cleaning prevents water damage and foundation issues."
+      },
+      {
+        "title": "Acreage/Loxahatchee Border Properties",
+        "description": "Properties along the Acreage/Loxahatchee border are surrounded by heavy vegetation that drops leaves and organic matter into gutters year-round."
+      },
+      {
+        "title": "Royal Palm Beach Commons Area",
+        "description": "Clogged gutters near Royal Palm Beach Commons can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed."
+      },
+      {
+        "title": "Crestwood Homes",
+        "description": "Crestwood homes depend on clean gutters, especially during South Florida's rainy season when afternoon downpours are relentless."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "paver-sealing",
     "services_near_you": [
-      { "title": "La Mancha Driveways", "description": "Paver driveways and patios in La Mancha look stunning when freshly sealed. We lock in color, prevent weed growth, and protect against staining." },
-      { "title": "Madison Green Walkways", "description": "Madison Green homeowners invest in quality pavers, and professional sealing keeps them looking rich and vibrant while guarding against Florida's sun and rain." },
-      { "title": "Saratoga Pool Decks", "description": "Pool deck pavers in Saratoga stay slip-resistant and beautiful with professional sealing that repels water, oil, and organic stains." },
-      { "title": "Cypress Lakes Patios", "description": "Paver sealing throughout Cypress Lakes extends the life of your hardscape by preventing sand erosion, ant hills, and color fading from UV exposure." }
+      {
+        "title": "La Mancha Driveways",
+        "description": "Paver driveways and patios in La Mancha look stunning when freshly sealed. We lock in color, prevent weed growth, and protect against staining."
+      },
+      {
+        "title": "Madison Green Walkways",
+        "description": "Madison Green homeowners invest in quality pavers, and professional sealing keeps them looking rich and vibrant while guarding against Florida's sun and rain."
+      },
+      {
+        "title": "Saratoga Pool Decks",
+        "description": "Pool deck pavers in Saratoga stay slip-resistant and beautiful with professional sealing that repels water, oil, and organic stains."
+      },
+      {
+        "title": "Cypress Lakes Patios",
+        "description": "Paver sealing throughout Cypress Lakes extends the life of your hardscape by preventing sand erosion, ant hills, and color fading from UV exposure."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "solar-panel-cleaning",
     "services_near_you": [
-      { "title": "Crestwood Solar Systems", "description": "Crestwood homeowners with solar panels maximize energy output with professional cleaning that removes pollen, bird droppings, and grime from panel surfaces." },
-      { "title": "Royal Palm Pines Installations", "description": "Dirty solar panels in Royal Palm Pines can lose up to 25% efficiency. Our RO/DI pure water cleaning restores full performance without scratching panel glass." },
-      { "title": "Sandpiper Rooftop Panels", "description": "Solar panel cleaning in Sandpiper ensures your renewable energy investment keeps performing at peak levels year after year." },
-      { "title": "Acreage/Loxahatchee Border Homes", "description": "Homeowners near the Acreage/Loxahatchee border trust us to safely clean rooftop solar panels and keep their electricity savings on track." }
+      {
+        "title": "Crestwood Solar Systems",
+        "description": "Crestwood homeowners with solar panels maximize energy output with professional cleaning that removes pollen, bird droppings, and grime from panel surfaces."
+      },
+      {
+        "title": "Royal Palm Pines Installations",
+        "description": "Dirty solar panels in Royal Palm Pines can lose up to 25% efficiency. Our RO/DI pure water cleaning restores full performance without scratching panel glass."
+      },
+      {
+        "title": "Sandpiper Rooftop Panels",
+        "description": "Solar panel cleaning in Sandpiper ensures your renewable energy investment keeps performing at peak levels year after year."
+      },
+      {
+        "title": "Acreage/Loxahatchee Border Homes",
+        "description": "Homeowners near the Acreage/Loxahatchee border trust us to safely clean rooftop solar panels and keep their electricity savings on track."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "screen-cleaning",
     "services_near_you": [
-      { "title": "Willows Lanais", "description": "Screen enclosures throughout the Willows collect dust, pollen, and algae. Professional screen cleaning brightens your lanai and improves airflow." },
-      { "title": "La Mancha Pool Cages", "description": "Pool cage screens in La Mancha get grimy fast in the Florida climate. We clean every panel so your outdoor living space feels fresh and open." },
-      { "title": "Saratoga Porches", "description": "Screened porches in Saratoga stay inviting with regular cleaning that removes buildup from mesh without tearing or stretching screens." },
-      { "title": "Madison Green Enclosures", "description": "Madison Green's lush landscaping means pollen and organic debris cling to screens constantly. Our cleaning process restores visibility and keeps bugs where they belong." }
+      {
+        "title": "Willows Lanais",
+        "description": "Screen enclosures throughout the Willows collect dust, pollen, and algae. Professional screen cleaning brightens your lanai and improves airflow."
+      },
+      {
+        "title": "La Mancha Pool Cages",
+        "description": "Pool cage screens in La Mancha get grimy fast in the Florida climate. We clean every panel so your outdoor living space feels fresh and open."
+      },
+      {
+        "title": "Saratoga Porches",
+        "description": "Screened porches in Saratoga stay inviting with regular cleaning that removes buildup from mesh without tearing or stretching screens."
+      },
+      {
+        "title": "Madison Green Enclosures",
+        "description": "Madison Green's lush landscaping means pollen and organic debris cling to screens constantly. Our cleaning process restores visibility and keeps bugs where they belong."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "light-fixture-cleaning",
     "services_near_you": [
-      { "title": "Royal Palm Beach Commons Fixtures", "description": "Clean light fixtures near Royal Palm Beach Commons make a big difference after dark. We remove bug residue, dust, and grime so your property shines." },
-      { "title": "Cypress Lakes Outdoor Fixtures", "description": "Outdoor light fixtures in Cypress Lakes collect insects and cobwebs fast. Professional cleaning keeps your property well-lit and looking polished." },
-      { "title": "Sandpiper Exterior Sconces", "description": "Florida weather clouds and corrodes light fixtures in Sandpiper. Our cleaning service restores clarity and brightness to your exterior lighting." },
-      { "title": "Crestwood Entryway Lights", "description": "Entryway and porch light fixtures at Crestwood homes deserve regular cleaning to maintain welcoming curb appeal and proper illumination." }
+      {
+        "title": "Royal Palm Beach Commons Fixtures",
+        "description": "Clean light fixtures near Royal Palm Beach Commons make a big difference after dark. We remove bug residue, dust, and grime so your property shines."
+      },
+      {
+        "title": "Cypress Lakes Outdoor Fixtures",
+        "description": "Outdoor light fixtures in Cypress Lakes collect insects and cobwebs fast. Professional cleaning keeps your property well-lit and looking polished."
+      },
+      {
+        "title": "Sandpiper Exterior Sconces",
+        "description": "Florida weather clouds and corrodes light fixtures in Sandpiper. Our cleaning service restores clarity and brightness to your exterior lighting."
+      },
+      {
+        "title": "Crestwood Entryway Lights",
+        "description": "Entryway and porch light fixtures at Crestwood homes deserve regular cleaning to maintain welcoming curb appeal and proper illumination."
+      }
     ]
   },
   {
     "city": "royal-palm-beach",
     "service": "holiday-lighting",
     "services_near_you": [
-      { "title": "Madison Green Holiday Displays", "description": "Make your Madison Green home stand out during the holidays with professional lighting installation that turns heads and brings festive cheer to the neighborhood." },
-      { "title": "Royal Palm Pines Festive Homes", "description": "Royal Palm Pines residents love the holiday season, and our professional lighting design and installation makes decorating effortless from roofline to landscaping." },
-      { "title": "Willows Neighborhood Lights", "description": "The Willows goes all out for the holidays. Our team designs custom lighting packages and handles every detail from setup through removal." },
-      { "title": "La Mancha Holiday Glow", "description": "Holiday lights throughout La Mancha create a magical scene each season. We handle design, installation, and takedown so you just enjoy the festivities." }
+      {
+        "title": "Madison Green Holiday Displays",
+        "description": "Make your Madison Green home stand out during the holidays with professional lighting installation that turns heads and brings festive cheer to the neighborhood."
+      },
+      {
+        "title": "Royal Palm Pines Festive Homes",
+        "description": "Royal Palm Pines residents love the holiday season, and our professional lighting design and installation makes decorating effortless from roofline to landscaping."
+      },
+      {
+        "title": "Willows Neighborhood Lights",
+        "description": "The Willows goes all out for the holidays. Our team designs custom lighting packages and handles every detail from setup through removal."
+      },
+      {
+        "title": "La Mancha Holiday Glow",
+        "description": "Holiday lights throughout La Mancha create a magical scene each season. We handle design, installation, and takedown so you just enjoy the festivities."
+      }
     ]
   }
 ]

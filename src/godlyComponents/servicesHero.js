@@ -4,10 +4,7 @@ import Image from "@/components/Image";
 import { cn } from "@/lib/utils";
 import FreeQuoteButton from "@/components/freeQuote";
 import Services from "@/data/servicesData";
-import {
-  generateServiceH1,
-  generateServiceHeroAlt,
-} from "@/data/metaTitles";
+import { generateServiceH1, generateServiceHeroAlt } from "@/data/metaTitles";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
 
 // cityName is passed as a prop from the server so the correct value is in the

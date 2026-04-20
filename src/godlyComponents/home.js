@@ -11,6 +11,8 @@ import Testimonials from "./testimonials";
 import Promise from "./promise";
 import Hero from "./hero";
 import WebsiteLayout from "./websiteLayout";
+import Faq from "./faq";
+import { mainHomepageFaqs, getCityHomepageFaqs } from "@/data/homepageFaqData";
 import TeamGallery from "./teamGallery";
 import ParklandCta from "./parklandCta";
 import CoconutCreekCta from "./coconutCreekCta";
@@ -37,7 +39,7 @@ import PompanoBeachCta from "./pompanoBeachCta";
 import LauderdaleByTheSeaCta from "./lauderdaleByTheSeaCta";
 import OaklandParkCta from "./oaklandParkCta";
 import RoyalPalmBeachCta from "./royalPalmBeachCta";
-import { useGodlyContext, getCityFromCookie } from "@/context/godlyContext";
+import { useGodlyContext } from "@/context/godlyContext";
 
 import { citiesMap } from "@/data/cities";
 import { PopupModal } from "@/components/popup-modal";
@@ -47,6 +49,10 @@ export default function GodlyHome({ city }) {
 
   // Compute display name from route param immediately (no useEffect needed)
   const cityName = city && citiesMap[city] ? citiesMap[city] : "SOUTH FLORIDA";
+  const faqs =
+    city && citiesMap[city]
+      ? getCityHomepageFaqs(citiesMap[city])
+      : mainHomepageFaqs;
 
   useEffect(() => {
     if (city && Object.keys(citiesMap).includes(city)) {
@@ -81,6 +87,10 @@ export default function GodlyHome({ city }) {
       <Testimonials />
       <HowItWorks />
       <Savings />
+      <Faq
+        faqs={faqs}
+        cityName={cityName !== "SOUTH FLORIDA" ? cityName : undefined}
+      />
       <Location city={city} />
       <ParklandCta />
       <CoconutCreekCta />

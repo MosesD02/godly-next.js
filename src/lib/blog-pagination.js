@@ -49,9 +49,7 @@ export function paginateBlogPosts(posts, rawPage) {
   }
 
   const totalPages = Math.ceil(total / BLOG_POSTS_PER_PAGE);
-  const parsed = Number(
-    Array.isArray(rawPage) ? rawPage[0] : rawPage,
-  );
+  const parsed = Number(Array.isArray(rawPage) ? rawPage[0] : rawPage);
   let page = Number.isFinite(parsed) && parsed > 0 ? Math.floor(parsed) : 1;
   if (page > totalPages) page = totalPages;
 

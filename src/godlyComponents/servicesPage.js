@@ -17,7 +17,11 @@ export default function ServicesPage({ slug, city, cityName, cityData = {}, rela
     <WebsiteLayout>
       <CitySync city={city} />
       <ServicesHero slug={slug} heroOverride={cityData.hero} cityName={cityName} />
-      <ServiceIncludes slug={slug} cityName={cityName} />
+      <ServiceIncludes
+        slug={slug}
+        cityName={cityName}
+        includedOverride={cityData.included}
+      />
       <EssentialService slug={slug} essentialOverride={cityData.essential} cityName={cityName} />
       <ServiceNearYou slug={slug} nearYouOverride={cityData.nearYou} cityName={cityName} />
       <ChooseUs slug={slug} />

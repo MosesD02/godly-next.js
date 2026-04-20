@@ -3,130 +3,286 @@
     "city": "tamarac",
     "service": "window-cleaning",
     "services_near_you": [
-      { "title": "Woodlands Community", "description": "Woodlands homeowners love the difference professionally cleaned windows make. Our RO/DI pure water system removes hard water spots, pollen, and humidity film from every pane for a streak-free finish." },
-      { "title": "Kings Point Residences", "description": "Kings Point residents deserve sparkling windows that let the Florida sunshine pour in. We clean every window from tracks to sills so your home looks its best year-round." },
-      { "title": "Colony West Golf Club Area", "description": "Homes surrounding Colony West Golf Club enjoy gorgeous course views that are even better through crystal-clear glass. Our team handles single and multi-story windows with precision." },
-      { "title": "Tamarac Lakes Homes", "description": "Tamarac Lakes properties face constant exposure to waterside humidity and mineral deposits. Professional window cleaning restores brilliant clarity to every window in your home." }
+      {
+        "title": "Woodlands Community",
+        "description": "Woodlands homeowners love the difference professionally cleaned windows make. Our RO/DI pure water system removes hard water spots, pollen, and humidity film from every pane for a streak-free finish."
+      },
+      {
+        "title": "Kings Point Residences",
+        "description": "Kings Point residents deserve sparkling windows that let the Florida sunshine pour in. We clean every window from tracks to sills so your home looks its best year-round."
+      },
+      {
+        "title": "Colony West Golf Club Area",
+        "description": "Homes surrounding Colony West Golf Club enjoy gorgeous course views that are even better through crystal-clear glass. Our team handles single and multi-story windows with precision."
+      },
+      {
+        "title": "Tamarac Lakes Homes",
+        "description": "Tamarac Lakes properties face constant exposure to waterside humidity and mineral deposits. Professional window cleaning restores brilliant clarity to every window in your home."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "exterior-window-cleaning",
     "services_near_you": [
-      { "title": "Mainlands Neighborhood", "description": "Exterior windows throughout the Mainlands collect road dust, pollen, and hard water stains that cloud glass fast. Our crew restores spotless clarity without disrupting your day." },
-      { "title": "Sabal Palm Properties", "description": "Sabal Palm homeowners trust our exterior window cleaning to tackle the buildup South Florida weather leaves behind, from mineral deposits to stubborn bug residue." },
-      { "title": "University Drive Corridor", "description": "Homes along the University Drive corridor face extra exposure to road film and exhaust residue. We clean every exterior pane so your home shines from the street." },
-      { "title": "Tamarac Village Homes", "description": "Tamarac Village residents count on professional exterior window cleaning to handle second-story glass and hard-to-reach panes safely and efficiently." }
+      {
+        "title": "Mainlands Neighborhood",
+        "description": "Exterior windows throughout the Mainlands collect road dust, pollen, and hard water stains that cloud glass fast. Our crew restores spotless clarity without disrupting your day."
+      },
+      {
+        "title": "Sabal Palm Properties",
+        "description": "Sabal Palm homeowners trust our exterior window cleaning to tackle the buildup South Florida weather leaves behind, from mineral deposits to stubborn bug residue."
+      },
+      {
+        "title": "University Drive Corridor",
+        "description": "Homes along the University Drive corridor face extra exposure to road film and exhaust residue. We clean every exterior pane so your home shines from the street."
+      },
+      {
+        "title": "Tamarac Village Homes",
+        "description": "Tamarac Village residents count on professional exterior window cleaning to handle second-story glass and hard-to-reach panes safely and efficiently."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "interior-window-cleaning",
     "services_near_you": [
-      { "title": "Kings Point Interiors", "description": "Interior window cleaning for Kings Point homes means detailed attention to tracks, sills, and frames so every window sparkles from the inside out." },
-      { "title": "Woodmont Residences", "description": "Woodmont homeowners appreciate interior window cleaning that removes dust, fingerprints, and humidity film without leaving streaks or chemical residue behind." },
-      { "title": "Colony West Golf Club Area", "description": "Homes near Colony West Golf Club deserve interior windows as polished as the fairway views outside. We clean every pane with care and precision." },
-      { "title": "Woodlands Community", "description": "Woodlands families love coming home to spotless interior windows. We handle all the detail work so you can enjoy unobstructed natural light throughout your home." }
+      {
+        "title": "Kings Point Interiors",
+        "description": "Interior window cleaning for Kings Point homes means detailed attention to tracks, sills, and frames so every window sparkles from the inside out."
+      },
+      {
+        "title": "Woodmont Residences",
+        "description": "Woodmont homeowners appreciate interior window cleaning that removes dust, fingerprints, and humidity film without leaving streaks or chemical residue behind."
+      },
+      {
+        "title": "Colony West Golf Club Area",
+        "description": "Homes near Colony West Golf Club deserve interior windows as polished as the fairway views outside. We clean every pane with care and precision."
+      },
+      {
+        "title": "Woodlands Community",
+        "description": "Woodlands families love coming home to spotless interior windows. We handle all the detail work so you can enjoy unobstructed natural light throughout your home."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "pressure-washing",
     "services_near_you": [
-      { "title": "Commercial Blvd Area", "description": "Properties along Commercial Blvd see heavy foot and vehicle traffic. Pressure washing restores sidewalks, facades, and parking areas to like-new condition." },
-      { "title": "Mainlands Driveways", "description": "Driveways and walkways in the Mainlands take a beating from Florida weather. Our pressure washing blasts away oil stains, mildew, and ground-in dirt." },
-      { "title": "Tamarac Lakes Pool Decks", "description": "From pool decks to front walkways, Tamarac Lakes homes benefit from pressure washing that removes built-up algae and restores original surface color." },
-      { "title": "University Drive Corridor", "description": "High-traffic walkways and patios near the University Drive corridor collect grime fast. Professional pressure washing keeps outdoor surfaces safe, clean, and inviting." }
+      {
+        "title": "Commercial Blvd Area",
+        "description": "Properties along Commercial Blvd see heavy foot and vehicle traffic. Pressure washing restores sidewalks, facades, and parking areas to like-new condition."
+      },
+      {
+        "title": "Mainlands Driveways",
+        "description": "Driveways and walkways in the Mainlands take a beating from Florida weather. Our pressure washing blasts away oil stains, mildew, and ground-in dirt."
+      },
+      {
+        "title": "Tamarac Lakes Pool Decks",
+        "description": "From pool decks to front walkways, Tamarac Lakes homes benefit from pressure washing that removes built-up algae and restores original surface color."
+      },
+      {
+        "title": "University Drive Corridor",
+        "description": "High-traffic walkways and patios near the University Drive corridor collect grime fast. Professional pressure washing keeps outdoor surfaces safe, clean, and inviting."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "soft-washing",
     "services_near_you": [
-      { "title": "Sabal Palm Exteriors", "description": "Soft washing is ideal for Sabal Palm home exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae without surface damage." },
-      { "title": "Woodmont Stucco & Siding", "description": "Woodmont homes with delicate stucco or painted siding need the gentle touch of soft washing to get clean without risking chips, cracks, or finish damage." },
-      { "title": "Kings Point Pool Enclosures", "description": "Pool enclosures throughout Kings Point collect green algae and grime. Soft washing eliminates buildup without the high pressure that can warp or tear screens." },
-      { "title": "Tamarac Village Properties", "description": "Soft washing is the smart choice for Tamarac Village homes with painted wood or vinyl siding, lifting dirt and biological growth without stripping finishes." }
+      {
+        "title": "Sabal Palm Exteriors",
+        "description": "Soft washing is ideal for Sabal Palm home exteriors, using professional-grade cleaning solutions at low pressure to safely remove mold, mildew, and algae without surface damage."
+      },
+      {
+        "title": "Woodmont Stucco & Siding",
+        "description": "Woodmont homes with delicate stucco or painted siding need the gentle touch of soft washing to get clean without risking chips, cracks, or finish damage."
+      },
+      {
+        "title": "Kings Point Pool Enclosures",
+        "description": "Pool enclosures throughout Kings Point collect green algae and grime. Soft washing eliminates buildup without the high pressure that can warp or tear screens."
+      },
+      {
+        "title": "Tamarac Village Properties",
+        "description": "Soft washing is the smart choice for Tamarac Village homes with painted wood or vinyl siding, lifting dirt and biological growth without stripping finishes."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "house-washing",
     "services_near_you": [
-      { "title": "Woodlands Exteriors", "description": "A full house wash brings Woodlands homes back to life, removing the dark streaks and discoloration that Florida's relentless humidity creates on exterior walls." },
-      { "title": "Colony West Golf Club Area", "description": "Homeowners near Colony West Golf Club keep their properties looking sharp with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface." },
-      { "title": "Mainlands Facades", "description": "House washing at the Mainlands means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating grime." },
-      { "title": "Commercial Blvd Area", "description": "Properties along Commercial Blvd maintain their curb appeal with professional house washing that covers walls, eaves, and fascia boards from top to bottom." }
+      {
+        "title": "Woodlands Exteriors",
+        "description": "A full house wash brings Woodlands homes back to life, removing the dark streaks and discoloration that Florida's relentless humidity creates on exterior walls."
+      },
+      {
+        "title": "Colony West Golf Club Area",
+        "description": "Homeowners near Colony West Golf Club keep their properties looking sharp with regular house washing that tackles mildew, cobwebs, and dirt from every exterior surface."
+      },
+      {
+        "title": "Mainlands Facades",
+        "description": "House washing at the Mainlands means a complete exterior refresh using professional-grade cleaning solutions that protect your paint while eliminating grime."
+      },
+      {
+        "title": "Commercial Blvd Area",
+        "description": "Properties along Commercial Blvd maintain their curb appeal with professional house washing that covers walls, eaves, and fascia boards from top to bottom."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "roof-washing",
     "services_near_you": [
-      { "title": "Kings Point Tile Roofs", "description": "Kings Point tile roofs are prone to dark algae streaks. Our soft wash roof cleaning removes Gloeocapsa magma stains and restores your roof's original appearance." },
-      { "title": "Tamarac Lakes Shingle Roofs", "description": "Shingle roofs in Tamarac Lakes take a beating from South Florida humidity. Professional roof washing extends roof life and eliminates those ugly black streaks." },
-      { "title": "Woodmont Rooflines", "description": "Woodmont homeowners protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials." },
-      { "title": "Sabal Palm Area Properties", "description": "Sabal Palm properties benefit from roof washing that improves curb appeal and helps prevent the costly repairs that neglected algae growth can cause." }
+      {
+        "title": "Kings Point Tile Roofs",
+        "description": "Kings Point tile roofs are prone to dark algae streaks. Our soft wash roof cleaning removes Gloeocapsa magma stains and restores your roof's original appearance."
+      },
+      {
+        "title": "Tamarac Lakes Shingle Roofs",
+        "description": "Shingle roofs in Tamarac Lakes take a beating from South Florida humidity. Professional roof washing extends roof life and eliminates those ugly black streaks."
+      },
+      {
+        "title": "Woodmont Rooflines",
+        "description": "Woodmont homeowners protect their investment with roof washing that safely removes moss, algae, and lichen without damaging roofing materials."
+      },
+      {
+        "title": "Sabal Palm Area Properties",
+        "description": "Sabal Palm properties benefit from roof washing that improves curb appeal and helps prevent the costly repairs that neglected algae growth can cause."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "gutter-cleaning",
     "services_near_you": [
-      { "title": "Woodlands Properties", "description": "Woodlands homes sit beneath mature tree canopies that fill gutters fast with leaves and debris. Regular gutter cleaning prevents water damage and foundation issues." },
-      { "title": "Tamarac Village Homes", "description": "Tamarac Village homes surrounded by tropical landscaping need consistent gutter cleaning to keep water flowing properly and away from your foundation." },
-      { "title": "Mainlands Residences", "description": "Clogged gutters in the Mainlands can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed." },
-      { "title": "University Drive Corridor", "description": "Homes along the University Drive corridor depend on clean gutters, especially during South Florida's rainy season when afternoon downpours are relentless." }
+      {
+        "title": "Woodlands Properties",
+        "description": "Woodlands homes sit beneath mature tree canopies that fill gutters fast with leaves and debris. Regular gutter cleaning prevents water damage and foundation issues."
+      },
+      {
+        "title": "Tamarac Village Homes",
+        "description": "Tamarac Village homes surrounded by tropical landscaping need consistent gutter cleaning to keep water flowing properly and away from your foundation."
+      },
+      {
+        "title": "Mainlands Residences",
+        "description": "Clogged gutters in the Mainlands can lead to overflow and landscape erosion. We clear every downspout and gutter run so your system works as designed."
+      },
+      {
+        "title": "University Drive Corridor",
+        "description": "Homes along the University Drive corridor depend on clean gutters, especially during South Florida's rainy season when afternoon downpours are relentless."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "paver-sealing",
     "services_near_you": [
-      { "title": "Colony West Golf Club Area", "description": "Paver driveways and patios near Colony West Golf Club look stunning when freshly sealed. We lock in color and protect against UV fade, oil stains, and weed growth." },
-      { "title": "Kings Point Walkways", "description": "Kings Point residents keep their paver walkways and pool decks looking new with professional sealing that guards against South Florida sun, rain, and heavy foot traffic." },
-      { "title": "Sabal Palm Driveways", "description": "Sabal Palm homeowners invest in paver sealing to prevent shifting, color loss, and weed intrusion. Our professional application delivers long-lasting protection and a rich finish." },
-      { "title": "Woodmont Patios", "description": "Paver patios throughout Woodmont benefit from sealing that enhances color and creates a barrier against mold, mildew, and the constant moisture South Florida delivers." }
+      {
+        "title": "Colony West Golf Club Area",
+        "description": "Paver driveways and patios near Colony West Golf Club look stunning when freshly sealed. We lock in color and protect against UV fade, oil stains, and weed growth."
+      },
+      {
+        "title": "Kings Point Walkways",
+        "description": "Kings Point residents keep their paver walkways and pool decks looking new with professional sealing that guards against South Florida sun, rain, and heavy foot traffic."
+      },
+      {
+        "title": "Sabal Palm Driveways",
+        "description": "Sabal Palm homeowners invest in paver sealing to prevent shifting, color loss, and weed intrusion. Our professional application delivers long-lasting protection and a rich finish."
+      },
+      {
+        "title": "Woodmont Patios",
+        "description": "Paver patios throughout Woodmont benefit from sealing that enhances color and creates a barrier against mold, mildew, and the constant moisture South Florida delivers."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "solar-panel-cleaning",
     "services_near_you": [
-      { "title": "Tamarac Lakes Solar Homes", "description": "Dirty solar panels lose efficiency fast under the South Florida sun. Our RO/DI pure water cleaning restores peak output for Tamarac Lakes homeowners without scratching panels." },
-      { "title": "Mainlands Solar Arrays", "description": "Mainlands residents with rooftop solar panels rely on professional cleaning to remove pollen, bird droppings, and dust that reduce energy production over time." },
-      { "title": "Woodlands Solar Systems", "description": "Woodlands homeowners maximize their solar investment with regular panel cleaning. We use deionized water and soft tools to safely remove every layer of buildup." },
-      { "title": "Commercial Blvd Area", "description": "Commercial and residential solar installations along the Commercial Blvd area perform better after professional cleaning that clears grime without voiding manufacturer warranties." }
+      {
+        "title": "Tamarac Lakes Solar Homes",
+        "description": "Dirty solar panels lose efficiency fast under the South Florida sun. Our RO/DI pure water cleaning restores peak output for Tamarac Lakes homeowners without scratching panels."
+      },
+      {
+        "title": "Mainlands Solar Arrays",
+        "description": "Mainlands residents with rooftop solar panels rely on professional cleaning to remove pollen, bird droppings, and dust that reduce energy production over time."
+      },
+      {
+        "title": "Woodlands Solar Systems",
+        "description": "Woodlands homeowners maximize their solar investment with regular panel cleaning. We use deionized water and soft tools to safely remove every layer of buildup."
+      },
+      {
+        "title": "Commercial Blvd Area",
+        "description": "Commercial and residential solar installations along the Commercial Blvd area perform better after professional cleaning that clears grime without voiding manufacturer warranties."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "screen-cleaning",
     "services_near_you": [
-      { "title": "Kings Point Screen Enclosures", "description": "Kings Point screen enclosures collect pollen, dust, and algae that block airflow and dim natural light. Our screen cleaning restores full visibility and fresh air circulation." },
-      { "title": "Tamarac Village Lanais", "description": "Tamarac Village lanai screens turn green and grimy in South Florida's humid climate. Professional screen cleaning removes buildup without stretching or tearing the mesh." },
-      { "title": "Woodmont Pool Cages", "description": "Woodmont pool cage screens trap dirt, cobwebs, and insect residue that make outdoor spaces feel closed in. We clean every panel so your pool area feels open and bright." },
-      { "title": "Colony West Golf Club Area", "description": "Screen enclosures near Colony West Golf Club catch grass clippings, pollen, and irrigation spray. Our team cleans each screen panel thoroughly for unobstructed views." }
+      {
+        "title": "Kings Point Screen Enclosures",
+        "description": "Kings Point screen enclosures collect pollen, dust, and algae that block airflow and dim natural light. Our screen cleaning restores full visibility and fresh air circulation."
+      },
+      {
+        "title": "Tamarac Village Lanais",
+        "description": "Tamarac Village lanai screens turn green and grimy in South Florida's humid climate. Professional screen cleaning removes buildup without stretching or tearing the mesh."
+      },
+      {
+        "title": "Woodmont Pool Cages",
+        "description": "Woodmont pool cage screens trap dirt, cobwebs, and insect residue that make outdoor spaces feel closed in. We clean every panel so your pool area feels open and bright."
+      },
+      {
+        "title": "Colony West Golf Club Area",
+        "description": "Screen enclosures near Colony West Golf Club catch grass clippings, pollen, and irrigation spray. Our team cleans each screen panel thoroughly for unobstructed views."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "light-fixture-cleaning",
     "services_near_you": [
-      { "title": "Sabal Palm Entryways", "description": "Exterior light fixtures at Sabal Palm homes collect dead insects, cobwebs, and grime that dull their output. Professional cleaning restores full brightness and curb appeal." },
-      { "title": "Tamarac Lakes Outdoor Lighting", "description": "Tamarac Lakes homeowners keep their landscape and porch lighting performing at its best with regular fixture cleaning that clears buildup from lenses and housings." },
-      { "title": "Woodlands Community Fixtures", "description": "Woodlands homes feature outdoor lighting that looks and performs better after professional cleaning. We remove oxidation, dirt, and insect debris from every fixture." },
-      { "title": "Mainlands Porch Lights", "description": "Porch and pathway lights throughout the Mainlands lose brightness as grime accumulates. Our light fixture cleaning restores clarity and helps your home feel welcoming after dark." }
+      {
+        "title": "Sabal Palm Entryways",
+        "description": "Exterior light fixtures at Sabal Palm homes collect dead insects, cobwebs, and grime that dull their output. Professional cleaning restores full brightness and curb appeal."
+      },
+      {
+        "title": "Tamarac Lakes Outdoor Lighting",
+        "description": "Tamarac Lakes homeowners keep their landscape and porch lighting performing at its best with regular fixture cleaning that clears buildup from lenses and housings."
+      },
+      {
+        "title": "Woodlands Community Fixtures",
+        "description": "Woodlands homes feature outdoor lighting that looks and performs better after professional cleaning. We remove oxidation, dirt, and insect debris from every fixture."
+      },
+      {
+        "title": "Mainlands Porch Lights",
+        "description": "Porch and pathway lights throughout the Mainlands lose brightness as grime accumulates. Our light fixture cleaning restores clarity and helps your home feel welcoming after dark."
+      }
     ]
   },
   {
     "city": "tamarac",
     "service": "holiday-lighting",
     "services_near_you": [
-      { "title": "Woodmont Holiday Displays", "description": "Woodmont homeowners light up the season with professional holiday lighting installation. We handle design, setup, and takedown so you enjoy a stunning display without the hassle." },
-      { "title": "Colony West Golf Club Area", "description": "Homes near Colony West Golf Club stand out during the holidays with custom lighting designs installed by our team. Satisfaction guarantees are available on every installation." },
-      { "title": "Kings Point Seasonal Lighting", "description": "Kings Point residents celebrate the holidays with beautifully installed lighting on rooflines, trees, and entryways. We provide full-service installation, maintenance, and removal." },
-      { "title": "Commercial Blvd Area", "description": "Residential and commercial properties along Commercial Blvd make a statement during the holiday season with professional lighting that draws attention and spreads cheer." }
+      {
+        "title": "Woodmont Holiday Displays",
+        "description": "Woodmont homeowners light up the season with professional holiday lighting installation. We handle design, setup, and takedown so you enjoy a stunning display without the hassle."
+      },
+      {
+        "title": "Colony West Golf Club Area",
+        "description": "Homes near Colony West Golf Club stand out during the holidays with custom lighting designs installed by our team. Satisfaction guarantees are available on every installation."
+      },
+      {
+        "title": "Kings Point Seasonal Lighting",
+        "description": "Kings Point residents celebrate the holidays with beautifully installed lighting on rooflines, trees, and entryways. We provide full-service installation, maintenance, and removal."
+      },
+      {
+        "title": "Commercial Blvd Area",
+        "description": "Residential and commercial properties along Commercial Blvd make a statement during the holiday season with professional lighting that draws attention and spreads cheer."
+      }
     ]
   }
 ]

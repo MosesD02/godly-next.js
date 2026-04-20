@@ -20,7 +20,7 @@ export async function generateStaticParams() {
   const services = Object.keys(serviceMetaTitles);
   const cities = Object.keys(citiesMap).filter((c) => c !== "south-florida");
   return services.flatMap((service) =>
-    cities.map((city) => ({ service, city }))
+    cities.map((city) => ({ service, city })),
   );
 }
 

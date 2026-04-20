@@ -23,6 +23,7 @@ import { hallandaleBeach } from "./hallandale-beach";
 import { hillsboroBeach } from "./hillsboro-beach";
 import { hollywood } from "./hollywood";
 import { lauderdaleByTheSea } from "./lauderdale-by-the-sea";
+import { lauderhill } from "./lauderhill";
 import { lighthousePoint } from "./lighthouse-point";
 import { margate } from "./margate";
 import { miramarFl } from "./miramar-fl";
@@ -43,26 +44,27 @@ export const cityServicesData = {
   "coconut-creek": coconutCreek,
   "cooper-city": cooperCity,
   "coral-springs": coralSprings,
-  "davie": davie,
+  davie: davie,
   "deerfield-beach": deerfieldBeach,
   "delray-beach": delrayBeach,
   "fort-lauderdale": fortLauderdale,
   "hallandale-beach": hallandaleBeach,
   "hillsboro-beach": hillsboroBeach,
-  "hollywood": hollywood,
+  hollywood: hollywood,
   "lauderdale-by-the-sea": lauderdaleByTheSea,
+  lauderhill: lauderhill,
   "lighthouse-point": lighthousePoint,
-  "margate": margate,
-  "miramar": miramarFl,
+  margate: margate,
+  miramar: miramarFl,
   "oakland-park": oaklandPark,
-  "parkland": parkland,
+  parkland: parkland,
   "pembroke-pines": pembrokePines,
-  "plantation": plantation,
+  plantation: plantation,
   "pompano-beach": pompanoBeach,
   "royal-palm-beach": royalPalmBeach,
   "southwest-ranches": southwestRanches,
-  "sunrise": sunrise,
-  "tamarac": tamarac,
+  sunrise: sunrise,
+  tamarac: tamarac,
   "west-park": westPark,
-  "weston": weston,
+  weston: weston,
 };

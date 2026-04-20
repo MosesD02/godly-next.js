@@ -1,5 +1,9 @@
 import GodlyHome from "@/godlyComponents/home";
 import { homeTitle, homeDescription } from "@/data/metaTitles";
+import {
+  mainHomepageFaqs,
+  buildHomepageFaqPageNode,
+} from "@/data/homepageFaqData";
 import DynamicMetaTags from "@/components/DynamicMetaTags";
 import JsonLd from "@/lib/jsonLd";
 import { BASE_URL } from "@/app/lib/constants";
@@ -120,7 +124,8 @@ const structuredData = {
             itemOffered: {
               "@type": "Service",
               name: "Pressure Washing",
-              description: "House washing and exterior pressure cleaning services",
+              description:
+                "House washing and exterior pressure cleaning services",
             },
           },
           {
@@ -128,7 +133,8 @@ const structuredData = {
             itemOffered: {
               "@type": "Service",
               name: "Gutter Cleaning",
-              description: "Professional gutter cleaning and maintenance services",
+              description:
+                "Professional gutter cleaning and maintenance services",
             },
           },
         ],
@@ -156,6 +162,7 @@ const structuredData = {
         addressCountry: "US",
       },
     },
+    buildHomepageFaqPageNode(mainHomepageFaqs, BASE_URL),
   ],
 };
 

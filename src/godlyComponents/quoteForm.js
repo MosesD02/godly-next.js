@@ -589,7 +589,7 @@ export default function QuoteForm({ isDialog }) {
                 side="bottom"
                 sideOffset={4}
                 className={cn(
-                  "paper-bg-14 z-200 w-(--radix-popover-trigger-width) max-h-[min(22rem,calc(100vh-6rem))] max-w-[calc(100vw-2rem)] overflow-y-auto border-0 bg-[#AB8459] p-6 shadow-xl",
+                  "paper-bg-14 z-200 max-h-[min(22rem,calc(100vh-6rem))] w-(--radix-popover-trigger-width) max-w-[calc(100vw-2rem)] overflow-y-auto border-0 bg-[#AB8459] p-6 shadow-xl",
                   "md:min-w-[300px] xl:min-w-[335px]",
                 )}
                 onOpenAutoFocus={(e) => e.preventDefault()}

@@ -51,7 +51,8 @@ export const CITY_HERO_COPY = {
     subheading: MAIN_PAGE_HERO_SUBHEADING,
   },
   "HALLANDALE BEACH": {
-    heading: "Reliable Window Washing And Pressure Cleaning In Hallandale Beach",
+    heading:
+      "Reliable Window Washing And Pressure Cleaning In Hallandale Beach",
     subheading:
       "delivering professional window cleaning, house soft washing, paver sealing, driveway washing and more.",
   },
@@ -76,7 +77,8 @@ export const CITY_HERO_COPY = {
       "professional window washing, house soft washing, paver sealing, driveway pressure washing and full exterior care.",
   },
   "LIGHTHOUSE POINT": {
-    heading: "High End Window Cleaning And Pressure Washing In Lighthouse Point",
+    heading:
+      "High End Window Cleaning And Pressure Washing In Lighthouse Point",
     subheading:
       "we handle window washing, exterior home washing, paver sealing, pressure cleaning and more for waterfront homes.",
   },
@@ -91,7 +93,8 @@ export const CITY_HERO_COPY = {
       "from window washing to home exterior cleaning, paver sealing, driveway pressure washing and other services.",
   },
   "OAKLAND PARK": {
-    heading: "Oakland Park's Local Window Washing And Pressure Cleaning Experts",
+    heading:
+      "Oakland Park's Local Window Washing And Pressure Cleaning Experts",
     subheading:
       "count on us for window washing, house soft washing, paver sealing, driveway cleaning and full exterior care.",
   },
@@ -116,7 +119,8 @@ export const CITY_HERO_COPY = {
       "offering window washing, home soft washing, driveway pressure cleaning, paver sealing and a whole lot more.",
   },
   "ROYAL PALM BEACH": {
-    heading: "Professional Window Washing And Exterior Cleaning In Royal Palm Beach",
+    heading:
+      "Professional Window Washing And Exterior Cleaning In Royal Palm Beach",
     subheading:
       "our team handles window cleaning, house washing, paver sealing, pressure washing and other outdoor services.",
   },

@@ -37,7 +37,8 @@ export function isMainLinePhoneDigits(digits) {
 
 export function fireGoogleAdsPhoneConversion() {
   if (!GOOGLE_ADS_CONVERSION_LABEL_PHONE) return;
-  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  if (typeof window === "undefined" || typeof window.gtag !== "function")
+    return;
   window.gtag("event", "conversion", {
     send_to: `${GOOGLE_ADS_ID}/${GOOGLE_ADS_CONVERSION_LABEL_PHONE}`,
   });
@@ -45,7 +46,8 @@ export function fireGoogleAdsPhoneConversion() {
 
 export function fireGoogleAdsFormConversion() {
   if (!GOOGLE_ADS_CONVERSION_LABEL_FORM) return;
-  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  if (typeof window === "undefined" || typeof window.gtag !== "function")
+    return;
   window.gtag("event", "conversion", {
     send_to: `${GOOGLE_ADS_ID}/${GOOGLE_ADS_CONVERSION_LABEL_FORM}`,
     value: 1.0,

@@ -19,7 +19,8 @@ const TamaracCta = () => {
           Expert Window & Exterior Cleaning in Tamarac
         </h2>
         <p className="mb-8 text-lg text-white md:text-xl">
-          Whether you&apos;re in Woodmont, Westwood, or along Commercial Boulevard—{" "}
+          Whether you&apos;re in Woodmont, Westwood, or along Commercial
+          Boulevard—{" "}
           <Link
             href="https://godlywindows.com/"
             className="underline decoration-current decoration-solid transition-colors hover:text-[#FDE4C8]"

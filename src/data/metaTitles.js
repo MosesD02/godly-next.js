@@ -283,6 +283,8 @@ export const serviceMetaTitles = {
   "window-cleaning": "Window Cleaning",
   "soft-washing": "Soft Washing",
   "holiday-lighting": "Holiday Lighting",
+  "post-construction-window-cleaning": "Post-Construction Window Cleaning",
+  "rain-shield-tech": "Rain Shield Tech",
 };
 
 function capitalizeString(str) {
@@ -386,6 +388,10 @@ const serviceDescriptions = {
     "Soft washing in {location}. Safe low-pressure cleaning for roofs, siding & exteriors. Custom blends & satisfaction guarantee.",
   "holiday-lighting":
     "Holiday & Christmas lighting in {location}. Design, install, LED lights, maintenance & removal. Professional display—stress-free season.",
+  "post-construction-window-cleaning":
+    "Post-construction window cleaning in {location}. Remove stucco, paint & construction residue with pro tools & RO/DI water. Move-in ready finish.",
+  "rain-shield-tech":
+    "Rain Shield hydrophobic coating in {location}. Repels water, dirt & salt on glass—extends clarity between cleanings. Ask about quarterly plans.",
 };
 
 // Generate SEO-optimized meta description for service pages
@@ -505,6 +511,8 @@ export const generateServiceHeroAlt = (serviceSlug, cityName) => {
     "window-cleaning": `professional window cleaning in ${location}`,
     "soft-washing": `soft washing service in ${location}`,
     "holiday-lighting": `holiday and Christmas lighting installation in ${location}`,
+    "post-construction-window-cleaning": `post-construction window cleaning in ${location}`,
+    "rain-shield-tech": `Rain Shield hydrophobic glass coating in ${location}`,
   };
 
   return (

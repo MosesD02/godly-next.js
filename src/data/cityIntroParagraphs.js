@@ -32,7 +32,6 @@ export const cityIntroParagraphs = {
 
   margate: `Godly Windows serves Margate and the surrounding Fort Lauderdale area. From window cleaning to house washing, we handle every job with care. Call (954) 852-5326 for a free estimate.`,
 
-
   miramar: `Godly Windows serves Miramar and the surrounding Weston area. Whether it's window cleaning, pressure washing, or paver sealing, our team gets it done right. Call (954) 738-3421.`,
 
   "oakland-park": `We serve homeowners throughout Oakland Park and the greater Fort Lauderdale area. Locally owned, fully insured, and 5-star rated. Call (954) 852-5326 for a free estimate.`,

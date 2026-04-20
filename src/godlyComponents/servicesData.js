@@ -108,4 +108,18 @@ export const servicesData = [
     description:
       "Clean, sand, and seal your driveway/parking lot to protect against oils and other damaging elements.",
   },
+  {
+    name: "Post-Construction Window Cleaning",
+    icon: <WindowIcon />,
+    link: "post-construction-window-cleaning",
+    description:
+      "Pro-grade scraping and RO/DI purified water to remove stucco, paint, and construction residue — move-in ready every time.",
+  },
+  {
+    name: "Rain Shield Tech",
+    icon: <WindowIcon />,
+    link: "rain-shield-tech",
+    description:
+      "Hydrophobic glass coating applied during cleaning that repels water, dirt, and salt — included free with our quarterly plan.",
+  },
 ];

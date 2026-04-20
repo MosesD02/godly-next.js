@@ -55,7 +55,10 @@ const CitiesPopup = ({ open, onOpenChange }) => {
                   let url;
                   if (isServicePage) {
                     url = `/${cityName}/${segments[2]}`;
-                  } else if (firstSegment === "blog" || firstSegment === "blogs") {
+                  } else if (
+                    firstSegment === "blog" ||
+                    firstSegment === "blogs"
+                  ) {
                     url = `/blog/${cityName}`;
                   } else {
                     url = `/${cityName}`;

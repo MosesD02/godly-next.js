@@ -8,9 +8,7 @@ export default function RelatedBlogPosts({ posts, city, citySlug }) {
 
   const displayedPosts = posts.slice(0, 2);
   const listCitySlug =
-    city ??
-    citySlug ??
-    displayedPosts.find((p) => p.citySlug)?.citySlug;
+    city ?? citySlug ?? displayedPosts.find((p) => p.citySlug)?.citySlug;
   const blogHref = listCitySlug ? `/blog/${listCitySlug}` : "/blog";
 
   return (

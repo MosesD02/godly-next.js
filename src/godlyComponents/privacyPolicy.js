@@ -91,8 +91,8 @@ const PrivacyPolicy = () => {
                 purposes. We only share data with third parties when it is
                 strictly necessary to deliver our service and only under binding
                 agreements that ensure confidentiality. Under no circumstances
-                will mobile data be shared or sold for advertising or promotional
-                use.
+                will mobile data be shared or sold for advertising or
+                promotional use.
               </li>
               <li className="list-disc">
                 We may only disclose information if required by law or to

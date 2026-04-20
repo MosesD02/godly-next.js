@@ -15,7 +15,9 @@ const heroWebp = join(root, "public/assets/new-hero.webp");
 
 async function main() {
   if (!existsSync(heroJpg)) {
-    console.log("optimize-static-assets: no public/assets/new-hero.jpeg — skip");
+    console.log(
+      "optimize-static-assets: no public/assets/new-hero.jpeg — skip",
+    );
     return;
   }
 

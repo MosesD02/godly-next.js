@@ -26,14 +26,11 @@ function firstPathSegment(pathname) {
  */
 export function getCitySlugForServiceLinks(pathname, contextCityDisplayName) {
   const fallback =
-    Object.keys(citiesMap).find((key) => citiesMap[key] === contextCityDisplayName) ||
-    "south-florida";
+    Object.keys(citiesMap).find(
+      (key) => citiesMap[key] === contextCityDisplayName,
+    ) || "south-florida";
   const first = firstPathSegment(pathname);
-  if (
-    first &&
-    !RESERVED_TOP_LEVEL_SEGMENTS.has(first) &&
-    citiesMap[first]
-  ) {
+  if (first && !RESERVED_TOP_LEVEL_SEGMENTS.has(first) && citiesMap[first]) {
     return first;
   }
   return fallback;

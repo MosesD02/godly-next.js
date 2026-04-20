@@ -296,6 +296,7 @@ const chooseUsData = {
       description: "If you're not happy, we'll make it right.",
     },
   ],
+  // Why Choose Us — SHARED for window cleaning (City Page Rewrite Guide v2: 15, 14, 15, 19 words)
   "window-cleaning": [
     {
       name: "Trained Professionals",
@@ -307,19 +308,19 @@ const chooseUsData = {
       name: "Fully Insured & Equipped",
       svg: toolboxSvg,
       description:
-        "Professional poles, ladders, and tools for homes and businesses—safely reaching every window we service.",
+        "Professional poles, ladders, and gear for homes and businesses—safely reaching every window we serve.",
     },
     {
       name: "Purified Water & Smart Finishes",
       svg: leafSvg,
       description:
-        "Zero-TDS rinses and optional Rain Shield help your windows stay cleaner longer without harsh residue.",
+        "Zero-TDS rinses plus optional Rain Shield help your windows stay cleaner longer without harsh residue.",
     },
     {
       name: "7-Day Sparkle Guarantee",
       svg: badgeSvg,
       description:
-        "Storm, pet, or bird mess within a week? We come back and make it right—your satisfaction is the standard.",
+        "Storm, pet, or bird mess within a week? We come back and make it right—your satisfaction stays the standard.",
     },
   ],
   "soft-washing": [
@@ -372,6 +373,58 @@ const chooseUsData = {
       svg: badgeSvg,
       description:
         "24-hour maintenance during the season and full takedown when the holidays end—hands-free for you.",
+    },
+  ],
+  "post-construction-window-cleaning": [
+    {
+      name: "Trained Professionals",
+      svg: shieldSvg,
+      description:
+        "Expert technicians trained to remove construction residue safely without scratching glass, frames, or finishes.",
+    },
+    {
+      name: "Fully Insured & Equipped",
+      svg: toolboxSvg,
+      description:
+        "Professional poles, ladders, and scraping tools for homes, high-rises, and new builds—safely every time.",
+    },
+    {
+      name: "Safe on All Window Types",
+      svg: leafSvg,
+      description:
+        "From impact glass to tinted and low-E windows, our process is gentle and completely safe for every type.",
+    },
+    {
+      name: "Builder-Ready Finish Guarantee",
+      svg: badgeSvg,
+      description:
+        "If you spot any residue after we leave, we come back and make it right—no questions asked, every time.",
+    },
+  ],
+  "rain-shield-tech": [
+    {
+      name: "Trained Rain Shield Technicians",
+      svg: shieldSvg,
+      description:
+        "Certified technicians apply Rain Shield with consistent technique for even coverage and maximum long-term performance.",
+    },
+    {
+      name: "Premium Hydrophobic Formula",
+      svg: toolboxSvg,
+      description:
+        "We use a pro-grade hydrophobic formula that outperforms consumer products by repelling water, dirt, and salt.",
+    },
+    {
+      name: "Safe on All Window Types",
+      svg: leafSvg,
+      description:
+        "From impact glass to tinted and low-E windows, the coating is safe and effective on every pane type.",
+    },
+    {
+      name: "Free With Quarterly Plan",
+      svg: badgeSvg,
+      description:
+        "Rain Shield comes included free on every service with our quarterly plan—plus occasional seasonal promotions throughout the year.",
     },
   ],
 };

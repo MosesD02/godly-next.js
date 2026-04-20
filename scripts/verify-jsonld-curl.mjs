@@ -17,7 +17,9 @@ const scriptRe =
 
 async function check(path) {
   const url = `${base.replace(/\/$/, "")}${path}`;
-  const res = await fetch(url, { headers: { "User-Agent": "JSON-LD-verify/1.0" } });
+  const res = await fetch(url, {
+    headers: { "User-Agent": "JSON-LD-verify/1.0" },
+  });
   const html = await res.text();
   const scripts = [...html.matchAll(scriptRe)];
 

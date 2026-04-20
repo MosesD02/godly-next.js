@@ -106,7 +106,10 @@ const Services = ({ cityName: city, citySlug }) => {
             ) : city === "ROYAL PALM BEACH" ? (
               <>Your full-service exterior cleaning team in Royal Palm Beach.</>
             ) : (
-              <>Godly can clean nearly all components of <br />your home or building&apos;s exterior.</>
+              <>
+                Godly can clean nearly all components of <br />
+                your home or building&apos;s exterior.
+              </>
             )}
           </p>
         </div>
@@ -396,8 +399,9 @@ const Services = ({ cityName: city, citySlug }) => {
                   >
                     Christmas light installation in Deerfield Beach
                   </Link>{" "}
-                  that&apos;s safe and stylish. We set up outdoor lights and décor
-                  that transform your space—without ladders, hassle, or delay.
+                  that&apos;s safe and stylish. We set up outdoor lights and
+                  décor that transform your space—without ladders, hassle, or
+                  delay.
                 </>
               ) : city === "HOLLYWOOD" ? (
                 <>
@@ -454,9 +458,9 @@ const Services = ({ cityName: city, citySlug }) => {
                   >
                     Christmas light installation in Oakland Park
                   </Link>{" "}
-                  that&apos;s professional and stress-free. We handle outdoor holiday
-                  lighting and décor—no ladders, no hassle, just brilliant
-                  results for your home or business.
+                  that&apos;s professional and stress-free. We handle outdoor
+                  holiday lighting and décor—no ladders, no hassle, just
+                  brilliant results for your home or business.
                 </>
               ) : city === "WESTON" ? (
                 <>

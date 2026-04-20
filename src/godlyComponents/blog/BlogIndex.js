@@ -99,7 +99,7 @@ export default function BlogIndex({
       <div className="mt-14 flex flex-col bg-[#262424] px-[35px] py-[100px] md:mt-17 md:p-16 md:py-[70px]">
         <div className="mx-auto flex w-full max-w-[1311px] flex-col items-center gap-2">
           <h1
-            className="trim text-center leading-[100%] text-[50px] text-[#FDE4C8] md:text-[96px]"
+            className="trim text-center text-[50px] leading-[100%] text-[#FDE4C8] md:text-[96px]"
             style={{ textShadow: "4px 0px 0px #AF8F6E" }}
           >
             {cityName ? `${cityName} resources` : "Godly resources"}
@@ -152,7 +152,9 @@ export default function BlogIndex({
                 </div>
                 <div className="w-full md:w-1/2">
                   <p className="mb-1 font-['satoshi-light'] text-lg text-gray-500">
-                    {posts[0].publishedAt ? format(new Date(posts[0].publishedAt), "MMMM d, yyyy") : ""}
+                    {posts[0].publishedAt
+                      ? format(new Date(posts[0].publishedAt), "MMMM d, yyyy")
+                      : ""}
                   </p>
                   <h2 className="mb-4 text-[36px] font-semibold text-gray-800">
                     {posts[0].title}
@@ -177,11 +179,13 @@ export default function BlogIndex({
             </div>
             <div className="flex flex-col gap-[24px] px-[30px] py-[52px] md:hidden">
               <div className="flex w-full flex-col gap-3">
-                <h2 className="trim leading-[100%] text-[32px] font-semibold text-[#312E2C]">
+                <h2 className="trim text-[32px] leading-[100%] font-semibold text-[#312E2C]">
                   {posts[0].title}
                 </h2>
                 <p className="font-['satoshi-light'] text-sm leading-[16px] text-[#373A44]">
-                  {posts[0].publishedAt ? format(new Date(posts[0].publishedAt), "MMMM d, yyyy") : ""}
+                  {posts[0].publishedAt
+                    ? format(new Date(posts[0].publishedAt), "MMMM d, yyyy")
+                    : ""}
                 </p>
                 <Link
                   href={blogPostHref(posts[0].slug)}
@@ -232,11 +236,14 @@ export default function BlogIndex({
                 className="flex flex-col gap-3"
               >
                 <p className="font-['satoshi-light'] text-base text-[#373A44]">
-                  {posts[0].publishedAt ? format(new Date(posts[0].publishedAt), "MMMM d, yyyy") : ""}
+                  {posts[0].publishedAt
+                    ? format(new Date(posts[0].publishedAt), "MMMM d, yyyy")
+                    : ""}
                 </p>
-                <h3 
+                <h3
                   title={posts[0].title}
-                className="text-2xl leading-snug font-bold text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-4xl">
+                  className="text-2xl leading-snug font-bold text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-4xl"
+                >
                   {posts[0].title}
                 </h3>
                 <span className="font-['satoshi-medium'] text-sm text-[#AF8F6E] underline">
@@ -258,7 +265,7 @@ export default function BlogIndex({
                 .map((post) => (
                   <div key={post.slug} className="flex flex-col gap-3">
                     <Link
-                    title={post.title}
+                      title={post.title}
                       href={blogPostHref(post.slug)}
                       className="flex flex-col gap-3"
                     >
@@ -276,7 +283,9 @@ export default function BlogIndex({
                         />
                       </div>
                       <p className="font-['satoshi-light'] text-base text-[#373A44] md:mt-2 md:text-[24px]">
-                        {post.publishedAt ? format(new Date(post.publishedAt), "MMMM d, yyyy") : ""}
+                        {post.publishedAt
+                          ? format(new Date(post.publishedAt), "MMMM d, yyyy")
+                          : ""}
                       </p>
                       <p
                         className="text-xl leading-snug font-bold text-[#373A44] md:mt-1 md:text-[28px]"

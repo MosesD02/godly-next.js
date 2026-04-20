@@ -11,15 +11,20 @@
  */
 export const LEAD_WEBHOOKS = {
   /** /landing - All landing city pages (/landing/fort-lauderdale, /landing/boca-raton, /landing/[service]/[city], etc.) */
-  GOOGLE_ADS: "https://removedfast.app.n8n.cloud/webhook/72feec39-8655-40da-8886-52a44f21fe5a",
+  GOOGLE_ADS:
+    "https://removedfast.app.n8n.cloud/webhook/72feec39-8655-40da-8886-52a44f21fe5a",
   /** Fort Lauderdale GBP city pages */
-  FORT_LAUDERDALE: "https://removedfast.app.n8n.cloud/webhook/8567e870-bc81-4461-9b42-41900d6e9607",
+  FORT_LAUDERDALE:
+    "https://removedfast.app.n8n.cloud/webhook/8567e870-bc81-4461-9b42-41900d6e9607",
   /** Boca Raton GBP city pages */
-  BOCA_RATON: "https://removedfast.app.n8n.cloud/webhook/7f5ca51a-6c0b-476a-8acd-5fb642eb7529",
+  BOCA_RATON:
+    "https://removedfast.app.n8n.cloud/webhook/7f5ca51a-6c0b-476a-8acd-5fb642eb7529",
   /** Weston GBP city pages */
-  WESTON: "https://removedfast.app.n8n.cloud/webhook/cfd84135-65a6-4fcf-803d-22706be9b73e",
+  WESTON:
+    "https://removedfast.app.n8n.cloud/webhook/cfd84135-65a6-4fcf-803d-22706be9b73e",
   /** / (homepage) - Main website contact form */
-  MAIN_WEBSITE: "https://removedfast.app.n8n.cloud/webhook/85e43544-463b-4464-8409-4a235f297d26",
+  MAIN_WEBSITE:
+    "https://removedfast.app.n8n.cloud/webhook/85e43544-463b-4464-8409-4a235f297d26",
 };
 
 /**

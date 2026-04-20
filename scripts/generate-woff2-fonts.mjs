@@ -27,7 +27,9 @@ async function main() {
   const fontFiles = entries.filter((f) => /\.(otf|ttf)$/i.test(f));
 
   if (fontFiles.length === 0) {
-    console.log("generate-woff2-fonts: no .otf/.ttf in src/assets/fonts — skip");
+    console.log(
+      "generate-woff2-fonts: no .otf/.ttf in src/assets/fonts — skip",
+    );
     return;
   }
 

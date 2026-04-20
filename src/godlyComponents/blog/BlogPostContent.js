@@ -12,7 +12,11 @@ const components = {
   types: {
     image: ({ value }) => {
       if (!value?.asset) return null;
-      const imageUrl = urlFor(value).width(1600).quality(90).auto("format").url();
+      const imageUrl = urlFor(value)
+        .width(1600)
+        .quality(90)
+        .auto("format")
+        .url();
       const blurDataURL = sanityLqipToBlurDataURL(value?.asset?.metadata?.lqip);
       const alt = value.alt || "";
       return (

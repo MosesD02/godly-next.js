@@ -13,7 +13,13 @@ const fs = require("fs");
 const path = require("path");
 
 const CONTENT_DIR = path.join(__dirname, "..", "content");
-const OUTPUT_DIR = path.join(__dirname, "..", "src", "data", "cityServicesData");
+const OUTPUT_DIR = path.join(
+  __dirname,
+  "..",
+  "src",
+  "data",
+  "cityServicesData",
+);
 const INDEX_FILE = path.join(OUTPUT_DIR, "index.js");
 
 const JSON_FILES = [
@@ -69,7 +75,8 @@ function getCitySlug(entry) {
 function getServiceSlug(entry) {
   if (entry.service_slug) return entry.service_slug;
   const service = entry.service || "";
-  if (service.includes("-") && service === service.toLowerCase()) return service;
+  if (service.includes("-") && service === service.toLowerCase())
+    return service;
   return slugify(service);
 }
 
@@ -153,7 +160,11 @@ function getFaqs(entry) {
  * Extract services_near_you items
  */
 function getNearYou(entry) {
-  if (!Array.isArray(entry.services_near_you) || entry.services_near_you.length === 0) return null;
+  if (
+    !Array.isArray(entry.services_near_you) ||
+    entry.services_near_you.length === 0
+  )
+    return null;
   return entry.services_near_you.map((item) => ({
     title: item.title,
     text: item.description,
@@ -168,11 +179,14 @@ function getLocalCta(entry) {
   // batch-3: final_cta.body
   if (entry.final_cta && entry.final_cta.body) return entry.final_cta.body;
   // batch-4: cta_section.description
-  if (entry.cta_section && entry.cta_section.description) return entry.cta_section.description;
+  if (entry.cta_section && entry.cta_section.description)
+    return entry.cta_section.description;
   // final-batch: no explicit CTA — build one from hero subheadline
   if (entry.hero && entry.hero.subheadline) {
     const cityName = entry.city || entry.city_slug || "";
-    const displayCity = cityName.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+    const displayCity = cityName
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase());
     return `${displayCity} homeowners trust us for professional results. Book your free estimate today.`;
   }
   return null;

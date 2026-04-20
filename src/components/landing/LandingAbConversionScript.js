@@ -3,8 +3,7 @@
 import Script from "next/script";
 import { usePathname } from "next/navigation";
 
-const INLINE =
-  `
+const INLINE = `
   (function () {
     const params = new URLSearchParams(window.location.search);
     const utms = {};
