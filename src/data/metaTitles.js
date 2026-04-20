@@ -6,6 +6,20 @@ import { BASE_URL } from "@/app/lib/constants";
 /** Cities with a real physical office — LocalBusiness JSON-LD on `/[city]`; others use Service. */
 export const PHYSICAL_OFFICE_CITY_SLUGS = new Set(["boca-raton", "weston"]);
 
+/**
+ * City landing pages that render LocalBusiness + AggregateRating.
+ * Includes the two real-office cities plus high-priority service-area cities
+ * where we want Google star ratings to appear.
+ */
+const CITY_LANDING_LOCALBUSINESS_SLUGS = new Set([
+  "boca-raton",
+  "weston",
+  "fort-lauderdale",
+  "parkland",
+  "coral-springs",
+  "pompano-beach",
+]);
+
 export function citySlugHasPhysicalOffice(citySlug) {
   return PHYSICAL_OFFICE_CITY_SLUGS.has(citySlug);
 }
@@ -218,7 +232,7 @@ export function generateCitySchema(citySlug) {
   const cityName = capitalizeString(citiesMap[citySlug]);
   const phone = getPhoneForCity(citySlug);
 
-  if (citySlugHasPhysicalOffice(citySlug)) {
+  if (CITY_LANDING_LOCALBUSINESS_SLUGS.has(citySlug)) {
     return {
       "@context": "https://schema.org",
       "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],

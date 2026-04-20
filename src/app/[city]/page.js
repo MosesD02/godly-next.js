@@ -6,6 +6,7 @@ import {
   generateCityDescription,
   generateCitySchema,
 } from "@/data/metaTitles";
+import { cityServicesData } from "@/data/cityServicesData/index";
 import JsonLd from "@/lib/jsonLd";
 import { BASE_URL } from "@/app/lib/constants";
 
@@ -63,13 +64,45 @@ export default async function Page({ params }) {
   if (!citiesMap[city]) {
     notFound();
   }
+
+  const cityDisplayName = citiesMap[city] ?? city;
   const schemaMarkup = generateCitySchema(city);
+
+  const breadcrumb = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: cityDisplayName,
+        item: `${BASE_URL}/${city}`,
+      },
+    ],
+  };
+
+  const cityFaqs = cityServicesData[city]?.["window-cleaning"]?.faqs ?? [];
+
+  const graphItems = [schemaMarkup, breadcrumb].filter(Boolean);
+  if (cityFaqs.length > 0) {
+    graphItems.push({
+      "@type": "FAQPage",
+      mainEntity: cityFaqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      })),
+    });
+  }
+
+  const graph = {
+    "@context": "https://schema.org",
+    "@graph": graphItems,
+  };
 
   return (
     <>
-      {schemaMarkup && (
-        <JsonLd id="city-structured-data" data={schemaMarkup} />
-      )}
+      <JsonLd id="city-structured-data" data={graph} />
       <GodlyHome city={city} />
     </>
   );
