@@ -10,6 +10,7 @@ import Cap from "@/assets/santaCap.webp";
 import Santa from "@/assets/santa.webp";
 import Link from "next/link";
 import { citiesMap } from "@/data/cities";
+import { titleCaseCityName } from "@/lib/utils";
 
 import { servicesData } from "./servicesData";
 
@@ -191,7 +192,9 @@ const Services = ({ cityName: city, citySlug }) => {
                     alt=""
                     className="absolute top-1/2 left-0 z-10 w-[calc(100%+32px)] -translate-y-1/2"
                   />
-                  <p className="relative z-20 mx-2 -rotate-5 pb-0.5">{city}</p>
+                  <p className="relative z-20 mx-2 -rotate-5 pb-0.5 uppercase">
+                    {titleCaseCityName(city)}
+                  </p>
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ import near3 from "@/assets/near3.webp";
 import near4 from "@/assets/near4.webp";
 import near5 from "@/assets/near5.webp";
 import Services from "@/data/servicesData";
-import { cn } from "@/lib/utils";
+import { cn, titleCaseCityName } from "@/lib/utils";
 import { generateServiceSectionHeadings } from "@/data/metaTitles";
 
 const taglines = {
@@ -171,8 +171,8 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
                 }}
               >
                 Near You
-                <span className="mt-1.5 inline-flex text-left font-['marlton'] text-[8px] tracking-[1px] text-[#FDE4C8] md:mb-2 md:max-w-23.5 md:text-base md:tracking-[2px]">
-                  {cityName}
+                <span className="mt-1.5 inline-flex text-left font-['marlton'] text-[8px] tracking-[1px] text-[#FDE4C8] uppercase md:mb-2 md:max-w-23.5 md:text-base md:tracking-[2px]">
+                  {titleCaseCityName(cityName)}
                 </span>
               </div>
             </>

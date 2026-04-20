@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "@/components/Image";
 import WebsiteLayout from "../websiteLayout";
 import { format } from "date-fns";
+import { titleCaseCityName } from "@/lib/utils";
 
 /** Individual posts always live at `/blog/[slug]` (single dynamic segment). */
 function blogPostHref(slug) {
@@ -102,7 +103,14 @@ export default function BlogIndex({
             className="trim text-center text-[50px] leading-[100%] text-[#FDE4C8] md:text-[96px]"
             style={{ textShadow: "4px 0px 0px #AF8F6E" }}
           >
-            {cityName ? `${cityName} resources` : "Godly resources"}
+            {cityName ? (
+              <>
+                <span className="uppercase">{titleCaseCityName(cityName)}</span>{" "}
+                resources
+              </>
+            ) : (
+              "Godly resources"
+            )}
           </h1>
           <div className="flex flex-col gap-0.5">
             <div className="h-px w-85 bg-white md:w-165.5" />
@@ -110,7 +118,12 @@ export default function BlogIndex({
           </div>
           <p className="text-center font-['satoshi-light'] text-xs text-[#FFFFFF94] md:font-['satoshi-regular'] md:text-[24px]">
             Expert tips on keeping your{" "}
-            {cityName ? `${cityName}` : "South Florida"} property spotless.
+            {cityName ? (
+              <span className="uppercase">{titleCaseCityName(cityName)}</span>
+            ) : (
+              "South Florida"
+            )}{" "}
+            property spotless.
           </p>
         </div>
       </div>

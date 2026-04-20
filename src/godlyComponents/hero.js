@@ -5,6 +5,7 @@ import "@/styles/fourstepprocess.css";
 import QuoteForm from "./quoteForm";
 import { generateHomeH1, generateCityHeroAlt } from "@/data/metaTitles";
 import { getCityHeroContent } from "@/data/cityHeroCopy";
+import { titleCaseCityName } from "@/lib/utils";
 
 const Hero = ({ cityName: city }) => {
   const cityContent = getCityHeroContent(city);
@@ -100,14 +101,16 @@ const Hero = ({ cityName: city }) => {
               <span className="font-marlton trim shrink-0 text-4xl leading-[1.1] font-normal tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]">
                 In
               </span>
-              {(city || "SOUTH FLORIDA").split(" ").map((word) => (
-                <span
-                  key={word}
-                  className="font-marlton trim shrink-0 text-4xl leading-[1.1] font-normal tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]"
-                >
-                  {word}
-                </span>
-              ))}
+              {titleCaseCityName(city || "SOUTH FLORIDA")
+                .split(" ")
+                .map((word) => (
+                  <span
+                    key={word}
+                    className="font-marlton trim shrink-0 text-4xl uppercase leading-[1.1] font-normal tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]"
+                  >
+                    {word}
+                  </span>
+                ))}
             </div>
           )}
           <p className="font-['satoshi-regular'] text-sm font-medium text-white md:text-base xl:text-xl">

@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { cn } from "@/lib/utils";
+import { cn, titleCaseCityName } from "@/lib/utils";
 
 const Faq = ({ faqs, serviceName, cityName }) => {
   if (!faqs || faqs.length === 0) return null;
@@ -21,12 +21,12 @@ const Faq = ({ faqs, serviceName, cityName }) => {
         className="flex w-full max-w-4xl flex-col"
         style={{ alignItems: "center", justifyContent: "center" }}
       >
-        <h2
+        <div
           className="text-grain bg-[#191717]! text-[32px] font-black tracking-wide md:text-8xl"
           data-text="FREQUENTLY"
         >
           FREQUENTLY
-        </h2>
+        </div>
         <h3 className="text-[24px] font-semibold tracking-wide text-[#191717] md:text-2xl">
           <span>ASKED</span>{" "}
           <span
@@ -38,7 +38,11 @@ const Faq = ({ faqs, serviceName, cityName }) => {
         </h3>
         {(serviceName || cityName) && (
           <p className="mt-2 text-center font-['satoshi-regular'] text-sm text-[#2D2B2B] md:text-base">
-            {[serviceName, cityName].filter(Boolean).join(" · ")}
+            {serviceName}
+            {serviceName && cityName && " · "}
+            {cityName && (
+              <span className="uppercase">{titleCaseCityName(cityName)}</span>
+            )}
           </p>
         )}
 

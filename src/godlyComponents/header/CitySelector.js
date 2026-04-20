@@ -4,6 +4,7 @@
 import React from "react";
 import { MapPinHouse, ChevronDown } from "lucide-react";
 import { useGodlyContext } from "@/context/godlyContext";
+import { titleCaseCityName } from "@/lib/utils";
 
 const CitySelector = ({ onClick, isMobile = false }) => {
   const { city } = useGodlyContext();
@@ -15,8 +16,8 @@ const CitySelector = ({ onClick, isMobile = false }) => {
         className="flex items-center gap-1 text-sm text-[#FDE4C8] hover:text-[#FFCA8F] xl:text-base"
       >
         <MapPinHouse strokeWidth={1.2} size={18} />
-        <div className="border-b border-solid border-[#FDE4C8] font-sans text-xs font-semibold">
-          {city}
+        <div className="border-b border-solid border-[#FDE4C8] font-sans text-xs font-semibold uppercase">
+          {titleCaseCityName(city)}
         </div>{" "}
         <ChevronDown size={18} />
       </button>
@@ -30,8 +31,8 @@ const CitySelector = ({ onClick, isMobile = false }) => {
       className="flex items-end gap-1 text-sm text-[#FDE4C8] hover:text-[#FFCA8F] xl:text-base"
     >
       <MapPinHouse strokeWidth={1.2} size={18} />
-      <div className="border-b border-solid border-[#FDE4C8] font-sans text-xs font-semibold">
-        {city}
+      <div className="border-b border-solid border-[#FDE4C8] font-sans text-xs font-semibold uppercase">
+        {titleCaseCityName(city)}
       </div>{" "}
       <span>
         <ChevronDown size={18} />

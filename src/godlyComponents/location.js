@@ -15,12 +15,12 @@ const Location = ({ city }) => {
         >
           PROUDLY SERVING
         </div>
-        <h2
+        <div
           className="text-grain trim bg-white! text-[32px] font-normal tracking-[3.2px] md:text-[64px] md:tracking-wider"
           data-text="THESE TOWNS"
         >
           THESE TOWNS
-        </h2>
+        </div>
         <div
           className="text-grain trim md:t-0 bg-white! text-[32px] font-normal tracking-wider md:text-2xl"
           data-text="IN SOUTH "
