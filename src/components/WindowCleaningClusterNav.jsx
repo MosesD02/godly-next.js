@@ -6,9 +6,9 @@ import { windowClusterPath } from "@/data/windowCleaningCluster";
 import { generateServiceHeroAlt } from "@/data/metaTitles";
 import "@/styles/fourstepprocess.css";
 
-import service2 from "@/assets/serviceData/service2.webp";
+import windowCleaningHero from "@/assets/serviceData/window-cleaning.webp";
 import service3 from "@/assets/serviceData/service3.webp";
-import service5 from "@/assets/serviceData/service5.webp";
+import postConstructionHero from "@/assets/serviceData/post-construction.webp";
 import service7 from "@/assets/serviceData/service7.webp";
 
 const LINKS = [
@@ -16,7 +16,7 @@ const LINKS = [
     slug: "window-cleaning",
     label: "Window cleaning",
     blurb: "Full overview — residential & commercial",
-    image: service2,
+    image: windowCleaningHero,
   },
   {
     slug: "interior-window-cleaning",
@@ -34,7 +34,7 @@ const LINKS = [
     slug: "post-construction-window-cleaning",
     label: "Post-construction window cleaning",
     blurb: "Builders, punch lists & new builds",
-    image: service5,
+    image: postConstructionHero,
   },
 ];
 

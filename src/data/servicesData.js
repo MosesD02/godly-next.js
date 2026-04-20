@@ -1,5 +1,7 @@
 import service1 from "@/assets/serviceData/service1.webp";
-import service2 from "@/assets/serviceData/service2.webp";
+import windowCleaningHero from "@/assets/serviceData/window-cleaning.webp";
+import postConstructionHero from "@/assets/serviceData/post-construction.webp";
+import rainShieldHero from "@/assets/serviceData/rain-shield.webp";
 import service3 from "@/assets/serviceData/service3.webp";
 import service4 from "@/assets/serviceData/service4.webp";
 import service5 from "@/assets/serviceData/service5.webp";
@@ -97,7 +99,7 @@ const Services = {
     hero: [
       "Exterior Window",
       "Cleaning",
-      service2,
+      service7,
       (city) =>
         `Outside glass in ${city} catches salt mist, pollen showers, and sprinkler overspray long before you notice it from indoors. Our exterior-only crews work ladders, poles, and purified rinses to scrub outdoor panes, sun-facing sliders, and patio doors—without crossing your threshold. Every job ends with a streak-free RO/DI finish and our money-back promise.`,
     ],
@@ -805,7 +807,7 @@ const Services = {
     hero: [
       "Window",
       "Cleaning",
-      service2,
+      windowCleaningHero,
       (city) =>
         `Think of this as the hub for every window need in ${city}: storefronts, waterfront homes, and HOAs that want one vendor who can scale. We coordinate interior crews, exterior-only routes, and post-construction punch-list teams so you are never steered to the wrong specialty page. Hand-scrubbed glass, RO/DI rinses, optional Rain Shield, and our 7-day sparkle guarantee still anchor every scope.`,
     ],
@@ -1066,7 +1068,7 @@ const Services = {
     hero: [
       "Post-Construction",
       "Window Cleaning",
-      service2,
+      postConstructionHero,
       (city) =>
         `Builders and remodelers across ${city} bring us in when silicone tags, stucco spatter, and protective film are still stuck to glass days before certificate of occupancy. This service is tuned for job-site schedules—not routine residential maintenance—with scraping, solvent-safe detailing, and a final purified rinse so punch lists photograph clean for owners and inspectors.`,
     ],
@@ -1153,7 +1155,7 @@ const Services = {
     hero: [
       "Rain Shield",
       "Tech",
-      service2,
+      rainShieldHero,
       (city) =>
         `Rain, salt spray, and sprinkler minerals don't stand a chance against Rain Shield in ${city}. Our hydrophobic glass coating makes water bead and roll off, carrying dirt with it. The result: windows that stay cleaner longer, backed by our Rain Shield performance guarantee.`,
     ],

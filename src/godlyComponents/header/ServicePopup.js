@@ -118,6 +118,20 @@ const services = [
     description:
       "Pet slobber, fingerprints, and so much more can leave residue that is tricky to get off.",
   },
+  {
+    name: "Post-Construction Window Cleaning",
+    link: "post-construction-window-cleaning",
+    image: exteriorWindow,
+    description:
+      "Pro-grade scraping and RO/DI purified water to remove stucco, paint, and construction residue — move-in ready every time.",
+  },
+  {
+    name: "Rain Shield Tech",
+    link: "rain-shield-tech",
+    image: exteriorWindow,
+    description:
+      "Hydrophobic glass coating applied during cleaning that repels water, dirt, and salt — included free with our quarterly plan.",
+  },
 ];
 
 const ServicePopup = ({ open, onOpenChange }) => {
@@ -143,7 +157,7 @@ const ServicePopup = ({ open, onOpenChange }) => {
           {services.map((service, index) => (
             <Link
               href={`/${cityKey}/${service.link}`}
-              key={index}
+              key={service.link}
               className={cn(
                 "group border-b-[1.5px] border-[#8d8477] hover:bg-[#2D2B2B] active:bg-[#2D2B2B]",
                 index % 1 === 0 ? "md:mx-5" : "",
