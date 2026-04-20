@@ -307,9 +307,9 @@ function Story() {
           }}
         >
           We want to ‘reverse time’ back to when you{" "}
-          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Trusted</span> the
-          people working on your home or Business. Back to when the standard was
-          to do exactly what you said you&apos;d do, rather than using it as
+          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Trusted</span>{" "}
+          the people working on your home or Business. Back to when the standard
+          was to do exactly what you said you&apos;d do, rather than using it as
           merely a{" "}
           <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Guideline </span>.
         </p>

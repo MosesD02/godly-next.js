@@ -19,6 +19,7 @@ import { usePathname } from "next/navigation";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
 import { fireGoogleAdsFormConversion } from "@/lib/googleAdsConversions";
+import { fireMetaPixelLead } from "@/lib/metaPixel";
 
 const servicesList = [
   { id: "exterior-window-cleaning", name: "Exterior Window Cleaning" },
@@ -431,6 +432,8 @@ export default function QuoteForm({ isDialog }) {
         fireGoogleAdsFormConversion();
       }
 
+      fireMetaPixelLead();
+
       setSubmitStatus("success");
       setShowSuccessDialog(true);
 
@@ -510,8 +513,8 @@ export default function QuoteForm({ isDialog }) {
         </div>
 
         <div className="grid grid-cols-1 gap-4 px-12 py-8 md:grid-cols-6 md:grid-rows-2 xl:grid-cols-12">
-          <div className="md:col-span-2 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
+          <div className="min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
+            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
               Name
             </label>
             <Input
@@ -523,8 +526,8 @@ export default function QuoteForm({ isDialog }) {
               required
             />
           </div>
-          <div className="md:col-span-2 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
+          <div className="min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
+            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
               Email
             </label>
             <Input
@@ -537,29 +540,26 @@ export default function QuoteForm({ isDialog }) {
               required
             />
           </div>
-          <div className="relative md:col-span-2 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
+          <div className="relative min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
+            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
               Phone Number
             </label>
-            <div className="absolute top-1/2 left-0 -translate-y-[calc(50%-8px)] text-base md:-translate-y-[calc(50%-2px)] md:text-xl xl:-translate-y-[calc(50%-4px)] xl:text-2xl">
-              +1
+            <div className="relative">
+              <div className="absolute top-1/2 left-0 -translate-y-[calc(50%-8px)] text-base md:-translate-y-[calc(50%-2px)] md:text-xl xl:-translate-y-[calc(50%-4px)] xl:text-2xl">
+                +1
+              </div>
+              <Input
+                name="phone"
+                placeholder="YOUR PHONE NUMBER"
+                value={formData.phone}
+                onChange={handleChange}
+                className="ml-4 rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:ml-6 md:text-xl xl:ml-6 xl:text-2xl"
+                required
+              />
             </div>
-            <Input
-              name="phone"
-              placeholder="YOUR PHONE NUMBER"
-              value={formData.phone}
-              onChange={handleChange}
-              className="ml-4 rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:ml-6 md:text-xl xl:ml-6 xl:text-2xl"
-              required
-            />
           </div>
-          <div
-            className={cn(
-              "relative md:col-span-3 xl:col-span-5",
-              isDialog ? "md:col-span-3" : "",
-            )}
-          >
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
+          <div className="relative min-w-0 md:col-span-3 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-5">
+            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
               What services do you need?
             </label>
             <Popover open={showServices} onOpenChange={setShowServices}>
@@ -621,18 +621,13 @@ export default function QuoteForm({ isDialog }) {
             </Popover>
           </div>
 
-          <div
-            className={cn(
-              "flex flex-col justify-between md:col-span-2 xl:col-span-4",
-              isDialog ? "md:col-span-2" : "",
-            )}
-          >
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
+          <div className="min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
+            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
               When do you need the work done by?
             </label>
             <Popover>
               <PopoverTrigger asChild>
-                <button className="text-lef2 flex w-full items-center border-b border-black bg-transparent pb-2 text-base focus:outline-none md:text-xl xl:text-2xl">
+                <button className="flex w-full items-center border-b border-black bg-transparent pb-2 text-left text-base focus:outline-none md:text-xl xl:text-2xl">
                   {date ? (
                     format(date, "MM / dd / yyyy")
                   ) : (
@@ -688,8 +683,8 @@ export default function QuoteForm({ isDialog }) {
             </Popover>
           </div>
 
-          <div className="md:col-span-1 xl:col-span-3">
-            <label className="mb-1 block w-full pb-3 font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
+          <div className="min-w-0 md:col-span-1 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-3">
+            <label className="mb-1 block w-full font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
               Zip Code
             </label>
             <Input
@@ -697,7 +692,7 @@ export default function QuoteForm({ isDialog }) {
               placeholder="YOUR ZIP CODE"
               value={formData.zipcode}
               onChange={handleChange}
-              className="w-full rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+              className="w-full min-w-0 rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
               required
             />
           </div>

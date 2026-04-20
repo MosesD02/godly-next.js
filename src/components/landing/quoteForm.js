@@ -9,6 +9,7 @@ import QuoteButton from "@/components/quoteButton";
 import Airtable from "airtable";
 import { cn } from "@/lib/utils";
 import { fireGoogleAdsFormConversion } from "@/lib/googleAdsConversions";
+import { fireMetaPixelLead } from "@/lib/metaPixel";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
 
@@ -248,6 +249,8 @@ export default function QuoteForm({
 
         fireGoogleAdsFormConversion();
       }
+
+      fireMetaPixelLead();
 
       setSubmitStatus("success");
       setShowSuccessDialog(true);
