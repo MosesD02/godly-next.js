@@ -11,6 +11,7 @@ import {
   getCityAreaServedSchema,
   getSameAsForCitySlug,
   businessOpeningHoursSpecification,
+  citySlugHasPhysicalOffice,
 } from "@/data/metaTitles";
 import { getRelatedBlogPosts } from "@/data/sanity-content";
 import Services from "@/data/servicesData";
@@ -92,26 +93,35 @@ export default async function GodlyServices({ params }) {
   const pageUrl = `${BASE_URL}/${city}/${slug}`;
   const cityUrl = `${BASE_URL}/${city}`;
 
-  const localBusiness = {
-    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-    "@id": `${pageUrl}#localbusiness`,
-    name: "Godly Windows & Wash Co.",
-    image: `${BASE_URL}/favicon.svg`,
-    url: pageUrl,
-    telephone: getPhoneForCity(city),
-    description: generateServiceDescription(slug, cityName),
-    address: getOfficePostalAddressForCitySlug(city),
-    geo: getOfficeGeoForCitySlug(city),
-    openingHoursSpecification: businessOpeningHoursSpecification,
-    priceRange: "$$",
-    sameAs: getSameAsForCitySlug(city),
-    areaServed: getCityAreaServedSchema(city),
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: "157",
-    },
-  };
+  const primarySchema = citySlugHasPhysicalOffice(city)
+    ? {
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+        "@id": `${pageUrl}#localbusiness`,
+        name: "Godly Windows & Wash Co.",
+        image: `${BASE_URL}/favicon.svg`,
+        url: pageUrl,
+        telephone: getPhoneForCity(city),
+        description: generateServiceDescription(slug, cityName),
+        address: getOfficePostalAddressForCitySlug(city),
+        geo: getOfficeGeoForCitySlug(city),
+        openingHoursSpecification: businessOpeningHoursSpecification,
+        priceRange: "$$",
+        sameAs: getSameAsForCitySlug(city),
+        areaServed: getCityAreaServedSchema(city),
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5",
+          reviewCount: "157",
+        },
+      }
+    : {
+        "@type": "Service",
+        "@id": `${pageUrl}#service`,
+        name: `${serviceLabel} in ${cityName || city}`,
+        provider: { "@id": `${BASE_URL}/#localbusiness` },
+        areaServed: getCityAreaServedSchema(city),
+        url: pageUrl,
+      };
 
   const breadcrumbList = {
     "@type": "BreadcrumbList",
@@ -139,7 +149,7 @@ export default async function GodlyServices({ params }) {
 
   const graph = {
     "@context": "https://schema.org",
-    "@graph": [localBusiness, breadcrumbList],
+    "@graph": [primarySchema, breadcrumbList],
   };
 
   if (cityData.faqs?.length > 0) {

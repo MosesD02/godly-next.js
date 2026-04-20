@@ -145,6 +145,7 @@ export default async function BlogPostRoute({ params, searchParams }) {
       description,
       datePublished,
       dateModified,
+      image: post.image || `${BASE_URL}/blog/${post.slug}/opengraph-image`,
       author: org,
       publisher: { ...org },
       url: pageUrl,
