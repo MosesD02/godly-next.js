@@ -12,18 +12,36 @@ import Faq from "./faq";
 import LocalCta from "./localCta";
 import CitySync from "./CitySync";
 
-export default function ServicesPage({ slug, city, cityName, cityData = {}, relatedPosts }) {
+export default function ServicesPage({
+  slug,
+  city,
+  cityName,
+  cityData = {},
+  relatedPosts,
+}) {
   return (
     <WebsiteLayout>
       <CitySync city={city} />
-      <ServicesHero slug={slug} heroOverride={cityData.hero} cityName={cityName} />
+      <ServicesHero
+        slug={slug}
+        heroOverride={cityData.hero}
+        cityName={cityName}
+      />
       <ServiceIncludes
         slug={slug}
         cityName={cityName}
         includedOverride={cityData.included}
       />
-      <EssentialService slug={slug} essentialOverride={cityData.essential} cityName={cityName} />
-      <ServiceNearYou slug={slug} nearYouOverride={cityData.nearYou} cityName={cityName} />
+      <EssentialService
+        slug={slug}
+        essentialOverride={cityData.essential}
+        cityName={cityName}
+      />
+      <ServiceNearYou
+        slug={slug}
+        nearYouOverride={cityData.nearYou}
+        cityName={cityName}
+      />
       <ChooseUs slug={slug} />
       <Faq
         faqs={cityData.faqs}

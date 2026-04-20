@@ -514,7 +514,7 @@ export default function QuoteForm({ isDialog }) {
 
         <div className="grid grid-cols-1 gap-4 px-12 py-8 md:grid-cols-6 md:grid-rows-2 xl:grid-cols-12">
           <div className="min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
+            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
               Name
             </label>
             <Input
@@ -527,7 +527,7 @@ export default function QuoteForm({ isDialog }) {
             />
           </div>
           <div className="min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
+            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
               Email
             </label>
             <Input
@@ -541,7 +541,7 @@ export default function QuoteForm({ isDialog }) {
             />
           </div>
           <div className="relative min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
+            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
               Phone Number
             </label>
             <div className="relative">
@@ -559,7 +559,7 @@ export default function QuoteForm({ isDialog }) {
             </div>
           </div>
           <div className="relative min-w-0 md:col-span-3 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-5">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
+            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
               What services do you need?
             </label>
             <Popover open={showServices} onOpenChange={setShowServices}>
@@ -622,7 +622,7 @@ export default function QuoteForm({ isDialog }) {
           </div>
 
           <div className="min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
+            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
               When do you need the work done by?
             </label>
             <Popover>
@@ -684,7 +684,7 @@ export default function QuoteForm({ isDialog }) {
           </div>
 
           <div className="min-w-0 md:col-span-1 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-3">
-            <label className="mb-1 block w-full font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:leading-snug md:self-end xl:text-base">
+            <label className="mb-1 block w-full font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
               Zip Code
             </label>
             <Input

@@ -16,7 +16,7 @@ const Hero = ({ cityName: city }) => {
           src="/assets/new-hero.jpeg"
           alt={generateCityHeroAlt(city)}
           fill
-          className="object-cover object-center md:object-[center_60%]"
+          className="object-cover object-center md:object-[center_60%] lg:object-[center_100%] xl:object-[center_60%]"
           priority
           sizes="100vw"
         />
