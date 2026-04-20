@@ -12,8 +12,8 @@ export default function BlogPostPage({ post, basePath = "/blog" }) {
   return (
     <WebsiteLayout>
       <BlogCitySync citySlug={post.citySlug} targetCity={post.targetCity} />
-      <article className="mt-17 flex w-full flex-col bg-[#fef7ea] px-[30px] py-[45px] text-[#312E2C] md:mt-14 md:px-16 md:py-16">
-        <div className="mx-auto flex w-full max-w-[800px] flex-col">
+      <article className="mt-17 flex w-full flex-col bg-[#fef7ea] px-7.5 py-11.25 text-[#312E2C] md:mt-14 md:p-16">
+        <div className="mx-auto flex w-full max-w-200 flex-col">
           <nav className="mb-6">
             <Link
               href={basePath}

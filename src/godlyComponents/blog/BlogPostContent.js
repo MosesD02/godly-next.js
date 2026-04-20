@@ -78,7 +78,7 @@ const components = {
       </h3>
     ),
     normal: ({ children }) => (
-      <p className="font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+      <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
         {children}
       </p>
     ),

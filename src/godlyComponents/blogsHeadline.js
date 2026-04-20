@@ -6,14 +6,14 @@ import windowCleaning from "@/assets/windowCleaning.webp";
 const BlogsHeadline = () => {
   return (
     <>
-      <div className="hidden bg-[#fdf6ed] pt-[40px] md:block md:px-12">
-        <div className="mx-auto flex max-w-[1311px] flex-col items-start gap-8 border-black pb-6 md:flex-row">
+      <div className="hidden bg-[#fdf6ed] pt-10 md:block md:px-12">
+        <div className="mx-auto flex max-w-327.75 flex-col items-start gap-8 border-black pb-6 md:flex-row">
           <div className="w-full md:w-1/2">
             <div className="border-8 border-[#6A64641F] shadow-md">
               <Image
                 src={windowCleaning} // Make sure to place the image in /public folder
                 alt="Workers cleaning windows"
-                className="h-auto w-[650px] object-cover"
+                className="h-auto w-162.5 object-cover"
               />
             </div>
           </div>
@@ -24,7 +24,7 @@ const BlogsHeadline = () => {
             <h2 className="mb-4 text-[36px] font-semibold text-gray-800">
               NEWS HEADLINE
             </h2>
-            <p className="mb-4 [display:-webkit-box] h-[10] overflow-hidden font-['satoshi-light'] text-[20px] leading-[31px] text-gray-800 [-webkit-box-orient:vertical] [-webkit-line-clamp:9]">
+            <p className="mb-4 line-clamp-9 h-[10] font-['satoshi-light'] text-[20px] leading-7.75 text-gray-800">
               We aspire to transport you back to a time when trust was the
               cornerstone of every relationship, particularly within the realms
               of your home and business. Picture an era where commitments were
@@ -48,27 +48,27 @@ const BlogsHeadline = () => {
         </div>
         <div className="flex flex-col gap-0.5">
           <div className="h-px w-[full] bg-black" />
-          <div className="h-[3px] w-[full] bg-black" />
+          <div className="h-0.75 w-[full] bg-black" />
         </div>
       </div>
-      <div className="flex flex-col gap-[24px] bg-[#fdf6ed] px-[30px] py-[52px] md:hidden">
+      <div className="flex flex-col gap-6 bg-[#fdf6ed] px-7.5 py-13 md:hidden">
         <div className="flex w-full flex-col gap-3">
           <h2 className="trim text-[32px] leading-[100%] font-semibold text-[#312E2C]">
             NEWS HEADLINE
           </h2>
-          <p className="font-['satoshi-light'] text-sm leading-[16px] text-[#373A44]">
+          <p className="font-['satoshi-light'] text-sm leading-4 text-[#373A44]">
             Just a short while ago, exactly 10 minutes ago.
           </p>
           <div className="flex w-fit items-center justify-center border-6 border-[#6A64641F] shadow-md">
             <Image
               src={windowCleaning} // Make sure to place the image in /public folder
               alt="Workers cleaning windows"
-              className="h-auto w-[334px] object-cover"
+              className="h-auto w-83.5 object-cover"
             />
           </div>
         </div>
         <div>
-          <p className="line-clamp-8 font-['satoshi-light'] text-xl leading-[26px] text-[#312E2C]">
+          <p className="line-clamp-8 font-['satoshi-light'] text-xl leading-6.5 text-[#312E2C]">
             We aspire to transport you back to a time when trust was the
             cornerstone of every relationship, particularly within the realms of
             your home and business. Picture an era where commitments were not
@@ -86,14 +86,14 @@ const BlogsHeadline = () => {
         <div>
           <Link
             href="/blog/1"
-            className="flex w-full justify-end text-end text-xl leading-[24px] text-[#003953]"
+            className="flex w-full justify-end text-end text-xl leading-6 text-[#003953]"
           >
             READ MORE
           </Link>
         </div>
         <div className="flex flex-col gap-0.5">
           <div className="h-px w-[full] bg-black" />
-          <div className="h-[3px] w-[full] bg-black" />
+          <div className="h-0.75 w-[full] bg-black" />
         </div>
       </div>
     </>

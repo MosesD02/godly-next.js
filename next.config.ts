@@ -67,6 +67,97 @@ const nextConfig: NextConfig = {
         destination: "/:city/window-cleaning",
         permanent: true,
       },
+      // Blog: legacy Sanity slugs with duplicated city segments (-fl-city or -city-city) → canonical slug
+      {
+        source: "/blog/house-washing-coconut-creek-fl-coconut-creek",
+        destination: "/blog/house-washing-coconut-creek",
+        permanent: true,
+      },
+      {
+        source: "/blog/house-washing-cooper-city-fl-cooper-city",
+        destination: "/blog/house-washing-cooper-city",
+        permanent: true,
+      },
+      {
+        source: "/blog/house-washing-coral-springs-fl-coral-springs",
+        destination: "/blog/house-washing-coral-springs",
+        permanent: true,
+      },
+      {
+        source: "/blog/house-washing-deerfield-beach-fl-deerfield-beach",
+        destination: "/blog/house-washing-deerfield-beach",
+        permanent: true,
+      },
+      {
+        source: "/blog/house-washing-fort-lauderdale-fort-lauderdale",
+        destination: "/blog/house-washing-fort-lauderdale",
+        permanent: true,
+      },
+      {
+        source: "/blog/house-washing-hollywood-fl-hollywood",
+        destination: "/blog/house-washing-hollywood",
+        permanent: true,
+      },
+      {
+        source: "/blog/paver-sealing-pompano-beach-fl-pompano-beach",
+        destination: "/blog/paver-sealing-pompano-beach",
+        permanent: true,
+      },
+      {
+        source: "/blog/pressure-washing-fort-lauderdale-fort-lauderdale",
+        destination: "/blog/pressure-washing-fort-lauderdale",
+        permanent: true,
+      },
+      {
+        source: "/blog/pressure-washing-weston-weston",
+        destination: "/blog/pressure-washing-weston",
+        permanent: true,
+      },
+      {
+        source: "/blog/roof-cleaning-coconut-creek-fl-coconut-creek",
+        destination: "/blog/roof-cleaning-coconut-creek",
+        permanent: true,
+      },
+      {
+        source: "/blog/roof-cleaning-cooper-city-fl-cooper-city",
+        destination: "/blog/roof-cleaning-cooper-city",
+        permanent: true,
+      },
+      {
+        source: "/blog/roof-cleaning-coral-springs-fl-coral-springs",
+        destination: "/blog/roof-cleaning-coral-springs",
+        permanent: true,
+      },
+      {
+        source: "/blog/soft-wash-tamarac-tamarac",
+        destination: "/blog/soft-wash-tamarac",
+        permanent: true,
+      },
+      {
+        source: "/blog/window-cleaning-coconut-creek-fl-coconut-creek",
+        destination: "/blog/window-cleaning-coconut-creek",
+        permanent: true,
+      },
+      {
+        source: "/blog/window-cleaning-cooper-city-fl-cooper-city",
+        destination: "/blog/window-cleaning-cooper-city",
+        permanent: true,
+      },
+      {
+        source: "/blog/window-cleaning-coral-springs-fl-coral-springs",
+        destination: "/blog/window-cleaning-coral-springs",
+        permanent: true,
+      },
+      {
+        source: "/blog/window-cleaning-davie-fl-davie",
+        destination: "/blog/window-cleaning-davie",
+        permanent: true,
+      },
+      {
+        source: "/blog/window-cleaning-weston-weston",
+        destination: "/blog/window-cleaning-weston",
+        permanent: true,
+      },
     ];
   },
 

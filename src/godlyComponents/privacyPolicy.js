@@ -4,7 +4,7 @@ import WebsiteLayout from "./websiteLayout";
 const PrivacyPolicy = () => {
   return (
     <WebsiteLayout>
-      <div className="mt-17 flex w-full flex-col items-center justify-center bg-[#fef7ea] px-[30px] py-[45px] text-[#312E2C] md:mt-14 md:p-16">
+      <div className="mt-17 flex w-full flex-col items-center justify-center bg-[#fef7ea] px-7.5 py-11.25 text-[#312E2C] md:mt-14 md:p-16">
         <div className="flex max-w-4xl flex-col items-start justify-center gap-6 border-b-4 border-double border-black pb-8">
           {/* Header Section */}
           <div className="flex w-full flex-col gap-3 border-b-2 border-solid border-black pb-6">
@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
 
           {/* Introduction */}
           <div className="w-full">
-            <p className="font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               At Godly Windows & Wash Co., we are committed to respecting and
               protecting your privacy. This Privacy Policy outlines how we
               collect, use, and store your information when you engage with our
@@ -39,10 +39,10 @@ const PrivacyPolicy = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               1. Information We Collect
             </h2>
-            <p className="mb-4 font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <p className="mb-4 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               We may collect the following types of information:
             </p>
-            <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               <li className="list-disc">
                 <strong>Personal Information</strong> – such as your name, email
                 address, phone number, and service address when you contact us,
@@ -61,10 +61,10 @@ const PrivacyPolicy = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               2. How We Use Your Information
             </h2>
-            <p className="mb-4 font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <p className="mb-4 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               We use the information we collect to:
             </p>
-            <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               <li className="list-disc">Deliver and improve our services.</li>
               <li className="list-disc">
                 Respond to your inquiries or support requests.
@@ -84,7 +84,7 @@ const PrivacyPolicy = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               3. Data Sharing and Selling
             </h2>
-            <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               <li className="list-disc">
                 We do not sell or share mobile or personal data with third
                 parties, affiliates, or partners for marketing or promotional
@@ -106,7 +106,7 @@ const PrivacyPolicy = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               4. Data Storage and Security
             </h2>
-            <p className="font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               Your data is stored securely using industry-standard security
               practices and encryption where applicable. We restrict access to
               your information to authorized personnel only.
@@ -118,10 +118,10 @@ const PrivacyPolicy = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               5. Your Rights
             </h2>
-            <p className="mb-4 font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <p className="mb-4 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               You have the right to:
             </p>
-            <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               <li className="list-disc">
                 Access the personal information we hold about you.
               </li>
@@ -130,7 +130,7 @@ const PrivacyPolicy = () => {
               </li>
               <li className="list-disc">Opt out of future communications.</li>
             </ul>
-            <p className="mt-4 font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <p className="mt-4 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               To request any of the above, contact us using the email below.
             </p>
           </div>
@@ -140,11 +140,11 @@ const PrivacyPolicy = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               6. Contact Us
             </h2>
-            <p className="mb-2 font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <p className="mb-2 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               If you have questions about this policy or would like to request
               changes to your personal data, please contact:
             </p>
-            <p className="font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               <strong>Email:</strong>{" "}
               <a
                 href="mailto:hello@godlywindows.com"
@@ -160,7 +160,7 @@ const PrivacyPolicy = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               7. Policy Updates
             </h2>
-            <p className="font-['satoshi-light'] text-lg leading-relaxed text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
               We may update this Privacy Policy periodically. Any changes will
               be posted on this page with the updated effective date above.
             </p>

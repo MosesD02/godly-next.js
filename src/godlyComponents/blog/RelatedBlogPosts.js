@@ -12,8 +12,8 @@ export default function RelatedBlogPosts({ posts, city, citySlug }) {
   const blogHref = listCitySlug ? `/blog/${listCitySlug}` : "/blog";
 
   return (
-    <section className="bg-[#fdf6ed] px-[30px] py-[60px] md:px-12 md:py-[80px]">
-      <div className="mx-auto max-w-[1100px]">
+    <section className="bg-[#fdf6ed] px-7.5 py-15 md:px-12 md:py-20">
+      <div className="mx-auto max-w-275">
         <div className="mb-10 flex items-end justify-between gap-4">
           <div className="flex flex-col gap-1">
             <span className="font-['marlton'] text-sm tracking-[2.5px] text-[#AF8F6E]">
@@ -56,10 +56,10 @@ export default function RelatedBlogPosts({ posts, city, citySlug }) {
               <p className="font-['satoshi-light'] text-sm text-[#6A6464]">
                 {format(new Date(post.publishedAt), "MMMM d, yyyy")}
               </p>
-              <h3 className="text-xl leading-snug font-bold text-[#312E2C] transition-colors group-hover:text-[#AF8F6E]">
+              <h3 className="text-xl/snug  font-bold text-[#312E2C] transition-colors group-hover:text-[#AF8F6E]">
                 {post.title}
               </h3>
-              <p className="line-clamp-3 font-['satoshi-light'] text-sm leading-relaxed text-[#6A6464]">
+              <p className="line-clamp-3 font-['satoshi-light'] text-sm/relaxed  text-[#6A6464]">
                 {post.excerpt}
               </p>
               <span className="font-['satoshi-regular'] text-sm text-[#003953] group-hover:underline">

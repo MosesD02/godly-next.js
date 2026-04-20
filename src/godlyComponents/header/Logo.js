@@ -11,7 +11,7 @@ const Logo = () => {
         <Image
           src={logo}
           alt="Logo"
-          className="header-logo h-[30px] w-[60px] md:h-[42.542px] md:w-[88.344px]"
+          className="header-logo h-7.5 w-15 md:h-[42.542px] md:w-[88.344px]"
           priority
           width={88}
           height={43}

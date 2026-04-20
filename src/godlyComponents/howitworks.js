@@ -31,7 +31,7 @@ const HowItWorks = () => {
   return (
     <div
       id="process"
-      className="paper-bg-16 flex flex-col items-center justify-items-center gap-[70px] bg-[#ebded1] bg-cover bg-center bg-no-repeat px-[30px] py-[100px] bg-blend-multiply md:gap-0 md:p-16 md:pb-24"
+      className="paper-bg-16 flex flex-col items-center justify-items-center gap-17.5 bg-[#ebded1] bg-cover bg-center bg-no-repeat px-7.5 py-25 bg-blend-multiply md:gap-0 md:p-16 md:pb-24"
     >
       <div className="flex flex-col items-center justify-center">
         <h2
@@ -48,7 +48,7 @@ const HowItWorks = () => {
         </h3>
       </div>
       <div
-        className="text-white md:pt-16 md:pb-16"
+        className="text-white md:py-16 "
         // style={{ marginTop: "1rem", marginBottom: "3rem" }}
       >
         <div className="relative z-10 flex flex-wrap justify-center gap-6 sm:gap-2 md:gap-4 md:px-8">

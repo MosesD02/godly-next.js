@@ -24,10 +24,10 @@ const ServiceIncludes = ({ slug, cityName, includedOverride }) => {
   return (
     <div
       id="promise"
-      className="flex flex-col items-center justify-items-center gap-[55px] bg-[#FDE4C8] bg-cover bg-center bg-no-repeat px-[30px] py-[100px] bg-blend-multiply md:gap-16 md:px-[24px] md:py-[100px]"
+      className="flex flex-col items-center justify-items-center gap-13.75 bg-[#FDE4C8] bg-cover bg-center bg-no-repeat px-7.5 py-25 bg-blend-multiply md:gap-16 md:px-6 md:py-25"
       style={{ backgroundImage: `url(${background.src})` }}
     >
-      <div className="md:w-full md:max-w-[854px] md:py-10">
+      <div className="md:w-full md:max-w-213.5 md:py-10">
         <h2 className="sr-only">{headings.h2WhatIncluded}</h2>
         <div className="trim m-0 w-full p-0 text-center text-[36px] leading-tight font-normal tracking-wide text-[#191717] before:inset-0 md:text-[64px] md:leading-tight">
           <span className="text-grain bg-[#191717]!" data-text="WHAT'S">
@@ -51,17 +51,17 @@ const ServiceIncludes = ({ slug, cityName, includedOverride }) => {
         </div>
       </div>
 
-      <div className="grid w-full max-w-[1126px] grid-cols-2 flex-wrap justify-center gap-3 md:flex md:flex-wrap lg:pb-12">
+      <div className="grid w-full max-w-281.5 grid-cols-2 flex-wrap justify-center gap-3 md:flex md:flex-wrap lg:pb-12">
         {steps.map((step, index) => {
           const isActive = activeCard === index;
           return (
             <div
               key={index}
               className={cn(
-                `paper-bg-16 group min-h-[250px] w-full rounded-sm bg-[#312E2C] bg-size-[auto_10rem] bg-top-right p-2 sm:min-h-[270px] sm:p-3 md:min-h-[290px] md:max-w-[272px]`,
+                `paper-bg-16 group min-h-62.5 w-full rounded-sm bg-[#312E2C] bg-size-[auto_10rem] bg-top-right p-2 sm:min-h-67.5 sm:p-3 md:min-h-72.5 md:max-w-68`,
                 isActive ? "bg-transparent" : "",
                 "hover:bg-transparent",
-                steps.length === 5 && "md:max-w-[367px]",
+                steps.length === 5 && "md:max-w-91.75",
                 index === steps.length - 1 &&
                   steps.length % 2 === 1 &&
                   "last:col-span-2",
@@ -70,14 +70,14 @@ const ServiceIncludes = ({ slug, cityName, includedOverride }) => {
             >
               <div
                 className={cn(
-                  "relative z-10 flex h-full w-full flex-col items-center justify-between rounded-md border-[#564839] p-3 text-white md:p-6",
+                  "relative z-10 flex size-full  flex-col items-center justify-between rounded-md border-[#564839] p-3 text-white md:p-6",
                   isActive
                     ? "border border-dashed border-[#6A6464] text-[#2D2B2B]"
                     : "",
                   "group-hover:border group-hover:border-dashed group-hover:border-[#6A6464] group-hover:text-[#2D2B2B]",
                 )}
               >
-                <div className="flex flex-col items-center justify-center gap-[32px]">
+                <div className="flex flex-col items-center justify-center gap-8">
                   <div className="text-center text-base font-normal">
                     <span className="trim">{step.number}</span>
                   </div>

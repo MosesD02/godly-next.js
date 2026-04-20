@@ -35,7 +35,7 @@ const CitiesPopup = ({ open, onOpenChange }) => {
       </DialogHeader>
       <DialogContent
         hideCloseButton
-        className="paper-bg-16 md:py- z-100 overflow-y-auto border-none bg-[#fff9f3] p-4 md:top-[207px] md:max-w-[1045px] md:px-2"
+        className="paper-bg-16 md:py- z-100 overflow-y-auto border-none bg-[#fff9f3] p-4 md:top-51.75 md:max-w-261.25 md:px-2"
       >
         <div className="xs:grid-cols-2 grid max-h-[calc(100vh-256px)] w-full grid-cols-2 gap-1 gap-y-4 sm:grid-cols-3 md:max-h-[calc(100vh-128px)] md:grid-cols-4 lg:grid-cols-4">
           {Object.keys(citiesMap)
@@ -45,7 +45,7 @@ const CitiesPopup = ({ open, onOpenChange }) => {
                 key={index}
                 className={cn(
                   "group flex cursor-pointer flex-col gap-1 border-b border-[#8d8477] py-1 transition-all hover:bg-[#2D2B2B] active:bg-[#2D2B2B]",
-                  index % 1 === 0 ? "md:mx-[20px]" : "",
+                  index % 1 === 0 ? "md:mx-5" : "",
                   activeIndex === index ? "bg-[#2D2B2B]" : "",
                 )}
                 onClick={() => {
@@ -81,7 +81,7 @@ const CitiesPopup = ({ open, onOpenChange }) => {
                   />
                   <h3
                     className={cn(
-                      "text-xs leading-tight font-normal text-[#2D2B2B] group-hover:text-[#FDE4C8] group-active:text-[#FDE4C8]",
+                      "text-xs/tight  font-normal text-[#2D2B2B] group-hover:text-[#FDE4C8] group-active:text-[#FDE4C8]",
                       activeIndex === index ? "text-[#FDE4C8]" : "",
                     )}
                   >

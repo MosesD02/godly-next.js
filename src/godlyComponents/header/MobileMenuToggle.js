@@ -6,7 +6,7 @@ const MobileMenuToggle = ({ isOpen, onClick, hidden }) => {
   return (
     <button
       className={cn(
-        "flex size-[28px] items-center justify-center rounded-full text-[#FDE4C8] lg:hidden",
+        "flex size-7 items-center justify-center rounded-full text-[#FDE4C8] lg:hidden",
         isOpen ? "mb-4 bg-[#FDE4C8] text-black" : "",
         hidden ? "hidden" : "block",
       )}
@@ -17,7 +17,7 @@ const MobileMenuToggle = ({ isOpen, onClick, hidden }) => {
       {isOpen ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="size-[28px]"
+          className="size-7"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -32,7 +32,7 @@ const MobileMenuToggle = ({ isOpen, onClick, hidden }) => {
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
+          className="size-6 "
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

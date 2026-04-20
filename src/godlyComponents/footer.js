@@ -68,7 +68,7 @@ const Footer = () => {
 
   return (
     <div className="paper-bg-16 bg-[#262424]">
-      <div className="flex flex-col items-center justify-center pt-[30px] text-white">
+      <div className="flex flex-col items-center justify-center pt-7.5 text-white">
         <div className="flex flex-col items-center justify-center">
           <div className="trim text-center text-[64px] leading-none text-white">
             CITIES
@@ -87,7 +87,7 @@ const Footer = () => {
             SERVE
           </div>
         </div>
-        <div className="grid grid-cols-2 px-4 py-[60px] md:grid-cols-4">
+        <div className="grid grid-cols-2 px-4 py-15 md:grid-cols-4">
           {citiesData.map((city, index) => (
             <Link
               key={index}
@@ -127,7 +127,7 @@ const Footer = () => {
               const phone = getPhoneNumber("BOCA RATON");
               return (
                 <div className="flex flex-col items-center gap-4 text-center">
-                  <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
+                  <p className="max-w-150 text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
                     Whether you&apos;re in{" "}
                     <span className="font-['satoshi-bold'] text-[#FDE4C8]">
                       Royal Palm Yacht & Country Club
@@ -164,7 +164,7 @@ const Footer = () => {
               const phone = getPhoneNumber("WESTON");
               return (
                 <div className="flex flex-col items-center gap-4 text-center">
-                  <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
+                  <p className="max-w-150 text-center font-['satoshi-regular'] text-lg leading-[140%] text-white/90 md:text-xl lg:text-[22px]">
                     Whether you&apos;re in{" "}
                     <span className="font-['satoshi-bold'] text-[#FDE4C8]">
                       Weston Hills
@@ -342,10 +342,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="paper-bg-16 w-full flex-col bg-[#262424] md:flex">
-        <div className="item-center mx-auto flex w-full max-w-[1440px] flex-col justify-start gap-10 px-6 py-[48px] md:px-[40px]">
+        <div className="item-center mx-auto flex w-full max-w-360 flex-col justify-start gap-10 px-6 py-12 md:px-10">
           <div
             className={cn(
-              "paper-bg-16 flex flex-col gap-[96px] rounded-xl bg-[#ebded1] bg-cover bg-center bg-no-repeat p-6 bg-blend-multiply",
+              "paper-bg-16 flex flex-col gap-24 rounded-xl bg-[#ebded1] bg-cover bg-center bg-no-repeat p-6 bg-blend-multiply",
             )}
           >
             <div className="flex flex-col items-start justify-between md:flex-row">
@@ -425,12 +425,12 @@ const Footer = () => {
             </div>
             <div className="item-center flex justify-between">
               <div className="flex gap-2 md:gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#312E2C] text-white">
+                <div className="flex size-10  items-center justify-center rounded-full bg-[#312E2C] text-white">
                   <Link href="https://facebook.com/godlywindows">
                     <Facebook size={20} />
                   </Link>
                 </div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#312E2C] text-white">
+                <div className="flex size-10  items-center justify-center rounded-full bg-[#312E2C] text-white">
                   <Link href="https://instagram.com/godlywindows">
                     <Instagram size={20} />
                   </Link>
@@ -451,7 +451,7 @@ const Footer = () => {
             <Image
               src={logo}
               alt="logo"
-              className="object center h-auto w-[117px] object-contain md:w-[182px]"
+              className="object center h-auto w-29.25 object-contain md:w-45.5"
             ></Image>
           </div>
         </div>

@@ -479,7 +479,7 @@ export default function QuoteForm({ isDialog }) {
       className={cn(
         "md:mt-2 xl:mt-3",
         isDialog
-          ? "xl:max-h-auto md:relative md:top-5 md:mx-auto md:flex md:max-h-[calc(100vh-100px)] md:w-full md:max-w-[1200px] md:justify-center md:gap-0 xl:top-7 xl:mx-auto xl:flex xl:max-h-[calc(100vh-128px)] xl:justify-center xl:gap-0"
+          ? "xl:max-h-auto md:relative md:top-5 md:mx-auto md:flex md:max-h-[calc(100vh-100px)] md:w-full md:max-w-300 md:justify-center md:gap-0 xl:top-7 xl:mx-auto xl:flex xl:max-h-[calc(100vh-128px)] xl:justify-center xl:gap-0"
           : "",
       )}
     >
@@ -489,10 +489,10 @@ export default function QuoteForm({ isDialog }) {
           isDialog ? "md:overflow-y-auto xl:overflow-y-auto" : "",
         )}
       >
-        <div className="paper-bg-14 relative z-20 grid grid-cols-2 items-center justify-between rounded-t-[10px] bg-[#AB8459] px-[27px] py-[25px] md:flex md:h-[100px] md:px-10 md:py-6 xl:flex xl:h-[128px] xl:px-12 xl:py-8">
+        <div className="paper-bg-14 relative z-20 grid grid-cols-2 items-center justify-between rounded-t-[10px] bg-[#AB8459] px-6.75 py-6.25 md:flex md:h-25 md:px-10 md:py-6 xl:flex xl:h-32 xl:px-12 xl:py-8">
           <h2
             className={cn(
-              "trim text-[24px] leading-6 font-normal tracking-[1.2px] text-[#2D2B2B] md:min-w-[120px] md:leading-0 xl:min-w-[137px] xl:text-5xl xl:text-[40px]",
+              "trim text-[24px]/6 font-normal tracking-[1.2px] text-[#2D2B2B] md:min-w-30 md:leading-0 xl:min-w-34.25 xl:text-5xl xl:text-[40px]",
               isDialog
                 ? "text-[24px] md:text-3xl xl:text-4xl xl:text-[40px]"
                 : "",
@@ -502,7 +502,7 @@ export default function QuoteForm({ isDialog }) {
           </h2>
           <p
             className={cn(
-              "text-right font-['satoshi-regular'] text-[13px] font-medium text-[#2D2B2B] md:max-w-[320px] md:text-lg xl:max-w-[367px] xl:text-2xl",
+              "text-right font-['satoshi-regular'] text-[13px] font-medium text-[#2D2B2B] md:max-w-[320px] md:text-lg xl:max-w-91.75 xl:text-2xl",
               isDialog
                 ? "text-[13px] md:text-base xl:text-lg xl:text-[20px]"
                 : "",
@@ -512,64 +512,83 @@ export default function QuoteForm({ isDialog }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 px-12 py-8 md:grid-cols-6 md:grid-rows-2 xl:grid-cols-12">
-          <div className="min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
-              Name
-            </label>
-            <Input
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="YOUR NAME"
-              className="rounded-none border-t-0 border-r-0 border-b! border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
-              required
-            />
-          </div>
-          <div className="min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
-              Email
-            </label>
-            <Input
-              name="email"
-              type="email"
-              placeholder="YOUR EMAIL"
-              value={formData.email}
-              onChange={handleChange}
-              className="rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
-              required
-            />
-          </div>
-          <div className="relative min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
-              Phone Number
-            </label>
-            <div className="relative">
-              <div className="absolute top-1/2 left-0 -translate-y-[calc(50%-8px)] text-base md:-translate-y-[calc(50%-2px)] md:text-xl xl:-translate-y-[calc(50%-4px)] xl:text-2xl">
+        <div className="grid grid-cols-1 gap-4 px-12 py-8 md:grid-cols-6 md:grid-rows-4 md:gap-x-4 md:gap-y-2 xl:grid-cols-12">
+          <label
+            htmlFor="quote-name"
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-span-2 md:col-start-1 md:row-start-1 md:mb-0 md:self-end md:leading-snug xl:col-span-4 xl:col-start-1 xl:row-start-1 xl:text-base"
+          >
+            Name
+          </label>
+          <Input
+            id="quote-name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="YOUR NAME"
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-span-2 md:col-start-1 md:row-start-2 md:w-full md:min-h-13 md:self-end xl:col-span-4 xl:col-start-1 xl:row-start-2 xl:text-2xl"
+            required
+          />
+
+          <label
+            htmlFor="quote-email"
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-span-2 md:col-start-3 md:row-start-1 md:mb-0 md:self-end md:leading-snug xl:col-span-4 xl:col-start-5 xl:row-start-1 xl:text-base"
+          >
+            Email
+          </label>
+          <Input
+            id="quote-email"
+            name="email"
+            type="email"
+            placeholder="YOUR EMAIL"
+            value={formData.email}
+            onChange={handleChange}
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-span-2 md:col-start-3 md:row-start-2 md:w-full md:min-h-13 md:self-end xl:col-span-4 xl:col-start-5 xl:row-start-2 xl:text-2xl"
+            required
+          />
+
+          <label
+            htmlFor="quote-phone"
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-span-2 md:col-start-5 md:row-start-1 md:mb-0 md:self-end md:leading-snug xl:col-span-4 xl:col-start-9 xl:row-start-1 xl:text-base"
+          >
+            Phone Number
+          </label>
+          <div className="min-w-0 md:col-span-2 md:col-start-5 md:row-start-2 md:flex md:min-h-13 md:items-end md:self-end xl:col-span-4 xl:col-start-9 xl:row-start-2">
+            {/* Same font as inputs (body / Marlton) — avoid font-sans (Satoshi) on +1 only */}
+            <div className="flex w-full min-w-0 items-baseline gap-2 border-b border-black pb-3">
+              <span
+                className="pointer-events-none shrink-0 select-none text-base font-normal leading-snug text-[#312E2C] md:text-xl md:leading-snug xl:text-2xl xl:leading-snug"
+                aria-hidden="true"
+              >
                 +1
-              </div>
+              </span>
               <Input
+                id="quote-phone"
                 name="phone"
                 placeholder="YOUR PHONE NUMBER"
                 value={formData.phone}
                 onChange={handleChange}
-                className="ml-4 rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:ml-6 md:text-xl xl:ml-6 xl:text-2xl"
+                className="h-auto min-h-0 w-full min-w-0 flex-1 rounded-none border-0 bg-transparent px-0 py-0 text-base leading-snug shadow-none ring-0 focus-visible:border-0 focus-visible:ring-0 md:text-xl md:leading-snug xl:text-2xl xl:leading-snug"
                 required
               />
             </div>
           </div>
-          <div className="relative min-w-0 md:col-span-3 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-5">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
-              What services do you need?
-            </label>
+
+          <label
+            htmlFor="quote-services-trigger"
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-span-3 md:col-start-1 md:row-start-3 md:mb-0 md:self-end md:leading-snug xl:col-span-5 xl:col-start-1 xl:row-start-3 xl:text-base"
+          >
+            What services do you need?
+          </label>
+          <div className="relative min-w-0 md:col-span-3 md:col-start-1 md:row-start-4 md:flex md:min-h-13 md:items-end md:self-end xl:col-span-5 xl:col-start-1 xl:row-start-4">
             <Popover open={showServices} onOpenChange={setShowServices}>
               <PopoverTrigger asChild>
                 <button
+                  id="quote-services-trigger"
                   type="button"
-                  className="w-full rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-[15px] text-left text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
+                  className="w-full rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-left text-base shadow-none focus-visible:ring-0 md:min-h-13 md:text-xl xl:text-2xl"
                 >
                   <div className="flex w-full items-center space-x-2">
-                    <p className="overflow-hidden text-ellipsis whitespace-nowrap">
+                    <p className="truncate">
                       {formData.services.join(", ") || (
                         <span className="text-[rgba(49,46,44,0.20)]">
                           Choose your service
@@ -590,7 +609,7 @@ export default function QuoteForm({ isDialog }) {
                 sideOffset={4}
                 className={cn(
                   "paper-bg-14 z-200 max-h-[min(22rem,calc(100vh-6rem))] w-(--radix-popover-trigger-width) max-w-[calc(100vw-2rem)] overflow-y-auto border-0 bg-[#AB8459] p-6 shadow-xl",
-                  "md:min-w-[300px] xl:min-w-[335px]",
+                  "md:min-w-75 xl:min-w-83.75",
                 )}
                 onOpenAutoFocus={(e) => e.preventDefault()}
               >
@@ -612,7 +631,7 @@ export default function QuoteForm({ isDialog }) {
                         onCheckedChange={() =>
                           handleServiceToggle(service.name)
                         }
-                        className="size-[22px] bg-transparent"
+                        className="size-5.5 bg-transparent"
                       />
                     </div>
                   ))}
@@ -621,27 +640,36 @@ export default function QuoteForm({ isDialog }) {
             </Popover>
           </div>
 
-          <div className="min-w-0 md:col-span-2 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-4">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
-              When do you need the work done by?
-            </label>
-            <Popover>
+          <label
+            htmlFor="quote-date-trigger"
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-span-2 md:col-start-4 md:row-start-3 md:mb-0 md:self-end md:leading-snug xl:col-span-4 xl:col-start-6 xl:row-start-3 xl:text-base"
+          >
+            When do you need the work done by?
+          </label>
+          <div className="min-w-0 md:col-span-2 md:col-start-4 md:row-start-4 md:flex md:min-h-13 md:items-end md:self-end xl:col-span-4 xl:col-start-6 xl:row-start-4">
+            {/* modal={false}: avoid focus/stacking conflicts when form is inside a Dialog */}
+            <Popover modal={false}>
               <PopoverTrigger asChild>
-                <button className="flex w-full items-center border-b border-black bg-transparent pb-2 text-left text-base focus:outline-none md:text-xl xl:text-2xl">
-                  {date ? (
-                    format(date, "MM / dd / yyyy")
-                  ) : (
-                    <span className="text-[rgba(49,46,44,0.20)]">
-                      Choose date
-                    </span>
-                  )}
-                  {/* <CalendarIcon className="inline ml-2 h-4 w-4 text-gray-500" /> */}
+                <button
+                  id="quote-date-trigger"
+                  type="button"
+                  className="flex w-full min-w-0 items-center rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-left text-base font-normal text-[#312E2C] shadow-none focus:outline-none focus-visible:ring-0 md:min-h-13 md:text-xl xl:text-2xl"
+                >
+                  <span className="min-w-0 flex-1 truncate">
+                    {date ? (
+                      format(date, "MM / dd / yyyy")
+                    ) : (
+                      <span className="text-[rgba(49,46,44,0.20)]">
+                        Choose date
+                      </span>
+                    )}
+                  </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="18"
                     viewBox="0 0 20 18"
-                    className="ms-auto inline"
+                    className="ms-auto inline shrink-0"
                     fill="none"
                   >
                     <g clipPath="url(#clip0_1288_63)">
@@ -671,31 +699,38 @@ export default function QuoteForm({ isDialog }) {
                   </svg>
                 </button>
               </PopoverTrigger>
-              <PopoverContent className="z-100 w-auto bg-white p-0">
+              <PopoverContent
+                align="start"
+                side="bottom"
+                sideOffset={4}
+                className="z-200 w-auto border bg-white p-0 shadow-lg"
+              >
                 <Calendar
                   mode="single"
                   selected={date}
                   onSelect={setDate}
-                  disabled={(date) => date < addDays(new Date(), -1)}
+                  disabled={(d) => d < addDays(new Date(), -1)}
                   initialFocus
                 />
               </PopoverContent>
             </Popover>
           </div>
 
-          <div className="min-w-0 md:col-span-1 md:grid md:grid-rows-[minmax(3rem,auto)_auto] md:gap-y-1 xl:col-span-3">
-            <label className="mb-1 block w-full font-sans text-sm font-normal text-[#312E2C] md:mb-0 md:flex md:items-end md:self-end md:leading-snug xl:text-base">
-              Zip Code
-            </label>
-            <Input
-              name="zipcode"
-              placeholder="YOUR ZIP CODE"
-              value={formData.zipcode}
-              onChange={handleChange}
-              className="w-full min-w-0 rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
-              required
-            />
-          </div>
+          <label
+            htmlFor="quote-zipcode"
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-span-1 md:col-start-6 md:row-start-3 md:mb-0 md:self-end md:leading-snug xl:col-span-3 xl:col-start-10 xl:row-start-3 xl:text-base"
+          >
+            Zip Code
+          </label>
+          <Input
+            id="quote-zipcode"
+            name="zipcode"
+            placeholder="YOUR ZIP CODE"
+            value={formData.zipcode}
+            onChange={handleChange}
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-span-1 md:col-start-6 md:row-start-4 md:w-full md:min-h-13 md:self-end xl:col-span-3 xl:col-start-10 xl:row-start-4 xl:text-2xl"
+            required
+          />
         </div>
 
         <div className="flex flex-col items-stretch justify-between gap-4 px-12 pb-6 md:flex-row md:items-center">
@@ -705,7 +740,7 @@ export default function QuoteForm({ isDialog }) {
                 id="consent-informational-sms"
                 name="consentInformationalSms"
                 checked={formData.consentInformationalSms}
-                className="mt-0.5 size-[18px] shrink-0 bg-transparent md:size-[16px] xl:size-[22px]"
+                className="mt-0.5 size-4.5 shrink-0 bg-transparent md:size-4 xl:size-5.5"
                 onCheckedChange={(checked) =>
                   setFormData((prev) => ({
                     ...prev,
@@ -715,7 +750,7 @@ export default function QuoteForm({ isDialog }) {
               />
               <label
                 htmlFor="consent-informational-sms"
-                className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
+                className="font-['satoshi-regular'] text-xs/snug md:text-sm xl:text-base"
               >
                 I agree to get information text messages from Godly about my
                 estimate and project.
@@ -723,7 +758,7 @@ export default function QuoteForm({ isDialog }) {
             </div>
           </div>
 
-          <div className="mt-2 mb-6 shrink-0 self-center text-right md:mt-0 md:mb-0">
+          <div className="mt-2 mb-6 shrink-0 self-center text-right md:my-0">
             <QuoteButton
               type="submit"
               disabled={isSubmitting}

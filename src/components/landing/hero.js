@@ -22,7 +22,7 @@ const Hero = ({ service, source, serviceSlug, cityName }) => {
 
   return (
     <div className="relative overflow-x-clip bg-[#1F1D1D]">
-      <div className="absolute top-0 left-0 h-[450px] w-full md:top-0 md:h-[700px]">
+      <div className="absolute top-0 left-0 h-112.5 w-full md:top-0 md:h-175">
         <Image
           src="/assets/new-hero.jpeg"
           alt={generateCityHeroAlt(city)}
@@ -31,10 +31,10 @@ const Hero = ({ service, source, serviceSlug, cityName }) => {
           sizes="100vw"
           className="object-cover object-center md:object-[center_82%]"
         />
-        <div className="absolute top-0 left-0 z-1 h-full w-full bg-linear-to-b from-[#1F1D1D]/0 to-[#1F1D1D]" />
+        <div className="absolute top-0 left-0 z-1 size-full  bg-linear-to-b from-[#1F1D1D]/0 to-[#1F1D1D]" />
       </div>
-      <div className="relative z-10 mx-auto max-w-[1440px] px-[20px] md:px-14 md:pb-32">
-        <div className="flex min-h-[600px] flex-col justify-end gap-3 pb-10 xl:min-h-[815px]">
+      <div className="relative z-10 mx-auto max-w-360 px-5 md:px-14 md:pb-32">
+        <div className="flex min-h-150 flex-col justify-end gap-3 pb-10 xl:min-h-203.75">
           <div className="flex w-full items-center justify-start">
             <span className="hidden md:inline-block">
               <Google />
@@ -45,11 +45,11 @@ const Hero = ({ service, source, serviceSlug, cityName }) => {
           </div>
           <div className="flex items-center justify-start gap-3">
             <div className="trim flex items-center gap-[3.774px]">
-              <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
-              <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
-              <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
-              <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
-              <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
+              <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
+              <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
+              <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
+              <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
+              <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
             </div>
             <span className="font-marlton trim text-base tracking-[2.07px] text-[#FDE4C8] md:text-base xl:text-[20.704px]">
               157 Reviews

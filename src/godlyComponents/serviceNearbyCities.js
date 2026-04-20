@@ -25,7 +25,7 @@ export default function ServiceNearbyCities({ citySlug, serviceSlug }) {
       id="service-nearby-cities"
       className="paper-bg-16 flex flex-col items-center bg-[#ebded1] bg-cover bg-center bg-no-repeat px-4 pt-0 pb-20 bg-blend-multiply md:px-24 md:pb-42"
     >
-      <h2 className="trim max-w-[1200px] py-10 text-center text-[32px] leading-tight font-normal tracking-wide text-[#191717] md:text-[64px]">
+      <h2 className="trim max-w-300 py-10 text-center text-[32px] leading-tight font-normal tracking-wide text-[#191717] md:text-[64px]">
         {serviceName} in Nearby Cities
       </h2>
 
@@ -42,7 +42,7 @@ export default function ServiceNearbyCities({ citySlug, serviceSlug }) {
               href={`/${neighborSlug}/${serviceSlug}`}
               className={`group block transform transition-transform duration-300 ${tiltEven}`}
             >
-              <div className="relative flex min-h-[120px] flex-col justify-center rounded-sm bg-[#e7e3df] p-4 text-[#1c1c1c] shadow-[2px_3px_0_0_rgba(25,23,23,0.06)] md:min-h-[140px] md:p-5">
+              <div className="relative flex min-h-30 flex-col justify-center rounded-sm bg-[#e7e3df] p-4 text-[#1c1c1c] shadow-[2px_3px_0_0_rgba(25,23,23,0.06)] md:min-h-35 md:p-5">
                 <div className="absolute top-1 -left-5 z-10 h-3 w-13 -rotate-45 bg-[#F3CA9ECC]" />
                 <div className="absolute -right-5 bottom-2 z-10 h-3 w-13 -rotate-45 bg-[#F3CA9ECC]" />
 

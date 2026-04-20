@@ -1,6 +1,6 @@
 export default function EstimateButton() {
   return (
-    <button className="estimate-button flex items-center gap-[10px]">
+    <button className="estimate-button flex items-center gap-2.5">
       <span className="-mt-1 font-['marlton'] text-2xl text-[#FDE4C8] bg-blend-difference">
         Get My Free Quote
       </span>
@@ -10,7 +10,7 @@ export default function EstimateButton() {
         height="33"
         viewBox="0 0 33 33"
         fill="none"
-        className="z-10 size-[30px]"
+        className="z-10 size-7.5"
       >
         <path
           fillRule="evenodd"

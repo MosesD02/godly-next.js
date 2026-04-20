@@ -1,6 +1,7 @@
 import { BASE_URL } from "./lib/constants";
 import { citiesMap } from "@/data/cities";
 import { serviceMetaTitles } from "@/data/metaTitles";
+import { WINDOW_CLUSTER_SLUGS } from "@/data/windowCleaningCluster";
 import { getAllSanityPosts } from "@/data/sanity-content";
 
 function minimalSitemapEntries(now) {
@@ -35,6 +36,12 @@ function minimalSitemapEntries(now) {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    ...WINDOW_CLUSTER_SLUGS.map((slug) => ({
+      url: `${BASE_URL}/${slug}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    })),
   ];
 }
 
@@ -87,6 +94,15 @@ export default async function sitemap() {
         priority: 0.3,
       },
     ];
+
+    WINDOW_CLUSTER_SLUGS.forEach((slug) => {
+      urls.push({
+        url: `${BASE_URL}/${slug}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.85,
+      });
+    });
 
     cities.forEach((city) => {
       urls.push({

@@ -434,7 +434,7 @@ const ChooseUs = ({ slug }) => {
 
   return (
     <div>
-      <div className="paper-bg-16 flex flex-col items-center gap-[55px] bg-[#262424] px-6 pt-12 md:py-24">
+      <div className="paper-bg-16 flex flex-col items-center gap-13.75 bg-[#262424] px-6 pt-12 md:py-24">
         <div>
           <div className="-mt-4 text-center font-['luminaire-script'] text-xl text-[#F3CA9E] underline">
             Why
@@ -456,10 +456,10 @@ export default ChooseUs;
 
 function ServicesGrid({ services }) {
   return (
-    <div className="grid max-w-[1130px] grid-cols-2 gap-3 pb-24 sm:px-10 md:grid-cols-4 md:gap-[30px] md:px-0 md:pb-0">
+    <div className="grid max-w-282.5 grid-cols-2 gap-3 pb-24 sm:px-10 md:grid-cols-4 md:gap-7.5 md:px-0 md:pb-0">
       {services.map((service, idx) => (
         <Card key={idx} className="paper-bg-8 rounded-sm bg-[#d5cdcb] p-0">
-          <CardContent className="flex flex-col gap-3 px-4 py-[32px]">
+          <CardContent className="flex flex-col gap-3 px-4 py-8">
             {service.svg}
             <h3 className="font-[satoshi-bold] text-sm font-bold md:text-[20px]">
               {service.name}

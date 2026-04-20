@@ -32,7 +32,7 @@ const Savings = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="paper-bg-16 flex hidden flex-col items-center justify-items-center bg-[#ebded1] bg-cover bg-center bg-no-repeat p-16 bg-blend-multiply">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-items-center bg-cover bg-center bg-no-repeat p-16 bg-blend-multiply">
+      <div className="mx-auto flex max-w-360 flex-col items-center justify-items-center bg-cover bg-center bg-no-repeat p-16 bg-blend-multiply">
         <div
           className="text-grain bg-[#191717]! text-[64px] font-normal"
           data-text="HUGE SAVINGS AND"
@@ -46,10 +46,10 @@ const Savings = () => {
           ALWAYS LOOK GREAT
         </div>
         <div
-          className="pt-16 pb-16 text-white"
+          className="py-16  text-white"
           // style={{ marginTop: "1rem", marginBottom: "3rem" }}
         >
-          <div className="relative z-10 flex flex-wrap justify-center gap-[72px]">
+          <div className="relative z-10 flex flex-wrap justify-center gap-18">
             {steps.map((step, index) => (
               <div key={index} className="">
                 <div
@@ -101,7 +101,7 @@ const FormPopup = ({ open, onOpenChange }) => {
           <span className="sr-only">Contact Us</span>
         </DialogTitle>
       </DialogHeader>
-      <DialogContent className="z-100 border-none bg-transparent p-0 md:max-w-[1200px]">
+      <DialogContent className="z-100 border-none bg-transparent p-0 md:max-w-300">
         <QuoteForm isDialog={true} />
       </DialogContent>
     </Dialog>
@@ -120,12 +120,12 @@ const FeatureList = (value) => {
       {features.map((text, index) => (
         <div key={index} className="flex items-center space-x-4">
           {value ? (
-            <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#FFEBD7] font-['satoshi-light']">
-              <Check className="h-3 w-3 text-[#4B3A2F]" />
+            <div className="flex size-5  items-center justify-center rounded-full bg-[#FFEBD7] font-['satoshi-light']">
+              <Check className="size-3  text-[#4B3A2F]" />
             </div>
           ) : (
-            <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#EC6D62]">
-              <X className="h-3 w-3 text-[#4B3A2F]" />
+            <div className="flex size-5  items-center justify-center rounded-full bg-[#EC6D62]">
+              <X className="size-3  text-[#4B3A2F]" />
             </div>
           )}
 

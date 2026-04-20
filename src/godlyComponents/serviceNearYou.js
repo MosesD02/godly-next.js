@@ -140,7 +140,7 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
             }}
           >
             Near You
-            <span className="mt-1.5 inline-flex text-left font-['marlton'] text-[8px] tracking-[1px] text-[#FDE4C8] md:mb-2 md:max-w-[94px] md:text-base md:tracking-[2px]">
+            <span className="mt-1.5 inline-flex text-left font-['marlton'] text-[8px] tracking-[1px] text-[#FDE4C8] md:mb-2 md:max-w-23.5 md:text-base md:tracking-[2px]">
               {cityName}
             </span>
           </div>
@@ -156,7 +156,7 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
                   index === 0 && "col-span-2",
                 )}
               >
-                <div className="relative z-10 h-full w-full rounded-md bg-[#CDB9A2] p-3 text-black">
+                <div className="relative z-10 size-full  rounded-md bg-[#CDB9A2] p-3 text-black">
                   <div className="flex h-full flex-col items-center justify-between rounded-md border-2 border-dashed border-[#2D2B2B] p-2 text-[#2D2B2B]">
                     <div>
                       <div className="mb-4 flex justify-center">
@@ -231,7 +231,7 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
           if (!t) return null;
           if (t.lines) {
             return (
-              <h3 className="trim mx-auto max-w-[343.5px] text-center text-xl font-normal tracking-wide text-white md:w-[900px] md:max-w-fit md:text-3xl">
+              <h3 className="trim mx-auto max-w-[343.5px] text-center text-xl font-normal tracking-wide text-white md:w-225 md:max-w-fit md:text-3xl">
                 {t.lines.map((line, i) => (
                   <span key={i} className="block">
                     {line}

@@ -21,7 +21,7 @@ const Services = ({ cityName: city, citySlug }) => {
 
   return (
     <div className="paper-bg-16 relative overflow-clip bg-[#262424]">
-      <div className="relative flex min-h-screen flex-col items-center gap-[37px] px-6 sm:px-8 md:gap-20 md:px-6 md:py-24 lg:px-10 lg:py-28 xl:px-12 xl:py-32">
+      <div className="relative flex min-h-screen flex-col items-center gap-9.25 px-6 sm:px-8 md:gap-20 md:px-6 md:py-24 lg:px-10 lg:py-28 xl:px-12 xl:py-32">
         <div className="flex flex-col items-center justify-center gap-6">
           <span className="with-text trim hidden rotate-[-4.74deg] transform text-center font-['luminaire-script'] text-[24px] text-[#FDE4C8] underline sm:text-[26px] md:flex md:text-[28px] lg:text-[30px] xl:text-[32px]">
             We are
@@ -35,7 +35,7 @@ const Services = ({ cityName: city, citySlug }) => {
                 MORE THAN
               </div>
               <span
-                className="text-grain ms-2 mb-1 bg-white! text-sm tracking-[1.2px] sm:text-base md:ms-[21px] md:mb-3 md:text-[20px] lg:text-[22px] xl:text-[24px]"
+                className="text-grain ms-2 mb-1 bg-white! text-sm tracking-[1.2px] sm:text-base md:ms-5.25 md:mb-3 md:text-[20px] lg:text-[22px] xl:text-[24px]"
                 data-text="JUST"
               >
                 JUST
@@ -118,7 +118,7 @@ const Services = ({ cityName: city, citySlug }) => {
 
       <div
         id="holiday"
-        className="paper-bg-16 relative flex flex-col items-center justify-center gap-20 overflow-clip bg-[#262424] bg-contain bg-bottom bg-no-repeat px-6 pt-[100px] bg-blend-soft-light md:p-6"
+        className="paper-bg-16 relative flex flex-col items-center justify-center gap-20 overflow-clip bg-[#262424] bg-contain bg-bottom bg-no-repeat px-6 pt-25 bg-blend-soft-light md:p-6"
       >
         <div className="pointer-events-none absolute inset-0 overflow-clip opacity-25">
           <Image
@@ -129,9 +129,9 @@ const Services = ({ cityName: city, citySlug }) => {
             className="object-contain"
           />
         </div>
-        <div className="mt-4 mb-[164px] flex flex-col items-center justify-center gap-9 md:mb-[220px] md:max-w-[741px]">
-          <div className="flex flex-col items-center justify-center gap-[35px]">
-            <div className="relative max-w-[359px] md:max-w-full md:min-w-full">
+        <div className="mt-4 mb-41 flex flex-col items-center justify-center gap-9 md:mb-55 md:max-w-185.25">
+          <div className="flex flex-col items-center justify-center gap-8.75">
+            <div className="relative max-w-89.75 md:max-w-full md:min-w-full">
               <h2 className="relative text-center font-['satoshi-black'] text-[32px] leading-[130%] text-[#FDE4C8] md:text-[96px]">
                 {city === "PARKLAND"
                   ? "Holiday Lights Without the Ladder"
@@ -195,7 +195,7 @@ const Services = ({ cityName: city, citySlug }) => {
                 </div>
               </div>
             </div>
-            <p className="max-w-[359px] text-center font-['satoshi-light'] text-sm font-light tracking-wide text-[#FDE4C8] md:max-w-[600px] md:text-lg">
+            <p className="max-w-89.75 text-center font-['satoshi-light'] text-sm font-light tracking-wide text-[#FDE4C8] md:max-w-150 md:text-lg">
               {city === "PARKLAND" ? (
                 <>
                   Looking for{" "}
@@ -495,7 +495,7 @@ const Services = ({ cityName: city, citySlug }) => {
               )}
             </p>
             <Link href={`/${cityKey}/holiday-lighting`}>
-              <Button className="trim flex h-auto cursor-pointer rounded-[6.32px] bg-white p-3 font-[satoshi-bold] text-sm text-[10px] text-[312E2C] hover:bg-white/80 md:px-4 md:py-[14px] md:text-sm">
+              <Button className="trim flex h-auto cursor-pointer rounded-[6.32px] bg-white p-3 font-[satoshi-bold] text-sm text-[10px] text-[312E2C] hover:bg-white/80 md:px-4 md:py-3.5 md:text-sm">
                 What We Offer
               </Button>
             </Link>
@@ -1263,9 +1263,9 @@ function ServicesGrid({ citySlug: citySlugProp }) {
             onClick={() => toggleCard(idx)}
           >
             <CardContent className="service-icon-hover flex h-full p-0">
-              <div className="flex h-full w-full shrink-0 flex-col gap-6 px-3 py-6 md:px-4 md:py-8 md:group-hover:text-white">
+              <div className="flex size-full  shrink-0 flex-col gap-6 px-3 py-6 md:px-4 md:py-8 md:group-hover:text-white">
                 <div className="flex h-full flex-col gap-4">
-                  <div className="relative size-[50px] shrink-0">
+                  <div className="relative size-12.5 shrink-0">
                     {service.icon ? (
                       <span
                         className={`${isActive ? "text-white" : "text-[#1c1c1c]"} group-hover:text-white`}
@@ -1457,7 +1457,7 @@ function ServicesGrid({ citySlug: citySlugProp }) {
                 </div>
                 <div className="flex w-full items-center justify-end gap-4">
                   {service.link && (
-                    <Button className="pointer-cursor flex p-3 text-[10px] md:h-[46px] md:px-[18px] md:py-4 md:text-sm">
+                    <Button className="pointer-cursor flex p-3 text-[10px] md:h-11.5 md:px-4.5 md:py-4 md:text-sm">
                       <Link
                         href={`/${cityKey}/${service.link}`}
                         className="pointer-cursor trim font-['satoshi-regular'] text-[14px] font-bold text-[#FDE4C8]"

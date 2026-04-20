@@ -50,8 +50,8 @@ const teamImages = [
 
 const TeamGallery = () => {
   return (
-    <div className="paper-bg-16 flex flex-col items-center justify-center gap-[63px] bg-[#262424] py-[100px] pt-6 md:gap-[70px] md:py-[150px] md:pt-0">
-      <div className="flex flex-col items-center justify-center px-[40px]">
+    <div className="paper-bg-16 flex flex-col items-center justify-center gap-15.75 bg-[#262424] py-25 pt-6 md:gap-17.5 md:py-37.5 md:pt-0">
+      <div className="flex flex-col items-center justify-center px-10">
         <div
           className="text-grain bg-[#F3CA9E]! text-center text-[48px] md:text-[102px] md:tracking-[9.18px]"
           data-text="BLUE COLLAR"
@@ -76,7 +76,7 @@ const TeamGallery = () => {
       </div>
 
       {/* Desktop grid - hidden on mobile */}
-      <div className="hidden grid-cols-5 gap-[58px] md:grid">
+      <div className="hidden grid-cols-5 gap-14.5 md:grid">
         {teamImages.map((image, index) => (
           <div
             key={index}
@@ -104,7 +104,7 @@ const TeamGallery = () => {
         <div className="relative mb-8">
           <div className="animate-carousel-left flex">
             {/* First set of images */}
-            <div className="flex gap-[25px]">
+            <div className="flex gap-6.25">
               {teamImages.slice(0, 5).map((image, index) => (
                 <div
                   key={`top-a-${index}`}
@@ -132,7 +132,7 @@ const TeamGallery = () => {
         <div className="relative">
           <div className="animate-carousel-right flex">
             {/* First set of images */}
-            <div className="flex gap-[25px]">
+            <div className="flex gap-6.25">
               {teamImages.slice(5, 10).map((image, index) => (
                 <div
                   key={`bottom-a-${index}`}

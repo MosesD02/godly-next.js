@@ -1,5 +1,5 @@
 "use client";
-import { React, useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "@/components/Image";
 import { Input } from "@/components/ui/input";
@@ -34,26 +34,8 @@ export default function QuoteForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
-  const [showServices, setShowServices] = useState(false);
-  const servicesRef = useRef(null);
 
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (servicesRef.current && !servicesRef.current.contains(event.target)) {
-        setShowServices(false);
-      }
-    }
-
-    // Add event listener when dropdown is open
-    if (showServices) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
-
-    // Clean up the event listener
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [showServices]);
+  const fieldId = (name) => `landing-quote-${formTrackingId}-${name}`;
 
   // Initialize Airtable
   const base = new Airtable({
@@ -282,7 +264,7 @@ export default function QuoteForm({
       className={cn(
         "md:mt-2 xl:mt-3",
         isDialog
-          ? "xl:max-h-auto md:relative md:top-5 md:mx-auto md:flex md:max-h-[calc(100vh-100px)] md:w-full md:max-w-[1200px] md:justify-center md:gap-0 xl:top-7 xl:mx-auto xl:flex xl:max-h-[calc(100vh-128px)] xl:justify-center xl:gap-0"
+          ? "xl:max-h-auto md:relative md:top-5 md:mx-auto md:flex md:max-h-[calc(100vh-100px)] md:w-full md:max-w-300 md:justify-center md:gap-0 xl:top-7 xl:mx-auto xl:flex xl:max-h-[calc(100vh-128px)] xl:justify-center xl:gap-0"
           : "",
       )}
     >
@@ -292,7 +274,7 @@ export default function QuoteForm({
           isDialog ? "md:overflow-y-auto xl:overflow-y-auto" : "",
         )}
       >
-        <div className="paper-bg-14 relative z-20 grid grid-cols-1 items-center justify-between rounded-t-[10px] bg-[#AB8459] px-[27px] py-[25px] md:flex md:h-[100px] md:px-10 md:py-6 xl:flex xl:h-[128px] xl:px-12 xl:py-8">
+        <div className="paper-bg-14 relative z-20 grid grid-cols-1 items-center justify-between rounded-t-[10px] bg-[#AB8459] px-6.75 py-6.25 md:flex md:h-25 md:px-10 md:py-6 xl:flex xl:h-32 xl:px-12 xl:py-8">
           {/* <h2
             className={cn(
               "trim text-[24px] leading-6 font-normal tracking-[1.2px] text-[#2D2B2B] md:min-w-[120px] md:text-4xl xl:min-w-[137px] xl:text-5xl xl:text-[40px]",
@@ -315,63 +297,81 @@ export default function QuoteForm({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 px-12 py-8 md:grid-cols-2 md:grid-rows-2 xl:grid-cols-2">
-          <div className="md:col-span-1 xl:col-span-1">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
-              Name
-            </label>
-            <Input
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="YOUR NAME"
-              className="rounded-none border-t-0 border-r-0 border-b! border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
-              required
-            />
-          </div>
-          <div className="md:col-span-1 xl:col-span-1">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
-              Email
-            </label>
-            <Input
-              name="email"
-              type="email"
-              placeholder="YOUR EMAIL"
-              value={formData.email}
-              onChange={handleChange}
-              className="rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
-              required
-            />
-          </div>
-          <div className="relative max-w-full overflow-clip md:col-span-1 xl:col-span-1">
-            <label className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
-              Phone Number
-            </label>
-            <div className="absolute top-1/2 left-0 -translate-y-[calc(50%-8px)] text-base md:-translate-y-[calc(50%-8px)] md:text-xl xl:-translate-y-[calc(50%-10px)] xl:text-2xl">
-              +1
+        <div className="grid grid-cols-1 gap-4 px-12 py-8 md:grid-cols-2 md:grid-rows-4 md:gap-x-4 md:gap-y-2">
+          <label
+            htmlFor={fieldId("name")}
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-1 md:row-start-1 md:mb-0 md:self-end md:leading-snug md:text-sm xl:text-base"
+          >
+            Name
+          </label>
+          <Input
+            id={fieldId("name")}
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="YOUR NAME"
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-start-1 md:row-start-2 md:w-full md:min-h-13 md:self-end md:text-xl xl:text-2xl"
+            required
+          />
+
+          <label
+            htmlFor={fieldId("email")}
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-2 md:row-start-1 md:mb-0 md:self-end md:leading-snug md:text-sm xl:text-base"
+          >
+            Email
+          </label>
+          <Input
+            id={fieldId("email")}
+            name="email"
+            type="email"
+            placeholder="YOUR EMAIL"
+            value={formData.email}
+            onChange={handleChange}
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-start-2 md:row-start-2 md:w-full md:min-h-13 md:self-end md:text-xl xl:text-2xl"
+            required
+          />
+
+          <label
+            htmlFor={fieldId("phone")}
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-1 md:row-start-3 md:mb-0 md:self-end md:leading-snug md:text-sm xl:text-base"
+          >
+            Phone Number
+          </label>
+          <div className="min-w-0 md:col-start-1 md:row-start-4 md:flex md:min-h-13 md:items-end md:self-end">
+            <div className="flex w-full min-w-0 items-baseline gap-2 border-b border-black pb-3">
+              <span
+                className="pointer-events-none shrink-0 select-none text-base font-normal leading-snug text-[#312E2C] md:text-xl md:leading-snug xl:text-2xl xl:leading-snug"
+                aria-hidden="true"
+              >
+                +1
+              </span>
+              <Input
+                id={fieldId("phone")}
+                name="phone"
+                placeholder="YOUR PHONE NUMBER"
+                value={formData.phone}
+                onChange={handleChange}
+                className="h-auto min-h-0 w-full min-w-0 flex-1 rounded-none border-0 bg-transparent px-0 py-0 text-base leading-snug shadow-none ring-0 focus-visible:border-0 focus-visible:ring-0 md:text-xl md:leading-snug xl:text-2xl xl:leading-snug"
+                required
+              />
             </div>
-            <Input
-              name="phone"
-              placeholder="YOUR PHONE NUMBER"
-              value={formData.phone}
-              onChange={handleChange}
-              className="ml-6 rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
-              required
-            />
           </div>
-          <div className="md:col-span-1 xl:col-span-1">
-            <label className="mb-1 block w-full font-sans text-sm font-normal text-[#312E2C] md:text-sm xl:text-base">
-              Zip Code
-            </label>
-            <Input
-              name="zipcode"
-              placeholder="YOUR ZIP CODE"
-              value={formData.zipcode}
-              onChange={handleChange}
-              className="w-full rounded-none border-t-0 border-r-0 border-b border-l-0 border-black bg-transparent px-0 pb-3 text-base focus-visible:ring-0 md:text-xl xl:text-2xl"
-              required
-            />
-          </div>
+
+          <label
+            htmlFor={fieldId("zipcode")}
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-2 md:row-start-3 md:mb-0 md:self-end md:leading-snug md:text-sm xl:text-base"
+          >
+            Zip Code
+          </label>
+          <Input
+            id={fieldId("zipcode")}
+            name="zipcode"
+            placeholder="YOUR ZIP CODE"
+            value={formData.zipcode}
+            onChange={handleChange}
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-start-2 md:row-start-4 md:w-full md:min-h-13 md:self-end md:text-xl xl:text-2xl"
+            required
+          />
         </div>
 
         <div className="flex flex-col items-stretch justify-between gap-4 px-12 pb-6 md:flex-row md:items-center">
@@ -381,7 +381,7 @@ export default function QuoteForm({
                 id="landing-consent-informational-sms"
                 name="consentInformationalSms"
                 checked={formData.consentInformationalSms}
-                className="mt-0.5 size-[18px] shrink-0 bg-transparent md:size-[16px] xl:size-[22px]"
+                className="mt-0.5 size-4.5 shrink-0 bg-transparent md:size-4 xl:size-5.5"
                 onCheckedChange={(checked) =>
                   setFormData((prev) => ({
                     ...prev,
@@ -391,7 +391,7 @@ export default function QuoteForm({
               />
               <label
                 htmlFor="landing-consent-informational-sms"
-                className="font-['satoshi-regular'] text-xs leading-snug md:text-sm xl:text-base"
+                className="font-['satoshi-regular'] text-xs/snug  md:text-sm xl:text-base"
               >
                 I agree to get information text messages from Godly about my
                 estimate and project.
@@ -399,7 +399,7 @@ export default function QuoteForm({
             </div>
           </div>
 
-          <div className="mt-2 mb-6 shrink-0 self-center text-right md:mt-0 md:mb-0">
+          <div className="mt-2 mb-6 shrink-0 self-center text-right md:my-0 ">
             <QuoteButton
               type="submit"
               disabled={isSubmitting}

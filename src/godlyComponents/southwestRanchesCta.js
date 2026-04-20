@@ -15,9 +15,9 @@ const SouthwestRanchesCta = () => {
 
   return (
     <div className="paper-bg-16 bg-[#262424]">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-center gap-[20px] px-6 py-[60px] md:gap-[30px] md:px-16 md:py-[100px]">
+      <div className="mx-auto flex max-w-360 flex-col items-center justify-center gap-5 px-6 py-15 md:gap-7.5 md:px-16 md:py-25">
         <div className="flex flex-col items-center justify-center gap-4 text-center">
-          <p className="max-w-[600px] text-center font-['satoshi-regular'] text-lg leading-[140%] font-normal text-white/90 md:text-[24px] lg:text-[26px]">
+          <p className="max-w-150 text-center font-['satoshi-regular'] text-lg leading-[140%] font-normal text-white/90 md:text-[24px] lg:text-[26px]">
             Whether you&apos;re on{" "}
             <span className="font-['satoshi-bold'] text-[#FDE4C8]">
               Hancock Road

@@ -1,4 +1,6 @@
 import React from "react";
+import WindowCleaningClusterNav from "@/components/WindowCleaningClusterNav";
+import { isWindowClusterSlug } from "@/data/windowCleaningCluster";
 import WebsiteLayout from "./websiteLayout";
 import ServicesHero from "./servicesHero";
 import ServiceIncludes from "./serviceInculdes";
@@ -27,6 +29,13 @@ export default function ServicesPage({
         heroOverride={cityData.hero}
         cityName={cityName}
       />
+      {isWindowClusterSlug(slug) && (
+        <WindowCleaningClusterNav
+          citySlug={city}
+          cityName={cityName}
+          currentSlug={slug}
+        />
+      )}
       <ServiceIncludes
         slug={slug}
         cityName={cityName}

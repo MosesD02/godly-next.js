@@ -365,9 +365,9 @@ const serviceDescriptions = {
   "solar-panel-cleaning":
     "Solar panel cleaning in {location}. Maximize energy efficiency with professional cleaning services. Free estimates & satisfaction guarantee.",
   "exterior-window-cleaning":
-    "Professional window cleaning in {location}. Streak-free results with expert exterior cleaning services. Free quotes available.",
+    "Exterior window cleaning in {location} for homes — salt film, pollen & hard water on outside glass. Frames & sills detailed. Streak-free RO/DI rinse. Free quotes.",
   "interior-window-cleaning":
-    "Interior window cleaning in {location}. Crystal-clear views with professional cleaning services. Satisfaction guaranteed.",
+    "Interior window cleaning in {location} for homeowners — smudges, dust & film on inside panes. Furniture-friendly process, tracks wiped. Satisfaction guaranteed.",
   "gutter-cleaning":
     "Gutter cleaning in {location}. Protect your home from water damage with expert gutter services. Free estimates & satisfaction guarantee.",
   "house-washing":
@@ -383,13 +383,13 @@ const serviceDescriptions = {
   "screen-cleaning":
     "Screen cleaning in {location}. Restore clarity & improve airflow with professional screen services. Satisfaction guaranteed.",
   "window-cleaning":
-    "Professional window cleaning in {location}. RO/DI purified water, hand scrubbing & streak-free results. Free quotes & 7-day sparkle guarantee.",
+    "Window cleaning in {location}: residential & commercial overview — interior, exterior, and post-construction specialists. RO/DI water, hand scrubbing, 7-day sparkle guarantee. Free quotes.",
   "soft-washing":
     "Soft washing in {location}. Safe low-pressure cleaning for roofs, siding & exteriors. Custom blends & satisfaction guarantee.",
   "holiday-lighting":
     "Holiday & Christmas lighting in {location}. Design, install, LED lights, maintenance & removal. Professional display—stress-free season.",
   "post-construction-window-cleaning":
-    "Post-construction window cleaning in {location}. Remove stucco, paint & construction residue with pro tools & RO/DI water. Move-in ready finish.",
+    "Post-construction window cleaning in {location} for builders & GCs — stucco dust, paint overspray & film removal. Punch-list and turnover ready. Pro tools & RO/DI rinse.",
   "rain-shield-tech":
     "Rain Shield hydrophobic coating in {location}. Repels water, dirt & salt on glass—extends clarity between cleanings. Ask about quarterly plans.",
 };
@@ -446,8 +446,23 @@ export const homeDescription =
 
 // SEO-optimized heading structure functions
 export const generateServiceH1 = (serviceSlug, cityName) => {
-  const serviceName = serviceMetaTitles[serviceSlug];
   const location = cityName ? capitalizeString(cityName) : "South Florida";
+
+  // Window cleaning cluster: distinct primary keyword per page (hub + spokes)
+  if (serviceSlug === "window-cleaning") {
+    return `Window Cleaning Services in ${location}`;
+  }
+  if (serviceSlug === "interior-window-cleaning") {
+    return `Interior Window Cleaning in ${location}`;
+  }
+  if (serviceSlug === "exterior-window-cleaning") {
+    return `Exterior Window Cleaning in ${location}`;
+  }
+  if (serviceSlug === "post-construction-window-cleaning") {
+    return `Post-Construction Window Cleaning in ${location}`;
+  }
+
+  const serviceName = serviceMetaTitles[serviceSlug];
 
   if (!serviceName) {
     const fallbackService = serviceSlug

@@ -65,7 +65,7 @@ const SingleReview = () => {
   }, [api]);
 
   return (
-    <div className="paper-bg-16 relative flex min-h-[400px] w-full flex-col justify-center gap-5 bg-[#252424] px-[16px] py-[50px] text-white md:px-[54px]">
+    <div className="paper-bg-16 relative flex min-h-100 w-full flex-col justify-center gap-5 bg-[#252424] px-4 py-12.5 text-white md:px-13.5">
       <Image
         src="/assets/fourstep_bg.webp"
         alt="Background"
@@ -100,7 +100,7 @@ const SingleReview = () => {
         ))}
       </div>
       <Carousel
-        className="flex w-full flex-col gap-[80px]"
+        className="flex w-full flex-col gap-20"
         setApi={setApi}
         opts={{
           loop: true,
@@ -115,10 +115,10 @@ const SingleReview = () => {
           {reviews.map((item, index) => (
             <CarouselItem key={index}>
               <div className="relative flex flex-col gap-0">
-                <p className="trim absolute -top-[30px] -left-[40px] text-9xl">
+                <p className="trim absolute -top-7.5 -left-10 text-9xl">
                   &quot;
                 </p>
-                <div className="relative flex flex-col gap-[40px]">
+                <div className="relative flex flex-col gap-10">
                   <h3
                     className="trim text-[28px] tracking-[2px] md:text-[72px]"
                     data-text="The Best Windows Cleaning Company in Florida!"
@@ -146,8 +146,8 @@ const SingleReview = () => {
           ))}
         </CarouselContent>
         <div>
-          <CarouselPrevious className="top-auto -bottom-6 left-0 size-[40px] text-black md:size-[60px]" />
-          <CarouselNext className="top-auto -bottom-6 left-16 size-[40px] text-black md:left-24 md:size-[60px]" />
+          <CarouselPrevious className="top-auto -bottom-6 left-0 size-10 text-black md:size-15" />
+          <CarouselNext className="top-auto -bottom-6 left-16 size-10 text-black md:left-24 md:size-15" />
         </div>
       </Carousel>
     </div>

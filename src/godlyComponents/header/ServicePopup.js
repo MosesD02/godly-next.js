@@ -137,7 +137,7 @@ const ServicePopup = ({ open, onOpenChange }) => {
       </DialogHeader>
       <DialogContent
         hideCloseButton
-        className="paper-bg-16 z-100 overflow-y-auto border-none bg-[#fff9f3] p-4 md:top-[280px] md:max-w-[1045px] md:p-6"
+        className="paper-bg-16 z-100 overflow-y-auto border-none bg-[#fff9f3] p-4 md:top-70 md:max-w-261.25 md:p-6"
       >
         <div className="md:max-h-auto grid max-h-[calc(100vh-256px)] w-full grid-cols-2 sm:grid-cols-2 md:max-h-[calc(100vh-128px)] lg:grid-cols-3">
           {services.map((service, index) => (
@@ -146,7 +146,7 @@ const ServicePopup = ({ open, onOpenChange }) => {
               key={index}
               className={cn(
                 "group border-b-[1.5px] border-[#8d8477] hover:bg-[#2D2B2B] active:bg-[#2D2B2B]",
-                index % 1 === 0 ? "md:mx-[20px]" : "",
+                index % 1 === 0 ? "md:mx-5" : "",
                 activeIndex === index ? "bg-[#2D2B2B]" : "",
               )}
               onClick={() => {
@@ -155,21 +155,21 @@ const ServicePopup = ({ open, onOpenChange }) => {
               onTouchStart={() => setActiveIndex(index)}
               onTouchEnd={() => setActiveIndex(null)}
             >
-              <div className="flex min-h-18 flex-row items-start gap-[6px] gap-y-0 p-2 text-[#2D2B2B] transition-all group-hover:text-[#FDE4C8] group-active:text-[#FDE4C8]">
+              <div className="flex min-h-18 flex-row items-start gap-1.5 gap-y-0 p-2 text-[#2D2B2B] transition-all group-hover:text-[#FDE4C8] group-active:text-[#FDE4C8]">
                 <Image
                   src={service.image}
                   alt={service.name}
                   width={27}
                   height={27}
                   className={cn(
-                    "size-[27px] object-contain group-hover:filter-[invert(1)]",
+                    "size-6.75 object-contain group-hover:filter-[invert(1)]",
                     activeIndex === index ? "filter-[invert(1)]" : "",
                   )}
                 />
-                <div className="flex flex-col gap-[6px]">
+                <div className="flex flex-col gap-1.5">
                   <h3
                     className={cn(
-                      "text-sm leading-tight font-normal",
+                      "text-sm/tight  font-normal",
                       activeIndex === index ? "text-[#FDE4C8]" : "",
                     )}
                   >

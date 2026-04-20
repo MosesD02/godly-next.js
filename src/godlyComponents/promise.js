@@ -61,10 +61,10 @@ const Promise = () => {
   return (
     <div
       id="promise"
-      className="paper-bg-16 flex flex-col items-center justify-items-center gap-10 bg-[#ede0d2] px-[30px] pt-[50px] pb-[100px] md:px-[86px] md:py-[150px]"
+      className="paper-bg-16 flex flex-col items-center justify-items-center gap-10 bg-[#ede0d2] px-7.5 pt-12.5 pb-25 md:px-21.5 md:py-37.5"
     >
       <div
-        className="relative flex h-[200px] w-[758px] scale-50 -rotate-2 flex-col items-center justify-center bg-cover bg-center bg-no-repeat md:h-[210px] md:scale-100"
+        className="relative flex h-50 w-189.5 scale-50 -rotate-2 flex-col items-center justify-center bg-cover bg-center bg-no-repeat md:h-52.5 md:scale-100"
         style={{
           backgroundImage: `url(${ticketBg.src})`,
         }}
@@ -205,7 +205,7 @@ function Story() {
   }, [api]);
   return (
     <div
-      className="flex w-full max-w-[1100px] flex-col gap-[34px] rounded-[12px] bg-[#1F1D1D] p-4 md:mt-12 md:flex-row md:gap-10"
+      className="flex w-full max-w-275 flex-col gap-8.5 rounded-[12px] bg-[#1F1D1D] p-4 md:mt-12 md:flex-row md:gap-10"
       style={{
         boxShadow:
           "0px 4px 4px 0px rgba(255, 255, 255, 0.30) inset, 0px 3.015px 3.015px 0px rgba(0, 0, 0, 0.25)",
@@ -225,7 +225,7 @@ function Story() {
           <div className="absolute -right-6 bottom-2 z-50 h-3 w-18 -rotate-45 bg-[#F3CA9ECC]"></div>
           <CarouselContent className="overflow-visible">
             <CarouselItem className="overflow-visible">
-              <div className="relative min-h-[200px] overflow-visible rounded-sm bg-[#e7e3df] p-2 text-[#1c1c1c]">
+              <div className="relative min-h-50 overflow-visible rounded-sm bg-[#e7e3df] p-2 text-[#1c1c1c]">
                 <Image
                   src={fam1}
                   alt="family"
@@ -238,7 +238,7 @@ function Story() {
             </CarouselItem>
 
             <CarouselItem>
-              <div className="relative min-h-[200px] rounded-sm bg-[#e7e3df] p-2 text-[#1c1c1c]">
+              <div className="relative min-h-50 rounded-sm bg-[#e7e3df] p-2 text-[#1c1c1c]">
                 <Image src={fam2} alt="family" />
                 <p className="text-center font-['luminaire-script'] text-base">
                   Quality service
@@ -252,7 +252,7 @@ function Story() {
           {Array.from({ length: count }).map((_, index) => (
             <button
               key={index}
-              className={`h-2 w-2 rounded-full transition-colors ${
+              className={`size-2  rounded-full transition-colors ${
                 index === current ? "bg-[#F3CA9E]" : "bg-[#F3CA9E]/30"
               }`}
               onClick={() => api?.scrollTo(index)}
@@ -261,7 +261,7 @@ function Story() {
           ))}
         </div>
       </div>
-      <div className="flex flex-1 flex-col items-start justify-center gap-[34px] p-3 md:gap-[40px]">
+      <div className="flex flex-1 flex-col items-start justify-center gap-8.5 p-3 md:gap-10">
         <div className="flex items-center gap-4 text-4xl text-white md:text-6xl">
           <span
             className="text-grain bg-[#F3CA9E]! font-['marlton']"
@@ -298,7 +298,7 @@ function Story() {
           <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">
             Craftsmanship
           </span>
-          , and a fair price.
+          {", and a fair price."}
         </p>
         <p
           className="text-justify text-sm tracking-wide text-[#A4A4A4] md:text-base"
@@ -306,12 +306,13 @@ function Story() {
             fontFamily: "var(--font-inter)",
           }}
         >
-          We want to ‘reverse time’ back to when you{" "}
-          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Trusted</span> the
-          people working on your home or Business. Back to when the standard was
-          to do exactly what you said you&apos;d do, rather than using it as
-          merely a{" "}
-          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Guideline </span>.
+          We want to &apos;reverse time&apos; back to when you{" "}
+          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Trusted</span>
+          {
+            " the people working on your home or Business. Back to when the standard was to do exactly what you said you'd do, rather than using it as merely a "
+          }
+          <span className="bg-[#2D2B2B] px-1 text-[#F3CA9E]">Guideline</span>
+          {"."}
         </p>
       </div>
     </div>

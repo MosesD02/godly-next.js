@@ -14,8 +14,8 @@ import {
 const Testimonials = () => {
   return (
     <div className="paper-bg-16 bg-[#262424]">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-20 px-6 pb-[120px] md:px-6 md:py-25">
-        <div className="flex w-full flex-col gap-[63px] md:relative md:flex-row md:items-end md:justify-center">
+      <div className="mx-auto flex max-w-360 flex-col items-center gap-20 px-6 pb-30 md:px-6 md:py-25">
+        <div className="flex w-full flex-col gap-15.75 md:relative md:flex-row md:items-end md:justify-center">
           <div className="flex flex-col items-center justify-center gap-6 md:gap-9">
             <h2 className="sr-only">Customer testimonials</h2>
             <div className="flex items-end gap-6">
@@ -65,7 +65,7 @@ const Testimonials = () => {
                   <div className="paper-bg-8 flex h-full flex-col gap-6 rounded-md bg-[#dec9b4] p-6 text-[#1c1c1c]">
                     <div className="flex w-full flex-col items-center justify-between gap-3">
                       <div className="ribbon">{item.location}</div>
-                      <div className="flex w-full items-center gap-[10px]">
+                      <div className="flex w-full items-center gap-2.5">
                         <Image
                           src={item.image}
                           alt={item.author}
@@ -85,7 +85,7 @@ const Testimonials = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="mb-4 font-sans text-sm leading-relaxed font-normal">
+                    <p className="mb-4 font-sans text-sm/relaxed  font-normal">
                       {item.content}
                     </p>
                   </div>
@@ -93,8 +93,8 @@ const Testimonials = () => {
               ))}
             </CarouselContent>
             <div className="relative mt-16 h-16">
-              <CarouselPrevious className="absolute left-1/2 size-[60px] -translate-x-[calc(100%+1.25rem)] transform rounded-full bg-white text-black" />
-              <CarouselNext className="absolute left-1/2 size-[60px] translate-x-5 transform rounded-full bg-white text-black" />
+              <CarouselPrevious className="absolute left-1/2 size-15 -translate-x-[calc(100%+1.25rem)] transform rounded-full bg-white text-black" />
+              <CarouselNext className="absolute left-1/2 size-15 translate-x-5 transform rounded-full bg-white text-black" />
             </div>
           </Carousel>
         </div>

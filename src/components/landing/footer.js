@@ -39,7 +39,7 @@ const Footer = ({ form = true, service }) => {
   return (
     <>
       <div className="paper-bg-16 bg-[#262424]">
-        <div className="flex flex-col items-center justify-center pt-[30px] text-white">
+        <div className="flex flex-col items-center justify-center pt-7.5 text-white">
           <div className="flex flex-col items-center justify-center">
             <div className="trim text-center text-[64px] leading-none text-white">
               CITIES
@@ -58,7 +58,7 @@ const Footer = ({ form = true, service }) => {
               SERVE
             </div>
           </div>
-          <div className="grid grid-cols-2 px-4 py-[60px] md:grid-cols-4 md:px-0">
+          <div className="grid grid-cols-2 px-4 py-15 md:grid-cols-4 md:px-0">
             {citiesData.map((city, index) => (
               <Link
                 key={index}
@@ -92,11 +92,11 @@ const Footer = ({ form = true, service }) => {
         </div>
       </div>
       <div className="w-full flex-col bg-[#312E2C] md:flex">
-        <div className="item-center mx-auto flex w-full max-w-[1440px] flex-col items-center justify-center gap-10 px-6 py-[48px] md:px-[40px]">
+        <div className="item-center mx-auto flex w-full max-w-360 flex-col items-center justify-center gap-10 px-6 py-12 md:px-10">
           {form && (
-            <div className="flex max-w-[1000px] flex-col items-center justify-center gap-6">
+            <div className="flex max-w-250 flex-col items-center justify-center gap-6">
               <h4
-                className="text-grain trim my-6 bg-white! text-center text-[18px] leading-[72px] tracking-[4.3px] text-white sm:text-[28px] md:text-[64px]"
+                className="text-grain trim my-6 bg-white! text-center text-[18px] leading-18 tracking-[4.3px] text-white sm:text-[28px] md:text-[64px]"
                 data-text="No hard sells. No spam. Just a fast, honest quote from a local, family-owned business."
               >
                 No hard sells. No spam. Just a fast, honest quote from a local,
@@ -116,7 +116,7 @@ const Footer = ({ form = true, service }) => {
             <Image
               src={logo}
               alt="logo"
-              className="object center h-auto w-[117px] object-contain md:w-[182px]"
+              className="object center h-auto w-29.25 object-contain md:w-45.5"
             ></Image>
           </div>
         </div>

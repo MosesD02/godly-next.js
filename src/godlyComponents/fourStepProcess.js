@@ -752,7 +752,7 @@ const FourStepProcess = () => {
 
   return (
     <div className="fourstepprocess" id="about">
-      <div className="fourstepprocess-inner relative flex flex-col items-center justify-center gap-[100px] md:gap-44">
+      <div className="fourstepprocess-inner relative flex flex-col items-center justify-center gap-25 md:gap-44">
         <div className="heading relative flex flex-col gap-0">
           <div className="relative flex flex-col items-center justify-center gap-0">
             {city === "PARKLAND" ||
@@ -805,7 +805,7 @@ const FourStepProcess = () => {
           </div>
         </div>
 
-        <div className="flex w-full max-w-[1193px] flex-col items-center text-white sm:gap-1 sm:pt-2 md:gap-2 md:pt-3 lg:gap-3 lg:pt-4 xl:gap-3 xl:pt-4">
+        <div className="flex w-full max-w-298.25 flex-col items-center text-white sm:gap-1 sm:pt-2 md:gap-2 md:pt-3 lg:gap-3 lg:pt-4 xl:gap-3 xl:pt-4">
           <div className="text-white">
             <div className="relative z-10 pb-2">
               <div className="mx-auto hidden w-fit items-center justify-between px-2 md:flex">
@@ -819,7 +819,7 @@ const FourStepProcess = () => {
 
                     {/* Add the dotted line unless it's the last element */}
                     {index !== steps.length - 1 && (
-                      <div className="mx-1 max-w-[140px] grow sm:mx-1 sm:max-w-[160px] md:mx-1.5 md:max-w-[180px] lg:mx-2 lg:max-w-[195px] xl:mx-3 xl:max-w-[205px]">
+                      <div className="mx-1 max-w-35 grow sm:mx-1 sm:max-w-40 md:mx-1.5 md:max-w-45 lg:mx-2 lg:max-w-48.75 xl:mx-3 xl:max-w-51.25">
                         <Image
                           src="/assets/dotted-line.webp"
                           alt="dotted-line"
@@ -835,18 +835,18 @@ const FourStepProcess = () => {
               </div>
             </div>
           </div>
-          <div className="relative z-10 grid grid-cols-2 justify-center gap-[27px] sm:gap-4 md:flex md:w-full md:grid-cols-4 md:flex-row md:flex-nowrap md:justify-between md:gap-3 md:pt-5 lg:gap-4 xl:gap-5">
+          <div className="relative z-10 grid grid-cols-2 justify-center gap-6.75 sm:gap-4 md:flex md:w-full md:grid-cols-4 md:flex-row md:flex-nowrap md:justify-between md:gap-3 md:pt-5 lg:gap-4 xl:gap-5">
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center md:w-1/4 md:max-w-[230px] md:shrink-0 xl:max-w-[250px]"
+                className="flex flex-col items-center md:w-1/4 md:max-w-57.5 md:shrink-0 xl:max-w-62.5"
               >
-                <div className="trim pb-[18px] text-2xl font-normal tracking-[3.24px] text-[#FDE4C8] md:hidden md:text-3xl xl:text-[36px]">
+                <div className="trim pb-4.5 text-2xl font-normal tracking-[3.24px] text-[#FDE4C8] md:hidden md:text-3xl xl:text-[36px]">
                   {step.number}
                 </div>
                 <div className="paper-bg-8 stepcontainer relative z-10 rounded bg-[#F4D9BB] p-3 text-black shadow md:w-full">
-                  <div className="flex min-h-[180px] flex-col items-center justify-center gap-[20px] border-2 border-black px-2 md:min-h-[250px] md:gap-4 lg:min-h-[285px]">
-                    <div className="flex h-[42px] w-[42px] justify-center md:h-full md:w-full">
+                  <div className="flex min-h-45 flex-col items-center justify-center gap-5 border-2 border-black px-2 md:min-h-62.5 md:gap-4 lg:min-h-71.25">
+                    <div className="flex h-10.5 w-10.5 justify-center md:size-full">
                       {step.icon}
                     </div>
                     <div className="trim text-center font-['satoshi-black'] text-[16px] font-black text-[#1C1C1C] md:text-[22px] lg:text-[26px]">
@@ -961,7 +961,7 @@ const Badge = ({
         alt="spark"
         src={image}
         className={cn(
-          "relative z-20 size-6 object-contain transition-transform duration-500 md:h-auto md:w-auto",
+          "relative z-20 size-6 object-contain transition-transform duration-500 md:size-auto ",
           sparks && "group-hover:rotate-15",
           isActive ? "rotate-15" : "",
         )}

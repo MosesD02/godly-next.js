@@ -7,7 +7,7 @@ import Image from "@/components/Image";
 const Location = () => {
   return (
     <div className="paper-bg-16 bg-[#262424]">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-center gap-[15px] bg-cover bg-center bg-no-repeat py-[43px] bg-blend-multiply md:gap-[14px] md:p-16">
+      <div className="mx-auto flex max-w-360 flex-col items-center justify-center gap-3.75 bg-cover bg-center bg-no-repeat py-10.75 bg-blend-multiply md:gap-3.5 md:p-16">
         <div
           className="text-grain trim bg-[#FDE4C8]! font-['Marlton'] text-base font-light tracking-[2.24px] md:text-2xl md:font-normal md:tracking-wider"
           data-text="PROUDLY SERVING"
@@ -37,7 +37,7 @@ const Location = () => {
         <Image
           src={map}
           alt="map"
-          className="h-full max-w-[345px] md:max-w-[1140px]"
+          className="h-full max-w-86.25 md:max-w-285"
         />
 
         <SectionButton>Get My Free Quote</SectionButton>

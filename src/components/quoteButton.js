@@ -23,7 +23,7 @@ export default function QuoteButton({
         height="33"
         viewBox="0 0 33 33"
         fill="none"
-        className="z-10 size-6 md:size-[30px]"
+        className="z-10 size-6 md:size-7.5"
       >
         <path
           fillRule="evenodd"

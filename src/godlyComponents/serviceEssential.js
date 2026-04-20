@@ -51,7 +51,7 @@ const EssentialService = ({ slug, essentialOverride, cityName }) => {
       </div>
 
       {/* Info Cards Section */}
-      <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-[24px] lg:gap-[28px] xl:gap-[32px]">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-7 xl:gap-8">
         {(essentialOverride ?? Services[slug]["essential"]).map(
           (point, index) => {
             const items = essentialOverride ?? Services[slug]["essential"];
@@ -60,7 +60,7 @@ const EssentialService = ({ slug, essentialOverride, cityName }) => {
               <div
                 key={index}
                 className={cn(
-                  "paper-bg-8 min-h-[209px] rounded-[18px] p-2 shadow-md sm:min-h-[220px] md:max-h-full md:min-h-[240px] md:w-100 xl:min-h-[260px] xl:min-w-[522px]",
+                  "paper-bg-8 min-h-52.25 rounded-[18px] p-2 shadow-md sm:min-h-55 md:max-h-full md:min-h-60 md:w-100 xl:min-h-65 xl:min-w-130.5",
                   isActive ? "bg-[#E9E5E4]" : "bg-[#CBB7A0]",
                   "hover:bg-[#E9E5E4]",
                   index === items.length - 1 &&
@@ -69,7 +69,7 @@ const EssentialService = ({ slug, essentialOverride, cityName }) => {
                 )}
                 onClick={() => toggleCard(index)}
               >
-                <div className="flex h-full grow flex-col gap-4 rounded-[12px] border-[1.7px] border-solid border-[#2D2B2B] px-3 py-3 sm:px-4 sm:py-4 md:px-5 md:py-5 lg:px-6 lg:py-6 xl:px-7 xl:py-7">
+                <div className="flex h-full grow flex-col gap-4 rounded-[12px] border-[1.7px] border-solid border-[#2D2B2B] p-3  sm:p-4  md:p-5  lg:p-6  xl:p-7 ">
                   <div
                     className={cn(
                       "stroke! trim stroke-[#2D2B2B33] stroke-1! text-[40px] font-bold sm:text-[48px] md:text-[64px] lg:text-[72px] xl:text-[80px]",

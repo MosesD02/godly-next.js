@@ -21,7 +21,7 @@ const ServicesHero = ({ slug, heroOverride, cityName }) => {
       : Services[slug]["hero"][3];
 
   return (
-    <div className="paper-bg-16 mt-17 flex flex-col items-center justify-center gap-20 bg-[#252525] px-[30px] py-[42px] md:mt-14 md:py-[100px]">
+    <div className="paper-bg-16 mt-17 flex flex-col items-center justify-center gap-20 bg-[#252525] px-7.5 py-10.5 md:mt-14 md:py-25">
       <h1 className="sr-only">{generateServiceH1(slug, cityName)}</h1>
       <div className="flex flex-col items-center justify-center gap-4">
         <div className="flex items-center justify-start gap-3">
@@ -68,7 +68,7 @@ const ServicesHero = ({ slug, heroOverride, cityName }) => {
                 Services[slug]["hero"][0].split(" ").length === 1 && "md:ms-12",
               )}
             >
-              <span className="absolute top-60 right-25 hidden max-w-[100px] rotate-[6.668deg] text-left font-['marlton'] text-base font-normal tracking-[2px] text-[#FDE4C8] md:-top-5 md:-right-30 md:block">
+              <span className="absolute top-60 right-25 hidden max-w-25 rotate-[6.668deg] text-left font-['marlton'] text-base font-normal tracking-[2px] text-[#FDE4C8] md:-top-5 md:-right-30 md:block">
                 {displayCity}
               </span>
               <span
@@ -86,7 +86,7 @@ const ServicesHero = ({ slug, heroOverride, cityName }) => {
                 {Services[slug]["hero"][1]}
               </span>
             </div>
-            <span className="absolute top-6 right-0 max-w-[100px] font-['marlton'] text-base leading-tight font-normal tracking-[2px] text-[#FDE4C8] md:hidden">
+            <span className="absolute top-6 right-0 max-w-25 font-['marlton'] text-base/tight font-normal tracking-[2px] text-[#FDE4C8] md:hidden">
               {displayCity}
             </span>
           </div>
@@ -108,7 +108,7 @@ const ServicesHero = ({ slug, heroOverride, cityName }) => {
         <div className="absolute top-2 -left-6 z-10 h-3 w-18 -rotate-45 bg-[#F3CA9ECC] sm:top-2 sm:-left-6 sm:h-3 sm:w-20 md:top-2 md:-left-6 md:h-3 md:w-22 lg:top-3 lg:-left-7 lg:h-4 lg:w-24 xl:top-4 xl:-left-8 xl:h-5 xl:w-26"></div>
         <div className="absolute -right-6 bottom-2 z-10 h-3 w-18 -rotate-45 bg-[#F3CA9ECC] sm:-right-6 sm:bottom-2 sm:h-3 sm:w-20 md:-right-6 md:bottom-2 md:h-3 md:w-22 lg:-right-7 lg:bottom-3 lg:h-4 lg:w-24 xl:-right-8 xl:bottom-4 xl:h-5 xl:w-26"></div>
       </div>
-      <div className="text-left font-['satoshi-regular'] text-sm leading-6 text-white sm:max-w-none sm:text-left sm:text-base sm:leading-6 sm:text-white md:max-w-[700px] md:text-center md:text-base md:leading-7 md:text-[#FFFFFF94] lg:max-w-[800px] lg:text-center lg:text-lg lg:leading-7 lg:text-[#FFFFFF94] xl:max-w-[900px] xl:text-center xl:text-xl xl:leading-8 xl:text-[#FFFFFF94]">
+      <div className="text-left font-['satoshi-regular'] text-sm/6 text-white sm:max-w-none sm:text-left sm:text-base/6 sm:text-white md:max-w-175 md:text-center md:text-base/7 md:text-[#FFFFFF94] lg:max-w-200 lg:text-center lg:text-lg/7 lg:text-[#FFFFFF94] xl:max-w-225 xl:text-center xl:text-xl/8 xl:text-[#FFFFFF94]">
         <p>{heroOverride ?? heroDescription}</p>
       </div>
       {slug === "holiday-lighting" ? (

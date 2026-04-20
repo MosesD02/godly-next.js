@@ -99,7 +99,7 @@ const Services = {
       "Cleaning",
       service2,
       (city) =>
-        `This is our jam. We specialize in residential and commercial window cleaning services in ${city}. We offer a 100% money back guarantee on all of our cleaning services.`,
+        `Outside glass in ${city} catches salt mist, pollen showers, and sprinkler overspray long before you notice it from indoors. Our exterior-only crews work ladders, poles, and purified rinses to scrub outdoor panes, sun-facing sliders, and patio doors—without crossing your threshold. Every job ends with a streak-free RO/DI finish and our money-back promise.`,
     ],
     included: [
       {
@@ -186,7 +186,7 @@ const Services = {
       "Cleaning",
       service3,
       (city) =>
-        `This is where we shine. We specialize in residential and commercial window cleaning services in ${city}. We offer a 100% money back guarantee on all of our cleaning services.`,
+        `Fingerprints on kid-height glass, HVAC dust along sills, and film from cooking grease stay on the inside of ${city} homes. We stage shoe covers, protect furniture, and work pane-by-pane on interior glass, tracks, and dividers—never confusing this visit with an exterior wash. Residential interior work is our focus here, backed by the same satisfaction guarantee.`,
     ],
     included: [
       {
@@ -807,7 +807,7 @@ const Services = {
       "Cleaning",
       service2,
       (city) =>
-        `This is our jam. We specialize in residential and commercial window cleaning in ${city}. Using RO/DI purified water and hand scrubbing, we remove everything from silicone to overspray without leaving a single streak. Backed by our 100% money back guarantee.`,
+        `Think of this as the hub for every window need in ${city}: storefronts, waterfront homes, and HOAs that want one vendor who can scale. We coordinate interior crews, exterior-only routes, and post-construction punch-list teams so you are never steered to the wrong specialty page. Hand-scrubbed glass, RO/DI rinses, optional Rain Shield, and our 7-day sparkle guarantee still anchor every scope.`,
     ],
     included: [
       {
@@ -1068,7 +1068,7 @@ const Services = {
       "Window Cleaning",
       service2,
       (city) =>
-        `New build or major renovation in ${city}? Stucco dust, paint overspray, and construction film don't stand a chance. Our post-construction window cleaning crew uses pro-grade tools and RO/DI purified water to leave every pane move-in ready — backed by our builder-ready guarantee.`,
+        `Builders and remodelers across ${city} bring us in when silicone tags, stucco spatter, and protective film are still stuck to glass days before certificate of occupancy. This service is tuned for job-site schedules—not routine residential maintenance—with scraping, solvent-safe detailing, and a final purified rinse so punch lists photograph clean for owners and inspectors.`,
     ],
     included: [
       {

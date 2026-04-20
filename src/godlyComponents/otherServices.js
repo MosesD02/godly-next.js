@@ -42,7 +42,7 @@ const OtherServices = ({ slug, cityName: cityNameProp, citySlug }) => {
       id="other-services-in-city"
       className="paper-bg-16 flex flex-col items-center justify-center justify-items-center gap-10 bg-[#ebded1] bg-cover bg-center bg-no-repeat p-4 pb-24 bg-blend-multiply md:p-24 md:pt-0 md:pb-42"
     >
-      <h2 className="trim py-10 text-center text-[32px] leading-tight font-normal tracking-wide text-[#191717] md:max-w-[1200px] md:text-[64px]">
+      <h2 className="trim py-10 text-center text-[32px] leading-tight font-normal tracking-wide text-[#191717] md:max-w-300 md:text-[64px]">
         Other Services in {cityNameDisplay}
       </h2>
 
@@ -57,14 +57,14 @@ const OtherServices = ({ slug, cityName: cityNameProp, citySlug }) => {
               className="block"
             >
               <div className="transform transition-transform duration-300 hover:rotate-0">
-                <div className="relative flex flex-col justify-between gap-3 rounded-sm bg-[#e7e3df] p-[6.5] pb-[13px] text-[#1c1c1c] md:min-h-[250px] md:gap-4 md:p-2.5 md:pb-[18px]">
+                <div className="relative flex flex-col justify-between gap-3 rounded-sm bg-[#e7e3df] p-[6.5] pb-3.25 text-[#1c1c1c] md:min-h-62.5 md:gap-4 md:p-2.5 md:pb-4.5">
                   <Image
                     src={img}
                     style={{ objectFit: "cover" }}
                     alt={generateServiceHeroAlt(serviceSlug, cityNameProp)}
                     width={500}
                     height={500}
-                    className="h-full max-h-[145px] min-h-[145px] w-full object-cover md:max-h-[223px] md:min-h-[223px]"
+                    className="size-full max-h-36.25 min-h-36.25 object-cover md:max-h-55.75 md:min-h-55.75"
                   />
                   <p className="trim text-center text-sm md:text-[22px]">
                     {title}

@@ -11,7 +11,7 @@ const Hero = ({ cityName: city }) => {
 
   return (
     <div className="relative overflow-x-clip bg-[#1F1D1D]">
-      <div className="absolute top-[70px] left-0 h-[450px] w-full md:top-[44px] md:h-[700px]">
+      <div className="absolute top-17.5 left-0 h-112.5 w-full md:top-11 md:h-175">
         <Image
           src="/assets/new-hero.jpeg"
           alt={generateCityHeroAlt(city)}
@@ -20,21 +20,21 @@ const Hero = ({ cityName: city }) => {
           priority
           sizes="100vw"
         />
-        <div className="absolute top-0 left-0 h-full w-full bg-linear-to-b from-[#1F1D1D]/0 to-[#1F1D1D]"></div>
+        <div className="absolute top-0 left-0 size-full bg-linear-to-b from-[#1F1D1D]/0 to-[#1F1D1D]"></div>
       </div>
 
-      <div className="relative z-10 mx-auto max-w-[1440px] px-[20px] md:px-14 md:pb-32">
-        <div className="flex min-h-[600px] flex-col justify-end gap-3 pb-10 xl:min-h-[815px]">
+      <div className="relative z-10 mx-auto max-w-360 px-5 md:px-14 md:pb-32">
+        <div className="flex min-h-150 flex-col justify-end gap-3 pb-10 xl:min-h-203.75">
           <div className="flex items-center justify-start gap-3">
             <span className="font-marlton trim text-base tracking-[2.07px] text-[#FDE4C8] md:text-base xl:text-[20.704px]">
               TOP RATED
             </span>
             <div className="trim flex items-center gap-[3.774px]">
-              <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
-              <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
-              <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
-              <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
-              <Star className="h-[13px] w-[13px] md:size-3 xl:h-[17px] xl:w-[18px]" />
+              <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
+              <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
+              <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
+              <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
+              <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
             </div>
           </div>
           <h1 className="sr-only">{generateHomeH1(city)}</h1>

@@ -14,7 +14,7 @@ const Faq = ({ faqs, serviceName, cityName }) => {
     <div
       id="faq"
       className={cn(
-        "paper-bg-16 flex flex-col items-center gap-[98px] bg-[#ebded1] bg-cover bg-center bg-no-repeat px-6 py-12",
+        "paper-bg-16 flex flex-col items-center gap-24.5 bg-[#ebded1] bg-cover bg-center bg-no-repeat px-6 py-12",
       )}
     >
       <div

@@ -20,7 +20,7 @@ export default function BlogPostFaq({ faq }) {
             <AccordionTrigger className="text-left font-['satoshi-medium'] text-lg text-[#312E2C] hover:text-[#AF8F6E]">
               {item.question}
             </AccordionTrigger>
-            <AccordionContent className="font-['satoshi-light'] text-base leading-relaxed text-[#373A44]">
+            <AccordionContent className="font-['satoshi-light'] text-base/relaxed  text-[#373A44]">
               {item.answer}
             </AccordionContent>
           </AccordionItem>

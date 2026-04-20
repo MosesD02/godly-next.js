@@ -155,7 +155,7 @@ const Header = () => {
           {/* Left side: Logo, Mobile Toggle, Desktop Nav */}
           <div
             className={cn(
-              "flex w-full items-center justify-between bg-[#252323] lg:max-h-[80px] lg:w-auto lg:justify-start lg:gap-[30px]",
+              "flex w-full items-center justify-between bg-[#252323] lg:max-h-20 lg:w-auto lg:justify-start lg:gap-7.5",
               mobileMenuOpen ? "justify-center" : "",
             )}
           >
