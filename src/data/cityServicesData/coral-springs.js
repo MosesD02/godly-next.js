@@ -1,26 +1,45 @@
 export const coralSprings = {
   "exterior-window-cleaning": {
-    hero: "South Florida's salt air doesn't just make your windows dirty—it can damage them. Our exterior cleaning targets salt buildup, pollen, and environmental grime that accumulates on your home's outside surface. We handle safe access to second-story windows across Coral Springs' diverse neighborhoods.",
+    hero:
+      "Oak pollen and pine sap cake onto street-facing glass faster than most owners notice. We clear frames, screens, and sills, then pure-rinse every exterior story so HOA drive-bys catch sparkle—not chalky tree rings.",
+    included: [
+      {
+        number: "01",
+        title: "Exterior prep and debris clear",
+        text:
+          "Oak pollen, sap spots, and spider webs get cleared from the frame before water touches glass.",
+      },
+      {
+        number: "02",
+        title: "Water-fed pole pure-water clean",
+        text:
+          "Our 40-foot pole system reaches every story without leaning a ladder on your trim.",
+      },
+      {
+        number: "03",
+        title: "Sill drain and frame check",
+        text:
+          "We dry sill edges so nothing drips onto your stucco or pavers after we leave.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title: "Protect Against Salt Damage",
-        text: "Coral Springs' proximity to coastal salt air means exterior windows face constant corrosion risk. Regular cleaning stops staining and etching.",
+        title: "Pollen, sap, and tree debris — handled",
+        text:
+          "Coral Springs’ canopy drops a constant stream of pollen, pine sap, and leaf particles on your glass. Regular exterior cleans are the only way to stay ahead of it.",
       },
       {
         number: "02.",
-        title: "Planned Community Pride",
-        text: "Whether you're in Ramblewood or Heron Bay, clean exteriors reflect the care that makes these communities special.",
+        title: "No ladder marks on your stucco",
+        text:
+          "Pure-water pole systems let us clean up to 40 feet without a ladder on your home — a real concern on freshly painted or recently pressure-washed Coral Springs exteriors.",
       },
       {
         number: "03.",
-        title: "Prevent Permanent Etching",
-        text: "Salt and mineral deposits don't just look bad—they can permanently alter glass. Routine cleaning prevents this.",
-      },
-      {
-        number: "04.",
-        title: "Curb Appeal from the Street",
-        text: "Your home's first impression depends on sparkling exterior windows. Buyers and guests notice.",
+        title: "Longer glass life, fewer replacements",
+        text:
+          "Untreated pollen and mineral spots etch glass permanently. Scheduled cleans keep it from ever getting there.",
       },
     ],
     faqs: [
@@ -55,16 +74,34 @@ export const coralSprings = {
       "Let's get your Coral Springs home's exterior windows gleaming. Schedule your service in The Walk, Heron Bay, or any neighborhood—we're ready to tackle South Florida's toughest exterior grime.",
     nearYou: [
       {
-        title: "Heron Bay Luxury Homes",
-        text: "High-end properties here deserve specialized care for premium results. We handle multi-story homes with expertise.",
+        title: "HOA-approved residential routines",
+        text:
+          "Recurring exterior service across every Coral Springs HOA — we know the paperwork.",
       },
       {
-        title: "Eagle Trace Golf Community",
-        text: "Course-side homes take extra environmental hits. We clean away dust, pollen, and salt spray that accumulate.",
+        title: "Two and three-story exteriors",
+        text:
+          "Pole work to 40 feet — no ladders, no scaffold.",
       },
       {
-        title: "Ramblewood Townhomes",
-        text: "Townhome communities require efficient, professional service. We schedule around shared common areas.",
+        title: "Commercial storefront exteriors",
+        text:
+          "Regular exterior glass for University Drive, Sample Road, and Coral Springs retail corridors.",
+      },
+      {
+        title: "Skylight exterior cleaning",
+        text:
+          "Roof-level glass cleaned without anyone setting foot on the tile.",
+      },
+      {
+        title: "Sprinkler-stain treatment",
+        text:
+          "Hard-water overspray treated and corrected.",
+      },
+      {
+        title: "Post-storm exterior wash",
+        text:
+          "After heavy weather, a thorough exterior reset on every pane.",
       },
     ],
   },
@@ -273,27 +310,46 @@ export const coralSprings = {
     ],
   },
   "interior-window-cleaning": {
-    hero: "Kids' fingerprints, pet smudges, dust from Coral Springs' air—interior windows take a beating in busy families. We clean the inside surfaces of every window, frame, and sill to bring natural light back. Your home feels brighter instantly.",
+    hero:
+      "Coral Springs’ tree-lined streets are beautiful, but all those oaks, palms, and slash pines drop pollen, sap, and leaf debris onto your glass year-round. We know this city’s HOAs, its microclimates, and exactly what it takes to keep Coral Springs windows looking sharp.",
+    included: [
+      {
+        number: "01",
+        title: "Pollen and dust sweep",
+        text:
+          "Coral Springs’ tree cover means indoor sills collect pollen fast — we clear it all before the glass touches solution.",
+      },
+      {
+        number: "02",
+        title: "Pane-by-pane hand clean",
+        text:
+          "Every interior pane is hand-cleaned — no rushed robot work on the glass your family actually sees.",
+      },
+      {
+        number: "03",
+        title: "Track and sill detail",
+        text:
+          "Vacuumed tracks, wiped sills, polished frames — the parts most cleaners don’t touch.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title: "Brighten Interior Spaces",
-        text: "Interior grime blocks natural light. Clean windows flood your living spaces with sunlight and energy.",
+        title: "Brighter homes under the canopy",
+        text:
+          "All those oaks and slash pines keep Coral Springs beautiful — but they also block indoor light. Clean interior glass is the easiest way to claw back every bit of the sunlight that does get through.",
       },
       {
         number: "02.",
-        title: "Family-Friendly Home",
-        text: "Coral Springs families deserve clean, healthy indoor spaces. Interior windows directly affect how your home feels.",
+        title: "Relief for allergy sufferers",
+        text:
+          "Pollen collects on indoor sills and frames. A proper interior clean gets it out of your home, not just off the glass.",
       },
       {
         number: "03.",
-        title: "Better for Kids & Pets",
-        text: "Remove accumulated dust and allergens from windowsills and glass. Breathing gets easier.",
-      },
-      {
-        number: "04.",
-        title: "Show Off Your Decor",
-        text: "Clean interior windows let your furniture, art, and views shine without glass-glare distraction.",
+        title: "Careful work that respects your home",
+        text:
+          "Drop cloths, booties, and a team trained to move around your furniture and art — not through it.",
       },
     ],
     faqs: [
@@ -327,16 +383,34 @@ export const coralSprings = {
       "Brighten up your Coral Springs interior. We'll clean inside windows across your home so natural light floods through. Book your interior cleaning today.",
     nearYou: [
       {
-        title: "Coral Square Mall Area Residences",
-        text: "Homes near the mall and downtown Coral Springs get attention to detail they deserve.",
+        title: "Single-family interior service",
+        text:
+          "Recurring or one-time interior cleans across Eagle Trace, Whispering Woods, and the rest of Coral Springs.",
       },
       {
-        title: "The Walk Community",
-        text: "Family-centric homes in The Walk benefit from bright, clean interiors. We schedule conveniently.",
+        title: "HOA-approved interior routines",
+        text:
+          "We’ve worked in every Coral Springs HOA — no community access paperwork you haven’t already seen.",
       },
       {
-        title: "Multi-Story Homes Across All Neighborhoods",
-        text: "From Ramblewood to Eagle Trace, we safely and efficiently clean interior windows throughout your home.",
+        title: "High-ceiling and two-story interiors",
+        text:
+          "Pole work and ladder work for the indoor glass your arms can’t reach.",
+      },
+      {
+        title: "Condo and townhome interiors",
+        text:
+          "Focused interior service for units where exterior access is limited.",
+      },
+      {
+        title: "Office and medical-suite interiors",
+        text:
+          "Evening and weekend interior cleans for Coral Springs businesses.",
+      },
+      {
+        title: "Post-renovation interior dusting",
+        text:
+          "Remodel cleanup for windows, frames, and sills.",
       },
     ],
   },

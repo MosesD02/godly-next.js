@@ -225,6 +225,30 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
               </div>
             ))}
           </div>
+          {nearYouItems.length > 5 && (
+            <div className="relative z-10 flex flex-wrap justify-center gap-6 px-4 py-5 sm:gap-8 sm:px-6 md:gap-12 md:px-8">
+              {nearYouItems.slice(5, 6).map((step, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  <div className="relative z-10 h-full w-64 rounded-md bg-[#CDB9A2] p-3 text-black">
+                    <div className="flex h-full flex-col items-center justify-between rounded-md border-[1.5px] border-dashed border-[#2D2B2B] p-2 text-[#2D2B2B]">
+                      <div>
+                        <div className="mb-4 flex justify-center">
+                          {steps2[2].icon}
+                        </div>
+                        <div
+                          className="mb-8 text-center text-xl"
+                          style={{ marginBottom: "1rem" }}
+                        >
+                          {step.title}
+                        </div>
+                      </div>
+                      <p className="text-center font-sans text-sm">{step.text}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
         {(() => {
           const t = taglines[slug];

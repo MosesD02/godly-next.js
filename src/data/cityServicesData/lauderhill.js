@@ -1,4 +1,156 @@
 export const lauderhill = {
+  "exterior-window-cleaning": {
+    hero:
+      "Set back from the beach, Lauderhill still loads outdoor panes with insect debris, lawn dust, and sprinkler overspray between storms. We strip grime from every exterior frame and pane so rain sheets off clean—without ladder feet on your trim.",
+    included: [
+      {
+        number: "01",
+        title: "Exterior prep and debris clear",
+        text:
+          "Bugs, cobwebs, and landscape debris are cleared from the frame edges before any solution hits the glass.",
+      },
+      {
+        number: "02",
+        title: "Water-fed pole pure-water clean",
+        text:
+          "Lauderhill’s heat and humidity mean streak-prone glass — pure water solves it at the source.",
+      },
+      {
+        number: "03",
+        title: "Edge, frame, and run-off check",
+        text:
+          "Every frame bottom is dried and checked so rain streaks don’t appear two days later.",
+      },
+    ],
+    essential: [
+      {
+        number: "01.",
+        title: "No more streaks from daily storms",
+        text:
+          "Central Broward afternoon thunderstorms hit exterior glass hard. A proper clean gives the water a clean surface to run off — dramatically fewer streaks between visits.",
+      },
+      {
+        number: "02.",
+        title: "Bug nests and spider webs off the frame",
+        text:
+          "Lauderhill exteriors pick up more insect activity than coastal properties. We clean the frames and corners, not just the glass.",
+      },
+      {
+        number: "03.",
+        title: "Longer glass life",
+        text:
+          "Untreated mineral deposits and pollen film permanently etch glass over time. Scheduled exterior cleaning prevents it.",
+      },
+    ],
+    nearYou: [
+      {
+        title: "Home exterior routines",
+        text:
+          "Seasonal or ongoing exterior glass service across Lauderhill.",
+      },
+      {
+        title: "HOA-wide exterior contracts",
+        text:
+          "Bulk exterior service for condominium and townhome associations.",
+      },
+      {
+        title: "Commercial building exteriors",
+        text:
+          "Storefronts and small offices with regular exterior cleans.",
+      },
+      {
+        title: "Screen repair and replacement",
+        text:
+          "While we’re cleaning the exterior, we can repair or replace damaged screens.",
+      },
+      {
+        title: "Sprinkler-spot glass treatment",
+        text:
+          "Removing hard-water stains from landscape irrigation overspray.",
+      },
+      {
+        title: "Gutter and roofline detail",
+        text:
+          "Add-on exterior service that pairs with window work.",
+      },
+    ],
+  },
+  "interior-window-cleaning": {
+    hero:
+      "Lauderhill sits inland enough to skip the worst salt spray, but central Broward humidity still leaves a dull haze on glass most months of the year. We clean windows the way they need to be cleaned in Lauderhill — no shortcuts, no streaks, no gritty residue left behind.",
+    included: [
+      {
+        number: "01",
+        title: "Dust and cobweb sweep",
+        text:
+          "Lauderhill homes collect ceiling-corner cobwebs fast — we clear them before touching the glass.",
+      },
+      {
+        number: "02",
+        title: "Interior-safe glass scrub",
+        text:
+          "A light solution and hand-work removes the humidity haze without leaving any residue on your floors.",
+      },
+      {
+        number: "03",
+        title: "Frame, handle, and sill wipe",
+        text:
+          "Everything around the glass gets wiped too, so the whole window looks new — not just the pane.",
+      },
+    ],
+    essential: [
+      {
+        number: "01.",
+        title: "Brighter rooms year-round",
+        text:
+          "The central Broward humidity puts a fog on indoor glass most months of the year. Clean interiors cut through that and instantly bring more daylight into your living areas.",
+      },
+      {
+        number: "02.",
+        title: "Allergens off your frames",
+        text:
+          "Pollen from the oaks and palms settles on interior sills as much as exterior ones. A real interior clean removes it — your allergy sufferers will notice.",
+      },
+      {
+        number: "03.",
+        title: "Clean, careful work inside your home",
+        text:
+          "We show up on time, cover what needs covering, and leave the space as tidy as we found it. Not a drop on your carpet or hardwoods.",
+      },
+    ],
+    nearYou: [
+      {
+        title: "Single-family interior cleans",
+        text:
+          "One-time, quarterly, or seasonal interior glass service for homes across Lauderhill.",
+      },
+      {
+        title: "Rental turnover cleans",
+        text:
+          "Landlords and property managers — we handle interior glass between tenants.",
+      },
+      {
+        title: "Apartment and condo interiors",
+        text:
+          "Fast, thorough interior service for units in Inverrary and across Lauderhill.",
+      },
+      {
+        title: "Post-paint interior cleanup",
+        text:
+          "Fresh paint jobs leave fine dust on glass — we clean it off without touching the trim.",
+      },
+      {
+        title: "Sliding door and patio glass",
+        text:
+          "The surfaces that get smudged the most, done the way they should be.",
+      },
+      {
+        title: "Sill and track deep-clean",
+        text:
+          "Vacuum, wipe, detail — the whole frame, not just the glass.",
+      },
+    ],
+  },
   "post-construction-window-cleaning": {
     hero: "Just wrapped construction on a Lauderhill home or commercial project? Stucco dust, paint overspray, and adhesive residue coat every pane by handoff day. Our post-construction window cleaning team arrives with professional scraping tools plus RO/DI purified water to deliver a spotless, move-in-ready finish across every window.",
     essential: [

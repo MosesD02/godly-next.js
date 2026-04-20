@@ -1,26 +1,45 @@
 export const cooperCity = {
   "exterior-window-cleaning": {
-    hero: "Stucco dust, pollen, and hard water spots love sticking to Cooper City windows. From Country Glen ranch homes to Embassy Lakes two-stories, we've got the reach and the gear. Our exterior-focused crews get every pane spotless without stepping inside your home.",
+    hero:
+      "Rock Creek to Embassy Lakes, Cooper City curb appeal starts at the glass facing the street. We remove pollen film and hard-water spots from every outdoor pane so stucco and trim stay untouched.",
+    included: [
+      {
+        number: "01",
+        title: "Exterior prep and screen removal",
+        text:
+          "We pull screens, clear debris from the sill, and prep the glass for a proper wash.",
+      },
+      {
+        number: "02",
+        title: "Pure-water exterior clean",
+        text:
+          "Water-fed poles deliver a streak-free, scratch-free clean on every story of your home.",
+      },
+      {
+        number: "03",
+        title: "Frame drying and detail check",
+        text:
+          "Bottom sills dried by hand so no water sits against the wood or stucco.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title: "Weather Takes a Toll",
-        text: "Salt air, UV rays, and rain spots accumulate on your exterior glass. Professional cleaning removes them completely.",
+        title: 'Homes that stay "new-build clean"',
+        text:
+          "Cooper City builds show off best with clean exterior glass. Regular exterior washes are what keep that new-construction shine from fading in year two.",
       },
       {
         number: "02.",
-        title: "Two-Story Protection",
-        text: "Your stucco home's second-story windows are hard to reach and easy to ignore. We handle them safely.",
+        title: "Stucco and paint protection",
+        text:
+          "Water-fed poles eliminate ladder marks and overspray on your siding — a real concern on stucco-heavy Cooper City homes.",
       },
       {
         number: "03.",
-        title: "Gated Community Curb Appeal",
-        text: "Your neighbors notice. Clean windows project pride and proper maintenance.",
-      },
-      {
-        number: "04.",
-        title: "Prevent Long-Term Damage",
-        text: "Mineral buildup can etch glass over time. Regular cleaning stops damage before it starts.",
+        title: "Sprinkler spots solved at the source",
+        text:
+          "Lawn irrigation hits glass daily in Cooper City. Untreated, it etches. We treat it and prevent it.",
       },
     ],
     faqs: [
@@ -54,20 +73,34 @@ export const cooperCity = {
       "Let's keep your Cooper City property looking its best. Book now.",
     nearYou: [
       {
-        title: "Rock Creek Community",
-        text: "Your quiet Cooper City neighborhood deserves professional-grade care. We know Rock Creek's family-friendly streets and the homes that fill them.",
+        title: "Single-family exteriors",
+        text:
+          "Monthly or quarterly service for Cooper City homes from Embassy Lakes to Rock Creek.",
       },
       {
-        title: "Embassy Lakes Area",
-        text: "From the bustling Embassy Lakes community to your home's exterior, we deliver consistent, reliable service tailored to your needs.",
+        title: "Two-story and three-story exteriors",
+        text:
+          "Water-fed pole work up to 40 feet — no ladders leaned on your finish.",
       },
       {
-        title: "Country Glen Living",
-        text: "Country Glen residents trust us to keep their homes looking their best. Gated community standards start with professional maintenance.",
+        title: "Pool-cage and lanai glass",
+        text:
+          "Enclosed glass that collects chlorine mist and pool grime — cleaned without damage to the cage.",
       },
       {
-        title: "Brian Piccolo Park Region",
-        text: "Near the park or throughout the surrounding area, we're your Cooper City experts with experience across all neighborhood properties.",
+        title: "Skylight and roof-glass cleans",
+        text:
+          "Above-the-roof glass handled safely from ground level.",
+      },
+      {
+        title: "Sprinkler-stain treatment",
+        text:
+          "Specialist removal of hard-water spots on exterior glass.",
+      },
+      {
+        title: "Post-storm exterior washes",
+        text:
+          "Grit, branches, and sap cleared after heavy weather.",
       },
     ],
   },
@@ -286,27 +319,46 @@ export const cooperCity = {
     ],
   },
   "interior-window-cleaning": {
-    hero: "Fingerprints, pet smudges, cooking film—your Cooper City interior windows collect it all. We work carefully around your blinds, sills, and furnishings. Families near Brian Piccolo Park and Rock Creek trust us to leave every inside pane crystal clear.",
+    hero:
+      "Cooper City homes — from Rock Creek to Embassy Lakes — were built to be shown off, and your windows are a big part of that. Our crews treat every job like it's the one you'll judge us by, because it is.",
+    included: [
+      {
+        number: "01",
+        title: "Top-down dust removal",
+        text:
+          "We work from crown molding down so the finished pane stays clean through the whole visit.",
+      },
+      {
+        number: "02",
+        title: "Interior glass hand-clean",
+        text:
+          "Every pane gets a careful hand pass — no rushed spray-and-wipe.",
+      },
+      {
+        number: "03",
+        title: "Sills, tracks, and hardware detail",
+        text:
+          "The rails, locks, and sashes get wiped so nothing looks half-done.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title: "A Cleaner Home Starts With Windows",
-        text: "Interior windows collect dust, pet prints, and fingerprints. Spotless interiors make the whole house feel fresher.",
+        title: "Homes that show the way you want them to",
+        text:
+          "Cooper City homes — Embassy Lakes, Rock Creek, Monterra — are built to impress. Clean interior glass is one of those details that instantly signals the house is well-kept.",
       },
       {
         number: "02.",
-        title: "Natural Light Matters",
-        text: "Dirty interior glass blocks light and makes rooms feel smaller. Clean windows brighten your entire home.",
+        title: "Easier on your furniture and floors",
+        text:
+          "We cover what needs covering and keep our water contained. No puddles on the wood, no mist on your electronics.",
       },
       {
         number: "03.",
-        title: "Family Health Connection",
-        text: "Kids spend time near windows. Clean glass and sills reduce dust and allergens.",
-      },
-      {
-        number: "04.",
-        title: "Rental Ready or Resale Ready",
-        text: "First impressions happen at the windows. Interior cleanliness counts.",
+        title: "Less dust in your daily routine",
+        text:
+          "An interior clean pulls the settled dust off every sill and track — meaning less airborne dust in your living areas between visits.",
       },
     ],
     faqs: [
@@ -339,20 +391,34 @@ export const cooperCity = {
     localCta: "Your neighbors are watching. Let's make your home shine.",
     nearYou: [
       {
-        title: "Rock Creek Community",
-        text: "Your quiet Cooper City neighborhood deserves professional-grade care. We know Rock Creek's family-friendly streets and the homes that fill them.",
+        title: "Home interior routines",
+        text:
+          "Ongoing quarterly or seasonal interior glass service for Cooper City homes.",
       },
       {
-        title: "Embassy Lakes Area",
-        text: "From the bustling Embassy Lakes community to your home's exterior, we deliver consistent, reliable service tailored to your needs.",
+        title: "Two-story and vaulted interiors",
+        text:
+          "Ladders, pole tools, and drop cloths for the tall indoor windows most cleaners skip.",
       },
       {
-        title: "Country Glen Living",
-        text: "Country Glen residents trust us to keep their homes looking their best. Gated community standards start with professional maintenance.",
+        title: "Skylight interior cleaning",
+        text:
+          "Above-the-head glass — handled safely from inside without touching your finishes.",
       },
       {
-        title: "Brian Piccolo Park Region",
-        text: "Near the park or throughout the surrounding area, we're your Cooper City experts with experience across all neighborhood properties.",
+        title: "Showroom and office interiors",
+        text:
+          "After-hours interior service for Cooper City businesses.",
+      },
+      {
+        title: "Post-construction interior dusting",
+        text:
+          "Final cleanup after renovations, additions, or repaints.",
+      },
+      {
+        title: "Kid and pet smudge treatment",
+        text:
+          "The lower glass — sliders, French doors, pet-door panels — where fingerprints live.",
       },
     ],
   },

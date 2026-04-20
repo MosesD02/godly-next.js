@@ -1,21 +1,45 @@
 export const davie = {
   "exterior-window-cleaning": {
-    hero: "Your Davie home's outside deserves attention too. We clean the exterior glass on ranch-style homes, horse properties, and everything in between. From Shenandoah to Flamingo Gardens, we deliver that crystal-clear shine.",
+    hero:
+      "Open ranch lots kick dust onto sun-facing panes while equestrian trails track fine grit to second stories. We reach every exterior pane with poles—no ladders leaning on aluminum or ranch fascia.",
+    included: [
+      {
+        number: "01",
+        title: "Debris and cobweb sweep",
+        text:
+          "Davie’s open lots mean more cobwebs and dust on frames — cleared first before washing begins.",
+      },
+      {
+        number: "02",
+        title: "Pure-water exterior clean",
+        text:
+          "Water-fed poles reach every pane without leaning on siding or fascia.",
+      },
+      {
+        number: "03",
+        title: "Frame and sill dry-down",
+        text:
+          "Every bottom sill is checked so no run-off marks your exterior finish.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title: "Curb Appeal Starts Outside",
-        text: "Dirty exterior windows tell neighbors you've let maintenance slide. Clean windows show pride in your home.",
+        title: "Dust and dirt-road grit off your glass",
+        text:
+          "Davie’s ranch and equestrian areas mean real outdoor grit on every pane. Regular cleans take it off before it etches.",
       },
       {
         number: "02.",
-        title: "Protect Your Investment",
-        text: "Salt air and mineral deposits etch glass over time. Regular cleaning slows damage and extends window life.",
+        title: "Pole work, not ladder work",
+        text:
+          "Our pure-water pole system means no ladders against your stucco or aluminum — a real issue on older Davie ranch homes.",
       },
       {
         number: "03.",
-        title: "Safety First",
-        text: "High windows need professional attention. We have the right equipment and training so you don't have to risk it.",
+        title: "Protection against Florida sun",
+        text:
+          "Clean glass handles UV better. Etched or mineral-coated glass degrades faster. Regular cleans extend the life of every pane.",
       },
     ],
     faqs: [
@@ -49,16 +73,34 @@ export const davie = {
       "Let your Davie home shine. Schedule exterior window cleaning for your Rolling Hills or Shenandoah property today.",
     nearYou: [
       {
-        title: "Rolling Hills Homes",
-        text: "Your elevated properties get extra attention. We handle multi-story homes with confidence.",
+        title: "Ranch and single-family exteriors",
+        text:
+          "Recurring exterior service across Davie.",
       },
       {
-        title: "Horse Properties in Shenandoah",
-        text: "These unique estates need reliable service. We schedule around your equestrian lifestyle.",
+        title: "Equestrian property exteriors",
+        text:
+          "Barn-adjacent homes get more dust — we handle it.",
       },
       {
-        title: "Flamingo Gardens Adjacent Areas",
-        text: "Homes near and around the gardens deal with extra dust and pollen. We handle it expertly.",
+        title: "Pool-cage and lanai glass",
+        text:
+          "Enclosure glass cleaned inside and out.",
+      },
+      {
+        title: "Commercial and retail exteriors",
+        text:
+          "Regular exterior service for Davie storefronts and offices.",
+      },
+      {
+        title: "Solar panel exterior cleans",
+        text:
+          "Rooftop solar gets cleaned with the same pure-water system — better efficiency, safer than a ladder.",
+      },
+      {
+        title: "Hard-water and sprinkler treatment",
+        text:
+          "Irrigation overspray and well-water stains handled before they etch.",
       },
     ],
   },
@@ -243,22 +285,46 @@ export const davie = {
     ],
   },
   "interior-window-cleaning": {
-    hero: "Clean interior windows transform your home's brightness. We handle the inside glass, frames, and sills on ranch homes, new builds, and horse properties throughout Davie. Let natural light shine through.",
+    hero:
+      "From the ranch homes near Flamingo Road to the newer builds in Long Lake Ranches, Davie windows take a beating from dust, dirt roads, and Florida sun. We bring the gear and the patience to handle them right.",
+    included: [
+      {
+        number: "01",
+        title: "Dust and debris pass",
+        text:
+          "Davie’s open lots and ranch homes collect a lot of settled dust indoors — it all comes off first.",
+      },
+      {
+        number: "02",
+        title: "Interior hand-clean",
+        text:
+          "Every pane gets a careful hand clean — no rushed work, no missed corners.",
+      },
+      {
+        number: "03",
+        title: "Sill and hardware wipe-down",
+        text:
+          "Rails, locks, and sashes all get wiped — not just the glass.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title: "Light Up Your Space",
-        text: "Interior grime dims natural light. Clean windows brighten your whole home instantly.",
+        title: "More light in every room",
+        text:
+          "From Flamingo Road ranch homes to the newer Long Lake Ranches builds, clean indoor glass pulls in more Florida sun without any other change to the house.",
       },
       {
         number: "02.",
-        title: "Health & Air Quality",
-        text: "Dust and pet hair on interior windows circulate through your home. Clean windows mean cleaner air.",
+        title: "Less dust riding the breeze",
+        text:
+          "Wiping down sills and frames captures dust that would otherwise settle through the rest of your home.",
       },
       {
         number: "03.",
-        title: "Spot Damage Early",
-        text: "Close inspection of frames lets us catch moisture or seal issues before they become expensive problems.",
+        title: "Pet-and-kid-safe cleaning",
+        text:
+          "Low-odor solutions, contained water, and a team that’s used to working around dogs, cats, and busy households.",
       },
     ],
     faqs: [
@@ -293,16 +359,34 @@ export const davie = {
       "Brighten your Davie home from the inside out. Schedule interior window cleaning for your Rolling Hills or Flamingo Gardens area property today.",
     nearYou: [
       {
-        title: "Pine Island Ridge Residences",
-        text: "We service these beautiful homes with attention to detail that matches their character.",
+        title: "Ranch and single-family interiors",
+        text:
+          "Recurring interior service for Davie homes of every vintage.",
       },
       {
-        title: "Shenandoah Ranch Properties",
-        text: "Whether your home has five windows or fifty, we clean them all to the same high standard.",
+        title: "Equestrian property interiors",
+        text:
+          "Barn-adjacent homes get more settled dust — we handle it.",
       },
       {
-        title: "Newer Davie Developments",
-        text: "Newer homes have pristine glass. We keep it that way with expert interior cleaning.",
+        title: "New-build walk-through cleans",
+        text:
+          "Interior cleanup for Davie new construction, from sticker residue to drywall dust.",
+      },
+      {
+        title: "Office and business interiors",
+        text:
+          "Weekend or after-hours interior service for Davie businesses.",
+      },
+      {
+        title: "Sliding door and patio glass",
+        text:
+          "The most-used glass in the house, done right.",
+      },
+      {
+        title: "Sill, track, and frame detail",
+        text:
+          "The slow, detailed part of the clean most services rush through.",
       },
     ],
   },

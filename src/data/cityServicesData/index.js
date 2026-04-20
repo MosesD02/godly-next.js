@@ -34,6 +34,7 @@ import { plantation } from "./plantation";
 import { pompanoBeach } from "./pompano-beach";
 import { royalPalmBeach } from "./royal-palm-beach";
 import { southwestRanches } from "./southwest-ranches";
+import { southFlorida } from "./south-florida";
 import { sunrise } from "./sunrise";
 import { tamarac } from "./tamarac";
 import { westPark } from "./west-park";
@@ -63,6 +64,7 @@ export const cityServicesData = {
   "pompano-beach": pompanoBeach,
   "royal-palm-beach": royalPalmBeach,
   "southwest-ranches": southwestRanches,
+  "south-florida": southFlorida,
   sunrise: sunrise,
   tamarac: tamarac,
   "west-park": westPark,

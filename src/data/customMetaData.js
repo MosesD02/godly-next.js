@@ -22,7 +22,7 @@ export const customMetaData = {
       "interior-window-cleaning": {
         title: "Interior Window Cleaning in Boca Raton - Godly Windows",
         description:
-          "Brighten your rooms with spotless interior windows. Our Boca Raton team handles delicate glass with care. Schedule your interior window cleaning with Godly Windows.",
+          "Brighten rooms with spotless interior windows. Our Boca Raton team handles delicate glass with care. Schedule your interior window cleaning with Godly Windows.",
       },
       "gutter-cleaning": {
         title: "Gutter Cleaning in Boca Raton - Fast & Reliable Service",
@@ -318,7 +318,7 @@ export const customMetaData = {
       "interior-window-cleaning": {
         title: "Interior Window Cleaning in Margate - Godly Windows",
         description:
-          "Interior Window Cleaning Professionals. As your local professional window cleaning company, we provide residential, commercial & high rise window washing services.",
+          "Interior Window Cleaning Pros. As your local professional window cleaning company, we provide residential, commercial & high-rise window washing services.",
       },
       "gutter-cleaning": {
         title: "Gutter Cleaning in Margate, FL - Fast & Reliable Service",
@@ -547,14 +547,16 @@ export const customMetaData = {
           "Dirty panels = lower energy. Our Davie solar panel cleaning team removes grime safely and boosts output. Call Godly Windows for expert service and savings!",
       },
       "exterior-window-cleaning": {
-        title: "Exterior Window Cleaning Services in Davie - Godly Windows",
+        title: "Exterior Window Cleaning in Davie | Godly Windows",
         description:
-          "Foggy or dusty windows? Our Davie team delivers crystal-clear exterior window cleaning with long-lasting shine. Book Godly Windows today for perfect results!",
+          "Pure-water exterior window cleaning across Davie. Streak-free glass up to 40 ft with water-fed poles—no ladders on your finish. Book your free estimate today.",
+        h1: "Professional Exterior Window Cleaning Services in Davie",
       },
       "interior-window-cleaning": {
-        title: "Interior Window Cleaning Services in Davie - Godly Windows",
+        title: "Interior Window Cleaning in Davie | Godly Windows",
         description:
-          "Smudged interior glass? Our Davie interior window cleaning team brings back brightness and clarity. Book expert indoor cleaning now with Godly Windows.",
+          "Streak-free indoor window cleaning across Davie. Sills, tracks, and glass hand-cleaned by our careful residential and commercial crews. Satisfaction guaranteed.",
+        h1: "Professional Interior Window Cleaning Services in Davie",
       },
       "gutter-cleaning": {
         title: "Gutter Cleaning in Davie - Clean, Clear, Protected Gutters",
@@ -608,7 +610,7 @@ export const customMetaData = {
       "exterior-window-cleaning": {
         title: "Exterior Window Cleaning in Hillsboro Beach - Godly Windows",
         description:
-          "Let the light in with expert exterior window cleaning in Hillsboro Beach. Godly Windows delivers sparkling glass and curb appeal. Book now for a flawless finish!",
+          "Let the light in with expert exterior window cleaning in Hillsboro Beach. Godly Windows delivers sparkling glass and curb appeal. Book now for flawless finish!",
       },
       "interior-window-cleaning": {
         title: "Interior Window Cleaning in Hillsboro Beach - Godly Windows",
@@ -670,7 +672,7 @@ export const customMetaData = {
           "Restore your home's sparkle with our exterior window cleaning in Tamarac. We tackle hard water stains, grime, and weather marks with safe, spotless results.",
       },
       "interior-window-cleaning": {
-        title: "Interior Window Cleaning for Homes in Tamarac - Godly Windows",
+        title: "Interior Window Cleaning in Tamarac - Godly Windows",
         description:
           "Enjoy crystal-clear views indoors with our interior window cleaning. We handle delicate panes and tricky spots with care and precision for a streak-free finish.",
       },
@@ -902,7 +904,7 @@ export const customMetaData = {
           "Keep your panels clean and efficient with Oakland Park's top solar panel cleaning service. Trusted, affordable, and eco-friendly. Schedule your service now!",
       },
       "exterior-window-cleaning": {
-        title: "Exterior Window Cleaning in Oakland Park - Streak-Free Finish",
+        title: "Exterior Window Cleaning in Oakland Park - Streak-Free",
         description:
           "Let the sunshine in with Oakland Park's best exterior window cleaners. We remove dirt and spots fast—book local exterior window cleaning near you today!",
       },
@@ -962,14 +964,16 @@ export const customMetaData = {
           "Boost energy efficiency with expert solar panel cleaning in Weston. Safe, spotless results that extend panel life. Schedule your cleaning with our service.",
       },
       "exterior-window-cleaning": {
-        title: "Window Cleaning Weston FL | Godly Windows & Wash Co.",
+        title: "Exterior Window Cleaning in Weston | Godly Windows",
         description:
-          "Crystal-clear exterior window cleaning for Weston homes. We remove dirt, salt, and buildup using eco-friendly methods. Book professional glass cleaners now.",
+          "Pure-water exterior window cleaning across Weston. Streak-free glass up to 40 ft with water-fed poles—no ladders on your finish. Request your free quote today.",
+        h1: "Professional Exterior Window Cleaning Services in Weston",
       },
       "interior-window-cleaning": {
-        title: "Interior Window Cleaning in Weston - Streak-Free Results",
+        title: "Interior Window Cleaning in Weston | Godly Windows",
         description:
-          "Interior window cleaning services for spotless, smudge-free glass. Serving Weston with care, detail, and precision. Ideal for homes and high-touch spaces.",
+          "Streak-free indoor window cleaning across Weston. Sills, tracks, and glass hand-cleaned by our careful residential and commercial crews. Call to book today.",
+        h1: "Professional Interior Window Cleaning Services in Weston",
       },
       "gutter-cleaning": {
         title: "Gutter Cleaning Services in Weston - Clog-Free, Flow-Ready",
@@ -1076,8 +1080,7 @@ export const customMetaData = {
     },
     services: {
       "exterior-window-cleaning": {
-        title:
-          "Exterior Window Cleaning in Lauderdale-by-the-Sea - Godly Windows",
+        title: "Exterior Window Cleaning - Lauderdale-by-the-Sea FL | Godly",
         description:
           "Let us bring shine to your view with exterior window cleaning in Lauderdale-by-the-Sea. We handle everything from glass to screens—spotless results always.",
       },
@@ -1144,14 +1147,16 @@ export const customMetaData = {
           "Our solar panel cleaning in Coral Springs boosts efficiency by removing grime and buildup. Fast, safe, and local. Book with Godly Windows for polished panels.",
       },
       "exterior-window-cleaning": {
-        title: "Exterior Window Cleaning in Coral Springs - Godly Windows",
+        title: "Exterior Window Cleaning in Coral Springs | Godly Windows",
         description:
-          "Dirty outside windows? Our Coral Springs pros offer spotless exterior window cleaning with friendly service, safe tools, and crystal-clear results. Call today.",
+          "Pure-water exterior window cleaning across Coral Springs. Streak-free glass up to 40 ft with water-fed poles—no ladders on your finish. Schedule service today.",
+        h1: "Professional Exterior Window Cleaning Services in Coral Springs",
       },
       "interior-window-cleaning": {
-        title: "Interior Window Cleaning in Coral Springs - Godly Windows",
+        title: "Interior Window Cleaning in Coral Springs | Godly Windows",
         description:
-          "Keep your home bright and dust-free. Coral Springs trusts Godly Windows for safe, streak-free interior window cleaning and friendly, prompt service. Call today.",
+          "Streak-free indoor window cleaning across Coral Springs. Sills, tracks, and glass hand-cleaned by our careful residential and commercial crews. Free estimates.",
+        h1: "Professional Interior Window Cleaning Services in Coral Springs",
       },
       "gutter-cleaning": {
         title: "Gutter Cleaning in Coral Springs - Call Godly Windows",
@@ -1210,7 +1215,7 @@ export const customMetaData = {
       "interior-window-cleaning": {
         title: "Interior Window Cleaning in Hallandale Beach - Local Experts",
         description:
-          "Clear smudges and dust from inside your home with our interior window cleaning in Hallandale Beach. Trusted by residents for streak-free shine & courteous service.",
+          "Clear smudges and dust inside your home with our interior window cleaning in Hallandale Beach. Trusted by residents for streak-free shine & courteous service.",
       },
       "gutter-cleaning": {
         title: "Gutter Cleaning Services in Hallandale Beach - Godly Windows",
@@ -1322,14 +1327,16 @@ export const customMetaData = {
           "Maximize energy efficiency with expert solar panel cleaning in Deerfield Beach. Safe, thorough service to keep your panels spotless. Book your cleaning today!",
       },
       "exterior-window-cleaning": {
-        title: "Exterior Window Cleaning in Deerfield Beach - Godly Windows",
+        title: "Exterior Window Cleaning in Deerfield Beach | Godly Windows",
         description:
-          "Crystal-clear exterior window cleaning in Deerfield Beach. Our pros remove dirt and grime for streak-free results. Schedule your window cleaning service now!",
+          "Pure-water exterior window cleaning across Deerfield Beach. Streak-free glass up to 40 ft with water-fed poles—no ladders on your finish. Call for a free quote.",
+        h1: "Professional Exterior Window Cleaning Services in Deerfield Beach",
       },
       "interior-window-cleaning": {
-        title: "Interior Window Cleaning in Deerfield Beach - Godly Windows",
+        title: "Interior Window Cleaning in Deerfield Beach | Godly Windows",
         description:
-          "Brighten your home with professional interior window cleaning in Deerfield Beach. Gentle care for spotless, streak-free glass. Book your service today!",
+          "Streak-free indoor window cleaning across Deerfield Beach. Sills, tracks, and glass hand-cleaned by our careful residential and commercial crews.",
+        h1: "Professional Interior Window Cleaning Services in Deerfield Beach",
       },
       "gutter-cleaning": {
         title: "Gutter Cleaning in Deerfield Beach - Prevent Water Damage",
@@ -1368,6 +1375,54 @@ export const customMetaData = {
       },
     },
   },
+  lauderhill: {
+    services: {
+      "exterior-window-cleaning": {
+        title: "Exterior Window Cleaning in Lauderhill | Godly Windows",
+        description:
+          "Pure-water exterior window cleaning across Lauderhill. Streak-free glass up to 40 ft with water-fed poles—no ladders on your finish. Call for a free estimate.",
+        h1: "Professional Exterior Window Cleaning Services in Lauderhill",
+      },
+      "interior-window-cleaning": {
+        title: "Interior Window Cleaning in Lauderhill | Godly Windows",
+        description:
+          "Streak-free indoor window cleaning across Lauderhill. Sills, tracks, and glass hand-cleaned by our careful residential and commercial crews. Book today.",
+        h1: "Professional Interior Window Cleaning Services in Lauderhill",
+      },
+    },
+  },
+  "cooper-city": {
+    services: {
+      "exterior-window-cleaning": {
+        title: "Exterior Window Cleaning in Cooper City | Godly Windows",
+        description:
+          "Pure-water exterior window cleaning across Cooper City. Streak-free glass up to 40 ft with water-fed poles—no ladders on your finish. Request a free quote.",
+        h1: "Professional Exterior Window Cleaning Services in Cooper City",
+      },
+      "interior-window-cleaning": {
+        title: "Interior Window Cleaning in Cooper City | Godly Windows",
+        description:
+          "Streak-free indoor window cleaning across Cooper City. Sills, tracks, and glass hand-cleaned by our careful residential and commercial crews. Call today.",
+        h1: "Professional Interior Window Cleaning Services in Cooper City",
+      },
+    },
+  },
+  "coconut-creek": {
+    services: {
+      "exterior-window-cleaning": {
+        title: "Exterior Window Cleaning in Coconut Creek | Godly Windows",
+        description:
+          "Pure-water exterior window cleaning across Coconut Creek. Streak-free glass up to 40 ft with water-fed poles—no ladders on your finish. Get your free estimate.",
+        h1: "Professional Exterior Window Cleaning Services in Coconut Creek",
+      },
+      "interior-window-cleaning": {
+        title: "Interior Window Cleaning in Coconut Creek | Godly Windows",
+        description:
+          "Streak-free indoor window cleaning across Coconut Creek. Sills, tracks, and glass hand-cleaned by our careful residential and commercial crews. Free quotes.",
+        h1: "Professional Interior Window Cleaning Services in Coconut Creek",
+      },
+    },
+  },
 
   // Homepage sections
   homepage: {
@@ -1397,14 +1452,16 @@ export const customMetaData = {
   "south-florida": {
     services: {
       "exterior-window-cleaning": {
-        title: "Exterior Window Cleaning in South Florida - Godly Windows",
+        title: "Exterior Window Cleaning in South Florida | Godly Windows",
         description:
-          "We bring the sparkle back to your glass. Our exterior window cleaning in South Florida removes dirt and streaks for a crystal-clear, polished finish that lasts.",
+          "Pure-water exterior window cleaning across South Florida. Streak-free glass up to 40 ft with water-fed poles—no ladders on your finish. Book your free estimate.",
+        h1: "Professional Exterior Window Cleaning Services in South Florida",
       },
       "interior-window-cleaning": {
-        title: "Interior Window Cleaning in South Florida - Godly Windows",
+        title: "Interior Window Cleaning in South Florida | Godly Windows",
         description:
-          "Let the sunshine in with clean indoor glass. Our interior window cleaning service in South Florida keeps every pane spotless, leaving your home fresh.",
+          "Streak-free indoor window cleaning across South Florida. Sills, tracks, and glass hand-cleaned by our careful residential and commercial crews. Book today.",
+        h1: "Professional Interior Window Cleaning Services in South Florida",
       },
       "gutter-cleaning": {
         title:

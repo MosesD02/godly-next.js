@@ -447,6 +447,12 @@ export const homeDescription =
 // SEO-optimized heading structure functions
 export const generateServiceH1 = (serviceSlug, cityName) => {
   const location = cityName ? capitalizeString(cityName) : "South Florida";
+  const citySlug = findCitySlug(cityName);
+  const customH1 =
+    citySlug && customMetaData[citySlug]?.services?.[serviceSlug]?.h1;
+  if (typeof customH1 === "string" && customH1.length > 0) {
+    return customH1;
+  }
 
   // Window cleaning cluster: distinct primary keyword per page (hub + spokes)
   if (serviceSlug === "window-cleaning") {

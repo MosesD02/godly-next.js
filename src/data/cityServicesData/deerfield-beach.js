@@ -1,26 +1,45 @@
 export const deerfieldBeach = {
   "exterior-window-cleaning": {
-    hero: "Deerfield Beach's ocean views are stunning—until salt spray and mineral deposits cloud your windows. Outside surfaces take the biggest hit. We'll restore those views with expert exterior cleaning that handles everything the Atlantic throws at your home.",
+    hero:
+      "Salt fog and east breezes etch street-facing panes here faster than many owners expect. We rinse exterior frames, screens, and tracks so corrosive film never bakes onto your coastal investment.",
+    included: [
+      {
+        number: "01",
+        title: "Salt and sand prep",
+        text:
+          "Oceanfront glass starts with a gentle pre-rinse — salt grit can scratch if washed dry.",
+      },
+      {
+        number: "02",
+        title: "Pure-water coastal clean",
+        text:
+          "Pure-water pole systems rinse salt off without leaving mineral spots, every story of the home.",
+      },
+      {
+        number: "03",
+        title: "Frame drain and hardware rinse",
+        text:
+          "Salt builds up in hinges, tracks, and sill drains — we rinse all of it, not just the glass.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title: "Ocean Spray Is Relentless",
-        text: "That salt air hits exterior surfaces first. Without regular cleaning, you're looking at permanent etching.",
+        title: "Salt and sand off your glass",
+        text:
+          "Coastal exteriors take salt spray, sand grit, and east-wind mist every day. Without regular cleans, it etches the glass inside of a year.",
       },
       {
         number: "02.",
-        title: "Deerfield Beach Condos Need It",
-        text: "Multi-story buildings can't depend on tenants to handle exterior maintenance. Professional service keeps property values up.",
+        title: "Hardware that keeps working",
+        text:
+          "Salt corrodes hinges, rollers, and locks. Our exterior cleans rinse the hardware — meaning tracks that still slide and locks that still lock.",
       },
       {
         number: "03.",
-        title: "Storm Prep Matters",
-        text: "Clean windows help you spot potential seal issues before hurricane season. Better to know now than during a downpour.",
-      },
-      {
-        number: "04.",
-        title: "First Impressions",
-        text: "Whether selling or staying, gleaming windows say you care about your property. Curb appeal matters in Deerfield Beach.",
+        title: "Storm-ready, season-ready",
+        text:
+          "Oceanfront homes need more frequent service than inland ones. We build schedules that actually fit coastal conditions — not a generic quarterly.",
       },
     ],
     faqs: [
@@ -55,20 +74,34 @@ export const deerfieldBeach = {
       "Stop letting salt spray cloud your Deerfield Beach views. We'll restore your exterior windows to crystal-clear. Get a quote today.",
     nearYou: [
       {
-        title: "Beachfront Properties",
-        text: "If your home faces the Atlantic directly, exterior cleaning is non-negotiable. Salt spray hits hardest here.",
+        title: "Oceanfront exterior routines",
+        text:
+          "Bi-weekly or monthly exterior service for beachfront Deerfield properties — the schedule salt conditions actually need.",
       },
       {
-        title: "Intracoastal Waterfront",
-        text: "Waterway views are gorgeous but come with extra salt exposure. We handle the challenging coastal conditions.",
+        title: "Beach-block condo exteriors",
+        text:
+          "HOA-ready exterior service for coastal condo associations.",
       },
       {
-        title: "Cove Area Residences",
-        text: "Protected but still exposed. Your exterior windows need the same professional treatment as beachfront homes.",
+        title: "Hurricane-shutter and impact-glass cleaning",
+        text:
+          "Specialist cleaning for storm-rated assemblies.",
       },
       {
-        title: "Century Village Community",
-        text: "Large condo complexes benefit from scheduled exterior cleaning that reaches every unit efficiently.",
+        title: "Seasonal open-up and close-down cleans",
+        text:
+          "Snowbird schedules — we prep the exterior before you arrive and reset it when you leave.",
+      },
+      {
+        title: "Hardware rinse and salt treatment",
+        text:
+          "Targeted service for tracks, rollers, and locks on coastal glass.",
+      },
+      {
+        title: "Post-storm full exterior reset",
+        text:
+          "After a coastal storm, comprehensive grit, salt, and debris removal.",
       },
     ],
   },
@@ -291,27 +324,46 @@ export const deerfieldBeach = {
     ],
   },
   "interior-window-cleaning": {
-    hero: "Indoor dust, pet paws, fingerprints—interior windows tell the story of daily life. We'll restore them to pristine condition without harsh chemicals or streaks. Your Deerfield Beach home deserves views as clear as the ones outside.",
+    hero:
+      "Living a few blocks from the Atlantic is a privilege — but salt air, sea mist, and east-wind grit don’t care about your view. Our Deerfield Beach crews clean coastal glass the way it needs to be cleaned: often, carefully, and the right way.",
+    included: [
+      {
+        number: "01",
+        title: "Coastal dust removal",
+        text:
+          "East-facing homes get a fine, salty dust that coats indoor sills — we take it out first.",
+      },
+      {
+        number: "02",
+        title: "Interior hand-clean",
+        text:
+          "Every pane gets a careful hand pass, so no drips reach your floors.",
+      },
+      {
+        number: "03",
+        title: "Frame, sill, and track detail",
+        text:
+          "All the hardware around the glass gets wiped as part of the visit.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title: "Dust & Humidity Inside",
-        text: "Deerfield Beach humidity means dust settles fast. Interior cleaning keeps your indoor air feeling fresher.",
+        title: "Ocean views you can actually see",
+        text:
+          "Salt air haze doesn’t just sit on outside glass — it works its way inside too. A real interior clean restores the view you bought into.",
       },
       {
         number: "02.",
-        title: "Interior Views Matter",
-        text: "You spend time inside. Clean windows brighten rooms, reduce glare, and improve your space.",
+        title: "Less salt on your finishes",
+        text:
+          "Coastal dust carries salt. Pulling it off your interior sills keeps it out of your finishes, hinges, and HVAC intake.",
       },
       {
         number: "03.",
-        title: "Condo Living Means Shared Walls",
-        text: "Clean interior windows make your unit feel bigger, brighter, and more maintained. Good for resale value.",
-      },
-      {
-        number: "04.",
-        title: "Safety for Families & Pets",
-        text: "Professional cleaning removes dust and allergens without harsh chemicals. Everyone in your home benefits.",
+        title: "Safe, tidy work in every room",
+        text:
+          "Covered floors, contained water, and a team that’s used to working in beach-home environments.",
       },
     ],
     faqs: [
@@ -346,20 +398,34 @@ export const deerfieldBeach = {
       "Tired of dusty, cloudy interior windows? Deerfield Beach families trust us for streak-free results. Book your interior cleaning today.",
     nearYou: [
       {
-        title: "Century Village 55+ Residents",
-        text: "Interior cleaning is perfect for residents who want professional results without climbing ladders.",
+        title: "Oceanfront home interiors",
+        text:
+          "Specialist coastal interior service — the most careful hand in Deerfield.",
       },
       {
-        title: "Quiet Waters Park Area Homes",
-        text: "More windows in these spacious homes means professional interior cleaning saves you serious time.",
+        title: "Beach-block condo interiors",
+        text:
+          "Targeted inside-glass work for units where the outside is restricted.",
       },
       {
-        title: "Intracoastal Waterfront Condos",
-        text: "Multi-pane units with lots of glass benefit from expert interior cleaning without the hassle.",
+        title: "Seasonal open-up cleans",
+        text:
+          "Snowbirds returning for the season — we get the interior ready before you arrive.",
       },
       {
-        title: "Cove Area Beach Homes",
-        text: "Interior cleaning complements exterior work perfectly. We coordinate both sides of your windows.",
+        title: "Rental-turnover interiors",
+        text:
+          "Vacation rental operators — indoor glass reset between bookings.",
+      },
+      {
+        title: "Post-storm interior wipe-downs",
+        text:
+          "After a coastal storm, even sealed homes get fine grit inside — we handle the follow-up.",
+      },
+      {
+        title: "Sill, track, and hardware detail",
+        text:
+          "Salt buildup removal on every frame component, not just the glass.",
       },
     ],
   },

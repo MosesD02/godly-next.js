@@ -1,24 +1,45 @@
 export const weston = {
   "exterior-window-cleaning": {
-    hero: "The outside of your windows takes the worst of South Florida's weather. Weston's Everglades proximity means extra bugs, moisture, and organic buildup on your glass. We strip it all away with professional-grade solutions and RO/DI pure water so your Weston home looks its best from the street.",
+    hero:
+      "Showcase curb appeal in Weston is scored from the street—impact glass, tall elevations, and pool cages all need a ladder-free wash. We detail outdoor panes and cage glass with 40-foot pure-water poles only.",
+    included: [
+      {
+        number: "01",
+        title: "Full frame and screen prep",
+        text:
+          "Screens removed where needed; sill, sash, and track cleared of debris before washing.",
+      },
+      {
+        number: "02",
+        title: "Pure-water, high-reach clean",
+        text:
+          "40-foot water-fed pole work covers every pane on even the largest Weston homes.",
+      },
+      {
+        number: "03",
+        title: "Frame dry-down and final check",
+        text:
+          "Bottom sills hand-dried and inspected — no post-job drips on your stucco or pavers.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title:
-          "Living in Weston means your exterior glass faces humidity, rain, pollen, and UV damage every single day",
-        text: "Living in Weston means your exterior glass faces humidity, rain, pollen, and UV damage every single day. That cloudy look isn't aging — it's buildup that gets worse the longer you wait.",
+        title: "Homes that stay showcase-ready",
+        text:
+          "Weston builds are judged on details — exterior glass is always one of them. Regular cleans keep every pane at showcase level year-round.",
       },
       {
         number: "02.",
-        title:
-          "Our team uses water-fed pole systems with RO/DI purified water to reach every exterior pane safely",
-        text: "Our team uses water-fed pole systems with RO/DI purified water to reach every exterior pane safely. No ladders needed for most luxury single-family homes in gated, lakefront communities. The water itself does the heavy lifting — no chemical residue left behind.",
+        title: "Long-life protection for custom glass",
+        text:
+          "Large Weston picture windows are expensive to replace. Scheduled cleans prevent mineral etching that makes replacement necessary.",
       },
       {
         number: "03.",
-        title:
-          "From Weston Hills Country Club to Bonaventure, we've dialed in our process for Weston's specific conditions",
-        text: "From Weston Hills Country Club to Bonaventure, we've dialed in our process for Weston's specific conditions. Your neighbors will notice the difference.",
+        title: "Ladder-free, finish-safe work",
+        text:
+          "Pure-water pole systems mean no ladders leaned on your stucco, siding, or pool cage. Your finish stays as clean as your glass.",
       },
     ],
     faqs: [
@@ -52,20 +73,34 @@ export const weston = {
       "Weston homeowners trust us for professional results. Book your free estimate today.",
     nearYou: [
       {
-        title: "Windmill Ranch Estates",
-        text: "Exterior windows on Windmill Ranch estate homes face constant exposure to pollen, rain, and South Florida humidity. Our professional cleaning restores clarity and curb appeal to every window.",
+        title: "Luxury home exterior routines",
+        text:
+          "Recurring exterior service for large homes across Windmill Ranches, Savanna, and Weston Hills.",
       },
       {
-        title: "The Ridges Homes",
-        text: "Homes in The Ridges benefit from exterior window cleaning that tackles the stubborn film and water spots South Florida's weather leaves behind on your glass.",
+        title: "Pool-cage and lanai glass",
+        text:
+          "Enclosure glass detailed inside and out.",
       },
       {
-        title: "Lakeside Community",
-        text: "Lakeside properties near the water collect mineral deposits and moisture haze on exterior glass. We remove it all, leaving windows spotless and streak-free.",
+        title: "Skylight and roof-glass exterior cleans",
+        text:
+          "Roof-level glass handled safely from ground level.",
       },
       {
-        title: "Tequesta Trace Residences",
-        text: "Exterior window cleaning for Tequesta Trace homes eliminates grime buildup without disrupting your day or damaging window seals. Satisfaction guarantees are available on every job.",
+        title: "Solar panel exterior service",
+        text:
+          "Rooftop solar cleaned to restore efficiency.",
+      },
+      {
+        title: "Commercial and professional building exteriors",
+        text:
+          "Regular service for Weston Town Center and professional parks.",
+      },
+      {
+        title: "Hard-water and irrigation stain removal",
+        text:
+          "Treatment and prevention of sprinkler overspray stains.",
       },
     ],
   },
@@ -263,25 +298,46 @@ export const weston = {
     ],
   },
   "interior-window-cleaning": {
-    hero: "Fingerprints, pet smudges, cooking film, dust — the inside of your windows collects more than you think. Our Weston interior cleaning crew gets every pane sparkling without disrupting your home.",
+    hero:
+      "Weston homes — from Windmill Ranches to Savanna — are held to a standard, and so are we. Our Weston crews deliver the kind of detail-level work you’d expect from a premium service, without the premium-service runaround.",
+    included: [
+      {
+        number: "01",
+        title: "Full dust prep",
+        text:
+          "Sills, frames, blinds, and shutters are dusted before any solution touches the glass.",
+      },
+      {
+        number: "02",
+        title: "Careful hand-clean on every pane",
+        text:
+          "Weston homes have a lot of glass — we treat every pane individually, not as part of a fly-through.",
+      },
+      {
+        number: "03",
+        title: "Track, sill, and hardware detail",
+        text:
+          "The full frame gets cleaned, not just the view portion.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title:
-          "You clean your floors, your counters, your bathrooms — but when's the last time you really cleaned the inside of your windows",
-        text: "You clean your floors, your counters, your bathrooms — but when's the last time you really cleaned the inside of your windows? In Weston, indoor humidity and AC cycling create a film on your glass that you stop noticing until it's gone.",
+        title: "Homes that show the way they’re meant to",
+        text:
+          "Weston builds — Windmill Ranches, Savanna, Bonaventure — rely on clean glass as part of the overall presentation. Interior cleans are how that carries through from the driveway into every room.",
       },
       {
         number: "02.",
-        title:
-          "Our technicians wear shoe covers, protect your furniture, and detail every sill and track by hand",
-        text: "Our technicians wear shoe covers, protect your furniture, and detail every sill and track by hand. We don't just wipe the glass — we restore the clarity your Weston home was built with.",
+        title: "A cleaner, healthier indoor environment",
+        text:
+          "Sill and frame detailing pulls pollen, dust, and fine particles out of rotation. Less cleaning for you between visits.",
       },
       {
         number: "03.",
-        title:
-          "Whether it's a Weston Hills Country Club estate or a Bonaventure townhome, we bring the same attention to detail",
-        text: "Whether it's a Weston Hills Country Club estate or a Bonaventure townhome, we bring the same attention to detail. You'll be shocked at how much brighter your rooms look.",
+        title: "Work that matches your home’s standard",
+        text:
+          "Booties, drop cloths, and a crew that knows how to move through a well-kept home without leaving a trace.",
       },
     ],
     faqs: [
@@ -316,20 +372,34 @@ export const weston = {
       "Weston homeowners trust us for professional results. Book your free estimate today.",
     nearYou: [
       {
-        title: "Country Isles Homes",
-        text: "Interior window cleaning for Country Isles homes means detailed attention to tracks, sills, and glass so every window sparkles from the inside out.",
+        title: "Luxury home interior routines",
+        text:
+          "Ongoing interior service for large, glass-heavy homes across Weston.",
       },
       {
-        title: "Weston Hills Interiors",
-        text: "Weston Hills residents love coming home to spotless interior windows. We handle all the detail work so you can enjoy unobstructed views of the golf course and landscaping.",
+        title: "Two-story and vaulted interior work",
+        text:
+          "Pole and ladder work for the tall indoor glass.",
       },
       {
-        title: "The Falls Residences",
-        text: "Our interior window cleaning service is perfect for The Falls homes where dust and humidity can cloud your glass over time. We leave every pane crystal clear.",
+        title: "Interior skylight cleaning",
+        text:
+          "Overhead indoor glass handled safely without compromising the finish below.",
       },
       {
-        title: "Bonaventure Living Spaces",
-        text: "Interior windows at Bonaventure deserve the same care as the lush tropical views outside. We clean every pane, track, and sill with precision and care.",
+        title: "Office and professional-suite interiors",
+        text:
+          "After-hours indoor cleaning for Weston businesses.",
+      },
+      {
+        title: "Post-renovation walk-throughs",
+        text:
+          "Final cleanup after remodels, additions, or new installs.",
+      },
+      {
+        title: "Art-and-furniture-aware cleaning",
+        text:
+          "Indoor crews trained to work carefully around gallery-level finishes.",
       },
     ],
   },

@@ -1,26 +1,45 @@
 export const coconutCreek = {
   "exterior-window-cleaning": {
-    hero: "Outside windows take a beating in South Florida. Salt spray, pollen, and humidity leave your glass dull and spotted. We blast away the grime and leave your home's exterior gleaming.",
+    hero:
+      "Shade trees pour pollen and sap onto exterior panes every week. Our team strips outdoor grime, webs, and sprinkler film from every story—without leaning ladders into your mulch beds or stucco.",
+    included: [
+      {
+        number: "01",
+        title: "Pollen and spider-web clear",
+        text:
+          "Coconut Creek’s mature shade means more web activity — all cleared before the glass is washed.",
+      },
+      {
+        number: "02",
+        title: "Pure-water exterior clean",
+        text:
+          "Pole-fed pure water reaches every pane without streaking.",
+      },
+      {
+        number: "03",
+        title: "Sill dry and frame detail",
+        text:
+          "Every frame edge dried by hand so nothing drips onto your pavers or planters.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title: "Salt Spray Corrodes Glass & Frames",
-        text: "Living near South Florida's coast means constant salt exposure. Regular exterior cleaning prevents corrosion and extends window life.",
+        title: "Tree sap, pollen, and leaf grime removed",
+        text:
+          "All that Coconut Creek greenery drops sap, pollen, and leaf residue on every pane. Regular exterior cleans keep it from permanently staining.",
       },
       {
         number: "02.",
-        title: "Pollen & Algae Growth",
-        text: "Coconut Creek's subtropical climate breeds pollen and algae fast. Professional cleaning removes buildup that traps moisture and damages seals.",
+        title: "No ladders against your finish",
+        text:
+          "Pure-water pole systems let us reach every story without touching your stucco or siding — better for your paint, better for our team.",
       },
       {
         number: "03.",
-        title: "Protects Your Home's First Impression",
-        text: "Potential buyers judge your home from the curb. Spotless exterior windows signal a well-maintained property.",
-      },
-      {
-        number: "04.",
-        title: "Allows Maximum Natural Light",
-        text: "Dirty exterior windows block sunlight before it hits your living spaces. Clean glass means brighter, more inviting interiors.",
+        title: "Landscaping-safe cleaning",
+        text:
+          "We protect your mulch beds and plantings from run-off. No yellowed grass or wilted flowers after we leave.",
       },
     ],
     faqs: [
@@ -54,20 +73,34 @@ export const coconutCreek = {
       "Stop squinting through dirty windows. Book your exterior cleaning today and see Coconut Creek the way it's meant to look.",
     nearYou: [
       {
-        title: "Wyndhaven Estates Homes",
-        text: "The established properties in Wyndhaven Estates deserve exterior care that matches their character. We handle every home with pride.",
+        title: "Residential exteriors",
+        text:
+          "Recurring exterior service for homes in Winston Park, The Township, and across Coconut Creek.",
       },
       {
-        title: "Country Woods Residences",
-        text: "Tree-lined streets and beautiful homes define Country Woods. We keep your exterior windows matching the neighborhood's pristine appearance.",
+        title: "55+ community exteriors",
+        text:
+          "Scheduled, low-noise, and reliable exterior service.",
       },
       {
-        title: "Butterfly World Adjacent Areas",
-        text: "Properties near Butterfly World and throughout central Coconut Creek get expert exterior care. We're thorough, we're reliable, we're local.",
+        title: "Condo and townhome exterior cleans",
+        text:
+          "Exterior service for HOA-managed properties.",
       },
       {
-        title: "Coconut Creek's Established Communities",
-        text: "From Main Street to quiet residential pockets, we service every neighborhood with the same professional standard.",
+        title: "Solar panel exterior cleaning",
+        text:
+          "Rooftop solar panels cleaned from the ground with pure water.",
+      },
+      {
+        title: "Skylight exterior cleans",
+        text:
+          "Roof-level glass handled without ever stepping on tile.",
+      },
+      {
+        title: "Post-storm exterior wash",
+        text:
+          "After heavy weather, full exterior reset.",
       },
     ],
   },
@@ -288,27 +321,46 @@ export const coconutCreek = {
     ],
   },
   "interior-window-cleaning": {
-    hero: "Inside windows get overlooked—until dust and pet prints make you notice. We clean every interior pane, frame, and sill with care. Brighten your view and your mood.",
+    hero:
+      "Coconut Creek earned its \"Butterfly Capital\" nickname for a reason — mature landscaping, lots of shade, and plenty of wildlife. Beautiful, but tough on glass. We clean windows in a way that respects both your home and the greenery around it.",
+    included: [
+      {
+        number: "01",
+        title: "Dust and cobweb sweep",
+        text:
+          "Coconut Creek’s mature shade means more indoor cobwebs — we clear them before touching the glass.",
+      },
+      {
+        number: "02",
+        title: "Room-by-room glass clean",
+        text:
+          "Every pane is hand-worked so nothing gets missed.",
+      },
+      {
+        number: "03",
+        title: "Frame, sill, and track detail",
+        text:
+          "The non-glass parts of every window get the same attention as the glass itself.",
+      },
+    ],
     essential: [
       {
         number: "01.",
-        title: "Pet Hair & Dust Buildup",
-        text: "Pet prints, dust, and indoor air pollution accumulate on interior windows. Regular cleaning keeps your home fresh and clear.",
+        title: "Real brightness under shaded canopy",
+        text:
+          "Mature landscaping keeps Coconut Creek cool but blocks indoor light. Clean interior glass is the simplest way to fix it — no new windows needed.",
       },
       {
         number: "02.",
-        title: "Improves Indoor Air Quality Perception",
-        text: "Clean windows mean more visible natural light and a brighter sense of space. Psychologically, it lifts your whole home's vibe.",
+        title: "A cleaner home beyond the glass",
+        text:
+          "Sill and frame dusting pulls settled particles out of circulation — fewer allergens in the air, less dust on shelves between cleans.",
       },
       {
         number: "03.",
-        title: "Extends the Life of Your Glass",
-        text: "Interior grime includes dust and pet dander that can pit glass over time. Professional cleaning prevents microscopic damage.",
-      },
-      {
-        number: "04.",
-        title: "Protects Your Window Seals",
-        text: "Moisture trapped on dirty interior glass damages seals faster. Clean windows = longer window lifespan.",
+        title: "Protective, careful indoor work",
+        text:
+          "Your furniture stays covered, your floors stay dry, your art stays untouched.",
       },
     ],
     faqs: [
@@ -342,20 +394,34 @@ export const coconutCreek = {
       "See your Coconut Creek home through crystal-clear windows. Schedule interior cleaning today and brighten your space.",
     nearYou: [
       {
-        title: "55+ Communities in Coconut Creek",
-        text: "We specialize in active adult homes where window clarity matters. Your interior windows shine without the hassle.",
+        title: "Home interior routines",
+        text:
+          "Quarterly or seasonal interior service for homes in The Township, Winston Park, and the rest of Coconut Creek.",
       },
       {
-        title: "Family Homes Throughout Town",
-        text: "Single-family properties across Coconut Creek benefit from our interior expertise. Pet-friendly cleaning for busy households.",
+        title: "55+ community interiors",
+        text:
+          "Scheduled, quiet, and careful — the way our 55+ clients expect.",
       },
       {
-        title: "Townhomes & Condos",
-        text: "Compact homes need efficient service. We handle interior windows in townhomes and condo complexes throughout the area.",
+        title: "Condo and townhome interiors",
+        text:
+          "Interior glass service for units across Coconut Creek.",
       },
       {
-        title: "Tree-Lined Neighborhoods",
-        text: "Properties in Wyndhaven Estates, Country Woods, and surrounding streets—all served with the same professional interior care.",
+        title: "High-ceiling interior work",
+        text:
+          "Pole and ladder work for the tall indoor glass most cleaners skip.",
+      },
+      {
+        title: "Post-renovation cleanup",
+        text:
+          "Remodel or repaint follow-up cleaning for glass and frames.",
+      },
+      {
+        title: "Sliding and patio door glass",
+        text:
+          "The most-touched glass, cleaned the way it should be.",
       },
     ],
   },
