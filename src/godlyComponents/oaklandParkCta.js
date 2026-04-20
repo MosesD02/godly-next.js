@@ -3,6 +3,9 @@ import React from "react";
 import { useGodlyContext } from "@/context/godlyContext";
 import { getPhoneNumber } from "./footer";
 import Link from "next/link";
+import CtaPhoneLink from "./CtaPhoneLink";
+import CtaEstimateLink from "./CtaEstimateLink";
+import { cityCtaActions } from "./cityCtaStyles";
 
 const OaklandParkCta = () => {
   const { city } = useGodlyContext();
@@ -33,19 +36,11 @@ const OaklandParkCta = () => {
         <p className="mx-auto mb-2 max-w-3xl font-['satoshi-regular'] text-base text-white/80 md:text-lg">
           Book online for a free, no pressure quote.
         </p>
-        <div className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:gap-6">
-          <a
-            href={`tel:${phoneNumber.replace(/\D/g, "")}`}
-            className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
-          >
-            {phoneNumber}
-          </a>
-          <Link
-            href="/oakland-park/quote"
-            className="rounded-md border-2 border-[#FDE4C8] px-8 py-4 font-['satoshi-bold'] text-lg font-bold text-[#FDE4C8]! transition-colors hover:bg-[#FDE4C8] hover:text-[#1F1D1D]"
-          >
+        <div className={cityCtaActions}>
+          <CtaEstimateLink href="/oakland-park/quote">
             Get Free Estimate
-          </Link>
+          </CtaEstimateLink>
+          <CtaPhoneLink phoneNumber={phoneNumber} />
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import React from "react";
 import { useGodlyContext } from "@/context/godlyContext";
 import { getPhoneNumber } from "./footer";
 import Link from "next/link";
+import CtaPhoneLink from "./CtaPhoneLink";
 
 const DeerfieldBeachCta = () => {
   const { city } = useGodlyContext();
@@ -10,7 +11,6 @@ const DeerfieldBeachCta = () => {
   if (city !== "DEERFIELD BEACH") return null;
 
   const phoneNumber = getPhoneNumber(city);
-  const formattedPhoneNumber = phoneNumber.replace(/\D/g, "");
 
   return (
     <div className="paper-bg-16 flex flex-col items-center justify-center gap-6 bg-[#262424] px-8 py-20">
@@ -34,12 +34,7 @@ const DeerfieldBeachCta = () => {
           <p className="text-sm text-[#FDE4C8]">
             Book online for a free, no pressure quote.
           </p>
-          <a
-            href={`tel:${formattedPhoneNumber}`}
-            className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
-          >
-            {phoneNumber}
-          </a>
+          <CtaPhoneLink phoneNumber={phoneNumber} />
         </div>
       </div>
     </div>

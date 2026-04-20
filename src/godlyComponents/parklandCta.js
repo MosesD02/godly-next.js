@@ -3,6 +3,7 @@ import React from "react";
 import { useGodlyContext } from "@/context/godlyContext";
 import SectionButton from "@/components/sectionButton";
 import { getPhoneNumber } from "./footer";
+import CtaPhoneLink from "./CtaPhoneLink";
 
 const ParklandCta = () => {
   const { city } = useGodlyContext();
@@ -10,7 +11,6 @@ const ParklandCta = () => {
   if (city !== "PARKLAND") return null;
 
   const phoneNumber = getPhoneNumber(city);
-  const formattedPhoneNumber = phoneNumber.replace(/\D/g, "");
 
   return (
     <div className="paper-bg-16 bg-[#262424]">
@@ -32,14 +32,9 @@ const ParklandCta = () => {
           <p className="text-center font-['satoshi-regular'] text-base font-normal text-white/80 md:text-lg">
             Book online for a free, no pressure quote.
           </p>
-          <div className="flex flex-col items-center justify-center gap-2">
-            <a
-              href={`tel:${formattedPhoneNumber}`}
-              className="text-center font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
-            >
-              {phoneNumber}
-            </a>
+          <div className="flex flex-col items-center justify-center gap-4">
             <SectionButton>Get a Free Estimate</SectionButton>
+            <CtaPhoneLink phoneNumber={phoneNumber} />
           </div>
         </div>
       </div>
