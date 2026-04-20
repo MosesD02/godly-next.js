@@ -44,6 +44,7 @@ import { useGodlyContext } from "@/context/godlyContext";
 
 import { citiesMap } from "@/data/cities";
 import { PopupModal } from "@/components/popup-modal";
+import { MoveUpRight } from "lucide-react";
 
 export default function GodlyHome({ city }) {
   const { setCity } = useGodlyContext();
@@ -88,39 +89,6 @@ export default function GodlyHome({ city }) {
       <Testimonials />
       <HowItWorks />
       <Savings />
-      {city === "south-florida" && (
-        <section
-          className="paper-bg-16 flex flex-col items-center gap-8 bg-[#ebded1] bg-cover bg-center bg-no-repeat px-6 py-16 bg-blend-multiply md:px-12 md:py-20"
-          aria-labelledby="south-fl-rain-shield-heading"
-        >
-          <h2
-            id="south-fl-rain-shield-heading"
-            className="trim max-w-3xl text-center text-[28px] leading-tight font-normal tracking-wide text-[#191717] md:text-[48px]"
-          >
-            <span className="text-grain bg-[#191717]!" data-text="Rain Shield">
-              Rain Shield
-            </span>{" "}
-            <span className="text-grain bg-[#61503E]!" data-text="Technology">
-              Technology
-            </span>
-            <span className="mt-2 block font-['satoshi-regular'] text-lg text-[#2D2B2B] md:text-xl">
-              — Included Free With Every Cleaning
-            </span>
-          </h2>
-          <p className="max-w-2xl text-center font-['satoshi-regular'] text-base/7 text-[#2D2B2B] md:text-lg/8">
-            South Florida rain, salt spray, and sprinkler minerals don&apos;t
-            stand a chance against Rain Shield. Our hydrophobic coating helps
-            water bead and roll off, carrying dirt with it — included free with
-            every window cleaning we perform.
-          </p>
-          <Link
-            href="/rain-shield"
-            className="trim font-['satoshi-medium'] text-base text-[#2D2B2B] underline decoration-[#AB8459] underline-offset-4 transition-colors hover:text-[#191717] md:text-lg"
-          >
-            Learn how Rain Shield works →
-          </Link>
-        </section>
-      )}
       <Faq
         faqs={faqs}
         cityName={cityName !== "SOUTH FLORIDA" ? cityName : undefined}

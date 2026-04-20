@@ -7,6 +7,7 @@ import Services from "@/data/servicesData";
 import { citiesMap } from "@/data/cities";
 import { cn } from "@/lib/utils";
 import { generateServiceSectionHeadings } from "@/data/metaTitles";
+import { MoveUpRight } from "lucide-react";
 
 const RAIN_SHIELD_LINK_PHRASES = [
   "Learn how Rain Shield works",
@@ -88,7 +89,7 @@ const ServiceIncludes = ({ slug, cityName, citySlug, includedOverride }) => {
             >
               <div
                 className={cn(
-                  "relative z-10 flex size-full  flex-col items-center justify-between rounded-md border-[#564839] p-3 text-white md:p-6",
+                  "relative z-10 flex size-full flex-col items-center justify-between rounded-md border-[#564839] p-3 text-white md:p-6",
                   isActive
                     ? "border border-dashed border-[#6A6464] text-[#2D2B2B]"
                     : "",
@@ -118,9 +119,10 @@ const ServiceIncludes = ({ slug, cityName, citySlug, includedOverride }) => {
                       {step.text}{" "}
                       <Link
                         href="/rain-shield"
-                        className="font-medium text-[#FDE4C8] underline underline-offset-2 hover:text-white"
+                        className="flex items-center justify-center gap-2 font-medium text-[#FDE4C8]! underline underline-offset-2 group-hover:text-[#61503e]! hover:text-white"
                       >
-                        {rainShieldLinkLabelForCity(citySlug)} →
+                        {rainShieldLinkLabelForCity(citySlug)}{" "}
+                        <MoveUpRight size={12} />
                       </Link>
                     </>
                   ) : (

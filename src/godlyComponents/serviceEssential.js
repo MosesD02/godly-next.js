@@ -76,7 +76,7 @@ const EssentialService = ({ slug, essentialOverride, cityName }) => {
                 paintOrder: "stroke",
               }}
             >
-              Is Essential?
+              is Essential?
             </span>
           </>
         )}
@@ -101,7 +101,7 @@ const EssentialService = ({ slug, essentialOverride, cityName }) => {
                 )}
                 onClick={() => toggleCard(index)}
               >
-                <div className="flex h-full grow flex-col gap-4 rounded-[12px] border-[1.7px] border-solid border-[#2D2B2B] p-3  sm:p-4  md:p-5  lg:p-6  xl:p-7 ">
+                <div className="flex h-full grow flex-col gap-4 rounded-[12px] border-[1.7px] border-solid border-[#2D2B2B] p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7">
                   <div
                     className={cn(
                       "stroke! trim stroke-[#2D2B2B33] stroke-1! text-[40px] font-bold sm:text-[48px] md:text-[64px] lg:text-[72px] xl:text-[80px]",

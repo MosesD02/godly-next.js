@@ -189,7 +189,7 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
                   index === 0 && "col-span-2",
                 )}
               >
-                <div className="relative z-10 size-full  rounded-md bg-[#CDB9A2] p-3 text-black">
+                <div className="relative z-10 size-full rounded-md bg-[#CDB9A2] p-3 text-black">
                   <div className="flex h-full flex-col items-center justify-between rounded-md border-2 border-dashed border-[#2D2B2B] p-2 text-[#2D2B2B]">
                     <div>
                       <div className="mb-4 flex justify-center">
@@ -275,7 +275,9 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
                           {step.title}
                         </div>
                       </div>
-                      <p className="text-center font-sans text-sm">{step.text}</p>
+                      <p className="text-center font-sans text-sm">
+                        {step.text}
+                      </p>
                     </div>
                   </div>
                 </div>

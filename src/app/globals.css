@@ -284,7 +284,7 @@ html {
   align-items: center;
   text-transform: uppercase !important;
   justify-content: center;
-  line-height: 61px; 
+  line-height: 61px;
   background-color: red;
   padding: 36px 22px;
   gap: 10px;
@@ -296,7 +296,7 @@ html {
   text-transform: lowercase;
   cursor: pointer;
   overflow: hidden;
-  background-color: transparent; 
+  background-color: transparent;
   transition: all 0.3s ease-in-out;
   box-shadow:
     0px -7px 5.289px rgba(36, 34, 34, 0.33) inset,
@@ -852,9 +852,14 @@ html body[data-scroll-locked]:not(#_):not(#_):not(#_) {
 }
 
 .animate-carousel-left {
-  animation: team-gallery-marquee-left 30s linear infinite;
+  animation: team-gallery-marquee-left 60s linear infinite;
 }
 
 .animate-carousel-right {
-  animation: team-gallery-marquee-right 30s linear infinite;
+  animation: team-gallery-marquee-right 60s linear infinite;
+}
+
+.hover-pause:hover .animate-carousel-left,
+.hover-pause:hover .animate-carousel-right {
+  animation-play-state: paused;
 }

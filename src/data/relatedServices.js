@@ -3,12 +3,12 @@
  */
 
 import service1 from "@/assets/serviceData/service1.webp";
-import windowCleaningHero from "@/assets/serviceData/window-cleaning.webp";
+import windowCleaningHero from "@/assets/serviceData/window-cleaning-new.jpeg";
 import postConstructionHero from "@/assets/serviceData/post-construction.webp";
 import service3 from "@/assets/serviceData/service3.webp";
 import service4 from "@/assets/serviceData/service4.webp";
 import service5 from "@/assets/serviceData/service5.webp";
-import service6 from "@/assets/serviceData/service6.webp";
+import roofWashingHero from "@/assets/serviceData/roof-washing.webp";
 import service7 from "@/assets/serviceData/service7.webp";
 import service8 from "@/assets/serviceData/service8.webp";
 import service9 from "@/assets/serviceData/service9.webp";
@@ -21,7 +21,7 @@ export const IMAGE_BY_LINK = {
   "interior-window-cleaning": service3,
   "gutter-cleaning": service4,
   "house-washing": service5,
-  "roof-washing": service6,
+  "roof-washing": roofWashingHero,
   "pressure-washing": service7,
   "paver-sealing": service8,
   "light-fixture-cleaning": service9,

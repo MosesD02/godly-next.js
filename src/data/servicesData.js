@@ -1,11 +1,11 @@
 import service1 from "@/assets/serviceData/service1.webp";
-import windowCleaningHero from "@/assets/serviceData/window-cleaning.webp";
+import windowCleaningHero from "@/assets/serviceData/window-cleaning-new.jpeg";
 import postConstructionHero from "@/assets/serviceData/post-construction.webp";
 import rainShieldHero from "@/assets/serviceData/rain-shield.webp";
 import service3 from "@/assets/serviceData/service3.webp";
 import service4 from "@/assets/serviceData/service4.webp";
 import service5 from "@/assets/serviceData/service5.webp";
-import service6 from "@/assets/serviceData/service6.webp";
+import roofWashingHero from "@/assets/serviceData/roof-washing.webp";
 import service7 from "@/assets/serviceData/service7.webp";
 import service8 from "@/assets/serviceData/service8.webp";
 import service9 from "@/assets/serviceData/service9.webp";
@@ -411,7 +411,7 @@ const Services = {
     hero: [
       "Roof",
       "Washing",
-      service6,
+      roofWashingHero,
       "Moss, algae, leaves, and other natural debris can cause roof deterioration, which is often a costly fix. Our roof washing service safely removes these elements and extends the life of your roof. We use specialized cleaning methods to ensure no damage.",
     ],
     included: [
@@ -1244,7 +1244,8 @@ const Services = {
           "Rain Shield typically lasts around three months or more between applications, depending on exposure. Since it's included free on every service with our quarterly plan, your windows stay protected year-round without any extra scheduling or cost.",
       },
       {
-        question: "What makes Rain Shield different from regular glass cleaners?",
+        question:
+          "What makes Rain Shield different from regular glass cleaners?",
         answer:
           "Rain Shield is a professional-grade hydrophobic coating that bonds to your glass at the molecular level. Unlike consumer products, it creates a lasting water-repellent barrier that makes rain and dirt slide off cleanly for months at a time.",
       },
