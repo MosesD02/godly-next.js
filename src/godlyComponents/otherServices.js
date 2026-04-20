@@ -78,7 +78,7 @@ const OtherServices = ({ slug, cityName: cityNameProp, citySlug }) => {
       </h2>
 
       <div className="hover-pause relative w-full overflow-hidden py-5">
-        <div className="animate-carousel-left flex w-fit">
+        <div className="animate-carousel-slow flex w-fit">
           {/* First set of services */}
           <div className="flex gap-10 px-5">
             {otherSlugs.map((serviceSlug) => (

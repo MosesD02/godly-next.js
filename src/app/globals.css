@@ -852,14 +852,19 @@ html body[data-scroll-locked]:not(#_):not(#_):not(#_) {
 }
 
 .animate-carousel-left {
-  animation: team-gallery-marquee-left 60s linear infinite;
+  animation: team-gallery-marquee-left 30s linear infinite;
 }
 
 .animate-carousel-right {
-  animation: team-gallery-marquee-right 60s linear infinite;
+  animation: team-gallery-marquee-right 30s linear infinite;
+}
+
+.animate-carousel-slow {
+  animation: team-gallery-marquee-left 100s linear infinite;
 }
 
 .hover-pause:hover .animate-carousel-left,
-.hover-pause:hover .animate-carousel-right {
+.hover-pause:hover .animate-carousel-right,
+.hover-pause:hover .animate-carousel-slow {
   animation-play-state: paused;
 }
