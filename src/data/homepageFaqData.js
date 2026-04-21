@@ -33,24 +33,29 @@ export function buildHomepageFaqPageNode(faqs, pageUrl) {
 
 export const mainHomepageFaqs = [
   {
-    question: "What services does Godly Windows offer?",
-    answer:
-      "We offer window cleaning (interior, exterior, and full), Rain Shield coating, post-construction cleaning, house washing, roof washing, gutter cleaning, soft washing, screen cleaning, solar panel cleaning, paver sealing, and holiday light installation across South Florida.",
-  },
-  {
     question: "What areas of South Florida do you service?",
     answer:
-      "We service Boca Raton, Fort Lauderdale, Weston, Parkland, Coral Springs, and most of Palm Beach and Broward County. If you're not sure whether we reach your neighborhood, call us or check our city pages.",
+      "We cover all of Broward County plus a few cities in Palm Beach County, including Boca Raton, Delray Beach, and Royal Palm Beach. We're not in the Miami area right now. Not sure if we come to you? Scroll down to the city list and click your city to double check.",
   },
   {
-    question: "Are you licensed, insured, and bonded?",
+    question: "What services do you offer besides window cleaning?",
     answer:
-      "Absolutely. Godly Windows is fully licensed, insured, and bonded for every job we take on — from single-family homes to high-rise condos and commercial properties. Your property is protected from day one.",
+      "Plenty! On top of interior and exterior window cleaning, we also do pressure washing for driveways, walkways, and pool decks, gentle roof washing, driveway sealing, and holiday light installation. A lot of our customers bundle a few services together so the whole home gets refreshed at once.",
   },
   {
-    question: "Do you offer free estimates?",
+    question: "How often should I have my windows cleaned?",
     answer:
-      "Yes — every estimate is free and comes with no pressure. You can book online, call us directly, or request a quote through our site. Most estimates come back the same day you reach out.",
+      "At a minimum, every six months. Between the salt air, humidity, pollen, and those afternoon storms we all know too well, windows down here get dirty fast. Most of our customers want their home looking great all year, so they go with our quarterly plan. That's where we offer our biggest discounts and throw in free extras on every visit.",
+  },
+  {
+    question: "What is the invisible coating and how long does it last?",
+    answer:
+      "It's a treatment we put on your glass that repels water, dirt, and those annoying mineral spots. Rain actually helps rinse your windows clean instead of leaving them streaky. It lasts at least three months, and most of the time quite a bit longer depending on sun and weather exposure. It's one of the easiest ways to keep your windows looking freshly cleaned between visits.",
+  },
+  {
+    question: "How do I get a quote?",
+    answer:
+      "Super easy! Give us a call or shoot us a text. If you've got the time, we love doing quotes in person so we can walk through everything with you, talk through your options, and put together a plan that fits what you need. In a rush? Just text us a few pictures and we'll send a quote right back.",
   },
 ];
 
