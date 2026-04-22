@@ -11,7 +11,7 @@ import {
   getCityAreaServedSchema,
   getSameAsForCitySlug,
   businessOpeningHoursSpecification,
-  citySlugHasPhysicalOffice,
+  citySlugRendersServicePageLocalBusiness,
 } from "@/data/metaTitles";
 import { getRelatedBlogPosts } from "@/data/sanity-content";
 import Services from "@/data/servicesData";
@@ -91,7 +91,13 @@ export default async function GodlyServices({ params }) {
   const pageUrl = `${BASE_URL}/${city}/${slug}`;
   const cityUrl = `${BASE_URL}/${city}`;
 
-  const primarySchema = citySlugHasPhysicalOffice(city)
+  // aggregateRating is intentionally omitted from every JSON-LD node on this
+  // site. Google's review-snippet policy disallows self-serving ratings on
+  // LocalBusiness / Organization nodes the business itself controls, and
+  // `Service` isn't on the review-snippet eligible-type list. Third-party
+  // ratings (Google Business Profile, Yelp, BBB) surface through the
+  // Knowledge Graph independently of our schema.
+  const primarySchema = citySlugRendersServicePageLocalBusiness(city)
     ? {
         "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
         "@id": `${pageUrl}#localbusiness`,
@@ -106,11 +112,6 @@ export default async function GodlyServices({ params }) {
         priceRange: "$$",
         sameAs: getSameAsForCitySlug(city),
         areaServed: getCityAreaServedSchema(city),
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "5",
-          reviewCount: "157",
-        },
       }
     : {
         "@type": "Service",
@@ -118,6 +119,8 @@ export default async function GodlyServices({ params }) {
         name: `${serviceLabel} in ${cityName || city}`,
         provider: { "@id": `${BASE_URL}/#localbusiness` },
         areaServed: getCityAreaServedSchema(city),
+        serviceType:
+          "Window cleaning, pressure washing, gutter cleaning, house washing",
         url: pageUrl,
       };
 

@@ -30,6 +30,7 @@ export default function ServicesPage({
         slug={slug}
         heroOverride={cityData.hero}
         cityName={cityName}
+        citySlug={city}
       />
       {isWindowClusterSlug(slug) && (
         <WindowCleaningClusterNav

@@ -3,7 +3,7 @@ import { citiesMap } from "./cities.js";
 import { getCityHeroContent } from "./cityHeroCopy.js";
 import { BASE_URL } from "@/app/lib/constants";
 
-/** Cities with a real physical office — LocalBusiness JSON-LD on `/[city]`; others use Service. */
+/** Cities with a real physical office — used to decide which footer shows a street address. */
 export const PHYSICAL_OFFICE_CITY_SLUGS = new Set([
   "boca-raton",
   "weston",
@@ -11,9 +11,24 @@ export const PHYSICAL_OFFICE_CITY_SLUGS = new Set([
 ]);
 
 /**
- * City landing pages that render LocalBusiness + AggregateRating.
+ * Cities whose `/[city]/[service]` pages should render their OWN LocalBusiness
+ * JSON-LD entity (address + telephone baked into the page).
+ *
+ * Only cities whose physical office is at an address DIFFERENT from the
+ * homepage's primary #localbusiness entity belong here. Fort Lauderdale is the
+ * HQ — the homepage already declares that entity, so FTL service pages must
+ * reference it via `provider: { @id: "…/#localbusiness" }` instead of
+ * re-declaring it (which Google would de-duplicate and drop).
+ */
+export const SERVICE_PAGE_LOCALBUSINESS_CITY_SLUGS = new Set([
+  "boca-raton",
+  "weston",
+]);
+
+/**
+ * City landing pages that render a full LocalBusiness entity.
  * Includes the two real-office cities plus high-priority service-area cities
- * where we want Google star ratings to appear.
+ * where we want a rich local-business node on the landing page.
  */
 const CITY_LANDING_LOCALBUSINESS_SLUGS = new Set([
   "boca-raton",
@@ -26,6 +41,11 @@ const CITY_LANDING_LOCALBUSINESS_SLUGS = new Set([
 
 export function citySlugHasPhysicalOffice(citySlug) {
   return PHYSICAL_OFFICE_CITY_SLUGS.has(citySlug);
+}
+
+/** Service-page only: should `/[city]/[service]` declare its own LocalBusiness? */
+export function citySlugRendersServicePageLocalBusiness(citySlug) {
+  return SERVICE_PAGE_LOCALBUSINESS_CITY_SLUGS.has(citySlug);
 }
 
 // Phone numbers by geographic group - use for city pages, schema, CTAs
@@ -251,15 +271,9 @@ export function generateCitySchema(citySlug) {
       priceRange: "$$",
       sameAs: getSameAsForCitySlug(citySlug),
       areaServed: getCityAreaServedSchema(citySlug),
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "157",
-      },
     };
   }
 
-  // Google rich-results validation does not accept aggregateRating on Service.
   return {
     "@context": "https://schema.org",
     "@type": "Service",

@@ -6,10 +6,13 @@ import FreeQuoteButton from "@/components/freeQuote";
 import Services from "@/data/servicesData";
 import { generateServiceH1, generateServiceHeroAlt } from "@/data/metaTitles";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
+import RainShieldLink, {
+  hasInlineRainShieldLink,
+} from "./rainShieldLink";
 
 // cityName is passed as a prop from the server so the correct value is in the
 // initial SSR HTML.
-const ServicesHero = ({ slug, heroOverride, cityName }) => {
+const ServicesHero = ({ slug, heroOverride, cityName, citySlug }) => {
   const quotePhone = getPhoneNumber(cityName ?? "SOUTH FLORIDA");
   const quoteTel = quotePhone.replace(/\D/g, "");
   const displayCity = cityName
@@ -109,7 +112,12 @@ const ServicesHero = ({ slug, heroOverride, cityName }) => {
         <div className="absolute -right-6 bottom-2 z-10 h-3 w-18 -rotate-45 bg-[#F3CA9ECC] sm:-right-6 sm:bottom-2 sm:h-3 sm:w-20 md:-right-6 md:bottom-2 md:h-3 md:w-22 lg:-right-7 lg:bottom-3 lg:h-4 lg:w-24 xl:-right-8 xl:bottom-4 xl:h-5 xl:w-26"></div>
       </div>
       <div className="text-left font-['satoshi-regular'] text-sm/6 text-white sm:max-w-none sm:text-left sm:text-base/6 sm:text-white md:max-w-175 md:text-center md:text-base/7 md:text-[#FFFFFF94] lg:max-w-200 lg:text-center lg:text-lg/7 lg:text-[#FFFFFF94] xl:max-w-225 xl:text-center xl:text-xl/8 xl:text-[#FFFFFF94]">
-        <p>{heroOverride ?? heroDescription}</p>
+        <p>
+          {heroOverride ?? heroDescription}
+          {hasInlineRainShieldLink(slug) && (
+            <RainShieldLink citySlug={citySlug} slug={slug} />
+          )}
+        </p>
       </div>
       {slug === "rain-shield" ? null : slug === "holiday-lighting" ? (
         <div className="flex flex-wrap items-center justify-center gap-4">
