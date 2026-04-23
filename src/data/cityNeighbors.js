@@ -18,7 +18,6 @@ export const CITY_NEIGHBORS = {
     "coral-springs",
     "margate",
     "tamarac",
-    "lauderhill",
     "parkland",
     "boca-raton",
     "deerfield-beach",
@@ -38,7 +37,6 @@ export const CITY_NEIGHBORS = {
     "boca-raton",
     "tamarac",
     "sunrise",
-    "lauderhill",
   ],
   davie: [
     "fort-lauderdale",
@@ -102,15 +100,6 @@ export const CITY_NEIGHBORS = {
     "lighthouse-point",
     "deerfield-beach",
   ],
-  lauderhill: [
-    "sunrise",
-    "plantation",
-    "tamarac",
-    "margate",
-    "coral-springs",
-    "oakland-park",
-    "fort-lauderdale",
-  ],
   "lighthouse-point": [
     "deerfield-beach",
     "pompano-beach",
@@ -123,7 +112,6 @@ export const CITY_NEIGHBORS = {
     "coral-springs",
     "coconut-creek",
     "tamarac",
-    "lauderhill",
     "parkland",
     "sunrise",
   ],
@@ -141,7 +129,6 @@ export const CITY_NEIGHBORS = {
     "lauderdale-by-the-sea",
     "pompano-beach",
     "sunrise",
-    "lauderhill",
     "tamarac",
   ],
   parkland: [
@@ -164,7 +151,6 @@ export const CITY_NEIGHBORS = {
     "davie",
     "fort-lauderdale",
     "sunrise",
-    "lauderhill",
     "cooper-city",
     "weston",
     "pembroke-pines",
@@ -196,7 +182,6 @@ export const CITY_NEIGHBORS = {
   ],
   sunrise: [
     "plantation",
-    "lauderhill",
     "coral-springs",
     "weston",
     "tamarac",
@@ -205,7 +190,6 @@ export const CITY_NEIGHBORS = {
   ],
   tamarac: [
     "margate",
-    "lauderhill",
     "sunrise",
     "coral-springs",
     "coconut-creek",

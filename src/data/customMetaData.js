@@ -1375,22 +1375,6 @@ export const customMetaData = {
       },
     },
   },
-  lauderhill: {
-    services: {
-      "exterior-window-cleaning": {
-        title: "Exterior Window Cleaning in Lauderhill | Godly Windows",
-        description:
-          "Pure-water exterior window cleaning across Lauderhill. Streak-free glass up to 40 ft with water-fed poles—no ladders on your finish. Call for a free estimate.",
-        h1: "Professional Exterior Window Cleaning Services in Lauderhill",
-      },
-      "interior-window-cleaning": {
-        title: "Interior Window Cleaning in Lauderhill | Godly Windows",
-        description:
-          "Streak-free indoor window cleaning across Lauderhill. Sills, tracks, and glass hand-cleaned by our careful residential and commercial crews. Book today.",
-        h1: "Professional Interior Window Cleaning Services in Lauderhill",
-      },
-    },
-  },
   "cooper-city": {
     services: {
       "exterior-window-cleaning": {

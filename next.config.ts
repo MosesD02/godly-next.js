@@ -52,6 +52,28 @@ const nextConfig: NextConfig = {
         destination: "/privacy-policy",
         permanent: true,
       },
+      // Legacy snake_case city segments in URLs → canonical kebab-case (GSC 404s)
+      {
+        source: "/southwest_ranches/:path*",
+        destination: "/southwest-ranches/:path*",
+        permanent: true,
+      },
+      {
+        source: "/coconut_creek/:path*",
+        destination: "/coconut-creek/:path*",
+        permanent: true,
+      },
+      // No WPB city hub; nearest existing service area page
+      {
+        source: "/west-palm-beach",
+        destination: "/royal-palm-beach",
+        permanent: true,
+      },
+      {
+        source: "/west-palm-beach/:path*",
+        destination: "/royal-palm-beach/:path*",
+        permanent: true,
+      },
       {
         source: "/:city/holiday-light-installation",
         destination: "/:city/holiday-lighting",
@@ -125,11 +147,6 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/lauderdale-by-the-sea/rain-shield-tech",
-        destination: "/rain-shield",
-        permanent: true,
-      },
-      {
-        source: "/lauderhill/rain-shield-tech",
         destination: "/rain-shield",
         permanent: true,
       },

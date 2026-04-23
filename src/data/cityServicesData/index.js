@@ -23,7 +23,6 @@ import { hallandaleBeach } from "./hallandale-beach";
 import { hillsboroBeach } from "./hillsboro-beach";
 import { hollywood } from "./hollywood";
 import { lauderdaleByTheSea } from "./lauderdale-by-the-sea";
-import { lauderhill } from "./lauderhill";
 import { lighthousePoint } from "./lighthouse-point";
 import { margate } from "./margate";
 import { miramarFl } from "./miramar-fl";
@@ -53,7 +52,6 @@ export const cityServicesData = {
   "hillsboro-beach": hillsboroBeach,
   hollywood: hollywood,
   "lauderdale-by-the-sea": lauderdaleByTheSea,
-  lauderhill: lauderhill,
   "lighthouse-point": lighthousePoint,
   margate: margate,
   miramar: miramarFl,

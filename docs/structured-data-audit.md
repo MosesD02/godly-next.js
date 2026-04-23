@@ -235,7 +235,7 @@ All should return valid with zero warnings, and the business entities should col
 Worth calling out explicitly so we don't break it:
 
 - Every JSON-LD block is server-rendered (no `next/script`), so crawlers see the markup on first byte.
-- The existing Service + provider-reference pattern on Hollywood, Sunrise, Oakland Park, Pompano Beach, Lighthouse Point, and Lauderhill service pages is textbook-correct.
+- The existing Service + provider-reference pattern on Hollywood, Sunrise, Oakland Park, Pompano Beach, and Lighthouse Point service pages is textbook-correct.
 - Breadcrumbs on city and service pages are well-formed with proper positions and a valid item URL on every non-terminal node.
 - BlogPosting uses absolute image URLs and ISO 8601 dates.
 - The `generateStaticParams` build already filters reserved slugs correctly so we don't emit schema at conflicting URLs.

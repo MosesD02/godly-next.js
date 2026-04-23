@@ -12,7 +12,6 @@ export const citiesMap = {
   "hillsboro-beach": "HILLSBORO BEACH",
   hollywood: "HOLLYWOOD",
   "lauderdale-by-the-sea": "LAUDERDALE-BY-THE-SEA",
-  lauderhill: "LAUDERHILL",
   "lighthouse-point": "LIGHTHOUSE POINT",
   margate: "MARGATE",
 

@@ -66,7 +66,6 @@ export const cityPhoneMap = {
     "sunrise",
     "hillsboro-beach",
     "coconut-creek",
-    "lauderhill",
   ],
   "(561) 826-4461": ["boca-raton", "delray-beach", "royal-palm-beach"],
   "(954) 738-3421": [

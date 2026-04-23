@@ -144,7 +144,7 @@ const ServicePopup = ({ open, onOpenChange }) => {
       </DialogHeader>
       <DialogContent
         hideCloseButton
-        className="paper-bg-16 z-100 overflow-y-auto border-none bg-[#fff9f3] p-4 md:top-70 md:max-w-261.25 md:p-6"
+        className="paper-bg-16 z-100 max-sm:scale-95 overflow-y-auto border-none bg-[#fff9f3] p-4 md:top-70 md:max-w-261.25 md:p-6"
       >
         <div className="md:max-h-auto grid max-h-[calc(100vh-256px)] w-full grid-cols-2 sm:grid-cols-2 md:max-h-[calc(100vh-128px)] lg:grid-cols-3">
           {services.map((service, index) => (

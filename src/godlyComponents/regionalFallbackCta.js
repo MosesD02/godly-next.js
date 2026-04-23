@@ -50,7 +50,7 @@ const CITY_CTA_LABELS = new Set(
 
 /**
  * Shown on the homepage when the selected city does not have a dedicated
- * city CTA block (e.g. South Florida hub, Boca Raton, Lauderhill).
+ * city CTA block (e.g. South Florida hub, Boca Raton, Margate).
  */
 export default function RegionalFallbackCta() {
   const { city } = useGodlyContext();
