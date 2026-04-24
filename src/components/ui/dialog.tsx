@@ -38,7 +38,7 @@ function DialogOverlay({
     <DialogPrimitive.Overlay
       data-slot="dialog-overlay"
       className={cn(
-        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-90 bg-black/50",
+        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-16777000 bg-black/50",
         className,
       )}
       {...props}
@@ -71,7 +71,7 @@ function DialogContent({
         {!hideCloseButton && (
           <DialogPrimitive.Close
             className={cn(
-              "ring-offset-background focus:ring-ring data-[state=open]:bg-transparent data-[state=open]:text-muted-foreground absolute top-3 right-3 z-110 flex min-h-11 min-w-11 items-center justify-center rounded-full bg-transparent focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none md:top-3 md:right-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4.5 md:[&_svg:not([class*='size-'])]:size-6.75",
+              "ring-offset-background focus:ring-ring data-[state=open]:text-muted-foreground absolute top-3 right-3 z-110 flex min-h-11 min-w-11 items-center justify-center rounded-full bg-transparent focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-transparent md:top-3 md:right-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4.5 md:[&_svg:not([class*='size-'])]:size-6.75",
               closeClass,
             )}
           >
