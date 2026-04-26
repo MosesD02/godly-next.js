@@ -17,6 +17,7 @@ const OG_ASSETS = [
   { src: "src/assets/fonts/Satoshi-Regular.otf", dest: "Satoshi-Regular.otf" },
   { src: "src/assets/fonts/Satoshi-Medium.otf", dest: "Satoshi-Medium.otf" },
   { src: "src/assets/fonts/MarltonSans.otf", dest: "MarltonSans.otf" },
+  // dest basename must match src/lib/brand-assets.js (BRAND_LOGO_FILENAME)
   { src: "src/assets/logo-new.png", dest: "logo-new.png" },
 ];
 

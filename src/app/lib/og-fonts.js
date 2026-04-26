@@ -2,6 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import sharp from "sharp";
 import { BASE_URL } from "@/app/lib/constants";
+import { BRAND_LOGO_FILENAME } from "@/lib/brand-assets";
 
 const ASSETS_DIR = join(process.cwd(), "src/assets");
 const FONTS_DIR = join(ASSETS_DIR, "fonts");
@@ -50,11 +51,11 @@ export async function loadOgFonts() {
  */
 export async function loadOgLogo() {
   try {
-    const logoPath = join(ASSETS_DIR, "logo-new.png");
+    const logoPath = join(ASSETS_DIR, BRAND_LOGO_FILENAME);
     const logoData = await readFile(logoPath, "base64");
     return `data:image/png;base64,${logoData}`;
   } catch {
-    const buffer = await fetchAsset("/og-assets/logo-new.png");
+    const buffer = await fetchAsset(`/og-assets/${BRAND_LOGO_FILENAME}`);
     const base64 = buffer.toString("base64");
     return `data:image/png;base64,${base64}`;
   }

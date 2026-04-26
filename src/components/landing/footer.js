@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/assets/logo-new.png";
+import { brandLogo } from "@/lib/brand-assets";
 import Image from "@/components/Image";
 import Link from "next/link";
 
@@ -114,7 +114,7 @@ const Footer = ({ form = true, service }) => {
             style={{ justifyContent: "center" }}
           >
             <Image
-              src={logo}
+              src={brandLogo}
               alt="logo"
               className="object center h-auto w-29.25 object-contain md:w-45.5"
             ></Image>

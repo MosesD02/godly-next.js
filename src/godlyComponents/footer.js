@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Facebook, Instagram } from "lucide-react";
-import logo from "@/assets/logo-new.png";
+import { brandLogo } from "@/lib/brand-assets";
 import Image from "@/components/Image";
 // import CityTags from "@/components/cityTags";
 import Link from "next/link";
@@ -448,7 +448,7 @@ const Footer = () => {
             style={{ justifyContent: "center" }}
           >
             <Image
-              src={logo}
+              src={brandLogo}
               alt="logo"
               className="object center h-auto w-29.25 object-contain md:w-45.5"
             ></Image>

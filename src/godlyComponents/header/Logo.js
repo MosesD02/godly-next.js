@@ -2,14 +2,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "@/components/Image";
-import logo from "@/assets/logo-new.png";
+import { brandLogo } from "@/lib/brand-assets";
 
 const Logo = () => {
   return (
     <div className="header-logo md:mb-0">
       <Link href="/">
         <Image
-          src={logo}
+          src={brandLogo}
           alt="Logo"
           className="header-logo h-7.5 w-15 md:h-[42.542px] md:w-[88.344px]"
           priority

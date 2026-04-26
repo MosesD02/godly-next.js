@@ -2,11 +2,11 @@
 import React, { useState, useEffect } from "react";
 
 // Import the new components (adjust paths if necessary)
-import Logo from "./header/Logo";
-import PhoneNumber from "./header/PhoneNumber";
-import ServicePopup from "./header/ServicePopup";
-import CitiesPopup from "./header/CitiesPopup";
-import FormPopup from "./header/FormPopup";
+import Logo from "@/godlyComponents/header/Logo";
+import PhoneNumber from "@/godlyComponents/header/PhoneNumber";
+import ServicePopup from "@/godlyComponents/header/ServicePopup";
+import CitiesPopup from "@/godlyComponents/header/CitiesPopup";
+import FormPopup from "@/godlyComponents/header/FormPopup";
 import { cn } from "@/lib/utils";
 
 // Keep data definitions or move to a separate file
