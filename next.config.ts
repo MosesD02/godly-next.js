@@ -253,7 +253,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/blog/house-washing-fort-lauderdale-fort-lauderdale",
-        destination: "/blog/house-washing-fort-lauderdale",
+        destination: "/blog/house-washing-near-boca-raton",
         permanent: true,
       },
       {
@@ -293,7 +293,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/blog/soft-wash-tamarac-tamarac",
-        destination: "/blog/soft-wash-tamarac",
+        destination: "/blog/soft-washing-tamarac",
+        permanent: true,
+      },
+      {
+        source: "/blog/soft-wash-tamarac",
+        destination: "/blog/soft-washing-tamarac",
         permanent: true,
       },
       {
@@ -318,7 +323,17 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/blog/window-cleaning-weston-weston",
-        destination: "/blog/window-cleaning-weston",
+        destination: "/blog/hard-water-window-stains-weston",
+        permanent: true,
+      },
+      {
+        source: "/blog/window-cleaning-weston",
+        destination: "/blog/hard-water-window-stains-weston",
+        permanent: true,
+      },
+      {
+        source: "/blog/window-cleaning-near-me-fort-lauderdale",
+        destination: "/blog/how-often-clean-windows-fort-lauderdale",
         permanent: true,
       },
     ];

@@ -45,6 +45,14 @@ export async function generateStaticParams() {
   return [...allSlugs].map((slug) => ({ slug }));
 }
 
+// Thin V1 posts that should not appear in search results (Task C1–C4)
+const NOINDEX_SLUGS = new Set([
+  "pressure-washing-cost-boca-raton",
+  "pressure-washing-fort-lauderdale",
+  "window-wash-boca-raton",
+  "window-washers-fort-lauderdale",
+]);
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
 
@@ -60,6 +68,9 @@ export async function generateMetadata({ params }) {
       keywords: [post.targetKeyword, post.targetCity, "Godly Windows"].filter(
         Boolean,
       ),
+      ...(NOINDEX_SLUGS.has(slug) && {
+        robots: { index: false, follow: true },
+      }),
       openGraph: {
         title: post.metaTitle || post.title,
         description,
