@@ -21,13 +21,6 @@ export const servicesData = [
       "It’s what we do best! Get rid of that nasty build-up of nature’s mildew and grime.",
   },
   {
-    name: "Interior Window Cleaning",
-    icon: <WindowIcon />,
-    link: "interior-window-cleaning",
-    description:
-      "Pet slobber, fingerprints, and so much more can leave residue that is tricky to get off.",
-  },
-  {
     name: "Window Cleaning",
     icon: <WindowIcon />,
     link: "window-cleaning",
@@ -57,7 +50,7 @@ export const servicesData = [
       "Removing all the debris from your roof is the easiest way to increase its longevity.",
   },
   {
-    name: "Pressure & Soft Washing",
+    name: "Pressure Washing",
     image: pressureWashingImg,
     hoverImage: pressureWashingImgColor,
     link: "pressure-washing",

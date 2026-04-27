@@ -8,7 +8,6 @@ import { generateServiceHeroAlt } from "@/data/metaTitles";
 import "@/styles/fourstepprocess.css";
 
 import windowCleaningHero from "@/assets/serviceData/window-cleaning-new.jpeg";
-import service3 from "@/assets/serviceData/service3.webp";
 import postConstructionHero from "@/assets/serviceData/post-construction.webp";
 import service7 from "@/assets/serviceData/service7.webp";
 
@@ -17,11 +16,6 @@ const LINKS = [
     slug: "window-cleaning",
     label: "Window cleaning",
     image: windowCleaningHero,
-  },
-  {
-    slug: "interior-window-cleaning",
-    label: "Interior window cleaning",
-    image: service3,
   },
   {
     slug: "exterior-window-cleaning",
@@ -56,7 +50,7 @@ export default function WindowCleaningClusterNav({
         </p>
       </div>
 
-      <div className="grid w-full max-w-(--breakpoint-xl) grid-cols-2 gap-10 px-4 py-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid w-full max-w-(--breakpoint-xl) grid-cols-1 gap-10 px-4 py-5 sm:grid-cols-3">
         {LINKS.map(({ slug, label, image }, index) => {
           const href = windowClusterPath(citySlug, slug);
           const isCurrent = slug === currentSlug;

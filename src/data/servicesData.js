@@ -491,7 +491,7 @@ const Services = {
       "Pressure",
       "Washing",
       service7,
-      "Over time, concrete, stone, and brick surfaces collect grime and become slippery. Our professional pressure and soft washing services remove dirt, algae, and buildup—restoring your surfaces and improving safety and curb appeal. We use the right tools to clean driveways, patios, walkways, and pool areas quickly and effectively.",
+      "Over time, concrete, stone, and brick surfaces collect grime and become slippery. Our professional pressure washing services remove dirt, algae, and buildup—restoring your surfaces and improving safety and curb appeal. We use the right tools to clean driveways, patios, walkways, and pool areas quickly and effectively.",
     ],
     included: [
       {
@@ -885,6 +885,20 @@ const Services = {
         number: "05",
         title: "Boat Window Cleaning",
         text: "Cleaning windows on boats and yachts, ensuring clear visibility while enhancing the overall appearance.",
+      },
+    ],
+    interiorSection: {
+      heading: "Interior Window Cleaning",
+      body: [
+        "Fingerprints, HVAC dust, and cooking film stay on the inside of your windows long after the exterior looks clean. Our interior window cleaning crews stage shoe covers, protect furniture, and work pane-by-pane through every room — handling glass, frames, tracks, and dividers with the same care we give your exterior.",
+        "Interior cleaning is available as part of a full-service window package or as a standalone visit. Either way, every pane is left streak-free and backed by our 7-day sparkle guarantee.",
+      ],
+    },
+    faqs: [
+      {
+        question: "Do you clean inside windows?",
+        answer:
+          "Yes. Interior window cleaning is available as part of our full-service package or as a standalone visit. Our crew stages shoe covers, protects furniture, and works pane-by-pane on inside glass, frames, tracks, and sills. Results are covered by our 7-day sparkle guarantee.",
       },
     ],
     quote:

@@ -89,6 +89,16 @@ const nextConfig: NextConfig = {
         destination: "/:city/window-cleaning",
         permanent: true,
       },
+      {
+        source: "/:city/interior-window-cleaning",
+        destination: "/:city/window-cleaning",
+        permanent: true,
+      },
+      {
+        source: "/interior-window-cleaning",
+        destination: "/window-cleaning",
+        permanent: true,
+      },
       // Legacy city Rain Shield URLs → single hub (SEO punch list P1.2)
       {
         source: "/boca-raton/rain-shield-tech",

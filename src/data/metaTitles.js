@@ -289,7 +289,6 @@ export function generateCitySchema(citySlug) {
 export const serviceMetaTitles = {
   "solar-panel-cleaning": "Solar Panel Cleaning",
   "exterior-window-cleaning": "Exterior Window Cleaning",
-  "interior-window-cleaning": "Interior Window Cleaning",
   "gutter-cleaning": "Gutter Cleaning",
   "house-washing": "House Washing & Pressure Washing",
   "roof-washing": "Roof Cleaning",

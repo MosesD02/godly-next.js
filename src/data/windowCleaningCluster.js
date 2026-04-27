@@ -2,7 +2,6 @@
 
 export const WINDOW_CLUSTER_SLUGS = [
   "window-cleaning",
-  "interior-window-cleaning",
   "exterior-window-cleaning",
   "post-construction-window-cleaning",
 ];

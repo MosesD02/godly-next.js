@@ -5,7 +5,6 @@
 import service1 from "@/assets/serviceData/service1.webp";
 import windowCleaningHero from "@/assets/serviceData/window-cleaning-new.jpeg";
 import postConstructionHero from "@/assets/serviceData/post-construction.webp";
-import service3 from "@/assets/serviceData/service3.webp";
 import service4 from "@/assets/serviceData/service4.webp";
 import service5 from "@/assets/serviceData/service5.webp";
 import roofWashingHero from "@/assets/serviceData/roof-washing.webp";
@@ -18,7 +17,6 @@ import service11 from "@/assets/serviceData/service11.webp";
 export const IMAGE_BY_LINK = {
   "solar-panel-cleaning": service1,
   "exterior-window-cleaning": service7,
-  "interior-window-cleaning": service3,
   "gutter-cleaning": service4,
   "house-washing": service5,
   "roof-washing": roofWashingHero,
@@ -35,7 +33,6 @@ export const IMAGE_BY_LINK = {
 const TITLE_BY_LINK = {
   "solar-panel-cleaning": "Solar Panel Cleaning",
   "exterior-window-cleaning": "Exterior Window Cleaning",
-  "interior-window-cleaning": "Interior Window Cleaning",
   "gutter-cleaning": "Gutter Cleaning",
   "house-washing": "House Washing",
   "roof-washing": "Roof Washing",
@@ -53,7 +50,7 @@ const PRESETS = {
   "window-cleaning": [
     "screen-cleaning",
     "exterior-window-cleaning",
-    "interior-window-cleaning",
+    "post-construction-window-cleaning",
     "soft-washing",
     "holiday-lighting",
   ],
@@ -77,7 +74,6 @@ const DEFAULT_ORDER = [
   "soft-washing",
   "holiday-lighting",
   "exterior-window-cleaning",
-  "interior-window-cleaning",
   "screen-cleaning",
   "house-washing",
   "roof-washing",

@@ -15,7 +15,6 @@ import { usePathname } from "next/navigation";
 
 // Service images — only loaded when this dynamically-imported chunk is fetched
 import exteriorWindow from "@/assets/homepageServices/exterior_window.webp";
-import interiorWindow from "@/assets/homepageServices/interior_window.webp";
 import gutterCleaning from "@/assets/homepageServices/gutter_cleaning.webp";
 import houseWashing from "@/assets/homepageServices/house_washing.webp";
 import roofWashing from "@/assets/homepageServices/roof_washing.webp";
@@ -40,13 +39,6 @@ const services = [
     image: exteriorWindow,
     description:
       "It's what we do best! Get rid of that nasty build-up of nature's mildew and grime.",
-  },
-  {
-    name: "Interior Window Cleaning",
-    link: "interior-window-cleaning",
-    image: interiorWindow,
-    description:
-      "Pet slobber, fingerprints, and so much more can leave residue that is tricky to get off.",
   },
   {
     name: "Post-Construction Window Cleaning",
@@ -77,7 +69,7 @@ const services = [
       "Removing all the debris from your roof is the easiest way to increase its longevity.",
   },
   {
-    name: "Pressure & Soft Washing",
+    name: "Pressure Washing",
     link: "pressure-washing",
     image: pressureWashing,
     description:
