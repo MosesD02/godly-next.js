@@ -30,7 +30,7 @@ export default function ServiceButton() {
         className="cursor-pointer"
       >
         <div
-          className="shadow-[0px 1px 0px rgba(0, 0, 0.25) inset, -1px 1.2px rgba(255, 255, 0.03), 2px 2.6px 0.30)] relative h-[14.4px] w-32 rounded-[3px] border-[0.4px] border-black bg-[#1b1b1b] bg-repeat 0, 0.30)] relative h-[14.4px] w-32 rounded-[3px] border-[0.4px] border-black bg-[#1b1b1b] bg-repeat"
+          className="shadow-[0px 1px 0px rgba(0, 0, 0.25) inset, -1px 1.2px rgba(255, 255, 0.03), 2px 2.6px 0.30)] 0, 0.30)] relative h-[14.4px] w-32 rounded-[3px] border-[0.4px] border-black bg-[#1b1b1b] bg-repeat"
           style={{ backgroundImage: `url(${grainBg.src})` }}
         >
           <div className="absolute bottom-1 left-1/2 max-w-28.75 shrink-0 -translate-x-1/2">
@@ -85,7 +85,7 @@ const FormPopup = ({ open, onOpenChange }) => {
           <span className="sr-only">Contact Us</span>
         </DialogTitle>
       </DialogHeader>
-      <DialogContent className="z-100 border-none bg-transparent p-0 md:max-w-300">
+      <DialogContent className="z-16777000 border-none bg-transparent p-0 md:max-w-300">
         <QuoteForm isDialog={true} />
       </DialogContent>
     </Dialog>

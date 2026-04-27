@@ -46,7 +46,7 @@ const Savings = () => {
           ALWAYS LOOK GREAT
         </div>
         <div
-          className="py-16  text-white"
+          className="py-16 text-white"
           // style={{ marginTop: "1rem", marginBottom: "3rem" }}
         >
           <div className="relative z-10 flex flex-wrap justify-center gap-18">
@@ -101,7 +101,7 @@ const FormPopup = ({ open, onOpenChange }) => {
           <span className="sr-only">Contact Us</span>
         </DialogTitle>
       </DialogHeader>
-      <DialogContent className="z-100 border-none bg-transparent p-0 md:max-w-300">
+      <DialogContent className="z-16777000 border-none bg-transparent p-0 md:max-w-300">
         <QuoteForm isDialog={true} />
       </DialogContent>
     </Dialog>
@@ -120,12 +120,12 @@ const FeatureList = (value) => {
       {features.map((text, index) => (
         <div key={index} className="flex items-center space-x-4">
           {value ? (
-            <div className="flex size-5  items-center justify-center rounded-full bg-[#FFEBD7] font-['satoshi-light']">
-              <Check className="size-3  text-[#4B3A2F]" />
+            <div className="flex size-5 items-center justify-center rounded-full bg-[#FFEBD7] font-['satoshi-light']">
+              <Check className="size-3 text-[#4B3A2F]" />
             </div>
           ) : (
-            <div className="flex size-5  items-center justify-center rounded-full bg-[#EC6D62]">
-              <X className="size-3  text-[#4B3A2F]" />
+            <div className="flex size-5 items-center justify-center rounded-full bg-[#EC6D62]">
+              <X className="size-3 text-[#4B3A2F]" />
             </div>
           )}
 

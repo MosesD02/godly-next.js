@@ -7,7 +7,7 @@ import {
 import QuoteForm from "@/godlyComponents/quoteForm";
 
 const QUOTE_CONTENT_CLASS =
-  "z-100 max-sm:scale-[0.95] border-none bg-transparent p-0 md:max-w-300";
+  "z-16777000 max-sm:scale-[0.95] border-none bg-transparent p-0 md:max-w-300";
 
 /**
  * @param {object} props
