@@ -264,7 +264,7 @@ export default function QuoteForm({
       className={cn(
         "md:mt-2 xl:mt-3",
         isDialog
-          ? "xl:max-h-auto md:relative md:top-5 md:mx-auto md:flex md:max-h-[calc(100vh-100px)] md:w-full md:max-w-300 md:justify-center md:gap-0 xl:top-7 xl:mx-auto xl:flex xl:max-h-[calc(100vh-128px)] xl:justify-center xl:gap-0"
+          ? "xl:max-h-auto md:mx-auto md:flex md:max-h-[calc(100vh-100px)] md:w-full md:max-w-300 md:justify-center md:gap-0 xl:mx-auto xl:flex xl:max-h-[calc(100vh-128px)] xl:justify-center xl:gap-0"
           : "",
       )}
     >

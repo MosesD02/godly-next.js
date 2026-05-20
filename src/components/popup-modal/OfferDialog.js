@@ -17,7 +17,7 @@ import {
 // Close is absolute within the only direct child of DialogContent (position: relative),
 // not the padded surface — avoids Safari/Chromium differences on the dialog root.
 const OFFER_HEADER_CLOSE_CLASS =
-  "data-[state=open]:text-muted-foreground absolute top-3 right-12 z-120 flex min-h-11 min-w-11 items-center justify-center rounded-full bg-transparent disabled:pointer-events-none md:top-4 md:right-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:!size-5 md:[&_svg]:!size-6.75";
+  "data-[state=open]:text-muted-foreground absolute top-3 right-12 z-120 flex min-h-11 min-w-11 items-center justify-center rounded-full bg-transparent outline-none focus:outline-none focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 disabled:pointer-events-none md:top-4 md:right-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:!size-5 md:[&_svg]:!size-6.75";
 
 // No padding on DialogContent — padding lives on the main column only so the relative shell
 // (first child) matches the full card; close top/right insets then match the old default dialog.

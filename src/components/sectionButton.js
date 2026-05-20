@@ -64,7 +64,10 @@ const FormPopup = ({ open, onOpenChange }) => {
           <span className="sr-only">Contact Us</span>
         </DialogTitle>
       </DialogHeader>
-      <DialogContent className="z-100 border-none bg-transparent p-0 md:max-w-300">
+      <DialogContent
+        className="z-100 border-none bg-transparent p-0 md:max-w-300"
+        closeClass="focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none focus-visible:outline-none"
+      >
         <QuoteForm isDialog={true} />
       </DialogContent>
     </Dialog>
