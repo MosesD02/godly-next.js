@@ -35,7 +35,7 @@ const CitiesPopup = ({ open, onOpenChange }) => {
       </DialogHeader>
       <DialogContent
         hideCloseButton
-        className="paper-bg-16 md:py- z-16777000 overflow-y-auto border-none bg-[#fff9f3] p-4 md:top-51.75 md:max-w-261.25 md:px-2"
+        className="paper-bg-16 md:py- z-100 overflow-y-auto border-none bg-[#fff9f3] p-4 md:top-51.75 md:max-w-261.25 md:px-2"
       >
         <div className="xs:grid-cols-2 grid max-h-[calc(100vh-256px)] w-full grid-cols-2 gap-1 gap-y-4 sm:grid-cols-3 md:max-h-[calc(100vh-128px)] md:grid-cols-4 lg:grid-cols-4">
           {Object.keys(citiesMap)

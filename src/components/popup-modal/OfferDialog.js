@@ -17,12 +17,12 @@ import {
 // Close is absolute within the only direct child of DialogContent (position: relative),
 // not the padded surface — avoids Safari/Chromium differences on the dialog root.
 const OFFER_HEADER_CLOSE_CLASS =
-  "ring-offset-background focus:ring-ring data-[state=open]:text-muted-foreground absolute top-3 right-12 z-120 flex min-h-11 min-w-11 items-center justify-center rounded-full bg-transparent focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none md:top-4 md:right-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:!size-5 md:[&_svg]:!size-6.75";
+  "data-[state=open]:text-muted-foreground absolute top-3 right-12 z-120 flex min-h-11 min-w-11 items-center justify-center rounded-full bg-transparent disabled:pointer-events-none md:top-4 md:right-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:!size-5 md:[&_svg]:!size-6.75";
 
 // No padding on DialogContent — padding lives on the main column only so the relative shell
 // (first child) matches the full card; close top/right insets then match the old default dialog.
 const OFFER_CONTENT_CLASS =
-  "z-[16777000]! flex aspect-1811/2711 min-h-168.75 max-w-110 max-sm:scale-[0.86] scale-90 flex-col gap-0 !p-0 overflow-hidden border-0 bg-transparent bg-[url(/assets/UnionMobile.png)] bg-contain bg-center bg-no-repeat shadow-none md:max-w-110 md:scale-100 md:bg-[url(/assets/Union.png)]";
+  "z-[100]! flex aspect-1811/2711 min-h-168.75 max-w-110 max-sm:scale-[0.86] scale-90 flex-col gap-0 !p-0 overflow-hidden border-0 bg-transparent bg-[url(/assets/UnionMobile.png)] bg-contain bg-center bg-no-repeat shadow-none md:max-w-110 md:scale-100 md:bg-[url(/assets/Union.png)]";
 
 const OFFER_DASHED_RULE_CLASS =
   "pointer-events-none h-px w-full shrink-0 bg-repeat-x [background-size:auto_1px] [background-image:url(/assets/dashes-ticket.png)] [background-position:0_50%]";

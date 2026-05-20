@@ -486,7 +486,9 @@ export default function QuoteForm({ isDialog }) {
       <div
         className={cn(
           "paper-bg-14 relative w-full rounded-[10px] border bg-[#F3CA9E] bg-blend-screen md:shadow-sm xl:shadow-md",
-          isDialog ? "md:overflow-y-auto xl:overflow-y-auto" : "",
+          isDialog
+            ? "max-h-[calc(100dvh-2rem)] overflow-y-auto md:max-h-none md:overflow-y-auto xl:overflow-y-auto"
+            : "",
         )}
       >
         <div className="paper-bg-14 relative z-20 grid grid-cols-2 items-center justify-between rounded-t-[10px] bg-[#AB8459] px-6.75 py-6.25 md:flex md:h-25 md:px-10 md:py-6 xl:flex xl:h-32 xl:px-12 xl:py-8">
@@ -525,7 +527,7 @@ export default function QuoteForm({ isDialog }) {
             value={formData.name}
             onChange={handleChange}
             placeholder="YOUR NAME"
-            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-span-2 md:col-start-1 md:row-start-2 md:w-full md:min-h-13 md:self-end xl:col-span-4 xl:col-start-1 xl:row-start-2 xl:text-2xl"
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-span-2 md:col-start-1 md:row-start-2 md:min-h-13 md:w-full md:self-end xl:col-span-4 xl:col-start-1 xl:row-start-2 xl:text-2xl"
             required
           />
 
@@ -542,7 +544,7 @@ export default function QuoteForm({ isDialog }) {
             placeholder="YOUR EMAIL"
             value={formData.email}
             onChange={handleChange}
-            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-span-2 md:col-start-3 md:row-start-2 md:w-full md:min-h-13 md:self-end xl:col-span-4 xl:col-start-5 xl:row-start-2 xl:text-2xl"
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-span-2 md:col-start-3 md:row-start-2 md:min-h-13 md:w-full md:self-end xl:col-span-4 xl:col-start-5 xl:row-start-2 xl:text-2xl"
             required
           />
 
@@ -556,7 +558,7 @@ export default function QuoteForm({ isDialog }) {
             {/* Same font as inputs (body / Marlton) — avoid font-sans (Satoshi) on +1 only */}
             <div className="flex w-full min-w-0 items-baseline gap-2 border-b border-black pb-3">
               <span
-                className="pointer-events-none shrink-0 select-none text-base font-normal leading-snug text-[#312E2C] md:text-xl md:leading-snug xl:text-2xl xl:leading-snug"
+                className="pointer-events-none shrink-0 text-base leading-snug font-normal text-[#312E2C] select-none md:text-xl md:leading-snug xl:text-2xl xl:leading-snug"
                 aria-hidden="true"
               >
                 +1
@@ -728,7 +730,7 @@ export default function QuoteForm({ isDialog }) {
             placeholder="YOUR ZIP CODE"
             value={formData.zipcode}
             onChange={handleChange}
-            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-span-1 md:col-start-6 md:row-start-4 md:w-full md:min-h-13 md:self-end xl:col-span-3 xl:col-start-10 xl:row-start-4 xl:text-2xl"
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-span-1 md:col-start-6 md:row-start-4 md:min-h-13 md:w-full md:self-end xl:col-span-3 xl:col-start-10 xl:row-start-4 xl:text-2xl"
             required
           />
         </div>
