@@ -9,9 +9,13 @@ const HELPCRUNCH_APP_ID = "db6ee22c-efdb-4487-be2b-33564fc9a13d";
 export default function ThirdPartyScripts() {
   return (
     <>
+      {/* Google Ads tag — piggybacks on gtag.js loaded by <GoogleAnalytics />
+          in app/layout.js. Queues the config into dataLayer; gtag.js drains
+          the queue once it loads. */}
       <Script id="google-ads-config" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
 function gtag(){window.dataLayer.push(arguments);}
+gtag('js', new Date());
 gtag('config', '${GOOGLE_ADS_ID}');`}
       </Script>
 
