@@ -432,6 +432,17 @@ export default function QuoteForm({ isDialog }) {
         fireGoogleAdsFormConversion();
       }
 
+      if (typeof window !== "undefined") {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "quote_form_submission",
+          user_email: formData.email,
+          user_phone: `+1${formData.phone}`,
+          full_name: formData.name,
+          postal_code: formData.zipcode,
+        });
+      }
+
       fireMetaPixelLead();
 
       setSubmitStatus("success");
