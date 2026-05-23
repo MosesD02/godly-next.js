@@ -17,7 +17,9 @@ export default function ServiceButton() {
   return (
     <>
       <div
-        onClick={() => {
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
           setIsOpen(true);
           if (typeof window !== "undefined" && window.gtag) {
             window.gtag("event", "service_button_click", {

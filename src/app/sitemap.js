@@ -126,6 +126,7 @@ export default async function sitemap() {
 
       services.forEach((service) => {
         if (service === "rain-shield") return;
+        if (service === "screen-cleaning") return;
         urls.push({
           url: `${BASE_URL}/${city}/${service}`,
           lastModified: now,

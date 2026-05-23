@@ -2,7 +2,6 @@ import {
   WindowIcon,
   GutterIcon,
   RoofWashingIcon,
-  ScreenCleansIcon,
   SolarPanelsIcon,
   SealCoatingIcon,
   HolidayLightIcon,
@@ -72,13 +71,6 @@ export const servicesData = [
     link: "light-fixture-cleaning",
     description:
       "Keep both your interior and exterior lighting bright with thorough cleanings of your lanterns, sconces, and more.",
-  },
-  {
-    name: "Screen Cleaning",
-    icon: <ScreenCleansIcon />,
-    link: "screen-cleaning",
-    description:
-      "Our special solution and professional equipment leaves window screens & pool screen enclosures looking brand new.",
   },
   {
     name: "Holiday Lighting",

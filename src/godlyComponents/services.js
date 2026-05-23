@@ -1259,11 +1259,10 @@ function ServicesGrid({ citySlug: citySlugProp }) {
     <div className="z-20 grid grid-cols-2 gap-3 sm:px-10 md:grid-cols-3 md:gap-7 md:px-20">
       {servicesData.map((service, idx) => {
         const isActive = activeCard === idx;
-        return (
+        const card = (
           <Card
-            key={idx}
             className={`paper-bg-8 group relative flex h-full justify-between rounded-sm bg-[#E9E5E4] p-0 transition-transform duration-300 ${isActive ? "rotate-3 border-[#382f2d] bg-[#382f2d]" : ""} hover:rotate-3 hover:border-[#382f2d] hover:bg-[#382f2d]`}
-            onClick={() => toggleCard(idx)}
+            onTouchStart={() => toggleCard(idx)}
           >
             <CardContent className="service-icon-hover flex h-full p-0">
               <div className="flex size-full  shrink-0 flex-col gap-6 px-3 py-6 md:px-4 md:py-8 md:group-hover:text-white">
@@ -1460,13 +1459,14 @@ function ServicesGrid({ citySlug: citySlugProp }) {
                 </div>
                 <div className="flex w-full items-center justify-end gap-4">
                   {service.link && (
-                    <Button className="pointer-cursor flex p-3 text-[10px] md:h-11.5 md:px-4.5 md:py-4 md:text-sm">
-                      <Link
-                        href={`/${cityKey}/${service.link}`}
-                        className="pointer-cursor trim font-['satoshi-regular'] text-[14px] font-bold text-[#FDE4C8]"
-                      >
+                    <Button
+                      asChild={false}
+                      tabIndex={-1}
+                      className="pointer-cursor flex p-3 text-[10px] md:h-11.5 md:px-4.5 md:py-4 md:text-sm"
+                    >
+                      <span className="pointer-cursor trim font-['satoshi-regular'] text-[14px] font-bold text-[#FDE4C8]">
                         What we Offer
-                      </Link>
+                      </span>
                     </Button>
                   )}
                 </div>
@@ -1479,6 +1479,18 @@ function ServicesGrid({ citySlug: citySlugProp }) {
               </div>
             </CardContent>
           </Card>
+        );
+        return service.link ? (
+          <Link
+            key={idx}
+            href={`/${cityKey}/${service.link}`}
+            className="contents"
+            aria-label={service.name}
+          >
+            {card}
+          </Link>
+        ) : (
+          <React.Fragment key={idx}>{card}</React.Fragment>
         );
       })}
     </div>

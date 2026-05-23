@@ -48,14 +48,12 @@ const TITLE_BY_LINK = {
 /** Explicit lists from client spec (order preserved) */
 const PRESETS = {
   "window-cleaning": [
-    "screen-cleaning",
     "exterior-window-cleaning",
     "post-construction-window-cleaning",
     "soft-washing",
     "holiday-lighting",
   ],
   "soft-washing": [
-    "screen-cleaning",
     "exterior-window-cleaning",
     "roof-washing",
     "window-cleaning",
@@ -74,7 +72,6 @@ const DEFAULT_ORDER = [
   "soft-washing",
   "holiday-lighting",
   "exterior-window-cleaning",
-  "screen-cleaning",
   "house-washing",
   "roof-washing",
   "pressure-washing",

@@ -17,7 +17,6 @@ import houseWashing from "@/assets/homepageServices/house_washing.webp";
 import roofWashing from "@/assets/homepageServices/roof_washing.webp";
 import pressureWashing from "@/assets/homepageServices/pressure_washing.webp";
 import lightFixtures from "@/assets/homepageServices/light_fixtures.webp";
-import screenCleans from "@/assets/homepageServices/screen_cleans.webp";
 import solarPanels from "@/assets/homepageServices/solar_panels.webp";
 import sealCoating from "@/assets/homepageServices/seal_coating.webp";
 import santaBg from "@/assets/homepageServices/santa_bg.webp";
@@ -85,13 +84,6 @@ const services = [
     image: lightFixtures,
     description:
       "Keep both your interior and exterior lighting bright with thorough cleanings of your lanterns, sconces, and more.",
-  },
-  {
-    name: "Screen Cleaning",
-    link: "screen-cleaning",
-    image: screenCleans,
-    description:
-      "We'll happily remove, clean, and even replace your screens if necessary.",
   },
   {
     name: "Holiday Lighting",
