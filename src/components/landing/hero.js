@@ -52,7 +52,7 @@ const Hero = ({ service, source, serviceSlug, cityName }) => {
               <Star className="h-3.25 w-3.25 md:size-3 xl:h-4.25 xl:w-4.5" />
             </div>
             <span className="font-marlton trim text-base tracking-[2.07px] text-[#FDE4C8] md:text-base xl:text-[20.704px]">
-              157 Reviews
+              172 Reviews
             </span>
           </div>
           <h1 className="sr-only">
@@ -87,7 +87,7 @@ const Hero = ({ service, source, serviceSlug, cityName }) => {
           <p className="font-['satoshi-regular'] text-sm font-medium text-white md:text-base xl:text-xl">
             {service
               ? `Get a free quote for ${service} in ${formatCity(city)} – no pressure, just honest pricing.`
-              : `Get Spotless Windows + a FREE RainShield Treatment this ${new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" })).toLocaleString("en-US", { month: "long" })} Only.`}
+              : `Get Spotless Windows + FREE RainShield Treatment this ${new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" })).toLocaleString("en-US", { month: "long" })} Only.`}
           </p>
         </div>
         <QuoteForm service={service} source={source} formTrackingId="hero" />
