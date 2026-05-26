@@ -19,7 +19,6 @@ import { usePathname } from "next/navigation";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
 import { fireGoogleAdsFormConversion } from "@/lib/googleAdsConversions";
-import { fireMetaPixelLead } from "@/lib/metaPixel";
 
 const servicesList = [
   { id: "exterior-window-cleaning", name: "Exterior Window Cleaning" },
@@ -442,8 +441,6 @@ export default function QuoteForm({ isDialog }) {
           postal_code: formData.zipcode,
         });
       }
-
-      fireMetaPixelLead();
 
       setSubmitStatus("success");
       setShowSuccessDialog(true);
