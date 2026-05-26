@@ -217,17 +217,6 @@ export default function QuoteForm({
           ...utms,
         });
 
-        gtag("event", "quote_form_submission", {
-          event_category: "engagement",
-          event_label: "Quote Form Submission",
-          value: 1,
-          service: service,
-          date: date ? format(date, "MM/dd/yyyy") : null,
-          zipcode: formData.zipcode,
-          source: source || "google ads",
-          ...utms,
-        });
-
         fireGoogleAdsFormConversion();
       }
 

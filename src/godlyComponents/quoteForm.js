@@ -418,16 +418,6 @@ export default function QuoteForm({ isDialog }) {
           source: "organic",
         });
 
-        gtag("event", "quote_form_submission", {
-          event_category: "engagement",
-          event_label: "Quote Form Submission",
-          value: 1,
-          services: servicesParam,
-          date: date ? format(date, "MM/dd/yyyy") : null,
-          zipcode: formData.zipcode,
-          source: "organic",
-        });
-
         fireGoogleAdsFormConversion();
       }
 
