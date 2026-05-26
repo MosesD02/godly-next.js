@@ -182,6 +182,41 @@ export default function QuoteForm({
         const utms =
           typeof window.__getUtms === "function" ? window.__getUtms() : {};
 
+        // GA4 recommended lead event — use this (or map it) in GA4 / Google Ads conversions
+        gtag("event", "generate_lead", {
+          currency: "USD",
+          value: 1,
+          form_id: `landing-quote-${formTrackingId}`,
+          page_path: pathname || "",
+          service: service || "unknown",
+          ...utms,
+        });
+
+        // Matches Google Ads import: godlywindows.com (web) close_convert_lead
+        const leadTransactionId =
+          typeof crypto !== "undefined" && crypto.randomUUID
+            ? crypto.randomUUID()
+            : `lead_${Date.now()}`;
+        gtag("event", "close_convert_lead", {
+          currency: "USD",
+          value: 1,
+          transaction_id: leadTransactionId,
+          form_id: `landing-quote-${formTrackingId}`,
+          page_path: pathname || "",
+          service: service || "unknown",
+          ...utms,
+        });
+
+        gtag("event", "qualify_lead", {
+          currency: "USD",
+          value: 1,
+          transaction_id: leadTransactionId,
+          form_id: `landing-quote-${formTrackingId}`,
+          page_path: pathname || "",
+          service: service || "unknown",
+          ...utms,
+        });
+
         gtag("event", "quote_form_submission", {
           event_category: "engagement",
           event_label: "Quote Form Submission",
