@@ -357,6 +357,15 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["@/components", "@/godlyComponents"],
   },
+  async redirects() {
+    return [
+      {
+        source: "/blog/holiday-lighting-boca-raton-boca-raton",
+        destination: "/blog/boca-raton-holiday-lighting",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
