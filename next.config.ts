@@ -336,6 +336,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/how-often-clean-windows-fort-lauderdale",
         permanent: true,
       },
+      {
+        source: "/blog/holiday-lighting-boca-raton-boca-raton",
+        destination: "/blog/boca-raton-holiday-lighting",
+        permanent: true,
+      },
     ];
   },
 
@@ -356,15 +361,6 @@ const nextConfig: NextConfig = {
   // Experimental features for better performance
   experimental: {
     optimizePackageImports: ["@/components", "@/godlyComponents"],
-  },
-  async redirects() {
-    return [
-      {
-        source: "/blog/holiday-lighting-boca-raton-boca-raton",
-        destination: "/blog/boca-raton-holiday-lighting",
-        permanent: true,
-      },
-    ];
   },
 };
 
