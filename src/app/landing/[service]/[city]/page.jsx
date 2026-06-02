@@ -14,6 +14,10 @@ import {
   getSameAsForCitySlug,
   businessOpeningHoursSpecification,
 } from "@/data/metaTitles";
+import {
+  LANDING_FORT_LAUDERDALE_PHONE,
+  FORT_LAUDERDALE_SLUG,
+} from "@/lib/landingPhoneOverride";
 import JsonLd from "@/lib/jsonLd";
 
 export async function generateStaticParams() {
@@ -93,7 +97,11 @@ export default async function LandingPage({ params }) {
       name: "Godly Windows & Wash Co.",
       image: `${BASE_URL}/favicon.svg`,
       url: `${BASE_URL}/${city}`,
-      telephone: getPhoneForCity(city),
+      // Fort Lauderdale landing pages only: dedicated phone number.
+      telephone:
+        city === FORT_LAUDERDALE_SLUG
+          ? LANDING_FORT_LAUDERDALE_PHONE
+          : getPhoneForCity(city),
       priceRange: "$$",
       address: getOfficePostalAddressForCitySlug(city),
       geo: getOfficeGeoForCitySlug(city),

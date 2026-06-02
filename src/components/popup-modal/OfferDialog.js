@@ -61,7 +61,7 @@ export function OfferDialog({
             <span className="sr-only">Close</span>
           </DialogClose>
 
-          <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col px-[48px] pt-6 pb-6 md:px-[32px]">
+          <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col px-12 pt-6 pb-6 md:px-8">
             <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-4 md:gap-5">
               <h2 className="trim text-center text-[32px] leading-none text-black">
                 New Client Special
@@ -122,7 +122,7 @@ export function OfferDialog({
               </div>
               <DialogClose asChild>
                 <QuoteButton
-                  className="quote-button !w-full !max-w-full !self-stretch py-4! text-[24px]! md:py-6!"
+                  className="quote-button w-full! max-w-full! self-stretch! py-4! text-[24px]! md:py-6!"
                   onClick={onGetQuote}
                 >
                   Get My Quote

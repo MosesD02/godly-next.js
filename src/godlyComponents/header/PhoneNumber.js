@@ -1,12 +1,22 @@
 // src/godlyComponents/header/PhoneNumber.js
 import React from "react";
 import { Phone } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useGodlyContext } from "@/context/godlyContext";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
+import {
+  LANDING_FORT_LAUDERDALE_PHONE,
+  isFortLauderdaleLandingPath,
+} from "@/lib/landingPhoneOverride";
 
 const PhoneNumber = () => {
   const { city } = useGodlyContext();
-  const phoneNumber = getPhoneNumber(city);
+  const pathname = usePathname();
+  // Fort Lauderdale LANDING pages use a dedicated number; everything else
+  // (including the non-landing /fort-lauderdale page) keeps the shared number.
+  const phoneNumber = isFortLauderdaleLandingPath(pathname, city)
+    ? LANDING_FORT_LAUDERDALE_PHONE
+    : getPhoneNumber(city);
   const formattedPhoneNumber = phoneNumber.replace(/-/g, "");
 
   const handlePhoneClick = () => {
