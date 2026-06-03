@@ -336,6 +336,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/how-often-clean-windows-fort-lauderdale",
         permanent: true,
       },
+      {
+        source: "/blog/holiday-lighting-boca-raton-boca-raton",
+        destination: "/blog/boca-raton-holiday-lighting",
+        permanent: true,
+      },
     ];
   },
 
