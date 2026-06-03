@@ -105,7 +105,7 @@ export default function BlogIndex({
           >
             {cityName ? (
               <>
-                <span className="uppercase">{titleCaseCityName(cityName)}</span>{" "}
+                <span>{titleCaseCityName(cityName)}</span>{" "}
                 resources
               </>
             ) : (
@@ -119,7 +119,7 @@ export default function BlogIndex({
           <p className="text-center font-['satoshi-light'] text-xs text-[#FFFFFF94] md:font-['satoshi-regular'] md:text-[24px]">
             Expert tips on keeping your{" "}
             {cityName ? (
-              <span className="uppercase">{titleCaseCityName(cityName)}</span>
+              <span>{titleCaseCityName(cityName)}</span>
             ) : (
               "South Florida"
             )}{" "}
