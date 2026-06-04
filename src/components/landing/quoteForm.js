@@ -8,7 +8,6 @@ import { format } from "date-fns";
 import QuoteButton from "@/components/quoteButton";
 import Airtable from "airtable";
 import { cn } from "@/lib/utils";
-import { fireGoogleAdsFormConversion } from "@/lib/googleAdsConversions";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
 
@@ -216,8 +215,6 @@ export default function QuoteForm({
           service: service || "unknown",
           ...utms,
         });
-
-        fireGoogleAdsFormConversion();
       }
 
       if (typeof window !== "undefined") {

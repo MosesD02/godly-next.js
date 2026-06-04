@@ -18,7 +18,6 @@ import { useGodlyContext } from "@/context/godlyContext";
 import { usePathname } from "next/navigation";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
-import { fireGoogleAdsFormConversion } from "@/lib/googleAdsConversions";
 
 const servicesList = [
   { id: "exterior-window-cleaning", name: "Exterior Window Cleaning" },
@@ -417,8 +416,6 @@ export default function QuoteForm({ isDialog }) {
           services: servicesParam,
           source: "organic",
         });
-
-        fireGoogleAdsFormConversion();
       }
 
       if (typeof window !== "undefined") {

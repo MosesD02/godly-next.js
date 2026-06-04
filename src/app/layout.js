@@ -1,5 +1,4 @@
 import { Geist, Geist_Mono, Inter } from "next/font/google";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { AppWrapper } from "@/context/godlyContext";
 import ThirdPartyScripts from "@/components/ThirdPartyScripts";
@@ -58,7 +57,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-5R9DBDVW" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}`}
         suppressHydrationWarning
@@ -67,7 +65,6 @@ export default function RootLayout({ children }) {
 
         <AppWrapper>{children}</AppWrapper>
       </body>
-      <GoogleAnalytics gaId="G-6P0ST66B9P" />
     </html>
   );
 }

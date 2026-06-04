@@ -2,7 +2,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { citiesMap } from "@/data/cities";
-import GoogleAdsTelClickTracker from "@/components/GoogleAdsTelClickTracker";
 
 const GodlyContext = createContext();
 
@@ -48,7 +47,6 @@ export function AppWrapper({ children }) {
         setFormPopupOpen,
       }}
     >
-      <GoogleAdsTelClickTracker />
       {children}
     </GodlyContext.Provider>
   );
