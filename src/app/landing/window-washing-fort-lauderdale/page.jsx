@@ -19,13 +19,13 @@ const service = "Window Washing";
 const url = `${BASE_URL}/landing/window-washing-fort-lauderdale`;
 const title = "Expert Window Washing In Fort Lauderdale";
 const description =
-  "Fort Lauderdale window cleaners for spotless window washing, careful window cleaning, and a friendly local cleaner backed by a satisfaction guarantee.";
+  "Fort Lauderdale window washers for spotless window washing and detailed care from a friendly local window washer, all backed by our 100% satisfaction guarantee.";
 const headline =
   "Most Trusted Window Washing Pros In Fort Lauderdale – Backed by Our 100% Satisfaction Guarantee";
 const heroSubcopy =
   "Get a free quote from a trusted Fort Lauderdale window washer – no pressure, just honest pricing and careful window washing from pros who treat your home right.";
 const introCopy =
-  "Whether you need a detail-minded window cleaner before guests arrive or regular window washers for year-round shine, our Fort Lauderdale window cleaners keep the window washing and window cleaning process simple, friendly, and built around your schedule.";
+  "Whether you need a detail-minded window washer before guests arrive or recurring window washing to keep every pane bright, our Fort Lauderdale window washers make the whole process simple, friendly, and built around your schedule.";
 
 export const metadata = {
   title,
@@ -35,9 +35,6 @@ export const metadata = {
     "window washing Fort Lauderdale",
     "window washer Fort Lauderdale",
     "window washers Fort Lauderdale",
-    "window cleaners Fort Lauderdale",
-    "window cleaner Fort Lauderdale",
-    "window cleaning Fort Lauderdale",
   ],
   openGraph: {
     title,
@@ -61,7 +58,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: title,
-  serviceType: "Window washing and window cleaning",
+  serviceType: "Window washing",
   provider: {
     "@type": "LocalBusiness",
     "@id": `${BASE_URL}/${city}#localbusiness`,
@@ -96,7 +93,7 @@ export default function WindowWashingFortLauderdalePage() {
         heroHeadline={headline}
         heroH1={headline}
         heroSubcopy={heroSubcopy}
-        heroAlt="Fort Lauderdale window cleaners providing professional window washing"
+        heroAlt="Fort Lauderdale window washers providing professional window washing"
         introCopy={introCopy}
       />
     </>

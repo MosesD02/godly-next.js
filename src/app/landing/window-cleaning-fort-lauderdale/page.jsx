@@ -17,15 +17,15 @@ const city = FORT_LAUDERDALE_SLUG;
 const cityName = "FORT LAUDERDALE";
 const service = "Window Cleaning";
 const url = `${BASE_URL}/landing/window-cleaning-fort-lauderdale`;
-const title = "Expert Window Washing In Fort Lauderdale";
+const title = "Expert Window Cleaning In Fort Lauderdale";
 const description =
-  "Fort Lauderdale window washers for expert window cleaning, dependable window washing, and detail-minded washers who stand behind every pane.";
+  "Fort Lauderdale window cleaners for thorough window cleaning and careful detail work from a seasoned cleaner, all backed by our 100% satisfaction guarantee.";
 const headline =
-  "Most Trusted Window Washing Pros In Fort Lauderdale – Backed by Our 100% Satisfaction Guarantee";
+  "Most Trusted Window Cleaning Pros In Fort Lauderdale – Backed by Our 100% Satisfaction Guarantee";
 const heroSubcopy =
   "Get a free quote from a Fort Lauderdale window cleaner – no pressure, just honest pricing from window cleaning pros who make the whole thing easy.";
 const introCopy =
-  "From routine window cleaning to a full refresh before family visits, our Fort Lauderdale window cleaner team brings the same old-fashioned care customers expect from trusted window cleaners, a careful window washer, and reliable window washers.";
+  "From routine window cleaning to a full refresh before family visits, our Fort Lauderdale window cleaner team brings the old-fashioned care you expect from trusted window cleaners who treat every home like their own.";
 
 export const metadata = {
   title,
@@ -35,9 +35,6 @@ export const metadata = {
     "window cleaning Fort Lauderdale",
     "window cleaner Fort Lauderdale",
     "window cleaners Fort Lauderdale",
-    "window washer Fort Lauderdale",
-    "window washers Fort Lauderdale",
-    "window washing Fort Lauderdale",
   ],
   openGraph: {
     title,
@@ -61,7 +58,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: title,
-  serviceType: "Window cleaning and window washing",
+  serviceType: "Window cleaning",
   provider: {
     "@type": "LocalBusiness",
     "@id": `${BASE_URL}/${city}#localbusiness`,
@@ -96,7 +93,7 @@ export default function WindowCleaningFortLauderdalePage() {
         heroHeadline={headline}
         heroH1={headline}
         heroSubcopy={heroSubcopy}
-        heroAlt="Fort Lauderdale window washers providing professional window cleaning"
+        heroAlt="Fort Lauderdale window cleaners providing professional window cleaning"
         introCopy={introCopy}
       />
     </>
