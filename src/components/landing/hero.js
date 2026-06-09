@@ -17,7 +17,16 @@ const formatCity = (cityVal) => {
     .join(" ");
 };
 
-const Hero = ({ service, source, serviceSlug, cityName }) => {
+const Hero = ({
+  service,
+  source,
+  serviceSlug,
+  cityName,
+  heroHeadline,
+  heroH1,
+  heroSubcopy,
+  heroAlt,
+}) => {
   const city = cityName;
 
   return (
@@ -25,13 +34,13 @@ const Hero = ({ service, source, serviceSlug, cityName }) => {
       <div className="absolute top-0 left-0 h-112.5 w-full md:top-0 md:h-175">
         <Image
           src="/assets/new-hero.jpeg"
-          alt={generateCityHeroAlt(city)}
+          alt={heroAlt || generateCityHeroAlt(city)}
           fill
           priority
           sizes="100vw"
           className="object-cover object-center md:object-[center_82%]"
         />
-        <div className="absolute top-0 left-0 z-1 size-full  bg-linear-to-b from-[#1F1D1D]/0 to-[#1F1D1D]" />
+        <div className="absolute top-0 left-0 z-1 size-full bg-linear-to-b from-[#1F1D1D]/0 to-[#1F1D1D]" />
       </div>
       <div className="relative z-10 mx-auto max-w-360 px-5 md:px-14 md:pb-32">
         <div className="flex min-h-150 flex-col justify-end gap-3 pb-10 xl:min-h-203.75">
@@ -56,9 +65,10 @@ const Hero = ({ service, source, serviceSlug, cityName }) => {
             </span>
           </div>
           <h1 className="sr-only">
-            {serviceSlug && city
-              ? generateServiceH1(serviceSlug, city)
-              : generateHomeH1(city)}
+            {heroH1 ||
+              (serviceSlug && city
+                ? generateServiceH1(serviceSlug, city)
+                : generateHomeH1(city))}
           </h1>
           <div className="" role="heading" aria-level="1">
             {/* <span className="flex flex-wrap items-center gap-2">
@@ -80,14 +90,17 @@ const Hero = ({ service, source, serviceSlug, cityName }) => {
               {formatCity(city)}
             </span> */}
             <h3 className="font-marlton trim w-full shrink-0 items-center gap-2 text-[32px] font-normal tracking-[3px] text-white md:text-4xl md:tracking-[6.584px] xl:text-[64px] 2xl:text-[73.161px]">
-              {formatCity(city)}’s #1 Trusted {service || "Window Washing"} Pros
-              – Backed by Our 100% Satisfaction Guarantee
+              {heroHeadline ||
+                `${formatCity(city)}’s #1 Trusted ${
+                  service || "Window Washing"
+                } Pros – Backed by Our 100% Satisfaction Guarantee`}
             </h3>
           </div>
           <p className="font-['satoshi-regular'] text-sm font-medium text-white md:text-base xl:text-xl">
-            {service
-              ? `Get a free quote for ${service} in ${formatCity(city)} – no pressure, just honest pricing.`
-              : `Get Spotless Windows + FREE RainShield Treatment this ${new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" })).toLocaleString("en-US", { month: "long" })} Only.`}
+            {heroSubcopy ||
+              (service
+                ? `Get a free quote for ${service} in ${formatCity(city)} – no pressure, just honest pricing.`
+                : `Get Spotless Windows + FREE RainShield Treatment this ${new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" })).toLocaleString("en-US", { month: "long" })} Only.`)}
           </p>
         </div>
         <QuoteForm service={service} source={source} formTrackingId="hero" />

@@ -1,0 +1,104 @@
+import GodlyHome from "@/components/landing/home";
+import { BASE_URL } from "@/app/lib/constants";
+import JsonLd from "@/lib/jsonLd";
+import {
+  businessOpeningHoursSpecification,
+  getCityAreaServedSchema,
+  getOfficeGeoForCitySlug,
+  getOfficePostalAddressForCitySlug,
+  getSameAsForCitySlug,
+} from "@/data/metaTitles";
+import {
+  FORT_LAUDERDALE_SLUG,
+  LANDING_FORT_LAUDERDALE_PHONE,
+} from "@/lib/landingPhoneOverride";
+
+const city = FORT_LAUDERDALE_SLUG;
+const cityName = "FORT LAUDERDALE";
+const service = "Window Washing";
+const url = `${BASE_URL}/landing/window-washing-fort-lauderdale`;
+const title = "Expert Window Washing In Fort Lauderdale";
+const description =
+  "Fort Lauderdale window cleaners for spotless window washing, careful window cleaning, and a friendly local cleaner backed by a satisfaction guarantee.";
+const headline =
+  "Most Trusted Window Washing Pros In Fort Lauderdale – Backed by Our 100% Satisfaction Guarantee";
+const heroSubcopy =
+  "Get a free quote from a trusted Fort Lauderdale window washer – no pressure, just honest pricing and careful window washing from pros who treat your home right.";
+const introCopy =
+  "Whether you need a detail-minded window cleaner before guests arrive or regular window washers for year-round shine, our Fort Lauderdale window cleaners keep the window washing and window cleaning process simple, friendly, and built around your schedule.";
+
+export const metadata = {
+  title,
+  description,
+  robots: "noindex, nofollow",
+  keywords: [
+    "window washing Fort Lauderdale",
+    "window washer Fort Lauderdale",
+    "window washers Fort Lauderdale",
+    "window cleaners Fort Lauderdale",
+    "window cleaner Fort Lauderdale",
+    "window cleaning Fort Lauderdale",
+  ],
+  openGraph: {
+    title,
+    description,
+    url,
+    siteName: "Godly Windows",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
+  alternates: {
+    canonical: "/landing/window-washing-fort-lauderdale",
+  },
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: title,
+  serviceType: "Window washing and window cleaning",
+  provider: {
+    "@type": "LocalBusiness",
+    "@id": `${BASE_URL}/${city}#localbusiness`,
+    name: "Godly Windows & Wash Co.",
+    image: `${BASE_URL}/favicon.svg`,
+    url: `${BASE_URL}/${city}`,
+    telephone: LANDING_FORT_LAUDERDALE_PHONE,
+    priceRange: "$$",
+    address: getOfficePostalAddressForCitySlug(city),
+    geo: getOfficeGeoForCitySlug(city),
+    openingHoursSpecification: businessOpeningHoursSpecification,
+    sameAs: getSameAsForCitySlug(city),
+    areaServed: getCityAreaServedSchema(city),
+  },
+  areaServed: getCityAreaServedSchema(city),
+  description,
+  url,
+};
+
+export default function WindowWashingFortLauderdalePage() {
+  return (
+    <>
+      <JsonLd
+        id="window-washing-fort-lauderdale-structured-data"
+        data={structuredData}
+      />
+      <GodlyHome
+        city={city}
+        cityName={cityName}
+        service={service}
+        serviceSlug="window-cleaning"
+        heroHeadline={headline}
+        heroH1={headline}
+        heroSubcopy={heroSubcopy}
+        heroAlt="Fort Lauderdale window cleaners providing professional window washing"
+        introCopy={introCopy}
+      />
+    </>
+  );
+}
