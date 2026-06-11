@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "@/components/Image";
 import { format } from "date-fns";
+import { getCanonicalBlogSlug } from "@/lib/blog-slugs";
 
 export default function RelatedBlogPosts({ posts, city, citySlug }) {
   if (!posts || posts.length === 0) return null;
@@ -37,7 +38,7 @@ export default function RelatedBlogPosts({ posts, city, citySlug }) {
           {displayedPosts.map((post) => (
             <Link
               key={post.slug}
-              href={`/blog/${post.slug}`}
+              href={`/blog/${getCanonicalBlogSlug(post.slug)}`}
               className="group flex flex-col gap-3"
             >
               {post.image && (

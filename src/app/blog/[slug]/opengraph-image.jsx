@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { OgLayout, OG_SIZE } from "@/app/lib/og-image";
 import { loadOgFonts, loadOgLogo, loadOgPaperBg } from "@/app/lib/og-fonts";
 import { getSanityPostBySlug } from "@/data/sanity-content";
+import { getSanitySlugForBlogRoute } from "@/lib/blog-slugs";
 import { format } from "date-fns";
 
 export const runtime = "nodejs";
@@ -16,7 +17,7 @@ export default async function Image({ params }) {
     loadOgPaperBg(),
   ]);
   const { slug } = await resolvedParams;
-  const post = await getSanityPostBySlug(slug);
+  const post = await getSanityPostBySlug(getSanitySlugForBlogRoute(slug));
 
   if (!post) {
     return new ImageResponse(

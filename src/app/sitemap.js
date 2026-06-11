@@ -3,6 +3,7 @@ import { citiesMap } from "@/data/cities";
 import { serviceMetaTitles } from "@/data/metaTitles";
 import { WINDOW_CLUSTER_SLUGS } from "@/data/windowCleaningCluster";
 import { getAllSanityPosts } from "@/data/sanity-content";
+import { getCanonicalBlogSlug, isNoindexBlogSlug } from "@/lib/blog-slugs";
 
 function minimalSitemapEntries(now) {
   return [
@@ -60,6 +61,18 @@ export default async function sitemap() {
     );
     const services = Object.keys(serviceMetaTitles);
     const blogPosts = await getAllSanityPosts();
+    const seenBlogSlugs = new Set();
+    const indexableBlogPosts = blogPosts
+      .map((post) => ({
+        ...post,
+        slug: getCanonicalBlogSlug(post.slug),
+      }))
+      .filter((post) => !isNoindexBlogSlug(post.slug))
+      .filter((post) => {
+        if (!post.slug || seenBlogSlugs.has(post.slug)) return false;
+        seenBlogSlugs.add(post.slug);
+        return true;
+      });
 
     const urls = [
       {
@@ -69,7 +82,7 @@ export default async function sitemap() {
         priority: 1.0,
       },
       // Individual blog posts
-      ...blogPosts.map((post) => ({
+      ...indexableBlogPosts.map((post) => ({
         url: `${BASE_URL}/blog/${post.slug}`,
         lastModified: post.publishedAt,
         changeFrequency: "monthly",

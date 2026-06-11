@@ -14,6 +14,12 @@ import {
   paginateBlogPosts,
   redirectIfBlogListPageMismatch,
 } from "@/lib/blog-pagination";
+import {
+  getCanonicalBlogSlug,
+  getSanitySlugForBlogRoute,
+  isNoindexBlogSlug,
+  withCanonicalBlogSlug,
+} from "@/lib/blog-slugs";
 import JsonLd from "@/lib/jsonLd";
 import { clampMetaDescription } from "@/lib/metaDescription";
 
@@ -41,22 +47,17 @@ export async function generateStaticParams() {
     getSanityCitySlugs(),
   ]);
   const validCitySlugs = citySlugs.filter((s) => citiesMap[s]);
-  const allSlugs = new Set([...postSlugs, ...validCitySlugs]);
+  const canonicalPostSlugs = postSlugs.map(getCanonicalBlogSlug);
+  const allSlugs = new Set([...canonicalPostSlugs, ...validCitySlugs]);
   return [...allSlugs].map((slug) => ({ slug }));
 }
-
-// Thin V1 posts that should not appear in search results (Task C1–C4)
-const NOINDEX_SLUGS = new Set([
-  "pressure-washing-cost-boca-raton",
-  "pressure-washing-fort-lauderdale",
-  "window-wash-boca-raton",
-  "window-washers-fort-lauderdale",
-]);
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
 
-  const post = await getSanityPostBySlug(slug);
+  const post = withCanonicalBlogSlug(
+    await getSanityPostBySlug(getSanitySlugForBlogRoute(slug)),
+  );
   if (post) {
     const description = clampMetaDescription(
       post.metaDescription || post.excerpt || "",
@@ -68,7 +69,7 @@ export async function generateMetadata({ params }) {
       keywords: [post.targetKeyword, post.targetCity, "Godly Windows"].filter(
         Boolean,
       ),
-      ...(NOINDEX_SLUGS.has(slug) && {
+      ...(isNoindexBlogSlug(post.slug) && {
         robots: { index: false, follow: true },
       }),
       openGraph: {
@@ -158,7 +159,9 @@ export default async function BlogPostRoute({ params, searchParams }) {
   const { slug } = await params;
   const sp = await searchParams;
 
-  const post = await getSanityPostBySlug(slug);
+  const post = withCanonicalBlogSlug(
+    await getSanityPostBySlug(getSanitySlugForBlogRoute(slug)),
+  );
   if (post) {
     const headline = post.metaTitle || post.title;
     const description = clampMetaDescription(

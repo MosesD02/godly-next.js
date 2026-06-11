@@ -1,5 +1,45 @@
 import type { NextConfig } from "next";
 
+const CITY_SLUGS = [
+  "boca-raton",
+  "coconut-creek",
+  "cooper-city",
+  "coral-springs",
+  "davie",
+  "deerfield-beach",
+  "delray-beach",
+  "fort-lauderdale",
+  "hallandale-beach",
+  "hillsboro-beach",
+  "hollywood",
+  "lauderdale-by-the-sea",
+  "lighthouse-point",
+  "margate",
+  "miramar",
+  "oakland-park",
+  "parkland",
+  "pembroke-pines",
+  "plantation",
+  "pompano-beach",
+  "royal-palm-beach",
+  "south-florida",
+  "southwest-ranches",
+  "sunrise",
+  "tamarac",
+  "west-park",
+  "weston",
+];
+
+const CITY_REDIRECT_PATTERN = CITY_SLUGS.join("|");
+
+const UNDERSCORE_CITY_REDIRECTS = CITY_SLUGS.filter((city) =>
+  city.includes("-"),
+).map((city) => ({
+  source: `/${city.replace(/-/g, "_")}/:path*`,
+  destination: `/${city}/:path*`,
+  permanent: true,
+}));
+
 const nextConfig: NextConfig = {
   reactCompiler: true,
 
@@ -46,23 +86,19 @@ const nextConfig: NextConfig = {
         destination: "/blog/:path*",
         permanent: true,
       },
-      // Malformed URLs like /privacy-policy/holiday-light-installation → canonical policy page
+      // Legal pages are single static pages; collapse malformed subpaths to canonical URLs.
       {
         source: "/privacy-policy/:path+",
         destination: "/privacy-policy",
         permanent: true,
       },
+      {
+        source: "/terms-and-conditions/:path+",
+        destination: "/terms-and-conditions",
+        permanent: true,
+      },
       // Legacy snake_case city segments in URLs → canonical kebab-case (GSC 404s)
-      {
-        source: "/southwest_ranches/:path*",
-        destination: "/southwest-ranches/:path*",
-        permanent: true,
-      },
-      {
-        source: "/coconut_creek/:path*",
-        destination: "/coconut-creek/:path*",
-        permanent: true,
-      },
+      ...UNDERSCORE_CITY_REDIRECTS,
       // No WPB city hub; nearest existing service area page
       {
         source: "/west-palm-beach",
@@ -75,22 +111,22 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/:city/holiday-light-installation",
+        source: `/:city(${CITY_REDIRECT_PATTERN})/holiday-light-installation`,
         destination: "/:city/holiday-lighting",
         permanent: true,
       },
       {
-        source: "/:city/skylight-cleaning",
+        source: `/:city(${CITY_REDIRECT_PATTERN})/skylight-cleaning`,
         destination: "/:city/window-cleaning",
         permanent: true,
       },
       {
-        source: "/:city/high-dusting",
+        source: `/:city(${CITY_REDIRECT_PATTERN})/high-dusting`,
         destination: "/:city/window-cleaning",
         permanent: true,
       },
       {
-        source: "/:city/interior-window-cleaning",
+        source: `/:city(${CITY_REDIRECT_PATTERN})/interior-window-cleaning`,
         destination: "/:city/window-cleaning",
         permanent: true,
       },
@@ -247,6 +283,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/blog/house-washing-davie-fl-davie",
+        destination: "/blog/house-washing-davie",
+        permanent: true,
+      },
+      {
         source: "/blog/house-washing-deerfield-beach-fl-deerfield-beach",
         destination: "/blog/house-washing-deerfield-beach",
         permanent: true,
@@ -289,6 +330,11 @@ const nextConfig: NextConfig = {
       {
         source: "/blog/roof-cleaning-coral-springs-fl-coral-springs",
         destination: "/blog/roof-cleaning-coral-springs",
+        permanent: true,
+      },
+      {
+        source: "/blog/roof-cleaning-davie-fl-davie",
+        destination: "/blog/roof-cleaning-davie",
         permanent: true,
       },
       {

@@ -4,6 +4,7 @@ import Image from "@/components/Image";
 import { PortableText } from "@portabletext/react";
 import { urlFor } from "@/sanity/image";
 import { sanityLqipToBlurDataURL } from "@/sanity/lqip";
+import { canonicalizeInternalBlogHref } from "@/lib/blog-slugs";
 
 const linkClassName =
   "font-['satoshi-medium'] text-[#AF8F6E] underline! decoration-[#AF8F6E] decoration-solid underline-offset-2 transition-colors hover:text-[#8B6F4E]";
@@ -45,9 +46,16 @@ const components = {
     link: ({ value, children }) => {
       const href = value?.href;
       if (!href) return <span>{children}</span>;
-      const isGodlyWindows = href.startsWith("https://godlywindows.com");
-      if (isGodlyWindows) {
-        const path = href.replace("https://godlywindows.com", "") || "/";
+      const canonicalHref = canonicalizeInternalBlogHref(href);
+      const isGodlyWindows = canonicalHref.startsWith(
+        "https://godlywindows.com",
+      );
+      const isInternalPath = canonicalHref.startsWith("/");
+      if (isGodlyWindows || isInternalPath) {
+        const path =
+          isGodlyWindows
+            ? canonicalHref.replace("https://godlywindows.com", "") || "/"
+            : canonicalHref;
         return (
           <Link href={path} className={linkClassName}>
             {children}
@@ -56,7 +64,7 @@ const components = {
       }
       return (
         <a
-          href={href}
+          href={canonicalHref}
           target="_blank"
           rel="noopener noreferrer"
           className={linkClassName}

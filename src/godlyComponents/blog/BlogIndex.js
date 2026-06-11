@@ -4,10 +4,11 @@ import Image from "@/components/Image";
 import WebsiteLayout from "../websiteLayout";
 import { format } from "date-fns";
 import { titleCaseCityName } from "@/lib/utils";
+import { getCanonicalBlogSlug } from "@/lib/blog-slugs";
 
 /** Individual posts always live at `/blog/[slug]` (single dynamic segment). */
 function blogPostHref(slug) {
-  return `/blog/${slug}`;
+  return `/blog/${getCanonicalBlogSlug(slug)}`;
 }
 
 /** `paginationBasePath` is `/blog` or `/blog/city-slug` for `?page=` links only. */
