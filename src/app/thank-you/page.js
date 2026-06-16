@@ -35,7 +35,9 @@ export default function ThankYouPage() {
         </h1>
 
         <p className="mt-8 max-w-2xl font-['satoshi-medium'] text-lg leading-relaxed text-[#F3CA9E] md:text-2xl">
-          Expect a call from us shortly. Looking forward to taking care of you.
+          Expect a call from us shortly.
+          <br />
+          Looking forward to taking care of you.
         </p>
 
         <Button asChild className="quote-button mt-12">
