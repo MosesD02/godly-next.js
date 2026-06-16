@@ -15,7 +15,7 @@ import Airtable from "airtable";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
 
@@ -35,6 +35,7 @@ const servicesList = [
 export default function QuoteForm({ isDialog }) {
   const { city } = useGodlyContext();
   const pathname = usePathname();
+  const router = useRouter();
 
   // City-specific form content
   const getFormContent = () => {
@@ -234,7 +235,6 @@ export default function QuoteForm({ isDialog }) {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
-  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const [showServices, setShowServices] = useState(false);
 
   // Initialize Airtable
@@ -430,9 +430,8 @@ export default function QuoteForm({ isDialog }) {
       }
 
       setSubmitStatus("success");
-      setShowSuccessDialog(true);
 
-      // Reset form
+      // Reset form before navigating to the confirmation page.
       setFormData({
         name: "",
         email: "",
@@ -442,6 +441,8 @@ export default function QuoteForm({ isDialog }) {
         consentInformationalSms: false,
       });
       setDate(undefined);
+
+      router.push("/thank-you");
     } catch (error) {
       console.error("Error submitting to Airtable:", error);
       setSubmitStatus("error");
@@ -789,25 +790,6 @@ export default function QuoteForm({ isDialog }) {
       {submitStatus === "error-invalid-phone" && (
         <div className="mt-4 rounded bg-red-100 p-4 text-red-700">
           Please enter a valid U.S. phone number.
-        </div>
-      )}
-
-      {showSuccessDialog && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="w-full max-w-sm rounded-xl bg-[#f9f0df] p-6 text-center shadow-lg">
-            <h2 className="mb-4 text-3xl font-normal tracking-wide text-[#2D2B2B]">
-              THANK YOU
-            </h2>
-            <p className="mb-6 font-sans text-[#2D2B2B]">
-              All set. Keep an eye out for our call.
-            </p>
-            <button
-              onClick={() => setShowSuccessDialog(false)}
-              className="trim rounded-md bg-[#2D2B2B] px-8 py-4 font-semibold text-white shadow transition-all hover:bg-[#1c1a1a]"
-            >
-              DONE
-            </button>
-          </div>
         </div>
       )}
     </form>

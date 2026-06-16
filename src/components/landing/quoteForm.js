@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "@/components/Image";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -18,6 +18,7 @@ export default function QuoteForm({
   formTrackingId = "main",
 }) {
   const pathname = usePathname();
+  const router = useRouter();
   const isLandingAb =
     pathname?.startsWith("/landing/a") || pathname?.startsWith("/landing/b");
   const [date, setDate] = useState();
@@ -31,7 +32,6 @@ export default function QuoteForm({
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
-  const [showSuccessDialog, setShowSuccessDialog] = useState(false);
 
   const fieldId = (name) => `landing-quote-${formTrackingId}-${name}`;
 
@@ -229,9 +229,8 @@ export default function QuoteForm({
       }
 
       setSubmitStatus("success");
-      setShowSuccessDialog(true);
 
-      // Reset form
+      // Reset form before navigating to the confirmation page.
       setFormData({
         name: "",
         email: "",
@@ -241,6 +240,8 @@ export default function QuoteForm({
         consentInformationalSms: false,
       });
       setDate(undefined);
+
+      router.push("/thank-you");
     } catch (error) {
       console.error("Error submitting to Airtable:", error);
       setSubmitStatus("error");
@@ -430,25 +431,6 @@ export default function QuoteForm({
       {submitStatus === "error-invalid-phone" && (
         <div className="mt-4 rounded bg-red-100 p-4 text-red-700">
           Please enter a valid U.S. phone number.
-        </div>
-      )}
-
-      {showSuccessDialog && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="w-full max-w-sm rounded-xl bg-[#f9f0df] p-6 text-center shadow-lg">
-            <h2 className="mb-4 text-3xl font-normal tracking-wide text-[#2D2B2B]">
-              THANK YOU
-            </h2>
-            <p className="mb-6 font-sans text-[#2D2B2B]">
-              All set. Keep an eye out for our call.
-            </p>
-            <button
-              onClick={() => setShowSuccessDialog(false)}
-              className="trim rounded-md bg-[#2D2B2B] px-8 py-4 font-semibold text-white shadow transition-all hover:bg-[#1c1a1a]"
-            >
-              DONE
-            </button>
-          </div>
         </div>
       )}
     </form>
