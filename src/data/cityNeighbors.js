@@ -37,6 +37,7 @@ export const CITY_NEIGHBORS = {
     "boca-raton",
     "tamarac",
     "sunrise",
+    "weston",
   ],
   davie: [
     "fort-lauderdale",
@@ -195,6 +196,7 @@ export const CITY_NEIGHBORS = {
     "coconut-creek",
     "plantation",
     "oakland-park",
+    "weston",
   ],
   "west-park": [
     "pembroke-pines",
