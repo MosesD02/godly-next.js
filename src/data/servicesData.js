@@ -283,27 +283,27 @@ const Services = {
       {
         number: "01.",
         title: "Residential gutter cleaning ",
-        text: "Prevent or get rid of pesty clogs.",
+        text: "Clear out leaves, debris, and buildup so your gutters flow freely and your home stays protected from water damage.",
       },
       {
         number: "02.",
         title: "Spring Refresh",
-        text: "Clear out winter buildup",
+        text: "Flush out everything that built up over winter before South Florida's rainy season hits and gutters can't keep up.",
       },
       {
         number: "03.",
         title: "Before the Rainy Season",
-        text: "Avoid gutter overflow issues.",
+        text: "South Florida rain doesn't stop. Get your gutters clear before the season starts so water goes exactly where it's supposed to.",
       },
       {
         number: "04.",
         title: "Selling your Home",
-        text: "Improve curb appeal and show upkeep.",
+        text: "Clean, functioning gutters tell buyers the home has been cared for. A quick clean before listing makes a real difference.",
       },
       {
         number: "05.",
         title: "After a Storm",
-        text: "Remove debris and branches.",
+        text: "Storms drop leaves, sticks, and debris fast. We clear it out so water drains properly after every big one.",
       },
     ],
     essential: [
@@ -341,17 +341,17 @@ const Services = {
       },
       {
         number: "02",
-        title: "Removal of Mold , MELDW & ALGAE",
+        title: "Mold, Mildew & Algae Removal",
         text: "Prevents long-term staining and deterioration.",
       },
       {
         number: "03",
-        title: "DIRT DUST AND POLLUTION REMOVAL",
+        title: "Dirt, Dust & Pollution Removal",
         text: "Eliminates the buildup of harmful environmental elements.",
       },
       {
         number: "04",
-        title: "THROUGHT RINSE AND PROPERTY PROTECTION",
+        title: "Thorough Rinse & Property Protection",
         text: "We ensure surrounding plants and surfaces remain unharmed.",
       },
     ],
@@ -597,30 +597,30 @@ const Services = {
     essential: [
       {
         number: "01.",
-        title: "Improve Indoor Air Quality",
-        text: "Reduces allergens and airborne particles.",
+        title: "South Florida Rain Never Stops",
+        text: "Constant rain and standing water break unsealed pavers down from underneath. Sealed surfaces drain better and resist moisture damage.",
       },
       {
         number: "02.",
-        title: "Enhances Appearance",
-        text: "Maintains a clean and professional environment.",
+        title: "Color Fades Without Protection",
+        text: "UV and weather fade paver color quickly down here. Sealing locks in the color and keeps them looking fresh.",
       },
       {
         number: "03.",
-        title: "Prevents Dust Build-Up",
-        text: "Reduces long-term maintenance needs.",
+        title: "Weeds and Algae Move In Fast",
+        text: "Unsealed joints are an open invitation for weeds and algae. Polymeric sand and a good seal close that off.",
       },
       {
         number: "04.",
-        title: "Health & Safety Compliance",
-        text: "deal for offices and commercial spaces.",
+        title: "Protect What You've Paid For",
+        text: "Pavers are an investment. Sealing every few years costs a fraction of replacement and keeps your curb appeal on point.",
       },
     ],
     nearyou: [
       {
         number: "01",
         title: "Driveway Sealing",
-        text: "Prevent damage and extend roof lifespan.",
+        text: "Protect your driveway pavers from cracking, staining, and weed growth with a seal that holds up to South Florida weather.",
       },
       {
         number: "02",

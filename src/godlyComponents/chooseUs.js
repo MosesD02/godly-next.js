@@ -202,50 +202,54 @@ const chooseUsData = {
   ],
   "gutter-cleaning": [
     {
-      name: "Trained Professionals",
+      name: "We Clear It All the Way Through",
       svg: shieldSvg,
       description:
-        "Skilled in safely cleaning delicate solar panels without damage.",
+        "Every clog cleared, every downspout flushed, every section checked — we don't leave until water flows freely.",
     },
     {
       name: "Fully Insured & Equipped",
       svg: toolboxSvg,
-      description: "Industry-grade tools ensure a thorough and safe clean.",
+      description:
+        "The right tools for single-story homes to multi-story buildings, with full insurance on every job.",
     },
     {
-      name: "Eco-Friendly Cleaning Solutions",
+      name: "We Bag and Remove the Debris",
       svg: leafSvg,
       description:
-        "Non-abrasive and safe for your panels and surrounding areas.",
+        "Everything we pull out gets bagged and removed. We don't blow it into your yard or leave it on your roof.",
     },
     {
       name: "Satisfaction Guarantee",
       svg: badgeSvg,
-      description: "If you're not happy, we'll make it right.",
+      description:
+        "If it's not flowing right when we leave, we come back and fix it — no questions asked.",
     },
   ],
   "house-washing": [
     {
-      name: "Trained Professionals",
+      name: "Soft Wash Specialists",
       svg: shieldSvg,
       description:
-        "Skilled in safely cleaning delicate solar panels without damage.",
+        "We know the difference between what needs soft washing and what needs pressure. Your home's exterior gets the right treatment every time.",
     },
     {
       name: "Fully Insured & Equipped",
       svg: toolboxSvg,
-      description: "Industry-grade tools ensure a thorough and safe clean.",
+      description:
+        "Commercial-grade soft wash systems and full insurance on every job, residential or commercial.",
     },
     {
-      name: "Eco-Friendly Cleaning Solutions",
+      name: "Surface-Safe Chemistry",
       svg: leafSvg,
       description:
-        "Non-abrasive and safe for your panels and surrounding areas.",
+        "Custom low-pressure treatments lift mold, algae, and pollen without damaging your stucco, paint, or siding.",
     },
     {
       name: "Satisfaction Guarantee",
       svg: badgeSvg,
-      description: "If you're not happy, we'll make it right.",
+      description:
+        "Not happy with the result? We come back and make it right — no questions asked.",
     },
   ],
   "roof-washing": [
@@ -274,26 +278,54 @@ const chooseUsData = {
   ],
   "paver-sealing": [
     {
-      name: "Trained Professionals",
+      name: "Surface Restoration Specialists",
       svg: shieldSvg,
       description:
-        "Skilled in safely cleaning delicate solar panels without damage.",
+        "We clean first, then seal. Proper prep is what makes a seal last, and we never skip it.",
     },
     {
       name: "Fully Insured & Equipped",
       svg: toolboxSvg,
-      description: "Industry-grade tools ensure a thorough and safe clean.",
+      description:
+        "Commercial-grade equipment and full insurance on every job, residential or commercial.",
     },
     {
-      name: "Eco-Friendly Cleaning Solutions",
+      name: "Right Product for Every Surface",
       svg: leafSvg,
       description:
-        "Non-abrasive and safe for your panels and surrounding areas.",
+        "Travertine, concrete, and brick pavers each need different sealers. We remove prior sand, clean the joints, re-sand where needed, and give you the finish you want.",
+    },
+    {
+      name: "2-Year Unconditional Warranty",
+      svg: badgeSvg,
+      description:
+        "The only company in South Florida offering a 2-year unconditional warranty on all surface restoration work.",
+    },
+  ],
+  "screen-cleaning": [
+    {
+      name: "Screen Specialists",
+      svg: shieldSvg,
+      description:
+        "Window screens, door screens, pool enclosures, and lanais — we handle every type, every size, every material.",
+    },
+    {
+      name: "Fully Insured & Equipped",
+      svg: toolboxSvg,
+      description:
+        "The right tools for every screen type and property size, with full insurance on every job.",
+    },
+    {
+      name: "Removal & Reinstallation Included",
+      svg: leafSvg,
+      description:
+        "Screens come off, get cleaned properly, and go right back where they belong — no damage, no guesswork.",
     },
     {
       name: "Satisfaction Guarantee",
       svg: badgeSvg,
-      description: "If you're not happy, we'll make it right.",
+      description:
+        "If they don't look right when we're done, we come back and make it right — no questions asked.",
     },
   ],
   // Why Choose Us — SHARED for window cleaning (City Page Rewrite Guide v2: 15, 14, 15, 19 words)
