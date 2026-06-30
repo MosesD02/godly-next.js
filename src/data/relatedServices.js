@@ -2,7 +2,8 @@
  * Related service cards at bottom of city service pages — per current service slug.
  */
 
-import service1 from "@/assets/serviceData/service1.webp";
+import travertineSealingHero from "@/assets/serviceData/travertine-sealing.webp";
+import concreteSealingHero from "@/assets/serviceData/concrete-sealing.webp";
 import windowCleaningHero from "@/assets/serviceData/window-cleaning-new.jpeg";
 import postConstructionHero from "@/assets/serviceData/post-construction.webp";
 import service4 from "@/assets/serviceData/service4.webp";
@@ -10,7 +11,6 @@ import service5 from "@/assets/serviceData/service5.webp";
 import roofWashingHero from "@/assets/serviceData/roof-washing.webp";
 import service7 from "@/assets/serviceData/service7.webp";
 import service8 from "@/assets/serviceData/service8.webp";
-import service9 from "@/assets/serviceData/service9.webp";
 import service10 from "@/assets/serviceData/service10.webp";
 import service11 from "@/assets/serviceData/service11.webp";
 
@@ -20,8 +20,8 @@ export const IMAGE_BY_LINK = {
   "roof-cleaning": roofWashingHero,
   "pressure-washing": service7,
   "paver-sealing": service8,
-  "travertine-sealing": service8,
-  "concrete-sealing": service8,
+  "travertine-sealing": travertineSealingHero,
+  "concrete-sealing": concreteSealingHero,
   "screen-cleaning": service10,
   "window-cleaning": windowCleaningHero,
   "post-construction-window-cleaning": postConstructionHero,

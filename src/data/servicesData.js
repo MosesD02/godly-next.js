@@ -4,6 +4,8 @@ import rainShieldHero from "@/assets/serviceData/rain-shield.webp";
 import service4 from "@/assets/serviceData/service4.webp";
 import service5 from "@/assets/serviceData/service5.webp";
 import roofWashingHero from "@/assets/serviceData/roof-washing.webp";
+import travertineSealingHero from "@/assets/serviceData/travertine-sealing.webp";
+import concreteSealingHero from "@/assets/serviceData/concrete-sealing.webp";
 import service7 from "@/assets/serviceData/service7.webp";
 import service8 from "@/assets/serviceData/service8.webp";
 import service10 from "@/assets/serviceData/service10.webp";
@@ -404,7 +406,7 @@ const Services = {
     hero: [
       "Travertine",
       "Sealing",
-      service8,
+      travertineSealingHero,
       "Travertine is everywhere in South Florida — pool decks, driveways, patios, entryways. When it's cared for, nothing looks better. When it's not, it fades and stains fast. We clean and seal travertine and natural stone right: the correct sealer for your surface, the finish you want, and a 2-year unconditional warranty on every job.",
     ],
     included: [
@@ -485,7 +487,7 @@ const Services = {
     hero: [
       "Concrete",
       "Sealing",
-      service8,
+      concreteSealingHero,
       "Concrete driveways, pool decks, and sidewalks in South Florida deal with more than just regular wear. Salt air, afternoon rain, UV, and traffic all work on an unsealed surface. We pressure wash and seal it right — clean first, then lock it with a sealer built for the heat and humidity down here. 2-year unconditional warranty on every job.",
     ],
     included: [
