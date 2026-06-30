@@ -573,7 +573,7 @@ export const bocaRaton = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Those black streaks and green patches on your roof aren't just ugly — they're eating away at your roofing material. Our Boca Raton roof washing uses a low-pressure soft wash that kills algae, mold, and bacteria without damaging your tiles or shingles. Your roof looks new again and lasts years longer.",
     essential: [
       {

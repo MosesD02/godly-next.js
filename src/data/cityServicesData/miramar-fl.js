@@ -548,7 +548,7 @@ export const miramarFl = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Mold and algae on your roof reduce lifespan and look terrible. We restore them safely.",
     essential: [
       {

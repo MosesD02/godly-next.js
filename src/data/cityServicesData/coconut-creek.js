@@ -641,7 +641,7 @@ export const coconutCreek = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Black streaks and green growth on your roof spell trouble—and worse, they're spreading. Coconut Creek's heat and humidity breed algae and moss that shorten roof lifespan. We clean safely without pressure damage.",
     essential: [
       {

@@ -557,7 +557,7 @@ export const fortLauderdale = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Humidity and salt air breed mold and algae on roofs. We clean safely, extend roof life, and keep your home protected.",
     essential: [
       {

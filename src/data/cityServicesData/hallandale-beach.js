@@ -558,7 +558,7 @@ export const hallandaleBeach = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Salt spray and humidity wreak havoc on coastal roofs. We safely remove algae, mildew, and mineral deposits—protecting your biggest investment.",
     essential: [
       {

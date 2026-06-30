@@ -564,7 +564,7 @@ export const lighthousePoint = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Your Lighthouse Point roof grows algae and absorbs salt spray. We keep it clean and protected.",
     essential: [
       {

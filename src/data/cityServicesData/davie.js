@@ -574,7 +574,7 @@ export const davie = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Algae and moss love Davie's humid climate. They eat away at your roof slowly. We safely wash roofs on ranch homes, horse properties, and every house type across town. Protect your biggest investment.",
     essential: [
       {

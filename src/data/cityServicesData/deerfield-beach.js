@@ -647,7 +647,7 @@ export const deerfieldBeach = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Florida's humidity breeds algae and mold on roofs like nothing else. Those dark streaks aren't just ugly—they're eating your shingles. Soft washing removes growth safely and extends your roof's life by years.",
     essential: [
       {

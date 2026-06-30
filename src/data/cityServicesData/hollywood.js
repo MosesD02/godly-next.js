@@ -557,7 +557,7 @@ export const hollywood = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Algae, mold, and salt strip years off roof life. We safely restore roofs and extend their lifespan.",
     essential: [
       {

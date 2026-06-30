@@ -554,7 +554,7 @@ export const oaklandPark = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Mold, algae, and moss reduce lifespan and curb appeal. We clean them safely.",
     essential: [
       {

@@ -23,7 +23,7 @@ export const SERVICE_SLUG_TO_CATEGORY = {
   "window-cleaning": "window-cleaning",
   "pressure-washing": "pressure-washing",
   "house-washing": "house-washing",
-  "roof-washing": "roof-cleaning",
+  "roof-cleaning": "roof-cleaning",
   "paver-sealing": "paver-sealing",
   "holiday-lighting": "christmas-lights",
 };

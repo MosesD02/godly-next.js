@@ -145,6 +145,12 @@ const nextConfig: NextConfig = {
         destination: "/window-cleaning",
         permanent: true,
       },
+      // Roof Washing → Roof Cleaning (slug rename, June 2026)
+      {
+        source: `/:city(${CITY_REDIRECT_PATTERN})/roof-washing`,
+        destination: "/:city/roof-cleaning",
+        permanent: true,
+      },
       // Legacy city Rain Shield URLs → single hub (SEO punch list P1.2)
       {
         source: "/boca-raton/rain-shield-tech",

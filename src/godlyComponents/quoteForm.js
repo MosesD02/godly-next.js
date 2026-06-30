@@ -25,7 +25,7 @@ const servicesList = [
   { id: "paver-sealing", name: "Paver Sealing" },
   // { id: "screen-cleaning", name: "Screen Cleaning" },
   // { id: "interior-window-cleaning", name: "Interior Window Cleaning" },
-  { id: "roof-washing", name: "Roof Washing" },
+  { id: "roof-cleaning", name: "Roof Cleaning" },
   { id: "pressure-washing", name: "Pressure Washing" },
   // { id: "light-fixture-cleaning", name: "Light Fixture Cleaning" },
   // { id: "gutter-cleaning", name: "Gutter Cleaning" },

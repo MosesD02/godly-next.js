@@ -636,7 +636,7 @@ export const cooperCity = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Black streaks on your Cooper City roof aren't just ugly—they're algae eating away at your shingles. Florida's heat and moisture make it worse every month. We use low-pressure soft washing that's safe for tile, shingle, and metal roofs across the area.",
     essential: [
       {

@@ -528,7 +528,7 @@ export const royalPalmBeach = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Those ugly black streaks on your Royal Palm Beach roof aren't just cosmetic — they're Gloeocapsa magma algae literally eating your shingles. Our soft wash roof treatment kills it at the source and restores your roof's appearance.",
     essential: [
       {

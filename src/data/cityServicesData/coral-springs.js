@@ -618,7 +618,7 @@ export const coralSprings = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Shaded roofs in South Florida grow algae, moss, and lichen fast. These aren't just ugly—they trap moisture, degrade shingles, and shorten roof life by years. Our roof washing uses low-pressure, specialized techniques to clean without damaging roofing materials. Coral Springs homeowners trust us.",
     essential: [
       {

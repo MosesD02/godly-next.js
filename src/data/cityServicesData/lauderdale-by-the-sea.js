@@ -569,7 +569,7 @@ export const lauderdaleByTheSea = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Professional roof washing that protects your beachfront investment.",
     essential: [
       {

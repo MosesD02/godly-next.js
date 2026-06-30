@@ -547,7 +547,7 @@ export const margate = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "We remove algae, moss, and mold that shorten roof lifespan and hurt curb appeal.",
     essential: [
       {

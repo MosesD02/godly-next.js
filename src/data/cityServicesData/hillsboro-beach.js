@@ -553,7 +553,7 @@ export const hillsboroBeach = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Your Hillsboro Beach roof faces direct Atlantic exposure. Professional washing extends its life and keeps it looking pristine.",
     essential: [
       {

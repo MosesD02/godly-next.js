@@ -34,7 +34,7 @@ export const customMetaData = {
         description:
           "Grimy siding or mildew stains? Godly Windows brings homes back to life with expert house washing in Boca Raton. Get sparkling walls—book your quote now!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Boca Raton - Clean, Protect & Extend Life",
         description:
           "Moss or black streaks on your roof? Our Boca Raton roof washing pros clean with care to prevent damage and boost longevity. Schedule your soft wash today.",
@@ -94,7 +94,7 @@ export const customMetaData = {
         description:
           "Top-rated house washing in Fort Lauderdale. Clean siding, boost shine, and fresh curb appeal from local pros. Schedule your residential power wash today!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Fort Lauderdale Experts - Godly Windows",
         description:
           "Expert roof washing in Fort Lauderdale to remove moss, algae & debris. Local, reliable, and completely safe. Improve your roof's longevity—book today!",
@@ -153,7 +153,7 @@ export const customMetaData = {
         description:
           "Revive your home's exterior with our Lighthouse Point house washing services! Book today or call to remove dirt, mildew, and grime fast. 100% satisfaction.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing Services in Lighthouse Point - Godly Windows",
         description:
           "Don't let algae ruin your roof. Book Lighthouse Point roof washing today. Safe, effective service from a trusted local team. Call our team now or book online.",
@@ -212,7 +212,7 @@ export const customMetaData = {
         description:
           "Our soft wash system removes dirt, algae, and mildew without harming your siding. Parkland homeowners trust Godly Windows for safe, spotless house washing.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Parkland - Restore & Protect Your Roof",
         description:
           "Safely clean roof stains and extend your roof's lifespan with our low-pressure roof washing service in Parkland. Reliable, safe, and handled by trained pros.",
@@ -271,7 +271,7 @@ export const customMetaData = {
         description:
           "Make your home look freshly painted with soft wash house washing in Southwest Ranches. Mold, mildew, and grime disappear—leaving curb appeal that lasts.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Southwest Ranches - Algae-Free & Protected",
         description:
           "Restore your roof's clean, healthy look with Godly Windows. Our gentle roof washing in Southwest Ranches extends roof life while improving appearance.",
@@ -330,7 +330,7 @@ export const customMetaData = {
         description:
           "Mold, stains, or grime? We clean siding, stucco & more. Book Godly Windows for soft house washing in Margate. Curb appeal restored—call now for a quote!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Margate - Gentle, Long-Lasting Clean",
         description:
           "Black streaks or moss? Our Margate pros use soft wash roof washing to protect shingles and boost roof life. Book Godly Windows for roof care that lasts!",
@@ -389,7 +389,7 @@ export const customMetaData = {
         description:
           "Mold or grime on your siding? Our soft house washing service in Pembroke Pines removes buildup and restores curb appeal. Call Godly Windows for a quote today!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing Services in Pembroke Pines - Godly Windows",
         description:
           "Black streaks or moss on your roof? We use soft wash techniques in Pembroke Pines to protect and clean shingles. Book roof washing with Godly Windows today!",
@@ -448,7 +448,7 @@ export const customMetaData = {
         description:
           "House washing in Plantation using soft wash technology. Remove mildew, dirt, and stains—restore your home's look with a safe exterior wash by Godly Windows.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Plantation - Soft Wash for Lasting Protection",
         description:
           "Roof washing in Plantation that removes algae, mold, and buildup safely. Preserve roof health with expert pressure or soft washing—book with Godly Windows now.",
@@ -507,7 +507,7 @@ export const customMetaData = {
         description:
           "Restore your home's curb appeal! Our Sunrise house washing removes mold, dirt, and grime with a gentle touch. Professional exterior cleaning—call today!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Sunrise - Extend Roof Life, Remove Stains",
         description:
           "Got black streaks or moss? Our Sunrise team uses safe soft wash roof cleaning to protect and restore. Extend lifespan—book or call expert roof care today!",
@@ -568,7 +568,7 @@ export const customMetaData = {
         description:
           "Mold and grime ruining curb appeal? Our Davie house washing pros clean siding, stucco & more using gentle, effective soft washing. Book your wash now!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Davie - Remove Moss, Streaks & Stains",
         description:
           "Black streaks on your roof? We clean gently! Our Davie roof washing pros use soft wash methods to restore and protect shingles. Book expert roof care now.",
@@ -627,7 +627,7 @@ export const customMetaData = {
         description:
           "Refresh your home's exterior with professional house washing in Hillsboro Beach. Godly Windows removes dirt, mold, and grime—schedule a clean you'll love!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Hillsboro Beach - Call Godly Windows",
         description:
           "Protect your home with expert roof washing in Hillsboro Beach. Godly Windows removes dirt, algae & buildup for a cleaner, longer-lasting roof. Book today!",
@@ -686,7 +686,7 @@ export const customMetaData = {
         description:
           "Brighten your home's exterior with our soft house washing services. We clean siding, soffits, and stains while protecting your paint and landscaping in Tamarac.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing Services in Tamarac - Book Godly Windows",
         description:
           "Say goodbye to moss, black streaks, and buildup with our gentle roof washing. We restore curb appeal while protecting your roof's life and structure in Tamarac.",
@@ -745,7 +745,7 @@ export const customMetaData = {
         description:
           "Restore your home's beauty with expert house washing in Miramar, FL. We remove dirt, algae, and stains safely and effectively. Book your cleaning service today!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing Services in Miramar - Algae & Stain Removal",
         description:
           "Protect and beautify your home with expert roof washing in Miramar, FL. We safely remove moss, stains, and debris. Book your professional cleaning today!",
@@ -804,7 +804,7 @@ export const customMetaData = {
         description:
           "Refresh your home's exterior with expert house washing services in Pompano Beach. Remove dirt, mold & stains safely. Book your service now at Godly Windows!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing Services in Pompano Beach - Godly Windows",
         description:
           "Pompano Beach roof washing service by Godly Windows removes mold, dirt, and black streaks. Improve curb appeal and roof health—Call or book your service today!",
@@ -864,7 +864,7 @@ export const customMetaData = {
         description:
           "Restore your home's shine with expert house washing and cleaning in Delray Beach. Power washing services that remove dirt, grime, and mildew—get a quote now!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Delray Beach - Soft Wash Roof Cleaning",
         description:
           "Keep your roof clean and protected. Our Delray Beach roof washing services remove stains, algae, and debris. Book trusted roof cleaners near you today!",
@@ -923,7 +923,7 @@ export const customMetaData = {
         description:
           "Rejuvenate your home's exterior with safe, thorough house washing services in Oakland Park. Say goodbye to stains, mold, and grime—book now for instant shine!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Oakland Park - Gentle & Effective Soft Wash",
         description:
           "Don't let roof stains dull your home. Our Oakland Park roof washing service uses a soft wash approach to restore your roof safely. Book your spot today!",
@@ -985,7 +985,7 @@ export const customMetaData = {
         description:
           "Restore your home's curb appeal with expert house washing in Weston. We remove grime, mold, and algae using safe, effective techniques. Book our service.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing Services in Weston - Book Godly Windows",
         description:
           "Professional roof washing in Weston for tile, shingle, & metal surfaces. Our soft wash method prevents damage while removing buildup. Schedule expert care today.",
@@ -1044,7 +1044,7 @@ export const customMetaData = {
         description:
           "Make your home shine again with our expert house washing in Royal Palm Beach. We safely remove dirt, mold, and mildew to refresh your exterior beautifully.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing Services in Royal Palm Beach - Godly Windows",
         description:
           "Restore your roof's beauty with gentle roof washing in Royal Palm Beach. Godly Windows clears algae, stains, and buildup—leaving your roof fresh and protected.",
@@ -1100,7 +1100,7 @@ export const customMetaData = {
         description:
           "Let us gently wash away dirt, mold, and mildew from your home's exterior in Lauderdale-by-the-Sea. Our soft wash house washing restores curb appeal beautifully.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Lauderdale-by-the-Sea - Godly Windows",
         description:
           "We clean your roof the safe way with our soft wash system in Lauderdale-by-the-Sea. Count on Godly Windows for streak-free, damage-free roof washing every time.",
@@ -1168,7 +1168,7 @@ export const customMetaData = {
         description:
           "Remove mold, dirt & stains from your Coral Springs home with our soft house washing. Safe for siding, brick, and paint. We bring the shine—book today.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Coral Springs - Call Godly Windows",
         description:
           "Extend your roof's life with our Coral Springs roof washing service. We remove black streaks, moss, and grime with soft, safe techniques. Schedule online.",
@@ -1227,7 +1227,7 @@ export const customMetaData = {
         description:
           "Our soft house washing in Hallandale Beach removes mold, stains, & buildup without harming paint. Safe for stucco, brick, and siding—your home will shine again.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing Services in Hallandale Beach - Godly Windows",
         description:
           "Tired of dirty roof stains? Book roof washing in Hallandale Beach with Godly Windows. Our soft wash technique protects shingles while restoring your home's look.",
@@ -1286,7 +1286,7 @@ export const customMetaData = {
         description:
           "Refresh your home's exterior with our house washing services in Hollywood. Safe soft wash & power washing near you with stunning results. Book or Call today.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Hollywood FL - Soft Wash Roof Cleaners",
         description:
           "Extend your roof life with safe soft wash roof washing in Hollywood. We clean tiles, shingles, and metal roofs. Trusted by local homeowners. Book Now.",
@@ -1348,7 +1348,7 @@ export const customMetaData = {
         description:
           "Revitalize your home's exterior with professional house washing in Deerfield Beach. Remove dirt, mold, and stains for a fresh, clean look. Book now!",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in Deerfield Beach - Safe Soft Wash Cleaning",
         description:
           "Extend your roof's life with gentle roof washing in Deerfield Beach. Our soft wash method removes algae and stains safely. Schedule your service today!",
@@ -1458,7 +1458,7 @@ export const customMetaData = {
         description:
           "Our soft wash house washing in South Florida lifts away dirt, mildew, and stains from your siding for a fresh, bright exterior that looks like new again.",
       },
-      "roof-washing": {
+      "roof-cleaning": {
         title: "Roof Washing in South Florida - Call Roof Cleaning Experts",
         description:
           "Protect your shingles with our safe roof washing in South Florida. We clean away algae and stains with soft wash techniques that renew your roof's appearance.",

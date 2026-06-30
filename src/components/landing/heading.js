@@ -43,8 +43,8 @@ const services = [
       "Wash away years of pollen, mold, rust, and dirt – bringing that shine back to your property's exterior.",
   },
   {
-    name: "Roof Washing",
-    link: "roof-washing",
+    name: "Roof Cleaning",
+    link: "roof-cleaning",
     image: roofWashing,
     description:
       "Removing all the debris from your roof is the easiest way to increase its longevity.",

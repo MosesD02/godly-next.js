@@ -290,7 +290,7 @@ export const serviceMetaTitles = {
   "solar-panel-cleaning": "Solar Panel Cleaning",
   "gutter-cleaning": "Gutter Cleaning",
   "house-washing": "House Washing & Pressure Washing",
-  "roof-washing": "Roof Cleaning",
+  "roof-cleaning": "Roof Cleaning",
   "pressure-washing": "Pressure Washing",
   "paver-sealing": "Paver Sealing",
   "light-fixture-cleaning": "Light Fixture Cleaning",
@@ -387,8 +387,8 @@ const serviceDescriptions = {
     "Gutter cleaning in {location}. Protect your home from water damage with expert gutter services. Free estimates & satisfaction guarantee.",
   "house-washing":
     "House washing in {location}. Restore curb appeal with professional soft wash services. Expert cleaning with satisfaction guarantee.",
-  "roof-washing":
-    "Roof cleaning in {location}. Remove algae, moss & stains with safe low-pressure washing. Professional service with guarantee.",
+  "roof-cleaning":
+    "Professional roof cleaning in {location}. We soft wash shingle, tile, and metal roofs to remove algae, moss, and black streaks — no pressure damage, satisfaction guaranteed.",
   "pressure-washing":
     "Pressure washing in {location}. Expert cleaning for driveways, patios & walkways. Professional results with satisfaction guarantee.",
   "paver-sealing":
@@ -546,7 +546,7 @@ export const generateServiceHeroAlt = (serviceSlug, cityName) => {
     "solar-panel-cleaning": `solar panel cleaning service in ${location}`,
     "gutter-cleaning": `gutter cleaning professionals in ${location}`,
     "house-washing": `house washing and pressure washing in ${location}`,
-    "roof-washing": `roof cleaning service in ${location}`,
+    "roof-cleaning": `roof cleaning service in ${location}`,
     "pressure-washing": `pressure washing service in ${location}`,
     "paver-sealing": `paver sealing and restoration in ${location}`,
     "light-fixture-cleaning": `light fixture cleaning service in ${location}`,

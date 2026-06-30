@@ -204,28 +204,30 @@ const chooseUsData = {
         "Not happy with the result? We come back and make it right — no questions asked.",
     },
   ],
-  "roof-washing": [
+  "roof-cleaning": [
     {
-      name: "Trained Professionals",
+      name: "Soft Wash Only",
       svg: shieldSvg,
       description:
-        "Skilled in safely cleaning delicate solar panels without damage.",
+        "We never use high pressure on roofs — it cracks tiles, lifts shingles, and voids warranties. Soft washing is the right way.",
     },
     {
       name: "Fully Insured & Equipped",
       svg: toolboxSvg,
-      description: "Industry-grade tools ensure a thorough and safe clean.",
+      description:
+        "Professional soft wash equipment and full insurance on every job, residential or commercial.",
     },
     {
-      name: "Eco-Friendly Cleaning Solutions",
+      name: "Landscaping Protected",
       svg: leafSvg,
       description:
-        "Non-abrasive and safe for your panels and surrounding areas.",
+        "We pre-wet and cover your plants before every treatment so nothing around your roof gets harmed.",
     },
     {
       name: "Satisfaction Guarantee",
       svg: badgeSvg,
-      description: "If you're not happy, we'll make it right.",
+      description:
+        "Not happy with the result? We come back and make it right — no questions asked.",
     },
   ],
   "paver-sealing": [

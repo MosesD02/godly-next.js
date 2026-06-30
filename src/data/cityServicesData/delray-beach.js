@@ -559,7 +559,7 @@ export const delrayBeach = {
       },
     ],
   },
-  "roof-washing": {
+  "roof-cleaning": {
     hero: "Mold, algae, and salt spray age roofs fast. Professional washing extends their life and keeps them looking sharp.",
     essential: [
       {
