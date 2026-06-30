@@ -152,54 +152,6 @@ const chooseUsData = {
       description: "If you're not happy, we'll make it right.",
     },
   ],
-  "exterior-window-cleaning": [
-    {
-      name: "Trained Professionals",
-      svg: shieldSvg,
-      description:
-        "Skilled in safely cleaning delicate solar panels without damage.",
-    },
-    {
-      name: "Fully Insured & Equipped",
-      svg: toolboxSvg,
-      description: "Industry-grade tools ensure a thorough and safe clean.",
-    },
-    {
-      name: "Eco-Friendly Cleaning Solutions",
-      svg: leafSvg,
-      description:
-        "Non-abrasive and safe for your panels and surrounding areas.",
-    },
-    {
-      name: "Satisfaction Guarantee",
-      svg: badgeSvg,
-      description: "If you're not happy, we'll make it right.",
-    },
-  ],
-  "interior-window-cleaning": [
-    {
-      name: "Trained Professionals",
-      svg: shieldSvg,
-      description:
-        "Skilled in safely cleaning delicate solar panels without damage.",
-    },
-    {
-      name: "Fully Insured & Equipped",
-      svg: toolboxSvg,
-      description: "Industry-grade tools ensure a thorough and safe clean.",
-    },
-    {
-      name: "Eco-Friendly Cleaning Solutions",
-      svg: leafSvg,
-      description:
-        "Non-abrasive and safe for your panels and surrounding areas.",
-    },
-    {
-      name: "Satisfaction Guarantee",
-      svg: badgeSvg,
-      description: "If you're not happy, we'll make it right.",
-    },
-  ],
   "gutter-cleaning": [
     {
       name: "We Clear It All the Way Through",
@@ -328,31 +280,31 @@ const chooseUsData = {
         "If they don't look right when we're done, we come back and make it right — no questions asked.",
     },
   ],
-  // Why Choose Us — SHARED for window cleaning (City Page Rewrite Guide v2: 15, 14, 15, 19 words)
+  // Why Choose Us — SHARED for window cleaning (consolidated interior + exterior)
   "window-cleaning": [
     {
-      name: "Trained Professionals",
+      name: "Interior & Exterior Specialists",
       svg: shieldSvg,
       description:
-        "Expert technicians hand-scrub every pane and finish with RO/DI purified water for streak-free, spotless glass.",
+        "We specialize in interior window cleaning and exterior window cleaning — hard-to-reach windows, high panes, residential and commercial.",
     },
     {
       name: "Fully Insured & Equipped",
       svg: toolboxSvg,
       description:
-        "Professional poles, ladders, and gear for homes and businesses—safely reaching every window we serve.",
+        "Water-fed poles, purified water systems, and full insurance on every job — homes and businesses.",
     },
     {
       name: "Purified Water & Smart Finishes",
       svg: leafSvg,
       description:
-        "Zero-TDS rinses plus optional Rain Shield help your windows stay cleaner longer without harsh residue.",
+        "Zero-TDS rinses plus optional RainShield help your windows stay cleaner longer without harsh residue.",
     },
     {
       name: "7-Day Sparkle Guarantee",
       svg: badgeSvg,
       description:
-        "Storm, pet, or bird mess within a week? We come back and make it right—your satisfaction stays the standard.",
+        "Storm, pet, or bird mess within a week? We come back and make it right — your satisfaction stays the standard.",
     },
   ],
   "soft-washing": [

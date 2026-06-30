@@ -288,7 +288,6 @@ export function generateCitySchema(citySlug) {
 // SEO-optimized meta titles for services and locations
 export const serviceMetaTitles = {
   "solar-panel-cleaning": "Solar Panel Cleaning",
-  "exterior-window-cleaning": "Exterior Window Cleaning",
   "gutter-cleaning": "Gutter Cleaning",
   "house-washing": "House Washing & Pressure Washing",
   "roof-washing": "Roof Cleaning",
@@ -384,10 +383,6 @@ export const homeTitle =
 const serviceDescriptions = {
   "solar-panel-cleaning":
     "Solar panel cleaning in {location}. Maximize energy efficiency with professional cleaning services. Free estimates & satisfaction guarantee.",
-  "exterior-window-cleaning":
-    "Exterior window cleaning in {location} for homes — salt film, pollen & hard water on outside glass. Frames & sills detailed. Streak-free RO/DI rinse. Free quotes.",
-  "interior-window-cleaning":
-    "Interior window cleaning in {location} for homeowners — smudges, dust & film on inside panes. Furniture-friendly process, tracks wiped. Satisfaction guaranteed.",
   "gutter-cleaning":
     "Gutter cleaning in {location}. Protect your home from water damage with expert gutter services. Free estimates & satisfaction guarantee.",
   "house-washing":
@@ -403,7 +398,7 @@ const serviceDescriptions = {
   "screen-cleaning":
     "Screen cleaning in {location}. Restore clarity & improve airflow with professional screen services. Satisfaction guaranteed.",
   "window-cleaning":
-    "Window cleaning in {location}: residential & commercial overview — interior, exterior, and post-construction specialists. RO/DI water, hand scrubbing, 7-day sparkle guarantee. Free quotes.",
+    "Residential and commercial window cleaning in {location} — interior, exterior, and everything in between. Hand-scrubbed glass, RO/DI purified water, and a 7-day sparkle guarantee. Free quotes.",
   "soft-washing":
     "Soft washing in {location}. Safe low-pressure cleaning for roofs, siding & exteriors. Custom blends & satisfaction guarantee.",
   "holiday-lighting":
@@ -478,12 +473,6 @@ export const generateServiceH1 = (serviceSlug, cityName) => {
   if (serviceSlug === "window-cleaning") {
     return `Window Cleaning Services in ${location}`;
   }
-  if (serviceSlug === "interior-window-cleaning") {
-    return `Interior Window Cleaning in ${location}`;
-  }
-  if (serviceSlug === "exterior-window-cleaning") {
-    return `Exterior Window Cleaning in ${location}`;
-  }
   if (serviceSlug === "post-construction-window-cleaning") {
     return `Post-Construction Window Cleaning in ${location}`;
   }
@@ -555,8 +544,6 @@ export const generateServiceHeroAlt = (serviceSlug, cityName) => {
 
   const serviceImageDescriptions = {
     "solar-panel-cleaning": `solar panel cleaning service in ${location}`,
-    "exterior-window-cleaning": `exterior window cleaning technician in ${location}`,
-    "interior-window-cleaning": `interior window cleaning service in ${location}`,
     "gutter-cleaning": `gutter cleaning professionals in ${location}`,
     "house-washing": `house washing and pressure washing in ${location}`,
     "roof-washing": `roof cleaning service in ${location}`,

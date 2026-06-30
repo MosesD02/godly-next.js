@@ -2,7 +2,6 @@ import service1 from "@/assets/serviceData/service1.webp";
 import windowCleaningHero from "@/assets/serviceData/window-cleaning-new.jpeg";
 import postConstructionHero from "@/assets/serviceData/post-construction.webp";
 import rainShieldHero from "@/assets/serviceData/rain-shield.webp";
-import service3 from "@/assets/serviceData/service3.webp";
 import service4 from "@/assets/serviceData/service4.webp";
 import service5 from "@/assets/serviceData/service5.webp";
 import roofWashingHero from "@/assets/serviceData/roof-washing.webp";
@@ -11,7 +10,6 @@ import service8 from "@/assets/serviceData/service8.webp";
 import service9 from "@/assets/serviceData/service9.webp";
 import service10 from "@/assets/serviceData/service10.webp";
 import service11 from "@/assets/serviceData/service11.webp";
-import service12 from "@/assets/serviceData/service12.webp";
 
 const Services = {
   "solar-panel-cleaning": {
@@ -94,165 +92,6 @@ const Services = {
     ],
     quote:
       "Maximize energy Efficiency with our professional solar panel cleaning services.",
-  },
-  "exterior-window-cleaning": {
-    hero: [
-      "Exterior Window",
-      "Cleaning",
-      service7,
-      (city) =>
-        `Outside glass in ${city} catches salt mist, pollen showers, and sprinkler overspray long before you notice it from indoors. Our exterior-only crews work ladders, poles, and purified rinses to scrub outdoor panes, sun-facing sliders, and patio doors—without crossing your threshold. Every job ends with a streak-free RO/DI finish and our money-back promise.`,
-    ],
-    included: [
-      {
-        number: "01",
-        title: "THROUGH GLASS SCRUB",
-        text: "We first remove all dirt, mildew, silicon and more.",
-      },
-      {
-        number: "02",
-        title: "Squeegee or our water fed pole",
-        text: "the satisfying part, getting rid of all the gunk on the glass.",
-      },
-      {
-        number: "03",
-        title: "Detail and Sill cleaning",
-        text: "wiping things down and cleaning sills for the win.",
-      },
-      {
-        number: "04",
-        title: "RAINSHIELD TECHNOLOGY",
-        text: "Our unique solution repels water, keeping your windows cleaner for longer.",
-      },
-      {
-        number: "05",
-        title: "7-day Sparkle Guarantee",
-        text: "If your windows aren't sparkling due to a storm, bird, or dog, or a tiger call us. We'll make them like new.",
-      },
-    ],
-    essential: [
-      {
-        number: "01.",
-        title: "Enhanced Appearance",
-        text: "Instantly boost the look of your property and curb appeal.",
-      },
-      {
-        number: "02.",
-        title: "Increased Longevity",
-        text: "Regular cleaning prevents glass degradation,Permanent stains and hard water buildup.",
-      },
-      {
-        number: "03.",
-        title: "Enjoy Unobstructed Views",
-        text: "Whether it's the ocean, the skyline, or your garden, clean windows give you a crystal-clear view, free from streaks or dust.",
-      },
-      {
-        number: "04.",
-        title: "Maximize Natural Light",
-        text: "Dust, pollen, and grime on your windows reduce sunlight. Clean windows let in more light, brightening the room.",
-      },
-    ],
-    nearyou: [
-      {
-        number: "01.",
-        title: "Routine Home Window Washing",
-        text: "Regular window cleaning to maintain a clear view and keep your home looking fresh.",
-      },
-      {
-        number: "02.",
-        title: "Commercial Window Cleaning",
-        text: "Regular cleaning for stores, offices, restaurants, hotels, healthcare facilities, and schools to keep an inviting environment.",
-      },
-      {
-        number: "03.",
-        title: "Post-Construction Window Cleaning",
-        text: "Cleaning windows after new construction or home renovations to remove dust, stickers, paint and debris.",
-      },
-      {
-        number: "04.",
-        title: "Real Estate window cleaning",
-        text: "Cleaning windows to enhance curb appeal and attract potential buyers.",
-      },
-      {
-        number: "05.",
-        title: "Boat Window Cleaning",
-        text: "Cleaning windows on boats and yachts, ensuring clear visibility while enhancing the overall appearance.",
-      },
-    ],
-    quote:
-      "Crystal clear windows, guaranteed. Our RainShield™ technology keeps them cleaner, longer.",
-  },
-  "interior-window-cleaning": {
-    hero: [
-      "Interior Window",
-      "Cleaning",
-      service3,
-      (city) =>
-        `Fingerprints on kid-height glass, HVAC dust along sills, and film from cooking grease stay on the inside of ${city} homes. We stage shoe covers, protect furniture, and work pane-by-pane on interior glass, tracks, and dividers—never confusing this visit with an exterior wash. Residential interior work is our focus here, backed by the same satisfaction guarantee.`,
-    ],
-    included: [
-      {
-        number: "01",
-        title: "thorough glass scrub",
-        text: "We first remove all dirt, mildew, silicon and more.",
-      },
-      {
-        number: "02",
-        title: "Squeegee or our water fed pole",
-        text: "the satisfying part, getting rid of all the gunk on the glass.",
-      },
-      {
-        number: "03",
-        title: "Detail and Sill cleaning",
-        text: "wiping things down and cleaning sills for the win.",
-      },
-    ],
-    essential: [
-      {
-        number: "01.",
-        title: "Pristine Windows for Enhanced Interior Aesthetics",
-        text: "Spotless windows that enhance the aesthetic appeal of your interiors",
-      },
-      {
-        number: "02.",
-        title: "Maximize Natural Light",
-        text: "Dust, pollen, and grime on your windows reduce sunlight. Clean windows let in more light, brightening the room.",
-      },
-      {
-        number: "03.",
-        title: "Enjoy Unobstructed Views",
-        text: "Whether it's the ocean, the skyline, or your garden, clean windows give you a crystal-clear view, free from streaks or dust.",
-      },
-    ],
-    nearyou: [
-      {
-        number: "01.",
-        title: "Routine Home Window Washing",
-        text: "Regular window cleaning to maintain a clear view and keep your home looking fresh.",
-      },
-      {
-        number: "02.",
-        title: "Commercial Window Cleaning",
-        text: "Regular cleaning for stores, offices, restaurants, hotels, healthcare facilities, and schools to keep an inviting environment.",
-      },
-      {
-        number: "03.",
-        title: "Post-Construction Window Cleaning",
-        text: "Cleaning windows after new construction or home renovations to remove dust, stickers, paint and debris.",
-      },
-      {
-        number: "04.",
-        title: "Real Estate window cleaning",
-        text: "Cleaning windows to enhance curb appeal and attract potential buyers.",
-      },
-      {
-        number: "05.",
-        title: "Removing Fingerprints & Smudges",
-        text: "Carefully clean interior glass to remove smudges, grease, and residue without damaging frames or sills.",
-      },
-    ],
-    quote:
-      "Streak-free interior windows, done right. We protect your surfaces and leave every pane spotless.",
   },
   "gutter-cleaning": {
     hero: [
@@ -809,28 +648,28 @@ const Services = {
       "Cleaning",
       windowCleaningHero,
       (city) =>
-        `Think of this as the hub for every window need in ${city}: storefronts, waterfront homes, and HOAs that want one vendor who can scale. We coordinate interior crews, exterior-only routes, and post-construction punch-list teams so you are never steered to the wrong specialty page. Hand-scrubbed glass, RO/DI rinses, optional Rain Shield, and our 7-day sparkle guarantee still anchor every scope.`,
+        `Interior window cleaning, exterior window cleaning, or both — this is where it starts. We specialize in residential and commercial window washing across ${city}, and we reach the windows other companies skip. Hand-scrubbed glass, RO/DI purified water rinses, and a 7-day sparkle guarantee on every job. Whether it's a routine exterior clean, a full interior and exterior package, or a one-time deep clean, we've got it.`,
     ],
     included: [
       {
         number: "01",
         title: "Thorough Glass Scrub",
-        text: "We manually scrub every pane to lift dirt, mildew, silicone, stickers, and overspray safely.",
+        text: "We manually scrub every pane to lift salt film, mildew, silicone, stickers, and overspray safely.",
       },
       {
         number: "02",
-        title: "RO/DI Purified Water Rinse",
-        text: "Zero TDS purified water means no minerals, no spots, and no streaks when it dries.",
+        title: "Exterior Window Washing",
+        text: "We clean the outside from ground level up — streak-free glass without ladders touching your siding or stucco.",
       },
       {
         number: "03",
-        title: "Detail and Sill Cleaning",
-        text: "Wiping down frames and cleaning sills so every surface gets the attention it deserves.",
+        title: "Interior Window Cleaning",
+        text: "We get inside every room and clean every pane — hard-to-reach windows included, plus frames, tracks, and dividers.",
       },
       {
         number: "04",
-        title: "Rain Shield Technology",
-        text: "Our unique coating repels water and dirt, keeping your windows cleaner for longer.",
+        title: "RO/DI Purified Water Rinse",
+        text: "Zero TDS purified water means no minerals, no spots, and no streaks when it dries.",
       },
       {
         number: "05",
@@ -841,57 +680,57 @@ const Services = {
     essential: [
       {
         number: "01.",
-        title: "Enhanced Appearance",
-        text: "Instantly boost the look of your home and keep your curb appeal on point.",
+        title: "Salt, Pollen, and Storm Film",
+        text: "South Florida windows take salt air, pollen, and storm residue year-round. Left alone, that film etches glass permanently.",
       },
       {
         number: "02.",
-        title: "Increased Longevity",
-        text: "Regular cleaning prevents mineral buildup, permanent staining, and glass degradation over time.",
+        title: "Natural Light in Every Room",
+        text: "Dust, pollen, and grime block more light than you think. Clean glass inside and out brightens every room.",
       },
       {
         number: "03.",
-        title: "Unobstructed Views",
-        text: "Whether it's the water or your backyard, clean windows keep your views crystal clear.",
+        title: "Glass That Lasts Longer",
+        text: "Mineral deposits and sprinkler overspray etch South Florida glass if left alone. Regular cleaning keeps replacement off your list.",
       },
       {
         number: "04.",
-        title: "Maximize Natural Light",
-        text: "Dust, pollen, and grime block more sunlight than you think. Clean glass brightens every room.",
+        title: "Curb Appeal That Holds Up",
+        text: "Clean windows are what separate a well-maintained property from a tired one — inside and out.",
       },
     ],
     nearyou: [
       {
         number: "01",
-        title: "Routine Home Window Cleaning",
-        text: "Regular window cleaning to maintain a clear view and keep your home looking fresh.",
+        title: "Residential Window Washing",
+        text: "Interior and exterior window washing for homes across South Florida, done right the first time.",
       },
       {
         number: "02",
         title: "Commercial Window Cleaning",
-        text: "Regular cleaning for stores, offices, restaurants, hotels, and healthcare facilities to keep an inviting environment.",
+        text: "Storefronts, offices, restaurants, and hotels — regular window cleaning that keeps your business looking sharp.",
       },
       {
         number: "03",
         title: "Post-Construction Window Cleaning",
-        text: "Cleaning windows after new construction or home renovations to remove dust, stickers, paint, and debris.",
+        text: "Stucco dust, paint overspray, and construction film removed so your windows are move-in ready.",
       },
       {
         number: "04",
-        title: "Real Estate Window Cleaning",
-        text: "Cleaning windows to enhance curb appeal and help potential buyers fall in love at first sight.",
+        title: "Condo Window Cleaning",
+        text: "We handle condo units inside and out, working around schedules and building access requirements.",
       },
       {
         number: "05",
-        title: "Boat Window Cleaning",
-        text: "Cleaning windows on boats and yachts, ensuring clear visibility while enhancing the overall appearance.",
+        title: "Screen Cleaning",
+        text: "Pollen, salt, and debris pulled from every screen so your windows breathe and look clean.",
       },
     ],
     interiorSection: {
       heading: "Interior Window Cleaning",
       body: [
-        "Fingerprints, HVAC dust, and cooking film stay on the inside of your windows long after the exterior looks clean. Our interior window cleaning crews stage shoe covers, protect furniture, and work pane-by-pane through every room — handling glass, frames, tracks, and dividers with the same care we give your exterior.",
-        "Interior cleaning is available as part of a full-service window package or as a standalone visit. Either way, every pane is left streak-free and backed by our 7-day sparkle guarantee.",
+        "Fingerprints, cooking film, and salt buildup collect on the inside of your windows and don't go away on their own. We specialize in interior window cleaning — every room, every pane, hard-to-reach windows included. Frames, tracks, and dividers all get the same attention as the glass.",
+        "Interior window cleaning is available on its own or bundled with exterior as a full package. Either way, every pane is left streak-free and backed by our 7-day sparkle guarantee.",
       ],
     },
     faqs: [

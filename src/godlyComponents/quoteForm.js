@@ -20,7 +20,7 @@ import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
 
 const servicesList = [
-  { id: "exterior-window-cleaning", name: "Exterior Window Cleaning" },
+  { id: "window-cleaning", name: "Window Cleaning" },
   { id: "house-washing", name: "House Washing" },
   { id: "paver-sealing", name: "Paver Sealing" },
   // { id: "screen-cleaning", name: "Screen Cleaning" },

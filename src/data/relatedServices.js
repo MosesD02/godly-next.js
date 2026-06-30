@@ -16,7 +16,6 @@ import service11 from "@/assets/serviceData/service11.webp";
 
 export const IMAGE_BY_LINK = {
   "solar-panel-cleaning": service1,
-  "exterior-window-cleaning": service7,
   "gutter-cleaning": service4,
   "house-washing": service5,
   "roof-washing": roofWashingHero,
@@ -32,7 +31,6 @@ export const IMAGE_BY_LINK = {
 
 const TITLE_BY_LINK = {
   "solar-panel-cleaning": "Solar Panel Cleaning",
-  "exterior-window-cleaning": "Exterior Window Cleaning",
   "gutter-cleaning": "Gutter Cleaning",
   "house-washing": "House Washing",
   "roof-washing": "Roof Washing",
@@ -48,13 +46,11 @@ const TITLE_BY_LINK = {
 /** Explicit lists from client spec (order preserved) */
 const PRESETS = {
   "window-cleaning": [
-    "exterior-window-cleaning",
     "post-construction-window-cleaning",
     "soft-washing",
     "holiday-lighting",
   ],
   "soft-washing": [
-    "exterior-window-cleaning",
     "roof-washing",
     "window-cleaning",
     "holiday-lighting",
@@ -71,7 +67,6 @@ const DEFAULT_ORDER = [
   "window-cleaning",
   "soft-washing",
   "holiday-lighting",
-  "exterior-window-cleaning",
   "house-washing",
   "roof-washing",
   "pressure-washing",

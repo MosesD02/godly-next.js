@@ -33,13 +33,6 @@ const services = [
       "RO/DI purified water, hand scrubbing, and streak-free glass—residential and commercial—with our 7-day sparkle guarantee.",
   },
   {
-    name: "Exterior Window Cleaning",
-    link: "exterior-window-cleaning",
-    image: exteriorWindow,
-    description:
-      "It's what we do best! Get rid of that nasty build-up of nature's mildew and grime.",
-  },
-  {
     name: "Post-Construction Window Cleaning",
     link: "post-construction-window-cleaning",
     image: exteriorWindow,

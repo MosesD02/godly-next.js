@@ -13,13 +13,6 @@ import houseWashingImgColor from "@/assets/homepageServices/house_washing_color.
 
 export const servicesData = [
   {
-    name: "Exterior Window Cleaning",
-    icon: <WindowIcon />,
-    link: "exterior-window-cleaning",
-    description:
-      "It’s what we do best! Get rid of that nasty build-up of nature’s mildew and grime.",
-  },
-  {
     name: "Window Cleaning",
     icon: <WindowIcon />,
     link: "window-cleaning",

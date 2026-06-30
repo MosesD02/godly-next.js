@@ -9,18 +9,12 @@ import "@/styles/fourstepprocess.css";
 
 import windowCleaningHero from "@/assets/serviceData/window-cleaning-new.jpeg";
 import postConstructionHero from "@/assets/serviceData/post-construction.webp";
-import service7 from "@/assets/serviceData/service7.webp";
 
 const LINKS = [
   {
     slug: "window-cleaning",
     label: "Window cleaning",
     image: windowCleaningHero,
-  },
-  {
-    slug: "exterior-window-cleaning",
-    label: "Exterior window cleaning",
-    image: service7,
   },
   {
     slug: "post-construction-window-cleaning",
@@ -45,8 +39,7 @@ export default function WindowCleaningClusterNav({
           Explore our window services
         </h2>
         <p className="max-w-180 text-center font-['satoshi-regular'] text-[15px] leading-relaxed text-[#3d3834] md:text-base">
-          Interior, exterior, post-construction, or full overview—pick what
-          matches your home.
+          Full overview or post-construction—pick what matches your home.
         </p>
       </div>
 

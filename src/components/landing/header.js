@@ -11,7 +11,6 @@ import { cn } from "@/lib/utils";
 
 // Keep data definitions or move to a separate file
 import exteriorWindow from "@/assets/homepageServices/exterior_window.webp";
-import interiorWindow from "@/assets/homepageServices/interior_window.webp";
 import gutterCleaning from "@/assets/homepageServices/gutter_cleaning.webp";
 import houseWashing from "@/assets/homepageServices/house_washing.webp";
 import roofWashing from "@/assets/homepageServices/roof_washing.webp";
@@ -22,20 +21,6 @@ import sealCoating from "@/assets/homepageServices/seal_coating.webp";
 import santaBg from "@/assets/homepageServices/santa_bg.webp";
 
 const services = [
-  {
-    name: "Exterior Window Cleaning",
-    link: "exterior-window-cleaning",
-    image: exteriorWindow,
-    description:
-      "It's what we do best! Get rid of that nasty build-up of nature's mildew and grime.",
-  },
-  {
-    name: "Interior Window Cleaning",
-    link: "interior-window-cleaning",
-    image: interiorWindow,
-    description:
-      "Pet slobber, fingerprints, and so much more can leave residue that is tricky to get off.",
-  },
   {
     name: "Window Cleaning",
     link: "window-cleaning",
