@@ -288,7 +288,7 @@ export function generateCitySchema(citySlug) {
 // SEO-optimized meta titles for services and locations
 export const serviceMetaTitles = {
   "gutter-cleaning": "Gutter Cleaning",
-  "house-washing": "House Washing & Pressure Washing",
+  "house-washing": "House Washing",
   "roof-cleaning": "Roof Cleaning",
   "pressure-washing": "Pressure Washing",
   "paver-sealing": "Paver Sealing",
