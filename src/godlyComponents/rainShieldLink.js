@@ -18,13 +18,10 @@ const ANCHORS = [
   "RainShield, our invisible water-repelling treatment",
 ];
 
-/** Service slugs that get the inline RainShield link (glass-touching only). */
+/** Service slugs that get the inline RainShield link (window-cleaning pages only). */
 export const RAIN_SHIELD_INLINE_LINK_SLUGS = new Set([
   "window-cleaning",
-  "exterior-window-cleaning",
-  "interior-window-cleaning",
-  "soft-washing",
-  "screen-cleaning",
+  "post-construction-window-cleaning",
 ]);
 
 export function hasInlineRainShieldLink(slug) {
