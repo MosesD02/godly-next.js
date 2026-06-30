@@ -292,6 +292,8 @@ export const serviceMetaTitles = {
   "roof-cleaning": "Roof Cleaning",
   "pressure-washing": "Pressure Washing",
   "paver-sealing": "Paver Sealing",
+  "travertine-sealing": "Travertine Sealing",
+  "concrete-sealing": "Concrete Sealing",
   "screen-cleaning": "Screen Cleaning",
   "window-cleaning": "Window Cleaning",
   "soft-washing": "Soft Washing",
@@ -389,6 +391,10 @@ const serviceDescriptions = {
     "Pressure washing in {location}. Expert cleaning for driveways, patios & walkways. Professional results with satisfaction guarantee.",
   "paver-sealing":
     "Paver sealing in {location}. Protect & enhance pavers with professional sealing services. Prevent fading & damage with guarantee.",
+  "travertine-sealing":
+    "Professional travertine sealing in {location}. We clean and seal pool decks, driveways, and patios — matte or wet look finish, 2-year unconditional warranty. Free quotes.",
+  "concrete-sealing":
+    "Professional concrete sealing in {location}. We pressure wash and seal driveways, pool decks, and sidewalks — built for South Florida weather, 2-year unconditional warranty. Free quotes.",
   "screen-cleaning":
     "Screen cleaning in {location}. Restore clarity & improve airflow with professional screen services. Satisfaction guaranteed.",
   "window-cleaning":
@@ -542,6 +548,8 @@ export const generateServiceHeroAlt = (serviceSlug, cityName) => {
     "roof-cleaning": `roof cleaning service in ${location}`,
     "pressure-washing": `pressure washing service in ${location}`,
     "paver-sealing": `paver sealing and restoration in ${location}`,
+    "travertine-sealing": `travertine sealing and restoration in ${location}`,
+    "concrete-sealing": `concrete sealing and restoration in ${location}`,
     "screen-cleaning": `screen cleaning professionals in ${location}`,
     "window-cleaning": `professional window cleaning in ${location}`,
     "soft-washing": `soft washing service in ${location}`,

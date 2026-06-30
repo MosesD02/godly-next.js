@@ -400,6 +400,168 @@ const Services = {
       },
     ],
   },
+  "travertine-sealing": {
+    hero: [
+      "Travertine",
+      "Sealing",
+      service8,
+      "Travertine is everywhere in South Florida — pool decks, driveways, patios, entryways. When it's cared for, nothing looks better. When it's not, it fades and stains fast. We clean and seal travertine and natural stone right: the correct sealer for your surface, the finish you want, and a 2-year unconditional warranty on every job.",
+    ],
+    included: [
+      {
+        number: "01",
+        title: "Pressure Wash and Surface Prep",
+        text: "We pressure wash the travertine to clear algae, buildup, and staining before any sealer touches the stone.",
+      },
+      {
+        number: "02",
+        title: "Joint Cleaning and Re-Sanding",
+        text: "We remove any prior sand, clean the joints, and re-sand with polymeric sand where needed to stabilize everything before the sealer goes down.",
+      },
+      {
+        number: "03",
+        title: "Surface Dry and Prep",
+        text: "Travertine must be fully dry before sealing. Proper prep time ensures the sealer bonds right.",
+      },
+      {
+        number: "04",
+        title: "Sealer Application",
+        text: "We match the right sealer to your stone and apply the finish you want — gloss, matte, or natural. Protects against stains, moisture, and UV fade.",
+      },
+    ],
+    essential: [
+      {
+        number: "01.",
+        title: "Travertine Absorbs Everything",
+        text: "It's a porous stone. Without sealing, pool water, oil, and fertilizer stain it fast and go deep.",
+      },
+      {
+        number: "02.",
+        title: "South Florida Weather Fades It",
+        text: "Daily rain, humidity, and UV exposure dull unsealed travertine quickly. Sealing locks the color in.",
+      },
+      {
+        number: "03.",
+        title: "Pool Deck Safety",
+        text: "Wet unsealed travertine gets slippery and stains from chemicals. A sealed surface is safer and easier to maintain.",
+      },
+      {
+        number: "04.",
+        title: "Keeps the Value In",
+        text: "Travertine is a premium material. Sealing it keeps it looking that way and keeps costly replacement off your list.",
+      },
+    ],
+    nearyou: [
+      {
+        number: "01",
+        title: "Pool Deck Travertine Sealing",
+        text: "Full clean and seal for pool decks, the area that takes the most abuse from water and foot traffic.",
+      },
+      {
+        number: "02",
+        title: "Driveway Travertine Sealing",
+        text: "Protect your driveway from tire marks, oil, and South Florida rain with a penetrating seal.",
+      },
+      {
+        number: "03",
+        title: "Patio and Outdoor Living Areas",
+        text: "Reseal faded or stained patio travertine and bring the color back — matte or wet look available.",
+      },
+      {
+        number: "04",
+        title: "Entryway and Walkway Sealing",
+        text: "Sealed travertine at your entry makes the whole property look cared for.",
+      },
+      {
+        number: "05",
+        title: "New Construction Protection",
+        text: "Just laid? Seal it now before it absorbs anything and you'll spend a lot less maintaining it later.",
+      },
+    ],
+    quote:
+      "Travertine and natural stone sealed right — the correct sealer, the finish you want, and a 2-year unconditional warranty.",
+  },
+  "concrete-sealing": {
+    hero: [
+      "Concrete",
+      "Sealing",
+      service8,
+      "Concrete driveways, pool decks, and sidewalks in South Florida deal with more than just regular wear. Salt air, afternoon rain, UV, and traffic all work on an unsealed surface. We pressure wash and seal it right — clean first, then lock it with a sealer built for the heat and humidity down here. 2-year unconditional warranty on every job.",
+    ],
+    included: [
+      {
+        number: "01",
+        title: "Pressure Wash Surface Prep",
+        text: "We pressure wash everything first — oil, algae, and staining all cleared out before any sealer touches the surface.",
+      },
+      {
+        number: "02",
+        title: "Joint Cleaning and Re-Sanding",
+        text: "We remove any prior sand, clean out the joints, and re-sand where needed to stabilize before the sealer goes down.",
+      },
+      {
+        number: "03",
+        title: "Surface Dry and Prep",
+        text: "Concrete has to be fully dry for the sealer to bond right. We allow proper time before application.",
+      },
+      {
+        number: "04",
+        title: "Sealer Application",
+        text: "We match the right sealer to your concrete and apply the finish you want — gloss, matte, or natural. Protection against staining, moisture, UV fade, and surface breakdown.",
+      },
+    ],
+    essential: [
+      {
+        number: "01.",
+        title: "Unsealed Concrete Stains Easily",
+        text: "Oil, algae, and rust from sprinkler heads all soak into unsealed concrete fast. A sealed surface stays clean.",
+      },
+      {
+        number: "02.",
+        title: "South Florida Rain and Humidity",
+        text: "Moisture gets into the surface, promotes algae, and breaks it down from underneath. Sealing stops that.",
+      },
+      {
+        number: "03.",
+        title: "UV Breaks It Down",
+        text: "The South Florida sun fades and dries out concrete faster than most places. Sealing keeps the surface protected.",
+      },
+      {
+        number: "04.",
+        title: "Extends Your Surface Life",
+        text: "Replacing a driveway or pool deck is expensive. Sealing every few years is a fraction of that cost.",
+      },
+    ],
+    nearyou: [
+      {
+        number: "01",
+        title: "Driveway Concrete Sealing",
+        text: "Protect your driveway from oil stains, algae, and weather damage with a seal that lasts.",
+      },
+      {
+        number: "02",
+        title: "Pool Deck Concrete Sealing",
+        text: "Pool decks take the most abuse. Sealing keeps them clean, safe, and looking sharp.",
+      },
+      {
+        number: "03",
+        title: "Sidewalk and Walkway Sealing",
+        text: "Keep walkways free of staining and surface breakdown with a clean seal for daily use.",
+      },
+      {
+        number: "04",
+        title: "Commercial Concrete Sealing",
+        text: "Parking lots, storefronts, and loading areas — we handle commercial concrete at any scale.",
+      },
+      {
+        number: "05",
+        title: "Post-Wash Seal Package",
+        text: "Just had your concrete pressure washed? Seal it right after for full protection while the surface is clean.",
+      },
+    ],
+    quote:
+      "Pressure washed and sealed right — a sealer built for South Florida heat and humidity, backed by a 2-year unconditional warranty.",
+  },
   "screen-cleaning": {
     hero: [
       "Screen",

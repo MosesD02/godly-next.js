@@ -71,6 +71,20 @@ export const servicesData = [
       "Clean, sand, and seal your driveway/parking lot to protect against oils and other damaging elements.",
   },
   {
+    name: "Travertine Sealing",
+    icon: <SealCoatingIcon />,
+    link: "travertine-sealing",
+    description:
+      "Clean and seal travertine pool decks, driveways, and patios with a gloss, matte, or natural finish.",
+  },
+  {
+    name: "Concrete Sealing",
+    icon: <SealCoatingIcon />,
+    link: "concrete-sealing",
+    description:
+      "Pressure wash and seal concrete driveways, pool decks, and sidewalks — built for South Florida weather.",
+  },
+  {
     name: "Post-Construction Window Cleaning",
     icon: <WindowIcon />,
     link: "post-construction-window-cleaning",

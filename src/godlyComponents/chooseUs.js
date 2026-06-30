@@ -256,6 +256,58 @@ const chooseUsData = {
         "The only company in South Florida offering a 2-year unconditional warranty on all surface restoration work.",
     },
   ],
+  "travertine-sealing": [
+    {
+      name: "We Know Travertine",
+      svg: shieldSvg,
+      description:
+        "We use the right penetrating sealer for this stone, re-sand joints if needed, and give you the finish you want. No generic coatings, no guessing.",
+    },
+    {
+      name: "Travertine and Natural Stone Specialists",
+      svg: toolboxSvg,
+      description:
+        "We work with travertine, marble, and stone surfaces regularly. The right product, the right prep, and the right finish every time.",
+    },
+    {
+      name: "Gloss, Matte, or Natural",
+      svg: leafSvg,
+      description:
+        "We cater to what you want — a wet look that deepens the color, a natural matte, or anything in between. Your call.",
+    },
+    {
+      name: "2-Year Unconditional Warranty",
+      svg: badgeSvg,
+      description:
+        "The only company in South Florida backing every surface restoration job with a 2-year unconditional warranty.",
+    },
+  ],
+  "concrete-sealing": [
+    {
+      name: "Pressure Wash First, Always",
+      svg: shieldSvg,
+      description:
+        "We don't seal dirty concrete. Every job starts with a full wash so the sealer bonds to a clean surface.",
+    },
+    {
+      name: "Right Sealer for the Surface",
+      svg: toolboxSvg,
+      description:
+        "Driveways, pool decks, and commercial concrete each need different products. We match the sealer, prep the surface, and deliver the finish you're looking for.",
+    },
+    {
+      name: "Fully Insured & Equipped",
+      svg: leafSvg,
+      description:
+        "Professional-grade equipment and full insurance on every job, residential or commercial.",
+    },
+    {
+      name: "2-Year Unconditional Warranty",
+      svg: badgeSvg,
+      description:
+        "The only company in South Florida offering a 2-year unconditional warranty on all surface restoration work.",
+    },
+  ],
   "screen-cleaning": [
     {
       name: "Screen Specialists",

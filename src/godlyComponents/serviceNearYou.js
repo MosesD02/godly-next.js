@@ -25,6 +25,20 @@ const taglines = {
       "ON ALL SURFACE RESTORATION SERVICES.",
     ],
   },
+  "travertine-sealing": {
+    lines: [
+      "WE ARE THE ONLY PAVER SEALING COMPANY IN",
+      "SOUTH FLORIDA THAT PROUDLY OFFERS A 2 YEAR UNCONDITIONAL WARRANTY",
+      "ON ALL SURFACE RESTORATION SERVICES.",
+    ],
+  },
+  "concrete-sealing": {
+    lines: [
+      "WE ARE THE ONLY PAVER SEALING COMPANY IN",
+      "SOUTH FLORIDA THAT PROUDLY OFFERS A 2 YEAR UNCONDITIONAL WARRANTY",
+      "ON ALL SURFACE RESTORATION SERVICES.",
+    ],
+  },
 };
 
 const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {

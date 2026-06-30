@@ -75,6 +75,20 @@ const services = [
     description:
       "Add a protective coating to your driveway/parking lot that protects against water, oils, and other damaging elements.",
   },
+  {
+    name: "Travertine Sealing",
+    link: "travertine-sealing",
+    image: sealCoating,
+    description:
+      "Clean and seal travertine pool decks, driveways, and patios — gloss, matte, or natural finish with a 2-year warranty.",
+  },
+  {
+    name: "Concrete Sealing",
+    link: "concrete-sealing",
+    image: sealCoating,
+    description:
+      "Pressure wash and seal concrete driveways, pool decks, and sidewalks — built for South Florida weather, 2-year warranty.",
+  },
 ];
 
 const Header = () => {

@@ -20,6 +20,8 @@ export const IMAGE_BY_LINK = {
   "roof-cleaning": roofWashingHero,
   "pressure-washing": service7,
   "paver-sealing": service8,
+  "travertine-sealing": service8,
+  "concrete-sealing": service8,
   "screen-cleaning": service10,
   "window-cleaning": windowCleaningHero,
   "post-construction-window-cleaning": postConstructionHero,
@@ -33,6 +35,8 @@ const TITLE_BY_LINK = {
   "roof-cleaning": "Roof Cleaning",
   "pressure-washing": "Pressure Washing",
   "paver-sealing": "Paver Sealing",
+  "travertine-sealing": "Travertine Sealing",
+  "concrete-sealing": "Concrete Sealing",
   "screen-cleaning": "Screen Cleaning",
   "window-cleaning": "Window Cleaning",
   "soft-washing": "Soft Washing",
@@ -57,6 +61,24 @@ const PRESETS = {
     "house-washing",
     "pressure-washing",
   ],
+  "paver-sealing": [
+    "travertine-sealing",
+    "concrete-sealing",
+    "soft-washing",
+    "pressure-washing",
+  ],
+  "travertine-sealing": [
+    "concrete-sealing",
+    "paver-sealing",
+    "pressure-washing",
+    "soft-washing",
+  ],
+  "concrete-sealing": [
+    "travertine-sealing",
+    "paver-sealing",
+    "pressure-washing",
+    "soft-washing",
+  ],
 };
 
 const DEFAULT_ORDER = [
@@ -68,6 +90,8 @@ const DEFAULT_ORDER = [
   "pressure-washing",
   "gutter-cleaning",
   "paver-sealing",
+  "travertine-sealing",
+  "concrete-sealing",
 ];
 
 function toSteps(links) {
