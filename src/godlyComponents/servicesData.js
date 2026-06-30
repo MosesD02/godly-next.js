@@ -2,7 +2,6 @@ import {
   WindowIcon,
   GutterIcon,
   RoofWashingIcon,
-  SolarPanelsIcon,
   SealCoatingIcon,
   HolidayLightIcon,
 } from "./servicesIcons";
@@ -58,26 +57,11 @@ export const servicesData = [
       "Custom low-pressure treatments for roofs, siding, and exteriors—safe chemistry that lifts algae without damage.",
   },
   {
-    name: "Light Fixture Cleaning",
-    image: "/assets/light-fixture.webp",
-    hoverImage: "/assets/light-fixture_colored.webp",
-    link: "light-fixture-cleaning",
-    description:
-      "Keep both your interior and exterior lighting bright with thorough cleanings of your lanterns, sconces, and more.",
-  },
-  {
     name: "Holiday Lighting",
     icon: <HolidayLightIcon />,
     link: "holiday-lighting",
     description:
       "Design, install, premium LEDs, maintenance, and removal—custom holiday displays without the ladder.",
-  },
-  {
-    name: "Solar Panel Cleaning",
-    icon: <SolarPanelsIcon />,
-    link: "solar-panel-cleaning",
-    description:
-      "Dirty solar panels lead to less efficient energy absorption — keep them clean and running to their full potential.",
   },
   {
     name: "Paver Sealing",

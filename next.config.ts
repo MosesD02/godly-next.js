@@ -151,6 +151,17 @@ const nextConfig: NextConfig = {
         destination: "/:city/roof-cleaning",
         permanent: true,
       },
+      // Retired services → city hub (Solar Panel Cleaning, Light Fixture Cleaning)
+      {
+        source: `/:city(${CITY_REDIRECT_PATTERN})/solar-panel-cleaning`,
+        destination: "/:city",
+        permanent: true,
+      },
+      {
+        source: `/:city(${CITY_REDIRECT_PATTERN})/light-fixture-cleaning`,
+        destination: "/:city",
+        permanent: true,
+      },
       // Legacy city Rain Shield URLs → single hub (SEO punch list P1.2)
       {
         source: "/boca-raton/rain-shield-tech",

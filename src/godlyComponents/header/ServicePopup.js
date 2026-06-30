@@ -19,8 +19,6 @@ import gutterCleaning from "@/assets/homepageServices/gutter_cleaning.webp";
 import houseWashing from "@/assets/homepageServices/house_washing.webp";
 import roofWashing from "@/assets/homepageServices/roof_washing.webp";
 import pressureWashing from "@/assets/homepageServices/pressure_washing.webp";
-import lightFixtures from "@/assets/homepageServices/light_fixtures.webp";
-import solarPanels from "@/assets/homepageServices/solar_panels.webp";
 import sealCoating from "@/assets/homepageServices/seal_coating.webp";
 import santaBg from "@/assets/homepageServices/santa_bg.png";
 
@@ -75,25 +73,11 @@ const services = [
       "Custom low-pressure treatments for roofs, siding, and exteriors—safe chemistry that lifts algae without damage.",
   },
   {
-    name: "Light Fixture Cleaning",
-    link: "light-fixture-cleaning",
-    image: lightFixtures,
-    description:
-      "Keep both your interior and exterior lighting bright with thorough cleanings of your lanterns, sconces, and more.",
-  },
-  {
     name: "Holiday Lighting",
     link: "holiday-lighting",
     image: santaBg,
     description:
       "Design, install, premium LEDs, maintenance, and removal—custom holiday displays without the ladder.",
-  },
-  {
-    name: "Solar Panel Cleaning",
-    link: "solar-panel-cleaning",
-    image: solarPanels,
-    description:
-      "Dirty solar panels lead to less efficient energy absorption – keep them clean and running to their full potential. ",
   },
   {
     name: "Paver Sealing",

@@ -15,13 +15,11 @@ import service10 from "@/assets/serviceData/service10.webp";
 import service11 from "@/assets/serviceData/service11.webp";
 
 export const IMAGE_BY_LINK = {
-  "solar-panel-cleaning": service1,
   "gutter-cleaning": service4,
   "house-washing": service5,
   "roof-cleaning": roofWashingHero,
   "pressure-washing": service7,
   "paver-sealing": service8,
-  "light-fixture-cleaning": service9,
   "screen-cleaning": service10,
   "window-cleaning": windowCleaningHero,
   "post-construction-window-cleaning": postConstructionHero,
@@ -30,13 +28,11 @@ export const IMAGE_BY_LINK = {
 };
 
 const TITLE_BY_LINK = {
-  "solar-panel-cleaning": "Solar Panel Cleaning",
   "gutter-cleaning": "Gutter Cleaning",
   "house-washing": "House Washing",
   "roof-cleaning": "Roof Cleaning",
   "pressure-washing": "Pressure Washing",
   "paver-sealing": "Paver Sealing",
-  "light-fixture-cleaning": "Light Fixture Cleaning",
   "screen-cleaning": "Screen Cleaning",
   "window-cleaning": "Window Cleaning",
   "soft-washing": "Soft Washing",
@@ -71,9 +67,7 @@ const DEFAULT_ORDER = [
   "roof-cleaning",
   "pressure-washing",
   "gutter-cleaning",
-  "solar-panel-cleaning",
   "paver-sealing",
-  "light-fixture-cleaning",
 ];
 
 function toSteps(links) {

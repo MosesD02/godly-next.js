@@ -11,11 +11,6 @@ import { cn, titleCaseCityName } from "@/lib/utils";
 import { generateServiceSectionHeadings } from "@/data/metaTitles";
 
 const taglines = {
-  "solar-panel-cleaning": {
-    before: "Maximize energy",
-    highlight: "Efficiency",
-    after: "with our professional solar panel cleaning services.",
-  },
   "pressure-washing": {
     lines: [
       "WE ARE THE ONLY PRESSURE AND SOFT WASHING COMPANY IN",
@@ -28,13 +23,6 @@ const taglines = {
       "WE ARE THE ONLY PAVER SEALING COMPANY IN",
       "SOUTH FLORIDA THAT PROUDLY OFFERS A 2 YEAR UNCONDITIONAL WARRANTY",
       "ON ALL SURFACE RESTORATION SERVICES.",
-    ],
-  },
-  "light-fixture-cleaning": {
-    lines: [
-      "WE ARE THE ONLY LIGHT FIXTURE COMPANY IN",
-      "SOUTH FLORIDA THAT PROUDLY OFFERS A MONEY BACK",
-      "GUARANTEE ON ALL LIGHT FIXTURE CLEANING SERVICES.",
     ],
   },
 };

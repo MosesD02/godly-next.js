@@ -287,13 +287,11 @@ export function generateCitySchema(citySlug) {
 
 // SEO-optimized meta titles for services and locations
 export const serviceMetaTitles = {
-  "solar-panel-cleaning": "Solar Panel Cleaning",
   "gutter-cleaning": "Gutter Cleaning",
   "house-washing": "House Washing & Pressure Washing",
   "roof-cleaning": "Roof Cleaning",
   "pressure-washing": "Pressure Washing",
   "paver-sealing": "Paver Sealing",
-  "light-fixture-cleaning": "Light Fixture Cleaning",
   "screen-cleaning": "Screen Cleaning",
   "window-cleaning": "Window Cleaning",
   "soft-washing": "Soft Washing",
@@ -381,8 +379,6 @@ export const homeTitle =
 
 // Service-specific meta description templates (optimized for 140-160 chars)
 const serviceDescriptions = {
-  "solar-panel-cleaning":
-    "Solar panel cleaning in {location}. Maximize energy efficiency with professional cleaning services. Free estimates & satisfaction guarantee.",
   "gutter-cleaning":
     "Gutter cleaning in {location}. Protect your home from water damage with expert gutter services. Free estimates & satisfaction guarantee.",
   "house-washing":
@@ -393,8 +389,6 @@ const serviceDescriptions = {
     "Pressure washing in {location}. Expert cleaning for driveways, patios & walkways. Professional results with satisfaction guarantee.",
   "paver-sealing":
     "Paver sealing in {location}. Protect & enhance pavers with professional sealing services. Prevent fading & damage with guarantee.",
-  "light-fixture-cleaning":
-    "Light fixture cleaning in {location}. Maximize brightness with professional cleaning services. Expert results guaranteed.",
   "screen-cleaning":
     "Screen cleaning in {location}. Restore clarity & improve airflow with professional screen services. Satisfaction guaranteed.",
   "window-cleaning":
@@ -543,13 +537,11 @@ export const generateServiceHeroAlt = (serviceSlug, cityName) => {
   const location = cityName ? capitalizeString(cityName) : "South Florida";
 
   const serviceImageDescriptions = {
-    "solar-panel-cleaning": `solar panel cleaning service in ${location}`,
     "gutter-cleaning": `gutter cleaning professionals in ${location}`,
     "house-washing": `house washing and pressure washing in ${location}`,
     "roof-cleaning": `roof cleaning service in ${location}`,
     "pressure-washing": `pressure washing service in ${location}`,
     "paver-sealing": `paver sealing and restoration in ${location}`,
-    "light-fixture-cleaning": `light fixture cleaning service in ${location}`,
     "screen-cleaning": `screen cleaning professionals in ${location}`,
     "window-cleaning": `professional window cleaning in ${location}`,
     "soft-washing": `soft washing service in ${location}`,

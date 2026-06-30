@@ -1,4 +1,3 @@
-import service1 from "@/assets/serviceData/service1.webp";
 import windowCleaningHero from "@/assets/serviceData/window-cleaning-new.jpeg";
 import postConstructionHero from "@/assets/serviceData/post-construction.webp";
 import rainShieldHero from "@/assets/serviceData/rain-shield.webp";
@@ -7,92 +6,10 @@ import service5 from "@/assets/serviceData/service5.webp";
 import roofWashingHero from "@/assets/serviceData/roof-washing.webp";
 import service7 from "@/assets/serviceData/service7.webp";
 import service8 from "@/assets/serviceData/service8.webp";
-import service9 from "@/assets/serviceData/service9.webp";
 import service10 from "@/assets/serviceData/service10.webp";
 import service11 from "@/assets/serviceData/service11.webp";
 
 const Services = {
-  "solar-panel-cleaning": {
-    hero: [
-      "Solar Panel",
-      "Cleaning",
-      service1,
-      "Dirty solar panels reduce energy efficiency by blocking sunlight absorption. Our solar panel cleaning service ensures maximum performance by carefully removing all of nature's buildup that can affect energy output. Regular cleaning helps maintain optimal energy production.",
-    ],
-    included: [
-      {
-        number: "01",
-        title: "Thorough Panel Cleaning",
-        text: "Using purified water we remove dirt, dust, pollen, and bird droppings without causing damage.",
-      },
-      {
-        number: "02",
-        title: "Hard Water & Mineral Deposit Removal",
-        text: "Eliminates buildup that can impact energy absorption.",
-      },
-      {
-        number: "03",
-        title: "Spotless Rinse",
-        text: "Using purified reverse osmosis water we rinse all debris to bring them back looking new.",
-      },
-      {
-        number: "04",
-        title: "Purified water cleaning method",
-        text: "Safe for panels, your home, and the environment.",
-      },
-    ],
-    essential: [
-      {
-        number: "01.",
-        title: "Increases Energy Efficiency",
-        text: "Clean panels absorb more sunlight, boosting power output.",
-      },
-      {
-        number: "02.",
-        title: "Extends Panel Lifespan",
-        text: "Prevents damage caused by dirt buildup and environmental debris.",
-      },
-      {
-        number: "03.",
-        title: "Reduces Energy Costs",
-        text: "Higher efficiency means better savings on your electricity bill.",
-      },
-      {
-        number: "04.",
-        title: "Protects Your Warranty",
-        text: "Many manufacturers require regular cleaning for warranty compliance.",
-      },
-    ],
-    nearyou: [
-      {
-        number: "01",
-        title: "Residential Solar Panel Maintenance",
-        text: "Routine cleaning to maximize efficiency for homeowners.",
-      },
-      {
-        number: "02",
-        title: "Commercial Solar Panel Cleaning",
-        text: "Keep rooftop solar arrays on offices and warehouses clean and producing at full capacity.",
-      },
-      {
-        number: "03",
-        title: "Post-Construction Solar Cleaning",
-        text: "Remove construction dust, debris, and stickers from newly installed solar panels.",
-      },
-      {
-        number: "04",
-        title: "Hard Water & Mineral Deposit Removal",
-        text: "Cleaning panels affected by sprinkler overspray or rain residue.",
-      },
-      {
-        number: "05",
-        title: "Seasonal Cleaning & Maintenance ",
-        text: "Preparing for peak energy production in the summer or after winter.",
-      },
-    ],
-    quote:
-      "Maximize energy Efficiency with our professional solar panel cleaning services.",
-  },
   "gutter-cleaning": {
     hero: [
       "Gutter",
@@ -480,85 +397,6 @@ const Services = {
         number: "05",
         title: "New Surface Protection",
         text: "Locks in the clean, new look of pavers, travertine, or stone while extending surface life and reducing maintenance.",
-      },
-    ],
-  },
-  "light-fixture-cleaning": {
-    hero: [
-      "Light Fixture",
-      "Cleaning",
-      service9,
-      "Over time, dust and grime can limit the brightness of your light fixtures, reducing their effectiveness. Our light fixture cleaning service ensures your interior and exterior lights shine to their full potential by carefully removing dirt from chandeliers, sconces, lanterns, and more.",
-    ],
-    included: [
-      {
-        number: "01",
-        title: "Interior & Exterior Light Fixtures",
-        text: "Chandeliers, pendant lights, sconces, recessed lighting, and more.",
-      },
-      {
-        number: "02",
-        title: "Ceiling Fans & Mounted Fixtures",
-        text: "Removal of dust, dirt, and buildup from all ceiling-mounted lighting.",
-      },
-      {
-        number: "03",
-        title: "Outdoor Lighting",
-        text: "Cleaning of lanterns, porch lights, and pathway lighting for improved visibility and aesthetics.",
-      },
-      {
-        number: "04",
-        title: "Bulb & Cover Cleaning",
-        text: "Enhances light output and longevity by eliminating dust and residue.",
-      },
-    ],
-    essential: [
-      {
-        number: "01.",
-        title: "Enhances Illumination",
-        text: "Ensures your space remains bright and inviting",
-      },
-      {
-        number: "02.",
-        title: "Improves Energy Efficiency",
-        text: "Clean fixtures allow bulbs to shine at full capacity.",
-      },
-      {
-        number: "03.",
-        title: "Extends Fixture Lifespan",
-        text: "Reduces wear and tear from accumulated dirt and debris",
-      },
-      {
-        number: "04.",
-        title: "Improves Safety",
-        text: "Clean fixtures reduce fire risk from dust-covered bulbs and overheated housings.",
-      },
-    ],
-    nearyou: [
-      {
-        number: "01",
-        title: "Chandelier Cleaning Services",
-        text: "Restore sparkle and clarity to chandeliers in homes, hotels, and event venues.",
-      },
-      {
-        number: "02",
-        title: "High Ceiling Light Fixture Cleaning",
-        text: "Safely clean hard-to-reach lights in foyers, vaulted ceilings, churches, and commercial spaces.",
-      },
-      {
-        number: "03",
-        title: "Outdoor Light Fixture Cleaning",
-        text: "Remove dirt, bugs, and buildup from porch lights, wall sconces, and exterior lighting.",
-      },
-      {
-        number: "04",
-        title: "Commercial Light Cleaning ",
-        text: "Keep office, retail, and restaurant lighting clean for better appearance and brighter space.",
-      },
-      {
-        number: "05",
-        title: "Improve Light Output & Energy Efficiency",
-        text: "Clear dust and grime from bulbs and lenses to maximize brightness and reduce energy use.",
       },
     ],
   },
