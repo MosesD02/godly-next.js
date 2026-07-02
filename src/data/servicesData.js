@@ -6,8 +6,8 @@ import service5 from "@/assets/serviceData/service5.webp";
 import roofWashingHero from "@/assets/serviceData/roof-washing.webp";
 import travertineSealingHero from "@/assets/serviceData/travertine-sealing.webp";
 import concreteSealingHero from "@/assets/serviceData/concrete-sealing.webp";
+import paverSealingHero from "@/assets/serviceData/paver-sealing.webp";
 import service7 from "@/assets/serviceData/service7.webp";
-import service8 from "@/assets/serviceData/service8.webp";
 import service10 from "@/assets/serviceData/service10.webp";
 import service11 from "@/assets/serviceData/service11.webp";
 
@@ -23,17 +23,17 @@ const Services = {
     included: [
       {
         number: "01",
-        title: "inspection and prep",
+        title: "Inspection and Prep",
         text: "Check gutters for clogs and debris.",
       },
       {
         number: "02",
         title: "Remove Debris",
-        text: "Clear out leaves, twigs, and buildup —bag and dispose of the mess properly",
+        text: "Clear out leaves, twigs, and buildup — bag and dispose of the mess properly.",
       },
       {
         number: "03",
-        title: "FLUSH & UNCLOG",
+        title: "Flush & Unclog",
         text: "Flush gutters and downspouts, making sure everything drains freely.",
       },
     ],
@@ -89,7 +89,7 @@ const Services = {
       "House",
       "Washing",
       service5,
-      "Over time, your home's exterior accumulate layers of pollen, dirt, mold, and mildew, making it look old and run down. Our house washing service gently removes these contaminants using soft-washing techniques that clean effectively without damaging your home's finish.",
+      "Over time, your home's exterior accumulates layers of pollen, dirt, mold, and mildew, making it look old and run down. Our house washing service gently removes these contaminants using soft-washing techniques that clean effectively without damaging your home's finish.",
     ],
     included: [
       {
@@ -131,7 +131,7 @@ const Services = {
       },
       {
         number: "04.",
-        title: "Healthier Living Enviorment",
+        title: "Healthier Living Environment",
         text: "Eliminates allergens and pollutants that can affect air quality.",
       },
     ],
@@ -143,7 +143,7 @@ const Services = {
       },
       {
         number: "02",
-        title: "House Wshing before Selling",
+        title: "House Washing before Selling",
         text: " Increase home value and attract more buyers.",
       },
       {
@@ -327,7 +327,7 @@ const Services = {
     hero: [
       "Paver",
       "Sealing",
-      service8,
+      paverSealingHero,
       "Pavers fade, stain, and shift over time due to weather, moisture, and wear. Our professional brick and concrete paver sealing service protects your driveway, patio, or walkway—enhancing color, preventing damage, and keeping your outdoor surfaces looking like new.",
     ],
     included: [

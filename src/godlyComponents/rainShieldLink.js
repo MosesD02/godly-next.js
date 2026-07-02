@@ -18,6 +18,16 @@ const ANCHORS = [
   "RainShield, our invisible water-repelling treatment",
 ];
 
+/**
+ * Per-page phrasing overrides, keyed by `${citySlug}/${slug}`. Use when a page's
+ * copy is dictated by the source content doc rather than the rotating anchor pool.
+ * `anchor` is the linked text; `suffix` is the (unlinked) text after the link.
+ */
+const PHRASE_OVERRIDES = {
+  // /window-cleaning regional hub — doc copy ends "Ask us about RainShield too."
+  "south-florida/window-cleaning": { anchor: "RainShield", suffix: " too." },
+};
+
 /** Service slugs that get the inline RainShield link (window-cleaning pages only). */
 export const RAIN_SHIELD_INLINE_LINK_SLUGS = new Set([
   "window-cleaning",
@@ -43,8 +53,10 @@ export default function RainShieldLink({
   slug = "",
   className,
 }) {
+  const override = PHRASE_OVERRIDES[`${citySlug}/${slug}`];
   const idx = hashSeed(`${citySlug}/${slug}`) % ANCHORS.length;
-  const anchor = ANCHORS[idx];
+  const anchor = override ? override.anchor : ANCHORS[idx];
+  const suffix = override ? override.suffix : ".";
 
   return (
     <>
@@ -59,7 +71,7 @@ export default function RainShieldLink({
       >
         {anchor}
       </Link>
-      .
+      {suffix}
     </>
   );
 }

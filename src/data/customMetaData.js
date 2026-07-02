@@ -1459,9 +1459,9 @@ export const customMetaData = {
           "Our soft wash house washing in South Florida lifts away dirt, mildew, and stains from your siding for a fresh, bright exterior that looks like new again.",
       },
       "roof-cleaning": {
-        title: "Roof Washing in South Florida - Call Roof Cleaning Experts",
+        title: "Roof Cleaning in South Florida | Godly Windows",
         description:
-          "Protect your shingles with our safe roof washing in South Florida. We clean away algae and stains with soft wash techniques that renew your roof's appearance.",
+          "Professional roof cleaning in South Florida. We soft wash shingle, tile, and metal roofs to remove algae, moss, and black streaks — no pressure damage, satisfaction guaranteed.",
       },
       "pressure-washing": {
         title: "Pressure Washing Service in South Florida - Godly Windows",
