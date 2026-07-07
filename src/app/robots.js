@@ -8,12 +8,7 @@ export default function robots() {
       allow: "/",
       // Next static assets + opengraph-image routes: block to save crawl budget;
       // OG responses also send X-Robots-Tag: noindex in next.config.ts
-      disallow: [
-        "/private/",
-        "/landing/",
-        "/_next/static/",
-        "/*opengraph-image*",
-      ],
+      disallow: ["/private/", "/landing/", "/*opengraph-image*"],
     },
     sitemap: `${BASE_URL.replace(/\/$/, "")}/sitemap.xml`,
   };
