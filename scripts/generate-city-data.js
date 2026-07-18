@@ -291,16 +291,48 @@ const imports = [];
 const entries = [];
 for (const city of sortedCities) {
   const camelName = city.replace(/-(\w)/g, (_, c) => c.toUpperCase());
+  const routeCity = city === "miramar-fl" ? "miramar" : city;
   imports.push(`import { ${camelName} } from "./${city}";`);
-  entries.push(`  "${city}": ${camelName},`);
+  entries.push(`  "${routeCity}": ${camelName},`);
 }
+
+// South Florida is a hand-maintained regional fallback rather than a content
+// batch entry, so keep it in the generated index when regenerating city data.
+if (!sortedCities.includes("south-florida")) {
+  imports.push('import { southFlorida } from "./south-florida";');
+  entries.push('  "south-florida": southFlorida,');
+}
+
 
 const indexContent = `${COMMENT_HEADER}
 ${imports.join("\n")}
+import { sealingFaqsByCity } from "./sealingFaqs";
 
-export const cityServicesData = {
+const baseCityServicesData = {
 ${entries.join("\n")}
 };
+
+function mergeSealingFaqs(citySlug, services) {
+  const sealingServices = sealingFaqsByCity[citySlug];
+  if (!sealingServices) return services;
+
+  return {
+    ...services,
+    ...Object.fromEntries(
+      Object.entries(sealingServices).map(([serviceSlug, faqOverride]) => [
+        serviceSlug,
+        { ...(services[serviceSlug] ?? {}), ...faqOverride },
+      ]),
+    ),
+  };
+}
+
+export const cityServicesData = Object.fromEntries(
+  Object.entries(baseCityServicesData).map(([citySlug, services]) => [
+    citySlug,
+    mergeSealingFaqs(citySlug, services),
+  ]),
+);
 `;
 
 fs.writeFileSync(INDEX_FILE, indexContent, "utf-8");

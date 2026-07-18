@@ -38,8 +38,9 @@ import { sunrise } from "./sunrise";
 import { tamarac } from "./tamarac";
 import { westPark } from "./west-park";
 import { weston } from "./weston";
+import { sealingFaqsByCity } from "./sealingFaqs";
 
-export const cityServicesData = {
+const baseCityServicesData = {
   "boca-raton": bocaRaton,
   "coconut-creek": coconutCreek,
   "cooper-city": cooperCity,
@@ -68,3 +69,25 @@ export const cityServicesData = {
   "west-park": westPark,
   weston: weston,
 };
+
+function mergeSealingFaqs(citySlug, services) {
+  const sealingServices = sealingFaqsByCity[citySlug];
+  if (!sealingServices) return services;
+
+  return {
+    ...services,
+    ...Object.fromEntries(
+      Object.entries(sealingServices).map(([serviceSlug, faqOverride]) => [
+        serviceSlug,
+        { ...(services[serviceSlug] ?? {}), ...faqOverride },
+      ]),
+    ),
+  };
+}
+
+export const cityServicesData = Object.fromEntries(
+  Object.entries(baseCityServicesData).map(([citySlug, services]) => [
+    citySlug,
+    mergeSealingFaqs(citySlug, services),
+  ]),
+);
