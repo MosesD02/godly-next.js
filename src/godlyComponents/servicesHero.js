@@ -30,7 +30,7 @@ const ServicesHero = ({
   return (
     <div className="paper-bg-16 mt-17 flex flex-col items-center justify-center gap-20 bg-[#252525] px-7.5 py-10.5 md:mt-14 md:py-25">
       <h1 className="sr-only">{generateServiceH1(slug, cityName)}</h1>
-      <div className="flex w-full max-w-full flex-col items-center justify-center gap-4">
+      <div className="flex flex-col items-center justify-center gap-4">
         <div
           className={cn(
             "flex w-full max-w-full items-center justify-center gap-3",
@@ -48,59 +48,64 @@ const ServicesHero = ({
             <Star />
           </div>
         </div>
-        <div
-          className={cn(
-            "text-grain trim flex flex-col flex-wrap items-center bg-white! pb-0! text-center text-[64px] tracking-[5.23px] md:flex-row md:text-center md:text-[88px] md:leading-normal",
-            Services[slug]["hero"][0].split(" ").length === 1 && "md:mr-24",
-          )}
-          data-text={Services[slug]["hero"][0]}
-        >
-          <span className="hidden md:inline-block">
-            {Services[slug]["hero"][0]}
-          </span>
-          <div className="md:hidden">
-            {Services[slug]["hero"][0].split(" ").map((word, index) => (
-              <span
-                key={index}
+        <div className="flex w-fit max-w-full flex-col items-center gap-4">
+          <div
+            className={cn(
+              "text-grain trim flex flex-col flex-wrap items-center bg-white! pb-0! text-center text-[64px] tracking-[5.23px] md:flex-row md:text-center md:text-[88px] md:leading-normal",
+              Services[slug]["hero"][0].split(" ").length === 1 &&
+                "md:mr-24",
+            )}
+            data-text={Services[slug]["hero"][0]}
+          >
+            <span className="hidden md:inline-block">
+              {Services[slug]["hero"][0]}
+            </span>
+            <div className="md:hidden">
+              {Services[slug]["hero"][0].split(" ").map((word, index) => (
+                <span
+                  key={index}
+                  className={cn(
+                    "trim block",
+                    Services[slug]["hero"].length > 1 &&
+                      "last:mt-4 md:last:mt-0",
+                  )}
+                >
+                  {word}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="flex w-full flex-col md:relative md:w-full">
+            <div className="relative flex w-full items-end">
+              <div
                 className={cn(
-                  "trim block",
-                  Services[slug]["hero"].length > 1 && "last:mt-4 md:last:mt-0",
+                  "trim absolute top-1 left-0 z-10 max-h-fit w-full rotate-[-6.668deg] overflow-visible text-end tracking-wide md:top-9 md:left-3",
+                  Services[slug]["hero"][0].split(" ").length === 1 &&
+                    "md:ms-12",
                 )}
               >
-                {word}
-              </span>
-            ))}
-          </div>
-        </div>
-        <div className="flex w-full flex-col md:relative md:w-full">
-          <div className="relative flex w-full items-end">
-            <div
-              className={cn(
-                "trim absolute top-1 left-0 z-10 max-h-fit w-full rotate-[-6.668deg] overflow-visible text-end tracking-wide md:top-9 md:left-3",
-                Services[slug]["hero"][0].split(" ").length === 1 && "md:ms-12",
-              )}
-            >
-              <span className="absolute top-60 right-25 hidden max-w-25 rotate-[6.668deg] text-left font-['marlton'] text-base font-normal tracking-[2px] text-[#FDE4C8] md:-top-5 md:-right-30 md:block">
+                <span className="absolute top-60 right-25 hidden max-w-25 rotate-[6.668deg] text-left font-['marlton'] text-base font-normal tracking-[2px] text-[#FDE4C8] md:-top-5 md:-right-30 md:block">
+                  {displayCity}
+                </span>
+                <span
+                  className={cn(
+                    "text-grain trim z-10 inline-block bg-[#FDE4C8]! pb-6 text-end font-['luminaire-script']! text-[48px] font-normal md:pb-12 md:text-[88px]",
+                  )}
+                  data-text={`${Services[slug]["hero"][1]} `}
+                  style={{
+                    WebkitTextStrokeWidth: "0.5px",
+                    strokeLinecap: "round",
+                    WebkitTextStrokeColor: "#1F1D1D",
+                    paintOrder: "stroke",
+                  }}
+                >
+                  {Services[slug]["hero"][1]}
+                </span>
+              </div>
+              <span className="absolute top-6 right-0 max-w-25 font-['marlton'] text-base/tight font-normal tracking-[2px] text-[#FDE4C8] md:hidden">
                 {displayCity}
               </span>
-              <span
-                className={cn(
-                  "text-grain trim z-10 inline-block bg-[#FDE4C8]! pb-6 text-end font-['luminaire-script']! text-[48px] font-normal md:pb-12 md:text-[88px]",
-                )}
-                data-text={`${Services[slug]["hero"][1]} `}
-                style={{
-                  WebkitTextStrokeWidth: "0.5px",
-                  strokeLinecap: "round",
-                  WebkitTextStrokeColor: "#1F1D1D",
-                  paintOrder: "stroke",
-                }}
-              >
-                {Services[slug]["hero"][1]}
-              </span>
             </div>
-            <span className="absolute top-6 right-0 max-w-25 font-['marlton'] text-base/tight font-normal tracking-[2px] text-[#FDE4C8] md:hidden">
-              {displayCity}
-            </span>
           </div>
         </div>
       </div>
