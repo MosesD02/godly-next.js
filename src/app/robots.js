@@ -6,7 +6,6 @@ export default function robots() {
     rules: {
       userAgent: "*",
       allow: "/",
-      // Next static assets + opengraph-image routes: block to save crawl budget;
       // OG responses also send X-Robots-Tag: noindex in next.config.ts
       disallow: ["/private/", "/landing/", "/*opengraph-image*"],
     },

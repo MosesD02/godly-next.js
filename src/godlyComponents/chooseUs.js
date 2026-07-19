@@ -467,8 +467,15 @@ const chooseUsData = {
   ],
 };
 
-const ChooseUs = ({ slug }) => {
-  const services = chooseUsData[slug] ?? chooseUsData["solar-panel-cleaning"];
+const ChooseUs = ({ slug, servicesOverride }) => {
+  const defaultServices =
+    chooseUsData[slug] ?? chooseUsData["solar-panel-cleaning"];
+  const services = servicesOverride?.length
+    ? servicesOverride.map((service, index) => ({
+        ...service,
+        svg: service.svg ?? defaultServices[index % defaultServices.length].svg,
+      }))
+    : defaultServices;
 
   return (
     <div>

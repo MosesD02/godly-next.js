@@ -4,6 +4,7 @@ import { citiesMap } from "@/data/cities";
 import {
   generateServiceTitle,
   generateServiceDescription,
+  generateServiceKeywords,
   serviceMetaTitles,
   getPhoneForCity,
   getOfficePostalAddressForCitySlug,
@@ -38,14 +39,7 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
-    keywords: [
-      slug.replace(/-/g, " "),
-      cityName || "South Florida",
-      "professional cleaning",
-      "exterior services",
-      "residential",
-      "commercial",
-    ],
+    keywords: generateServiceKeywords(slug, cityName),
     openGraph: {
       title,
       description,

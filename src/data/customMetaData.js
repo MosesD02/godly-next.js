@@ -1,6 +1,8 @@
 // Custom meta titles and descriptions for specific cities and services
 // This data takes precedence over the template-generated meta data
 
+import { goldenBeachMeta } from "./cityServicesData/golden-beach";
+
 export const customMetaData = {
   "boca-raton": {
     cityPage: {
@@ -1194,6 +1196,9 @@ export const customMetaData = {
           "Dirty window screens block airflow & light. Our screen cleaning in Coral Springs removes grime and allergens fast. Local, efficient, and done right. Call today.",
       },
     },
+  },
+  "golden-beach": {
+    services: goldenBeachMeta,
   },
   "hallandale-beach": {
     cityPage: {

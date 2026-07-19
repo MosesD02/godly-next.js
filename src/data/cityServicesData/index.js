@@ -19,6 +19,7 @@ import { davie } from "./davie";
 import { deerfieldBeach } from "./deerfield-beach";
 import { delrayBeach } from "./delray-beach";
 import { fortLauderdale } from "./fort-lauderdale";
+import { goldenBeach } from "./golden-beach";
 import { hallandaleBeach } from "./hallandale-beach";
 import { hillsboroBeach } from "./hillsboro-beach";
 import { hollywood } from "./hollywood";
@@ -49,6 +50,7 @@ const baseCityServicesData = {
   "deerfield-beach": deerfieldBeach,
   "delray-beach": delrayBeach,
   "fort-lauderdale": fortLauderdale,
+  "golden-beach": goldenBeach,
   "hallandale-beach": hallandaleBeach,
   "hillsboro-beach": hillsboroBeach,
   hollywood: hollywood,

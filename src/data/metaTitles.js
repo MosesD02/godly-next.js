@@ -52,6 +52,7 @@ export function citySlugRendersServicePageLocalBusiness(citySlug) {
 export const cityPhoneMap = {
   "(954) 852-5326": [
     "fort-lauderdale",
+    "golden-beach",
     "lighthouse-point",
     "pompano-beach",
     "deerfield-beach",
@@ -121,6 +122,7 @@ const phoneToGoogleUrl = {
 const FT_LAUDERDALE_OFFICE_SLUGS = new Set([
   "pompano-beach",
   "fort-lauderdale",
+  "golden-beach",
   "hollywood",
   "oakland-park",
   "sunrise",
@@ -434,6 +436,25 @@ export const generateServiceDescription = (serviceSlug, cityName) => {
 
   // Replace location placeholder with actual city
   return baseDescription.replace("{location}", location);
+};
+
+export const generateServiceKeywords = (serviceSlug, cityName) => {
+  const citySlug = findCitySlug(cityName);
+  const customKeywords =
+    citySlug && customMetaData[citySlug]?.services?.[serviceSlug]?.keywords;
+
+  if (Array.isArray(customKeywords) && customKeywords.length > 0) {
+    return customKeywords;
+  }
+
+  return [
+    serviceSlug?.replace(/-/g, " ") || "professional cleaning",
+    cityName || "South Florida",
+    "professional cleaning",
+    "exterior services",
+    "residential",
+    "commercial",
+  ];
 };
 
 // Generate SEO-optimized meta description for city home pages

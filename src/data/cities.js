@@ -8,6 +8,7 @@ export const citiesMap = {
   "deerfield-beach": "DEERFIELD BEACH",
   "delray-beach": "DELRAY BEACH",
   "fort-lauderdale": "FORT LAUDERDALE",
+  "golden-beach": "GOLDEN BEACH",
   "hallandale-beach": "HALLANDALE BEACH",
   "hillsboro-beach": "HILLSBORO BEACH",
   hollywood: "HOLLYWOOD",

@@ -21,6 +21,9 @@ export default function ServicesPage({
   cityData = {},
   relatedPosts,
 }) {
+  const interiorSection =
+    cityData.interiorSection ?? Services[slug]?.interiorSection;
+
   return (
     <WebsiteLayout>
       <CitySync city={city} />
@@ -29,6 +32,7 @@ export default function ServicesPage({
         heroOverride={cityData.hero}
         cityName={cityName}
         citySlug={city}
+        eyebrowOverride={cityData.eyebrow}
       />
       <ServiceIncludes
         slug={slug}
@@ -46,14 +50,14 @@ export default function ServicesPage({
         nearYouOverride={cityData.nearYou}
         cityName={cityName}
       />
-      <ChooseUs slug={slug} />
-      {Services[slug]?.interiorSection && (
+      <ChooseUs slug={slug} servicesOverride={cityData.chooseUs} />
+      {interiorSection && (
         <section className="paper-bg-16 flex flex-col items-center bg-[#ebded1] px-6 py-14 text-center md:px-24">
           <h2 className="trim mb-6 text-[32px] font-normal tracking-wide text-[#191717] md:text-[48px]">
-            {Services[slug].interiorSection.heading}
+            {interiorSection.heading}
           </h2>
           <div className="flex w-full max-w-3xl flex-col gap-4">
-            {Services[slug].interiorSection.body.map((paragraph, i) => (
+            {interiorSection.body.map((paragraph, i) => (
               <p
                 key={i}
                 className="font-['satoshi-regular'] text-base leading-relaxed text-[#3d3834]"

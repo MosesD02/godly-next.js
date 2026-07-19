@@ -12,7 +12,13 @@ import RainShieldLink, {
 
 // cityName is passed as a prop from the server so the correct value is in the
 // initial SSR HTML.
-const ServicesHero = ({ slug, heroOverride, cityName, citySlug }) => {
+const ServicesHero = ({
+  slug,
+  heroOverride,
+  cityName,
+  citySlug,
+  eyebrowOverride,
+}) => {
   const quotePhone = getPhoneNumber(cityName ?? "SOUTH FLORIDA");
   const quoteTel = quotePhone.replace(/\D/g, "");
   const displayCity = cityName
@@ -26,12 +32,17 @@ const ServicesHero = ({ slug, heroOverride, cityName, citySlug }) => {
   return (
     <div className="paper-bg-16 mt-17 flex flex-col items-center justify-center gap-20 bg-[#252525] px-7.5 py-10.5 md:mt-14 md:py-25">
       <h1 className="sr-only">{generateServiceH1(slug, cityName)}</h1>
-      <div className="flex flex-col items-center justify-center gap-4">
-        <div className="flex items-center justify-start gap-3">
-          <span className="font-marlton trim text-base tracking-[2.07px] text-[#FDE4C8] md:text-[20.704px]">
-            TOP RATED
+      <div className="flex w-full max-w-full flex-col items-center justify-center gap-4">
+        <div
+          className={cn(
+            "flex w-full max-w-full items-center justify-center gap-3",
+            eyebrowOverride ? "flex-col sm:flex-row" : "flex-row",
+          )}
+        >
+          <span className="font-marlton trim max-w-full text-center text-xs tracking-[2.07px] text-[#FDE4C8] sm:text-base md:text-[20.704px]">
+            {eyebrowOverride ?? "TOP RATED"}
           </span>
-          <div className="trim flex items-center gap-[3.774px]">
+          <div className="trim flex shrink-0 items-center gap-[3.774px]">
             <Star className="" />
             <Star />
             <Star />

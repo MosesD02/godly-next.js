@@ -303,6 +303,12 @@ if (!sortedCities.includes("south-florida")) {
   entries.push('  "south-florida": southFlorida,');
 }
 
+// Golden Beach uses the service-page copy supplied in its dedicated brief,
+// so preserve that hand-maintained module when regenerating batch city data.
+if (!sortedCities.includes("golden-beach")) {
+  imports.push('import { goldenBeach } from "./golden-beach";');
+  entries.push('  "golden-beach": goldenBeach,');
+}
 
 const indexContent = `${COMMENT_HEADER}
 ${imports.join("\n")}
