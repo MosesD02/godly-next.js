@@ -28,7 +28,8 @@ export async function generateMetadata({ searchParams }) {
     title: "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows",
     description: generateServiceDescription("rain-shield", cityName),
     openGraph: {
-      title: "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows",
+      title:
+        "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows",
       description: generateServiceDescription("rain-shield", cityName),
       url: `${BASE_URL}/rain-shield`,
       siteName: "Godly Windows",
@@ -45,7 +46,8 @@ export async function generateMetadata({ searchParams }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows",
+      title:
+        "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows",
       description: generateServiceDescription("rain-shield", cityName),
       images: [`${BASE_URL}/rain-shield/opengraph-image`],
     },

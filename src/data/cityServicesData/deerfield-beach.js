@@ -1,45 +1,38 @@
 export const deerfieldBeach = {
   "exterior-window-cleaning": {
-    hero:
-      "Salt fog and east breezes hit the outside of Deerfield Beach glass first—ocean-facing panes, balcony railings, and screens before mist ever reaches your couch. We stay outdoors, rinsing exterior frames and tracks so corrosive film lifts off street-side and dune-side elevations.",
+    hero: "Salt fog and east breezes hit the outside of Deerfield Beach glass first—ocean-facing panes, balcony railings, and screens before mist ever reaches your couch. We stay outdoors, rinsing exterior frames and tracks so corrosive film lifts off street-side and dune-side elevations.",
     included: [
       {
         number: "01",
         title: "Salt and sand prep",
-        text:
-          "Oceanfront glass starts with a gentle pre-rinse — salt grit can scratch if washed dry.",
+        text: "Oceanfront glass starts with a gentle pre-rinse — salt grit can scratch if washed dry.",
       },
       {
         number: "02",
         title: "Pure-water coastal clean",
-        text:
-          "Pure-water pole systems rinse salt off without leaving mineral spots, every story of the home.",
+        text: "Pure-water pole systems rinse salt off without leaving mineral spots, every story of the home.",
       },
       {
         number: "03",
         title: "Frame drain and hardware rinse",
-        text:
-          "Salt builds up in hinges, tracks, and sill drains — we rinse all of it, not just the glass.",
+        text: "Salt builds up in hinges, tracks, and sill drains — we rinse all of it, not just the glass.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "Salt and sand off your glass",
-        text:
-          "Coastal exteriors take salt spray, sand grit, and east-wind mist every day. Without regular cleans, it etches the glass inside of a year.",
+        text: "Coastal exteriors take salt spray, sand grit, and east-wind mist every day. Without regular cleans, it etches the glass inside of a year.",
       },
       {
         number: "02.",
         title: "Hardware that keeps working",
-        text:
-          "Salt corrodes hinges, rollers, and locks. Our exterior cleans rinse the hardware — meaning tracks that still slide and locks that still lock.",
+        text: "Salt corrodes hinges, rollers, and locks. Our exterior cleans rinse the hardware — meaning tracks that still slide and locks that still lock.",
       },
       {
         number: "03.",
         title: "Storm-ready, season-ready",
-        text:
-          "Oceanfront homes need more frequent service than inland ones. We build schedules that actually fit coastal conditions — not a generic quarterly.",
+        text: "Oceanfront homes need more frequent service than inland ones. We build schedules that actually fit coastal conditions — not a generic quarterly.",
       },
     ],
     faqs: [
@@ -75,33 +68,27 @@ export const deerfieldBeach = {
     nearYou: [
       {
         title: "Oceanfront exterior routines",
-        text:
-          "Bi-weekly or monthly exterior service for beachfront Deerfield properties — the schedule salt conditions actually need.",
+        text: "Bi-weekly or monthly exterior service for beachfront Deerfield properties — the schedule salt conditions actually need.",
       },
       {
         title: "Beach-block condo exteriors",
-        text:
-          "HOA-ready exterior service for coastal condo associations.",
+        text: "HOA-ready exterior service for coastal condo associations.",
       },
       {
         title: "Hurricane-shutter and impact-glass cleaning",
-        text:
-          "Specialist cleaning for storm-rated assemblies.",
+        text: "Specialist cleaning for storm-rated assemblies.",
       },
       {
         title: "Seasonal open-up and close-down cleans",
-        text:
-          "Snowbird schedules — we prep the exterior before you arrive and reset it when you leave.",
+        text: "Snowbird schedules — we prep the exterior before you arrive and reset it when you leave.",
       },
       {
         title: "Hardware rinse and salt treatment",
-        text:
-          "Targeted service for tracks, rollers, and locks on coastal glass.",
+        text: "Targeted service for tracks, rollers, and locks on coastal glass.",
       },
       {
         title: "Post-storm full exterior reset",
-        text:
-          "After a coastal storm, comprehensive grit, salt, and debris removal.",
+        text: "After a coastal storm, comprehensive grit, salt, and debris removal.",
       },
     ],
   },
@@ -324,46 +311,39 @@ export const deerfieldBeach = {
     ],
   },
   "interior-window-cleaning": {
-    hero:
-      "A few blocks from the Atlantic, the issues indoors are different: AC condensation on inside panes, sandy feet smudging sliders, and film on the glass you open after a beach day. We clean interior sashes, tracks, and beach-entry doors with contained water—brightening the view from the sofa, not the roofline.",
+    hero: "A few blocks from the Atlantic, the issues indoors are different: AC condensation on inside panes, sandy feet smudging sliders, and film on the glass you open after a beach day. We clean interior sashes, tracks, and beach-entry doors with contained water—brightening the view from the sofa, not the roofline.",
     included: [
       {
         number: "01",
         title: "Coastal dust removal",
-        text:
-          "East-facing homes get a fine, salty dust that coats indoor sills — we take it out first.",
+        text: "East-facing homes get a fine, salty dust that coats indoor sills — we take it out first.",
       },
       {
         number: "02",
         title: "Interior hand-clean",
-        text:
-          "Every pane gets a careful hand pass, so no drips reach your floors.",
+        text: "Every pane gets a careful hand pass, so no drips reach your floors.",
       },
       {
         number: "03",
         title: "Frame, sill, and track detail",
-        text:
-          "All the hardware around the glass gets wiped as part of the visit.",
+        text: "All the hardware around the glass gets wiped as part of the visit.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "Ocean views you can actually see",
-        text:
-          "Salt air haze doesn’t just sit on outside glass — it works its way inside too. A real interior clean restores the view you bought into.",
+        text: "Salt air haze doesn’t just sit on outside glass — it works its way inside too. A real interior clean restores the view you bought into.",
       },
       {
         number: "02.",
         title: "Less salt on your finishes",
-        text:
-          "Coastal dust carries salt. Pulling it off your interior sills keeps it out of your finishes, hinges, and HVAC intake.",
+        text: "Coastal dust carries salt. Pulling it off your interior sills keeps it out of your finishes, hinges, and HVAC intake.",
       },
       {
         number: "03.",
         title: "Safe, tidy work in every room",
-        text:
-          "Covered floors, contained water, and a team that’s used to working in beach-home environments.",
+        text: "Covered floors, contained water, and a team that’s used to working in beach-home environments.",
       },
     ],
     faqs: [
@@ -399,33 +379,27 @@ export const deerfieldBeach = {
     nearYou: [
       {
         title: "Oceanfront home interiors",
-        text:
-          "Specialist coastal interior service — the most careful hand in Deerfield.",
+        text: "Specialist coastal interior service — the most careful hand in Deerfield.",
       },
       {
         title: "Beach-block condo interiors",
-        text:
-          "Targeted inside-glass work for units where the outside is restricted.",
+        text: "Targeted inside-glass work for units where the outside is restricted.",
       },
       {
         title: "Seasonal open-up cleans",
-        text:
-          "Snowbirds returning for the season — we get the interior ready before you arrive.",
+        text: "Snowbirds returning for the season — we get the interior ready before you arrive.",
       },
       {
         title: "Rental-turnover interiors",
-        text:
-          "Vacation rental operators — indoor glass reset between bookings.",
+        text: "Vacation rental operators — indoor glass reset between bookings.",
       },
       {
         title: "Post-storm interior wipe-downs",
-        text:
-          "After a coastal storm, even sealed homes get fine grit inside — we handle the follow-up.",
+        text: "After a coastal storm, even sealed homes get fine grit inside — we handle the follow-up.",
       },
       {
         title: "Sill, track, and hardware detail",
-        text:
-          "Salt buildup removal on every frame component, not just the glass.",
+        text: "Salt buildup removal on every frame component, not just the glass.",
       },
     ],
   },

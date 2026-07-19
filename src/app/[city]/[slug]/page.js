@@ -22,7 +22,9 @@ import { BASE_URL } from "@/app/lib/constants";
 
 export async function generateStaticParams() {
   const cities = Object.keys(citiesMap).filter((c) => c !== "south-florida");
-  const services = Object.keys(Services).filter((slug) => slug !== "rain-shield");
+  const services = Object.keys(Services).filter(
+    (slug) => slug !== "rain-shield",
+  );
   return cities.flatMap((city) => services.map((slug) => ({ city, slug })));
 }
 

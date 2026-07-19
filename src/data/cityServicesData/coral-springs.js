@@ -1,45 +1,38 @@
 export const coralSprings = {
   "exterior-window-cleaning": {
-    hero:
-      "Oak pollen, pine sap, and afternoon storms hit the outside of Coral Springs glass first—frames, screens, and the panes your HOA sees from the street. We stay outdoors with pure-water poles, stripping tree film and grit from exterior stories so curb lines read clean, not chalky.",
+    hero: "Oak pollen, pine sap, and afternoon storms hit the outside of Coral Springs glass first—frames, screens, and the panes your HOA sees from the street. We stay outdoors with pure-water poles, stripping tree film and grit from exterior stories so curb lines read clean, not chalky.",
     included: [
       {
         number: "01",
         title: "Exterior prep and debris clear",
-        text:
-          "Oak pollen, sap spots, and spider webs get cleared from the frame before water touches glass.",
+        text: "Oak pollen, sap spots, and spider webs get cleared from the frame before water touches glass.",
       },
       {
         number: "02",
         title: "Water-fed pole pure-water clean",
-        text:
-          "Our 40-foot pole system reaches every story without leaning a ladder on your trim.",
+        text: "Our 40-foot pole system reaches every story without leaning a ladder on your trim.",
       },
       {
         number: "03",
         title: "Sill drain and frame check",
-        text:
-          "We dry sill edges so nothing drips onto your stucco or pavers after we leave.",
+        text: "We dry sill edges so nothing drips onto your stucco or pavers after we leave.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "Pollen, sap, and tree debris — handled",
-        text:
-          "Coral Springs’ canopy drops a constant stream of pollen, pine sap, and leaf particles on your glass. Regular exterior cleans are the only way to stay ahead of it.",
+        text: "Coral Springs’ canopy drops a constant stream of pollen, pine sap, and leaf particles on your glass. Regular exterior cleans are the only way to stay ahead of it.",
       },
       {
         number: "02.",
         title: "No ladder marks on your stucco",
-        text:
-          "Pure-water pole systems let us clean up to 40 feet without a ladder on your home — a real concern on freshly painted or recently pressure-washed Coral Springs exteriors.",
+        text: "Pure-water pole systems let us clean up to 40 feet without a ladder on your home — a real concern on freshly painted or recently pressure-washed Coral Springs exteriors.",
       },
       {
         number: "03.",
         title: "Longer glass life, fewer replacements",
-        text:
-          "Untreated pollen and mineral spots etch glass permanently. Scheduled cleans keep it from ever getting there.",
+        text: "Untreated pollen and mineral spots etch glass permanently. Scheduled cleans keep it from ever getting there.",
       },
     ],
     faqs: [
@@ -75,33 +68,27 @@ export const coralSprings = {
     nearYou: [
       {
         title: "HOA-approved residential routines",
-        text:
-          "Recurring exterior service across every Coral Springs HOA — we know the paperwork.",
+        text: "Recurring exterior service across every Coral Springs HOA — we know the paperwork.",
       },
       {
         title: "Two and three-story exteriors",
-        text:
-          "Pole work to 40 feet — no ladders, no scaffold.",
+        text: "Pole work to 40 feet — no ladders, no scaffold.",
       },
       {
         title: "Commercial storefront exteriors",
-        text:
-          "Regular exterior glass for University Drive, Sample Road, and Coral Springs retail corridors.",
+        text: "Regular exterior glass for University Drive, Sample Road, and Coral Springs retail corridors.",
       },
       {
         title: "Skylight exterior cleaning",
-        text:
-          "Roof-level glass cleaned without anyone setting foot on the tile.",
+        text: "Roof-level glass cleaned without anyone setting foot on the tile.",
       },
       {
         title: "Sprinkler-stain treatment",
-        text:
-          "Hard-water overspray treated and corrected.",
+        text: "Hard-water overspray treated and corrected.",
       },
       {
         title: "Post-storm exterior wash",
-        text:
-          "After heavy weather, a thorough exterior reset on every pane.",
+        text: "After heavy weather, a thorough exterior reset on every pane.",
       },
     ],
   },
@@ -310,46 +297,39 @@ export const coralSprings = {
     ],
   },
   "interior-window-cleaning": {
-    hero:
-      "Once pollen makes it past the screens, it settles on interior sills, tracks, and the glass you look through at breakfast—not just the panes facing the yard. We clean the inside only: vacuum tracks, wipe hardware, and polish interior glass so family spaces brighten without dragging hoses through your home.",
+    hero: "Once pollen makes it past the screens, it settles on interior sills, tracks, and the glass you look through at breakfast—not just the panes facing the yard. We clean the inside only: vacuum tracks, wipe hardware, and polish interior glass so family spaces brighten without dragging hoses through your home.",
     included: [
       {
         number: "01",
         title: "Pollen and dust sweep",
-        text:
-          "Coral Springs’ tree cover means indoor sills collect pollen fast — we clear it all before the glass touches solution.",
+        text: "Coral Springs’ tree cover means indoor sills collect pollen fast — we clear it all before the glass touches solution.",
       },
       {
         number: "02",
         title: "Pane-by-pane hand clean",
-        text:
-          "Every interior pane is hand-cleaned — no rushed robot work on the glass your family actually sees.",
+        text: "Every interior pane is hand-cleaned — no rushed robot work on the glass your family actually sees.",
       },
       {
         number: "03",
         title: "Track and sill detail",
-        text:
-          "Vacuumed tracks, wiped sills, polished frames — the parts most cleaners don’t touch.",
+        text: "Vacuumed tracks, wiped sills, polished frames — the parts most cleaners don’t touch.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "Brighter homes under the canopy",
-        text:
-          "All those oaks and slash pines keep Coral Springs beautiful — but they also block indoor light. Clean interior glass is the easiest way to claw back every bit of the sunlight that does get through.",
+        text: "All those oaks and slash pines keep Coral Springs beautiful — but they also block indoor light. Clean interior glass is the easiest way to claw back every bit of the sunlight that does get through.",
       },
       {
         number: "02.",
         title: "Relief for allergy sufferers",
-        text:
-          "Pollen collects on indoor sills and frames. A proper interior clean gets it out of your home, not just off the glass.",
+        text: "Pollen collects on indoor sills and frames. A proper interior clean gets it out of your home, not just off the glass.",
       },
       {
         number: "03.",
         title: "Careful work that respects your home",
-        text:
-          "Drop cloths, booties, and a team trained to move around your furniture and art — not through it.",
+        text: "Drop cloths, booties, and a team trained to move around your furniture and art — not through it.",
       },
     ],
     faqs: [
@@ -384,33 +364,27 @@ export const coralSprings = {
     nearYou: [
       {
         title: "Single-family interior service",
-        text:
-          "Recurring or one-time interior cleans across Eagle Trace, Whispering Woods, and the rest of Coral Springs.",
+        text: "Recurring or one-time interior cleans across Eagle Trace, Whispering Woods, and the rest of Coral Springs.",
       },
       {
         title: "HOA-approved interior routines",
-        text:
-          "We’ve worked in every Coral Springs HOA — no community access paperwork you haven’t already seen.",
+        text: "We’ve worked in every Coral Springs HOA — no community access paperwork you haven’t already seen.",
       },
       {
         title: "High-ceiling and two-story interiors",
-        text:
-          "Pole work and ladder work for the indoor glass your arms can’t reach.",
+        text: "Pole work and ladder work for the indoor glass your arms can’t reach.",
       },
       {
         title: "Condo and townhome interiors",
-        text:
-          "Focused interior service for units where exterior access is limited.",
+        text: "Focused interior service for units where exterior access is limited.",
       },
       {
         title: "Office and medical-suite interiors",
-        text:
-          "Evening and weekend interior cleans for Coral Springs businesses.",
+        text: "Evening and weekend interior cleans for Coral Springs businesses.",
       },
       {
         title: "Post-renovation interior dusting",
-        text:
-          "Remodel cleanup for windows, frames, and sills.",
+        text: "Remodel cleanup for windows, frames, and sills.",
       },
     ],
   },

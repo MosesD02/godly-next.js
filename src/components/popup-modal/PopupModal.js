@@ -6,7 +6,11 @@ import { OfferDialog } from "./OfferDialog";
 import { QuoteFormDialog } from "./QuoteFormDialog";
 import { FloatingOfferTab } from "./FloatingOfferTab";
 import { useOfferCountdown } from "./useOfferCountdown";
-import { POPUP_AUTO_OPEN_MS, OFFER_MODAL_QUOTE_GTAG, OFFER_MODAL_FLOATING_GTAG } from "./constants";
+import {
+  POPUP_AUTO_OPEN_MS,
+  OFFER_MODAL_QUOTE_GTAG,
+  OFFER_MODAL_FLOATING_GTAG,
+} from "./constants";
 
 export function PopupModal() {
   const [open, setOpen] = useState(false);

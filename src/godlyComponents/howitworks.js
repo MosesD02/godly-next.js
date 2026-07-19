@@ -48,7 +48,7 @@ const HowItWorks = () => {
         </h3>
       </div>
       <div
-        className="text-white md:py-16 "
+        className="text-white md:py-16"
         // style={{ marginTop: "1rem", marginBottom: "3rem" }}
       >
         <div className="relative z-10 flex flex-wrap justify-center gap-6 sm:gap-2 md:gap-4 md:px-8">

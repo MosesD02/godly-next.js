@@ -109,13 +109,7 @@ export const CITY_NEIGHBORS = {
     "lauderdale-by-the-sea",
     "coconut-creek",
   ],
-  margate: [
-    "coral-springs",
-    "coconut-creek",
-    "tamarac",
-    "parkland",
-    "sunrise",
-  ],
+  margate: ["coral-springs", "coconut-creek", "tamarac", "parkland", "sunrise"],
   miramar: [
     "hollywood",
     "pembroke-pines",

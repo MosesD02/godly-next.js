@@ -1,45 +1,38 @@
 export const davie = {
   "exterior-window-cleaning": {
-    hero:
-      "Open ranch lots and arena traffic throw dust at the outside of Davie glass—street- and barn-facing panes that never get touched by your vacuum. We stay outdoors, pole-washing sun-facing stories and clearing barn-adjacent frames so exterior glass sheds rain without grit left behind.",
+    hero: "Open ranch lots and arena traffic throw dust at the outside of Davie glass—street- and barn-facing panes that never get touched by your vacuum. We stay outdoors, pole-washing sun-facing stories and clearing barn-adjacent frames so exterior glass sheds rain without grit left behind.",
     included: [
       {
         number: "01",
         title: "Debris and cobweb sweep",
-        text:
-          "Davie’s open lots mean more cobwebs and dust on frames — cleared first before washing begins.",
+        text: "Davie’s open lots mean more cobwebs and dust on frames — cleared first before washing begins.",
       },
       {
         number: "02",
         title: "Pure-water exterior clean",
-        text:
-          "Water-fed poles reach every pane without leaning on siding or fascia.",
+        text: "Water-fed poles reach every pane without leaning on siding or fascia.",
       },
       {
         number: "03",
         title: "Frame and sill dry-down",
-        text:
-          "Every bottom sill is checked so no run-off marks your exterior finish.",
+        text: "Every bottom sill is checked so no run-off marks your exterior finish.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "Dust and dirt-road grit off your glass",
-        text:
-          "Davie’s ranch and equestrian areas mean real outdoor grit on every pane. Regular cleans take it off before it etches.",
+        text: "Davie’s ranch and equestrian areas mean real outdoor grit on every pane. Regular cleans take it off before it etches.",
       },
       {
         number: "02.",
         title: "Pole work, not ladder work",
-        text:
-          "Our pure-water pole system means no ladders against your stucco or aluminum — a real issue on older Davie ranch homes.",
+        text: "Our pure-water pole system means no ladders against your stucco or aluminum — a real issue on older Davie ranch homes.",
       },
       {
         number: "03.",
         title: "Protection against Florida sun",
-        text:
-          "Clean glass handles UV better. Etched or mineral-coated glass degrades faster. Regular cleans extend the life of every pane.",
+        text: "Clean glass handles UV better. Etched or mineral-coated glass degrades faster. Regular cleans extend the life of every pane.",
       },
     ],
     faqs: [
@@ -74,33 +67,27 @@ export const davie = {
     nearYou: [
       {
         title: "Ranch and single-family exteriors",
-        text:
-          "Recurring exterior service across Davie.",
+        text: "Recurring exterior service across Davie.",
       },
       {
         title: "Equestrian property exteriors",
-        text:
-          "Barn-adjacent homes get more dust — we handle it.",
+        text: "Barn-adjacent homes get more dust — we handle it.",
       },
       {
         title: "Pool-cage and lanai glass",
-        text:
-          "Enclosure glass cleaned inside and out.",
+        text: "Enclosure glass cleaned inside and out.",
       },
       {
         title: "Commercial and retail exteriors",
-        text:
-          "Regular exterior service for Davie storefronts and offices.",
+        text: "Regular exterior service for Davie storefronts and offices.",
       },
       {
         title: "Solar panel exterior cleans",
-        text:
-          "Rooftop solar gets cleaned with the same pure-water system — better efficiency, safer than a ladder.",
+        text: "Rooftop solar gets cleaned with the same pure-water system — better efficiency, safer than a ladder.",
       },
       {
         title: "Hard-water and sprinkler treatment",
-        text:
-          "Irrigation overspray and well-water stains handled before they etch.",
+        text: "Irrigation overspray and well-water stains handled before they etch.",
       },
     ],
   },
@@ -285,46 +272,39 @@ export const davie = {
     ],
   },
   "interior-window-cleaning": {
-    hero:
-      "From Flamingo Road ranches to Long Lake Ranches new builds, the mess you feel indoors is handprints on sliders, dust in tracks, and dog nose smudges at kid height—not the same dust storm that hits the barn roof. We clean interior glass, tracks, and hardware with contained water so living rooms and offices brighten without outdoor gear crossing your threshold.",
+    hero: "From Flamingo Road ranches to Long Lake Ranches new builds, the mess you feel indoors is handprints on sliders, dust in tracks, and dog nose smudges at kid height—not the same dust storm that hits the barn roof. We clean interior glass, tracks, and hardware with contained water so living rooms and offices brighten without outdoor gear crossing your threshold.",
     included: [
       {
         number: "01",
         title: "Dust and debris pass",
-        text:
-          "Davie’s open lots and ranch homes collect a lot of settled dust indoors — it all comes off first.",
+        text: "Davie’s open lots and ranch homes collect a lot of settled dust indoors — it all comes off first.",
       },
       {
         number: "02",
         title: "Interior hand-clean",
-        text:
-          "Every pane gets a careful hand clean — no rushed work, no missed corners.",
+        text: "Every pane gets a careful hand clean — no rushed work, no missed corners.",
       },
       {
         number: "03",
         title: "Sill and hardware wipe-down",
-        text:
-          "Rails, locks, and sashes all get wiped — not just the glass.",
+        text: "Rails, locks, and sashes all get wiped — not just the glass.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "More light in every room",
-        text:
-          "From Flamingo Road ranch homes to the newer Long Lake Ranches builds, clean indoor glass pulls in more Florida sun without any other change to the house.",
+        text: "From Flamingo Road ranch homes to the newer Long Lake Ranches builds, clean indoor glass pulls in more Florida sun without any other change to the house.",
       },
       {
         number: "02.",
         title: "Less dust riding the breeze",
-        text:
-          "Wiping down sills and frames captures dust that would otherwise settle through the rest of your home.",
+        text: "Wiping down sills and frames captures dust that would otherwise settle through the rest of your home.",
       },
       {
         number: "03.",
         title: "Pet-and-kid-safe cleaning",
-        text:
-          "Low-odor solutions, contained water, and a team that’s used to working around dogs, cats, and busy households.",
+        text: "Low-odor solutions, contained water, and a team that’s used to working around dogs, cats, and busy households.",
       },
     ],
     faqs: [
@@ -360,33 +340,27 @@ export const davie = {
     nearYou: [
       {
         title: "Ranch and single-family interiors",
-        text:
-          "Recurring interior service for Davie homes of every vintage.",
+        text: "Recurring interior service for Davie homes of every vintage.",
       },
       {
         title: "Equestrian property interiors",
-        text:
-          "Barn-adjacent homes get more settled dust — we handle it.",
+        text: "Barn-adjacent homes get more settled dust — we handle it.",
       },
       {
         title: "New-build walk-through cleans",
-        text:
-          "Interior cleanup for Davie new construction, from sticker residue to drywall dust.",
+        text: "Interior cleanup for Davie new construction, from sticker residue to drywall dust.",
       },
       {
         title: "Office and business interiors",
-        text:
-          "Weekend or after-hours interior service for Davie businesses.",
+        text: "Weekend or after-hours interior service for Davie businesses.",
       },
       {
         title: "Sliding door and patio glass",
-        text:
-          "The most-used glass in the house, done right.",
+        text: "The most-used glass in the house, done right.",
       },
       {
         title: "Sill, track, and frame detail",
-        text:
-          "The slow, detailed part of the clean most services rush through.",
+        text: "The slow, detailed part of the clean most services rush through.",
       },
     ],
   },

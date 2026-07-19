@@ -29,7 +29,7 @@ const BlogsSection = ({ noOfBlogs }) => {
               <p className="font-['satoshi-light'] text-base text-[#373A44] md:mt-2 md:text-sm">
                 {news.date}
               </p>
-              <p className="text-xl/snug  font-bold text-[#373A44] md:mt-1 md:text-sm">
+              <p className="text-xl/snug font-bold text-[#373A44] md:mt-1 md:text-sm">
                 {news.title}
               </p>
             </Link>

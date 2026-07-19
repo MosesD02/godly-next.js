@@ -295,7 +295,7 @@ export default function QuoteForm({
         <div className="grid grid-cols-1 gap-4 px-12 py-8 md:grid-cols-2 md:grid-rows-4 md:gap-x-4 md:gap-y-2">
           <label
             htmlFor={fieldId("name")}
-            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-1 md:row-start-1 md:mb-0 md:self-end md:leading-snug md:text-sm xl:text-base"
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-1 md:row-start-1 md:mb-0 md:self-end md:text-sm md:leading-snug xl:text-base"
           >
             Name
           </label>
@@ -305,13 +305,13 @@ export default function QuoteForm({
             value={formData.name}
             onChange={handleChange}
             placeholder="YOUR NAME"
-            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-start-1 md:row-start-2 md:w-full md:min-h-13 md:self-end md:text-xl xl:text-2xl"
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-start-1 md:row-start-2 md:min-h-13 md:w-full md:self-end md:text-xl xl:text-2xl"
             required
           />
 
           <label
             htmlFor={fieldId("email")}
-            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-2 md:row-start-1 md:mb-0 md:self-end md:leading-snug md:text-sm xl:text-base"
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-2 md:row-start-1 md:mb-0 md:self-end md:text-sm md:leading-snug xl:text-base"
           >
             Email
           </label>
@@ -322,20 +322,20 @@ export default function QuoteForm({
             placeholder="YOUR EMAIL"
             value={formData.email}
             onChange={handleChange}
-            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-start-2 md:row-start-2 md:w-full md:min-h-13 md:self-end md:text-xl xl:text-2xl"
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-start-2 md:row-start-2 md:min-h-13 md:w-full md:self-end md:text-xl xl:text-2xl"
             required
           />
 
           <label
             htmlFor={fieldId("phone")}
-            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-1 md:row-start-3 md:mb-0 md:self-end md:leading-snug md:text-sm xl:text-base"
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-1 md:row-start-3 md:mb-0 md:self-end md:text-sm md:leading-snug xl:text-base"
           >
             Phone Number
           </label>
           <div className="min-w-0 md:col-start-1 md:row-start-4 md:flex md:min-h-13 md:items-end md:self-end">
             <div className="flex w-full min-w-0 items-baseline gap-2 border-b border-black pb-3">
               <span
-                className="pointer-events-none shrink-0 select-none text-base font-normal leading-snug text-[#312E2C] md:text-xl md:leading-snug xl:text-2xl xl:leading-snug"
+                className="pointer-events-none shrink-0 text-base leading-snug font-normal text-[#312E2C] select-none md:text-xl md:leading-snug xl:text-2xl xl:leading-snug"
                 aria-hidden="true"
               >
                 +1
@@ -354,7 +354,7 @@ export default function QuoteForm({
 
           <label
             htmlFor={fieldId("zipcode")}
-            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-2 md:row-start-3 md:mb-0 md:self-end md:leading-snug md:text-sm xl:text-base"
+            className="mb-1 block font-sans text-sm font-normal text-[#312E2C] md:col-start-2 md:row-start-3 md:mb-0 md:self-end md:text-sm md:leading-snug xl:text-base"
           >
             Zip Code
           </label>
@@ -364,7 +364,7 @@ export default function QuoteForm({
             placeholder="YOUR ZIP CODE"
             value={formData.zipcode}
             onChange={handleChange}
-            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-start-2 md:row-start-4 md:w-full md:min-h-13 md:self-end md:text-xl xl:text-2xl"
+            className="min-w-0 rounded-none border-x-0 border-t-0 border-b border-black bg-transparent px-0 pb-3 text-base shadow-none focus-visible:ring-0 md:col-start-2 md:row-start-4 md:min-h-13 md:w-full md:self-end md:text-xl xl:text-2xl"
             required
           />
         </div>
@@ -386,7 +386,7 @@ export default function QuoteForm({
               />
               <label
                 htmlFor="landing-consent-informational-sms"
-                className="font-['satoshi-regular'] text-xs/snug  md:text-sm xl:text-base"
+                className="font-['satoshi-regular'] text-xs/snug md:text-sm xl:text-base"
               >
                 I agree to get information text messages from Godly about my
                 estimate and project.
@@ -394,7 +394,7 @@ export default function QuoteForm({
             </div>
           </div>
 
-          <div className="mt-2 mb-6 shrink-0 self-center text-right md:my-0 ">
+          <div className="mt-2 mb-6 shrink-0 self-center text-right md:my-0">
             <QuoteButton
               type="submit"
               disabled={isSubmitting}

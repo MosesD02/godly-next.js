@@ -1,45 +1,38 @@
 export const weston = {
   "exterior-window-cleaning": {
-    hero:
-      "Weston curb appeal is judged from the driveway—impact glass, tall elevations, and pool cage exteriors that face the street or the golf course. We never set foot in your foyer for this scope: pure-water poles hit outdoor panes and cage glass up to 40 feet while stucco and landscaping stay dry.",
+    hero: "Weston curb appeal is judged from the driveway—impact glass, tall elevations, and pool cage exteriors that face the street or the golf course. We never set foot in your foyer for this scope: pure-water poles hit outdoor panes and cage glass up to 40 feet while stucco and landscaping stay dry.",
     included: [
       {
         number: "01",
         title: "Full frame and screen prep",
-        text:
-          "Screens removed where needed; sill, sash, and track cleared of debris before washing.",
+        text: "Screens removed where needed; sill, sash, and track cleared of debris before washing.",
       },
       {
         number: "02",
         title: "Pure-water, high-reach clean",
-        text:
-          "40-foot water-fed pole work covers every pane on even the largest Weston homes.",
+        text: "40-foot water-fed pole work covers every pane on even the largest Weston homes.",
       },
       {
         number: "03",
         title: "Frame dry-down and final check",
-        text:
-          "Bottom sills hand-dried and inspected — no post-job drips on your stucco or pavers.",
+        text: "Bottom sills hand-dried and inspected — no post-job drips on your stucco or pavers.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "Homes that stay showcase-ready",
-        text:
-          "Weston builds are judged on details — exterior glass is always one of them. Regular cleans keep every pane at showcase level year-round.",
+        text: "Weston builds are judged on details — exterior glass is always one of them. Regular cleans keep every pane at showcase level year-round.",
       },
       {
         number: "02.",
         title: "Long-life protection for custom glass",
-        text:
-          "Large Weston picture windows are expensive to replace. Scheduled cleans prevent mineral etching that makes replacement necessary.",
+        text: "Large Weston picture windows are expensive to replace. Scheduled cleans prevent mineral etching that makes replacement necessary.",
       },
       {
         number: "03.",
         title: "Ladder-free, finish-safe work",
-        text:
-          "Pure-water pole systems mean no ladders leaned on your stucco, siding, or pool cage. Your finish stays as clean as your glass.",
+        text: "Pure-water pole systems mean no ladders leaned on your stucco, siding, or pool cage. Your finish stays as clean as your glass.",
       },
     ],
     faqs: [
@@ -74,33 +67,27 @@ export const weston = {
     nearYou: [
       {
         title: "Luxury home exterior routines",
-        text:
-          "Recurring exterior service for large homes across Windmill Ranches, Savanna, and Weston Hills.",
+        text: "Recurring exterior service for large homes across Windmill Ranches, Savanna, and Weston Hills.",
       },
       {
         title: "Pool-cage and lanai glass",
-        text:
-          "Enclosure glass detailed inside and out.",
+        text: "Enclosure glass detailed inside and out.",
       },
       {
         title: "Skylight and roof-glass exterior cleans",
-        text:
-          "Roof-level glass handled safely from ground level.",
+        text: "Roof-level glass handled safely from ground level.",
       },
       {
         title: "Solar panel exterior service",
-        text:
-          "Rooftop solar cleaned to restore efficiency.",
+        text: "Rooftop solar cleaned to restore efficiency.",
       },
       {
         title: "Commercial and professional building exteriors",
-        text:
-          "Regular service for Weston Town Center and professional parks.",
+        text: "Regular service for Weston Town Center and professional parks.",
       },
       {
         title: "Hard-water and irrigation stain removal",
-        text:
-          "Treatment and prevention of sprinkler overspray stains.",
+        text: "Treatment and prevention of sprinkler overspray stains.",
       },
     ],
   },
@@ -298,46 +285,39 @@ export const weston = {
     ],
   },
   "interior-window-cleaning": {
-    hero:
-      "Windmill Ranch and Savanna interiors are where fingerprints, chef-kitchen grease film, and pet hair on sills show up—on the glass that frames your living spaces, not the elevation facing the street. We work room-by-room inside only: protected floors, detailed tracks, and streak-free interior panes with white-glove care.",
+    hero: "Windmill Ranch and Savanna interiors are where fingerprints, chef-kitchen grease film, and pet hair on sills show up—on the glass that frames your living spaces, not the elevation facing the street. We work room-by-room inside only: protected floors, detailed tracks, and streak-free interior panes with white-glove care.",
     included: [
       {
         number: "01",
         title: "Full dust prep",
-        text:
-          "Sills, frames, blinds, and shutters are dusted before any solution touches the glass.",
+        text: "Sills, frames, blinds, and shutters are dusted before any solution touches the glass.",
       },
       {
         number: "02",
         title: "Careful hand-clean on every pane",
-        text:
-          "Weston homes have a lot of glass — we treat every pane individually, not as part of a fly-through.",
+        text: "Weston homes have a lot of glass — we treat every pane individually, not as part of a fly-through.",
       },
       {
         number: "03",
         title: "Track, sill, and hardware detail",
-        text:
-          "The full frame gets cleaned, not just the view portion.",
+        text: "The full frame gets cleaned, not just the view portion.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "Homes that show the way they’re meant to",
-        text:
-          "Weston builds — Windmill Ranches, Savanna, Bonaventure — rely on clean glass as part of the overall presentation. Interior cleans are how that carries through from the driveway into every room.",
+        text: "Weston builds — Windmill Ranches, Savanna, Bonaventure — rely on clean glass as part of the overall presentation. Interior cleans are how that carries through from the driveway into every room.",
       },
       {
         number: "02.",
         title: "A cleaner, healthier indoor environment",
-        text:
-          "Sill and frame detailing pulls pollen, dust, and fine particles out of rotation. Less cleaning for you between visits.",
+        text: "Sill and frame detailing pulls pollen, dust, and fine particles out of rotation. Less cleaning for you between visits.",
       },
       {
         number: "03.",
         title: "Work that matches your home’s standard",
-        text:
-          "Booties, drop cloths, and a crew that knows how to move through a well-kept home without leaving a trace.",
+        text: "Booties, drop cloths, and a crew that knows how to move through a well-kept home without leaving a trace.",
       },
     ],
     faqs: [
@@ -373,33 +353,27 @@ export const weston = {
     nearYou: [
       {
         title: "Luxury home interior routines",
-        text:
-          "Ongoing interior service for large, glass-heavy homes across Weston.",
+        text: "Ongoing interior service for large, glass-heavy homes across Weston.",
       },
       {
         title: "Two-story and vaulted interior work",
-        text:
-          "Pole and ladder work for the tall indoor glass.",
+        text: "Pole and ladder work for the tall indoor glass.",
       },
       {
         title: "Interior skylight cleaning",
-        text:
-          "Overhead indoor glass handled safely without compromising the finish below.",
+        text: "Overhead indoor glass handled safely without compromising the finish below.",
       },
       {
         title: "Office and professional-suite interiors",
-        text:
-          "After-hours indoor cleaning for Weston businesses.",
+        text: "After-hours indoor cleaning for Weston businesses.",
       },
       {
         title: "Post-renovation walk-throughs",
-        text:
-          "Final cleanup after remodels, additions, or new installs.",
+        text: "Final cleanup after remodels, additions, or new installs.",
       },
       {
         title: "Art-and-furniture-aware cleaning",
-        text:
-          "Indoor crews trained to work carefully around gallery-level finishes.",
+        text: "Indoor crews trained to work carefully around gallery-level finishes.",
       },
     ],
   },

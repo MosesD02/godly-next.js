@@ -424,12 +424,12 @@ const Footer = () => {
             </div>
             <div className="item-center flex justify-between">
               <div className="flex gap-2 md:gap-4">
-                <div className="flex size-10  items-center justify-center rounded-full bg-[#312E2C] text-white">
+                <div className="flex size-10 items-center justify-center rounded-full bg-[#312E2C] text-white">
                   <Link href="https://facebook.com/godlywindows">
                     <Facebook size={20} />
                   </Link>
                 </div>
-                <div className="flex size-10  items-center justify-center rounded-full bg-[#312E2C] text-white">
+                <div className="flex size-10 items-center justify-center rounded-full bg-[#312E2C] text-white">
                   <Link href="https://instagram.com/godlywindows">
                     <Instagram size={20} />
                   </Link>

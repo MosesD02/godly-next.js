@@ -106,7 +106,7 @@ const Hero = ({ cityName: city }) => {
                 .map((word) => (
                   <span
                     key={word}
-                    className="font-marlton trim shrink-0 text-4xl uppercase leading-[1.1] font-normal tracking-[3px] text-white md:tracking-[7.4] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]"
+                    className="font-marlton trim shrink-0 text-4xl leading-[1.1] font-normal tracking-[3px] text-white uppercase md:tracking-[7.4] xl:text-[64px] xl:leading-[3] 2xl:text-[73.161px]"
                   >
                     {word}
                   </span>

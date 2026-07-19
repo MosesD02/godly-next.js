@@ -252,7 +252,7 @@ function Story() {
           {Array.from({ length: count }).map((_, index) => (
             <button
               key={index}
-              className={`size-2  rounded-full transition-colors ${
+              className={`size-2 rounded-full transition-colors ${
                 index === current ? "bg-[#F3CA9E]" : "bg-[#F3CA9E]/30"
               }`}
               onClick={() => api?.scrollTo(index)}

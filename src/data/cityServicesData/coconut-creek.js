@@ -1,45 +1,38 @@
 export const coconutCreek = {
   "exterior-window-cleaning": {
-    hero:
-      "Shade trees dump pollen and sap on the outside of Township and Wynmoor glass—screens, frames, and street-facing panes the HOA sees first. We work outdoors only, clearing webs and sprinkler film with pure-water poles so exterior stories dry clean without gear in your foyer.",
+    hero: "Shade trees dump pollen and sap on the outside of Township and Wynmoor glass—screens, frames, and street-facing panes the HOA sees first. We work outdoors only, clearing webs and sprinkler film with pure-water poles so exterior stories dry clean without gear in your foyer.",
     included: [
       {
         number: "01",
         title: "Pollen and spider-web clear",
-        text:
-          "Coconut Creek’s mature shade means more web activity — all cleared before the glass is washed.",
+        text: "Coconut Creek’s mature shade means more web activity — all cleared before the glass is washed.",
       },
       {
         number: "02",
         title: "Pure-water exterior clean",
-        text:
-          "Pole-fed pure water reaches every pane without streaking.",
+        text: "Pole-fed pure water reaches every pane without streaking.",
       },
       {
         number: "03",
         title: "Sill dry and frame detail",
-        text:
-          "Every frame edge dried by hand so nothing drips onto your pavers or planters.",
+        text: "Every frame edge dried by hand so nothing drips onto your pavers or planters.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "Tree sap, pollen, and leaf grime removed",
-        text:
-          "All that Coconut Creek greenery drops sap, pollen, and leaf residue on every pane. Regular exterior cleans keep it from permanently staining.",
+        text: "All that Coconut Creek greenery drops sap, pollen, and leaf residue on every pane. Regular exterior cleans keep it from permanently staining.",
       },
       {
         number: "02.",
         title: "No ladders against your finish",
-        text:
-          "Pure-water pole systems let us reach every story without touching your stucco or siding — better for your paint, better for our team.",
+        text: "Pure-water pole systems let us reach every story without touching your stucco or siding — better for your paint, better for our team.",
       },
       {
         number: "03.",
         title: "Landscaping-safe cleaning",
-        text:
-          "We protect your mulch beds and plantings from run-off. No yellowed grass or wilted flowers after we leave.",
+        text: "We protect your mulch beds and plantings from run-off. No yellowed grass or wilted flowers after we leave.",
       },
     ],
     faqs: [
@@ -74,33 +67,27 @@ export const coconutCreek = {
     nearYou: [
       {
         title: "Residential exteriors",
-        text:
-          "Recurring exterior service for homes in Winston Park, The Township, and across Coconut Creek.",
+        text: "Recurring exterior service for homes in Winston Park, The Township, and across Coconut Creek.",
       },
       {
         title: "55+ community exteriors",
-        text:
-          "Scheduled, low-noise, and reliable exterior service.",
+        text: "Scheduled, low-noise, and reliable exterior service.",
       },
       {
         title: "Condo and townhome exterior cleans",
-        text:
-          "Exterior service for HOA-managed properties.",
+        text: "Exterior service for HOA-managed properties.",
       },
       {
         title: "Solar panel exterior cleaning",
-        text:
-          "Rooftop solar panels cleaned from the ground with pure water.",
+        text: "Rooftop solar panels cleaned from the ground with pure water.",
       },
       {
         title: "Skylight exterior cleans",
-        text:
-          "Roof-level glass handled without ever stepping on tile.",
+        text: "Roof-level glass handled without ever stepping on tile.",
       },
       {
         title: "Post-storm exterior wash",
-        text:
-          "After heavy weather, full exterior reset.",
+        text: "After heavy weather, full exterior reset.",
       },
     ],
   },
@@ -321,46 +308,39 @@ export const coconutCreek = {
     ],
   },
   "interior-window-cleaning": {
-    hero:
-      "Inside Coconut Creek homes, the wear shows up as patio-door fingerprints, lanai slider film, and fine dust on interior sills—especially where shade keeps windows closed. We detail interior tracks, screens-off glass, and living-room panes with low-odor solutions so indoor air stays pleasant while the view clears.",
+    hero: "Inside Coconut Creek homes, the wear shows up as patio-door fingerprints, lanai slider film, and fine dust on interior sills—especially where shade keeps windows closed. We detail interior tracks, screens-off glass, and living-room panes with low-odor solutions so indoor air stays pleasant while the view clears.",
     included: [
       {
         number: "01",
         title: "Dust and cobweb sweep",
-        text:
-          "Coconut Creek’s mature shade means more indoor cobwebs — we clear them before touching the glass.",
+        text: "Coconut Creek’s mature shade means more indoor cobwebs — we clear them before touching the glass.",
       },
       {
         number: "02",
         title: "Room-by-room glass clean",
-        text:
-          "Every pane is hand-worked so nothing gets missed.",
+        text: "Every pane is hand-worked so nothing gets missed.",
       },
       {
         number: "03",
         title: "Frame, sill, and track detail",
-        text:
-          "The non-glass parts of every window get the same attention as the glass itself.",
+        text: "The non-glass parts of every window get the same attention as the glass itself.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "Real brightness under shaded canopy",
-        text:
-          "Mature landscaping keeps Coconut Creek cool but blocks indoor light. Clean interior glass is the simplest way to fix it — no new windows needed.",
+        text: "Mature landscaping keeps Coconut Creek cool but blocks indoor light. Clean interior glass is the simplest way to fix it — no new windows needed.",
       },
       {
         number: "02.",
         title: "A cleaner home beyond the glass",
-        text:
-          "Sill and frame dusting pulls settled particles out of circulation — fewer allergens in the air, less dust on shelves between cleans.",
+        text: "Sill and frame dusting pulls settled particles out of circulation — fewer allergens in the air, less dust on shelves between cleans.",
       },
       {
         number: "03.",
         title: "Protective, careful indoor work",
-        text:
-          "Your furniture stays covered, your floors stay dry, your art stays untouched.",
+        text: "Your furniture stays covered, your floors stay dry, your art stays untouched.",
       },
     ],
     faqs: [
@@ -395,33 +375,27 @@ export const coconutCreek = {
     nearYou: [
       {
         title: "Home interior routines",
-        text:
-          "Quarterly or seasonal interior service for homes in The Township, Winston Park, and the rest of Coconut Creek.",
+        text: "Quarterly or seasonal interior service for homes in The Township, Winston Park, and the rest of Coconut Creek.",
       },
       {
         title: "55+ community interiors",
-        text:
-          "Scheduled, quiet, and careful — the way our 55+ clients expect.",
+        text: "Scheduled, quiet, and careful — the way our 55+ clients expect.",
       },
       {
         title: "Condo and townhome interiors",
-        text:
-          "Interior glass service for units across Coconut Creek.",
+        text: "Interior glass service for units across Coconut Creek.",
       },
       {
         title: "High-ceiling interior work",
-        text:
-          "Pole and ladder work for the tall indoor glass most cleaners skip.",
+        text: "Pole and ladder work for the tall indoor glass most cleaners skip.",
       },
       {
         title: "Post-renovation cleanup",
-        text:
-          "Remodel or repaint follow-up cleaning for glass and frames.",
+        text: "Remodel or repaint follow-up cleaning for glass and frames.",
       },
       {
         title: "Sliding and patio door glass",
-        text:
-          "The most-touched glass, cleaned the way it should be.",
+        text: "The most-touched glass, cleaned the way it should be.",
       },
     ],
   },

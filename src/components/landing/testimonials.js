@@ -78,7 +78,7 @@ const Testimonials = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="mb-4 font-sans text-sm/relaxed  font-normal">
+                    <p className="mb-4 font-sans text-sm/relaxed font-normal">
                       {item.content}
                     </p>
                   </div>

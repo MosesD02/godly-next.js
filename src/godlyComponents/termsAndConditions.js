@@ -44,7 +44,7 @@ const TermsAndConditions = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               1. Acceptance of Terms
             </h2>
-            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               By accessing or using our website, services, or communicating with
               us via SMS, you agree to be bound by these Terms and Conditions.
               If you do not agree, you must not use our services.
@@ -56,7 +56,7 @@ const TermsAndConditions = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               2. Services Provided
             </h2>
-            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               Godly Windows & Wash Co. offers professional exterior cleaning
               services, including window washing, pressure washing, and related
               property maintenance. Service availability is subject to
@@ -69,7 +69,7 @@ const TermsAndConditions = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               3. Quotes and Payments
             </h2>
-            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               All service estimates are non-binding until approved. Payment is
               due upon job completion unless otherwise agreed in writing. We
               accept major credit cards and secure online payments.
@@ -81,7 +81,7 @@ const TermsAndConditions = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               4. Cancellations and Rescheduling
             </h2>
-            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               Clients may cancel or reschedule services with at least 24
               hours&apos; notice. Short-notice cancellations may be subject to a
               fee. Weather-related changes may require schedule adjustments at
@@ -94,13 +94,13 @@ const TermsAndConditions = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               5. SMS/Text Messaging Policy (A2P 10DLC Compliant)
             </h2>
-            <p className="mb-4 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <p className="mb-4 font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               By providing your phone number, you agree to receive transactional
               and marketing text messages from Godly Windows & Wash Co. These
               messages may include appointment confirmations, updates, service
               reminders, and promotional offers.
             </p>
-            <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <ul className="ml-6 space-y-2 font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               <li className="list-disc">
                 <strong>Message frequency:</strong> Varies per user.
               </li>
@@ -133,7 +133,7 @@ const TermsAndConditions = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               6. User Conduct
             </h2>
-            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               You agree not to misuse our website, damage our property, or
               interfere with our communications or business operations. We
               reserve the right to refuse service to anyone for any reason at
@@ -146,7 +146,7 @@ const TermsAndConditions = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               7. Limitation of Liability
             </h2>
-            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               We strive to deliver high-quality services, but are not liable for
               incidental or consequential damages related to property damage,
               service delays, or communication errors. All services are
@@ -159,7 +159,7 @@ const TermsAndConditions = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               8. Intellectual Property
             </h2>
-            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               All content on our website, including logos, text, and media, is
               the property of Godly Windows & Wash Co. and may not be used
               without permission.
@@ -171,7 +171,7 @@ const TermsAndConditions = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               9. Changes to Terms
             </h2>
-            <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <p className="font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               We may update these Terms and Conditions from time to time.
               Updates will be posted on this page with the new effective date.
               Continued use of our services constitutes acceptance of any
@@ -184,10 +184,10 @@ const TermsAndConditions = () => {
             <h2 className="mb-4 text-2xl font-bold text-[#312E2C] md:text-3xl">
               10. Contact
             </h2>
-            <p className="mb-2 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <p className="mb-2 font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               For questions about these terms or our services, contact us at:
             </p>
-            <div className="space-y-1 font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+            <div className="space-y-1 font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
               <p>
                 <strong>Email:</strong>{" "}
                 <a

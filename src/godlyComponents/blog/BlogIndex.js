@@ -106,8 +106,7 @@ export default function BlogIndex({
           >
             {cityName ? (
               <>
-                <span>{titleCaseCityName(cityName)}</span>{" "}
-                resources
+                <span>{titleCaseCityName(cityName)}</span> resources
               </>
             ) : (
               "Godly resources"
@@ -148,14 +147,14 @@ export default function BlogIndex({
                   <div className="mx-auto aspect-4/3 max-w-162.5 overflow-hidden border-8 border-[#6A64641F] shadow-md">
                     <Link
                       href={blogPostHref(posts[0].slug)}
-                      className="block aspect-4/3 size-full "
+                      className="block aspect-4/3 size-full"
                     >
                       <Image
                         src={posts[0].image}
                         alt={posts[0].title}
                         width={650}
                         height={488}
-                        className="aspect-4/3 size-full  object-cover object-center"
+                        className="aspect-4/3 size-full object-cover object-center"
                         placeholder={
                           posts[0].imageBlurDataURL ? "blur" : undefined
                         }
@@ -211,7 +210,7 @@ export default function BlogIndex({
                       alt={posts[0].title}
                       width={334}
                       height={251}
-                      className="aspect-4/3 size-full  object-cover object-center"
+                      className="aspect-4/3 size-full object-cover object-center"
                       placeholder={
                         posts[0].imageBlurDataURL ? "blur" : undefined
                       }
@@ -256,7 +255,7 @@ export default function BlogIndex({
                 </p>
                 <h3
                   title={posts[0].title}
-                  className="text-2xl/snug  font-bold text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-4xl"
+                  className="text-2xl/snug font-bold text-[#312E2C] underline decoration-[#312E2C] transition-colors hover:text-[#AF8F6E] hover:decoration-[#AF8F6E] md:text-4xl"
                 >
                   {posts[0].title}
                 </h3>
@@ -289,7 +288,7 @@ export default function BlogIndex({
                           alt={post.title}
                           width={500}
                           height={375}
-                          className="aspect-4/3 size-full  object-cover object-center"
+                          className="aspect-4/3 size-full object-cover object-center"
                           placeholder={
                             post.imageBlurDataURL ? "blur" : undefined
                           }
@@ -302,7 +301,7 @@ export default function BlogIndex({
                           : ""}
                       </p>
                       <p
-                        className="text-xl/snug  font-bold text-[#373A44] md:mt-1 md:text-[28px]"
+                        className="text-xl/snug font-bold text-[#373A44] md:mt-1 md:text-[28px]"
                         style={{
                           display: "-webkit-box",
                           WebkitLineClamp: 2,

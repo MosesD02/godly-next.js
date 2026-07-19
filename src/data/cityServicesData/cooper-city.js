@@ -1,45 +1,38 @@
 export const cooperCity = {
   "exterior-window-cleaning": {
-    hero:
-      "Rock Creek to Embassy Lakes, the glass that faces the street and the HOA carries pollen, irrigation mist, and storm grit on the outside only. We work from ladders and pure-water poles outdoors—lifting film off exterior panes and screens without opening your front door.",
+    hero: "Rock Creek to Embassy Lakes, the glass that faces the street and the HOA carries pollen, irrigation mist, and storm grit on the outside only. We work from ladders and pure-water poles outdoors—lifting film off exterior panes and screens without opening your front door.",
     included: [
       {
         number: "01",
         title: "Exterior prep and screen removal",
-        text:
-          "We pull screens, clear debris from the sill, and prep the glass for a proper wash.",
+        text: "We pull screens, clear debris from the sill, and prep the glass for a proper wash.",
       },
       {
         number: "02",
         title: "Pure-water exterior clean",
-        text:
-          "Water-fed poles deliver a streak-free, scratch-free clean on every story of your home.",
+        text: "Water-fed poles deliver a streak-free, scratch-free clean on every story of your home.",
       },
       {
         number: "03",
         title: "Frame drying and detail check",
-        text:
-          "Bottom sills dried by hand so no water sits against the wood or stucco.",
+        text: "Bottom sills dried by hand so no water sits against the wood or stucco.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: 'Homes that stay "new-build clean"',
-        text:
-          "Cooper City builds show off best with clean exterior glass. Regular exterior washes are what keep that new-construction shine from fading in year two.",
+        text: "Cooper City builds show off best with clean exterior glass. Regular exterior washes are what keep that new-construction shine from fading in year two.",
       },
       {
         number: "02.",
         title: "Stucco and paint protection",
-        text:
-          "Water-fed poles eliminate ladder marks and overspray on your siding — a real concern on stucco-heavy Cooper City homes.",
+        text: "Water-fed poles eliminate ladder marks and overspray on your siding — a real concern on stucco-heavy Cooper City homes.",
       },
       {
         number: "03.",
         title: "Sprinkler spots solved at the source",
-        text:
-          "Lawn irrigation hits glass daily in Cooper City. Untreated, it etches. We treat it and prevent it.",
+        text: "Lawn irrigation hits glass daily in Cooper City. Untreated, it etches. We treat it and prevent it.",
       },
     ],
     faqs: [
@@ -74,33 +67,27 @@ export const cooperCity = {
     nearYou: [
       {
         title: "Single-family exteriors",
-        text:
-          "Monthly or quarterly service for Cooper City homes from Embassy Lakes to Rock Creek.",
+        text: "Monthly or quarterly service for Cooper City homes from Embassy Lakes to Rock Creek.",
       },
       {
         title: "Two-story and three-story exteriors",
-        text:
-          "Water-fed pole work up to 40 feet — no ladders leaned on your finish.",
+        text: "Water-fed pole work up to 40 feet — no ladders leaned on your finish.",
       },
       {
         title: "Pool-cage and lanai glass",
-        text:
-          "Enclosed glass that collects chlorine mist and pool grime — cleaned without damage to the cage.",
+        text: "Enclosed glass that collects chlorine mist and pool grime — cleaned without damage to the cage.",
       },
       {
         title: "Skylight and roof-glass cleans",
-        text:
-          "Above-the-roof glass handled safely from ground level.",
+        text: "Above-the-roof glass handled safely from ground level.",
       },
       {
         title: "Sprinkler-stain treatment",
-        text:
-          "Specialist removal of hard-water spots on exterior glass.",
+        text: "Specialist removal of hard-water spots on exterior glass.",
       },
       {
         title: "Post-storm exterior washes",
-        text:
-          "Grit, branches, and sap cleared after heavy weather.",
+        text: "Grit, branches, and sap cleared after heavy weather.",
       },
     ],
   },
@@ -319,46 +306,39 @@ export const cooperCity = {
     ],
   },
   "interior-window-cleaning": {
-    hero:
-      "Inside Rock Creek and Embassy Lakes homes, the story is smudges on sliders, dust in tracks, and film where kids and pets press against glass. We work indoors with drop cloths and quiet tools—detailing interior panes, hardware, and sills so living spaces look finished, not just “good from the curb.”",
+    hero: "Inside Rock Creek and Embassy Lakes homes, the story is smudges on sliders, dust in tracks, and film where kids and pets press against glass. We work indoors with drop cloths and quiet tools—detailing interior panes, hardware, and sills so living spaces look finished, not just “good from the curb.”",
     included: [
       {
         number: "01",
         title: "Top-down dust removal",
-        text:
-          "We work from crown molding down so the finished pane stays clean through the whole visit.",
+        text: "We work from crown molding down so the finished pane stays clean through the whole visit.",
       },
       {
         number: "02",
         title: "Interior glass hand-clean",
-        text:
-          "Every pane gets a careful hand pass — no rushed spray-and-wipe.",
+        text: "Every pane gets a careful hand pass — no rushed spray-and-wipe.",
       },
       {
         number: "03",
         title: "Sills, tracks, and hardware detail",
-        text:
-          "The rails, locks, and sashes get wiped so nothing looks half-done.",
+        text: "The rails, locks, and sashes get wiped so nothing looks half-done.",
       },
     ],
     essential: [
       {
         number: "01.",
         title: "Homes that show the way you want them to",
-        text:
-          "Cooper City homes — Embassy Lakes, Rock Creek, Monterra — are built to impress. Clean interior glass is one of those details that instantly signals the house is well-kept.",
+        text: "Cooper City homes — Embassy Lakes, Rock Creek, Monterra — are built to impress. Clean interior glass is one of those details that instantly signals the house is well-kept.",
       },
       {
         number: "02.",
         title: "Easier on your furniture and floors",
-        text:
-          "We cover what needs covering and keep our water contained. No puddles on the wood, no mist on your electronics.",
+        text: "We cover what needs covering and keep our water contained. No puddles on the wood, no mist on your electronics.",
       },
       {
         number: "03.",
         title: "Less dust in your daily routine",
-        text:
-          "An interior clean pulls the settled dust off every sill and track — meaning less airborne dust in your living areas between visits.",
+        text: "An interior clean pulls the settled dust off every sill and track — meaning less airborne dust in your living areas between visits.",
       },
     ],
     faqs: [
@@ -392,33 +372,27 @@ export const cooperCity = {
     nearYou: [
       {
         title: "Home interior routines",
-        text:
-          "Ongoing quarterly or seasonal interior glass service for Cooper City homes.",
+        text: "Ongoing quarterly or seasonal interior glass service for Cooper City homes.",
       },
       {
         title: "Two-story and vaulted interiors",
-        text:
-          "Ladders, pole tools, and drop cloths for the tall indoor windows most cleaners skip.",
+        text: "Ladders, pole tools, and drop cloths for the tall indoor windows most cleaners skip.",
       },
       {
         title: "Skylight interior cleaning",
-        text:
-          "Above-the-head glass — handled safely from inside without touching your finishes.",
+        text: "Above-the-head glass — handled safely from inside without touching your finishes.",
       },
       {
         title: "Showroom and office interiors",
-        text:
-          "After-hours interior service for Cooper City businesses.",
+        text: "After-hours interior service for Cooper City businesses.",
       },
       {
         title: "Post-construction interior dusting",
-        text:
-          "Final cleanup after renovations, additions, or repaints.",
+        text: "Final cleanup after renovations, additions, or repaints.",
       },
       {
         title: "Kid and pet smudge treatment",
-        text:
-          "The lower glass — sliders, French doors, pet-door panels — where fingerprints live.",
+        text: "The lower glass — sliders, French doors, pet-door panels — where fingerprints live.",
       },
     ],
   },

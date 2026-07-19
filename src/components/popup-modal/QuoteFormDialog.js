@@ -20,7 +20,10 @@ const QUOTE_CLOSE_CLASS =
 export function QuoteFormDialog({ open, onOpenChange }) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className={QUOTE_CONTENT_CLASS} closeClass={QUOTE_CLOSE_CLASS}>
+      <DialogContent
+        className={QUOTE_CONTENT_CLASS}
+        closeClass={QUOTE_CLOSE_CLASS}
+      >
         <DialogHeader>
           <DialogTitle asChild>
             <span className="sr-only">Contact Us</span>

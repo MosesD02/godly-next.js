@@ -11,10 +11,7 @@ const TIMER_INSET_SHADOW = {
 function TimerBoxInner({ value, label }) {
   return (
     <div className="flex shrink-0 flex-col items-center gap-2">
-      <div
-        className={TIMER_BOX_INNER}
-        style={TIMER_INSET_SHADOW}
-      >
+      <div className={TIMER_BOX_INNER} style={TIMER_INSET_SHADOW}>
         {value}
       </div>
       <p className="font-[Satoshi-Medium] text-sm text-black">{label}</p>

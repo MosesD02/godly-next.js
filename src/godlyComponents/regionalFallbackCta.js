@@ -69,8 +69,8 @@ export default function RegionalFallbackCta() {
           <Link href="https://godlywindows.com/" className={cityCtaBodyLink}>
             Godly Windows
           </Link>{" "}
-          serves homeowners and businesses across South Florida with professional
-          window cleaning, pressure washing, and exterior care.
+          serves homeowners and businesses across South Florida with
+          professional window cleaning, pressure washing, and exterior care.
         </p>
         <p className={cityCtaBookLine}>
           Book online for a free, no pressure quote.

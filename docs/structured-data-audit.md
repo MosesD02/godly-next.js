@@ -24,7 +24,7 @@ Estimated remediation effort for all 15 items: **~2–3 hours total**, concentra
 
 Three rules from the general SD policy dominate this audit:
 
-1. **Truth.** "Your structured data must be a true representation of the page content." A page titled *Pompano Beach* cannot declare a business located in *Fort Lauderdale* without tripping the misleading-content clause.
+1. **Truth.** "Your structured data must be a true representation of the page content." A page titled _Pompano Beach_ cannot declare a business located in _Fort Lauderdale_ without tripping the misleading-content clause.
 2. **Specificity.** "Use the most specific applicable type." Declaring a cleaning company as generic `LocalBusiness` when `HomeAndConstructionBusiness` is the documented subtype reduces how confidently Google can place us in category-specific search features.
 3. **Canonicalization.** A single real-world entity (one physical office) should have one `@id` across the site. Multiple pages minting new `@id`s for the same business force Google to pick a canonical and drop the rest — exactly the mechanism that caused `/fort-lauderdale` indexing problems last month.
 
@@ -40,7 +40,7 @@ The issues below are sorted by severity (impact × likelihood).
 
 Each of these pages is a service-area city with no physical office. The schema resolver points them at the nearest real branch's street address — Pompano Beach gets the Fort Lauderdale HQ address; Parkland and Coral Springs get the Boca Raton office address. The result is a JSON-LD block on a page titled "Pompano Beach" that declares a local business with `addressLocality: "Fort Lauderdale"`.
 
-**Why it matters:** Google's general SD policy explicitly calls out: *"Don't mark up irrelevant or misleading content … Don't use structured data to deceive or mislead users. Don't impersonate any person or organization, or misrepresent your ownership, affiliation, or primary purpose."* Declaring a Fort Lauderdale business on a Pompano Beach page is the textbook example.
+**Why it matters:** Google's general SD policy explicitly calls out: _"Don't mark up irrelevant or misleading content … Don't use structured data to deceive or mislead users. Don't impersonate any person or organization, or misrepresent your ownership, affiliation, or primary purpose."_ Declaring a Fort Lauderdale business on a Pompano Beach page is the textbook example.
 
 **Why it slipped through:** These three cities were bundled into the "render LocalBusiness on this city page" set because they happened to rank well. The actual-office check and the schema-type check were conflated.
 
@@ -72,11 +72,12 @@ Every one of these pages emits its own `LocalBusiness` JSON-LD with a URL-scoped
 
 **Pages affected:** Every city landing and service page that currently renders LocalBusiness (roughly 30+ pages).
 
-Google's review-snippet policy states: *"If the entity being reviewed controls the reviews about itself, their pages that use LocalBusiness or any other type of Organization structured data are ineligible for star review feature."* We are the entity; we are also the one writing the rating. Google will strip the stars silently.
+Google's review-snippet policy states: _"If the entity being reviewed controls the reviews about itself, their pages that use LocalBusiness or any other type of Organization structured data are ineligible for star review feature."_ We are the entity; we are also the one writing the rating. Google will strip the stars silently.
 
 Secondary concern: the identical `"5" / "157"` rating copy-pasted across multiple entities is a known spam-signal pattern.
 
 **Fix options:**
+
 - Remove `aggregateRating` from all self-owned LocalBusiness nodes, OR
 - Keep it only on the single canonical homepage entity and drop it everywhere else, OR
 - Wire real third-party review aggregation (Google Reviews via API) and use that as the source.
@@ -87,7 +88,7 @@ Secondary concern: the identical `"5" / "157"` rating copy-pasted across multipl
 
 ### Issue 4 — The homepage declares the same business twice (LocalBusiness + Organization)
 
-The homepage `@graph` contains two separate nodes with two separate `@id`s describing the same entity. Because `LocalBusiness` is a subtype of `Organization`, Google explicitly recommends merging them: *"if your site is about a local business … we recommend providing your administrative details using the most specific subtype(s) of LocalBusiness in addition to the fields recommended in this [Organization] guide."*
+The homepage `@graph` contains two separate nodes with two separate `@id`s describing the same entity. Because `LocalBusiness` is a subtype of `Organization`, Google explicitly recommends merging them: _"if your site is about a local business … we recommend providing your administrative details using the most specific subtype(s) of LocalBusiness in addition to the fields recommended in this [Organization] guide."_
 
 **Why it matters:** Two nodes means Google has to reconcile two claims for the same business. Some properties only exist on one node (e.g. `sameAs`, `logo` are missing from both), so the merged node would actually be richer than either individual one.
 
@@ -99,7 +100,7 @@ The homepage `@graph` contains two separate nodes with two separate `@id`s descr
 
 ### Issue 5 — Homepage uses generic `LocalBusiness` instead of the specific subtype
 
-Our city landing pages already use the specific pair `["LocalBusiness", "HomeAndConstructionBusiness"]`. The canonical homepage entity — the one everything else references via `@id` — uses the generic `LocalBusiness` only. That means our canonical node is *less specific* than the pages that reference it, which inverts Google's specificity guidance.
+Our city landing pages already use the specific pair `["LocalBusiness", "HomeAndConstructionBusiness"]`. The canonical homepage entity — the one everything else references via `@id` — uses the generic `LocalBusiness` only. That means our canonical node is _less specific_ than the pages that reference it, which inverts Google's specificity guidance.
 
 **Fix:** Match the homepage type to the city-page type. One-line change.
 
@@ -109,7 +110,7 @@ Our city landing pages already use the specific pair `["LocalBusiness", "HomeAnd
 
 ### Issue 6 — Geo coordinates are below Google's minimum precision AND don't match the street address
 
-The homepage LocalBusiness declares coordinates with four decimal places. Google's LocalBusiness documentation states: *"The precision must be at least 5 decimal places."* Four decimals fails the spec.
+The homepage LocalBusiness declares coordinates with four decimal places. Google's LocalBusiness documentation states: _"The precision must be at least 5 decimal places."_ Four decimals fails the spec.
 
 Compounding problem: the homepage's coordinates point to a spot roughly 5 km south of the actual Fort Lauderdale street address. Meanwhile, the per-city office-geo helper uses a different, more accurate coordinate pair. We're telling Google two different locations for the same building.
 
@@ -137,9 +138,10 @@ In August 2023, Google restricted FAQ rich results to "well-known, authoritative
 
 This is not a penalty and does not hurt rankings. It is wasted payload and one more schema that has to be kept in sync with the visible UI.
 
-A secondary FAQ-guide rule: *"If you have FAQ content that is repetitive on your site … mark up only one instance."* The 26 city-landing FAQs are templated variations of the same four questions. Even if we were FAQ-eligible, the per-city FAQ markup technically violates the de-duplication rule.
+A secondary FAQ-guide rule: _"If you have FAQ content that is repetitive on your site … mark up only one instance."_ The 26 city-landing FAQs are templated variations of the same four questions. Even if we were FAQ-eligible, the per-city FAQ markup technically violates the de-duplication rule.
 
 **Fix options:**
+
 - Remove FAQPage markup entirely (keep the visible HTML accordion — that's the user-facing feature).
 - Remove only the per-city city-landing FAQ markup (keep homepage + RainShield + blog, which are unique and answer-rich).
 
@@ -161,7 +163,7 @@ Google treats `logo` and `image` as different properties. `logo` drives what app
 
 ### Issue 10 — Phone numbers use inconsistent formatting
 
-The homepage phone is in proper international format with country code. The per-city phone helper returns the same number in US-local format without country code. Google recommends: *"Be sure to include the country code and area code in the phone number."*
+The homepage phone is in proper international format with country code. The per-city phone helper returns the same number in US-local format without country code. Google recommends: _"Be sure to include the country code and area code in the phone number."_
 
 **Fix:** Normalize all telephone values to a single E.164 format.
 
@@ -171,7 +173,7 @@ The homepage phone is in proper international format with country code. The per-
 
 ### Issue 11 — Regional cluster pages ship two-item breadcrumbs
 
-The regional cluster pages (e.g. `/window-cleaning`) emit a breadcrumb trail of exactly Home → This Page. Technically legal (Google requires a minimum of two items) but thin. Google's breadcrumb guidance: *"We recommend providing breadcrumbs that represent a typical user path to a page."* A three-item trail (Home → Services → Window Cleaning) is both truer to user navigation and gives Google more categorization signal.
+The regional cluster pages (e.g. `/window-cleaning`) emit a breadcrumb trail of exactly Home → This Page. Technically legal (Google requires a minimum of two items) but thin. Google's breadcrumb guidance: _"We recommend providing breadcrumbs that represent a typical user path to a page."_ A three-item trail (Home → Services → Window Cleaning) is both truer to user navigation and gives Google more categorization signal.
 
 **Fix:** Add an intermediate "Services" node to the regional-page breadcrumb.
 
@@ -209,17 +211,18 @@ Multiple service-area cities reuse the Fort Lauderdale office address through th
 
 Highest return-on-time first:
 
-| # | Fix | Effort | Benefit |
-|---|-----|--------|---------|
-| 1 | Remove Parkland / Coral Springs / Pompano Beach from the LocalBusiness-eligible set | 15 min | Kills misleading-markup risk on three pages |
-| 2 | Refactor Boca + Weston service pages to Service + provider-reference pattern | 30 min | Eliminates ~26 duplicate LocalBusiness entities |
-| 3 | Merge homepage Organization into LocalBusiness, add subtype, logo, sameAs, fix geo | 30 min | Strengthens canonical entity everyone references |
-| 4 | Remove aggregateRating from self-owned LocalBusiness nodes | 15 min | Drops non-compliant review signal |
-| 5 | Remove per-city FAQPage JSON-LD (keep visible UI) | 10 min | Removes ineligible / duplicative markup |
-| 6 | Normalize all telephone values to E.164 | 10 min | Minor consistency fix |
-| | **Total** | **~2 hrs** | |
+| #   | Fix                                                                                 | Effort     | Benefit                                          |
+| --- | ----------------------------------------------------------------------------------- | ---------- | ------------------------------------------------ |
+| 1   | Remove Parkland / Coral Springs / Pompano Beach from the LocalBusiness-eligible set | 15 min     | Kills misleading-markup risk on three pages      |
+| 2   | Refactor Boca + Weston service pages to Service + provider-reference pattern        | 30 min     | Eliminates ~26 duplicate LocalBusiness entities  |
+| 3   | Merge homepage Organization into LocalBusiness, add subtype, logo, sameAs, fix geo  | 30 min     | Strengthens canonical entity everyone references |
+| 4   | Remove aggregateRating from self-owned LocalBusiness nodes                          | 15 min     | Drops non-compliant review signal                |
+| 5   | Remove per-city FAQPage JSON-LD (keep visible UI)                                   | 10 min     | Removes ineligible / duplicative markup          |
+| 6   | Normalize all telephone values to E.164                                             | 10 min     | Minor consistency fix                            |
+|     | **Total**                                                                           | **~2 hrs** |                                                  |
 
 After remediation, re-run the Rich Results Test against:
+
 - `godlywindows.com`
 - `godlywindows.com/fort-lauderdale`
 - `godlywindows.com/boca-raton/window-cleaning`

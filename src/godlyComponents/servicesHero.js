@@ -6,9 +6,7 @@ import FreeQuoteButton from "@/components/freeQuote";
 import Services from "@/data/servicesData";
 import { generateServiceH1, generateServiceHeroAlt } from "@/data/metaTitles";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
-import RainShieldLink, {
-  hasInlineRainShieldLink,
-} from "./rainShieldLink";
+import RainShieldLink, { hasInlineRainShieldLink } from "./rainShieldLink";
 
 // cityName is passed as a prop from the server so the correct value is in the
 // initial SSR HTML.

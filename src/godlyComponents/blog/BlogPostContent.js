@@ -52,10 +52,9 @@ const components = {
       );
       const isInternalPath = canonicalHref.startsWith("/");
       if (isGodlyWindows || isInternalPath) {
-        const path =
-          isGodlyWindows
-            ? canonicalHref.replace("https://godlywindows.com", "") || "/"
-            : canonicalHref;
+        const path = isGodlyWindows
+          ? canonicalHref.replace("https://godlywindows.com", "") || "/"
+          : canonicalHref;
         return (
           <Link href={path} className={linkClassName}>
             {children}
@@ -86,7 +85,7 @@ const components = {
       </h3>
     ),
     normal: ({ children }) => (
-      <p className="font-['satoshi-light'] text-lg/relaxed  text-[#312E2C]">
+      <p className="font-['satoshi-light'] text-lg/relaxed text-[#312E2C]">
         {children}
       </p>
     ),

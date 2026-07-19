@@ -43,11 +43,11 @@ const Gurantee = () => {
         <div className="flex w-full flex-col items-center gap-55 bg-contain bg-center bg-no-repeat md:min-h-screen md:gap-62.5">
           <div className="relative min-w-165 scale-40 md:h-60 md:scale-100">
             <div
-              className="absolute -top-1 size-full  rotate-6 bg-cover bg-center bg-no-repeat"
+              className="absolute -top-1 size-full rotate-6 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${cardBg.src})` }}
             ></div>
             <div className="paper-bg-8 gurantee absolute top-0 min-w-165 rounded-md bg-[#CBB7A0]! p-2 shadow">
-              <div className="flex size-full  items-center justify-between rounded-md border border-black px-4 py-5">
+              <div className="flex size-full items-center justify-between rounded-md border border-black px-4 py-5">
                 <div className="flex w-3/4 flex-col justify-between gap-6">
                   <div
                     className="card-number trim text-[rgba(49, 46, 44, 0.19)] text-5xl"
@@ -75,11 +75,11 @@ const Gurantee = () => {
 
           <div className="relative w-126.25 scale-40 rotate-2 md:h-50 md:scale-100">
             <div
-              className="absolute top-4 -left-15 size-full  -rotate-10 bg-cover bg-center bg-no-repeat"
+              className="absolute top-4 -left-15 size-full -rotate-10 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${cardBg.src})` }}
             ></div>
             <div className="gurantee absolute top-0 rounded-md bg-[#CBB7A0] p-2 shadow">
-              <div className="flex size-full  items-center justify-between rounded-md border border-black px-4 py-5">
+              <div className="flex size-full items-center justify-between rounded-md border border-black px-4 py-5">
                 <div className="flex w-3/4 flex-col justify-between gap-6">
                   <div
                     className="card-number trim text-[rgba(49, 46, 44, 0.19)] text-5xl"
@@ -107,11 +107,11 @@ const Gurantee = () => {
 
           <div className="relative min-w-125 scale-40 rotate-2 md:h-50 md:scale-100">
             <div
-              className="absolute -top-2 right-5 size-full  rotate-5 bg-cover bg-center bg-no-repeat"
+              className="absolute -top-2 right-5 size-full rotate-5 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${cardBg.src})` }}
             ></div>
             <div className="gurantee absolute top-0 min-w-117.5 rounded-md bg-[#CBB7A0] p-2 shadow">
-              <div className="flex size-full  rounded-md border border-black px-4 py-5">
+              <div className="flex size-full rounded-md border border-black px-4 py-5">
                 <div className="flex w-3/4 flex-col justify-between gap-6">
                   <div
                     className="card-number trim text-[rgba(49, 46, 44, 0.19)] text-5xl"

@@ -11,9 +11,7 @@ function diffToParts(/** @type {number} */ differenceMs) {
   const hours = Math.floor(
     (differenceMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
   );
-  const minutes = Math.floor(
-    (differenceMs % (1000 * 60 * 60)) / (1000 * 60),
-  );
+  const minutes = Math.floor((differenceMs % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((differenceMs % (1000 * 60)) / 1000);
   return { days, hours, minutes, seconds, expired: false };
 }
@@ -38,16 +36,15 @@ export function useOfferCountdown() {
 
   const initial = useMemo(() => computeFromTarget(targetDate), [targetDate]);
 
-  const [timeLeft, setTimeLeft] = useState(
-    () =>
-      initial.expired
-        ? { ...ZERO }
-        : {
-            days: initial.days,
-            hours: initial.hours,
-            minutes: initial.minutes,
-            seconds: initial.seconds,
-          },
+  const [timeLeft, setTimeLeft] = useState(() =>
+    initial.expired
+      ? { ...ZERO }
+      : {
+          days: initial.days,
+          hours: initial.hours,
+          minutes: initial.minutes,
+          seconds: initial.seconds,
+        },
   );
   const [isExpired, setIsExpired] = useState(() => initial.expired);
 

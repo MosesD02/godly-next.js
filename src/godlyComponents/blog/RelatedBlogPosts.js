@@ -57,10 +57,10 @@ export default function RelatedBlogPosts({ posts, city, citySlug }) {
               <p className="font-['satoshi-light'] text-sm text-[#6A6464]">
                 {format(new Date(post.publishedAt), "MMMM d, yyyy")}
               </p>
-              <h3 className="text-xl/snug  font-bold text-[#312E2C] transition-colors group-hover:text-[#AF8F6E]">
+              <h3 className="text-xl/snug font-bold text-[#312E2C] transition-colors group-hover:text-[#AF8F6E]">
                 {post.title}
               </h3>
-              <p className="line-clamp-3 font-['satoshi-light'] text-sm/relaxed  text-[#6A6464]">
+              <p className="line-clamp-3 font-['satoshi-light'] text-sm/relaxed text-[#6A6464]">
                 {post.excerpt}
               </p>
               <span className="font-['satoshi-regular'] text-sm text-[#003953] group-hover:underline">

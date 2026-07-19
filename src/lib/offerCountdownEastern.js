@@ -62,5 +62,8 @@ export function formatExpiryLineWithOrdinal(targetDate) {
  */
 export function formatLongMonthEastern(targetDate) {
   if (!targetDate) return "month";
-  return targetDate.toLocaleDateString("en-US", { month: "long", timeZone: ET });
+  return targetDate.toLocaleDateString("en-US", {
+    month: "long",
+    timeZone: ET,
+  });
 }

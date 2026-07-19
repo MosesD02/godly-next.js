@@ -274,7 +274,7 @@ const Badge = ({
         alt="spark"
         src={image}
         className={cn(
-          "relative z-20 size-6 object-contain transition-transform duration-500 md:size-auto ",
+          "relative z-20 size-6 object-contain transition-transform duration-500 md:size-auto",
           sparks && "",
           isActive ? "rotate-15" : "",
         )}

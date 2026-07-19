@@ -50,11 +50,7 @@ const PRESETS = {
     "soft-washing",
     "holiday-lighting",
   ],
-  "soft-washing": [
-    "roof-cleaning",
-    "window-cleaning",
-    "holiday-lighting",
-  ],
+  "soft-washing": ["roof-cleaning", "window-cleaning", "holiday-lighting"],
   "holiday-lighting": [
     "window-cleaning",
     "soft-washing",

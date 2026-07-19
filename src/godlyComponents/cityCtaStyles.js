@@ -1,6 +1,5 @@
 /** Shared layout + typography for city page CTAs (Royal Palm Beach baseline). */
-export const cityCtaSection =
-  "paper-bg-16 bg-[#262424] py-16 md:py-20";
+export const cityCtaSection = "paper-bg-16 bg-[#262424] py-16 md:py-20";
 export const cityCtaInner = "mx-auto max-w-6xl px-4 text-center";
 export const cityCtaHeadline =
   "font-marlton mb-6 text-3xl font-normal tracking-wide text-white md:text-5xl";
