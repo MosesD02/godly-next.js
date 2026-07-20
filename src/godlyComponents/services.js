@@ -179,7 +179,7 @@ const Services = ({ cityName: city, citySlug }) => {
                   height={102}
                   width={102}
                   alt="holiday santa hat decoration"
-                  className="pointer-events-none absolute -top-11 left-6 scale-50 md:-top-6 md:-left-1 md:scale-100"
+                  className="pointer-events-none absolute -top-11 left-6 scale-50 md:-top-7.5 md:left-2.5 md:scale-100"
                 />
               </h2>
 
