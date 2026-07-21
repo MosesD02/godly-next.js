@@ -6,6 +6,7 @@ export default function HeaderButton({ onClick }) {
   return (
     <>
       <button
+        data-gtm="header-quote"
         onClick={onClick}
         className="group scale-85 cursor-pointer xl:scale-100"
       >

@@ -2,18 +2,19 @@
 
 import React from "react";
 import { Phone } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { getClickToCallPhone, toUsTelHref } from "@/lib/usPhone";
 
 /**
  * Tel link with inline phone icon — used under estimate CTAs on city pages.
  */
 export default function CtaPhoneLink({ phoneNumber, className }) {
-  const digits =
-    typeof phoneNumber === "string" ? phoneNumber.replace(/\D/g, "") : "";
+  const pathname = usePathname();
 
   return (
     <a
-      href={digits ? `tel:${digits}` : undefined}
+      href={toUsTelHref(getClickToCallPhone(pathname))}
       aria-label={phoneNumber ? `Call ${phoneNumber}` : undefined}
       className={cn(
         "inline-flex items-center justify-center gap-2 font-['satoshi-regular'] text-base font-normal text-white! transition-colors hover:text-[#FDE4C8]! md:text-lg",

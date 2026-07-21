@@ -1,6 +1,9 @@
+import { ATTRIBUTION_FIELDS } from "@/lib/attribution";
+import { toUsE164 } from "@/lib/usPhone";
+
 /**
  * n8n lead tracking webhook URLs for automated lead management.
- * Each form sends name + phone (digits only) as JSON POST on submit.
+ * Each form sends the lead plus E.164 phone and attribution as JSON on submit.
  *
  * Form mapping:
  * - /landing/[city], /landing/[service]/[city] → All landing city pages (Fort Lauderdale, Boca Raton, Weston, etc.)
@@ -31,14 +34,25 @@ export const LEAD_WEBHOOKS = {
  * Send lead to n8n webhook. Fires and forgets (non-blocking).
  * @param {string} url - Webhook URL
  * @param {string} name - Lead name
- * @param {string} phone - Phone (will be normalized to digits only)
+ * @param {string} phone - Phone (will be normalized to U.S. E.164)
  * @param {string} [pageUrl] - Optional page URL for workflow routing (e.g. godlywindows.com/landing/fort-lauderdale)
+ * @param {object} [attribution] - The ten attribution fields, including empty optional values
  */
-export async function sendLeadWebhook(url, name, phone, pageUrl) {
-  const digitsOnly = (phone || "").replace(/\D/g, "");
-  const payload = { name: (name || "").trim(), phone: digitsOnly };
+export async function sendLeadWebhook(
+  url,
+  name,
+  phone,
+  pageUrl,
+  attribution = {},
+) {
+  const payload = {
+    name: (name || "").trim(),
+    phone: toUsE164(phone),
+  };
   if (pageUrl) payload.pageUrl = pageUrl;
-
+  ATTRIBUTION_FIELDS.forEach((field) => {
+    payload[field] = attribution[field] || "";
+  });
   if (!payload.name || !payload.phone) return;
 
   try {

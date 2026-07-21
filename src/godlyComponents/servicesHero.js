@@ -6,6 +6,7 @@ import FreeQuoteButton from "@/components/freeQuote";
 import Services from "@/data/servicesData";
 import { generateServiceH1, generateServiceHeroAlt } from "@/data/metaTitles";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
+import { toUsTelHref } from "@/lib/usPhone";
 import RainShieldLink, { hasInlineRainShieldLink } from "./rainShieldLink";
 
 // cityName is passed as a prop from the server so the correct value is in the
@@ -18,7 +19,7 @@ const ServicesHero = ({
   eyebrowOverride,
 }) => {
   const quotePhone = getPhoneNumber(cityName ?? "SOUTH FLORIDA");
-  const quoteTel = quotePhone.replace(/\D/g, "");
+  const quoteTel = toUsTelHref(quotePhone);
   const displayCity = cityName
     ? cityName.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase())
     : "South Florida";
@@ -135,7 +136,7 @@ const ServicesHero = ({
       </div>
       {slug === "rain-shield" ? null : slug === "holiday-lighting" ? (
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <a href={`tel:${quoteTel}`} className="free-button">
+          <a href={quoteTel} className="free-button">
             <span>GET A FREE QUOTE — {quotePhone}</span>
           </a>
           <a

@@ -17,7 +17,14 @@ import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
 import { usePathname, useRouter } from "next/navigation";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
-import { formatUsPhoneInput, isUsPhoneValid } from "@/lib/usPhone";
+import {
+  formatUsPhoneInput,
+  isUsPhoneValid,
+  toUsE164,
+} from "@/lib/usPhone";
+import QuoteFormCloseButton from "@/components/quoteFormCloseButton";
+import AttributionFields from "@/components/AttributionFields";
+import { getAttributionForSubmission } from "@/lib/attribution";
 
 const servicesList = [
   { id: "window-cleaning", name: "Window Cleaning" },
@@ -286,13 +293,16 @@ export default function QuoteForm({ isDialog }) {
 
     setIsSubmitting(true);
 
+    const attribution = getAttributionForSubmission(e.currentTarget);
+    const airtablePhone = toUsE164(formData.phone);
+
     try {
       await base("Form Table").create([
         {
           fields: {
             Name: formData.name,
             Email: formData.email,
-            Phone: formData.phone,
+            Phone: airtablePhone,
             "Required Service": formData.services.join(", "),
             Date: date ? format(date, "MM/dd/yyyy") : "",
             ZipCode: formData.zipcode,
@@ -307,7 +317,7 @@ export default function QuoteForm({ isDialog }) {
           body: JSON.stringify({
             name: formData.name,
             email: formData.email,
-            phone: formData.phone,
+            phone: airtablePhone,
             service: formData.services,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
@@ -317,6 +327,7 @@ export default function QuoteForm({ isDialog }) {
             consentMarketingSmsCalls: false,
             consentInformationalSms: formData.consentInformationalSms,
             consentMarketingEmail: false,
+            ...attribution,
           }),
         },
       );
@@ -328,16 +339,17 @@ export default function QuoteForm({ isDialog }) {
           body: JSON.stringify({
             name: formData.name,
             email: formData.email,
-            phone: formData.phone,
+            phone: airtablePhone,
             service: formData.services,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
-            utm_source: "organic",
             pageUrl:
               typeof window !== "undefined" ? window.location.href : null,
             consentMarketingSmsCalls: false,
             consentInformationalSms: formData.consentInformationalSms,
             consentMarketingEmail: false,
+            ...attribution,
+            utm_source: attribution.utm_source || "organic",
           }),
         },
       );
@@ -352,7 +364,7 @@ export default function QuoteForm({ isDialog }) {
           body: JSON.stringify({
             name: formData.name,
             email: formData.email,
-            phone: formData.phone,
+            phone: airtablePhone,
             services: formData.services,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
@@ -361,6 +373,7 @@ export default function QuoteForm({ isDialog }) {
             consentMarketingSmsCalls: false,
             consentInformationalSms: formData.consentInformationalSms,
             consentMarketingEmail: false,
+            ...attribution,
           }),
         },
       );
@@ -375,7 +388,13 @@ export default function QuoteForm({ isDialog }) {
             : pathname?.startsWith("/weston")
               ? LEAD_WEBHOOKS.WESTON
               : LEAD_WEBHOOKS.MAIN_WEBSITE;
-      sendLeadWebhook(webhook, formData.name, formData.phone);
+      await sendLeadWebhook(
+        webhook,
+        formData.name,
+        airtablePhone,
+        undefined,
+        attribution,
+      );
 
       if (typeof window !== "undefined" && window.gtag) {
         const gtag = window.gtag;
@@ -423,7 +442,7 @@ export default function QuoteForm({ isDialog }) {
         window.dataLayer.push({
           event: "quote_form_submission",
           user_email: formData.email,
-          user_phone: `+1${formData.phone}`,
+          user_phone: airtablePhone,
           full_name: formData.name,
           postal_code: formData.zipcode,
         });
@@ -479,6 +498,7 @@ export default function QuoteForm({ isDialog }) {
           : "",
       )}
     >
+      <AttributionFields />
       <div
         className={cn(
           "paper-bg-14 relative w-full rounded-[10px] border bg-[#F3CA9E] bg-blend-screen md:shadow-sm xl:shadow-md",
@@ -487,6 +507,7 @@ export default function QuoteForm({ isDialog }) {
             : "",
         )}
       >
+        {isDialog && <QuoteFormCloseButton />}
         <div className="paper-bg-14 relative z-20 grid grid-cols-2 items-center justify-between rounded-t-[10px] bg-[#AB8459] px-6.75 py-6.25 md:flex md:h-25 md:px-10 md:py-6 xl:flex xl:h-32 xl:px-12 xl:py-8">
           <h2
             className={cn(

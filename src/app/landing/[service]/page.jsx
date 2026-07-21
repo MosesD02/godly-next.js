@@ -5,12 +5,7 @@ import {
   generateCityTitle,
   generateCityDescription,
   generateCitySchema,
-  getPhoneForCity,
 } from "@/data/metaTitles";
-import {
-  LANDING_FORT_LAUDERDALE_PHONE,
-  FORT_LAUDERDALE_SLUG,
-} from "@/lib/landingPhoneOverride";
 import { notFound } from "next/navigation";
 import JsonLd from "@/lib/jsonLd";
 
@@ -28,15 +23,7 @@ export async function generateMetadata({ params }) {
 
   const cityName = citiesMap[city];
   const title = generateCityTitle(cityName);
-  let description = generateCityDescription(cityName);
-
-  // Fort Lauderdale landing page only: swap in its dedicated phone number.
-  if (city === FORT_LAUDERDALE_SLUG) {
-    description = description.replaceAll(
-      getPhoneForCity(city),
-      LANDING_FORT_LAUDERDALE_PHONE,
-    );
-  }
+  const description = generateCityDescription(cityName);
 
   return {
     title,
@@ -80,24 +67,7 @@ export default async function CityLandingPage({ params }) {
   }
 
   const cityName = citiesMap[city];
-  let schemaMarkup = generateCitySchema(city);
-
-  // Fort Lauderdale landing page only: override the phone in its JSON-LD,
-  // without touching the shared schema used by the non-landing /fort-lauderdale page.
-  if (city === FORT_LAUDERDALE_SLUG && schemaMarkup) {
-    schemaMarkup = {
-      ...schemaMarkup,
-      ...(schemaMarkup.telephone && {
-        telephone: LANDING_FORT_LAUDERDALE_PHONE,
-      }),
-      ...(schemaMarkup.description && {
-        description: schemaMarkup.description.replaceAll(
-          getPhoneForCity(city),
-          LANDING_FORT_LAUDERDALE_PHONE,
-        ),
-      }),
-    };
-  }
+  const schemaMarkup = generateCitySchema(city);
 
   return (
     <>

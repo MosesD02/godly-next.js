@@ -11,10 +11,12 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import QuoteForm from "@/godlyComponents/quoteForm";
+import LandingQuoteForm from "@/components/landing/quoteForm";
 
 export default function SectionButton({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const useShortForm = pathname?.startsWith("/landing");
   const isLandingAb =
     pathname?.startsWith("/landing/a") || pathname?.startsWith("/landing/b");
   return (
@@ -51,12 +53,16 @@ export default function SectionButton({ children }) {
           />
         </svg>
       </Button>
-      <FormPopup open={isOpen} onOpenChange={setIsOpen} />
+      <FormPopup
+        open={isOpen}
+        onOpenChange={setIsOpen}
+        useShortForm={useShortForm}
+      />
     </>
   );
 }
 
-const FormPopup = ({ open, onOpenChange }) => {
+const FormPopup = ({ open, onOpenChange, useShortForm }) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogHeader>
@@ -65,10 +71,14 @@ const FormPopup = ({ open, onOpenChange }) => {
         </DialogTitle>
       </DialogHeader>
       <DialogContent
+        hideCloseButton
         className="z-100 border-none bg-transparent p-0 md:max-w-300"
-        closeClass="focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none focus-visible:outline-none"
       >
-        <QuoteForm isDialog={true} />
+        {useShortForm ? (
+          <LandingQuoteForm isDialog formTrackingId="section-cta" />
+        ) : (
+          <QuoteForm isDialog />
+        )}
       </DialogContent>
     </Dialog>
   );
