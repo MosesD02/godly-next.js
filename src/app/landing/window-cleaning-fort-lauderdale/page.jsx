@@ -8,10 +8,7 @@ import {
   getOfficePostalAddressForCitySlug,
   getSameAsForCitySlug,
 } from "@/data/metaTitles";
-import {
-  FORT_LAUDERDALE_SLUG,
-  LANDING_FORT_LAUDERDALE_PHONE,
-} from "@/lib/landingPhoneOverride";
+const FORT_LAUDERDALE_SLUG = "fort-lauderdale";
 
 const city = FORT_LAUDERDALE_SLUG;
 const cityName = "FORT LAUDERDALE";
@@ -65,7 +62,7 @@ const structuredData = {
     name: "Godly Windows & Wash Co.",
     image: `${BASE_URL}/favicon.svg`,
     url: `${BASE_URL}/${city}`,
-    telephone: LANDING_FORT_LAUDERDALE_PHONE,
+    telephone: "954-852-5326",
     priceRange: "$$",
     address: getOfficePostalAddressForCitySlug(city),
     geo: getOfficeGeoForCitySlug(city),

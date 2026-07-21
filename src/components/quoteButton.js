@@ -4,17 +4,13 @@ import { cn } from "@/lib/utils";
 
 export default function QuoteButton({
   children,
-  type,
-  disabled,
-  onClick,
   className,
+  ...props
 }) {
   return (
     <Button
       className={cn(className ? className : "quote-button")}
-      type={type}
-      disabled={disabled}
-      onClick={onClick}
+      {...props}
     >
       <span className="color-[#fde4c8]! trim z-10">{children}</span>
       <svg

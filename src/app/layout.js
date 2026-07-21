@@ -1,9 +1,11 @@
+import { Suspense } from "react";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { AppWrapper } from "@/context/godlyContext";
 import ThirdPartyScripts from "@/components/ThirdPartyScripts";
 import { BASE_URL } from "@/app/lib/constants";
+import AttributionCapture from "@/components/AttributionCapture";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,6 +66,9 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning
       >
         <ThirdPartyScripts />
+        <Suspense fallback={null}>
+          <AttributionCapture />
+        </Suspense>
 
         <AppWrapper>{children}</AppWrapper>
       </body>

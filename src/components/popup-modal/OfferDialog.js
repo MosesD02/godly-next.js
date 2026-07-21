@@ -122,6 +122,7 @@ export function OfferDialog({
               </div>
               <DialogClose asChild>
                 <QuoteButton
+                  data-gtm="special-offer-quote"
                   className="quote-button w-full! max-w-full! self-stretch! py-4! text-[24px]! md:py-6!"
                   onClick={onGetQuote}
                 >
