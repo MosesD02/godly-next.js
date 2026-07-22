@@ -76,7 +76,7 @@ export async function generateMetadata({ params }) {
         title: post.metaTitle || post.title,
         description,
         url: `${BASE_URL}/blog/${post.slug}`,
-        siteName: "Godly Windows",
+        siteName: "Godly Windows & Wash Co.",
         locale: "en_US",
         type: "article",
         publishedTime: post.publishedAt,
@@ -114,7 +114,7 @@ export async function generateMetadata({ params }) {
           title: `${cityName} Blog | Godly Windows & Wash Co.`,
           description: `Expert tips on pressure washing and window cleaning for ${cityName} homeowners.`,
           url: `${BASE_URL}/blog/${slug}`,
-          siteName: "Godly Windows",
+          siteName: "Godly Windows & Wash Co.",
           type: "website",
         },
         alternates: {
@@ -141,7 +141,7 @@ export async function generateMetadata({ params }) {
         title: `${cityName} Blog | Godly Windows & Wash Co.`,
         description: `Expert tips on pressure washing and window cleaning for ${cityName} homeowners.`,
         url: `${BASE_URL}/blog/${slug}`,
-        siteName: "Godly Windows",
+        siteName: "Godly Windows & Wash Co.",
         type: "website",
       },
       alternates: {

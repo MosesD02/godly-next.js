@@ -18,7 +18,7 @@ export const metadata = {
     description:
       "Privacy Policy for Godly Windows & Wash Co. Learn how we collect, use, and protect your personal information.",
     url: `${BASE_URL}/privacy-policy`,
-    siteName: "Godly Windows",
+    siteName: "Godly Windows & Wash Co.",
     locale: "en_US",
     type: "website",
   },

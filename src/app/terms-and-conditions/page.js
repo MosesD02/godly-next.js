@@ -19,7 +19,7 @@ export const metadata = {
     description:
       "Terms and Conditions for Godly Windows & Wash Co. Learn about our service policies and user agreements.",
     url: `${BASE_URL}/terms-and-conditions`,
-    siteName: "Godly Windows",
+    siteName: "Godly Windows & Wash Co.",
     locale: "en_US",
     type: "website",
   },

@@ -6,6 +6,7 @@ import {
   generateServiceDescription,
   generateServiceTitle,
   getCityAreaServedSchema,
+  getPrimaryBusinessProviderSchema,
   serviceMetaTitles,
 } from "@/data/metaTitles";
 import { getRelatedBlogPosts } from "@/data/sanity-content";
@@ -39,7 +40,7 @@ export async function generateRegionalWindowMetadata(slug) {
       title,
       description,
       url: `${BASE_URL}/${slug}`,
-      siteName: "Godly Windows",
+      siteName: "Godly Windows & Wash Co.",
       locale: "en_US",
       type: "website",
     },
@@ -79,7 +80,7 @@ export default async function RegionalWindowClusterPage({ slug }) {
     "@type": "Service",
     "@id": `${pageUrl}#service`,
     name: `${serviceLabel} — South Florida`,
-    provider: { "@id": `${BASE_URL}/#localbusiness` },
+    provider: getPrimaryBusinessProviderSchema(),
     description: generateServiceDescription(slug, cityName),
     areaServed: getCityAreaServedSchema(city),
     url: pageUrl,

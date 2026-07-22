@@ -14,7 +14,8 @@ const city = "south-florida";
 const cityName = "SOUTH FLORIDA";
 const service = "Window Cleaning";
 const url = `${BASE_URL}/landing/south-florida-window-cleaners`;
-const title = "Window Cleaning South Florida";
+const title =
+  "Window Cleaning South Florida | Godly Windows & Wash Co.";
 const description =
   "South Florida window cleaners for thorough window cleaning and careful detail work from a seasoned window cleaner, all backed by our 100% satisfaction guarantee.";
 const headline =
@@ -37,7 +38,7 @@ export const metadata = {
     title,
     description,
     url,
-    siteName: "Godly Windows",
+    siteName: "Godly Windows & Wash Co.",
     locale: "en_US",
     type: "website",
   },

@@ -14,7 +14,8 @@ const city = "pompano-beach";
 const cityName = "POMPANO BEACH";
 const service = "Window Washing";
 const url = `${BASE_URL}/landing/window-washing-pompano-beach`;
-const title = "Expert Window Washing In Pompano Beach";
+const title =
+  "Expert Window Washing In Pompano Beach | Godly Windows & Wash Co.";
 const description =
   "Pompano Beach window washers for spotless window washing and detailed care from a friendly local window washer, all backed by our 100% satisfaction guarantee.";
 const headline =
@@ -37,7 +38,7 @@ export const metadata = {
     title,
     description,
     url,
-    siteName: "Godly Windows",
+    siteName: "Godly Windows & Wash Co.",
     locale: "en_US",
     type: "website",
   },

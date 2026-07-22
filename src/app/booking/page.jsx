@@ -4,7 +4,8 @@ import { BASE_URL } from "@/app/lib/constants";
 
 // Generate metadata for booking page
 export const metadata = {
-  title: "Book Window Cleaning & Pressure Washing Services | Godly Windows",
+  title:
+    "Book Window Cleaning & Pressure Washing Services | Godly Windows & Wash Co.",
   description:
     "Book professional window cleaning and pressure washing services in South Florida. Free estimates, satisfaction guarantee, and expert exterior cleaning for homes and businesses.",
   keywords: [
@@ -20,11 +21,12 @@ export const metadata = {
     "free estimates",
   ],
   openGraph: {
-    title: "Book Window Cleaning & Pressure Washing Services | Godly Windows",
+    title:
+      "Book Window Cleaning & Pressure Washing Services | Godly Windows & Wash Co.",
     description:
       "Book professional window cleaning and pressure washing services in South Florida. Free estimates, satisfaction guarantee, and expert exterior cleaning for homes and businesses.",
     url: `${BASE_URL}/booking`,
-    siteName: "Godly Windows",
+    siteName: "Godly Windows & Wash Co.",
     locale: "en_US",
     type: "website",
     images: [
@@ -38,7 +40,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Book Window Cleaning & Pressure Washing Services | Godly Windows",
+    title:
+      "Book Window Cleaning & Pressure Washing Services | Godly Windows & Wash Co.",
     description:
       "Book professional window cleaning and pressure washing services in South Florida. Free estimates, satisfaction guarantee, and expert exterior cleaning for homes and businesses.",
     images: ["/favicon.svg"],

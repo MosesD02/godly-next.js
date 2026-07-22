@@ -24,7 +24,7 @@ export async function generateMetadata() {
       description:
         "Expert tips on pressure washing and window cleaning for South Florida homeowners.",
       url: `${BASE_URL}/blog`,
-      siteName: "Godly Windows",
+      siteName: "Godly Windows & Wash Co.",
       type: "website",
     },
     alternates: {

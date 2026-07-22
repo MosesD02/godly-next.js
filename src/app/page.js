@@ -6,7 +6,7 @@ import {
 } from "@/data/homepageFaqData";
 import DynamicMetaTags from "@/components/DynamicMetaTags";
 import JsonLd from "@/lib/jsonLd";
-import { BASE_URL } from "@/app/lib/constants";
+import { BASE_URL, BRAND_NAME } from "@/app/lib/constants";
 
 // Static metadata for home page
 export const metadata = {
@@ -26,7 +26,7 @@ export const metadata = {
     title: homeTitle,
     description: homeDescription,
     url: BASE_URL,
-    siteName: "Godly Windows",
+    siteName: BRAND_NAME,
     locale: "en_US",
     type: "website",
     // Uses opengraph-image.jsx generated image
@@ -56,7 +56,7 @@ const structuredData = {
     {
       "@type": "LocalBusiness",
       "@id": `${BASE_URL}/#localbusiness`,
-      name: "Godly Windows & Wash Co.",
+      name: BRAND_NAME,
       image: `${BASE_URL}/favicon.svg`,
       description:
         "Professional window cleaning and pressure washing services in South Florida",
@@ -144,12 +144,12 @@ const structuredData = {
       "@type": "WebSite",
       "@id": `${BASE_URL}/#website`,
       url: BASE_URL,
-      name: "Godly Windows & Wash Co.",
+      name: BRAND_NAME,
     },
     {
       "@type": "Organization",
       "@id": `${BASE_URL}/#organization`,
-      name: "Godly Windows & Wash Co.",
+      name: BRAND_NAME,
       url: BASE_URL,
       telephone: "+1-954-852-5326",
       image: `${BASE_URL}/favicon.svg`,

@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
       title,
       description,
       url: `${BASE_URL}/landing/${city}`,
-      siteName: "Godly Windows",
+      siteName: "Godly Windows & Wash Co.",
       locale: "en_US",
       type: "website",
     },

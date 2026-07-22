@@ -11,6 +11,7 @@ import {
   getOfficeGeoForCitySlug,
   getCityAreaServedSchema,
   getSameAsForCitySlug,
+  getPrimaryBusinessProviderSchema,
   businessOpeningHoursSpecification,
   citySlugRendersServicePageLocalBusiness,
 } from "@/data/metaTitles";
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }) {
       title,
       description,
       url: `${BASE_URL}/${city}/${slug}`,
-      siteName: "Godly Windows",
+      siteName: "Godly Windows & Wash Co.",
       locale: "en_US",
       type: "website",
     },
@@ -113,7 +114,7 @@ export default async function GodlyServices({ params }) {
         "@type": "Service",
         "@id": `${pageUrl}#service`,
         name: `${serviceLabel} in ${cityName || city}`,
-        provider: { "@id": `${BASE_URL}/#localbusiness` },
+        provider: getPrimaryBusinessProviderSchema(),
         areaServed: getCityAreaServedSchema(city),
         serviceType:
           "Window cleaning, pressure washing, gutter cleaning, house washing",

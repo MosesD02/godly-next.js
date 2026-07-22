@@ -19,7 +19,7 @@ export const metadata = {
     title: generateCityTitle(cityName),
     description: generateCityDescription(cityName),
     url: `${BASE_URL}/landing`,
-    siteName: "Godly Windows",
+    siteName: "Godly Windows & Wash Co.",
     locale: "en_US",
     type: "website",
   },

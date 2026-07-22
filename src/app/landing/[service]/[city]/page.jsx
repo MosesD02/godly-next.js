@@ -52,7 +52,7 @@ export async function generateMetadata({ params }) {
       title,
       description,
       url: `${BASE_URL}/landing/${service}/${city}`,
-      siteName: "Godly Windows",
+      siteName: "Godly Windows & Wash Co.",
       locale: "en_US",
       type: "website",
       // Uses opengraph-image.jsx generated image

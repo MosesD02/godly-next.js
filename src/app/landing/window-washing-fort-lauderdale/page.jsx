@@ -15,7 +15,8 @@ const city = FORT_LAUDERDALE_SLUG;
 const cityName = "FORT LAUDERDALE";
 const service = "Window Washing";
 const url = `${BASE_URL}/landing/window-washing-fort-lauderdale`;
-const title = "Expert Window Washing In Fort Lauderdale";
+const title =
+  "Expert Window Washing In Fort Lauderdale | Godly Windows & Wash Co.";
 const description =
   "Fort Lauderdale window washers for spotless window washing and detailed care from a friendly local window washer, all backed by our 100% satisfaction guarantee.";
 const headline =
@@ -38,7 +39,7 @@ export const metadata = {
     title,
     description,
     url,
-    siteName: "Godly Windows",
+    siteName: "Godly Windows & Wash Co.",
     locale: "en_US",
     type: "website",
   },

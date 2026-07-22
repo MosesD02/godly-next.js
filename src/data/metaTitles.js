@@ -1,7 +1,7 @@
 import { customMetaData } from "./customMetaData.js";
 import { citiesMap } from "./cities.js";
 import { getCityHeroContent } from "./cityHeroCopy.js";
-import { BASE_URL } from "@/app/lib/constants";
+import { BASE_URL, BRAND_NAME } from "@/app/lib/constants";
 
 /** Cities with a real physical office — used to decide which footer shows a street address. */
 export const PHYSICAL_OFFICE_CITY_SLUGS = new Set([
@@ -224,6 +224,14 @@ export function getCityAreaServedSchema(citySlug) {
   };
 }
 
+export function getPrimaryBusinessProviderSchema() {
+  return {
+    "@type": "LocalBusiness",
+    "@id": `${BASE_URL}/#localbusiness`,
+    name: BRAND_NAME,
+  };
+}
+
 export function getSameAsForCitySlug(citySlug) {
   const phone = getPhoneForCity(citySlug);
   const googleUrl = phoneToGoogleUrl[phone];
@@ -261,7 +269,7 @@ export function generateCitySchema(citySlug) {
     return {
       "@context": "https://schema.org",
       "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-      name: "Godly Windows & Wash Co.",
+      name: BRAND_NAME,
       image: "https://godlywindows.com/favicon.svg",
       url: `https://godlywindows.com/${citySlug}`,
       description: `Top-rated window cleaning & exterior services in ${cityName}. Family-owned, fully insured, 5-star rated. Free estimate in 24 hours. Call ${phone}.`,
@@ -279,7 +287,7 @@ export function generateCitySchema(citySlug) {
     "@context": "https://schema.org",
     "@type": "Service",
     name: `Window Cleaning & Pressure Washing in ${cityName}`,
-    provider: { "@id": `${BASE_URL}/#localbusiness` },
+    provider: getPrimaryBusinessProviderSchema(),
     areaServed: getCityAreaServedSchema(citySlug),
     serviceType:
       "Window cleaning, pressure washing, gutter cleaning, house washing",
@@ -324,17 +332,33 @@ const findCitySlug = (cityName) => {
   );
 };
 
+export const withBrandName = (title) => {
+  const trimmedTitle = title.trim();
+
+  if (trimmedTitle.endsWith(BRAND_NAME)) {
+    return trimmedTitle;
+  }
+
+  if (trimmedTitle.endsWith("Godly Windows")) {
+    return `${trimmedTitle.slice(0, -"Godly Windows".length)}${BRAND_NAME}`;
+  }
+
+  return `${trimmedTitle} | ${BRAND_NAME}`;
+};
+
 // Generate SEO-optimized title for service pages
 export const generateServiceTitle = (serviceSlug, cityName) => {
   if (serviceSlug === "rain-shield") {
-    return "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows";
+    return withBrandName(
+      "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows",
+    );
   }
 
   // Check for custom meta data first - need to find the city slug
   const citySlug = findCitySlug(cityName);
 
   if (citySlug && customMetaData[citySlug]?.services?.[serviceSlug]?.title) {
-    return customMetaData[citySlug].services[serviceSlug].title;
+    return withBrandName(customMetaData[citySlug].services[serviceSlug].title);
   }
 
   // Fall back to original template logic
@@ -345,16 +369,18 @@ export const generateServiceTitle = (serviceSlug, cityName) => {
     const fallbackService = serviceSlug
       ? serviceSlug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())
       : "Service";
-    return cityName
-      ? `${fallbackService} in ${capitalizeString(cityName)} | Godly Windows`
-      : `${fallbackService} | Godly Windows`;
+    return withBrandName(
+      cityName
+        ? `${fallbackService} in ${capitalizeString(cityName)}`
+        : fallbackService,
+    );
   }
 
-  if (!cityName) {
-    return `${serviceName} in South Florida | Godly Windows`;
-  }
-
-  return `${serviceName} in ${capitalizeString(cityName)} | Godly Windows`;
+  return withBrandName(
+    cityName
+      ? `${serviceName} in ${capitalizeString(cityName)}`
+      : `${serviceName} in South Florida`,
+  );
 };
 
 // Generate SEO-optimized title for city home pages
@@ -365,15 +391,15 @@ export const generateCityTitle = (cityName) => {
   const citySlug = findCitySlug(cityName);
 
   if (citySlug && customMetaData[citySlug]?.cityPage?.title) {
-    return customMetaData[citySlug].cityPage.title;
+    return withBrandName(customMetaData[citySlug].cityPage.title);
   }
 
   // Fall back to formula: Window Cleaning [City] FL | Godly Windows & Wash Co.
-  if (!cityName) {
-    return "Window Cleaning South Florida | Godly Windows & Wash Co.";
-  }
-
-  return `Window Cleaning ${capitalizeString(cityName)} FL | Godly Windows & Wash Co.`;
+  return withBrandName(
+    cityName
+      ? `Window Cleaning ${capitalizeString(cityName)} FL`
+      : "Window Cleaning South Florida",
+  );
 };
 
 // Home page optimized title

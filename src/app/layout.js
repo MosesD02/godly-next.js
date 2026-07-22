@@ -4,7 +4,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { AppWrapper } from "@/context/godlyContext";
 import ThirdPartyScripts from "@/components/ThirdPartyScripts";
-import { BASE_URL } from "@/app/lib/constants";
+import { BASE_URL, BRAND_NAME } from "@/app/lib/constants";
 import AttributionCapture from "@/components/AttributionCapture";
 
 const geistSans = Geist({
@@ -27,16 +27,19 @@ const inter = Inter({
 // Global metadata defaults - page-specific metadata will override these
 export const metadata = {
   generator: "Next.js",
-  applicationName: "Godly Windows",
-  authors: [{ name: "Godly Windows" }],
-  creator: "Godly Windows",
-  publisher: "Godly Windows",
+  applicationName: BRAND_NAME,
+  authors: [{ name: BRAND_NAME }],
+  creator: BRAND_NAME,
+  publisher: BRAND_NAME,
   formatDetection: {
     email: false,
     address: false,
     telephone: true,
   },
   metadataBase: new URL(BASE_URL),
+  openGraph: {
+    siteName: BRAND_NAME,
+  },
   icons: {
     icon: [
       { url: "/favicon.ico" },

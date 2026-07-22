@@ -5,3 +5,5 @@
  */
 export const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://godlywindows.com";
+
+export const BRAND_NAME = "Godly Windows & Wash Co.";

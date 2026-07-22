@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { BASE_URL } from "@/app/lib/constants";
 
 export const metadata = {
-  title: "Thank You | Godly Windows",
+  title: "Thank You | Godly Windows & Wash Co.",
   description:
     "Thank you for reaching out to Godly Windows. Expect a call from us shortly.",
   alternates: {
@@ -16,11 +16,11 @@ export const metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Thank You | Godly Windows",
+    title: "Thank You | Godly Windows & Wash Co.",
     description:
       "Thank you for reaching out to Godly Windows. Expect a call from us shortly.",
     url: `${BASE_URL}/thank-you`,
-    siteName: "Godly Windows",
+    siteName: "Godly Windows & Wash Co.",
     locale: "en_US",
     type: "website",
   },

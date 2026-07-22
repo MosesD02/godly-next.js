@@ -3,7 +3,9 @@ import JsonLd from "@/lib/jsonLd";
 import { citiesMap } from "@/data/cities";
 import {
   generateServiceDescription,
+  generateServiceTitle,
   getCityAreaServedSchema,
+  getPrimaryBusinessProviderSchema,
 } from "@/data/metaTitles";
 import { getRelatedBlogPosts } from "@/data/sanity-content";
 import { BASE_URL } from "@/app/lib/constants";
@@ -23,16 +25,16 @@ export async function generateMetadata({ searchParams }) {
   const rawCity = Array.isArray(sp?.city) ? sp.city[0] : sp?.city;
   const citySlug = resolveRainShieldCitySlug(rawCity);
   const cityName = citiesMap[citySlug];
+  const title = generateServiceTitle("rain-shield", cityName);
 
   return {
-    title: "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows",
+    title,
     description: generateServiceDescription("rain-shield", cityName),
     openGraph: {
-      title:
-        "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows",
+      title,
       description: generateServiceDescription("rain-shield", cityName),
       url: `${BASE_URL}/rain-shield`,
-      siteName: "Godly Windows",
+      siteName: "Godly Windows & Wash Co.",
       locale: "en_US",
       type: "website",
       images: [
@@ -46,8 +48,7 @@ export async function generateMetadata({ searchParams }) {
     },
     twitter: {
       card: "summary_large_image",
-      title:
-        "Rain Shield Technology — Hydrophobic Glass Coating | Godly Windows",
+      title,
       description: generateServiceDescription("rain-shield", cityName),
       images: [`${BASE_URL}/rain-shield/opengraph-image`],
     },
@@ -75,7 +76,7 @@ export default async function RainShieldPage({ searchParams }) {
     "@type": "Service",
     "@id": `${pageUrl}#service`,
     name: "Rain Shield Technology — Hydrophobic Glass Coating",
-    provider: { "@id": `${BASE_URL}/#localbusiness` },
+    provider: getPrimaryBusinessProviderSchema(),
     description: generateServiceDescription("rain-shield", cityName),
     areaServed: getCityAreaServedSchema("south-florida"),
     url: pageUrl,
