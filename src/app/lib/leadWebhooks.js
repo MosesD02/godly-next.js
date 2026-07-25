@@ -3,7 +3,7 @@ import { toUsE164 } from "@/lib/usPhone";
 
 /**
  * n8n lead tracking webhook URLs for automated lead management.
- * Each form sends the lead plus E.164 phone and attribution as JSON on submit.
+ * Each form sends the lead's contact details plus attribution as JSON on submit.
  *
  * Form mapping:
  * - /landing/[city], /landing/[service]/[city] → All landing city pages (Fort Lauderdale, Boca Raton, Weston, etc.)
@@ -35,6 +35,7 @@ export const LEAD_WEBHOOKS = {
  * @param {string} url - Webhook URL
  * @param {string} name - Lead name
  * @param {string} phone - Phone (will be normalized to U.S. E.164)
+ * @param {string} email - Lead email
  * @param {string} [pageUrl] - Optional page URL for workflow routing (e.g. godlywindows.com/landing/fort-lauderdale)
  * @param {object} [attribution] - The ten attribution fields, including empty optional values
  */
@@ -42,18 +43,20 @@ export async function sendLeadWebhook(
   url,
   name,
   phone,
+  email,
   pageUrl,
   attribution = {},
 ) {
   const payload = {
     name: (name || "").trim(),
     phone: toUsE164(phone),
+    email: (email || "").trim(),
   };
   if (pageUrl) payload.pageUrl = pageUrl;
   ATTRIBUTION_FIELDS.forEach((field) => {
     payload[field] = attribution[field] || "";
   });
-  if (!payload.name || !payload.phone) return;
+  if (!payload.name || !payload.phone || !payload.email) return;
 
   try {
     await fetch(url, {

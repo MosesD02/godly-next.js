@@ -392,6 +392,7 @@ export default function QuoteForm({ isDialog }) {
         webhook,
         formData.name,
         airtablePhone,
+        formData.email,
         undefined,
         attribution,
       );
