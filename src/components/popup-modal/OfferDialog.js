@@ -97,7 +97,7 @@ export function OfferDialog({
             <div className={OFFER_DASHED_RULE_CLASS} aria-hidden />
 
             <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col items-center justify-center gap-3 md:gap-4">
-              <div className="flex w-full flex-col rounded-[12px] border border-black p-2">
+              <div className="flex w-full flex-col rounded-[20px] border border-black p-2">
                 <div className="flex flex-col rounded-xl border border-black">
                   <div className="grid grid-cols-2 items-center justify-center gap-2 md:gap-4">
                     <p className="trim bg-linear-to-b from-[#EC7F58] via-[#EC7B56] to-[#EB7753] bg-clip-text py-4 text-right text-[clamp(48px,15vw,96px)] text-transparent">

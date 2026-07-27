@@ -5,35 +5,11 @@ import Link from "next/link";
 
 import QuoteForm from "./quoteForm";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
+import { citiesMap } from "@/data/cities";
 
-const citiesData = [
-  "BOCA RATON",
-  "COCONUT CREEK",
-  "COOPER CITY",
-  "CORAL SPRINGS",
-  "DAVIE",
-  "DEERFIELD BEACH",
-  "DELRAY BEACH",
-  "FORT LAUDERDALE",
-  "HALLANDALE BEACH",
-  "HILLSBORO BEACH",
-  "HOLLYWOOD",
-  "LAUDERDALE-BY-THE_SEA",
-  "LIGHTHOUSE POINT",
-  "MARGATE",
-  "MIRAMAR",
-  "OAKLAND PARK",
-  "PARKLAND",
-  "PEMBROKE PINES",
-  "PLANTATION",
-  "POMPANO BEACH",
-  "ROYAL PALM BEACH",
-  "SOUTHWEST RANCHES",
-  "SUNRISE",
-  "TAMARAC",
-  "WEST PARK",
-  "WESTON",
-];
+const citiesData = Object.entries(citiesMap).filter(
+  ([citySlug]) => citySlug !== "south-florida",
+);
 
 const Footer = ({ form = true, service }) => {
   return (
@@ -58,11 +34,11 @@ const Footer = ({ form = true, service }) => {
               SERVE
             </div>
           </div>
-          <div className="grid grid-cols-2 px-4 py-15 md:grid-cols-4 md:px-0">
-            {citiesData.map((city, index) => (
+          <div className="grid w-full max-w-6xl grid-cols-2 gap-x-6 px-4 py-15 md:grid-cols-3 md:px-0 lg:grid-cols-4">
+            {citiesData.map(([citySlug, displayName]) => (
               <Link
-                key={index}
-                href={`/${city.toLowerCase().replace(/\s+/g, "-").replace(/_/g, "-")}`}
+                key={citySlug}
+                href={`/${citySlug}`}
                 className="padding-12 align-self-stretch flex items-center gap-3"
                 style={{
                   display: "flex",
@@ -80,7 +56,7 @@ const Footer = ({ form = true, service }) => {
                   textDecoration: "none",
                 }}
               >
-                <span className="text-sm md:text-[20px]">{city}</span>
+                <span className="text-sm md:text-[20px]">{displayName}</span>
               </Link>
             ))}
           </div>
