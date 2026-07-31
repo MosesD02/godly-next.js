@@ -6,7 +6,6 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { format } from "date-fns";
 import QuoteButton from "@/components/quoteButton";
-import Airtable from "airtable";
 import { cn } from "@/lib/utils";
 import { sendLeadWebhook, LEAD_WEBHOOKS } from "@/app/lib/leadWebhooks";
 import {
@@ -41,12 +40,6 @@ export default function QuoteForm({
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const fieldId = (name) => `landing-quote-${formTrackingId}-${name}`;
-
-  // Initialize Airtable
-  const base = new Airtable({
-    apiKey:
-      "patUUfkvMZUeWcpBx.3b8a637c96292840817c1a291c161b70a0b5952d6a75d9ab0f000bb70a097e51",
-  }).base("appzgFLd0zSxa5rIx");
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -93,22 +86,9 @@ export default function QuoteForm({
     setIsSubmitting(true);
 
     const attribution = getAttributionForSubmission(e.currentTarget);
-    const airtablePhone = toUsE164(formData.phone);
+    const normalizedPhone = toUsE164(formData.phone);
 
     try {
-      await base("Form Table").create([
-        {
-          fields: {
-            Name: formData.name,
-            Email: formData.email,
-            Phone: airtablePhone,
-            "Required Service": service,
-            Date: date ? format(date, "MM/dd/yyyy") : null,
-            ZipCode: formData.zipcode,
-          },
-        },
-      ]);
-
       await fetch(
         "https://hook.us1.make.com/r3kgolabx4r2luoyc39npw095bbtytl7",
         {
@@ -119,7 +99,7 @@ export default function QuoteForm({
           body: JSON.stringify({
             name: formData.name,
             email: formData.email,
-            phone: airtablePhone,
+            phone: normalizedPhone,
             service: service,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
@@ -144,7 +124,7 @@ export default function QuoteForm({
           body: JSON.stringify({
             name: formData.name,
             email: formData.email,
-            phone: airtablePhone,
+            phone: normalizedPhone,
             service: service,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
@@ -169,7 +149,7 @@ export default function QuoteForm({
           body: JSON.stringify({
             name: formData.name,
             email: formData.email,
-            phone: airtablePhone,
+            phone: normalizedPhone,
             services: service,
             date: date ? format(date, "MM/dd/yyyy") : null,
             zipcode: formData.zipcode,
@@ -190,7 +170,7 @@ export default function QuoteForm({
       await sendLeadWebhook(
         webhook,
         formData.name,
-        airtablePhone,
+        normalizedPhone,
         formData.email,
         pageUrl,
         attribution,
@@ -242,7 +222,7 @@ export default function QuoteForm({
         window.dataLayer.push({
           event: "quote_form_submission",
           user_email: formData.email,
-          user_phone: airtablePhone,
+          user_phone: normalizedPhone,
           full_name: formData.name,
           postal_code: formData.zipcode,
         });
@@ -263,7 +243,7 @@ export default function QuoteForm({
 
       router.push("/thank-you");
     } catch (error) {
-      console.error("Error submitting to Airtable:", error);
+      console.error("Error submitting quote form:", error);
       setSubmitStatus("error");
       console.log(error);
     } finally {
