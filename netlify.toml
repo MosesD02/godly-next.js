@@ -2,3 +2,23 @@
 from = "/blog/holiday-lighting-boca-raton-boca-raton"
 to = "/blog/boca-raton-holiday-lighting"
 status = 301
+
+[[redirects]]
+from = "/lauderhill"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/lauderhill/rain-shield-tech"
+to = "/"
+status = 301
+
+[[redirects]]
+from = "/miami"
+to = "/south-florida"
+status = 301
+
+[[redirects]]
+from = "/blog/house-washing-fort-lauderdale-fort-lauderdale"
+to = "/blog/house-washing-fort-lauderdale"
+status = 301

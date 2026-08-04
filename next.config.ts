@@ -320,11 +320,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/blog/house-washing-fort-lauderdale-fort-lauderdale",
-        destination: "/blog/house-washing-near-boca-raton",
-        permanent: true,
-      },
-      {
         source: "/blog/house-washing-hollywood-fl-hollywood",
         destination: "/blog/house-washing-hollywood",
         permanent: true,
