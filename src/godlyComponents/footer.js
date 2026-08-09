@@ -12,8 +12,8 @@ import { citiesMap } from "@/data/cities";
 import { usePathname } from "next/navigation";
 import SectionButton from "@/components/sectionButton";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
-import { getClickToCallPhone, toUsTelHref } from "@/lib/usPhone";
-import { getOfficeAddressMultilineForDisplayName } from "@/data/metaTitles";
+import { toUsTelHref } from "@/lib/usPhone";
+import { getOfficeAddressMultilineForPhone } from "@/data/metaTitles";
 export { getPhoneNumber };
 
 const citiesData = Object.entries(citiesMap).filter(
@@ -38,9 +38,9 @@ const Footer = () => {
   };
 
   const urlCityKey = getCityFromUrl();
-  const phoneNumber = getPhoneNumber(city);
-  const phoneHref = toUsTelHref(getClickToCallPhone(pathname));
-  const address = getOfficeAddressMultilineForDisplayName(city);
+  const phoneNumber = getPhoneNumber(city, pathname);
+  const phoneHref = toUsTelHref(phoneNumber);
+  const address = getOfficeAddressMultilineForPhone(phoneNumber);
 
   return (
     <div className="paper-bg-16 bg-[#262424]">
@@ -386,9 +386,7 @@ const Footer = () => {
 
               <div className="hidden flex-col gap-2 text-right md:flex md:items-end">
                 <p className="font-['satoshi-regular'] text-lg font-normal">
-                  <Link href={phoneHref}>
-                    {phoneNumber}
-                  </Link>
+                  <Link href={phoneHref}>{phoneNumber}</Link>
                 </p>
                 <Link href="mailto:hello@godlywindows.com">
                   <p className="font-['satoshi-regular'] text-sm font-normal">
@@ -410,12 +408,11 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <div className="font-['satoshi-regular'] text-sm font-normal text-[#312E2C]">
-                {address &&
-                  address
-                    .split("\n")
-                    .map((line, index) => <p key={index}>{line}</p>)}
-              </div>
+              <address className="text-right font-['satoshi-regular'] text-sm font-normal text-[#312E2C] not-italic">
+                {address.split("\n").map((line, index) => (
+                  <p key={index}>{line}</p>
+                ))}
+              </address>
             </div>
           </div>
           <div

@@ -4,13 +4,13 @@ import { Phone } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useGodlyContext } from "@/context/godlyContext";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
-import { getClickToCallPhone, toUsTelHref } from "@/lib/usPhone";
+import { toUsTelHref } from "@/lib/usPhone";
 
 const PhoneNumber = () => {
   const { city } = useGodlyContext();
   const pathname = usePathname();
-  const phoneNumber = getPhoneNumber(city);
-  const phoneHref = toUsTelHref(getClickToCallPhone(pathname));
+  const phoneNumber = getPhoneNumber(city, pathname);
+  const phoneHref = toUsTelHref(phoneNumber);
 
   const handlePhoneClick = () => {
     if (typeof window !== "undefined" && window.gtag) {

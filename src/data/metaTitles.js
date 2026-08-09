@@ -3,13 +3,6 @@ import { citiesMap } from "./cities.js";
 import { getCityHeroContent } from "./cityHeroCopy.js";
 import { BASE_URL, BRAND_NAME } from "@/app/lib/constants";
 
-/** Cities with a real physical office — used to decide which footer shows a street address. */
-export const PHYSICAL_OFFICE_CITY_SLUGS = new Set([
-  "boca-raton",
-  "weston",
-  "fort-lauderdale",
-]);
-
 /**
  * Cities whose `/[city]/[service]` pages should render their OWN LocalBusiness
  * JSON-LD entity (address + telephone baked into the page).
@@ -38,10 +31,6 @@ const CITY_LANDING_LOCALBUSINESS_SLUGS = new Set([
   "coral-springs",
   "pompano-beach",
 ]);
-
-export function citySlugHasPhysicalOffice(citySlug) {
-  return PHYSICAL_OFFICE_CITY_SLUGS.has(citySlug);
-}
 
 /** Service-page only: should `/[city]/[service]` declare its own LocalBusiness? */
 export function citySlugRendersServicePageLocalBusiness(citySlug) {
@@ -118,33 +107,9 @@ const phoneToGoogleUrl = {
   "(954) 738-3421": "https://maps.app.goo.gl/3AHJVTMEPf8SWVrS7?g_st=ic", // Weston
 };
 
-/** Matches footer `getAddress` regions — physical office for that service area. */
-const FT_LAUDERDALE_OFFICE_SLUGS = new Set([
-  "pompano-beach",
-  "fort-lauderdale",
-  "golden-beach",
-  "hollywood",
-  "oakland-park",
-  "sunrise",
-  "lighthouse-point",
-  "lauderdale-by-the-sea",
-  "coconut-creek",
-]);
-
-const BOCA_OFFICE_SLUGS = new Set([
-  "delray-beach",
-  "boca-raton",
-  "tamarac",
-  "margate",
-  "coral-springs",
-  "parkland",
-  "deerfield-beach",
-  "hillsboro-beach",
-]);
-
 const OFFICES = {
   ftLauderdale: {
-    streetAddress: "3315 E Oakland Park Blvd, Suite 204",
+    streetAddress: "3315 E Oakland Park Blvd #204",
     addressLocality: "Fort Lauderdale",
     postalCode: "33308",
     latitude: "26.1723",
@@ -166,11 +131,24 @@ const OFFICES = {
   },
 };
 
+/**
+ * The visible phone number is the source of truth for which Google Business
+ * Profile address a page displays. Keep this in lockstep with `cityPhoneMap`.
+ */
+const PHONE_TO_OFFICE_KEY = {
+  "(954) 852-5326": "ftLauderdale",
+  "(561) 826-4461": "bocaRaton",
+  "(954) 738-3421": "weston",
+};
+
 function officeRegionKeyForCitySlug(citySlug) {
-  if (!citySlug || citySlug === "south-florida") return "ftLauderdale";
-  if (FT_LAUDERDALE_OFFICE_SLUGS.has(citySlug)) return "ftLauderdale";
-  if (BOCA_OFFICE_SLUGS.has(citySlug)) return "bocaRaton";
-  return "weston";
+  const phone = getPhoneForCity(citySlug);
+  return PHONE_TO_OFFICE_KEY[phone] ?? "ftLauderdale";
+}
+
+function officeForPhone(phone) {
+  const key = PHONE_TO_OFFICE_KEY[phone] ?? "ftLauderdale";
+  return OFFICES[key];
 }
 
 /** Physical office `PostalAddress` for the region that serves this city slug. */
@@ -196,15 +174,16 @@ export function getOfficeGeoForCitySlug(citySlug) {
   };
 }
 
-/**
- * Multiline office address for footer — only for cities with a real physical office.
- * Group B service-area pages do not show a street address (avoids implying a non-existent location).
- */
+/** Multiline footer address matching the phone number shown for the city. */
 export function getOfficeAddressMultilineForDisplayName(displayName) {
-  const slug = cityDisplayNameToSlug(displayName);
-  if (!slug || slug === "south-florida") return "";
-  if (!citySlugHasPhysicalOffice(slug)) return "";
-  const o = OFFICES[officeRegionKeyForCitySlug(slug)];
+  return getOfficeAddressMultilineForPhone(
+    getPhoneForCityDisplayName(displayName),
+  );
+}
+
+/** Multiline footer address derived directly from the visible phone number. */
+export function getOfficeAddressMultilineForPhone(phone) {
+  const o = officeForPhone(phone);
   return `${o.streetAddress}\n${o.addressLocality}, FL ${o.postalCode}`;
 }
 

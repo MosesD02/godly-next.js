@@ -2,10 +2,6 @@ import { isValidPhoneNumber } from "libphonenumber-js";
 
 const DEFAULT_COUNTRY = "US";
 
-const FORT_LAUDERDALE_PHONE = "954-852-5326";
-const BOCA_RATON_PHONE = "561-826-4461";
-const WESTON_PHONE = "954-738-3421";
-
 /**
  * Formats the national (10-digit) part only. The UI shows +1 separately, so we use
  * XXX-XXX-XXXX instead of parentheses national format from AsYouType.
@@ -46,14 +42,4 @@ export function toUsE164(value) {
 export function toUsTelHref(value) {
   const e164 = toUsE164(value);
   return e164 ? `tel:${e164}` : undefined;
-}
-
-/**
- * Click-to-call routing is URL-based so the initial HTML is correct even before
- * the city context hydrates. Visible phone text remains owned by each caller.
- */
-export function getClickToCallPhone(pathname) {
-  if (/^\/boca-raton(?:\/|$)/.test(pathname || "")) return BOCA_RATON_PHONE;
-  if (/^\/weston(?:\/|$)/.test(pathname || "")) return WESTON_PHONE;
-  return FORT_LAUDERDALE_PHONE;
 }

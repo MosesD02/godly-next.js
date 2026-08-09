@@ -1,17 +1,27 @@
+"use client";
+
 import React from "react";
+import { usePathname } from "next/navigation";
 import { brandLogo } from "@/lib/brand-assets";
 import Image from "@/components/Image";
 import Link from "next/link";
 
 import QuoteForm from "./quoteForm";
-import { getPhoneNumber } from "@/lib/getPhoneNumber";
 import { citiesMap } from "@/data/cities";
+import { useGodlyContext } from "@/context/godlyContext";
+import { getPhoneNumber } from "@/lib/getPhoneNumber";
+import { getOfficeAddressMultilineForPhone } from "@/data/metaTitles";
 
 const citiesData = Object.entries(citiesMap).filter(
   ([citySlug]) => citySlug !== "south-florida",
 );
 
 const Footer = ({ form = true, service }) => {
+  const { city } = useGodlyContext();
+  const pathname = usePathname();
+  const phoneNumber = getPhoneNumber(city, pathname);
+  const address = getOfficeAddressMultilineForPhone(phoneNumber);
+
   return (
     <>
       <div className="paper-bg-16 bg-[#262424]">
@@ -86,7 +96,7 @@ const Footer = ({ form = true, service }) => {
             </div>
           )}
           <div
-            className="justify-content-center align-center flex"
+            className="justify-content-center align-center flex flex-col items-center gap-4"
             style={{ justifyContent: "center" }}
           >
             <Image
@@ -94,6 +104,11 @@ const Footer = ({ form = true, service }) => {
               alt="logo"
               className="object center h-auto w-29.25 object-contain md:w-45.5"
             ></Image>
+            <address className="text-center font-['satoshi-regular'] text-sm leading-relaxed font-normal text-white not-italic">
+              {address.split("\n").map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+            </address>
           </div>
         </div>
         {/* <CityTags /> */}

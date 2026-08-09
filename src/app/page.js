@@ -64,7 +64,7 @@ const structuredData = {
       telephone: "+1-954-852-5326",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "3315 E Oakland Park Blvd, Suite 204",
+        streetAddress: "3315 E Oakland Park Blvd #204",
         addressLocality: "Fort Lauderdale",
         addressRegion: "FL",
         postalCode: "33308",
@@ -155,7 +155,7 @@ const structuredData = {
       image: `${BASE_URL}/favicon.svg`,
       address: {
         "@type": "PostalAddress",
-        streetAddress: "3315 E Oakland Park Blvd, Suite 204",
+        streetAddress: "3315 E Oakland Park Blvd #204",
         addressLocality: "Fort Lauderdale",
         addressRegion: "FL",
         postalCode: "33308",
