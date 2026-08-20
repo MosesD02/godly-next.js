@@ -7,6 +7,17 @@ import {
   generateServiceH1,
   generateCityHeroAlt,
 } from "@/data/metaTitles";
+import { cacheLife } from "next/cache";
+
+async function getCurrentEasternMonth() {
+  "use cache";
+  cacheLife("days");
+
+  return new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    timeZone: "America/New_York",
+  }).format(new Date());
+}
 
 const formatCity = (cityVal) => {
   if (!cityVal) return "South Florida";
@@ -17,7 +28,7 @@ const formatCity = (cityVal) => {
     .join(" ");
 };
 
-const Hero = ({
+const Hero = async ({
   service,
   source,
   serviceSlug,
@@ -28,6 +39,8 @@ const Hero = ({
   heroAlt,
 }) => {
   const city = cityName;
+  const currentEasternMonth =
+    heroSubcopy || service ? null : await getCurrentEasternMonth();
 
   return (
     <div className="relative overflow-x-clip bg-[#1F1D1D]">
@@ -100,7 +113,7 @@ const Hero = ({
             {heroSubcopy ||
               (service
                 ? `Get a free quote for ${service} in ${formatCity(city)} – no pressure, just honest pricing.`
-                : `Get Spotless Windows + FREE RainShield Treatment this ${new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" })).toLocaleString("en-US", { month: "long" })} Only.`)}
+                : `Get Spotless Windows + FREE RainShield Treatment this ${currentEasternMonth} Only.`)}
           </p>
         </div>
         <QuoteForm service={service} source={source} formTrackingId="hero" />

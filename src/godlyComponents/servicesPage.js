@@ -1,6 +1,5 @@
 import React from "react";
 import Services from "@/data/servicesData";
-import WebsiteLayout from "./websiteLayout";
 import ServicesHero from "./servicesHero";
 import ServiceIncludes from "./serviceInculdes";
 import OtherServices from "./otherServices";
@@ -25,7 +24,7 @@ export default function ServicesPage({
     cityData.interiorSection ?? Services[slug]?.interiorSection;
 
   return (
-    <WebsiteLayout>
+    <>
       <CitySync city={city} />
       <ServicesHero
         slug={slug}
@@ -85,6 +84,6 @@ export default function ServicesPage({
       {slug !== "rain-shield" && (
         <ServiceNearbyCities citySlug={city} serviceSlug={slug} />
       )}
-    </WebsiteLayout>
+    </>
   );
 }

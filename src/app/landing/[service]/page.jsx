@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import GodlyHome from "@/components/landing/home";
 import { citiesMap } from "@/data/cities";
 import { BASE_URL } from "@/app/lib/constants";
@@ -8,6 +9,7 @@ import {
 } from "@/data/metaTitles";
 import { notFound } from "next/navigation";
 import JsonLd from "@/lib/jsonLd";
+import RouteLoadingFallback from "@/components/RouteLoadingFallback";
 
 // This page handles /landing/[city] routes (e.g. /landing/fort-lauderdale)
 // The [service] param is used as city slug since it's the same dynamic segment
@@ -58,7 +60,15 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function CityLandingPage({ params }) {
+export default function CityLandingPage({ params }) {
+  return (
+    <Suspense fallback={<RouteLoadingFallback variant="landing" />}>
+      <CityLandingPageContent params={params} />
+    </Suspense>
+  );
+}
+
+async function CityLandingPageContent({ params }) {
   const { service: city } = await params;
 
   // Only render for valid city slugs, otherwise 404

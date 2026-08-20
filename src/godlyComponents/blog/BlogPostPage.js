@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "@/components/Image";
 import { format } from "date-fns";
-import WebsiteLayout from "../websiteLayout";
 import BlogPostContent from "./BlogPostContent";
 import BlogPostFaq from "./BlogPostFaq";
 import BlogPostCta from "./BlogPostCta";
@@ -10,7 +9,7 @@ import BlogCitySync from "./BlogCitySync";
 
 export default function BlogPostPage({ post, basePath = "/blog" }) {
   return (
-    <WebsiteLayout>
+    <>
       <BlogCitySync citySlug={post.citySlug} targetCity={post.targetCity} />
       <article className="mt-17 flex w-full flex-col bg-[#fef7ea] px-7.5 py-11.25 text-[#312E2C] md:mt-14 md:p-16">
         <div className="mx-auto flex w-full max-w-200 flex-col">
@@ -61,6 +60,6 @@ export default function BlogPostPage({ post, basePath = "/blog" }) {
           <BlogPostFaq faq={post.faq} />
         </div>
       </article>
-    </WebsiteLayout>
+    </>
   );
 }

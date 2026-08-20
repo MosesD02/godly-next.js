@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import GodlyHome from "@/godlyComponents/home";
 import { homeTitle, homeDescription } from "@/data/metaTitles";
 import {
@@ -7,6 +8,8 @@ import {
 import DynamicMetaTags from "@/components/DynamicMetaTags";
 import JsonLd from "@/lib/jsonLd";
 import { BASE_URL, BRAND_NAME } from "@/app/lib/constants";
+import RouteLoadingFallback from "@/components/RouteLoadingFallback";
+import WebsiteLayout from "@/godlyComponents/websiteLayout";
 
 // Static metadata for home page
 export const metadata = {
@@ -171,7 +174,11 @@ export default function Home() {
     <>
       <DynamicMetaTags />
       <JsonLd id="structured-data" data={structuredData} />
-      <GodlyHome />
+      <WebsiteLayout>
+        <Suspense fallback={<RouteLoadingFallback variant="home" />}>
+          <GodlyHome />
+        </Suspense>
+      </WebsiteLayout>
     </>
   );
 }

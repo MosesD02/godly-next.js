@@ -2,8 +2,9 @@ import { getPhoneForCityDisplayName } from "@/data/metaTitles";
 import { citiesMap } from "@/data/cities";
 
 /**
- * Local display phone for UI (footer, header, CTAs). A city slug in the URL
- * wins so the first server-rendered HTML already has the correct regional NAP.
+ * Local display phone for UI (footer, header, CTAs). The route takes
+ * precedence so regional NAP is correct in server-rendered HTML; context is
+ * the fallback for route-independent UI.
  */
 export const getPhoneNumber = (city, pathname) => {
   const routeCitySlug =

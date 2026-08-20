@@ -4,6 +4,7 @@ import { serviceMetaTitles } from "@/data/metaTitles";
 import { WINDOW_CLUSTER_SLUGS } from "@/data/windowCleaningCluster";
 import { getAllSanityPosts } from "@/data/sanity-content";
 import { getCanonicalBlogSlug, isNoindexBlogSlug } from "@/lib/blog-slugs";
+import { cacheLife } from "next/cache";
 
 function minimalSitemapEntries(now) {
   return [
@@ -53,6 +54,9 @@ function minimalSitemapEntries(now) {
 }
 
 export default async function sitemap() {
+  "use cache";
+  cacheLife("hours");
+
   const now = new Date().toISOString();
 
   try {

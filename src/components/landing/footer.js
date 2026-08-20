@@ -10,7 +10,10 @@ import QuoteForm from "./quoteForm";
 import { citiesMap } from "@/data/cities";
 import { useGodlyContext } from "@/context/godlyContext";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
-import { getOfficeAddressMultilineForPhone } from "@/data/metaTitles";
+import {
+  getOfficeAddressMultilineForPhone,
+  serviceMetaTitles,
+} from "@/data/metaTitles";
 
 const citiesData = Object.entries(citiesMap).filter(
   ([citySlug]) => citySlug !== "south-florida",
@@ -21,6 +24,19 @@ const Footer = ({ form = true, service }) => {
   const pathname = usePathname();
   const phoneNumber = getPhoneNumber(city, pathname);
   const address = getOfficeAddressMultilineForPhone(phoneNumber);
+  const pathSegments = pathname?.split("/").filter(Boolean) ?? [];
+  const routeServiceSlug = pathSegments.find(
+    (segment) => serviceMetaTitles[segment],
+  );
+  const campaignService = pathSegments.some((segment) =>
+    /window-(?:cleaning|washing|cleaners|washers)/.test(segment),
+  )
+    ? serviceMetaTitles["window-cleaning"]
+    : undefined;
+  const resolvedService =
+    service ||
+    (routeServiceSlug ? serviceMetaTitles[routeServiceSlug] : undefined) ||
+    campaignService;
 
   return (
     <>
@@ -92,7 +108,7 @@ const Footer = ({ form = true, service }) => {
             we specialize in window washing, room washing, soft washing, paver
             sealing, and more.
           </p> */}
-              <QuoteForm service={service} formTrackingId="footer" />
+              <QuoteForm service={resolvedService} formTrackingId="footer" />
             </div>
           )}
           <div

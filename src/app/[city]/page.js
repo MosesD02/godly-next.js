@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import GodlyHome from "@/godlyComponents/home";
 import { citiesMap } from "@/data/cities";
@@ -12,6 +13,8 @@ import {
 } from "@/data/homepageFaqData";
 import JsonLd from "@/lib/jsonLd";
 import { BASE_URL } from "@/app/lib/constants";
+import RouteLoadingFallback from "@/components/RouteLoadingFallback";
+import WebsiteLayout from "@/godlyComponents/websiteLayout";
 
 export async function generateStaticParams() {
   return Object.keys(citiesMap)
@@ -62,7 +65,17 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function Page({ params }) {
+export default function Page({ params }) {
+  return (
+    <WebsiteLayout>
+      <Suspense fallback={<RouteLoadingFallback variant="home" />}>
+        <CityPageContent params={params} />
+      </Suspense>
+    </WebsiteLayout>
+  );
+}
+
+async function CityPageContent({ params }) {
   const { city } = await params;
   if (!citiesMap[city]) {
     notFound();

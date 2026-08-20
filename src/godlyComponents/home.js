@@ -11,7 +11,6 @@ import Savings from "./savings";
 import Testimonials from "./testimonials";
 import Promise from "./promise";
 import Hero from "./hero";
-import WebsiteLayout from "./websiteLayout";
 import Faq from "./faq";
 import { mainHomepageFaqs, getCityHomepageFaqs } from "@/data/homepageFaqData";
 import TeamGallery from "./teamGallery";
@@ -79,7 +78,7 @@ export default function GodlyHome({ city }) {
   }, [city, setCity]);
 
   return (
-    <WebsiteLayout>
+    <>
       <Hero cityName={cityName} />
       <FourStepProcess />
       <Services cityName={cityName} citySlug={city} />
@@ -120,6 +119,6 @@ export default function GodlyHome({ city }) {
       <OaklandParkCta />
       <RoyalPalmBeachCta />
       <PopupModal />
-    </WebsiteLayout>
+    </>
   );
 }

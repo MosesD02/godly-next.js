@@ -41,6 +41,11 @@ const UNDERSCORE_CITY_REDIRECTS = CITY_SLUGS.filter((city) =>
 }));
 
 const nextConfig: NextConfig = {
+  // Next.js 16.3 instant navigations: prerender a reusable App Shell and
+  // prefetch that shell for visible links while dynamic content streams in.
+  cacheComponents: true,
+  partialPrefetching: true,
+
   reactCompiler: true,
 
   images: {

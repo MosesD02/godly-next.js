@@ -23,21 +23,14 @@ const citiesData = Object.entries(citiesMap).filter(
 const Footer = () => {
   const { city } = useGodlyContext();
   const pathname = usePathname();
-
-  const getCityFromUrl = () => {
-    const fallback =
-      Object.keys(citiesMap).find((key) => citiesMap[key] === city) ||
-      "south-florida";
-    if (!pathname) return fallback;
-    const pathSegments = pathname.split("/").filter(Boolean);
-    const firstSegment = pathSegments[0];
-    if (firstSegment && citiesMap[firstSegment]) {
-      return firstSegment;
-    }
-    return fallback;
-  };
-
-  const urlCityKey = getCityFromUrl();
+  const routeCityKey = pathname
+    ?.split("/")
+    .filter(Boolean)
+    .find((segment) => citiesMap[segment]);
+  const cityKey =
+    routeCityKey ||
+    Object.keys(citiesMap).find((key) => citiesMap[key] === city) ||
+    "south-florida";
   const phoneNumber = getPhoneNumber(city, pathname);
   const phoneHref = toUsTelHref(phoneNumber);
   const address = getOfficeAddressMultilineForPhone(phoneNumber);
@@ -125,6 +118,7 @@ const Footer = () => {
                   </p>
                   <a
                     href={toUsTelHref(phone)}
+                    suppressHydrationWarning
                     className="font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
                   >
                     {phone}
@@ -162,6 +156,7 @@ const Footer = () => {
                   </p>
                   <a
                     href={toUsTelHref(phone)}
+                    suppressHydrationWarning
                     className="font-['satoshi-regular'] text-base font-normal text-white! md:text-lg"
                   >
                     {phone}
@@ -353,7 +348,7 @@ const Footer = () => {
                     Our Process
                   </Link>
                   <Link
-                    href={`/${urlCityKey}/holiday-lighting`}
+                    href={`/${cityKey}/holiday-lighting`}
                     className="font-['satoshi-regular'] text-base font-normal hover:underline md:text-sm"
                   >
                     Holiday Lighting
@@ -386,7 +381,9 @@ const Footer = () => {
 
               <div className="hidden flex-col gap-2 text-right md:flex md:items-end">
                 <p className="font-['satoshi-regular'] text-lg font-normal">
-                  <Link href={phoneHref}>{phoneNumber}</Link>
+                  <a href={phoneHref} suppressHydrationWarning>
+                    {phoneNumber}
+                  </a>
                 </p>
                 <Link href="mailto:hello@godlywindows.com">
                   <p className="font-['satoshi-regular'] text-sm font-normal">

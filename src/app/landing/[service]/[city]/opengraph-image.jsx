@@ -4,7 +4,6 @@ import { loadOgFonts, loadOgLogo, loadOgPaperBg } from "@/app/lib/og-fonts";
 import { citiesMap } from "@/data/cities";
 import { generateServiceTitle, serviceMetaTitles } from "@/data/metaTitles";
 
-export const runtime = "nodejs";
 export const size = OG_SIZE;
 export const contentType = "image/png";
 

@@ -136,8 +136,14 @@ const ServicesHero = ({
       </div>
       {slug === "rain-shield" ? null : slug === "holiday-lighting" ? (
         <div className="flex flex-wrap items-center justify-center gap-4">
-          <a href={quoteTel} className="free-button">
-            <span>GET A FREE QUOTE — {quotePhone}</span>
+          <a
+            href={quoteTel}
+            className="free-button"
+            suppressHydrationWarning
+          >
+            <span suppressHydrationWarning>
+              GET A FREE QUOTE — {quotePhone}
+            </span>
           </a>
           <a
             href="https://godlyholidaylights.com"

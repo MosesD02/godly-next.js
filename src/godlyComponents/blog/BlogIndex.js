@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "@/components/Image";
-import WebsiteLayout from "../websiteLayout";
 import { format } from "date-fns";
 import { titleCaseCityName } from "@/lib/utils";
 import { getCanonicalBlogSlug } from "@/lib/blog-slugs";
@@ -97,7 +96,7 @@ export default function BlogIndex({
     ].join(" ");
 
   return (
-    <WebsiteLayout>
+    <>
       <div className="mt-14 flex flex-col bg-[#262424] px-8.75 py-25 md:mt-17 md:p-16 md:py-17.5">
         <div className="mx-auto flex w-full max-w-327.75 flex-col items-center gap-2">
           <h1
@@ -479,6 +478,6 @@ export default function BlogIndex({
           </div>
         )}
       </div>
-    </WebsiteLayout>
+    </>
   );
 }

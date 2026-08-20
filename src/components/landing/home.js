@@ -5,7 +5,6 @@ import Gurantee from "./gurantee";
 import Testimonials from "./testimonials";
 import Promise from "./promise";
 import Hero from "./hero";
-import WebsiteLayout from "./websiteLayout";
 import TeamGallery from "@/godlyComponents/teamGallery";
 import CitySync from "@/godlyComponents/CitySync";
 import LandingTracker from "./LandingTracker";
@@ -26,7 +25,7 @@ export default function GodlyHome({
   introCopy,
 }) {
   return (
-    <WebsiteLayout service={service}>
+    <>
       {/* Sync city to context + cookie (client-only) */}
       <CitySync city={city} />
       {/* Track landing page view (client-only) */}
@@ -57,6 +56,6 @@ export default function GodlyHome({
       <HowItWorks />
       <Faq />
       <LandingAbConversionScript />
-    </WebsiteLayout>
+    </>
   );
 }

@@ -4,7 +4,7 @@
  * used by BlogIndex and BlogPostPage.
  */
 
-import { cache } from "react";
+import { cacheLife, cacheTag } from "next/cache";
 import { client } from "@/sanity/client";
 import { urlFor } from "@/sanity/image";
 import { sanityLqipToBlurDataURL } from "@/sanity/lqip";
@@ -111,21 +111,30 @@ function toBlogPost(doc) {
 
 /**
  * Get all Sanity posts sorted by date (newest first).
- * Cached per request so generateMetadata and page can share one fetch.
+ * Cached across renders and navigations so metadata, pages, and prefetched
+ * route shells can reuse one CMS read.
  */
-export const getAllSanityPosts = cache(async function getAllSanityPosts() {
+export async function getAllSanityPosts() {
+  "use cache";
+  cacheLife("minutes");
+  cacheTag("sanity-posts");
+
   try {
     const docs = await client.fetch(POSTS_QUERY);
     return (docs || []).map(toBlogPost);
   } catch {
     return [];
   }
-});
+}
 
 /**
  * Get a single Sanity post by slug
  */
 export async function getSanityPostBySlug(slug) {
+  "use cache";
+  cacheLife("minutes");
+  cacheTag("sanity-posts", `sanity-post-${slug}`);
+
   try {
     const doc = await client.fetch(POST_BY_SLUG_QUERY, { slug });
     return toBlogPost(doc);

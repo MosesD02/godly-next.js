@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import ServicesPage from "@/godlyComponents/servicesPage";
 import { citiesMap } from "@/data/cities";
@@ -20,6 +21,8 @@ import Services from "@/data/servicesData";
 import { cityServicesData } from "@/data/cityServicesData/index";
 import JsonLd from "@/lib/jsonLd";
 import { BASE_URL } from "@/app/lib/constants";
+import RouteLoadingFallback from "@/components/RouteLoadingFallback";
+import WebsiteLayout from "@/godlyComponents/websiteLayout";
 
 export async function generateStaticParams() {
   const cities = Object.keys(citiesMap).filter((c) => c !== "south-florida");
@@ -28,8 +31,6 @@ export async function generateStaticParams() {
   );
   return cities.flatMap((city) => services.map((slug) => ({ city, slug })));
 }
-
-export const revalidate = 3600;
 
 // Dynamic metadata generation for service pages
 export async function generateMetadata({ params }) {
@@ -62,7 +63,17 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function GodlyServices({ params }) {
+export default function GodlyServices({ params }) {
+  return (
+    <WebsiteLayout>
+      <Suspense fallback={<RouteLoadingFallback variant="service" />}>
+        <GodlyServicesContent params={params} />
+      </Suspense>
+    </WebsiteLayout>
+  );
+}
+
+async function GodlyServicesContent({ params }) {
   const param = await params;
   const { slug, city } = param;
 

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import {
   getSanityPostBySlug,
@@ -22,6 +23,8 @@ import {
 } from "@/lib/blog-slugs";
 import JsonLd from "@/lib/jsonLd";
 import { clampMetaDescription } from "@/lib/metaDescription";
+import RouteLoadingFallback from "@/components/RouteLoadingFallback";
+import WebsiteLayout from "@/godlyComponents/websiteLayout";
 
 function toCityTitle(citySlug) {
   return citiesMap[citySlug]
@@ -153,9 +156,17 @@ export async function generateMetadata({ params }) {
   return {};
 }
 
-export const revalidate = 60;
+export default function BlogPostRoute({ params, searchParams }) {
+  return (
+    <WebsiteLayout>
+      <Suspense fallback={<RouteLoadingFallback variant="blog-post" />}>
+        <BlogPostContent params={params} searchParams={searchParams} />
+      </Suspense>
+    </WebsiteLayout>
+  );
+}
 
-export default async function BlogPostRoute({ params, searchParams }) {
+async function BlogPostContent({ params, searchParams }) {
   const { slug } = await params;
   const sp = await searchParams;
 

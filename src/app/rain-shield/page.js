@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import ServicesPage from "@/godlyComponents/servicesPage";
 import JsonLd from "@/lib/jsonLd";
 import { citiesMap } from "@/data/cities";
@@ -9,6 +10,8 @@ import {
 } from "@/data/metaTitles";
 import { getRelatedBlogPosts } from "@/data/sanity-content";
 import { BASE_URL } from "@/app/lib/constants";
+import RouteLoadingFallback from "@/components/RouteLoadingFallback";
+import WebsiteLayout from "@/godlyComponents/websiteLayout";
 
 const DEFAULT_CITY_SLUG = "south-florida";
 
@@ -58,7 +61,17 @@ export async function generateMetadata({ searchParams }) {
   };
 }
 
-export default async function RainShieldPage({ searchParams }) {
+export default function RainShieldPage({ searchParams }) {
+  return (
+    <WebsiteLayout>
+      <Suspense fallback={<RouteLoadingFallback variant="service" />}>
+        <RainShieldPageContent searchParams={searchParams} />
+      </Suspense>
+    </WebsiteLayout>
+  );
+}
+
+async function RainShieldPageContent({ searchParams }) {
   const sp = await searchParams;
   const rawCity = Array.isArray(sp?.city) ? sp.city[0] : sp?.city;
   const citySlug = resolveRainShieldCitySlug(rawCity);

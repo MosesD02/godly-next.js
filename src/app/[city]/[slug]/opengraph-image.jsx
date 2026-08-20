@@ -6,7 +6,6 @@ import { generateServiceTitle, serviceMetaTitles } from "@/data/metaTitles";
 import { getSanityPostBySlug } from "@/data/sanity-content";
 import { format } from "date-fns";
 
-export const runtime = "nodejs";
 export const size = OG_SIZE;
 export const contentType = "image/png";
 

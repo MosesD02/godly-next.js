@@ -2,7 +2,6 @@ import { ImageResponse } from "next/og";
 import { OgLayout, OG_SIZE } from "@/app/lib/og-image";
 import { loadOgFonts, loadOgLogo, loadOgPaperBg } from "@/app/lib/og-fonts";
 
-export const runtime = "nodejs";
 export const alt =
   "Book professional window cleaning and pressure washing services in South Florida. Free estimates and satisfaction guarantee.";
 export const size = OG_SIZE;

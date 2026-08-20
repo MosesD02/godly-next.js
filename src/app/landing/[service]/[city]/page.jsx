@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import GodlyHome from "@/components/landing/home";
 import { citiesMap } from "@/data/cities";
@@ -15,6 +16,7 @@ import {
   businessOpeningHoursSpecification,
 } from "@/data/metaTitles";
 import JsonLd from "@/lib/jsonLd";
+import RouteLoadingFallback from "@/components/RouteLoadingFallback";
 
 export async function generateStaticParams() {
   const services = Object.keys(serviceMetaTitles);
@@ -69,7 +71,15 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function LandingPage({ params }) {
+export default function LandingPage({ params }) {
+  return (
+    <Suspense fallback={<RouteLoadingFallback variant="landing" />}>
+      <LandingPageContent params={params} />
+    </Suspense>
+  );
+}
+
+async function LandingPageContent({ params }) {
   const { service, city } = await params;
 
   if (!service || !city || !serviceMetaTitles[service] || !citiesMap[city]) {

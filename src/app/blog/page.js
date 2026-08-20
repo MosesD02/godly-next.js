@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { citiesMap } from "@/data/cities";
 import { getAllSanityPosts } from "@/data/sanity-content";
 import { BASE_URL } from "@/app/lib/constants";
@@ -6,6 +7,8 @@ import {
   redirectIfBlogListPageMismatch,
 } from "@/lib/blog-pagination";
 import BlogIndex from "@/godlyComponents/blog/BlogIndex";
+import RouteLoadingFallback from "@/components/RouteLoadingFallback";
+import WebsiteLayout from "@/godlyComponents/websiteLayout";
 
 const BLOG_TITLE =
   "Blog | Godly Windows & Wash Co. — Pressure Washing & Window Cleaning Tips";
@@ -33,9 +36,17 @@ export async function generateMetadata() {
   };
 }
 
-export const revalidate = 60;
+export default function BlogPage({ searchParams }) {
+  return (
+    <WebsiteLayout>
+      <Suspense fallback={<RouteLoadingFallback variant="blog-index" />}>
+        <BlogPageContent searchParams={searchParams} />
+      </Suspense>
+    </WebsiteLayout>
+  );
+}
 
-export default async function BlogPage({ searchParams }) {
+async function BlogPageContent({ searchParams }) {
   const sp = await searchParams;
   // Same UX as home (/): show SOUTH FLORIDA in the UI, list every city's posts
   const cityName = citiesMap["south-florida"];

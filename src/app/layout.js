@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
-import { AppWrapper } from "@/context/godlyContext";
+import { AppWrapper, CityPathSync } from "@/context/godlyContext";
 import ThirdPartyScripts from "@/components/ThirdPartyScripts";
 import { BASE_URL, BRAND_NAME } from "@/app/lib/constants";
 import AttributionCapture from "@/components/AttributionCapture";
@@ -68,12 +68,17 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}`}
         suppressHydrationWarning
       >
-        <ThirdPartyScripts />
         <Suspense fallback={null}>
           <AttributionCapture />
         </Suspense>
 
-        <AppWrapper>{children}</AppWrapper>
+        <AppWrapper>
+          <Suspense fallback={null}>
+            <CityPathSync />
+          </Suspense>
+          <Suspense fallback={null}>{children}</Suspense>
+        </AppWrapper>
+        <ThirdPartyScripts />
       </body>
     </html>
   );

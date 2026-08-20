@@ -2,7 +2,6 @@ import { ImageResponse } from "next/og";
 import { OgLayout, OG_SIZE } from "@/app/lib/og-image";
 import { loadOgFonts, loadOgLogo, loadOgPaperBg } from "@/app/lib/og-fonts";
 
-export const runtime = "nodejs";
 export const alt =
   "Terms and Conditions for Godly Windows & Wash Co. Learn about our service policies and user agreements.";
 export const size = OG_SIZE;

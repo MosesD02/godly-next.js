@@ -13,11 +13,13 @@ const PhoneNumber = () => {
   const phoneHref = toUsTelHref(phoneNumber);
 
   const handlePhoneClick = () => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("event", "phone_number_click", {
+    if (typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "phone_number_click",
         event_category: "engagement",
         event_label: "Phone Number Click",
-        city: city,
+        city,
       });
     }
   };
@@ -27,13 +29,19 @@ const PhoneNumber = () => {
       <a
         href={phoneHref}
         onClick={handlePhoneClick}
+        suppressHydrationWarning
         className="iconbox cursor-pointer rounded-md border-2 border-solid border-[#403830] bg-[#1e1c1b] p-2 transition-shadow duration-300 ease-in-out hover:shadow-[0px_3px_2px_0px_rgba(97,80,62,0.20)_inset,0px_1px_8.6px_0px_rgba(243,202,158,0.70)] xl:p-3"
       >
         <Phone className="size-5 text-[#F3C99D] xl:size-7" strokeWidth={1.2} />
       </a>
-      <a href={phoneHref} onClick={handlePhoneClick}>
+      <a href={phoneHref} onClick={handlePhoneClick} suppressHydrationWarning>
         <p className="text-xs leading-none font-normal">CALL US</p>
-        <p className="text-base font-normal xl:text-lg">{phoneNumber}</p>
+        <p
+          className="text-base font-normal xl:text-lg"
+          suppressHydrationWarning
+        >
+          {phoneNumber}
+        </p>
       </a>
     </div>
   );
