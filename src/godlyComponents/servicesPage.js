@@ -32,6 +32,7 @@ export default function ServicesPage({
         cityName={cityName}
         citySlug={city}
         eyebrowOverride={cityData.eyebrow}
+        h1Override={cityData.h1}
       />
       <ServiceIncludes
         slug={slug}

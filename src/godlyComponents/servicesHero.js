@@ -17,6 +17,7 @@ const ServicesHero = ({
   cityName,
   citySlug,
   eyebrowOverride,
+  h1Override,
 }) => {
   const quotePhone = getPhoneNumber(cityName ?? "SOUTH FLORIDA");
   const quoteTel = toUsTelHref(quotePhone);
@@ -30,7 +31,9 @@ const ServicesHero = ({
 
   return (
     <div className="paper-bg-16 mt-17 flex flex-col items-center justify-center gap-20 bg-[#252525] px-7.5 py-10.5 md:mt-14 md:py-25">
-      <h1 className="sr-only">{generateServiceH1(slug, cityName)}</h1>
+      <h1 className="sr-only">
+        {h1Override ?? generateServiceH1(slug, cityName)}
+      </h1>
       <div className="flex flex-col items-center justify-center gap-4">
         <div
           className={cn(

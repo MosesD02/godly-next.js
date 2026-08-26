@@ -40,6 +40,7 @@ import { tamarac } from "./tamarac";
 import { westPark } from "./west-park";
 import { weston } from "./weston";
 import { sealingFaqsByCity } from "./sealingFaqs";
+import { finalNotRankingPages } from "./finalNotRankingPages";
 
 const baseCityServicesData = {
   "boca-raton": bocaRaton,
@@ -87,9 +88,24 @@ function mergeSealingFaqs(citySlug, services) {
   };
 }
 
+function mergeFinalNotRankingPages(citySlug, services) {
+  const finalServices = finalNotRankingPages[citySlug];
+  if (!finalServices) return services;
+
+  return {
+    ...services,
+    ...Object.fromEntries(
+      Object.entries(finalServices).map(([serviceSlug, finalOverride]) => [
+        serviceSlug,
+        { ...(services[serviceSlug] ?? {}), ...finalOverride },
+      ]),
+    ),
+  };
+}
+
 export const cityServicesData = Object.fromEntries(
   Object.entries(baseCityServicesData).map(([citySlug, services]) => [
     citySlug,
-    mergeSealingFaqs(citySlug, services),
+    mergeFinalNotRankingPages(citySlug, mergeSealingFaqs(citySlug, services)),
   ]),
 );

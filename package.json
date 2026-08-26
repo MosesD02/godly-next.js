@@ -7,6 +7,8 @@
     "build": "node scripts/preconvert-og-paper.js && next build",
     "start": "next start",
     "lint": "eslint .",
+    "validate:final-content": "node scripts/validate-final-not-ranking-content.mjs",
+    "verify:final-content": "node scripts/verify-final-content-pages.mjs",
     "optimize-images": "node optimize-images.js",
     "optimize-images:all": "node optimize-images.js src/assets public",
     "preconvert-og-paper": "node scripts/preconvert-og-paper.js"

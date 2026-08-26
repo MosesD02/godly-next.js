@@ -36,9 +36,11 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug, city } = await params;
   const cityName = citiesMap[city];
+  const cityData = cityServicesData[city]?.[slug] ?? {};
 
-  const title = generateServiceTitle(slug, cityName);
-  const description = generateServiceDescription(slug, cityName);
+  const title = cityData.metaTitle ?? generateServiceTitle(slug, cityName);
+  const description =
+    cityData.metaDescription ?? generateServiceDescription(slug, cityName);
 
   return {
     title,
@@ -85,6 +87,8 @@ async function GodlyServicesContent({ params }) {
   // in the initial HTML response for Google to crawl.
   const cityName = citiesMap[city] ?? null;
   const cityData = cityServicesData[city]?.[slug] ?? {};
+  const pageDescription =
+    cityData.metaDescription ?? generateServiceDescription(slug, cityName);
 
   let relatedPosts = [];
   try {
@@ -113,7 +117,7 @@ async function GodlyServicesContent({ params }) {
         image: `${BASE_URL}/favicon.svg`,
         url: pageUrl,
         telephone: getPhoneForCity(city),
-        description: generateServiceDescription(slug, cityName),
+        description: pageDescription,
         address: getOfficePostalAddressForCitySlug(city),
         geo: getOfficeGeoForCitySlug(city),
         openingHoursSpecification: businessOpeningHoursSpecification,

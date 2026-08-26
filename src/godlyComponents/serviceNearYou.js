@@ -197,12 +197,14 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
                       <div className="mb-4 flex justify-center">
                         {steps2[index % steps2.length].icon}
                       </div>
-                      <div
-                        className="mb-8 text-center text-sm"
-                        style={{ marginBottom: "1rem" }}
-                      >
-                        {step.title}
-                      </div>
+                      {step.title && (
+                        <div
+                          className="mb-8 text-center text-sm"
+                          style={{ marginBottom: "1rem" }}
+                        >
+                          {step.title}
+                        </div>
+                      )}
                     </div>
                     <p className="text-center font-sans text-xs">{step.text}</p>
                   </div>
@@ -225,12 +227,14 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
                       <div className="mb-4 flex justify-center">
                         {steps2[index].icon}
                       </div>
-                      <div
-                        className="mb-8 text-center text-xl"
-                        style={{ marginBottom: "1rem" }}
-                      >
-                        {step.title}
-                      </div>
+                      {step.title && (
+                        <div
+                          className="mb-8 text-center text-xl"
+                          style={{ marginBottom: "1rem" }}
+                        >
+                          {step.title}
+                        </div>
+                      )}
                     </div>
                     <p className="text-center font-sans text-sm">{step.text}</p>
                   </div>
@@ -247,12 +251,14 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
                       <div className="mb-4 flex justify-center">
                         {steps2[index].icon}
                       </div>
-                      <div
-                        className="mb-8 text-center text-xl"
-                        style={{ marginBottom: "1rem" }}
-                      >
-                        {step.title}
-                      </div>
+                      {step.title && (
+                        <div
+                          className="mb-8 text-center text-xl"
+                          style={{ marginBottom: "1rem" }}
+                        >
+                          {step.title}
+                        </div>
+                      )}
                     </div>
                     <p className="text-center font-sans text-sm">{step.text}</p>
                   </div>
@@ -270,12 +276,14 @@ const ServiceNearYou = ({ slug, nearYouOverride, cityName }) => {
                         <div className="mb-4 flex justify-center">
                           {steps2[2].icon}
                         </div>
-                        <div
-                          className="mb-8 text-center text-xl"
-                          style={{ marginBottom: "1rem" }}
-                        >
-                          {step.title}
-                        </div>
+                        {step.title && (
+                          <div
+                            className="mb-8 text-center text-xl"
+                            style={{ marginBottom: "1rem" }}
+                          >
+                            {step.title}
+                          </div>
+                        )}
                       </div>
                       <p className="text-center font-sans text-sm">
                         {step.text}
