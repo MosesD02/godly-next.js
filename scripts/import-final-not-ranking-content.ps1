@@ -11,7 +11,13 @@ param(
   )]
   [string]$ServiceSlug,
 
-  [string]$WorkbookPath = "C:\Users\itexp\Downloads\Godly_Windows_Content_MASTER.xlsx"
+  [string]$WorkbookPath = "C:\Users\itexp\Downloads\Godly_Windows_Content_MASTER.xlsx",
+
+  [string]$OutputDirectory = (
+    Join-Path $PSScriptRoot (
+      "..\src\data\cityServicesData\finalNotRankingPages"
+    )
+  )
 )
 
 $ErrorActionPreference = "Stop"
@@ -301,12 +307,9 @@ try {
 
   $hash = (Get-FileHash -LiteralPath $WorkbookPath -Algorithm SHA256).Hash
   $json = $content | ConvertTo-Json -Depth 20
-  $outputDirectory = Join-Path $PSScriptRoot (
-    "..\src\data\cityServicesData\finalNotRankingPages"
-  )
-  $outputDirectory = [System.IO.Path]::GetFullPath($outputDirectory)
-  [System.IO.Directory]::CreateDirectory($outputDirectory) | Out-Null
-  $outputPath = Join-Path $outputDirectory "$ServiceSlug.js"
+  $resolvedOutputDirectory = [System.IO.Path]::GetFullPath($OutputDirectory)
+  [System.IO.Directory]::CreateDirectory($resolvedOutputDirectory) | Out-Null
+  $outputPath = Join-Path $resolvedOutputDirectory "$ServiceSlug.js"
   $output = @"
 // AUTO-GENERATED from Godly_Windows_Content_MASTER.xlsx
 // Source SHA-256: $hash

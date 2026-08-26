@@ -67,7 +67,24 @@ export async function generateMetadata({ params }) {
 
 export default function GodlyServices({ params }) {
   return (
-    <WebsiteLayout>
+    <Suspense
+      fallback={
+        <WebsiteLayout>
+          <RouteLoadingFallback variant="service" />
+        </WebsiteLayout>
+      }
+    >
+      <GodlyServicesShell params={params} />
+    </Suspense>
+  );
+}
+
+async function GodlyServicesShell({ params }) {
+  const { city } = await params;
+  const cityName = citiesMap[city];
+
+  return (
+    <WebsiteLayout cityName={cityName}>
       <Suspense fallback={<RouteLoadingFallback variant="service" />}>
         <GodlyServicesContent params={params} />
       </Suspense>

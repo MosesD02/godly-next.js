@@ -115,11 +115,22 @@ for (const [citySlug, services] of Object.entries(content)) {
 
   if (page.interiorSection) {
     invariant(
-      decodedHtml.includes(page.interiorSection.heading) &&
+      decodedHtml.includes('data-section="interior-window-cleaning"') &&
+        decodedHtml.includes(page.interiorSection.heading) &&
         page.interiorSection.body.every((paragraph) =>
           decodedHtml.includes(paragraph),
         ),
       `Interior section mismatch at ${requestUrl}`,
+    );
+    invariant(
+      (html.match(/data-interior-paragraph=/g) ?? []).length ===
+        page.interiorSection.body.length,
+      `Interior section paragraph count mismatch at ${requestUrl}`,
+    );
+  } else {
+    invariant(
+      !decodedHtml.includes('data-section="interior-window-cleaning"'),
+      `Unexpected interior section at ${requestUrl}`,
     );
   }
 

@@ -24,7 +24,7 @@ const FormPopup = dynamic(() => import("./header/FormPopup"), {
   ssr: false,
 });
 
-const Header = () => {
+const Header = ({ cityName }) => {
   const { formPopupOpen, setFormPopupOpen } = useGodlyContext();
   const [servicesOpen, setServicesOpen] = useState(false);
   const [citiesOpen, setCitiesOpen] = useState(false);
@@ -116,8 +116,11 @@ const Header = () => {
           {/* Right side: Desktop Contact Info & Quote Button */}
           <div className="hidden items-center lg:flex lg:gap-5">
             <div className="flex items-center gap-1">
-              <CitySelector onClick={handleCitiesClick} />
-              <PhoneNumber />
+              <CitySelector
+                cityOverride={cityName}
+                onClick={handleCitiesClick}
+              />
+              <PhoneNumber cityOverride={cityName} />
             </div>
             <HeaderButton onClick={handleQuoteClick} />
           </div>

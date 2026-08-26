@@ -6,10 +6,11 @@ import { useGodlyContext } from "@/context/godlyContext";
 import { getPhoneNumber } from "@/lib/getPhoneNumber";
 import { toUsTelHref } from "@/lib/usPhone";
 
-const PhoneNumber = () => {
+const PhoneNumber = ({ cityOverride }) => {
   const { city } = useGodlyContext();
   const pathname = usePathname();
-  const phoneNumber = getPhoneNumber(city, pathname);
+  const displayCity = cityOverride ?? city;
+  const phoneNumber = getPhoneNumber(displayCity, pathname);
   const phoneHref = toUsTelHref(phoneNumber);
 
   const handlePhoneClick = () => {
@@ -19,7 +20,7 @@ const PhoneNumber = () => {
         event: "phone_number_click",
         event_category: "engagement",
         event_label: "Phone Number Click",
-        city,
+        city: displayCity,
       });
     }
   };

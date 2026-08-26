@@ -6,8 +6,9 @@ import { MapPinHouse, ChevronDown } from "lucide-react";
 import { useGodlyContext } from "@/context/godlyContext";
 import { titleCaseCityName } from "@/lib/utils";
 
-const CitySelector = ({ onClick, isMobile = false }) => {
+const CitySelector = ({ onClick, isMobile = false, cityOverride }) => {
   const { city } = useGodlyContext();
+  const displayCity = cityOverride ?? city;
 
   if (isMobile) {
     return (
@@ -17,7 +18,7 @@ const CitySelector = ({ onClick, isMobile = false }) => {
       >
         <MapPinHouse strokeWidth={1.2} size={18} />
         <div className="border-b border-solid border-[#FDE4C8] font-sans text-xs font-semibold uppercase">
-          {titleCaseCityName(city)}
+          {titleCaseCityName(displayCity)}
         </div>{" "}
         <ChevronDown size={18} />
       </button>
@@ -32,7 +33,7 @@ const CitySelector = ({ onClick, isMobile = false }) => {
     >
       <MapPinHouse strokeWidth={1.2} size={18} />
       <div className="border-b border-solid border-[#FDE4C8] font-sans text-xs font-semibold uppercase">
-        {titleCaseCityName(city)}
+        {titleCaseCityName(displayCity)}
       </div>{" "}
       <span>
         <ChevronDown size={18} />

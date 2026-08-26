@@ -7,6 +7,7 @@
     "build": "node scripts/preconvert-og-paper.js && next build",
     "start": "next start",
     "lint": "eslint .",
+    "compare:final-content": "node scripts/compare-final-content-to-workbook.mjs",
     "validate:final-content": "node scripts/validate-final-not-ranking-content.mjs",
     "verify:final-content": "node scripts/verify-final-content-pages.mjs",
     "optimize-images": "node optimize-images.js",
