@@ -21,12 +21,13 @@ const citiesData = Object.entries(citiesMap).filter(
 );
 
 const Footer = () => {
-  const { city } = useGodlyContext();
+  const { city: contextCity } = useGodlyContext();
   const pathname = usePathname();
   const routeCityKey = pathname
     ?.split("/")
     .filter(Boolean)
     .find((segment) => citiesMap[segment]);
+  const city = citiesMap[routeCityKey] ?? contextCity;
   const cityKey =
     routeCityKey ||
     Object.keys(citiesMap).find((key) => citiesMap[key] === city) ||

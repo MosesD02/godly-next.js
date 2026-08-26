@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useCallback } from "react";
 import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
 
 // Critical above-the-fold components — imported eagerly
 import Logo from "./header/Logo";
@@ -11,6 +12,7 @@ import PhoneNumber from "./header/PhoneNumber";
 import HeaderButton from "@/components/HeaderButton";
 import { cn } from "@/lib/utils";
 import { useGodlyContext } from "@/context/godlyContext";
+import { citiesMap } from "@/data/cities";
 
 // Lazy-load components not visible on initial render (popups & mobile menu)
 const MobileNav = dynamic(() => import("./header/MobileNav"), { ssr: false });
@@ -24,8 +26,14 @@ const FormPopup = dynamic(() => import("./header/FormPopup"), {
   ssr: false,
 });
 
-const Header = ({ cityName }) => {
+const Header = () => {
   const { formPopupOpen, setFormPopupOpen } = useGodlyContext();
+  const pathname = usePathname();
+  const routeCitySlug = pathname
+    ?.split("/")
+    .filter(Boolean)
+    .find((segment) => citiesMap[segment]);
+  const displayCityName = citiesMap[routeCitySlug];
   const [servicesOpen, setServicesOpen] = useState(false);
   const [citiesOpen, setCitiesOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -62,11 +70,6 @@ const Header = ({ cityName }) => {
   const toggleMobileMenu = useCallback(() => {
     setMobileMenuOpen((prev) => !prev);
   }, []);
-
-  // Keep formEverOpened in sync when opened externally via context
-  if (formPopupOpen && !formEverOpened) {
-    setFormEverOpened(true);
-  }
 
   return (
     <>
@@ -117,10 +120,10 @@ const Header = ({ cityName }) => {
           <div className="hidden items-center lg:flex lg:gap-5">
             <div className="flex items-center gap-1">
               <CitySelector
-                cityOverride={cityName}
+                cityOverride={displayCityName}
                 onClick={handleCitiesClick}
               />
-              <PhoneNumber cityOverride={cityName} />
+              <PhoneNumber cityOverride={displayCityName} />
             </div>
             <HeaderButton onClick={handleQuoteClick} />
           </div>
@@ -134,7 +137,7 @@ const Header = ({ cityName }) => {
       {citiesEverOpened && (
         <CitiesPopup open={citiesOpen} onOpenChange={setCitiesOpen} />
       )}
-      {formEverOpened && (
+      {(formEverOpened || formPopupOpen) && (
         <FormPopup open={formPopupOpen} onOpenChange={setFormPopupOpen} />
       )}
     </>
