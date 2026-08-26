@@ -1,3 +1,4 @@
+import { gutterCleaningContent } from "./gutter-cleaning";
 import { holidayLightingContent } from "./holiday-lighting";
 import { houseWashingContent } from "./house-washing";
 import { paverSealingContent } from "./paver-sealing";
@@ -10,6 +11,7 @@ const serviceContentModules = [
   softWashingContent,
   houseWashingContent,
   paverSealingContent,
+  gutterCleaningContent,
 ];
 
 export const finalNotRankingPages = serviceContentModules.reduce(
