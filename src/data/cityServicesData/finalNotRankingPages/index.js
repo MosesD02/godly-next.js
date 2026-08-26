@@ -1,6 +1,10 @@
+import { holidayLightingContent } from "./holiday-lighting";
 import { windowCleaningContent } from "./window-cleaning";
 
-const serviceContentModules = [windowCleaningContent];
+const serviceContentModules = [
+  windowCleaningContent,
+  holidayLightingContent,
+];
 
 export const finalNotRankingPages = serviceContentModules.reduce(
   (cities, serviceContent) => {
