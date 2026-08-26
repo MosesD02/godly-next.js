@@ -2,6 +2,7 @@ import { gutterCleaningContent } from "./gutter-cleaning";
 import { holidayLightingContent } from "./holiday-lighting";
 import { houseWashingContent } from "./house-washing";
 import { paverSealingContent } from "./paver-sealing";
+import { pressureWashingContent } from "./pressure-washing";
 import { softWashingContent } from "./soft-washing";
 import { windowCleaningContent } from "./window-cleaning";
 
@@ -12,6 +13,7 @@ const serviceContentModules = [
   houseWashingContent,
   paverSealingContent,
   gutterCleaningContent,
+  pressureWashingContent,
 ];
 
 export const finalNotRankingPages = serviceContentModules.reduce(
