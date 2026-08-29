@@ -119,7 +119,7 @@ const ServicePopup = ({ open, onOpenChange }) => {
       </DialogHeader>
       <DialogContent
         hideCloseButton
-        className="paper-bg-16 overflow-y-auto border-none bg-[#fff9f3] p-4 max-sm:scale-95 md:top-70 md:max-w-261.25 md:p-6"
+        className="paper-bg-16 overflow-y-auto border-none bg-[#fff9f3] p-4 max-sm:scale-95 md:top-45 md:max-w-261.25 md:p-2 md:py-3 lg:top-20 lg:translate-y-0"
       >
         <div className="md:max-h-auto grid max-h-[calc(100vh-256px)] w-full grid-cols-2 sm:grid-cols-2 md:max-h-[calc(100vh-128px)] lg:grid-cols-3">
           {services.map((service, index) => (
@@ -137,7 +137,7 @@ const ServicePopup = ({ open, onOpenChange }) => {
               onTouchStart={() => setActiveIndex(index)}
               onTouchEnd={() => setActiveIndex(null)}
             >
-              <div className="flex min-h-18 flex-row items-start gap-1.5 gap-y-0 p-2 text-[#2D2B2B] transition-all group-hover:text-[#FDE4C8] group-active:text-[#FDE4C8]">
+              <div className="flex flex-row items-start gap-1.5 gap-y-0 p-2 text-[#2D2B2B] transition-all group-hover:text-[#FDE4C8] group-active:text-[#FDE4C8]">
                 <Image
                   src={service.image}
                   alt={service.name}
@@ -157,14 +157,14 @@ const ServicePopup = ({ open, onOpenChange }) => {
                   >
                     {service.name}
                   </h3>
-                  <p
+                  {/* <p
                     className={cn(
                       "font-['satoshi-light'] text-xs font-light",
                       activeIndex === index ? "text-[#FDE4C8]" : "",
                     )}
                   >
                     {service.description}
-                  </p>
+                  </p>*/}
                 </div>
               </div>
             </Link>
