@@ -2,9 +2,15 @@ import {
   WindowIcon,
   GutterIcon,
   RoofWashingIcon,
-  SealCoatingIcon,
   HolidayLightIcon,
 } from "./servicesIcons";
+import {
+  ConcreteSealingIcon,
+  PaverSealingIcon,
+  PostConstructionWindowIcon,
+  SoftWashingIcon,
+  TravertineSealingIcon,
+} from "./header/ServicePopupIcons";
 import pressureWashingImg from "@/assets/homepageServices/pressure_washing.webp";
 import pressureWashingImgColor from "@/assets/homepageServices/pressure_washing_color.webp";
 import houseWashingImg from "@/assets/homepageServices/house_washing.webp";
@@ -50,8 +56,7 @@ export const servicesData = [
   },
   {
     name: "Soft Washing",
-    image: houseWashingImg,
-    hoverImage: houseWashingImgColor,
+    icon: <SoftWashingIcon />,
     link: "soft-washing",
     description:
       "Custom low-pressure treatments for roofs, siding, and exteriors—safe chemistry that lifts algae without damage.",
@@ -65,28 +70,28 @@ export const servicesData = [
   },
   {
     name: "Paver Sealing",
-    icon: <SealCoatingIcon />,
+    icon: <PaverSealingIcon />,
     link: "paver-sealing",
     description:
       "Clean, sand, and seal your driveway/parking lot to protect against oils and other damaging elements.",
   },
   {
     name: "Travertine Sealing",
-    icon: <SealCoatingIcon />,
+    icon: <TravertineSealingIcon />,
     link: "travertine-sealing",
     description:
       "Clean and seal travertine pool decks, driveways, and patios with a gloss, matte, or natural finish.",
   },
   {
     name: "Concrete Sealing",
-    icon: <SealCoatingIcon />,
+    icon: <ConcreteSealingIcon />,
     link: "concrete-sealing",
     description:
       "Pressure wash and seal concrete driveways, pool decks, and sidewalks — built for South Florida weather.",
   },
   {
     name: "Post-Construction Window Cleaning",
-    icon: <WindowIcon />,
+    icon: <PostConstructionWindowIcon />,
     link: "post-construction-window-cleaning",
     description:
       "Pro-grade scraping and RO/DI purified water to remove stucco, paint, and construction residue — move-in ready every time.",

@@ -1267,10 +1267,10 @@ function ServicesGrid({ citySlug: citySlugProp }) {
             <CardContent className="service-icon-hover flex h-full p-0">
               <div className="flex size-full shrink-0 flex-col gap-6 px-3 py-6 md:px-4 md:py-8 md:group-hover:text-white">
                 <div className="flex h-full flex-col gap-4">
-                  <div className="relative size-12.5 shrink-0">
+                  <div className="relative flex size-12.5 shrink-0 items-center justify-center [&_svg]:block [&_svg]:size-12.5">
                     {service.icon ? (
                       <span
-                        className={`${isActive ? "text-white" : "text-[#1c1c1c]"} group-hover:text-white`}
+                        className={`flex size-full items-center justify-center ${isActive ? "text-white" : "text-[#1c1c1c]"} group-hover:text-white`}
                       >
                         {service.icon}
                       </span>
