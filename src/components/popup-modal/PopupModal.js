@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { sendGtagEvent } from "@/lib/gtagEvent";
 import { OfferDialog } from "./OfferDialog";
 import { QuoteFormDialog } from "./QuoteFormDialog";
@@ -13,19 +14,21 @@ import {
 } from "./constants";
 
 export function PopupModal() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [quoteFormOpen, setQuoteFormOpen] = useState(false);
   const [showFloating, setShowFloating] = useState(false);
+  const isThankYouPage = pathname === "/thank-you";
 
   const { targetDate, timeLeft, isExpired } = useOfferCountdown();
 
   useEffect(() => {
-    if (isExpired) return;
+    if (isExpired || isThankYouPage) return;
     const t = setTimeout(() => {
       setOpen(true);
     }, POPUP_AUTO_OPEN_MS);
     return () => clearTimeout(t);
-  }, [isExpired]);
+  }, [isExpired, isThankYouPage]);
 
   const onOfferOpenChange = useCallback((isOpen) => {
     setOpen(isOpen);
@@ -42,6 +45,8 @@ export function PopupModal() {
     setOpen(true);
     sendGtagEvent("popup_floating_button_click", OFFER_MODAL_FLOATING_GTAG);
   }, []);
+
+  if (isThankYouPage) return null;
 
   return (
     <>
